@@ -79,3 +79,9 @@ quiet. No thread besides pong genuinely moved — max-2 respected at 1.
 - LETTER POSTED: pong-quilt #49 comment 5857837144 (201 Created) — byte-identical to archive letters/pong-quilt-49.md. Receipt: https://github.com/SuperInstance/pong-quilt/issues/49#issuecomment-5857837144
 - Pushes sealed pre-post: fleet-seeds 5718d92..72cf92f, qthe d57b603..ec23a31, crab-traps 56cab12..c2696e4 (all clean FF, remote==local verified).
 - Doctrine tally wave 39 total: foreign writes = 1 issue comment (the staged letter, posted on the trigger their PLAYLOG booked). Zero pushes to foreign repos. Zero asks.
+
+## WAVE 41 ADDENDUM (keeper, cross-fleet playtest)
+
+- Playtest wave foreign-write tally: 2 posted, 1 staged. (1) jeviter#16 NEW ISSUE 201 (async never-await fabrication bug, repro receipts) — their channel, issues enabled. (2) pong-quilt #49 comment 5858861919 (stone P1 consumer-side impact: their prerun SIGN/REFUSED on a valid staple + their own docs-pin rot receipts). (3) quilt-arch RFC 8785 canon-key draft STAGED — their issues are OFF (their law respected); draft lives in playtest/wave41/ports-and-moth.md @ 6caa46c.
+- Both posts archived in fleet-seeds BEFORE posting (commit 6caa46c carries the drafts verbatim). Zero pushes to foreign repos; zero demands; receipts-first held.
+- Synergy applied same-wave: crab-traps 6536563..6f4f9e0 — SCN-003 judge extraction now name-keyed typed parse, labeled holes, extracted_source receipts (447 passed | 2 skipped). The fleet's lesson #1 landed in our own code the same day it was found.
