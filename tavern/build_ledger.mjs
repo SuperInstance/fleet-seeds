@@ -129,12 +129,20 @@ if (fs.existsSync(challengesDir)) {
   }
 }
 
+let skippedNonVerdict = 0;
 if (fs.existsSync(answersDir)) {
   const files = fs.readdirSync(answersDir).filter((f) => f.endsWith('.jsonl')).sort();
   for (const f of files) {
     const lines = fs.readFileSync(path.join(answersDir, f), 'utf8').trim().split('\n');
     for (const line of lines) {
       const a = JSON.parse(line);
+      // 34-c guard: answers/ may hold rows that are NOT challenge verdicts
+      // (deepseek-round5.jsonl seals the live guest's reviews/situations/levers
+      // — no challenge_id, no verdict). Emitting those through the verdict
+      // schema produced a garbage V:undefined:undefined row, and the identity
+      // dedupe then fused all ten into it. Skip them; the count surfaces in
+      // the run output so the skip is on the record, not silent.
+      if (!a.challenge_id || !a.verdict) { skippedNonVerdict++; continue; }
       round3.push({
         kind: 'tavern.challenge.verdict', round: a.round || 3,
         challenge_id: a.challenge_id, verdict: a.verdict,
@@ -171,6 +179,28 @@ round3.push({
   ],
 });
 
+// ---------------------------------------------------------------------------
+// SECTION C2 — the live window (round six, wave 34): rows read from
+// tavern/windows/*.jsonl — the receipted browser-verification artifacts.
+// Same pattern as challenges/answers: the builder reads the record, it does
+// not invent it. Window rows are kind 'tavern.round' (schema: round, voice,
+// lane, message, refs) and enter through the standard identity dedupe.
+// ---------------------------------------------------------------------------
+const windowsDir = path.join(__dirname, 'windows');
+if (fs.existsSync(windowsDir)) {
+  const files = fs.readdirSync(windowsDir).filter((f) => f.endsWith('.jsonl')).sort();
+  for (const f of files) {
+    const lines = fs.readFileSync(path.join(windowsDir, f), 'utf8').trim().split('\n');
+    for (const line of lines) {
+      const w = JSON.parse(line);
+      round3.push({
+        kind: 'tavern.round', round: w.round || 6, voice: w.voice, lane: w.lane,
+        message: w.message, refs: w.refs,
+      });
+    }
+  }
+}
+
 // IDEMPOTENCE LAW: a row already on disk (replayed) is never emitted twice.
 // Identity is structural: challenge rows by id, verdicts by id+answerer,
 // round rows by round+voice. A rebuild may only ADD what the record gained.
@@ -194,5 +224,5 @@ fs.writeFileSync(file, rows.map((r) => JSON.stringify(r)).join('\n') + '\n');
 
 const back = fs.readFileSync(file, 'utf8').trim().split('\n').map((l) => JSON.parse(l));
 const vDisk = verifyChain(back, undefined, { alg: 'stone-v1' });
-console.log(JSON.stringify({ rows: rows.length, replayed, emitted, tip: rows[rows.length - 1].row_hash, verifyFromDisk: vDisk }, null, 1));
+console.log(JSON.stringify({ rows: rows.length, replayed, emitted, skippedNonVerdict, tip: rows[rows.length - 1].row_hash, verifyFromDisk: vDisk }, null, 1));
 if (!vDisk.ok) process.exit(1);

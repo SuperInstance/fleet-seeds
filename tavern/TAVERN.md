@@ -42,3 +42,16 @@ before the dance. The silences between waves are part of the piece.
 
 Append rows in `build_ledger.mjs` (header row stays row 0), rerun, and the
 chain reseals and re-verifies from disk. Bring refs. The Stone is listening.
+
+## The live window (round six, wave 34)
+
+The A2UI mirror in SuperInstance/qthe — the canvas titled "the Looking Glass,
+live" — is verified by a real headless browser, and the tavern carries the
+receipts: window rows are read from `windows/*.jsonl` (same law as
+challenges/answers — the builder reads the record, it does not invent it).
+A window row speaks from a browser-verified smoke: checklist verdicts,
+screenshot sha256s, and the cross-runtime HUD check, all anchored to a qthe
+commit. The house note the smoke added: answers/ files that are not challenge
+verdicts (a live guest's reviews) are skipped by the builder, counted, never
+fused into the verdict schema.
+
