@@ -1,0 +1,18 @@
+# .quilt/links.yml — the Reader's Fold manifest (jev-quilt Law 6).
+# This repo carries NO verdicts about its neighbors — only content-addressed
+# pointers each reader folds under its own weights. Edit this file; never edit
+# the generated block in README.md by hand.
+
+repo: fleet-seeds
+family: quilt
+
+consumes:
+  - repo: jev-quilt
+    what: Law 6 (the Reader's Fold) and Law 7 (the Reach Bound) — the doctrinal basis for the .quilt/links.yml schema and quilt-links.mjs generator this repo hosts
+    at: 5333e1a
+
+provides:
+  - id: quilt-links-generator
+    what: the zero-dependency generator (quilt-links.mjs) that renders every repo's Cross-pollination block and the whole-fleet graph (FLEET.md, graph.mmd)
+  - id: seedbox
+    what: the seed-file -> receipted-experiment-repo intake mechanism (seedbox.mjs)
