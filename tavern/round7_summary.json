@@ -1,0 +1,49 @@
+{
+ "wave": "36-b",
+ "round": 7,
+ "sealed_at": "2026-09-27T08:31:30Z",
+ "prefix": {
+  "sha256": "777938e243d34ef4667c1d52a89ee3fe30e41529804746c7b71deccbc0866e39",
+  "chars": 5025,
+  "sealed_asset": "777938e243d34ef4667c1d52a89ee3fe30e41529804746c7b71deccbc0866e39"
+ },
+ "deepseek": {
+  "calls": 1,
+  "prompt_tokens": 307,
+  "prompt_cache_hit_tokens": 0,
+  "prompt_cache_miss_tokens": 307,
+  "completion_tokens": 204,
+  "reasoning_tokens": 0,
+  "ms_total": 219,
+  "cache_hit_ratio": 0,
+  "price_basis_declared": "peak",
+  "usd": {
+   "hit": 0,
+   "miss": 0.00009209999999999999,
+   "out": 0.0002448,
+   "total": 0.0003369
+  },
+  "usd_if_no_cache": 0.0003369
+ },
+ "typesafe": null,
+ "moth": null,
+ "deepseek_all_rows": {
+  "wave": "36-b",
+  "round": 7,
+  "note": "totals across ALL 7 sealed deepseek rows (incl. truncated reasoner v1 + the receipted warm-leak iterator v1); peak basis per round-6 schedule; run window 08:27-08:32 UTC 2026-09-27",
+  "calls": 7,
+  "prompt_tokens": 8634,
+  "prompt_cache_hit_tokens": 5504,
+  "prompt_cache_miss_tokens": 3130,
+  "completion_tokens": 3654,
+  "reasoning_tokens": 1814,
+  "cache_hit_ratio": 0.6374797312948807,
+  "usd_with_cache": 0.0053568240000000005,
+  "usd_if_no_cache": 0.006975,
+  "price_basis": {
+   "hit": 0.006,
+   "miss": 0.3,
+   "out": 1.2
+  }
+ }
+}
