@@ -85,3 +85,9 @@ quiet. No thread besides pong genuinely moved — max-2 respected at 1.
 - Playtest wave foreign-write tally: 2 posted, 1 staged. (1) jeviter#16 NEW ISSUE 201 (async never-await fabrication bug, repro receipts) — their channel, issues enabled. (2) pong-quilt #49 comment 5858861919 (stone P1 consumer-side impact: their prerun SIGN/REFUSED on a valid staple + their own docs-pin rot receipts). (3) quilt-arch RFC 8785 canon-key draft STAGED — their issues are OFF (their law respected); draft lives in playtest/wave41/ports-and-moth.md @ 6caa46c.
 - Both posts archived in fleet-seeds BEFORE posting (commit 6caa46c carries the drafts verbatim). Zero pushes to foreign repos; zero demands; receipts-first held.
 - Synergy applied same-wave: crab-traps 6536563..6f4f9e0 — SCN-003 judge extraction now name-keyed typed parse, labeled holes, extracted_source receipts (447 passed | 2 skipped). The fleet's lesson #1 landed in our own code the same day it was found.
+
+## WAVE 43 ADDENDUM (keeper)
+
+- Pre-post SHA sweep caught a REAL error: moth#2 reply attributed the deep-trace verdict to fleet-seeds @ ee00b99 — that SHA is qthe's (fleet-seeds ee00b99 -> 422). Corrected pre-post, committed, then posted. Doctrine works.
+- POSTED: moth-runner #2 reply (comment 5859972649 — whitened-instrument recipe as gift, same-login caveat in-letter, zero asks) + pong #49 follow-up (comment 5859972744 — their R44-R48 burst receipted with SHAs, docs rot verified fixed from our side, coev second seal lane verified 7/7 live, stone-P1 standing zero-ask).
+- pong main re-checked at post time: ea9dfbb (all letter SHAs 200-OK). Wave-43 foreign-write tally: 2 comments, both archived before posting @ 051766a.
