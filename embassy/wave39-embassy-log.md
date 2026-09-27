@@ -72,3 +72,10 @@ quiet. No thread besides pong genuinely moved — max-2 respected at 1.
   attempted payload byte-for-byte.
 - Zero key material in the letter; zero paid keys used; API budget: unauthenticated shared-IP
   pool only (~20 calls + retry sweep, all rate-limit-exhaustion retries against public reads).
+
+## WAVE 39-RESUME ADDENDUM (keeper, token arrived)
+
+- GH_TOKEN rolled in (login SuperInstance). SHA re-sweep re-run BEFORE post: 9/9 cited SHAs 200-OK + issue #49 200-OK; pong main re-checked = 4d447ed (letter's "current main" still true at post time).
+- LETTER POSTED: pong-quilt #49 comment 5857837144 (201 Created) — byte-identical to archive letters/pong-quilt-49.md. Receipt: https://github.com/SuperInstance/pong-quilt/issues/49#issuecomment-5857837144
+- Pushes sealed pre-post: fleet-seeds 5718d92..72cf92f, qthe d57b603..ec23a31, crab-traps 56cab12..c2696e4 (all clean FF, remote==local verified).
+- Doctrine tally wave 39 total: foreign writes = 1 issue comment (the staged letter, posted on the trigger their PLAYLOG booked). Zero pushes to foreign repos. Zero asks.
