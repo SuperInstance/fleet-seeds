@@ -1,0 +1,161 @@
+{
+  "task": "Tap Tavern ROUND ELEVEN — task 45-a, lane tavern-round11 (the reasoner takes the seat)",
+  "registered_utc": "2026-09-27T23:06Z (file mtime = receipt; sandbox clock; briefing calendar date 2026-09-28 — both carried AS SAID, r9/r10 convention)",
+  "registered_before_any_deepseek_traffic": true,
+  "wire_traffic_before_this_file": "NONE — zero requests to api.deepseek.com this round before this file was written. Receipt = file mtime. (GitHub API read of pong #49 comment authors + a GET of the public deepseek pricing DOCS page are not deepseek API traffic and are receipted below.)",
+  "house_status_at_registration": {
+    "deepseek_houses": "DEEPSEEK_API_KEY PRESENT (len withheld) — FIRST round in tavern history where a real reasoner seat can answer. Every prior reasoner seat (r8 SEED-38-A, r9 asset slots 1-3, r10 deepseek houses) was receipted ABSENT fail-closed.",
+    "typesafe_jev": "TYPESAFE_API_KEY ABSENT this lane — round-11 is DEEPSEEK-ONLY by design; JEV's sealed r10 answers are used AS SAID from the record as the cross-house comparison state. Zero typesafe traffic planned.",
+    "github": "GH_TOKEN present and verified (GET /user 200, login SuperInstance) — used for pong49 ground-truth reads and pushes only."
+  },
+  "carry_forward_sealed_registrations": {
+    "r9_reasoner_own_asset": {
+      "registered_in": "tavern/round9_summary.json (reasoner_asset; SEED-38-A continuation)",
+      "design_as_sealed": "3 deepseek-reasoner calls, ONE byte-identical fresh r9 prefix, distinct user texts per slot, prompt_cache_hit_tokens per call; falsified_if: cache-hit stays 0 across all 3, or slot-1 hits (impossible for a first-ever send unless the cache served someone else)",
+      "asset_source": "qthe/situations/r9_prefix_asset.txt",
+      "asset_sha256_verified_this_round": "3ccb796a09798e13c4d2c8128c1f349a5e06ebf557a870446e838bb2d10a8a4d",
+      "asset_bytes": 2808,
+      "verified_how": "sha256sum on the file found at /home/z/my-project/pt45b-q/situations/r9_prefix_asset.txt (read-only borrow from a sibling lane's clone; byte-identical to the r9 registration)",
+      "round11_execution": "RUN THIS ROUND as slots 1-3 in send order (blind / state / pong49), prefix sent byte-identical as the leading block of each user message (system-role support on the current wire is unverified; the user-message construction keeps the asset a byte-identical prompt prefix regardless and matches the r8 curve's prefix-warming semantics)",
+      "honest_note": "the sealed asset self-labels 'ROUND NINE' — carried AS SEALED, unedited, because editing a byte would break the registered sha and the cache experiment; each slot's distinct user text declares 'round eleven now' explicitly"
+    },
+    "r10_cross_house_state": {
+      "q1_state": "the byte-exact r10 q1 `state` string (eq8_established + eq9_census + your_prior) served to jev-latest on probe r10-q1-eq9-posterior, extracted verbatim from tavern/answers/jev-round10.jsonl",
+      "q1_state_sha256_at_extraction": "computed at run time and receipted in the row",
+      "framing_declaration": "the state is sent verbatim (including its 'your_prior' second-person address, which was written for the JEV seat); the slot-2 user text adds one declared frame line before it: 'Below is the byte-exact state the typesafe instrument JEV was shown in round ten; you are asked the same questions as a second house.'",
+      "jev_r10_answers_as_said": {"p_float_artifact_revised": 0.97, "posterior_move": "moves_up_to_0_5_or_above", "repeat_delta_on_preview_alias": 0.0}
+    },
+    "pong49_ground_truth_at_registration": {
+      "verified_utc": "2026-09-27T23:03Z via GitHub API",
+      "issue": "SuperInstance/pong-quilt #49 (state OPEN, 6 comments)",
+      "comment_authors": ["SuperInstance x6 — ids 5853569870, 5854226406, 5854881871, 5857837144, 5858861919, 5859972744 (latest 2026-09-27T21:26:44Z)"],
+      "external_ever": 0,
+      "delta_vs_r10_state": "one NEW fleet-authored comment since r10's verification (5 -> 6, still zero external) — carried into the slot-3 state AS MEASURED",
+      "window_closes_utc": "2026-09-29T10:04:00Z (r10 pin, unchanged)"
+    }
+  },
+  "pricing_basis_declared": {
+    "source": "https://api-docs.deepseek.com/quick_start/pricing — LIVE-fetched 2026-09-27T23:04Z, HTTP 200, 23,982 bytes (round-11 refreshes the r6/r9 declared basis with a live receipt)",
+    "served_lineup_as_documented": "deepseek-flash = DeepSeek-V4.1-Flash ('Use deepseek-flash as the model name. The legacy names ... are retired, their requests are served by the DeepSeek-V4.1-Flash model and billed at the Flash price'); sibling deepseek-v4-pro. THINKING MODE: 'Supports both non-thinking and thinking (default) modes'.",
+    "rates_off_peak_usd_per_Mtok": {"flash_input_cache_hit": 0.003, "flash_input_cache_miss": 0.15, "flash_output": 0.6},
+    "peak_window_as_documented": "01:00-04:00 and 06:00-10:00 UTC Mon-Fri, excluding holidays; 'All other hours are off-peak, including weekends'",
+    "window_at_registration": "2026-09-27T23:0xZ UTC = Sunday = OFF-PEAK (declared basis for this round's spend math)",
+    "honest_caveat": "the page documents the flash/v4-pro table; legacy-name routing (deepseek-reasoner / deepseek-chat) is NOT itemized there — spend math assumes Flash-billed legacy routing and the wire's own usage response is the priced receipt (P5 receipts what is actually served)"
+  },
+  "call_plan_budget": {
+    "max_deepseek_http_calls": 8,
+    "planned_calls": 6,
+    "planned_paid_2xx_posts": 5,
+    "free_gets": [{"probe_id": "r11-models-list", "call": "GET /models", "why": "alias table freshness receipt for P5 — what names does the wire list?"}],
+    "plan_in_send_order": [
+      {"probe_id": "r11-reasoner-asset-slot1-blind", "model": "deepseek-reasoner", "r9_curve_slot": 1, "content": "byte-identical r9 prefix asset + blind user text (float-artifact claim defined, NO E-Q8/E-Q9 outcomes) -> noul p_float_artifact_blind", "expected_cache_hit_tokens": 0},
+      {"probe_id": "r11-reasoner-asset-slot2-state", "model": "deepseek-reasoner", "r9_curve_slot": 2, "content": "byte-identical r9 prefix asset + frame line + BYTE-SAME r10 q1 state -> noul p_float_artifact_revised + posterior_move choice + one_sentence", "expected_cache_hit_tokens": ">0 (prefix warmed by slot 1)"},
+      {"probe_id": "r11-reasoner-asset-slot3-pong49", "model": "deepseek-reasoner", "r9_curve_slot": 3, "content": "byte-identical r9 prefix asset + pong49 battery state (6-comment ground truth) -> 3 noul + 1 choice (discipline violation surface)", "expected_cache_hit_tokens": ">0"},
+      {"probe_id": "r11-reasoner-q1-state-repeat", "model": "deepseek-reasoner", "r9_curve_slot": "NONE — outside the sealed r9 curve, registered HERE as the round-11 repeat-stability probe", "content": "byte-identical repeat of slot 2 (prefix AND user text) -> repeat-stability vs JEV's 0.00 delta"},
+      {"probe_id": "r11-chat-q1-state", "model": "deepseek-chat", "r9_curve_slot": "NONE", "content": "second seat: minimal house line + same frame + state + questions as slot 2 -> cross-seat agreement under the r9 registered definition"}
+    ],
+    "retry_law": "single retry per call on transient failure (429/5xx/network) — each attempt receipted as its own row; retries count against the 8-call cap",
+    "max_tokens_per_call": 2000,
+    "temperature": {"deepseek-reasoner": "parameter NOT sent (documented as ignored/unsupported on the reasoner seat historically; service-default sampling is the honest analog of JEV's server-side repeat variance)", "deepseek-chat": 0.3}
+  },
+  "predictions": [
+    {
+      "id": "P1-reasoner-moves-on-receipts",
+      "claim": "Shown the byte-exact r10 E-Q9 receipt state, the real reasoner's revised p (float-only artifact TRUE) clears 0.50 AND moves up by at least 0.10 from its own blind prior measured in slot 1 — the JEV r10 calibration behavior (0.35 -> 0.97) is not instrument-specific.",
+      "outcome_variable": "answers slot2 noul p_float_artifact_revised vs slot1 noul p_float_artifact_blind",
+      "buckets": {
+        "moves_up_to_0.5_or_above_and_plus_0.10": 0.60,
+        "clears_0.5_but_small_move": 0.12,
+        "moves_up_but_below_0.5": 0.13,
+        "stays_or_moves_down": 0.15
+      },
+      "modal": "moves_up_to_0.5_or_above_and_plus_0.10",
+      "modal_p": 0.60,
+      "falsified_if": "slot2 noul < 0.50, OR (slot2 noul - slot1 noul) < 0.10",
+      "reasoning": "The E-Q9 census (466,932 kernel runs, E1-E10 all true, Brier 0.00662, zero unexplained cells) is decisive evidence any reasoner should weigh; JEV moved to 0.97. Against: a reasoning model may discount a fleet's self-reported receipts (provenance skepticism), may read FAMILY-BOUND as partial credit, and blind LLM priors on a fleet-internal question are unmeasured — the blind anchor could sit anywhere in 0.2-0.8. Honest 0.60."
+    },
+    {
+      "id": "P2-noul-discipline-violated",
+      "claim": "The real reasoner mis-fills the no-confidence-field noul contract at least ONCE this round: the contract says a noul answer object must be exactly {\"type\":\"noul\",\"noul\":<number 0-1>} with NO other field, and at least one noul answer across all 2xx rows carries a confidence/probability/extra field or a non-numeric noul — testing whether JEV's noul discipline (no confidence field, 22/22 wire rows r8-r10) survives contact with a real LLM.",
+      "outcome_variable": "count of contract-violating noul answers across all noul questions on all 2xx rows (expected surface: 1 blind + 1 state + 1 repeat + 1 chat + 3 pong49 = 7+ noul answers)",
+      "buckets": {
+        "violated_once_or_more": 0.55,
+        "zero_violations_full_discipline": 0.45
+      },
+      "modal": "violated_once_or_more",
+      "modal_p": 0.55,
+      "falsified_if": "zero noul contract violations anywhere in the round — then the tavern records that the noul discipline is fully instructable on a real reasoner, a POSITIVE structural transfer result",
+      "reasoning": "LLMs habitually decorate probability answers with confidence fields; the contract states the prohibition twice (asset OUTPUT CONTRACT section + per-slot user text). The pong49 slot deliberately carries THREE noul questions in one call to widen the surface. Honest coin flip, leaned to violation."
+    },
+    {
+      "id": "P3-chat-reasoner-agreement",
+      "claim": "The chat seat (deepseek-chat, second house) agrees with the reasoner seat on the state-loaded q1: |noul_chat - noul_reasoner| <= 0.15 AND same modal posterior_move choice (the r9-registered agreement definition).",
+      "outcome_variable": "r11-chat-q1-state noul/choice vs r11-reasoner-asset-slot2-state noul/choice",
+      "buckets": {
+        "agree": 0.60,
+        "noul_gap_only": 0.22,
+        "choice_only": 0.08,
+        "disagree_both": 0.10
+      },
+      "modal": "agree",
+      "modal_p": 0.60,
+      "falsified_if": "either component of the r9 definition fails",
+      "reasoning": "r7 proved flash-as-iterator actionably equivalent to a context-loaded guest AND to the reasoner on lever stances. But this question is a calibrated posterior, not a stance — CoT may move the reasoner off the chat answer. If the served wire is one model in two thinking modes (live docs suggest exactly that), agreement is the base case. Honest 0.60."
+    },
+    {
+      "id": "P4-reasoner-repeat-stability",
+      "claim": "Byte-identical repeat of the state slot (prefix AND user text) on the reasoner: |delta noul| <= 0.15 AND same modal choice (r9-registered repeat definition). JEV held delta 0.00 on identical state in r10; round-11 prices whether a sampling CoT seat holds the same bar.",
+      "outcome_variable": "r11-reasoner-q1-state-repeat noul/choice vs slot 2",
+      "buckets": {
+        "agree": 0.55,
+        "noul_drift_only_0.15_to_0.30": 0.22,
+        "hard_disagree": 0.23
+      },
+      "modal": "agree",
+      "modal_p": 0.55,
+      "falsified_if": "|delta noul| > 0.15 OR modal choice differs — recorded as a REAL seat-stability gap vs the typesafe instrument (r10 repeat delta was 0.00)",
+      "reasoning": "No temperature parameter is sent to the reasoner seat; service-side sampling over reasoning traces is the noise source. A posterior question with a decisive receipt state should anchor both draws near the same posterior — but CoT path variance on an LLM is exactly the thing prior rounds never got to measure. Honest coin flip, leaned agree."
+    },
+    {
+      "id": "P5-gateway-alias-receipt",
+      "claim": "The wire's served-model field will NOT faithfully echo every requested legacy name: at least one 2xx response reports a served model different from the requested string (expect 'deepseek-flash' per the live pricing page: legacy names are retired and served by DeepSeek-V4.1-Flash at Flash price) — receipting the r7 observation ('wire served deepseek-flash for every call incl. reasoner') at the docs level.",
+      "outcome_variable": "response.model / system_fingerprint on every row + the GET /models alias table",
+      "buckets": {
+        "alias_present_on_at_least_one_row": 0.75,
+        "all_rows_echo_requested_exactly": 0.25
+      },
+      "modal": "alias_present_on_at_least_one_row",
+      "modal_p": 0.75,
+      "falsified_if": "every 2xx response.model string equals the exact requested model name AND /models lists deepseek-reasoner and deepseek-chat verbatim",
+      "reasoning": "r7 receipted served=deepseek-flash on requested=deepseek-chat; the live docs now SAY legacy names route to V4.1-Flash. The open wrinkle: 'deepseek-reasoner' might be dropped entirely (400/404 on request 1 — which would itself receipt the alias story, retried as deepseek-flash with thinking on under the retry law and receipted as such)."
+    },
+    {
+      "id": "P6-json-contract-robustness",
+      "claim": "Every 2xx POST row yields strict JSON after at most ONE repair step (markdown-fence strip), total parse_repair_steps across the round <= 2, and every parsed answer carries all required question keys — the reasoner seat can be a ledger citizen without a native instrument wire.",
+      "outcome_variable": "parse_repair_steps per row + key completeness per parsed answer",
+      "buckets": {
+        "holds": 0.75,
+        "one_extra_repair_needed": 0.17,
+        "unparseable_row": 0.08
+      },
+      "modal": "holds",
+      "modal_p": 0.75,
+      "falsified_if": "any row needs > 1 repair step, OR total repairs > 2, OR any 2xx row's content cannot be parsed to JSON at all (raw kept, receipted failed-parse, scored as miss)",
+      "reasoning": "The asset's OUTPUT CONTRACT already says 'no markdown fences' and the slots repeat it; deepseek-chat returned direct-parse JSON in r7 (parse_method 'direct'). Reasoner + thinking mode adds drift risk. Honest 0.75."
+    },
+    {
+      "id": "P7-budget-spend",
+      "claim": "Round-11 stays inside the hard budget: total api.deepseek.com HTTP calls <= 8 (planned 6), max_tokens parameter <= 2000 on every POST, and estimated spend at the live-declared off-peak Flash basis <= $0.05 with total billed output+reasoning tokens <= 12,000.",
+      "outcome_variable": "call count, per-call usage (prompt/completion/reasoning tokens, cache hits), est USD",
+      "predicted_range_usd": [0.002, 0.03],
+      "modal_usd": 0.01,
+      "hard_cap_usd": 0.05,
+      "modal": "under_all_caps",
+      "modal_p": 0.90,
+      "falsified_if": "any call exceeds max_tokens 2000 as a SENT parameter, total calls > 8, est spend > $0.05, or billed output+reasoning tokens > 12,000",
+      "reasoning": "5 POSTs at ~2.8-4.5k prompt tokens each (asset 2808 bytes ~= 700-900 tokens + state) with caching on slots 2-5, plus 5 x <=2000 output. Reasoning/thinking tokens are the wild card the round exists to measure — pricing-first law receipts them, not assumes them. Weekend off-peak basis declared."
+    }
+  ],
+  "scoring_law": "multiclass Brier = sum over buckets of (predicted_bucket_p - indicator(actual_bucket))^2, resolved at seal (round-11 is self-contained; no STANDING entries). Reasoner/chat answers are sealed AS SAID (ghostwriting law) — wrong, malformed, or undisciplined answers are recorded exactly as said, never repaired to fit predictions. Parse-repair receipts are part of the answer. The r9 curve verdict has its own sealed falsified_if (cache curve) scored separately from P1-P7.",
+  "ghostwriting_note": "no free-text lane exists on the deepseek wire either; the r10 doctrine carries: the lane maps JEV's instruments (noul / choice) onto a strict-JSON output contract and the model's selections are the answer; 'one sentence' fields are the model's own words, quoted verbatim in the ledger"
+}
