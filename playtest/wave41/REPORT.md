@@ -54,6 +54,6 @@ a standing use: E-Q10-seed ordering via `graphJob()` (~4 s, ~4.4k bits/job, 1 of
 
 ## Foreign-write ledger this wave
 
-3 issue comments posted (quilt-stone, jeviter, quilt-arch) — each archived in this directory
+2 issue comments POSTED (jeviter#16 new issue; pong #49 comment 5858861919) + 1 draft STAGED (quilt-stone+arch run issues-off — stone P1 relayed to its victim via pong #49 instead). Correction receipted by lane 42-d watch: the original "3 posted" line was not API-supported.
 BEFORE posting, receipts-first, zero demands, gift-framed. Zero pushes to foreign repos.
 `producer.pem` (ephemeral test key from lane 41-a's rig) deliberately NOT committed — house law.
