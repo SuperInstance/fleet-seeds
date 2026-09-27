@@ -1,0 +1,341 @@
+{
+ "round": 10,
+ "task": "42-c",
+ "lane": "tavern-smith (JEV seat)",
+ "wave": "42",
+ "sealed_at": "2026-09-27T19:51:23Z",
+ "clock_note": "sandbox clock 2026-09-27T19:44-19:58Z; briefing calendar date 2026-09-28 — both carried AS SAID (r9 convention)",
+ "clone": {
+  "url": "https://github.com/SuperInstance/fleet-seeds.git",
+  "head_at_clone": "dc82be44e4940769b13bf585853e87f96e5e30c4",
+  "push_scope": "tavern/ only (predictions copy, rows, summary) — zero overlap with transparency/ + embassy/ lanes"
+ },
+ "seats": {
+  "typesafe_jev": "LIVE — served model jev-1.13.0 on every 2xx row (both aliases)",
+  "deepseek_houses": "DEEPSEEK_API_KEY ABSENT — guest/reasoner/flash seats RECEIPTED ABSENT, NOT FAKED. Zero deepseek calls attempted (fail-closed law: no key, no call, no spend)."
+ },
+ "predictions_file": {
+  "original_path": "/home/z/my-project/scripts/42c-round10-predictions.json",
+  "committed_copy": "tavern/predictions/42c-round10-predictions.json",
+  "sha256": "35d6f369e99b677b869ee80db36e8358176afb3f71455881e9f172bb5d13eb57",
+  "mtime_utc": "2026-09-27T19:45:58Z",
+  "copy_byte_identical": true,
+  "registered_before_any_typesafe_traffic": true
+ },
+ "round_shape": {
+  "prompt_set": {
+   "q1_eq9_posterior": "state = E-Q8 established receipt + E-Q9 census verdict (466,932 kernel runs, E1-E10 all true, Brier 0.00662, artifact FAMILY-BOUND A+D 90.67%, irrationality inert, fixed moves DOWN -1) + the model's own r9 blind prior 0.35; questions: p_float_artifact_revised (noul) + posterior_move (choice, 4 one-sentence verdict criteria)",
+   "q2_wave41_cracks": "state = the three wave-41 cracks with owner repos, fix shapes and diff sizes; questions: first_fix (choice, 3) + p per crack (noul x3) + score_all_fixed_30d (score, exactly 10 levels, length asserted in code before send)",
+   "q3_pong49_standing": "state = GitHub-API-verified #49 ground truth (open, 5 comments ALL SuperInstance, zero external ever) + the model's r9 priors 0.13/0.14; questions: p_pong49_external_comment (noul, window pinned to 2026-09-29T10:04Z) + pong_prior_move (choice, 3)",
+   "output_contract_mapping": "r9 asset's strict-JSON contract is wire-native here: answer objects ARE strict JSON; each \"one sentence\" is carried as the selected choice criterion description (lane-written, instrument-selected; no free-text lane forced — recon doctrine #9)"
+  },
+  "calls": {
+   "plan": "GET /v1/models (free) + q1,q2,q3 on jev-latest + q1 byte-identical repeat on jev-preview (repeat-stability, budget allowed) + fail-closed 11-level probe (expect 400, unbilled)",
+   "paid_2xx": 4,
+   "cap": 6,
+   "attempts_total": 6,
+   "unbilled_400_rows": 2,
+   "note_on_400_rows": "the 11-level probe 400'd on attempt 1 AND on its lane-law single retry — both rows receipted, zero spend"
+  }
+ },
+ "rows": {
+  "path": "tavern/answers/jev-round10.jsonl",
+  "count": 11,
+  "request_ids": [
+   {
+    "probe_id": "r10-models-list",
+    "request_id": "req_01a0e4687fd178169e2e45fd62ad3fee"
+   },
+   {
+    "probe_id": "r10-q1-eq9-posterior",
+    "request_id": "req_01a0e46880837bb9af207488aa101a08"
+   },
+   {
+    "probe_id": "r10-q2-wave41-cracks",
+    "request_id": "req_01a0e468815f7a85afd26da6c63a3761"
+   },
+   {
+    "probe_id": "r10-q3-pong49-standing",
+    "request_id": "req_01a0e46882447443b65794c01d8fadb0"
+   },
+   {
+    "probe_id": "r10-q1-repeat-jev-preview",
+    "request_id": "req_01a0e4688322793aa4f513c49f4bccbd"
+   },
+   {
+    "probe_id": "r10-fail-closed-score11",
+    "request_id": "req_01a0e46883f773fc9dc65a6848a3987e"
+   },
+   {
+    "probe_id": "r10-fail-closed-score11",
+    "request_id": "req_01a0e46884c17824bff703f3703a34ce"
+   }
+  ],
+  "parse_repair_steps_needed": 0
+ },
+ "answers_as_said": {
+  "q1": {
+   "p_float_artifact_revised": {
+    "type": "noul",
+    "noul": 0.97
+   },
+   "posterior_move": {
+    "type": "choice",
+    "choice": "moves_up_to_0_5_or_above",
+    "confidence": 0.92,
+    "probabilities": {
+     "moves_up_but_below_0_5": 0.03,
+     "stays_within_noise": 0.01,
+     "moves_up_to_0_5_or_above": 0.95,
+     "moves_down": 0.01
+    }
+   }
+  },
+  "q2": {
+   "first_fix": {
+    "type": "choice",
+    "choice": "jeviter_await",
+    "confidence": 0.94,
+    "probabilities": {
+     "stone_pem": 0.04,
+     "arch_canon": 0,
+     "jeviter_await": 0.96
+    }
+   },
+   "p_jeviter_first": {
+    "type": "noul",
+    "noul": 0.7
+   },
+   "p_stone_first": {
+    "type": "noul",
+    "noul": 0.27
+   },
+   "p_arch_first": {
+    "type": "noul",
+    "noul": 0.08
+   },
+   "score_all_fixed_30d": {
+    "type": "score",
+    "score": 5.12,
+    "confidence": 0.56,
+    "legend": {
+     "0": "0_certain_it_never_happens",
+     "1": "1_remote",
+     "2": "2_highly_unlikely",
+     "3": "3_unlikely",
+     "4": "4_lean_no",
+     "5": "5_coin_flip",
+     "6": "6_lean_yes",
+     "7": "7_likely",
+     "8": "8_highly_likely",
+     "9": "9_certain_it_happens"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.01,
+     "2": 0.04,
+     "3": 0.1,
+     "4": 0.13,
+     "5": 0.3,
+     "6": 0.26,
+     "7": 0.14,
+     "8": 0.02,
+     "9": 0
+    }
+   }
+  },
+  "q3": {
+   "p_pong49_external_comment": {
+    "type": "noul",
+    "noul": 0.15
+   },
+   "pong_prior_move": {
+    "type": "choice",
+    "choice": "stays_le_0_20",
+    "confidence": 0.91,
+    "probabilities": {
+     "moves_above_0_35": 0.03,
+     "moves_up_0_21_to_0_35": 0.03,
+     "stays_le_0_20": 0.94
+    }
+   }
+  },
+  "q1_repeat_preview": {
+   "p_float_artifact_revised": {
+    "type": "noul",
+    "noul": 0.97
+   },
+   "posterior_move": {
+    "type": "choice",
+    "choice": "moves_up_to_0_5_or_above",
+    "confidence": 0.9,
+    "probabilities": {
+     "stays_within_noise": 0.02,
+     "moves_up_to_0_5_or_above": 0.93,
+     "moves_down": 0.01,
+     "moves_up_but_below_0_5": 0.04
+    }
+   }
+  },
+  "repeat_stability": {
+   "noul_delta": 0,
+   "same_choice_modal": true,
+   "r9_registered_definition": "agree iff |noul delta| <= 0.15 AND same choice modal",
+   "agree": true
+  },
+  "fail_closed_11_level": {
+   "status": 400,
+   "error_body": "{\"detail\":\"Too many score levels. Must have at most 10 levels.\"}"
+  },
+  "usage_per_paid_row": [
+   {
+    "probe_id": "r10-q1-eq9-posterior",
+    "input_tokens": 1057,
+    "output_tokens": 103,
+    "model_served": "jev-1.13.0"
+   },
+   {
+    "probe_id": "r10-q2-wave41-cracks",
+    "input_tokens": 1142,
+    "output_tokens": 126,
+    "model_served": "jev-1.13.0"
+   },
+   {
+    "probe_id": "r10-q3-pong49-standing",
+    "input_tokens": 783,
+    "output_tokens": 95,
+    "model_served": "jev-1.13.0"
+   },
+   {
+    "probe_id": "r10-q1-repeat-jev-preview",
+    "input_tokens": 1057,
+    "output_tokens": 103,
+    "model_served": "jev-1.13.0"
+   }
+  ]
+ },
+ "scorecard": {
+  "scoring_law": "multiclass Brier = sum over registered buckets of (p_i - indicator(actual))^2, at seal where resolved; else STANDING (distribution carried for the keeper)",
+  "entries": [
+   {
+    "id": "P1-eq9-posterior-move",
+    "resolved_at_seal": true,
+    "modal_was": "moves_up_to_0.5_or_above (revised p >= 0.50)",
+    "actual_bucket": "moves_up_to_0.5_or_above",
+    "actual_noul": 0.97,
+    "modal_hit": true,
+    "brier": 0.2798,
+    "jev_answer_receipt": "AS SAID: noul 0.97; choice posterior_move = moves_up_to_0_5_or_above (prob 0.95); jev Brier vs established TRUE = (1-0.97)^2 = 0.0009 (r9 blind prior Brier was 0.4225)",
+    "note": "the wrong-side blind prior (0.35, wrong twice: r8 0.39 / r9 0.35) moved to 0.97 the moment the sealed receipts entered the state — repeat delta 0.00 on the preview alias"
+   },
+   {
+    "id": "P2-wave41-first-fix",
+    "resolved_at_seal": false,
+    "modal_was": "jeviter_await",
+    "standing": true,
+    "carried_distribution": {
+     "jeviter_await": 0.5,
+     "stone_pem": 0.3,
+     "arch_canon": 0.2
+    },
+    "early_resolution_check": "NO post-registration commits on any of the three mains -> P2 does NOT resolve early; STANDING with the registered distribution {jeviter_await 0.50, stone_pem 0.30, arch_canon 0.20}",
+    "jev_answer_receipt": "AS SAID: choice first_fix = jeviter_await (prob 0.96); noul per crack jeviter 0.70 / stone 0.27 / arch 0.08 (mutually-exclusive sum 1.05, receipted); score all-fixed-in-30d = 5.12 (coin-flip/lean-yes band)",
+    "note": "instrument agrees with the lane modal; keeper scores when the first fix commit lands on any of the three mains"
+   },
+   {
+    "id": "P3-pong49-prior-standing",
+    "resolved_at_seal": true,
+    "modal_was": "stays_le_0.20",
+    "actual_bucket": "stays_le_0.20",
+    "actual_noul": 0.15,
+    "modal_hit": true,
+    "brier": 0.095,
+    "jev_answer_receipt": "AS SAID: noul 0.15; choice pong_prior_move = stays_le_0_20 (prob 0.94); delta vs r9 latest prior +0.02 (0.13 -> 0.15), inside the <=0.04 repeat-noise class",
+    "note": "P3 predicts the INSTRUMENT's standing prior (resolved); the underlying issue outcome (external comment before 2026-09-29T10:04Z) remains OPEN for the keeper-armed scorer"
+   },
+   {
+    "id": "P4-structure-still-holds",
+    "resolved_at_seal": true,
+    "modal_was": "holds_all_three",
+    "actual": "holds_all_three",
+    "modal_hit": true,
+    "brier": 0.0248,
+    "components": {
+     "a_score11_rejected_400_byte_same_detail": "{\"detail\":\"Too many score levels. Must have at most 10 levels.\"}",
+     "b_score10_accepted_2xx": true,
+     "c_noul_no_confidence": {
+      "rows_checked": 6,
+      "rows_with_confidence": 0
+     },
+     "served_model": {
+      "jev-latest": "jev-1.13.0",
+      "jev-preview": "jev-1.13.0"
+     },
+     "models_list": {
+      "aliases": [
+       "jev-latest",
+       "jev-preview"
+      ],
+      "unchanged_vs_r8_r9": true
+     }
+    }
+   },
+   {
+    "id": "P5-spend",
+    "resolved_at_seal": true,
+    "modal_was": "spend <= $0.001",
+    "modal_p": 0.95,
+    "modal_hit": true,
+    "brier_binary": 0.0025,
+    "predicted_range_usd": [
+     0.0001,
+     0.0006
+    ],
+    "modal_usd_was": 0.0003,
+    "actual_usd": 0.00016964,
+    "in_range": true,
+    "modal_point_hit": false,
+    "receipt": "4 paid 2xx POSTs (cap 6), 4039 billable input tokens, 427 output tokens (free), est $0.00016964; 400 probe retried once per lane law -> two receipted 400 rows, both unbilled (no usage returned)",
+    "note": "HIT on range + mission cap; modal point missed LOW by 43% — same direction as r9 (token estimates run fat)"
+   }
+  ],
+  "mean_brier_resolved": 0.1005,
+  "modals": {
+   "resolved": 4,
+   "hit": 4,
+   "standing": 1
+  }
+ },
+ "spend": {
+  "basis": "$0.042/Mtok input (docs/models.md re-verified r9 2026-09-27); output tokens free (live OpenAPI Usage description); 400s unbilled (no usage returned — r9 assumption carried)",
+  "billable_input_tokens": 4039,
+  "output_tokens_free": 427,
+  "est_usd": 0.00016964,
+  "mission_cap_usd": 0.001,
+  "under_cap": true
+ },
+ "reasoner_asset_carry_forward": "r10 does NOT touch qthe/situations/r9_prefix_asset.txt — the reasoner's prefix experiment (SEED-38-A cache-curve, slots 1-3) stays SEALED until a DEEPSEEK_API_KEY arrives; no deepseek seat was simulated, stubbed, or voiced this round.",
+ "pong49": {
+  "window_closes_utc": "2026-09-29T10:04:00Z",
+  "scorer": "armed separately (keeper lane); NOT run by 42-c",
+  "fresh_prior_this_round": {
+   "noul": 0.15,
+   "as_said_choice": "stays_le_0_20",
+   "vs_r9": "0.13 latest / 0.14 preview -> 0.15 (+0.02, inside repeat noise)"
+  },
+  "underlying_outcome": "OPEN — external comment or not, scored after window close"
+ },
+ "honest_surprises": [
+  "Blind, JEV was wrong-side of the E-Q8 receipt twice (0.39 r8, 0.35 r9); shown the sealed census verdict, its revised posterior is 0.97 with repeat delta 0.00 — the instrument calibrates on receipts in-state, so blind-prior probes measure base rates, not evidence-weighing. Probe-design lesson carried to the scoreboard.",
+  "q2 mutually-exclusive noul sum = 1.05 (not exactly 1) — receipted as a coherence note, not scored; the choice argmax and the noul argmax agree (jeviter_await), so no contradiction is priced.",
+  "The 11-level probe 400'd twice (attempt + lane-law retry): two unbilled receipt rows instead of one — the retry ladder spends nothing but does double the error receipts.",
+  "P5 modal point missed LOW again (est $0.00017 vs modal $0.0003, −43%; r9 was −39%): usage keeps landing under the lane's fat estimates.",
+  "noul confidence-field absence held on all 6 noul answers this round (16/16 → now 22/22 wire rows across r8-r10 counting r8's 4), and the 400 detail string is byte-identical three rounds running."
+ ],
+ "open_threads": [
+  "Keeper: score P2 when the first fix commit lands on jeviter/quilt-stone/quilt-arch main (seal-check heads receipted in rows: b8c5801 / 36253a7 / 249d526, all pre-registration).",
+  "Keeper: score the pong49 underlying outcome after 2026-09-29T10:04Z (scorer armed separately); r10 rows carry the fresh instrument prior 0.15.",
+  "SCN-003 live half + reasoner prefix experiment both still gated on DEEPSEEK_API_KEY.",
+  "If a real preview build ships (served model diverges from jev-1.13.0), re-run the byte-identical repeat battery — repeat delta 0.00 this round tightens the r9 <=0.04 bound on identical state."
+ ]
+}

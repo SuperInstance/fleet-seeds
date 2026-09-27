@@ -1,0 +1,96 @@
+{
+  "task": "Tap Tavern ROUND TEN — task 42-c, lane tavern-smith (JEV seat)",
+  "registered_utc": "2026-09-27T19:44:58Z (file mtime = receipt; sandbox clock; briefing calendar date 2026-09-28 — both carried AS SAID)",
+  "registered_before_any_typesafe_traffic": true,
+  "wire_traffic_before_this_file": "NONE — zero GET/POST to api.typesafe.ai this round before this file was written. Receipt = file mtime. (GitHub API read of pong #49 comment authors for state-fact verification is not typesafe traffic.)",
+  "house_status_at_registration": {
+    "typesafe_jev": "REACHABLE (TYPESAFE_API_KEY present, len withheld)",
+    "deepseek_houses": "DEEPSEEK_API_KEY ABSENT — guest/reasoner/flash seats receipted ABSENT, not faked; zero deepseek calls will be attempted (fail-closed law: no key, no call, no spend)"
+  },
+  "call_plan_budget": {
+    "max_paid_calls": 6,
+    "planned_paid_2xx": 4,
+    "plan": [
+      {"probe_id": "r10-q1-eq9-posterior", "model": "jev-latest", "questions": ["p_float_artifact_revised (noul)", "posterior_move (choice, 4 one-sentence verdicts)"]},
+      {"probe_id": "r10-q2-wave41-cracks", "model": "jev-latest", "questions": ["first_fix (choice, 3)", "p_jeviter_first / p_stone_first / p_arch_first (noul x3)", "score_all_fixed_30d (score, exactly 10 levels)"]},
+      {"probe_id": "r10-q3-pong49-standing", "model": "jev-latest", "questions": ["p_pong49_external_comment (noul)", "pong_prior_move (choice, 3)"]},
+      {"probe_id": "r10-q1-repeat-jev-preview", "model": "jev-preview", "repeat_of": "r10-q1-eq9-posterior byte-identical (repeat-stability on q1, budget allows)"},
+      {"probe_id": "r10-fail-closed-score11", "model": "jev-latest", "expectation": "400 'Too many score levels. Must have at most 10 levels.' — unbilled error-semantics probe (P4 ceiling component); criteria length asserted === 11 in code BEFORE send (r9 off-by-intent bug class guarded)"}
+    ],
+    "free_calls": [{"probe_id": "r10-models-list", "call": "GET /v1/models", "why": "alias table freshness (P4 date-freshness receipt)"}]
+  },
+  "predictions": [
+    {
+      "id": "P1-eq9-posterior-move",
+      "claim": "When shown the sealed E-Q9 census verdict (466,932 kernel runs, E1-E10 all true, Brier 0.00662, artifact FAMILY-BOUND on A+D 90.67%), JEV's REVISED p that the float-only artifact is real moves UP from its blind r9 prior 0.35 — and clears 0.50.",
+      "outcome_variable": "answers.p_float_artifact_revised.noul on r10-q1-eq9-posterior (jev-latest)",
+      "buckets": {
+        "moves_up_to_0.5_or_above": 0.55,
+        "moves_up_but_below_0.5": 0.22,
+        "stays_within_noise_0.31_0.39": 0.15,
+        "moves_down_below_0.31": 0.08
+      },
+      "modal": "moves_up_to_0.5_or_above (revised p >= 0.50)",
+      "modal_p": 0.55,
+      "falsified_if": "fresh noul p_float_artifact_revised < 0.50 — in particular if it stays inside [0.31, 0.39] (blind-prior repeat noise band) or moves below 0.31",
+      "reasoning": "JEV is a documented literal reader and 'adversarial content moves answers'; the state now carries the outcome as sealed receipt text, which it never had in r8/r9. Against: the instrument held 0.35 blind twice and was wrong-side of the receipt both times; its repeat variance <=0.04 is measured on IDENTICAL state, and this state changes materially. 0.55 is honest: real chance it lands 0.40-0.49."
+    },
+    {
+      "id": "P2-wave41-first-fix",
+      "claim": "Of the three wave-41 cracks, the jeviter async never-await defect is fixed FIRST by its owners (first repair commit pushed to its repo main).",
+      "outcome_variable": "which of SuperInstance/jeviter (await), SuperInstance/quilt-stone (PEM-string verify), SuperInstance/quilt-arch (RFC 8785 canon) carries the first fix commit on main after 2026-09-27T19:44Z",
+      "buckets": {
+        "jeviter_await": 0.50,
+        "stone_pem": 0.30,
+        "arch_canon": 0.20
+      },
+      "modal": "jeviter_await",
+      "modal_p": 0.50,
+      "falsified_if": "the first pushed repair commit among the three repos fixes stone_pem or arch_canon; OR at seal time any of the three already carries its fix (resolves early against the modal)",
+      "reasoning": "jeviter's fix shape is the smallest diff (await/queue the emit path, one file, few lines; README already promises wrapAsync). stone_pem has consumer pressure (it bricks pong's prerun) and a known fix shape, but touches signature verification — owners move more carefully there. arch canon is the largest diff (serialization core in two languages). Standing at seal unless already fixed; keeper scores when resolved.",
+      "resolution_check_at_seal": "git ls-remote heads/main on all three repos before scoring; any new fix-typed commit after 2026-09-27T19:44Z resolves P2 early"
+    },
+    {
+      "id": "P3-pong49-prior-standing",
+      "claim": "JEV's fresh prior on the pong49 external-comment question STANDS low: the re-asked noul stays <= 0.20 (r9 reads were 0.13 latest / 0.14 preview).",
+      "outcome_variable": "answers.p_pong49_external_comment.noul on r10-q3-pong49-standing (jev-latest)",
+      "buckets": {
+        "stays_le_0.20": 0.75,
+        "moves_0.21_0.35": 0.15,
+        "moves_above_0.35": 0.10
+      },
+      "modal": "stays_le_0.20",
+      "modal_p": 0.75,
+      "falsified_if": "fresh noul p_pong49_external_comment > 0.20",
+      "reasoning": "Ground truth verified pre-registration: #49 open, 5 comments ALL SuperInstance-authored (latest 2026-09-27T19:07:41Z), zero external ever. The state JEV sees is (if anything) MORE external-comment-hostile than r8/r9 states (two more fleet-authored comments since). Expect repeat-stability; secondary numeric receipt: |fresh - 0.13| recorded against the <=0.04-class repeat-noise prior, not scored (state wording changed: window pinned to 2026-09-29T10:04Z)."
+    },
+    {
+      "id": "P4-structure-still-holds",
+      "claim": "The r8/r9 wire structure STILL holds at current date: (a) an 11-level score question is rejected 400 with detail string 'Too many score levels. Must have at most 10 levels.'; (b) a genuine 10-level score question is ACCEPTED 2xx; (c) every noul answer on every 2xx row carries NO confidence field (4 noul questions x 4 paid rows = 16 noul answers checked).",
+      "outcome_variable": "r10-fail-closed-score11 status/body + r10-q2 score question status + structural.noul_rows across all 2xx rows",
+      "buckets": {
+        "holds_all_three": 0.88,
+        "one_component_drifts": 0.10,
+        "multiple_drift": 0.02
+      },
+      "modal": "holds_all_three",
+      "modal_p": 0.88,
+      "falsified_if": "any noul answer carries a confidence field, OR 11 levels returns 2xx, OR the 10-level score returns 4xx/5xx, OR the 400 detail string changes from the r8/r9 byte-form",
+      "reasoning": "Three consecutive rounds (r8, r9-latest, r9-preview) returned the byte-identical detail string; noul-no-confidence held 8/8 wire rows in r9 and at the OpenAPI schema level. Live openapi.json re-fetch is the schema-side receipt."
+    },
+    {
+      "id": "P5-spend",
+      "claim": "Round-10 typesafe spend stays far under the mission cap: estimated billable input tokens ~5,500-9,000 across 4 paid 2xx POSTs (1 unbilled 400 probe), at the re-verified $0.042/Mtok input basis with output free.",
+      "outcome_variable": "sum of usage.input_tokens over 2xx POST /v1/systemone rows, priced at $0.042/Mtok",
+      "predicted_range_usd": [0.0001, 0.0006],
+      "modal_usd": 0.0003,
+      "mission_cap_usd": 0.001,
+      "modal": "spend <= $0.001",
+      "modal_p": 0.95,
+      "falsified_if": "estimated input-token spend exceeds $0.001 (i.e., > 23,809 billable input tokens), OR paid 2xx calls exceed the 6-call cap",
+      "reasoning": "r9 battery call (1985-char state + 6 questions) billed 1,113 input tokens; r10 states are comparable in size and question counts are 2/5/2 per call plus one repeat => ~5-8k tokens total. The 400 probe returns no usage (r9 receipted as unbilled assumption, same assumption here)."
+    }
+  ],
+  "scoring_law": "multiclass Brier = sum over buckets of (predicted_bucket_p - indicator(actual_bucket))^2 where resolved at seal; else STANDING with the registered distribution carried for the keeper. JEV's answers are sealed AS SAID (ghostwriting law) — wrong answers are recorded wrong, never repaired to fit predictions.",
+  "output_contract_mapping_note": "r9 asset's output-contract style (strict JSON, one-sentence verdicts) is mapped onto JEV's wire-natively: answer objects ARE strict JSON (no free-text lane exists on this wire — recon doctrine #9), and each 'one sentence' is carried as the selected choice criterion description, written by the lane, answered by the instrument's argmax + probabilities."
+}
