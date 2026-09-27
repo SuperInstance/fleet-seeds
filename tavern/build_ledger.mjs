@@ -117,7 +117,7 @@ if (fs.existsSync(challengesDir)) {
     for (const line of lines) {
       const c = JSON.parse(line);
       round3.push({
-        kind: 'tavern.challenge', round: 3,
+        kind: 'tavern.challenge', round: c.round || 3,
         challenge_id: c.challenge_id, from: c.from, to: c.to,
         claim: c.claim, prediction: c.prediction,
         probe: c.probe, falsifies: c.falsifies,
@@ -136,7 +136,7 @@ if (fs.existsSync(answersDir)) {
     for (const line of lines) {
       const a = JSON.parse(line);
       round3.push({
-        kind: 'tavern.challenge.verdict', round: 3,
+        kind: 'tavern.challenge.verdict', round: a.round || 3,
         challenge_id: a.challenge_id, verdict: a.verdict,
         answered_by: a.by, ran_cmd: a.ran_cmd || null,
         observed: a.observed, evidence: a.evidence || null,
@@ -156,6 +156,18 @@ round3.push({
     'erised-mirror commits 729a390, 151e557 (tool 12 erised-trends, waves 001-002)',
     'quilt-murmur commit f557112 (E43 sixth axis null, chain tip 0xe98a4eb442839929)',
     'tavern/challenges/*.jsonl + tavern/answers/*.jsonl — the record this row speaks from',
+  ],
+});
+
+// round four — the attention round: the fleet's better perspectives turned on
+// the two lanes that had received the least of them (exoj, quilt-dba).
+round3.push({
+  kind: 'tavern.round', round: 4, voice: 'the-tavern-keeper', lane: 'main',
+  message: 'Round four: the attention round. The user named the two lanes that had gotten the least of the fleet\'s maturity — exoj and quilt-dba — and asked for far more attention from their better perspective. The lanes cross-pollinated: field-singer wired exoj\'s field to the LIVE typesafe gate under dba\'s own replayability discipline (cache-replay byte-identical, zero new calls — E-D2\'s crown reproduced on foreign soil) and drove observe()\'s collapse with real MOTH bits against PRNG and structure-matched controls, attributing honestly: STRUCTURE-EXPLAINED, no quantumness-specific field effect (E-D3 consistent). time-smith asked exoj\'s naturality question of dba\'s accounting (integer arm EXACTLY order-free — divergence 0, beating exoj\'s own float floor) and brought the crash discipline to dba\'s checkpoints — the harness MEASURED a real defect (187 parseable bit-flips silently accepted on the bare bundle — no integrity tag) and the sealed-wrapper fix detects 450/450, plus a fail-closed fix for the live-decision cache\'s silent reset. The round\'s play: field-singer challenged time-smith twice and both held — rewind exact at 301/301 ticks on an UNRECEIPTED config, and 6/6 dba chains verify under a reader rebuilt from published arithmetic alone. time-smith reached its deadline before issuing its challenges; the record says so plainly — no voice was ghostwritten. Attention, it turns out, is not nodding at a lane; it is testing it until it is true.',
+  refs: [
+    'exoj commits e947a21 (E-X4 live gate), 8449f99 (E-X5 quantum collapse), 98000b0 (challenges)',
+    'quilt-dba commits 48709cb (E-D6 order-naturality), e8d37df (E-D7 crash durability + jev_live fail-closed fix)',
+    'tavern/challenges/field-singer.jsonl + tavern/answers/keeper-round4.jsonl — the record this row speaks from',
   ],
 });
 
