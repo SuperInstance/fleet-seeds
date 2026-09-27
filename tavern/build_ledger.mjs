@@ -5,6 +5,16 @@
 // record, because the tavern keeps its own chain.
 //
 // Run: node build_ledger.mjs   (rebuilds + reseals + re-verifies; idempotent)
+//
+// REPLAY LAW (born from a falsified prediction — challenge C3-chaos-smith-01,
+// round three, P4): this builder recomputes the round-one voices, but rows
+// sealed by LATER rounds with live/non-deterministic provenance (round two's
+// quantum coin and outside guest) cannot be recomputed — they are REPLAYED
+// from the ledger on disk, and only after the full candidate chain verifies.
+// A rebuild that would silently drop sealed history is a truncation, not a
+// rebuild; this builder now refuses to truncate (fail-closed) and refuses to
+// replay rows whose hashes do not verify. Idempotence is a property with a
+// receipt, not a comment.
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -12,7 +22,12 @@ import { fileURLToPath } from 'node:url';
 import { ALGS, sealChain, verifyChain } from '../../quilt-stone/stone.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const file = path.join(__dirname, 'tavern_ledger.jsonl');
 
+// ---------------------------------------------------------------------------
+// SECTION A — recomputed rows: round one (the voices speak from artifacts).
+// These strings are the sealed round-one record; byte-stable by design.
+// ---------------------------------------------------------------------------
 const rows = [
   {
     kind: 'stone.header',
@@ -54,12 +69,118 @@ const rows = [
 ];
 
 sealChain(rows, ALGS['stone-v1'].genesis, { alg: 'stone-v1' });
-const v = verifyChain(rows, undefined, { alg: 'stone-v1' });
-const file = path.join(__dirname, 'tavern_ledger.jsonl');
+
+// ---------------------------------------------------------------------------
+// SECTION B — SEALED-REPLAY: adopt rows already on disk beyond the recomputed
+// prefix, but ONLY if (1) the recomputed prefix matches disk row-for-row, and
+// (2) the full candidate chain verifies. Otherwise fail-closed.
+// ---------------------------------------------------------------------------
+let replayed = 0;
+if (fs.existsSync(file)) {
+  const disk = fs.readFileSync(file, 'utf8').trim().split('\n').map((l) => JSON.parse(l));
+  if (disk.length >= rows.length) {
+    const prefixOk = rows.every((r, i) => disk[i].row_hash === r.row_hash);
+    if (!prefixOk) {
+      console.error('REPLAY REFUSED: recomputed prefix hashes differ from disk — the round-one record was edited, or this builder no longer speaks for it. Fail-closed; nothing written.');
+      process.exit(1);
+    }
+    if (disk.length > rows.length) {
+      const candidate = rows.concat(disk.slice(rows.length));
+      const vCand = verifyChain(candidate, undefined, { alg: 'stone-v1' });
+      if (!vCand.ok) {
+        console.error('REPLAY REFUSED: rows on disk beyond the recomputed prefix fail to verify as a chain. Fail-closed; nothing written.');
+        process.exit(1);
+      }
+      replayed = candidate.length - rows.length;
+      rows.length = 0;
+      rows.push(...candidate);
+    }
+  }
+  // disk shorter than the recomputed prefix (fresh/lost ledger): the recomputed
+  // round-one record alone is written, honestly noted in the output below.
+}
+
+// ---------------------------------------------------------------------------
+// SECTION C — round three, derived FROM THE RECORD: the challenge round.
+// Challenges come from tavern/challenges/*.jsonl; verdicts from
+// tavern/answers/*.jsonl. The builder reads them; it does not invent them.
+// ---------------------------------------------------------------------------
+const challengesDir = path.join(__dirname, 'challenges');
+const answersDir = path.join(__dirname, 'answers');
+const round3 = [];
+
+if (fs.existsSync(challengesDir)) {
+  const files = fs.readdirSync(challengesDir).filter((f) => f.endsWith('.jsonl')).sort();
+  for (const f of files) {
+    const lane = f.replace(/\.jsonl$/, '');
+    const lines = fs.readFileSync(path.join(challengesDir, f), 'utf8').trim().split('\n');
+    for (const line of lines) {
+      const c = JSON.parse(line);
+      round3.push({
+        kind: 'tavern.challenge', round: 3,
+        challenge_id: c.challenge_id, from: c.from, to: c.to,
+        claim: c.claim, prediction: c.prediction,
+        probe: c.probe, falsifies: c.falsifies,
+        issued_tip: c.issued_tip || null,
+        provenance: c.note || null,
+        refs: ['tavern/challenges/' + f, 'issue lane commit ' + (c.issued_tip || 'unrecorded')],
+      });
+    }
+  }
+}
+
+if (fs.existsSync(answersDir)) {
+  const files = fs.readdirSync(answersDir).filter((f) => f.endsWith('.jsonl')).sort();
+  for (const f of files) {
+    const lines = fs.readFileSync(path.join(answersDir, f), 'utf8').trim().split('\n');
+    for (const line of lines) {
+      const a = JSON.parse(line);
+      round3.push({
+        kind: 'tavern.challenge.verdict', round: 3,
+        challenge_id: a.challenge_id, verdict: a.verdict,
+        answered_by: a.by, ran_cmd: a.ran_cmd || null,
+        observed: a.observed, evidence: a.evidence || null,
+        refs: ['tavern/answers/' + f],
+      });
+    }
+  }
+}
+round3.sort((a, b) => (a.challenge_id || '').localeCompare(b.challenge_id || '') || a.kind.localeCompare(b.kind));
+
+// round three, the keeper's own voice — spoken from the commits it names.
+round3.push({
+  kind: 'tavern.round', round: 3, voice: 'the-tavern-keeper', lane: 'main',
+  message: 'Round three: the challenge round. The user asked the agents to play and figure things out through their own challenges to each other, in a quilt — so the round was played, not narrated: every challenge is an executable, falsifiable probe with its prediction pre-registered before it runs, and every answer is a run, not an opinion. The lanes worked their own benches while they played — chaos-smith crashed yiluodi\'s journal 20 ways and its rewind held bit-exact; the mirror-keeper taught the mirror to remember waves and caught its own witness rows receipting nothing; murmur-sensor priced provenance structure first and the SIXTH detector axis died honestly (the honest roster\'s own parent-degree profile is wider than the sleeper\'s deviation). The round\'s crown jewel came from the smith challenging the HOUSE: the tavern\'s own builder was not byte-idempotent — a rebuild silently dropped round two\'s live-guest rows. The prediction was FALSIFIED, the builder now replays sealed rows only through verified chains, and the law is written above. A guest broke the house and the house got truer. That is what the challenge round is for.',
+  refs: [
+    'yiluodi commit bb0cffb (E-C2 R1 20/20, R3 600/600, probes challenge_c3_01/02)',
+    'erised-mirror commits 729a390, 151e557 (tool 12 erised-trends, waves 001-002)',
+    'quilt-murmur commit f557112 (E43 sixth axis null, chain tip 0xe98a4eb442839929)',
+    'tavern/challenges/*.jsonl + tavern/answers/*.jsonl — the record this row speaks from',
+  ],
+});
+
+// IDEMPOTENCE LAW: a row already on disk (replayed) is never emitted twice.
+// Identity is structural: challenge rows by id, verdicts by id+answerer,
+// round rows by round+voice. A rebuild may only ADD what the record gained.
+const identity = (r) =>
+  r.kind === 'tavern.challenge' ? 'C:' + r.challenge_id :
+  r.kind === 'tavern.challenge.verdict' ? 'V:' + r.challenge_id + ':' + (r.answered_by || '') :
+  r.kind === 'tavern.round' ? 'R:' + r.round + ':' + r.voice :
+  JSON.stringify(r);
+const seen = new Set(rows.map(identity));
+let emitted = 0;
+for (const r of round3) {
+  const id = identity(r);
+  if (!seen.has(id)) { rows.push(r); seen.add(id); emitted++; }
+}
+
+// ---------------------------------------------------------------------------
+// SECTION D — seal + write + re-verify from disk (the only exit that counts).
+// ---------------------------------------------------------------------------
+sealChain(rows, ALGS['stone-v1'].genesis, { alg: 'stone-v1' });
 fs.writeFileSync(file, rows.map((r) => JSON.stringify(r)).join('\n') + '\n');
 
-// re-read from disk and verify what is actually on the record
 const back = fs.readFileSync(file, 'utf8').trim().split('\n').map((l) => JSON.parse(l));
 const vDisk = verifyChain(back, undefined, { alg: 'stone-v1' });
-console.log(JSON.stringify({ rows: rows.length, tip: rows[rows.length - 1].row_hash, verifyInMemory: v, verifyFromDisk: vDisk }, null, 1));
+console.log(JSON.stringify({ rows: rows.length, replayed, emitted, tip: rows[rows.length - 1].row_hash, verifyFromDisk: vDisk }, null, 1));
 if (!vDisk.ok) process.exit(1);
