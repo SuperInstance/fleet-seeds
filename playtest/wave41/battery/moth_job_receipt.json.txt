@@ -1,0 +1,43 @@
+{"keyLoaded":true,"keyLen":27,"keyPrefix":"moth_"}
+{
+  "verdict": "JOB_OK",
+  "budget": {
+    "maxJobs": 4,
+    "maxBits": 8192,
+    "jobsUsedThisLane": 1
+  },
+  "submitted_at": "2026-09-27T18:32:01.088Z",
+  "completed_at": "2026-09-27T18:32:07.156Z",
+  "job_id": "5517f11b-b87b-4b75-ad47-908601e4fbca",
+  "engine": "graph-v1",
+  "mode": "emu",
+  "shots": 1024,
+  "backend": "aer",
+  "latency_ms": 3989,
+  "result_shape": [
+    "$schema",
+    "result"
+  ],
+  "distinct_outcomes": 20,
+  "measurements_top": [
+    {
+      "bitstring": "11100110",
+      "count": 57
+    },
+    {
+      "bitstring": "10100110",
+      "count": 43
+    },
+    {
+      "bitstring": "11100111",
+      "count": 40
+    }
+  ],
+  "bits_len": 4432,
+  "ones": 2787,
+  "balance": "0.6288",
+  "bits_sha256": "49199382bdefef9ecb522246204af3d7d39cee5717d347c84fbbf8cb033abc05",
+  "why": null,
+  "startedAt": "2026-09-27T18:32:01.087Z",
+  "endedAt": "2026-09-27T18:32:07.158Z"
+}

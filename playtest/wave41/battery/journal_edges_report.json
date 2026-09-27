@@ -1,0 +1,58 @@
+{
+  "U": {
+    "jsError": null,
+    "rounds": {
+      "appended": 3,
+      "inversionChecks": 3
+    },
+    "verdict": {
+      "ok": true,
+      "frames": 3,
+      "lines": 3,
+      "tornBytes": 0
+    },
+    "storedInvariant": null
+  },
+  "D": {
+    "jsError": null,
+    "rounds": {
+      "appended": 2,
+      "inversionChecks": 2
+    },
+    "verdict": {
+      "ok": true,
+      "frames": 2,
+      "lines": 2,
+      "tornBytes": 0
+    },
+    "storedInvariant": null
+  },
+  "S": {
+    "jsError": null,
+    "rounds": {
+      "appended": 1,
+      "inversionChecks": 1
+    },
+    "verdict": {
+      "ok": true,
+      "frames": 1,
+      "lines": 1,
+      "tornBytes": 0
+    },
+    "storedInvariant": null
+  },
+  "N": {
+    "jsError": null,
+    "rounds": {
+      "appended": 2,
+      "inversionChecks": 2
+    },
+    "verdict": {
+      "ok": true,
+      "frames": 2,
+      "lines": 2,
+      "tornBytes": 0
+    },
+    "storedInvariant": 9007199254740992
+  }
+}
