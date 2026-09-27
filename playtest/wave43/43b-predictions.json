@@ -1,0 +1,45 @@
+{
+  "task_id": "43-b",
+  "agent": "concept-miner (lane)",
+  "registered_at_utc": "2026-09-27T21:01:39Z",
+  "discipline": "All predictions below were written BEFORE any experiment run. Receipt files carry mtimes >= this file's mtime. Honest FAIL = real result.",
+  "experiments": [
+    {
+      "id": "43b-exp1-mesh-bazaar",
+      "subject": "quilt-mesh bazaar (mesh/bazaar.mjs), 2 minds x (6 solo + 4 trade gens) x 8 cands",
+      "claims": [
+        { "id": "P-M1", "claim": "bazaar exits 0 and its fnv-1a-64 receipt chain verifies from the written outputs/bazaar_receipts.json; a second identical run reproduces the SAME seal (determinism)", "falsified_if": "exit != 0, chain verify fails, or seals differ across two runs", "confidence": 0.9 },
+        { "id": "P-M2", "claim": "each mind ends with >=3 bloodline doctrines after trade while the solo control stays capped at 2 (Poly-GAN effect: trade, not time, adds blood)", "falsified_if": "any mind ends with <3 doctrines or solo control >2", "confidence": 0.85 },
+        { "id": "P-M3", "claim": "immune system weaves a FRACTION of traded patches: woven/attempted in [0.2, 0.8] (not a rubber stamp, not a wall)", "falsified_if": "woven fraction <0.2 or >0.8", "confidence": 0.7 }
+      ]
+    },
+    {
+      "id": "43b-exp2-mesh-convergence",
+      "subject": "ported Lamport/version-vector anti-entropy mesh per quilt-mesh src/lib.rs protocol sketch (their semantics, my JS port) — 3 peers, 12 set() events, 3 rooms, random gossip delays, 20 sims",
+      "claims": [
+        { "id": "P-X1", "claim": "all 3 peers converge to IDENTICAL merged cell state in every sim; median rounds-to-convergence <= 10 and max <= 30 gossip rounds", "falsified_if": "any sim fails to converge or max rounds > 30", "confidence": 0.8 },
+        { "id": "P-X2", "claim": "zero lost updates: final state at every peer is exactly the union of all 12 emitted events (idempotent dedupe by (lamport, author) holds)", "falsified_if": "any final state missing or differing from the union", "confidence": 0.9 },
+        { "id": "P-X3", "claim": "causal observation: every peer's Lamport clock at end >= max emitted event lamport", "falsified_if": "any peer clock < max event lamport", "confidence": 0.85 }
+      ]
+    },
+    {
+      "id": "43b-exp3-ropesight-fairness",
+      "subject": "ropesight method schedule (Plain Bob Minor, stage 6, one 60-row plain course via their bells/methods.mjs) vs 60-row cyclic round-robin as lane-assignment schedules",
+      "claims": [
+        { "id": "P-R1", "claim": "pair-coverage: distinct ordered adjacent pairs ('who follows whom') after 60 rows — method covers 30/30 (fallback registered: >=18/30) while round-robin covers exactly 6/30", "falsified_if": "method covers <18 or round-robin covers >6", "confidence": 0.7 },
+        { "id": "P-R2", "claim": "meeting balance over met pairs: method per-pair meeting count max/min <= 2.0 across 60 rows", "falsified_if": "max/min > 2.0", "confidence": 0.65 },
+        { "id": "P-R3", "claim": "turn-fairness (lead position gets the resource): for M=37 rows, round-robin max deviation |count - M/6| <= 1 and method <= 2 — i.e. methods buy PAIR diversity, not better turn fairness (expected honest negative for methods on this metric)", "falsified_if": "method beats round-robin on max deviation, or either exceeds its stated bound", "confidence": 0.6 },
+        { "id": "P-R4", "claim": "gap burstiness: in the method schedule every met pair's max inter-meeting gap <= 120 rows (2x course period); round-robin's 6 met pairs meet exactly every 6 rows", "falsified_if": "any method pair gap >120 or RR pair gap != 6", "confidence": 0.8 }
+      ]
+    },
+    {
+      "id": "43b-exp4-loom-generations",
+      "subject": "loom-core foundry: bin/loom.mjs run examples/witness-fnv.mjs --gens 12 --seed 7 (GAN over logic, mech voice only, zero keys)",
+      "claims": [
+        { "id": "P-L1", "claim": "exit 0, witness chain VERIFIED at end, and EVERY crowned elite is born-correct (passed the forge's adversarial probes) — validity of crowned logic = 100%", "falsified_if": "exit != 0, chain fails, or any crowned elite fails the oracle", "confidence": 0.9 },
+        { "id": "P-L2", "claim": "archive saturation is temporal: all distinct crowned families appear by gen 4 (DRIFT.md's early-crowns finding reproduces on a fresh 12-gen run)", "falsified_if": "a new family is crowned after gen 4", "confidence": 0.75 },
+        { "id": "P-L3", "claim": "mimic pressure is the bulk of the population: mimic count >= 60 of ~96 candidates over 12 gens", "falsified_if": "mimics < 60", "confidence": 0.7 }
+      ]
+    }
+  ]
+}

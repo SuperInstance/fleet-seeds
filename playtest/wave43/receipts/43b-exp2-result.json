@@ -1,0 +1,33 @@
+{
+  "experiment": "43b-exp2-mesh-convergence",
+  "subject": "quilt-mesh src/lib.rs protocol port (Lamport + version-vector anti-entropy), 3 peers, 12 events, 3 rooms, 20 sims, zero coordinator",
+  "vv_sound": {
+    "converged": 20,
+    "sims": 20,
+    "medianRounds": 2,
+    "maxRounds": 2,
+    "unionOkAll": true,
+    "clocksOkReal": true,
+    "distinctFinalDigests": 20,
+    "eventsOnWireTotal": 1103,
+    "eventsOnWirePerSimMean": 55.1
+  },
+  "scalar_ack": {
+    "converged": 0,
+    "note": "UNSOUND: scalar per-peer acked clock skips events authored by third peers with lamport <= acked clock — permanent divergence (honest FAIL finding)",
+    "eventsOnWireTotal": 1414
+  },
+  "faithful": {
+    "converged": 20,
+    "note": "versions written for self only => pending_for() almost always full dump (sketch gap)",
+    "eventsOnWireTotal": 1742,
+    "eventsOnWirePerSimMean": 87.1
+  },
+  "wireCompressionX_vv_vs_faithful": 1.58,
+  "sketch_conflict_gap": {
+    "contendedCellsProbe": "shared.a/shared.b written by 2+ authors each",
+    "simsWhereLamportTieObserved": 0,
+    "simsWhereResolvedValueDiverged": 0,
+    "note": "sketch resolves cell value by max lamport; same-lamport ties from different authors resolve insertion-order-dependently => value divergence even when event sets converge"
+  }
+}

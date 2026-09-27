@@ -1,0 +1,35 @@
+{
+  "experiment": "43b-exp3-ropesight-fairness",
+  "subject": "Plain Bob Minor 60-row course (ropesight bells/methods.mjs) vs 60-row cyclic round-robin as lane-assignment schedules, n=6",
+  "method": {
+    "firstRow": "123456",
+    "lastRow": "124365",
+    "distinctPairs": 30,
+    "maxPairs": 30,
+    "pairRatio": 1,
+    "pairMin": 10,
+    "pairMax": 10,
+    "maxInternalGap": 9,
+    "gapMaxPair": "1>2",
+    "leadDevAt37": 0.8333,
+    "leadDevAt60": 0
+  },
+  "roundRobin": {
+    "firstRow": "123456",
+    "lastRow": "612345",
+    "distinctPairs": 6,
+    "maxPairs": 30,
+    "pairRatio": 1,
+    "pairMin": 50,
+    "pairMax": 50,
+    "maxInternalGap": 1,
+    "gapMaxPair": "0>1",
+    "leadDevAt37": 0.8333,
+    "leadDevAt60": 0,
+    "distinctPairsNote": "RR pairs are fixed neighbors: n pairs forever"
+  },
+  "coverageX": 5,
+  "methodRowsDistinct": true,
+  "methodClosed": true,
+  "factsPeriod": 60
+}

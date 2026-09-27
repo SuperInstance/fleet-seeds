@@ -1,0 +1,43 @@
+{
+  "experiment": "43b-exp1-mesh-bazaar",
+  "subject": "quilt-mesh mesh/bazaar.mjs — Poly-GAN bazaar: two doctrinal minds breed solo, trade crowned logic, receiver-side immune system decides weaves",
+  "registered_predictions": "download/playtest-wave43/43b-predictions.json (sha256 5a977cbf972c65c7..., mtime 2026-09-27T21:02Z) — written BEFORE these runs",
+  "runs": [
+    {
+      "run": 1,
+      "exit": 0,
+      "seal": "0x6cee228aa60e3d64",
+      "summary": {
+        "mindA": "seed 4242, doctrine bigint_fold+word_pairs, elites 3, diversity 0.39738, record 1",
+        "mindB": "seed 9001, doctrine word_pairs+hilo32, elites 2, diversity 0.59483, record 1",
+        "tradeEdges": 7,
+        "woven": 3,
+        "mimicCaught": 4,
+        "wovenFraction": 0.4286,
+        "bloodlineCoverage": "A: 2 -> 3 (hilo32 woven); B: 2 -> 3 (bigint_fold woven); solo control capped at 2"
+      }
+    },
+    {
+      "run": 2,
+      "exit": 0,
+      "seal": "0x6cee228aa60e3d64",
+      "determinism": "receipts byte-identical except the wall-clock 'date' field; fnv seal identical across runs"
+    }
+  ],
+  "verdicts": {
+    "P-M1": "PASS — exit 0 both runs; seal 0x6cee228aa60e3d64 identical across runs (only difference: wall-clock date field); receipt chain seals and verifies",
+    "P-M2": "PASS — both minds end at 3 bloodline doctrines; solo control capped at 2 (trade, not time, adds blood)",
+    "P-M3": "PASS — woven fraction 3/7 = 0.43 in [0.2, 0.8]; the immune system caught all 4 structurally-mimic patches (struct=0) and wove the 3 novel ones"
+  },
+  "crosswalk_receipt": {
+    "command": "node mesh/crosswalk.mjs",
+    "exit": 0,
+    "result": "ASCII agreement byte-exact (canary == loom on shared domain), unicode domain boundary DIVERGE documented per-row, bred elites judged: 4/4 ascii EXACT utf-8 divergent (code-unit domain, by contract), receipt seal 0x4edcab78da9a87ea, MESH HOLDS on the shared domain"
+  },
+  "doctrine_drift_receipt": {
+    "command": "node doctrine_drift.mjs",
+    "exit": 0,
+    "result": "18 hash-chained rows, chain tip 71d5c4ac; foundry entropy NARROWS (all 10 targets crown in first half, H_late=0); bazaar woven rate 0.429"
+  },
+  "defect_finding": "package.json 'test' script points at test/smoke.mjs which DOES NOT EXIST in quilt-mesh (npm test fails ERR_MODULE_NOT_FOUND requireStack) — the repo absorbed loom-core's package.json shape during extraction; real defect, P-level MINOR, upstream-fixable in one line"
+}

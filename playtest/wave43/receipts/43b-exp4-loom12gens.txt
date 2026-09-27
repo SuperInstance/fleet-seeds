@@ -1,0 +1,10 @@
+══ LOOM — witness_fnv ══
+spec: Given {text} (ASCII string), compute FNV-1a 64-bit: h=0xcbf29ce484222325; for each char code c in order: h ^= c; h *= 0x100000001b3 (mod 2^64). Return h as lowercase hex, zero-padded to 16 chars.
+generations=12  probes=36  candidates=96
+elites=4  families=3  record=1  diversity=0.48676
+caught=0  mimic=92  crowns=4  systwo=0
+witness chain: VERIFIED (108 links)
+  crown: family=bigint_fold hash=1a40c09143 novelty=1 voice=mech gen=1
+  crown: family=hilo32 hash=3d237a99ef novelty=0.84888 voice=mech gen=1
+  crown: family=word_pairs hash=9a04940bda novelty=0.84472 voice=mech gen=1
+  crown: family=bigint_fold hash=aa28e37705 novelty=0.67713 voice=mech gen=1
