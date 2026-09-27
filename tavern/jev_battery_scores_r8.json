@@ -1,0 +1,56 @@
+{
+  "wave": "37/38-seal",
+  "scored_at": "2026-09-27T11:05:00Z",
+  "scoring_rule": "Brier: (outcome - p)^2, pre-declared in jev_calibration_battery_r8.json before outcomes existed",
+  "resolved": [
+    {
+      "question": "p(E-Q8 establishes the float-only artifact)",
+      "outcome": true,
+      "outcome_evidence": "qthe @ 4b1fea4: float HOLDS / fixed MOVES at both exact-zero families (2/3 primary moth-chosen, 8/5 secondary), first divergence tick 1, one cell, |dd|=1, zero UNEXPLAINED, EQ8-D1 PASS, chain 17 links tip 78646460",
+      "jev_p": 0.39,
+      "jev_brier": 0.3721,
+      "lane_p": 0.66,
+      "lane_brier": 0.1156,
+      "note": "both underconfident; JEV badly so"
+    },
+    {
+      "question": "p(SCN-001 claim survives all 6 GAN-chamber rounds per V3)",
+      "outcome": false,
+      "outcome_evidence": "docs/SCN-001-VERDICT.md: claim v0 dies — forger's own R1 concession, R4 nonce-suppression replay kills v1, R6 equivocation replay kills v2; V3 honest pass explicitly withheld ('a priced kill, not an honest pass')",
+      "jev_p": 0.27,
+      "jev_brier": 0.0729,
+      "lane_p": 0.35,
+      "lane_brier": 0.1225,
+      "note": "JEV's best call of the battery — it saw the claim was cornered before the chamber opened"
+    },
+    {
+      "question": "p(the guest STANDS on C5')",
+      "outcome": true,
+      "outcome_evidence": "tavern round 8, 37-g: guest stands ('C5' was spec'd pre-run and never retrofitted onto dead C5')",
+      "jev_p": 0.28,
+      "jev_brier": 0.5184,
+      "lane_p": 0.6,
+      "lane_brier": 0.16,
+      "note": "JEV's worst call; the guest priced JEV's own gutting score (0.51) as an upper bound from a self-contradicting instrument (choice-stand 0.53 vs noul-stand 0.28, vendor-documented invariant break)"
+    }
+  ],
+  "pending": [
+    {
+      "question": "p(pong-quilt #49 non-SuperInstance comment within 48h)",
+      "jev_p": 0.15,
+      "lane_p": 0.07,
+      "window_closes": "2026-09-29T10:04:00Z",
+      "watch_state_at_registration": "zero foreign replies on all threads since wave 32"
+    }
+  ],
+  "running_brier_3_resolved": {
+    "jev": 0.3211,
+    "lane": 0.1327
+  },
+  "calibration_read": "mixed and honest: JEV wins the claim-survival call outright (0.0729) — its System-One prior read the chamber's adversarial structure better than the lane did; it loses the two calls where it underconfided in outcomes the receipts already pointed at. The lane beats JEV on aggregate but not per-question. Both instruments stay seated; the battery re-runs at round 9 with the pong window resolution.",
+  "typed_seat_outcome": {
+    "jev_choice": "stand (0.53, conf 0.29)",
+    "jev_score": "0.51 (52% gutted / 45% dented)",
+    "outcome": "stand — choice correct, score unresolvable (no ground truth for gutting degree), guest disputes the gutting magnitude via the instrument's own invariant break"
+  }
+}
