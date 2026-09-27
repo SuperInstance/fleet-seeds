@@ -1,0 +1,209 @@
+{
+ "wave": "37-g",
+ "round": 8,
+ "lane": "guest-smith",
+ "sealed_at": "2026-09-27T10:38:07Z",
+ "predictions_file": {
+  "path": "scripts/37g-round8-predictions.json",
+  "registered_before_any_call": true
+ },
+ "prefixes": {
+  "r6_sealed_asset": {
+   "sha256": "777938e243d34ef4667c1d52a89ee3fe30e41529804746c7b71deccbc0866e39",
+   "chars": 5025,
+   "used_by": "guest r8-q1..q3 (warm)"
+  },
+  "r8_fresh_curve_asset": {
+   "sha256": "e81cf8128af5f6877fcf0170818739e91d82d2103fd451a36e78db002eddd8fd",
+   "chars": 2492,
+   "used_by": "SEED-38-A warmup slots 1-4 (byte-identical, same user text)"
+  }
+ },
+ "guest": {
+  "call_ids": [
+   "r8-q1-scoreboard-move",
+   "r8-q2-eq8-move-eq9",
+   "r8-q3-jev-seat"
+  ],
+  "q1_stance": "stand",
+  "q1_one_liner": "C5' was spec'd pre-run and never retrofitted onto dead C5; E-Q7 killed L1, not C5'. Nothing in receipts (1)-(4) touches injector identity, cost, or source.",
+  "q2_moved": false,
+  "q2_eq9": {
+   "sentence": "Run the same 6x3 two-writer S3 live-read probe across the full uncoupled exact-zero family set (3acc+2r=0, 5acc+8r=0, 10acc+7r=0) with sigma swept over both rational and irrational-adjacent Q32.32 values, counting float-vs-fixed divergence cells per family.",
+   "falsifier": "If any swept sigma produces a float-vs-fixed divergence OUTSIDE an exact-zero family, or the fixed kernel itself holds at an exact-zero family point, the artifact is not family-specific and the fixed plane's faithfulness claim dies."
+  },
+  "q2_stance_delta": "Stands exactly as priced. E-Q8 confirmed the r7-q3 float-artifact stance: float 3*double(2/3)=2.0 exact-collapse -> hold, fixed 2S+1 -> move, first divergence tick 1, one cell, |dd|=1, zero unexplained; my registered falsifier (float also fires) did not fire. Confirmation is not movement.",
+  "q3_response": "I accept the seat pricing as honest: C5 died on E-Q5's 17/17 repairTick=null and C4 died on E-Q7's 5/64 parityLive under my own r7-q2 rule, so my surviving standing is rightly gutted to 0.51 and I will not re-litigate either. But JEV's own battery is internally broken — choice-stand 0.53 against noul-stand 0.28 on the same outcome is the vendor-documented invariant break, so its 0.51 is a score from a self-contradicting instrument and should be read as an upper bound, not a measurement. What actually survives is E-Q8: my r7-q3 float-only artifact is CONFIRMED at both exact-zero families (2/3: float 2.0 holds vs fixed 2S+1 moves; 8/5: float 8.0 holds vs fixed 8S+2 moves), first divergence tick 1, one cell, |dd|=1, zero unexplained, and my registered falsifier never fired."
+ },
+ "seed_38_a": {
+  "name": "reasoner warm-up curve (37-e falsifiable seed 38-A)",
+  "design": "4 deepseek-reasoner calls, ONE byte-identical fresh r8 prefix (sha e81cf8128af5f687), identical user text, prompt_cache_hit_tokens measured per call",
+  "falsified_if": "cache-hit stays 0 across all 4",
+  "curve_table": [
+   {
+    "slot": 1,
+    "call_id": "r8-reasoner-warmup-1",
+    "sealed": true,
+    "prompt_tokens": 867,
+    "cache_hit_tokens": 0,
+    "cache_miss_tokens": 867,
+    "completion_tokens": 1818,
+    "reasoning_tokens": 1750,
+    "served": "deepseek-flash",
+    "predicted_hit_gt_0_p": 0.2,
+    "hit_prediction_correct": true,
+    "brier": 0.04000000000000001
+   },
+   {
+    "slot": 2,
+    "call_id": "r8-reasoner-warmup-2",
+    "sealed": true,
+    "prompt_tokens": 867,
+    "cache_hit_tokens": 640,
+    "cache_miss_tokens": 227,
+    "completion_tokens": 595,
+    "reasoning_tokens": 526,
+    "served": "deepseek-flash",
+    "predicted_hit_gt_0_p": 0.6,
+    "hit_prediction_correct": true,
+    "brier": 0.16000000000000003
+   },
+   {
+    "slot": 3,
+    "call_id": "r8-reasoner-warmup-3",
+    "sealed": true,
+    "prompt_tokens": 867,
+    "cache_hit_tokens": 640,
+    "cache_miss_tokens": 227,
+    "completion_tokens": 664,
+    "reasoning_tokens": 578,
+    "served": "deepseek-flash",
+    "predicted_hit_gt_0_p": 0.65,
+    "hit_prediction_correct": true,
+    "brier": 0.12249999999999998
+   },
+   {
+    "slot": 4,
+    "call_id": "r8-reasoner-warmup-4",
+    "sealed": true,
+    "prompt_tokens": 867,
+    "cache_hit_tokens": 640,
+    "cache_miss_tokens": 227,
+    "completion_tokens": 204,
+    "reasoning_tokens": 140,
+    "served": "deepseek-flash",
+    "predicted_hit_gt_0_p": 0.65,
+    "hit_prediction_correct": true,
+    "brier": 0.12249999999999998
+   }
+  ],
+  "verdict": "CONFIRMED — the reasoner warms its OWN byte-identical prefix within one session"
+ },
+ "cold_sanity": {
+  "call_id": "r8-flash-cold-sanity",
+  "agreement": {
+   "cold_stance": "stand",
+   "warm_stance": "stand",
+   "agree": true,
+   "cold_reason": "C5' was spec'd before any run and never retrofitted onto dead C5, so it remains the last standing item; E-Q7 falsified C4 and E-Q8 established the float-only artifact with determinism PASS, leaving no basis to withdraw or revise. JEV's 0.53 vs noul 0.28 favors holding."
+  },
+  "verdict": "AGREE — cold iterator matches the warm guest on the q1 scoreboard move (stand)"
+ },
+ "predictions_scorecard": {
+  "entries": [
+   {
+    "id": "P1-guest-q1-stance",
+    "actual": "stand",
+    "modal_was": "stand",
+    "modal_hit": true,
+    "brier": 0.33499999999999996
+   },
+   {
+    "id": "P2-guest-q2-moved",
+    "actual": false,
+    "modal_was": false,
+    "modal_hit": true,
+    "brier": 0.12249999999999998
+   },
+   {
+    "id": "P3-guest-q2-eq9-class",
+    "actual_class": "family_lattice_7_10",
+    "modal_was": "family_lattice_7_10",
+    "modal_hit": true,
+    "brier": 0.22000000000000006
+   },
+   {
+    "id": "P4-guest-q3-jev-response",
+    "actual_class": "dispute_via_invariant_break",
+    "modal_was": "dispute_via_invariant_break",
+    "modal_hit": true,
+    "brier": 0.315
+   }
+  ],
+  "curve": {
+   "id": "P5-curve-per-call-hits",
+   "verdict_actual": "warming_confirmed",
+   "modal_was": "warming_confirmed_at_least_one_of_slots_2_4_hits",
+   "modal_hit": true,
+   "per_call_brier": [
+    0.04000000000000001,
+    0.16000000000000003,
+    0.12249999999999998,
+    0.12249999999999998
+   ],
+   "verdict_brier": 0.0625
+  },
+  "cold_agreement": {
+   "id": "P6-cold-flash-agreement",
+   "actual": "agree",
+   "modal_was": "agree",
+   "modal_hit": true,
+   "brier": 0.16000000000000003
+  },
+  "spend": {
+   "id": "P7-spend",
+   "actual_usd": 0.003479,
+   "predicted_range": [
+    0.004,
+    0.014
+   ],
+   "in_range": false
+  }
+ },
+ "spend": {
+  "price_basis_declared": "off_peak",
+  "source": "https://api-docs.deepseek.com/quick_start/pricing fetched 2026-09-27 (round-6 declared basis)",
+  "served_note": "round-6 receipted basis, reused rounds 7-8; r7 wire served deepseek-flash for every call incl. reasoner",
+  "totals": {
+   "calls": 8,
+   "attempts_total": 8,
+   "attempts_this_run": 0,
+   "sealed_this_run": 0,
+   "prompt_tokens": 11167,
+   "prompt_cache_hit_tokens": 5760,
+   "prompt_cache_miss_tokens": 5407,
+   "completion_tokens": 4417,
+   "reasoning_tokens": 2994,
+   "ms_total": 1366,
+   "usd_total": 0.0034785299999999996
+  },
+  "usd": {
+   "hit": 0.00001728,
+   "miss": 0.00081105,
+   "out": 0.0026501999999999997,
+   "total": 0.0034785299999999996
+  },
+  "budget": {
+   "max_calls": 8,
+   "attempts_total": 8,
+   "attempts_this_run": 0,
+   "sealed_rows_this_run": 0,
+   "sealed_rows_total": 8,
+   "note": "8/8 rows sealed on the first run (zero failures, zero retries); later runs were resume-safe re-seals only"
+  }
+ },
+ "artifacts": {
+  "rows": "tavern/answers/deepseek-round8.jsonl (mirror: qthe/situations/guest_rows_r8.jsonl)",
+  "econ_mirror": "qthe/situations/cache_economics_r8.json"
+ }
+}
