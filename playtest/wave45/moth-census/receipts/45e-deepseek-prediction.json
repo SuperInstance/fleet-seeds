@@ -1,0 +1,88 @@
+{
+  "instrument": "lane 45-e calibration probe (deepseek-reasoner, blind)",
+  "ts": "2026-09-27T23:18:41.643Z",
+  "endpoint": "POST https://api.deepseek.com/chat/completions",
+  "attempts": [
+    {
+      "model": "deepseek-reasoner",
+      "max_tokens": 1000,
+      "httpStatus": 200,
+      "usage": {
+        "prompt_tokens": 557,
+        "completion_tokens": 1000,
+        "total_tokens": 1557,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1000
+        },
+        "prompt_cache_hit_tokens": 384,
+        "prompt_cache_miss_tokens": 173
+      },
+      "note": "brief cap; all completion budget consumed by reasoning_tokens — content empty (instrument-FAIL)"
+    },
+    {
+      "model": "deepseek-reasoner",
+      "max_tokens": 2000,
+      "httpStatus": 200,
+      "usage": {
+        "prompt_tokens": 557,
+        "completion_tokens": 2000,
+        "total_tokens": 2557,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2000
+        },
+        "prompt_cache_hit_tokens": 384,
+        "prompt_cache_miss_tokens": 173
+      },
+      "note": "single honest retry (2x, cents) — reasoning_tokens again exhausted the cap, content empty (instrument-FAIL #2)"
+    },
+    {
+      "model": "deepseek-chat",
+      "max_tokens": 1000,
+      "httpStatus": 200,
+      "usage": {
+        "prompt_tokens": 555,
+        "completion_tokens": 145,
+        "total_tokens": 700,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 555
+      },
+      "note": "fallback at the brief cap on the non-reasoning model after 2 reasoner FAILs; json_object response_format"
+    }
+  ],
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 555,
+    "completion_tokens": 145,
+    "total_tokens": 700,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 555
+  },
+  "pricingNote": "deepseek-reasoner list pricing at call time (verify at dashboard): input ~$0.55/M tokens, output ~$2.19/M tokens; receipt records actual usage tokens — cost = usage x rate",
+  "ms": 17257,
+  "prediction": {
+    "best_engine": "comet-qrng-v1",
+    "predicted_whitened_balance": {
+      "comet-qrng-v1": 0.5,
+      "graph-v1": 0.375,
+      "coin-toss-v1": null
+    },
+    "top20_truncation_engine": "graph-v1",
+    "confidence": 0.55,
+    "reasoning": "comet-qrng-v1 has certified high-entropy raw bits; von Neumann + SHA-256 whitening yields near-0.5 balance. graph-v1's top-20 truncation biases its count-expanded stream and may survive partial debiasing. coin-toss-v1 returns no bit payload, so its balance is undefined/N-A."
+  },
+  "predictionRaw": "",
+  "keyMaterial": "none",
+  "priorRunsNote": "HONEST LEDGER: this successful run was attempt #3 overall. Run#1 (reasoner@1000tok) and Run#2 (reasoner@1000 + reasoner@2000) each ended with completion_tokens fully consumed by reasoning_tokens and ZERO final content — instrument-FAILs receipted in the wave-45-e worklog (total deepseek usage across 3 runs: 4814 tokens, ~<$0.01). This file receipts the successful run only."
+}

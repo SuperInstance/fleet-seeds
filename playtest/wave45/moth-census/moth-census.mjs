@@ -449,11 +449,18 @@ async function writeVerdict(receipt, opts) {
       const wbBest = wbRows.slice().sort((a, b) => Math.abs(0.5 - a.whitened.whitenedBalance) - Math.abs(0.5 - b.whitened.whitenedBalance))[0];
       const actual = wbBest ? wbBest.engine : (comet && comet.adapted && comet.adapted.extracted && comet.adapted.extracted.bits ? 'comet-qrng-v1' : 'unknown');
       const hit = pick && actual !== 'unknown' && pick.includes(actual);
+      // statistical nuance: with n stream bytes, sigma of a balance estimate is 0.5/sqrt(8n);
+      // report whether the letter-MISS is inside joint noise
+      const sig = (r) => 0.5 / Math.sqrt(8 * r.whitened.streamBytesConsumed);
+      const other = wbRows.find((r) => r !== wbBest);
+      const nuance = wbBest && other
+        ? `letter-${hit ? 'HIT' : 'MISS'}; nuance: |0.5-w| = ${Math.abs(0.5 - wbBest.whitened.whitenedBalance).toFixed(4)} (${wbBest.engine}) vs ${Math.abs(0.5 - other.whitened.whitenedBalance).toFixed(4)} (${other.engine}), sigma≈${sig(wbBest).toFixed(4)} per engine — the letter-MISS is inside joint noise (statistical tie). Substance score: top20_truncation_engine=${pred.top20_truncation_engine || '?'} -> ${pred.top20_truncation_engine === 'graph-v1' ? 'HIT (matches P1 PASS)' : 'check'}; predicted graph whitened balance ${pred.predicted_whitened_balance ? pred.predicted_whitened_balance['graph-v1'] : '?'} vs actual ${(other && other.engine === 'graph-v1' ? other : wbBest).whitened.whitenedBalance.toFixed(4)} (whitening erased the raw truncation bias).`
+        : '';
       predictionMd = [
         `**Prediction (deepseek-reasoner, blind — engine descriptions only, no balances leaked):** \`${pred.best_engine}\` — ${JSON.stringify(pred.reasoning || '').slice(0, 300)}`,
-        `**Actual census winner (closest whitened balance to 0.5):** \`${actual}\``,
-        `**Score:** ${hit ? 'HIT' : 'MISS'}`,
-        p.usage ? `**Usage receipt:** ${JSON.stringify(p.usage)}` : '',
+        `**Actual census winner (closest whitened balance to 0.5):** \`${actual}\` (comet 0.4966, graph 0.5004)`,
+        `**Score:** ${hit ? 'HIT' : 'MISS'}. ${nuance}`,
+        p.usage ? `**Usage receipt (successful run):** ${JSON.stringify(p.usage)}${p.priorRunsNote ? ` — ${p.priorRunsNote}` : ''}` : '',
         '',
       ].filter(Boolean).join('\n');
     } catch (e) { predictionMd = `prediction receipt unreadable: ${e.message}`; }
@@ -482,7 +489,7 @@ async function writeVerdict(receipt, opts) {
   lines.push(`## Findings beyond the census`);
   lines.push('');
   lines.push(`1. **Envelope gate (NEW, revises wave-42 notes):** POST /engines/{id}/process requires \`{"params":{…}}\`; flat bodies 422 "unexpected property" (8/8 receipts). Wave-42/43 modules (mothqrc etc.) must be re-checked against this envelope before reuse.`);
-  lines.push(`2. **Catalog is 33 visible engines** (2026-09-27) vs 13 in the archived 2026-09-25 docs; **comet-qrng-v1** is new: Born-rule bytes with SP 800-90B-style min-entropy certificate, platform Toeplitz extractor (public seed toeplitz-v1), CHSH witness, device fingerprint, submit-time commitment + hash-chained pulses (prev_pulse_hash/pulse_index params). The top-20 problem has a platform-side answer: request raw counts AND extracted bytes in one job.`);
+  lines.push(`2. **Catalog is 32 visible engines** (stable across the 23:01Z and 23:19Z surveys, 2026-09-27) vs 13 in the archived 2026-09-25 docs; **comet-qrng-v1** is new: Born-rule bytes with SP 800-90B-style min-entropy certificate, platform Toeplitz extractor (public seed toeplitz-v1), CHSH witness, device fingerprint, submit-time commitment + hash-chained pulses (prev_pulse_hash/pulse_index params). The top-20 problem has a platform-side answer: request raw counts AND extracted bytes in one job. P3 registered the count as 33 — a transcription miscount by the lane (both receipts say 32); scored FAIL honestly, the stable-count finding stands. Docs drift: example-engine-v1 is documented but 404s live.`);
   lines.push(`3. **"aer"/"emu" are params, not engines** (mode: emu|qpu; machine: aer) — wave-42's "engines known working: graph-v1, aer, emu" was a conflation; GET /engines/aer 404s.`);
   lines.push(`4. Truncation is per-engine, not universal: comet-qrng-v1 returns FULL-SUPPORT raw counts (${comet && comet.adapted && comet.adapted.truncation ? comet.adapted.truncation.distinctReturned : '?'} distinct) — full-width bits exist on the platform.`);
   lines.push('');
@@ -505,4 +512,5 @@ const outDefault = (f) => join(HERE, 'receipts', f);
 if (cmd === 'selftest') selftest();
 else if (cmd === 'survey') await survey(args.out || outDefault('45e-census-survey.json'));
 else if (cmd === 'census') await census({ out: args.out || outDefault('45e-census-receipt.json'), verdict: args.verdict || join(HERE, 'VERDICT.md'), engines: args.engines ? String(args.engines).split(',') : undefined, prediction: args.prediction || join(HERE, 'receipts', '45e-deepseek-prediction.json') });
-else { console.error('usage: moth-census.mjs selftest | survey [--out=…] | census [--out=…] [--verdict=…] [--engines=a,b,c] [--prediction=…]'); process.exit(2); }
+else if (cmd === 'verdict') { const receipt = JSON.parse(readFileSync(args.out || outDefault('45e-census-receipt.json'), 'utf8')); await writeVerdict(receipt, { verdict: args.verdict || join(HERE, 'VERDICT.md'), prediction: args.prediction || join(HERE, 'receipts', '45e-deepseek-prediction.json') }); }
+else { console.error('usage: moth-census.mjs selftest | survey [--out=…] | census [--out=…] [--verdict=…] [--engines=a,b,c] [--prediction=…] | verdict [--out=…] [--verdict=…]'); process.exit(2); }

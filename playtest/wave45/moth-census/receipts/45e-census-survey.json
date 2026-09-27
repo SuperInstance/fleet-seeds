@@ -1,0 +1,350 @@
+{
+  "instrument": "playtest/wave45/moth-census/moth-census.mjs survey",
+  "ts": "2026-09-27T23:19:12.265Z",
+  "base": "https://api.mothquantum.com/api/v1",
+  "budget": {
+    "cap": 8,
+    "used": 6,
+    "spacingMs": 550
+  },
+  "auth": "Authorization: Bearer *** (MOTH_KEY runtime-only; one unauthenticated probe marked; no key material in receipt)",
+  "rows": [
+    {
+      "endpoint": "/me",
+      "auth": true,
+      "note": "auth identity",
+      "status": 200,
+      "ms": 1129,
+      "shape": {
+        "objectKeys": [
+          "$schema",
+          "id",
+          "email",
+          "role",
+          "platform_role",
+          "features",
+          "organizations"
+        ]
+      }
+    },
+    {
+      "endpoint": "/engines",
+      "auth": true,
+      "note": "engine catalog (primary)",
+      "status": 200,
+      "ms": 3519,
+      "shape": {
+        "arrayLen": 32
+      },
+      "ids": [
+        {
+          "id": "blur-core-v1"
+        },
+        {
+          "id": "blur-midi-v1"
+        },
+        {
+          "id": "blur-v0"
+        },
+        {
+          "id": "blur-v1"
+        },
+        {
+          "id": "coin-toss-v1"
+        },
+        {
+          "id": "comet-qrng-v1"
+        },
+        {
+          "id": "deep-fryer-v1"
+        },
+        {
+          "id": "demo-callback-v1"
+        },
+        {
+          "id": "entanglement-shader-v0"
+        },
+        {
+          "id": "entanglement-shader-v1"
+        },
+        {
+          "id": "graph-v1"
+        },
+        {
+          "id": "labyrinth-v1"
+        },
+        {
+          "id": "otoc-echo-v1"
+        },
+        {
+          "id": "qdrive-api-v1"
+        },
+        {
+          "id": "qpixl-v1"
+        },
+        {
+          "id": "qrc-audio-v1"
+        },
+        {
+          "id": "qrc-gen-v2"
+        },
+        {
+          "id": "qrc-image-v1"
+        },
+        {
+          "id": "qrc-midi-v1"
+        },
+        {
+          "id": "qrc-train-v2"
+        },
+        {
+          "id": "retrocausal-echo-v1"
+        },
+        {
+          "id": "tamagotchi-v0"
+        },
+        {
+          "id": "tamagotchi-v1"
+        },
+        {
+          "id": "telablur-v1"
+        },
+        {
+          "id": "tessa-image-v1"
+        },
+        {
+          "id": "tessa-image-v1-test"
+        },
+        {
+          "id": "test-binary-v1"
+        },
+        {
+          "id": "test-engine-error-v1"
+        },
+        {
+          "id": "test-engine-fail-v1"
+        },
+        {
+          "id": "test-engine-submission-v1"
+        },
+        {
+          "id": "test-engine-v1"
+        },
+        {
+          "id": "tomography-api-v2"
+        }
+      ]
+    },
+    {
+      "endpoint": "/engines?limit=100",
+      "auth": true,
+      "note": "catalog pagination variant",
+      "status": 200,
+      "ms": 3103,
+      "shape": {
+        "arrayLen": 32
+      },
+      "ids": [
+        {
+          "id": "blur-core-v1"
+        },
+        {
+          "id": "blur-midi-v1"
+        },
+        {
+          "id": "blur-v0"
+        },
+        {
+          "id": "blur-v1"
+        },
+        {
+          "id": "coin-toss-v1"
+        },
+        {
+          "id": "comet-qrng-v1"
+        },
+        {
+          "id": "deep-fryer-v1"
+        },
+        {
+          "id": "demo-callback-v1"
+        },
+        {
+          "id": "entanglement-shader-v0"
+        },
+        {
+          "id": "entanglement-shader-v1"
+        },
+        {
+          "id": "graph-v1"
+        },
+        {
+          "id": "labyrinth-v1"
+        },
+        {
+          "id": "otoc-echo-v1"
+        },
+        {
+          "id": "qdrive-api-v1"
+        },
+        {
+          "id": "qpixl-v1"
+        },
+        {
+          "id": "qrc-audio-v1"
+        },
+        {
+          "id": "qrc-gen-v2"
+        },
+        {
+          "id": "qrc-image-v1"
+        },
+        {
+          "id": "qrc-midi-v1"
+        },
+        {
+          "id": "qrc-train-v2"
+        },
+        {
+          "id": "retrocausal-echo-v1"
+        },
+        {
+          "id": "tamagotchi-v0"
+        },
+        {
+          "id": "tamagotchi-v1"
+        },
+        {
+          "id": "telablur-v1"
+        },
+        {
+          "id": "tessa-image-v1"
+        },
+        {
+          "id": "tessa-image-v1-test"
+        },
+        {
+          "id": "test-binary-v1"
+        },
+        {
+          "id": "test-engine-error-v1"
+        },
+        {
+          "id": "test-engine-fail-v1"
+        },
+        {
+          "id": "test-engine-submission-v1"
+        },
+        {
+          "id": "test-engine-v1"
+        },
+        {
+          "id": "tomography-api-v2"
+        }
+      ]
+    },
+    {
+      "endpoint": "/engines",
+      "auth": false,
+      "note": "catalog WITHOUT auth (public?)",
+      "status": 401,
+      "ms": 236,
+      "shape": {
+        "objectKeys": [
+          "$schema",
+          "title",
+          "status",
+          "detail"
+        ]
+      }
+    },
+    {
+      "endpoint": "/jobs?limit=5",
+      "auth": true,
+      "note": "job history newest-first",
+      "status": 200,
+      "ms": 369,
+      "shape": {
+        "arrayLen": 5
+      },
+      "ids": [
+        {
+          "id": "comet-qrng-v1",
+          "status": "queued"
+        },
+        {
+          "id": "comet-qrng-v1",
+          "status": "completed"
+        },
+        {
+          "id": "comet-qrng-v1",
+          "status": "completed"
+        },
+        {
+          "id": "comet-qrng-v1",
+          "status": "queued"
+        },
+        {
+          "id": "coin-toss-v1",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "endpoint": "/openapi.json",
+      "auth": true,
+      "note": "machine-readable spec",
+      "status": 200,
+      "ms": 1689,
+      "shape": {
+        "openapiPaths": 63
+      }
+    }
+  ],
+  "catalog": {
+    "count": 32,
+    "expectedCountP3": 33,
+    "matchesP3": false,
+    "archivedDocsEngines": [
+      "blur-midi-v1",
+      "coin-toss-v1",
+      "deep-fryer-v1",
+      "entanglement-shader-v1",
+      "example-engine-v1",
+      "qpixl-v1",
+      "qrc-gen-v2",
+      "qrc-train-v2",
+      "blur-v1",
+      "blur-core-v1",
+      "graph-v1",
+      "labyrinth-v1",
+      "telablur-v1"
+    ],
+    "missingFromLive": [
+      "example-engine-v1"
+    ],
+    "newSinceArchivedDocs": [
+      "blur-v0",
+      "comet-qrng-v1",
+      "demo-callback-v1",
+      "entanglement-shader-v0",
+      "otoc-echo-v1",
+      "qdrive-api-v1",
+      "qrc-audio-v1",
+      "qrc-image-v1",
+      "qrc-midi-v1",
+      "retrocausal-echo-v1",
+      "tamagotchi-v0",
+      "tamagotchi-v1",
+      "tessa-image-v1",
+      "tessa-image-v1-test",
+      "test-binary-v1",
+      "test-engine-error-v1",
+      "test-engine-fail-v1",
+      "test-engine-submission-v1",
+      "test-engine-v1",
+      "tomography-api-v2"
+    ]
+  },
+  "keyMaterial": "none"
+}
