@@ -1,0 +1,59 @@
+{
+  "schema": "fleet-seeds/rekor-submit-ledger/1.0",
+  "lane": "40-a transparency-smith",
+  "rekor": "https://rekor.sigstore.dev (v1 log live: GET /api/v1/log = 200 at 2026-09-27T17:38Z)",
+  "artifact": {
+    "path": "embassy/vc-envelope/stone-checkpoint.vc.json",
+    "bytes": 1904,
+    "sha256": "94aa82cdde3a717dc9aa68729d9ef96a398daa39d2d83204edea26f5ba75b1e5",
+    "kind": ["VerifiableCredential", "StoneCheckpointCredential"],
+    "issuer": "did:key:z6MkjkY3QBSzMXq7c1pKEiEqtBFES7Yus4nq2Y88rHMx8Jjr"
+  },
+  "entry_kind": "hashedrekord",
+  "apiVersion": "0.0.1",
+  "signature_construction": "Ed25519 over the 32-byte sha256 DIGEST BYTES (spec: sigstore/rekor@904bbccc pkg/types/hashedrekord/v0.0.1/entry.go:272 — sigObj.Verify(nil, keyObj, options.WithDigest(decoded), options.WithCryptoSignerOpts(alg)))",
+  "wire_attempts": [
+    {
+      "n": 1,
+      "at": "2026-09-27T17:37:00.345Z",
+      "method": "POST /api/v1/entries",
+      "status": 404,
+      "class": "ROUTING ERROR (lane's wrong path — rekor v1 spec path is /api/v1/log/entries; NOT a log rejection of the entry)",
+      "response_body": "{\"code\":404,\"message\":\"path /api/v1/entries was not found\"}",
+      "ed25519_pub_pem_sha256": "a9d5eec1fdfbe98710081f1ff2f3b4670a7f574b4860cb2ac327ece1d7e34d0e"
+    },
+    {
+      "n": 2,
+      "at": "2026-09-27T17:37:00.345Z (same run, immediate retry)",
+      "method": "POST /api/v1/entries",
+      "status": 404,
+      "class": "ROUTING ERROR (same wrong path)",
+      "response_body": "{\"code\":404,\"message\":\"path /api/v1/entries was not found\"}"
+    },
+    {
+      "n": 3,
+      "at": "2026-09-27T17:38:00.534Z",
+      "method": "POST /api/v1/log/entries (spec path)",
+      "status": 400,
+      "class": "REJECTED BY LOG — exact body receipted",
+      "response_body": "{\"code\":400,\"message\":\"error processing entry: verifying signature: unsupported hash algorithm: \\\"SHA-256\\\" not in [SHA-512]\"}",
+      "ed25519_pub_pem_sha256": "99ab1594cbe2f0fe3bb5383d49bd719f864a2b6c79598110592f62f1296d881c",
+      "local_selfverify_before_send": true
+    },
+    {
+      "n": 4,
+      "at": "2026-09-27T17:38:00.534Z (same run, immediate retry)",
+      "method": "POST /api/v1/log/entries (spec path)",
+      "status": 400,
+      "class": "REJECTED BY LOG — identical body, deterministic gate",
+      "response_body": "{\"code\":400,\"message\":\"error processing entry: verifying signature: unsupported hash algorithm: \\\"SHA-256\\\" not in [SHA-512]\"}"
+    }
+  ],
+  "local_dry_runs_after_stop": [
+    { "at": "2026-09-27T17:41Z", "config": "ed25519+sha256", "local_selfverify": true, "network": "none" },
+    { "at": "2026-09-27T17:41Z", "config": "ed25519+sha512", "local_selfverify": true, "network": "none" },
+    { "at": "2026-09-27T17:41:42.738Z", "config": "ecdsa-p256+sha256", "local_selfverify": true, "network": "none" }
+  ],
+  "submit_attempt_budget": "2 real submits to the spec path (lane law max 2) — both rejected; attempts n1/n2 were routing 404s on the lane's wrong path, receipted for completeness",
+  "final": "REJECTED_AT_VERIFIER_GATE — honest deliverable per lane task; resubmit path armed in 40a-rekor-submit.mjs (--alg=sha512 | --key=ecdsa), see rekor-attestation.md"
+}

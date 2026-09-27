@@ -1,0 +1,286 @@
+{
+ "schema": "fleet-seeds/transparency-kat/2.0",
+ "lane": "40-a transparency-smith",
+ "generated_at": "2026-09-27T17:33:01.365Z",
+ "reader_sha256": "f76ef6256a6176a51d3ce8573aaba272956ad7585da24bca33843c499fe9f394",
+ "vector_sources": [
+  {
+   "key": "merkleTreeTest",
+   "label": "google/certificate-transparency @ 0fe5116f cpp/merkletree/merkle_tree_test.cc",
+   "sha256": "2a49413fc09b5b325c1acc5d9574c6d4ec8c45b399bb415de07b1132dac0d91a"
+  },
+  {
+   "key": "treeHasherTest",
+   "label": "google/certificate-transparency @ 0fe5116f cpp/merkletree/tree_hasher_test.cc",
+   "sha256": "b12e2aba20e36e4cda26bfb447ba864996a2ee9c273687dbae0e77bd0e241f5e"
+  },
+  {
+   "key": "rfc6962Go",
+   "label": "transparency-dev/merkle @ fbbcd741 rfc6962/rfc6962_test.go",
+   "sha256": "6237bd8f8131c49832575d4ce03395a62f98a6555080783b7ca5d1fb06a83678"
+  }
+ ],
+ "log_list_url": "https://www.gstatic.com/ct/log_list/v3/log_list.json",
+ "log_list_sha256": "22f7fc4aca3508ef96d6460a4a4f753324a718d36ab36e6963936ad94b6e26d3",
+ "log_attempts": [
+  {
+   "description": "Google 'Argon2026h2' log",
+   "url": "https://ct.googleapis.com/logs/us1/argon2026h2/",
+   "steps": {
+    "sth": {
+     "tree_size": 3315675370,
+     "timestamp": 1790530320024,
+     "root": "9254c0167556655a3c32b41f38a68827b496f8d0f4aaa3d257250376514d7174",
+     "sig_ok": true
+    },
+    "entry": {
+     "index": 3315675369,
+     "bytes": 628,
+     "shape": "leaf_input (trillian/shim dialect)",
+     "leaf_hash": "cd3481161bf32ecda1ec899319d6c5d2384a7ea24e195e9253d2859ad26647b0"
+    },
+    "inclusion": {
+     "leaf_index": 3315675369,
+     "tree_size": 3315675370,
+     "path_len": 14,
+     "ok": true,
+     "computed_root": "9254c0167556655a3c32b41f38a68827b496f8d0f4aaa3d257250376514d7174"
+    },
+    "consistency": {
+     "from": 3315675370,
+     "to": 3315675586,
+     "ok": true,
+     "second_sig_ok": true
+    }
+   }
+  }
+ ],
+ "chosen_log": {
+  "description": "Google 'Argon2026h2' log",
+  "url": "https://ct.googleapis.com/logs/us1/argon2026h2/",
+  "key_sha256": "325a2637b9628d7051190d8e1a502741771eed23bd6b2f8a85bd796490381db4",
+  "sth": {
+   "tree_size": 3315675370,
+   "timestamp": 1790530320024,
+   "root_hex": "9254c0167556655a3c32b41f38a68827b496f8d0f4aaa3d257250376514d7174",
+   "signature_ok": true
+  },
+  "entry": {
+   "index": 3315675369,
+   "bytes": 628,
+   "shape": "leaf_input (trillian/shim dialect)",
+   "leaf_hash": "cd3481161bf32ecda1ec899319d6c5d2384a7ea24e195e9253d2859ad26647b0"
+  },
+  "inclusion": {
+   "leaf_index": 3315675369,
+   "tree_size": 3315675370,
+   "path_len": 14,
+   "ok": true,
+   "computed_root": "9254c0167556655a3c32b41f38a68827b496f8d0f4aaa3d257250376514d7174"
+  },
+  "consistency": {
+   "from": 3315675370,
+   "to": 3315675586,
+   "ok": true,
+   "second_sig_ok": true
+  }
+ },
+ "totals": {
+  "pass": 32,
+  "fail": 0
+ },
+ "rows": [
+  {
+   "block": "A1",
+   "name": "pinned vector source: google/certificate-transparency @ 0fe5116f cpp/merkletree/merkle_tree_test.cc",
+   "ok": true,
+   "detail": "http 200 sha256 2a49413fc09b5b32…"
+  },
+  {
+   "block": "A1",
+   "name": "pinned vector source: google/certificate-transparency @ 0fe5116f cpp/merkletree/tree_hasher_test.cc",
+   "ok": true,
+   "detail": "http 200 sha256 b12e2aba20e36e4c…"
+  },
+  {
+   "block": "A1",
+   "name": "pinned vector source: transparency-dev/merkle @ fbbcd741 rfc6962/rfc6962_test.go",
+   "ok": true,
+   "detail": "http 200 sha256 6237bd8f8131c498…"
+  },
+  {
+   "block": "A2",
+   "name": "tree_hasher_test.cc: empty/leaf/node vectors + collision laws",
+   "ok": true,
+   "detail": "emptyTree=e3b0c44298fc… leaf(∅)=6e340b9cffb3… leaf(00)=96a296d224f2… leaf(10111213)=3bfb960453eb… node=1a378704c17d… collisions ok"
+  },
+  {
+   "block": "A3",
+   "name": "rfc6962_test.go: leaf \"L123456\" + node N123||N456",
+   "ok": true,
+   "detail": "leaf=395aa064aa4c… node=aa217fe888e4…"
+  },
+  {
+   "block": "A4",
+   "name": "merkle_tree_test.cc kSHA256Roots[0..7] via refMTH(kInputs)",
+   "ok": true,
+   "detail": "0 mismatches; n=8:5dc9da79…"
+  },
+  {
+   "block": "A5a",
+   "name": "merkle_tree_test.cc kSHA256Paths verify (4 non-trivial paths)",
+   "ok": true,
+   "detail": "0 failures"
+  },
+  {
+   "block": "A5b",
+   "name": "negative: wrong leaf index (leaf+1) must FAIL",
+   "ok": true,
+   "detail": "rejected"
+  },
+  {
+   "block": "A5b",
+   "name": "negative: wrong tree size (x2) must FAIL",
+   "ok": true,
+   "detail": "rejected"
+  },
+  {
+   "block": "A5b",
+   "name": "negative: wrong tree size (÷2) must FAIL",
+   "ok": true,
+   "detail": "rejected"
+  },
+  {
+   "block": "A5b",
+   "name": "negative: wrong leaf data must FAIL",
+   "ok": true,
+   "detail": "rejected"
+  },
+  {
+   "block": "A5b",
+   "name": "negative: wrong root (empty-tree hash) must FAIL",
+   "ok": true,
+   "detail": "rejected"
+  },
+  {
+   "block": "A5b",
+   "name": "negative: tampered path element 0 must FAIL",
+   "ok": true,
+   "detail": "rejected"
+  },
+  {
+   "block": "A5b",
+   "name": "negative: tampered path element 1 must FAIL",
+   "ok": true,
+   "detail": "rejected"
+  },
+  {
+   "block": "A5b",
+   "name": "negative: tampered path element 2 must FAIL",
+   "ok": true,
+   "detail": "rejected"
+  },
+  {
+   "block": "A5b",
+   "name": "negative: node appended to path must FAIL",
+   "ok": true,
+   "detail": "rejected"
+  },
+  {
+   "block": "A5b",
+   "name": "negative: node removed from path must FAIL",
+   "ok": true,
+   "detail": "rejected"
+  },
+  {
+   "block": "A6",
+   "name": "strictness: {1,1} empty proof rejected by contract",
+   "ok": true,
+   "detail": "need 0 < first(1) < second(1)"
+  },
+  {
+   "block": "A6",
+   "name": "merkle_tree_test.cc consistency {1,8} (3 nodes)",
+   "ok": true,
+   "detail": "ok"
+  },
+  {
+   "block": "A6",
+   "name": "merkle_tree_test.cc consistency {6,8} (3 nodes)",
+   "ok": true,
+   "detail": "ok"
+  },
+  {
+   "block": "A6",
+   "name": "merkle_tree_test.cc consistency {2,5} (2 nodes)",
+   "ok": true,
+   "detail": "ok"
+  },
+  {
+   "block": "A7a",
+   "name": "inclusion verifier vs reference tree (n=1..40, all m): 820 cases",
+   "ok": true,
+   "detail": "0 disagreements"
+  },
+  {
+   "block": "A7b",
+   "name": "consistency verifier vs reference SUBPROOF: 232 (m,n) pairs",
+   "ok": true,
+   "detail": "0 disagreements"
+  },
+  {
+   "block": "A7c",
+   "name": "tamper controls: bad path / short path / bad leaf / OOB index / wrong root / long path all FAIL",
+   "ok": true,
+   "detail": "t1..t6 = true,true,true,true,true,true"
+  },
+  {
+   "block": "A7d",
+   "name": "C2SP checkpoint parse (bare / sig-line / object form / reject bad size)",
+   "ok": true,
+   "detail": "size=42 root=798d52d1c4e8… bad=line 2 is not decimal tree siz"
+  },
+  {
+   "block": "A7e",
+   "name": "ed25519 checkpoint signature roundtrip (sign ok / tamper rejected)",
+   "ok": true,
+   "detail": "hintOK=true tamperRej=true"
+  },
+  {
+   "block": "A7f",
+   "name": "ECDSA-P256 TreeHeadSignature roundtrip (TLS-framed sig ok / tampered size rejected / bare-DER fallback)",
+   "ok": true,
+   "detail": "blobLen=50 framed=true tamperRej=true"
+  },
+  {
+   "block": "B0",
+   "name": "v3 log list fetched; usable (classic) logs counted",
+   "ok": true,
+   "detail": "http 200 sha256 22f7fc4aca3508ef… usable=21 classic=26 tiled=38"
+  },
+  {
+   "block": "B1",
+   "name": "STH signature verifies [Google 'Argon2026h2' log]",
+   "ok": true,
+   "detail": "size=3315675370 ts=1790530320024 root=9254c0167556655a3c32b41f38a68827b496f8d0f4aaa3d257250376514d7174"
+  },
+  {
+   "block": "B2",
+   "name": "newest entry fetched (index 3315675369)",
+   "ok": true,
+   "detail": "shape=leaf_input (trillian/shim dialect) 628B leafHash=cd3481161bf32ecd…"
+  },
+  {
+   "block": "B3",
+   "name": "inclusion proof verifies against STH root [Google 'Argon2026h2' log]",
+   "ok": true,
+   "detail": "leaf_index=3315675369 size=3315675370 path=14 computedRoot=9254c0167556655a3c32b41f38a68827b496f8d0f4aaa3d257250376514d7174"
+  },
+  {
+   "block": "B4",
+   "name": "consistency proof verifies [Google 'Argon2026h2' log]",
+   "ok": true,
+   "detail": "3315675370→3315675586 fold=true sig2=true"
+  }
+ ]
+}
