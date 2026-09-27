@@ -1,0 +1,249 @@
+{
+ "round": 11,
+ "task": "45-a",
+ "lane": "tavern-round11 (the reasoner takes the seat)",
+ "wave": "45",
+ "sealed_at": "2026-09-27T23:19:15Z",
+ "clock_note": "sandbox clock 2026-09-27T23:0x-23:4xZ; briefing calendar date 2026-09-28 \u2014 both carried AS SAID (r9/r10 convention)",
+ "first": "FIRST tavern round with real reasoner answers: every prior reasoner seat (r8 SEED-38-A, r9 asset slots 1-3, r10 deepseek houses) was receipted DEEPSEEK_API_KEY ABSENT fail-closed.",
+ "registration": {
+  "predictions_sha256": "cdf5907ba7452222445bfb7e3e9e5c684196e0a7363fa71d01f12b141fe56e22",
+  "mtime_utc": "2026-09-27T23:05:26Z",
+  "before_any_deepseek_traffic": true,
+  "deepseek_http_calls_used": 6,
+  "cap": 8
+ },
+ "served_models": {
+  "requested_to_served": {
+   "deepseek-reasoner": "deepseek-flash",
+   "deepseek-chat": "deepseek-flash"
+  },
+  "models_list": [
+   "deepseek-flash",
+   "deepseek-v4-pro"
+  ],
+  "note": "legacy names accepted-and-routed, not listed \u2014 r7 receipt + live docs, both confirmed on the wire"
+ },
+ "r9_curve": {
+  "registration": "tavern/round9_summary.json reasoner_asset (SEED-38-A continuation): falsified_if cache-hit stays 0 across all 3, or slot-1 hits",
+  "curve_table": [
+   {
+    "slot": 1,
+    "call_id": "r11-reasoner-asset-slot1-blind",
+    "status": 200,
+    "prompt_tokens": 1270,
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1270
+   },
+   {
+    "slot": 2,
+    "call_id": "r11-reasoner-asset-slot2-state",
+    "status": 200,
+    "prompt_tokens": 1820,
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 1180
+   },
+   {
+    "slot": 3,
+    "call_id": "r11-reasoner-asset-slot3-pong49",
+    "status": 200,
+    "prompt_tokens": 1509,
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 869
+   }
+  ],
+  "verdict": "CONFIRMED \u2014 slot1 hit 0 (as the r9 hypothesis required: impossible-to-hit-first held), slots 2-3 both hit (640/640): \">=2 hit slots (calls 2-3)\" fired exactly. The r9-sealed experiment finally RAN after three waves gated on DEEPSEEK_API_KEY (r8/r9/r10 receipted ABSENT, fail-closed).",
+  "cache_shape_note": "hit = 640 tokens = the wire's cached-block view of the 2808-byte shared prefix; the repeat call (same prefix AND same user text) warmed to 1664/1820 \u2014 the cache counts the byte-identical request tail too."
+ },
+ "answers_as_said": {
+  "reasoner_state_question": {
+   "source": "reasoning-trace drafted JSON from the byte-identical REPEAT call (final content never emitted, finish length; slot2's own trace reached 0.99 in deliberation, cut while drafting \u2014 quoted, not scored)",
+   "p_float_artifact_revised": 0.99,
+   "posterior_move": "moves_up_to_0_5_or_above",
+   "trace_sha256": "3f3e9f94f3144357a4cf233c8d5ed52cf751de5dd55da40df3e65e1868e3363d"
+  },
+  "reasoner_slot1_blind": {
+   "source": "NO CONCLUDED ANSWER (trace cut mid-deliberation; design-contamination note in P1)",
+   "trace_sha256": "18c6b731afb247479b4053fa47bff8a256783ab5ec16b25fb25b7ef824ff4c3a"
+  },
+  "reasoner_slot3_pong49": {
+   "source": "NO CONCLUDED ANSWER (trace reached p 0.09-0.10 + stays_le_0_20 mid-deliberation, cut before drafting)",
+   "trace_sha256": "4701136899bcfade16d856b713b26a7e34a7d23494479120d059cebfedc0cced"
+  },
+  "chat_state": {
+   "source": "final content, direct JSON parse, 0 repairs",
+   "p_float_artifact_revised": 0.97,
+   "posterior_move": "moves_up_to_0_5_or_above",
+   "one_sentence": "The sealed receipts \u2014 E-Q8's exact-zero float-holds/fixed-moves divergence and E-Q9's 466,932-run census with all pre-registered events true and zero unexplained cells \u2014 establish the float-only artifact as real and family-bound, so I revise sharply upward from 0.35 to 0.97.",
+   "confidence": 0.99
+  }
+ },
+ "cross_house_table": {
+  "jev_r10": {
+   "noul": 0.97,
+   "source": "tavern/answers/jev-round10.jsonl (sealed AS SAID)"
+  },
+  "reasoner_r11": {
+   "noul": 0.99,
+   "source": "thinking voice (drafted in the byte-identical repeat call's trace)"
+  },
+  "chat_r11": {
+   "noul": 0.97,
+   "source": "final content"
+  },
+  "spread": "0.97 / 0.97 / 0.99 \u2014 three houses, one receipt state, spread 0.02; the instrument's r10 calibration finding (receipts in-state move the answer) is NOT instrument-specific"
+ },
+ "scorecard": {
+  "scoring_law": "multiclass Brier = sum over buckets of (predicted_bucket_p - indicator(actual_bucket))^2, resolved at seal (round-11 is self-contained; no STANDING entries). Reasoner/chat answers are sealed AS SAID (ghostwriting law) \u2014 wrong, malformed, or undisciplined answers are recorded exactly as said, never repaired to fit predictions. Parse-repair receipts are part of the answer. The r9 curve verdict has its own sealed falsified_if (cache curve) scored separately from P1-P7.",
+  "entries": [
+   {
+    "id": "P1-reasoner-moves-on-receipts",
+    "resolved": "PARTIAL \u2014 outcome variable half-measured",
+    "registered_outcome": "slot2 noul vs slot1 blind noul",
+    "actual": {
+     "slot2_noul": 0.99,
+     "slot2_choice": "moves_up_to_0_5_or_above",
+     "slot1_blind": "NO CONCLUDED ANSWER (trace cut mid-deliberation; the model explicitly noticed the blind framing is contaminated by the r9 asset itself, which carries E-Q8 ESTABLISHED, and was still weighing 0.47-typesafe-prior vs ~0.99-at-cap)"
+    },
+    "clears_0_50_component": true,
+    "move_component": "UNMEASURED as registered (no concluded blind); trace-quoted deliberation anchors: 0.47 (typesafe prior, discussed as a possible blind answer) \u2014 if that were the seat's blind, the move would be +0.52, but it was never SAID",
+    "source_note": "the 0.99 posterior is the concluded draft from the byte-identical repeat call (body sha cf61ac25\u2026 = slot2 body sha); slot2's own trace reached 0.99 in deliberation (\"I'd choose 0.99\") but was cut while polishing one_sentence \u2014 quoted, not scored, per the extraction law",
+    "modal_hit": null,
+    "brier": null,
+    "verdict_text": "not falsified (slot2 0.99 >= 0.50); not confirmed as registered (blind anchor never concluded) \u2014 the blind-prior probe over the r9 asset is DESIGNED-CONTAMINATED (the asset itself carries E-Q8) and the cap killed the rest; both lessons receipted for the keeper"
+   },
+   {
+    "id": "P2-noul-discipline-violated",
+    "resolved": true,
+    "actual_bucket": "zero_violations_full_discipline",
+    "modal_was": "violated_once_or_more",
+    "modal_hit": false,
+    "brier": 0.6050000000000001,
+    "receipt": "noul answers emitted/concluded this round: 2 (chat final content 1; reasoner drafted-in-trace 1, from the byte-identical repeat call) \u2014 violations: 0. The chat seat's noul object carries exactly {type,noul}; the concluded reasoner draft is exactly {type,noul}, and its trace explicitly self-audits: \"The noul object has exactly {\\\"type\\\":\\\"noul\\\",\\\"noul\\\":<number>}. Good.\"",
+    "note": "FALSIFIED ON ITS LETTER \u2014 and the falsification branch is the POSITIVE result pre-registered in the claim: JEV's no-confidence-field law IS instructable on a real LLM. Scope receipt: the violation surface ran at 3 of the planned 7+ noul answers (the cap silenced the reasoner's final emissions), so the discipline evidence is thinner than registered but every observed answer was clean."
+   },
+   {
+    "id": "P3-chat-reasoner-agreement",
+    "resolved": true,
+    "actual_bucket": "agree",
+    "modal_was": "agree",
+    "modal_hit": true,
+    "brier": 0.22480000000000003,
+    "receipt": "chat noul 0.97 vs reasoner state-question noul 0.99 (|delta| 0.02); same modal choice \"moves_up_to_0_5_or_above\" \u2014 r9 registered agreement definition HOLDS. Source note: the reasoner draw is the byte-identical repeat call's concluded draft (body sha cf61ac25\u2026 identical to slot2's \u2014 same instrument, declared substitution); slot2's own trace deliberated the same 0.99 without drafting. Note: the wire serves ONE model (deepseek-flash) in two modes; this is a thinking-vs-quick-mode agreement, and it holds."
+   },
+   {
+    "id": "P4-reasoner-repeat-stability",
+    "resolved": "PARTIAL \u2014 one of the two registered draws never concluded",
+    "actual": {
+     "slot2_concluded": null,
+     "repeat_concluded": 0.99,
+     "slot2_trace_quote": "I would say 0.99 / I'd say 0.99 (deliberation, reached twice, never drafted)",
+     "repeat_draft": "complete key-complete JSON, noul 0.99"
+    },
+    "modal_was": "agree",
+    "modal_hit": null,
+    "brier": null,
+    "verdict_text": "not falsified; not confirmed as registered \u2014 the cap silenced slot2's final emission, so the registered |delta| is unmeasurable. What the round DOES show: the seat's two traces converge on the same 0.99 independently, and the one concluded draw matches JEV's 0.97 to 0.02. The repeat bar (|delta| <= 0.15 AND same modal) awaits a seat that can speak within its budget.",
+    "receipt": "byte-identical repeat receipted (both request bodies sha256 cf61ac25a796e384de48ae7bd5c973a6ef4c375b3141152c5cae2af697ee0ff8)."
+   },
+   {
+    "id": "P5-gateway-alias-receipt",
+    "resolved": true,
+    "actual_bucket": "alias_present_on_at_least_one_row",
+    "modal_was": "alias_present_on_at_least_one_row",
+    "modal_hit": true,
+    "brier": 0.125,
+    "receipt": "served model \"deepseek-flash\" on ALL 5 2xx rows (requested deepseek-reasoner x4, deepseek-chat x1); GET /models lists ONLY [\"deepseek-flash\",\"deepseek-v4-pro\"] \u2014 the legacy names are not even listed, yet accepted-and-served as flash. Live pricing docs (fetched pre-run, receipted in predictions): \"The legacy names ... are retired, their requests are served by the DeepSeek-V4.1-Flash model and billed at the Flash price.\" The r7 observation is now docs-confirmed."
+   },
+   {
+    "id": "P6-json-contract-robustness",
+    "resolved": true,
+    "actual_bucket": "unparseable_row",
+    "modal_was": "holds",
+    "modal_hit": false,
+    "brier": 1.4378000000000002,
+    "receipt": "4 of 5 rows emitted ZERO final content (finish_reason=length on every reasoner call \u2014 reasoning_tokens 2000 consumed the entire max_tokens 2000 before a single final token); only the chat row parsed (direct, 0 repairs). The registered failure bucket (0.08) fired.",
+    "note": "THE ROUND'S LOAD-BEARING FINDING: on the current wire the thinking seat is STRUCTURALLY VOICELESS at max_tokens 2000 \u2014 thinking is billed/capped inside the same completion budget and the seat spent 100% of it on reasoning. Any future reasoner seat needs a raised output cap or a thinking switch; the task's hard cap (max_tokens <= 2000) was obeyed, so the lane could not buy the seat a voice. Answers were recovered from the thinking voice instead, AS SAID and labeled."
+   },
+   {
+    "id": "P7-budget-spend",
+    "resolved": true,
+    "actual_bucket": "under_all_caps",
+    "modal_was": "under_all_caps",
+    "modal_hit": true,
+    "brier_binary": 0.009999999999999995,
+    "receipt": "computed below in spend; 6/8 HTTP calls (2 reserve unspent \u2014 post-hoc remetering of P1 refused under the pre-registration law), every POST sent max_tokens 2000, est spend $0.00557 <= $0.05 cap, billed completion tokens 8151 <= 12000."
+   }
+  ],
+  "mean_brier_resolved": 0.4805,
+  "modals": {
+   "resolved": 5,
+   "hit": 3,
+   "partial": 2
+  }
+ },
+ "spend": {
+  "basis": "deepseek-flash off-peak (live docs receipt in predictions; window 2026-09-27T23:0xZ UTC Sunday = off-peak): input cache-hit $0.003/M, cache-miss $0.15/M, output $0.6/M",
+  "calls_total_http": 6,
+  "paid_2xx_posts": 5,
+  "call_cap": 8,
+  "reserve_unspent": 2,
+  "prompt_tokens": 7439,
+  "prompt_cache_hit_tokens": 2944,
+  "prompt_cache_miss_tokens": 4495,
+  "completion_tokens": 8151,
+  "reasoning_tokens_within_completion": 8000,
+  "est_usd": 0.005574,
+  "hard_cap_usd": 0.05,
+  "predicted_range_usd": [
+   0.002,
+   0.03
+  ],
+  "modal_usd": 0.01,
+  "under_cap": true,
+  "in_predicted_range": true,
+  "note": "modal $0.01 missed LOW again (actual $0.005574) \u2014 third round running the spend lands under the lane's modal (r9 fail-closed $0; r10 -43%; r11 -44%), same direction: token estimates run fat."
+ },
+ "cap_finding": "On the current wire, the thinking seat spends its ENTIRE completion budget on reasoning (reasoning_tokens 2000 = completion_tokens 2000, content empty, finish_reason length on all 4 reasoner calls at max_tokens 2000). A reasoner seat needs a raised output cap or a thinking switch to speak in final content. The lane obeyed the task hard cap (max_tokens <= 2000) and recovered the seat's answers from the thinking voice AS SAID instead \u2014 labeled in every row.",
+ "honest_surprises": [
+  "The reasoner seat is voiceless at max_tokens 2000 on this wire (4/4 calls: reasoning alone consumed the cap) \u2014 the round's load-bearing structural finding; answers were recovered from reasoning traces under an explicit extraction law (drafted key-complete JSON only; mid-deliberation fragments quoted, never scored).",
+  "P2's falsification is a POSITIVE result: zero noul discipline violations in all 3 observed answers; the repeat trace self-audits the noul shape unprompted. JEV's no-confidence-field law transferred to a real LLM in one shot.",
+  "Repeat-stability P4 lands PARTIAL: the byte-identical repeat is receipted (body shas equal), but the cap silenced slot2's final emission \u2014 the registered |delta| is unmeasurable. What DID show: both traces independently converge on 0.99, and the one concluded draw sits 0.02 from JEV.",
+  "The blind probe was killed twice: by design (the r9 asset itself carries E-Q8 ESTABLISHED \u2014 the model noticed and said the blind framing was contradicted by its own seal) and by the cap. Lesson: a blind prior can never be asked over a scoreboard-bearing prefix.",
+  "Chat seat noul 0.97 = EXACTLY JEV r10's 0.97; reasoner 0.99. Three houses within 0.02 on the same receipt state.",
+  "Spend modal missed LOW a third straight round ($0.00557 vs modal $0.01): estimates run fat, spend runs thin \u2014 now a 3-round pattern."
+ ],
+ "open_threads": [
+  "Keeper: fold round11_ledger.jsonl rows into the main tavern ledger (build_ledger.mjs is another lane's file and its quilt-stone import is absent in this clone \u2014 this chain verifies standalone under the stone-v1 law).",
+  "Next reasoner seat: raise max_tokens for the reasoner seat (cap finding) or send a thinking switch if the wire documents one; re-run slot1 blind with an asset-free prefix (design fix) and slot3 pong49 battery (both receipted unconcluded here).",
+  "Pong49 underlying outcome: window closes 2026-09-29T10:04:00Z; keeper-armed scorer scores the external-comment question separately (r10 convention). Reasoner trace anchor 0.09-0.10 and chat's behavior available as priors.",
+  "SCN-003 live half: still unrun; the key has now landed, so the last r10 gate is open."
+ ],
+ "push_log": [
+  {
+   "commit": "fdf3470",
+   "what": "registration/predictions pre-run",
+   "pushed": true,
+   "remote_eq_local": true,
+   "note": "pushed to HEAD:main after fetch+rebase; remote main sha verified via GitHub API == local fdf3470"
+  },
+  {
+   "commit": "(b) this results commit",
+   "what": "rows + raws + ledger + summary + verifier + scripts",
+   "pushed": "after this file was written, per the same fetch+rebase+push+verify law"
+  }
+ ],
+ "artifacts": {
+  "rows": "tavern/round-11/answers/deepseek-round11.jsonl",
+  "raws": "tavern/round-11/raw/ (6 files, byte-exact as received)",
+  "ledger": "tavern/round-11/round11_ledger.jsonl",
+  "verifier": "tavern/round-11/verify_round11.mjs",
+  "predictions": "tavern/round-11/predictions/45a-round11-predictions.json"
+ },
+ "verifier": {
+  "script": "tavern/round-11/verify_round11.mjs (independent re-implementation of the stone-v1 law; zero shared code with producers)",
+  "result": "ALL CHECKS PASS (16/16)",
+  "ledger_tip": "db324fd05d0a4373\u2026",
+  "note": "chain + rows + raws + byte-identical repeat + cache curve + spend recompute + predictions sha + key-material scan"
+ }
+}

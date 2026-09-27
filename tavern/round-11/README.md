@@ -44,3 +44,27 @@ strict-JSON contract and tested for real: does it survive a reasoning LLM?
   these rows into the main ledger verbatim (they verify standalone)
 - `round11_summary.json` — scorecard, spend, honest surprises, verdict
 - `verify_round11.mjs` — independent verifier: chain + rows + raws re-check
+
+## RESULT (post-run, sealed 2026-09-27T23:4xZ)
+
+**Verdict one-liner:** the real reasoner seat confirms the instrument's
+calibration finding — shown the byte-exact r10 receipt state, the thinking
+house lands 0.99 (JEV 0.97, chat 0.97; three houses within 0.02) and moves to
+`moves_up_to_0_5_or_above` — while the round's load-bearing discovery is
+structural: at `max_tokens` 2000 on the current wire the thinking seat spends
+its ENTIRE output budget on reasoning (finish_reason length, zero final
+content, 4/4 reasoner calls), so its answers were recovered from the thinking
+voice under an explicit extraction law, AS SAID and labeled.
+
+- P2 FALSIFIED ON ITS LETTER (the positive branch): zero noul discipline
+  violations — the no-confidence-field law transferred to a real LLM in one
+  shot; the concluded reasoner draft self-audits its own noul shape unprompted.
+- r9-sealed cache curve CONFIRMED after three waves fail-closed: hits 0/640/640.
+- P5 alias receipted: served deepseek-flash on 5/5 rows; /models lists only
+  [deepseek-flash, deepseek-v4-pro].
+- P6 dies honest (voiceless-at-cap); P1 and P4 land PARTIAL (blind probe
+  designed-contaminated by the asset + cap; one of two repeat draws silent).
+- Scorecard: 5 resolved, 3 modals hit, 2 partial, mean multiclass Brier 0.4805.
+  Spend $0.005574 (6/8 calls, 2 reserve unspent — post-hoc remetering refused).
+- Independent verifier `verify_round11.mjs`: ALL CHECKS PASS (16/16);
+  stone-v1 lane-local ledger tip `db324fd05d0a4373…`.
