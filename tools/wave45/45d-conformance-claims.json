@@ -1,0 +1,44 @@
+{
+  "lane": "45-d concept-adopter (resumed)",
+  "wave": 45,
+  "registration": "PRE-REGISTERED BEFORE the full conformance run — this file's sha256+mtime are receipted in the 45-d wal-conformance commit message BEFORE `node tools/wal-conformance.mjs` was executed against the fleet fixtures. Self-tests (node --test) run during development; the full per-chain scenario matrix is what this registration covers. The reference probe (tools/wave45/45d-waledl-probe-receipt.json) was observed LIVE by this lane BEFORE this registration and is an INPUT, not a result.",
+  "registeredAt": "2026-09-27T23:45:15.966Z",
+  "tool": "tools/wal-conformance.mjs",
+  "adoption": "SuperInstance/tessera seeds/wal-edl/wal-edl.ts (350-line zero-dep WAL/EDL seed): replay semantics adopted — recover-to-prefix, stop at the first bad record, explicit structured damage report. Reference observed live (probe receipt), then re-expressed from scratch here; no shared code, no import of tessera.",
+  "semanticsChosen": {
+    "replay": "recover-to-prefix: fold every record whose chained checksum verifies; stop at the first bad line; the corrupted record and everything AFTER it never enter the fold (spec's 'apply nothing' read as apply-nothing-at-or-past-the-break; the good prefix before the break does apply — this IS wal-edl's observed behavior, probe s2: applied 3 of 7, break at seq 4)",
+    "exit": "default: any damage -> exit non-zero. --torn-ok: exit 0 IFF the damage is a TORN TAIL ONLY (bytes after the last newline that cannot complete a record) AND the good prefix verified AND the damage is explicitly reported (structured class + reason + recovery position). Mid-chain corruption is never exit-0 in either mode.",
+    "readOnly": "this verifier never writes or truncates the chain it audits (wal-edl's WalWriter destructively truncates a torn tail to goodBytes on open — disclosed difference; our goodBytes receipt IS the recovery position)"
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "claim": "TORN TAIL (JSONL frame): cutting the final line of qthe E-Q6 (and the toy stone chain) mid-bytes yields torn=true, class 'torn-tail', reason shaped EXACTLY like wal-edl's ('torn tail: N byte(s) after last newline'), every complete row verified (applied = rows-1), goodBytes = the recovery position (byte offset where wal-edl would truncate), prefix tip = last good row_hash; --torn-ok exits 0 for exactly this shape, default mode exits non-zero",
+      "p": 0.9
+    },
+    {
+      "id": "C2",
+      "claim": "CORRUPTED BYTE: flipping one hex char of a row's row_hash (first/middle/last row) in a JSONL chain reports 'checksum mismatch at seq N' with the EXACT seq (1-based record ordinal), applied = N-1, lastSum = last good hash (nothing at-or-past the break applied); a structural '}' corruption at line N reports parse-break at seq N with applied = N-1; pong (document frame) with a JSON-safe hash flip still parses and the row walk catches the exact seq (pong rows carry explicit seq — reported seq must equal the row's own seq AND its ordinal); pong structural corruption = parse-break with 0 applied and NO recoverable prefix (document framing is all-or-nothing — framing disclosure, receipted per chain)",
+      "p": 0.88
+    },
+    {
+      "id": "C3",
+      "claim": "FULL CHAIN: unmodified bytes replay clean (torn=false, applied = all rows) and the replay tip/links equal the pinned values (qthe ab4ea196… / 15, pong c155fd01… / 5, toy pins computed from the toy itself); the deployed-path control (verifyStoneChainPinned, offline, untouched pins) is ok for both fleet fixtures; qthe/pong len-1 truncation (final newline) is receipted as whitespace-only (not damage, content-identical — consistent with truncate-audit's content-identical class)",
+      "p": 0.92
+    },
+    {
+      "id": "C4",
+      "claim": "WAL-EDL SEMANTICS MATCH: the from-scratch port of wal-edl's replay reproduces the LIVE probe receipt's scenario classes and applied counts exactly (fresh applied 7 / torn-tail 6 / checksum-mismatch 3 @ seq 4 / chain-break 2 @ seq 3 / parse-break 4 @ seq 5 / garbage-tail 7) with the same reason shapes, and the fleet stone chains exhibit the SAME damage classes (torn-tail / checksum-mismatch / parse-break) under the same replay law",
+      "p": 0.85
+    }
+  ],
+  "disclosedDifferences": [
+    "stone-v1 binds the previous tip INSIDE row_hash (no explicit prev field), so wal-edl's separate 'chain break at seq N' class (explicit prev mismatch) has no stone equivalent — it is exercised on the ported wal-edl WAL itself; stone's stored-vs-recomputed hash mismatch maps to 'checksum mismatch at seq N'",
+    "framing: JSONL (qthe, toy) recovers the good prefix byte-exactly from a torn tail; document framing (pong, one pretty-printed JSON array) is all-or-nothing — a torn byte anywhere defeats JSON.parse and NO prefix is recoverable (0 applied)",
+    "read-only vs WalWriter: this tool receipts the recovery position (goodBytes) but never truncates; wal-edl's writer rolls the log back on open",
+    "strict line framing: wal-edl treats any complete line (even blank) as a record, so a blank line would be parse damage; the deployed verifyStoneJsonl tolerates blank lines — fixtures contain none; wal-edl strictness adopted for conformance",
+    "stone rows have no explicit seq field (ordinal = WAL seq); pong rows do — both receipted",
+    "scope: rekor ECDSA entry + VC envelope are single signed documents, not multi-record WALs — out of conformance scope (same exclusion class as truncate-audit's moth bits)"
+  ],
+  "failMeans": "any scenario class/seq/applied mismatch vs its claim; any full-chain pin mismatch; any damaged input exiting 0 without an explicit structured damage report; any port-vs-probe-receipt divergence; any tornOk rescue of a non-torn-tail class"
+}

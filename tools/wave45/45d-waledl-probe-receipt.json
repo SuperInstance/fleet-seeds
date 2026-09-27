@@ -1,0 +1,55 @@
+{
+  "probe": "tessera wal-edl live reference probe (45-d)",
+  "node": "v24.21.0",
+  "ranAt": "2026-09-27T23:07:28.304Z",
+  "scenarios": {
+    "s0_fresh": {
+      "applied": 7,
+      "torn": false,
+      "goodBytes": 1227,
+      "canonHash": "c95535c67c415ac9",
+      "lastSum": "31f666125cc32f3c333f3a1b4ff5da61",
+      "totalMs": 2400,
+      "segments": 4
+    },
+    "s1_torn_tail": {
+      "truncatedBytes": 5,
+      "torn": true,
+      "reason": "torn tail: 178 byte(s) after last newline",
+      "applied": 6,
+      "goodBytes": 1044,
+      "fullLen": 1227,
+      "lastSumPrefix": "600f2f5f608e388304a88a6625bc2107",
+      "canonHashPrefix": "3087c864ff5e32aa"
+    },
+    "s1_recover": {
+      "postRecoverLen": 1044,
+      "equalsGoodBytes": true,
+      "torn": false,
+      "applied": 6,
+      "canonHashAfterRecover": "3087c864ff5e32aa"
+    },
+    "s2_corrupt_delta": {
+      "torn": true,
+      "reason": "checksum mismatch at seq 4",
+      "applied": 3,
+      "goodBytes": 546
+    },
+    "s3_corrupt_prev": {
+      "torn": true,
+      "reason": "chain break at seq 3",
+      "applied": 2
+    },
+    "s4_corrupt_json": {
+      "torn": true,
+      "reason": "Unexpected token '}', \"}\"seq\":5,\"\"... is not valid JSON",
+      "applied": 4
+    },
+    "s5_garbage_tail": {
+      "torn": true,
+      "reason": "torn tail: 11 byte(s) after last newline",
+      "applied": 7,
+      "goodBytes": 1227
+    }
+  }
+}
