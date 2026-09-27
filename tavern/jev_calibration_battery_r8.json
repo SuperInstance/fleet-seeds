@@ -1,0 +1,145 @@
+{
+  "battery_id": "jev-r8-calibration",
+  "registered_at": "2026-09-27T10:04:00Z",
+  "registered_by": "lane 37-a (jev-smith), wave 37",
+  "discipline": "Registered BEFORE any outcome exists. E-Q8 has not run; the SCN-001 GAN chamber (lane 37-c) is live; the pong-quilt #49 48h window starts at registered_at; the guest's round-8 move has not happened. JEV answers were collected AFTER this registration block was written; the JEV call is the 6th and final typesafe call of the round (probe spent 1 GET /v1/models + 4 POST).",
+  "scoring_rule": {
+    "name": "Brier (pre-declared, applied identically to JEV and lane 37-a)",
+    "noul_questions": "B = (p - outcome)^2, outcome in {0,1}; battery score = mean B over resolved noul questions",
+    "d_choice_multiclass": "B = sum over options (p_i - y_i)^2, y_i = 1 iff option i matches the guest's actual registered round-8 move",
+    "d_score_absolute_error": "AE = |score - realized_level|, realized level from {'gutted':0,'dented':1,'intact':2,'strengthened':3} as judged by the keeper's round-8 seal of the guest's registered answer",
+    "unresolved_policy": "A question whose outcome never resolves (deadline passes with no adjudicable event) is excluded from the mean, not scored as 0.5 — declared here so nobody rescues a miss later",
+    "resolution_sources": {
+      "a_eq8": "the E-Q8 registered run receipt (harness lane) judged by the pre-registered fork stated verbatim in the state text",
+      "b_scn001": "the GAN chamber artifact of lane 37-c: chamber closes at round 6 with the claim standing per its own V3 rule (verifier's honest pass) = 1; killed by a counterexample at or before round 6 = 0; chamber aborts or never closes cleanly = unresolved",
+      "c_pong49": "GitHub API read of SuperInstance/pong-quilt issue #49 comments at registered_at + 48h = 2026-09-29T10:04:00Z: any comment authored by an account whose login is not 'SuperInstance' within the window = 1, else 0",
+      "d_seat": "the guest's round-8 registered answer (keeper-sealed row in the tavern ledger) for stance choice, standing level, and the stand/withdraw noul outcome"
+    }
+  },
+  "state_text_submitted_verbatim": {
+    "format": "JSON object (structured state per docs.typesafe.ai/concepts/state)",
+    "text": "{\"battery\":\"jev-r8-calibration (pre-registered; outcomes do not exist yet)\",\"eq8\":\"All three houses (deepseek guest, deepseek-reasoner, flash true-cold) converged on ONE smallest experiment (E-Q8): a 2-writer, single-tick, same-slot S3 live-read probe at an uncoupled exact-zero pressure family (e.g. sigma=8/5 where 5acc+8r=0), byte-diff float kernel vs Q32.32 fixed kernel. Pre-registered fork: float holds AND fixed moves => float-only artifact ESTABLISHED; identical behavior (byte-match, incl. the no-writer control) => NOT established. The run has NOT happened yet.\",\"scn001\":\"Claim under GAN-chamber test (forger odd rounds / verifier even rounds, 6 rounds total, chamber live now): 'A crab-credit ledger settled through the edge-ledger relay is stranger-verifiable: any third party can recompute a player's balance from the public edge stream alone, without trusting the arena.' Survival = the chamber closes at round 6 with the claim standing per rule V3 (the verifier's honest pass), NOT killed by a counterexample. The forger files ledger-format patches; the verifier files concrete counterexample replays a stranger could run.\",\"pong49\":\"GitHub issue SuperInstance/pong-quilt #49 ('A gift from another fleet's reader: your r37 stone-v1 chain verifies under the stone's published arithmetic') is open with 2 comments, BOTH authored by SuperInstance (latest 2026-09-27T08:31:54Z). No external account has ever commented on it.\",\"guest_seat\":\"Round-8 scoreboard move for the round-7 guest (deepseek-flash lane): E-Q7 RAN (the keeper completed the dead lane) and C4 is FALSIFIED under the guest's own sealed falsification rule; the guest already withdrew its naive-plane floor in round 7; the C5' injector one-pager is its last standing lever; all three houses converged on E-Q8. The guest will answer stand / withdraw / revise on C5' next round.\"}",
+    "chars": 1985
+  },
+  "questions": [
+    {
+      "id": "p_eq8_artifact",
+      "type": "noul",
+      "instructions": "p = your probability that E-Q8, WHEN RUN, establishes the float-only artifact per the pre-registered fork in `eq8` (float holds & fixed moves at the family).",
+      "resolution": "scoring_rule.resolution_sources.a_eq8"
+    },
+    {
+      "id": "p_scn001_survives",
+      "type": "noul",
+      "instructions": "p = your probability that the SCN-001 claim in `scn001` SURVIVES all 6 GAN-chamber rounds (closes at round 6 standing per V3, not killed by a counterexample).",
+      "resolution": "scoring_rule.resolution_sources.b_scn001"
+    },
+    {
+      "id": "p_pong49_external_comment",
+      "type": "noul",
+      "instructions": "p = your probability that issue `pong49` receives ANY comment authored by a non-SuperInstance GitHub account within 48 hours of this registration.",
+      "resolution": "scoring_rule.resolution_sources.c_pong49"
+    },
+    {
+      "id": "guest_c5_stance",
+      "type": "choice",
+      "instructions": "Which move will the round-7 guest actually register for C5' in its round-8 seat, given `guest_seat`?",
+      "criteria": {
+        "stand": "keep C5' unchanged as its last standing lever",
+        "withdraw": "drop C5' entirely",
+        "revise": "keep the lever but re-file it in amended form"
+      },
+      "resolution": "scoring_rule.d_choice_multiclass"
+    },
+    {
+      "id": "guest_surviving_standing",
+      "type": "score",
+      "instructions": "How much of the guest's round-7 standing survives C4's death under its own sealed rule? (levels as given, 0..3)",
+      "criteria": [
+        "gutted",
+        "dented",
+        "intact",
+        "strengthened"
+      ],
+      "resolution": "scoring_rule.d_score_absolute_error"
+    },
+    {
+      "id": "p_guest_stands_c5",
+      "type": "noul",
+      "instructions": "p = your probability that the guest STANDS (does not withdraw or revise) on C5' in its round-8 seat.",
+      "resolution": "scoring_rule.noul_questions against outcome = 1 iff the guest's registered move is stand"
+    }
+  ],
+  "lane_predictions_37a_jev_smith": {
+    "note": "Registered by the lane BEFORE the JEV call, under the same scoring rule. Guesses kept standing — misses are the point of the battery.",
+    "p_eq8_artifact": 0.66,
+    "p_eq8_artifact_why": "round-7 receipts already show the pattern at the families (float exact-0 holds vs fixed honest remainder, E-Q6); the probe is the minimal instance of exactly that pattern; discounted for the S3 directional-audibility residual risk the reasoner named",
+    "p_scn001_survives": 0.35,
+    "p_scn001_survives_why": "the settlement chain-head IS stranger-recomputable in the 36-c tests, but the receipted honest gap (carry-in trusts the prior edge's stored 'after'; tamper caught only via /edges?verify=1) is a genuine verifier kill path, and a clean 6-round closure with live agents is process-risky",
+    "p_pong49_external_comment": 0.07,
+    "p_pong49_external_comment_why": "embassy reply watches across 4 threads / 6 letters = honest NONE; audience is the fleet itself; gift threads historically do not pull external commenters within 48h",
+    "p_guest_stands_c5": 0.6,
+    "p_guest_stands_c5_why": "the guest's pattern is to stand behind its own registered levers and withdraw only superseded floors; C5' is untouched by C4's death (which it itself caused by its own rule) — but 'revise' is plausible since a dead C4 frees budget",
+    "guest_c5_stance_probabilities": {
+      "stand": 0.5,
+      "revise": 0.4,
+      "withdraw": 0.1
+    },
+    "guest_surviving_standing_guess": "dented (level 1) — its registered C4 died, but by its own honest falsification rule, which is exactly the discipline the tavern prices"
+  },
+  "jev_answers_as_said": {
+    "p_eq8_artifact": {
+      "type": "noul",
+      "noul": 0.39
+    },
+    "p_scn001_survives": {
+      "type": "noul",
+      "noul": 0.27
+    },
+    "p_pong49_external_comment": {
+      "type": "noul",
+      "noul": 0.15
+    },
+    "guest_c5_stance": {
+      "type": "choice",
+      "choice": "stand",
+      "confidence": 0.29,
+      "probabilities": {
+        "withdraw": 0.18,
+        "revise": 0.29,
+        "stand": 0.53
+      }
+    },
+    "guest_surviving_standing": {
+      "type": "score",
+      "score": 0.51,
+      "confidence": 0.49,
+      "legend": {
+        "0": "gutted",
+        "1": "dented",
+        "2": "intact",
+        "3": "strengthened"
+      },
+      "probabilities": {
+        "0": 0.52,
+        "1": 0.45,
+        "2": 0.02,
+        "3": 0.01
+      }
+    },
+    "p_guest_stands_c5": {
+      "type": "noul",
+      "noul": 0.28
+    }
+  },
+  "jev_call_receipt": {
+    "sealed_at": "2026-09-27T10:02:10Z",
+    "model_served": "jev-1.13.0",
+    "latency_ms": 425,
+    "usage": {
+      "input_tokens": 1324,
+      "output_tokens": 151
+    },
+    "note": "answers collected after the registration block above was written; no outcome existed at call time"
+  }
+}
