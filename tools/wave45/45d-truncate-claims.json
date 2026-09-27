@@ -1,0 +1,30 @@
+{
+  "lane": "45-d concept-adopter",
+  "wave": 45,
+  "registration": "PRE-REGISTERED BEFORE the exhaustive run — the claims below were committed (and their sha256+mtime receipted in tools/WAVE45.md and the commit message) BEFORE `node tools/truncate-audit.mjs` was executed. Self-tests (node --test) ran during development; the EXHAUSTIVE per-offset matrix over the four fleet chains is what this registration covers.",
+  "registeredAt": "2026-09-27T23:20:00Z",
+  "tool": "tools/truncate-audit.mjs",
+  "adoption": "quilt-rust packages/core/tests/journal_power_yank.rs (wave 44-c concepts-44c.md #1): 'no case produces a silent wrong state' — truncation at EVERY byte offset; plus field-edge-bridge: ledger imbalance ≡ field edge Δ = after − before",
+  "scope": {
+    "chains": ["qthe (E-Q6 stone JSONL, 9242 B)", "pong (birth-seal stone JSON, 1299 B)", "rekor (ECDSA entry fixture, 3242 B)", "vc (stone-checkpoint.vc.json, 1904 B)", "toy int (self-built, no trailing newline)", "toy float (self-built)"],
+    "excluded": ["moth-42b-raw-bits (raw quantum-job bitstream — no chain verifier consumes it)"],
+    "layers": "L1 deployed pinned path (sha gate first, untouched pins); L2 chain-semantics layer (sha pin neutralized; ok:true allowed only with deep-equal content)",
+    "method": "for each offset 0..len-1: stage truncated bytes, run the real verifier at L1 and L2, classify (sha-gate | parse-break | chain-break | prefix-honest | content-identical | SILENT-WRONG-STATE); control at offset=len must pass"
+  },
+  "claims": [
+    { "id": "T1", "claim": "qthe E-Q6 (9242 B): L1 accepts ZERO of the 9242 truncations; L2 has zero SILENT-WRONG-STATE; L2 content-identical offsets == exactly [9241] (the final trailing-newline byte, static-scanned pre-run: 1 trailing whitespace byte, no CR, no blank lines); full-length control ok:true", "p": 0.9 },
+    { "id": "T2", "claim": "pong birth-seal (1299 B): L1 accepts ZERO of 1299; L2 zero silent; content-identical == [1298] (final newline — a JSON document's strict prefixes cannot parse); control ok", "p": 0.9 },
+    { "id": "T3", "claim": "rekor ECDSA entry (3242 B): L1 accepts ZERO of 3242; L2 zero silent; content-identical == [3241] (final newline; the offline rekor verify then passes fully on the whitespace-only-differing bytes); control ok", "p": 0.85 },
+    { "id": "T4", "claim": "VC envelope (1904 B): L1 accepts ZERO of 1904; L2 zero silent; control ok. Disclosed: the deployed VC reader pins exact bytes internally, so its L2 content-identical class is receipted via direct parse + deep-equal (would-verify under an updated document pin), not via the deployed reader", "p": 0.88 },
+    { "id": "T5", "claim": "toy chain (int, self-built, JSONL joined with '\\n' and NO trailing newline): L1 failCount == len AND L2 failCount == len with ZERO content-identical offsets (count = len exactly, the task's known-good law); every JSONL row boundary classifies prefix-honest (explicit expected-tip report); control ok", "p": 0.95 },
+    { "id": "T6", "claim": "field-edge delta property: per-row and global imbalance (Σ credits − Σ debits from the row seal) ≡ field edge Δ (Σ after − before); integer variant residual EXACTLY 0; float variant max residual ≤ 1e-12", "p": 0.95 },
+    { "id": "T7", "claim": "annotation-tail probe: a prefix that drops only the trailing stone.* annotation keeps the tip (tipOk true) and is caught ONLY by the links pin (linksOk false, ok:false, explicit report) — links pinning is load-bearing under stone-v2 annotation semantics", "p": 0.9 },
+    { "id": "T8", "claim": "SILENT-WRONG-STATE detector: under a pin that blesses a 3-row prefix (dishonest pin), the boundary truncation is accepted and the audit FLAGS it as SILENT-WRONG-STATE and returns ok:false — the detector actually fires (not a vacuous pass)", "p": 0.92 }
+  ],
+  "failMeans": "any L1 accepted offset (< len); any L2 ok:true whose parsed content differs from the full chain; any full-length control failure; any delta residual > 1e-12; annotation probe showing silent acceptance; or any unclassified failure class",
+  "honestRisks": [
+    "content-identical offsets could exceed the predicted single trailing newline if the fixture bytes hide additional non-semantic whitespace (static scan says no)",
+    "the L2 allowance itself is a semantic CHOICE, documented: whitespace-only byte loss parses to identical content and is not a wrong state",
+    "VC L2 is receipted through parse + deep-equal rather than the deployed reader (its pins are internal) — disclosed in T4"
+  ]
+}
