@@ -1,0 +1,97 @@
+{
+  "run_tag": "wave32-32a-run1",
+  "registered_gates": "G1-G6 pre-registered in header BEFORE first full run",
+  "stone_loaded_from": "../../../quilt-stone/stone.mjs",
+  "gates": [
+    {
+      "id": "G1",
+      "name": "RFC 8785 vectors byte-exact",
+      "pass": true,
+      "observed": "6/6 cases across 6/6 files"
+    },
+    {
+      "id": "G2",
+      "name": "stone-vs-JCS byte-equality matches pre-read prediction",
+      "pass": false,
+      "observed": "corpus 20/20 byte-equal; NaN: stone=\"{\\\"a\\\":null}\" jcs=throw; digest agree 20/20; prediction {\"corpusRows\":19,\"allByteEqual\":true,\"nonFiniteStone\":\"null\",\"nonFiniteJcs\":\"throw\"}"
+    },
+    {
+      "id": "G3",
+      "name": "G17 port self-verify + tamper refused",
+      "pass": true,
+      "observed": "self 3/3; tamper -> root_mismatch"
+    },
+    {
+      "id": "G4",
+      "name": "JS-minted attestations verified by their real Python",
+      "pass": true,
+      "observed": "python ok 3/3; tamper -> root_mismatch"
+    },
+    {
+      "id": "G5",
+      "name": "Python-minted attestations verified by our JS port",
+      "pass": true,
+      "observed": "js port ok 3/3 over python-minted bytes"
+    },
+    {
+      "id": "G6",
+      "name": "their pinned receipts-v2 vector (four checks)",
+      "pass": true,
+      "observed": "pubkey=true rawMsgSig=true envelopeSig=true chainHeadRecompute=true"
+    },
+    {
+      "id": "P2",
+      "name": "post-hoc corrective: substance of G2 prediction",
+      "pass": true,
+      "observed": "corpus 20/20 byte-equal, digests 20/20, NaN seam as named"
+    }
+  ],
+  "all_pass": false,
+  "bridge_report": {
+    "corpusSize": 20,
+    "byteEqualCount": 20,
+    "divergences": [],
+    "probeFindings": [
+      {
+        "id": "non-finite-NaN",
+        "note": null,
+        "stoneThrew": false,
+        "stoneOut": "{\"a\":null}",
+        "jcsThrew": true,
+        "jcsOut": "THROW: JCS: not a finite JSON number: NaN"
+      },
+      {
+        "id": "non-finite-Infinity",
+        "note": null,
+        "stoneThrew": false,
+        "stoneOut": "{\"a\":null}",
+        "jcsThrew": true,
+        "jcsOut": "THROW: JCS: not a finite JSON number: Infinity"
+      },
+      {
+        "id": "fleet-legacy-insertion-order",
+        "note": "fnv1a64-fleet dialect: JSON.stringify insertion order (stone fnv1a64(input) default) vs JCS code-unit sort",
+        "stoneThrew": false,
+        "stoneOut": "{\"a\":2,\"b\":1}",
+        "jcsThrew": false,
+        "jcsOut": "{\"a\":2,\"b\":1}"
+      }
+    ],
+    "legacyReceipt": {
+      "fleetInsertionOrderJson": "{\"b\":1,\"a\":2}",
+      "fleetFnv1a64OfIt": "0xeb867b9cecbe3cf3",
+      "stoneSortedCanon": "{\"a\":2,\"b\":1}",
+      "stoneSha256OfCanon": "d3626ac30a87e6f7a6428233b3c68299976865fa5508e4267c5415c76af7a772",
+      "jcsCanon": "{\"a\":2,\"b\":1}"
+    },
+    "digestAgree": "20/20"
+  },
+  "vc_envelope_round_trip": {
+    "digestOk": true,
+    "sigOk": true,
+    "byteExact": true,
+    "ok": true
+  },
+  "env_bytes": "7b2240636f6e74657874223a5b2268747470733a2f2f7777772e77332e6f7267...",
+  "env_digest_hex": "01afcde967bc4320576f6471ea1617af61d7d131cf229df2661f85271b30a11e"
+}
