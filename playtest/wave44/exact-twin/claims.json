@@ -1,0 +1,48 @@
+{
+  "pre_registration": {
+    "task": "44-b deliverable 1: exact-twin audit harness over SuperInstance/micrograd-quilt",
+    "registered_at_utc": "2026-09-28T00:00:00Z (mtime of this file is the binding receipt; recorded in results.json BEFORE any experiment run)",
+    "source_repo": "SuperInstance/micrograd-quilt",
+    "source_pinned_commit": "TO_BE_PINNED_AT_CLONE (recorded in results.json)",
+    "import_method": "sys.path import of the pinned clone's quilt package (engine.py, auditor.py, tape.py); their files UNMODIFIED (sys.dont_write_bytecode=True before import; git status of the clone receipted clean after runs)",
+    "expressions": {
+      "E1_dot": "s = sum_{i=0..7} q_i*k_i, 8-dim dot product (attention-score style), mixed-sign O(0.1..0.9) inputs fixed below",
+      "E2_gate": "h = tanh(sum_{i=0..3} q_i*k_i) * v, tanh gate times value (GLU-style), 4-dim",
+      "E3_norm": "out = (sum_{i=0..7} x_i*x_i)^(-1) * x_0, RMS-style normalization via exact integer-power reciprocal",
+      "inputs_fixed_at_registration": {
+        "E1_q": [0.12, -0.47, 0.83, -0.05, 0.66, 0.21, -0.3, 0.91],
+        "E1_k": [0.44, 0.19, -0.62, 0.77, -0.13, 0.58, 0.25, -0.08],
+        "E2_q": [0.31, -0.52, 0.77, 0.09],
+        "E2_k": [0.62, 0.15, -0.44, 0.28],
+        "E2_v": [0.37],
+        "E3_x": [0.3, -0.22, 0.51, 0.17, -0.44, 0.09, 0.63, -0.28]
+      }
+    },
+    "claims": [
+      {
+        "id": "P1",
+        "text": "Drift is bounded and small: for every node of E1/E2/E3 (inputs excluded from the comparison floor), the float-vs-exact relative error of BOTH the forward value and the gradient is < 1e-13; the subset graphs E1 and E2 additionally satisfy < 1e-14.",
+        "derivation": "a-priori rounding bound: each float op contributes <= U = 2^-52 ~ 2.23e-16 relative; graphs have <= 17 internal ops with amplification <= ~10 (mixed-sign sum ratio |sum|/sum|terms| ~ 1.5 for E1, ~1 for E2/E3); worst case ~ 17*U*10 ~ 3.8e-14, so 1e-13 carries honest margin; measured maxima are reported and expected tighter",
+        "verdict_rule": "PASS iff all rel errs < 1e-13 AND max(E1,E2 rel errs) < 1e-14; else FAIL with the offending node receipted"
+      },
+      {
+        "id": "P2",
+        "text": "Exactness is real and consistent: (a) engine exact-mode backward (Value.grad_twin) and auditor.exact_grads over the float tape rows agree EXACTLY (Fraction equality, zero tolerance) on every audited node of E1/E2/E3; (b) every exact gradient denominator has <= 1000 decimal digits; (c) at least one exact rational gradient is receipted verbatim (numerator, denominator, digit counts) in gradients.json.",
+        "derivation": "both exact paths do Fraction arithmetic on the same frozen-float graph; dyadic inputs keep denominators small (~16-34 digits); reciprocal breaks dyadicity but numerator(y)~11 digits for E3; lcm-chain worst case ~ hundreds of digits, so 1000 is a 10x-margin honest bound",
+        "verdict_rule": "PASS iff exact equality holds everywhere AND max denominator digits <= 1000 AND gradients.json non-empty; else FAIL"
+      },
+      {
+        "id": "P3",
+        "text": "Negative control: corrupting ONE node's float gradient by exactly 1 ulp (nextafter AWAY from the exact value) is FLAGGED by the stochastic auditor (audit(rows, corrupted_grads, mode='stochastic', seed=0)) for EVERY auditable node across E1/E2/E3; flagged means some reported path (s, a=target) has rel_corrupted - rel_clean >= 2e-17 where rel_clean is the same-seed audit of the uncorrupted grads.",
+        "derivation": "STRUCTURAL prediction, registered before measurement: the auditor always promotes every sink and walks ALL ancestors of each sampled node; every node feeds some sink, so the union of audited paths covers every node's gradient regardless of the Bernoulli(1/sqrt(N)) draw - detection is structural, not stochastic. Honest corollary receipted either way: the 1/sqrt(N) economy governs path MULTIPLICITY (and reporting), not coverage, because exact_grads is computed unconditionally. If ANY node's injection goes undetected, that is an honest FAIL and is reported as such.",
+        "verdict_rule": "PASS iff 100% of injected nodes flagged; any miss reported as FAIL with the node id, seed, and clean/corrupted rel values"
+      },
+      {
+        "id": "P4",
+        "text": "Determinism receipts: for each of E1/E2/E3 the hash-chained tape verifies (Tape.verify() == (True, None)) after a taped float backward, and tape.replay(rows, root=sink) reproduces the live float gradients BITWISE (exact float equality per node).",
+        "derivation": "micrograd-quilt design law 2 (tape as determinism/regression guard); replay applies EFFECT rows in the same accumulation order as live backward",
+        "verdict_rule": "PASS iff all three graphs verify AND replay == live bitwise; else FAIL with the mismatching node receipted"
+      }
+    ]
+  }
+}

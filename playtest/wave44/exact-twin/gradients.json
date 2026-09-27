@@ -1,0 +1,671 @@
+{
+  "note": "every exact rational gradient (engine grad_twin) verbatim; P2c receipt. numerator/denominator are exact integers.",
+  "gradients": [
+    {
+      "graph": "E1_dot",
+      "node_id": 0,
+      "numerator": "7926335344172073",
+      "denominator": "18014398509481984",
+      "num_digits": 16,
+      "den_digits": 17,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 8,
+      "numerator": "1080863910568919",
+      "denominator": "9007199254740992",
+      "num_digits": 16,
+      "den_digits": 16,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 16,
+      "numerator": "1",
+      "denominator": "1",
+      "num_digits": 1,
+      "den_digits": 1,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 1,
+      "numerator": "3422735716801577",
+      "denominator": "18014398509481984",
+      "num_digits": 16,
+      "den_digits": 17,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 9,
+      "numerator": "-2116691824864133",
+      "denominator": "4503599627370496",
+      "num_digits": 16,
+      "den_digits": 16,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 17,
+      "numerator": "1",
+      "denominator": "1",
+      "num_digits": 1,
+      "den_digits": 1,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 18,
+      "numerator": "1",
+      "denominator": "1",
+      "num_digits": 1,
+      "den_digits": 1,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 2,
+      "numerator": "-5584463537939415",
+      "denominator": "9007199254740992",
+      "num_digits": 16,
+      "den_digits": 16,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 10,
+      "numerator": "7475975381435023",
+      "denominator": "9007199254740992",
+      "num_digits": 16,
+      "den_digits": 16,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 19,
+      "numerator": "1",
+      "denominator": "1",
+      "num_digits": 1,
+      "den_digits": 1,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 20,
+      "numerator": "1",
+      "denominator": "1",
+      "num_digits": 1,
+      "den_digits": 1,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 3,
+      "numerator": "1733885856537641",
+      "denominator": "2251799813685248",
+      "num_digits": 16,
+      "den_digits": 16,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 11,
+      "numerator": "-3602879701896397",
+      "denominator": "72057594037927936",
+      "num_digits": 16,
+      "den_digits": 17,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 21,
+      "numerator": "1",
+      "denominator": "1",
+      "num_digits": 1,
+      "den_digits": 1,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 22,
+      "numerator": "1",
+      "denominator": "1",
+      "num_digits": 1,
+      "den_digits": 1,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 4,
+      "numerator": "-1170935903116329",
+      "denominator": "9007199254740992",
+      "num_digits": 16,
+      "den_digits": 16,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 12,
+      "numerator": "5944751508129055",
+      "denominator": "9007199254740992",
+      "num_digits": 16,
+      "den_digits": 16,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 23,
+      "numerator": "1",
+      "denominator": "1",
+      "num_digits": 1,
+      "den_digits": 1,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 24,
+      "numerator": "1",
+      "denominator": "1",
+      "num_digits": 1,
+      "den_digits": 1,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 5,
+      "numerator": "5224175567749775",
+      "denominator": "9007199254740992",
+      "num_digits": 16,
+      "den_digits": 16,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 13,
+      "numerator": "7566047373982433",
+      "denominator": "36028797018963968",
+      "num_digits": 16,
+      "den_digits": 17,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 25,
+      "numerator": "1",
+      "denominator": "1",
+      "num_digits": 1,
+      "den_digits": 1,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 26,
+      "numerator": "1",
+      "denominator": "1",
+      "num_digits": 1,
+      "den_digits": 1,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 6,
+      "numerator": "1",
+      "denominator": "4",
+      "num_digits": 1,
+      "den_digits": 1,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 14,
+      "numerator": "-5404319552844595",
+      "denominator": "18014398509481984",
+      "num_digits": 16,
+      "den_digits": 17,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 27,
+      "numerator": "1",
+      "denominator": "1",
+      "num_digits": 1,
+      "den_digits": 1,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 28,
+      "numerator": "1",
+      "denominator": "1",
+      "num_digits": 1,
+      "den_digits": 1,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 7,
+      "numerator": "-5764607523034235",
+      "denominator": "72057594037927936",
+      "num_digits": 16,
+      "den_digits": 17,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 15,
+      "numerator": "8196551321814303",
+      "denominator": "9007199254740992",
+      "num_digits": 16,
+      "den_digits": 16,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 29,
+      "numerator": "1",
+      "denominator": "1",
+      "num_digits": 1,
+      "den_digits": 1,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E1_dot",
+      "node_id": 30,
+      "numerator": "1",
+      "denominator": "1",
+      "num_digits": 1,
+      "den_digits": 1,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E2_gate",
+      "node_id": 0,
+      "numerator": "23222982857884800650498759049313057649227531943498094255016916415",
+      "denominator": "105312291668557186697918027683670432318895095400549111254310977536",
+      "num_digits": 65,
+      "den_digits": 66,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E2_gate",
+      "node_id": 4,
+      "numerator": "23222982857884800650498759049313057649227531943498094255016916415",
+      "denominator": "210624583337114373395836055367340864637790190801098222508621955072",
+      "num_digits": 65,
+      "den_digits": 66,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E2_gate",
+      "node_id": 8,
+      "numerator": "4158498430532100875525950364053894079169066483801",
+      "denominator": "11692013098647223345629478661730264157247460343808",
+      "num_digits": 49,
+      "den_digits": 50,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E2_gate",
+      "node_id": 1,
+      "numerator": "22473854378598193507176471574802817801518520581789433284037905595",
+      "denominator": "421249166674228746791672110734681729275580381602196445017243910144",
+      "num_digits": 65,
+      "den_digits": 66,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E2_gate",
+      "node_id": 5,
+      "numerator": "-4869335115362942273096438052215683484158209797212217142297086529",
+      "denominator": "26328072917139296674479506920917608079723773850137277813577744384",
+      "num_digits": 64,
+      "den_digits": 65,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E2_gate",
+      "node_id": 9,
+      "numerator": "4158498430532100875525950364053894079169066483801",
+      "denominator": "11692013098647223345629478661730264157247460343808",
+      "num_digits": 49,
+      "den_digits": 50,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E2_gate",
+      "node_id": 10,
+      "numerator": "4158498430532100875525950364053894079169066483801",
+      "denominator": "11692013098647223345629478661730264157247460343808",
+      "num_digits": 49,
+      "den_digits": 50,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E2_gate",
+      "node_id": 2,
+      "numerator": "-32961653088610685196691635153744424617543951537922528539611089473",
+      "denominator": "210624583337114373395836055367340864637790190801098222508621955072",
+      "num_digits": 65,
+      "den_digits": 66,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E2_gate",
+      "node_id": 6,
+      "numerator": "7210361613133587516729371144009745245273688275604743092073253441",
+      "denominator": "26328072917139296674479506920917608079723773850137277813577744384",
+      "num_digits": 64,
+      "den_digits": 65,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E2_gate",
+      "node_id": 11,
+      "numerator": "4158498430532100875525950364053894079169066483801",
+      "denominator": "11692013098647223345629478661730264157247460343808",
+      "num_digits": 49,
+      "den_digits": 50,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E2_gate",
+      "node_id": 12,
+      "numerator": "4158498430532100875525950364053894079169066483801",
+      "denominator": "11692013098647223345629478661730264157247460343808",
+      "num_digits": 49,
+      "den_digits": 50,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E2_gate",
+      "node_id": 3,
+      "numerator": "5243899355006245844757581789470803408012715478066547627786591939",
+      "denominator": "52656145834278593348959013841835216159447547700274555627155488768",
+      "num_digits": 64,
+      "den_digits": 65,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E2_gate",
+      "node_id": 7,
+      "numerator": "13484312627158916104305882944881690680911112349073659970422743357",
+      "denominator": "421249166674228746791672110734681729275580381602196445017243910144",
+      "num_digits": 65,
+      "den_digits": 66,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E2_gate",
+      "node_id": 13,
+      "numerator": "4158498430532100875525950364053894079169066483801",
+      "denominator": "11692013098647223345629478661730264157247460343808",
+      "num_digits": 49,
+      "den_digits": 50,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E2_gate",
+      "node_id": 14,
+      "numerator": "4158498430532100875525950364053894079169066483801",
+      "denominator": "11692013098647223345629478661730264157247460343808",
+      "num_digits": 49,
+      "den_digits": 50,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E2_gate",
+      "node_id": 15,
+      "numerator": "3332663724254167",
+      "denominator": "9007199254740992",
+      "num_digits": 16,
+      "den_digits": 16,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E2_gate",
+      "node_id": 16,
+      "numerator": "-7090417757303239",
+      "denominator": "36028797018963968",
+      "num_digits": 16,
+      "den_digits": 17,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E2_gate",
+      "node_id": 17,
+      "numerator": "1",
+      "denominator": "1",
+      "num_digits": 1,
+      "den_digits": 1,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E3_norm",
+      "node_id": 0,
+      "numerator": "1557610918694628285299155320259020768159496644793717867595889115136",
+      "denominator": "2055189355972360631420225240113101563548766126529943155584843390521",
+      "num_digits": 67,
+      "den_digits": 67,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E3_norm",
+      "node_id": 8,
+      "numerator": "-505499000009074477442785575046060722123530599154213082424756142080",
+      "denominator": "2055189355972360631420225240113101563548766126529943155584843390521",
+      "num_digits": 66,
+      "den_digits": 67,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E3_norm",
+      "node_id": 1,
+      "numerator": "222419560003992771197258910490400117376408546875338087118678261760",
+      "denominator": "2055189355972360631420225240113101563548766126529943155584843390521",
+      "num_digits": 66,
+      "den_digits": 67,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E3_norm",
+      "node_id": 9,
+      "numerator": "-505499000009074477442785575046060722123530599154213082424756142080",
+      "denominator": "2055189355972360631420225240113101563548766126529943155584843390521",
+      "num_digits": 66,
+      "den_digits": 67,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E3_norm",
+      "node_id": 10,
+      "numerator": "-505499000009074477442785575046060722123530599154213082424756142080",
+      "denominator": "2055189355972360631420225240113101563548766126529943155584843390521",
+      "num_digits": 66,
+      "den_digits": 67,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E3_norm",
+      "node_id": 2,
+      "numerator": "-515608980009255975971107346308049133702441877117171990887535738880",
+      "denominator": "2055189355972360631420225240113101563548766126529943155584843390521",
+      "num_digits": 66,
+      "den_digits": 67,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E3_norm",
+      "node_id": 11,
+      "numerator": "-505499000009074477442785575046060722123530599154213082424756142080",
+      "denominator": "2055189355972360631420225240113101563548766126529943155584843390521",
+      "num_digits": 66,
+      "den_digits": 67,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E3_norm",
+      "node_id": 12,
+      "numerator": "-505499000009074477442785575046060722123530599154213082424756142080",
+      "denominator": "2055189355972360631420225240113101563548766126529943155584843390521",
+      "num_digits": 66,
+      "den_digits": 67,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E3_norm",
+      "node_id": 3,
+      "numerator": "-171869660003085334677312927687128041584606319434760087394058240000",
+      "denominator": "2055189355972360631420225240113101563548766126529943155584843390521",
+      "num_digits": 66,
+      "den_digits": 67,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E3_norm",
+      "node_id": 13,
+      "numerator": "-505499000009074477442785575046060722123530599154213082424756142080",
+      "denominator": "2055189355972360631420225240113101563548766126529943155584843390521",
+      "num_digits": 66,
+      "den_digits": 67,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E3_norm",
+      "node_id": 14,
+      "numerator": "-505499000009074477442785575046060722123530599154213082424756142080",
+      "denominator": "2055189355972360631420225240113101563548766126529943155584843390521",
+      "num_digits": 66,
+      "den_digits": 67,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E3_norm",
+      "node_id": 4,
+      "numerator": "444839120007985542394517820980800234752817093750676174237356523520",
+      "denominator": "2055189355972360631420225240113101563548766126529943155584843390521",
+      "num_digits": 66,
+      "den_digits": 67,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E3_norm",
+      "node_id": 15,
+      "numerator": "-505499000009074477442785575046060722123530599154213082424756142080",
+      "denominator": "2055189355972360631420225240113101563548766126529943155584843390521",
+      "num_digits": 66,
+      "den_digits": 67,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E3_norm",
+      "node_id": 16,
+      "numerator": "-505499000009074477442785575046060722123530599154213082424756142080",
+      "denominator": "2055189355972360631420225240113101563548766126529943155584843390521",
+      "num_digits": 66,
+      "den_digits": 67,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E3_norm",
+      "node_id": 5,
+      "numerator": "-90989820001633402572401631097890731056070258105305362281099427840",
+      "denominator": "2055189355972360631420225240113101563548766126529943155584843390521",
+      "num_digits": 65,
+      "den_digits": 67,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E3_norm",
+      "node_id": 17,
+      "numerator": "-505499000009074477442785575046060722123530599154213082424756142080",
+      "denominator": "2055189355972360631420225240113101563548766126529943155584843390521",
+      "num_digits": 66,
+      "den_digits": 67,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E3_norm",
+      "node_id": 18,
+      "numerator": "-505499000009074477442785575046060722123530599154213082424756142080",
+      "denominator": "2055189355972360631420225240113101563548766126529943155584843390521",
+      "num_digits": 66,
+      "den_digits": 67,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E3_norm",
+      "node_id": 6,
+      "numerator": "-636928740011433846067642854438570108443868887924245807262334976000",
+      "denominator": "2055189355972360631420225240113101563548766126529943155584843390521",
+      "num_digits": 66,
+      "den_digits": 67,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E3_norm",
+      "node_id": 19,
+      "numerator": "-505499000009074477442785575046060722123530599154213082424756142080",
+      "denominator": "2055189355972360631420225240113101563548766126529943155584843390521",
+      "num_digits": 66,
+      "den_digits": 67,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E3_norm",
+      "node_id": 20,
+      "numerator": "-505499000009074477442785575046060722123530599154213082424756142080",
+      "denominator": "2055189355972360631420225240113101563548766126529943155584843390521",
+      "num_digits": 66,
+      "den_digits": 67,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E3_norm",
+      "node_id": 7,
+      "numerator": "283079440005081734306358101308995595798499133465983266600716861440",
+      "denominator": "2055189355972360631420225240113101563548766126529943155584843390521",
+      "num_digits": 66,
+      "den_digits": 67,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E3_norm",
+      "node_id": 21,
+      "numerator": "-505499000009074477442785575046060722123530599154213082424756142080",
+      "denominator": "2055189355972360631420225240113101563548766126529943155584843390521",
+      "num_digits": 66,
+      "den_digits": 67,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E3_norm",
+      "node_id": 22,
+      "numerator": "-505499000009074477442785575046060722123530599154213082424756142080",
+      "denominator": "2055189355972360631420225240113101563548766126529943155584843390521",
+      "num_digits": 66,
+      "den_digits": 67,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E3_norm",
+      "node_id": 23,
+      "numerator": "5404319552844595",
+      "denominator": "18014398509481984",
+      "num_digits": 16,
+      "den_digits": 17,
+      "den_is_pow2_or_num_of_dyadic": null
+    },
+    {
+      "graph": "E3_norm",
+      "node_id": 24,
+      "numerator": "1",
+      "denominator": "1",
+      "num_digits": 1,
+      "den_digits": 1,
+      "den_is_pow2_or_num_of_dyadic": null
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "pre_registration": {
+    "task": "44-b deliverable 2: method-derived fair-rotation pairing schedule (ropesight adoption) vs round-robin baseline",
+    "registered_at_utc": "2026-09-28T00:00:00Z (mtime of this file is the binding receipt; recorded in results.json BEFORE any experiment run)",
+    "source_repo": "SuperInstance/ropesight",
+    "source_pinned_commit": "d8b1bb40fd9f797ab96b5b544bf05302fcefcdee",
+    "attribution": "Plain Bob token derivation and row/change conventions are ropesight's (bells/methods.mjs, plainCourseTokens as schedule primitive); this lane reimplements them as a self-contained module and CROSS-CHECKS byte-equality against the pinned clone at run time.",
+    "definitions": {
+      "schedule": "rows r_0..r_{L-1} with r_t[i] = participant occupying position i at round t (0-based internally, 1-based in rendered strings)",
+      "meeting": "ordered adjacent pair (r_t[i], r_t[i+1]) for i = 0..N-2, counted once per row per slot (same counting as wave-43-b P-R1)",
+      "coverage": "distribution of meeting counts over all N*(N-1) ordered pairs",
+      "max_wait": "for each covered pair, max gap in rows between consecutive meetings; reported as the max over covered pairs; never-meeting pairs are counted in coverage and flagged separately (their wait is infinite by definition)",
+      "RR_baseline": "cyclic rotation r_t[i] = (i+t) mod N over the same number of rows as the method schedule (wave-43-b baseline construction)"
+    },
+    "claims": [
+      {
+        "id": "P1",
+        "text": "N=6: the Plain Bob Minor method schedule (60 rows) covers ALL 30 ordered adjacent pairs with EXACTLY 10 meetings each (max/min = 1.0, 30/30 covered), while the 60-row cyclic round-robin covers exactly 6 ordered pairs (50 meetings each).",
+        "derivation": "wave-43-b P-R1 measured exactly this on ropesight's own code; reproduced here on the reimplementation as the adoption gate",
+        "verdict_rule": "PASS iff method: 30/30 covered, min=max=10; RR: exactly 6 covered with 50 meetings each; else FAIL"
+      },
+      {
+        "id": "P2",
+        "text": "N=6: max wait of the method schedule is <= 9 rows (wave-43-b measured 9).",
+        "derivation": "bounded by the course structure: a pair that meets early in the course and not again until late still re-meets within the 60-row period; 9 is the registered measured value from wave-43-b",
+        "verdict_rule": "PASS iff measured max wait <= 9; report the exact value"
+      },
+      {
+        "id": "P3",
+        "text": "Generalization (UNTESTED before this run): for N=5 (Plain Bob Doubles, 40 rows) and N=7 (Plain Bob Triples, 84 rows), every ordered adjacent pair meets at least once AND max/min <= 2.0. If any pair never meets (ratio infinite) or the ratio exceeds 2.0, that is an honest FAIL receipted with the full meeting histogram.",
+        "derivation": "no prior measurement exists for N!=6; the claim carries real falsification risk and is registered precisely to expose it; the N=6 uniformity is NOT assumed to generalize",
+        "verdict_rule": "PASS iff both N pass both sub-conditions; else FAIL with per-N receipt"
+      },
+      {
+        "id": "P4",
+        "text": "Fidelity: for every stage in ropesight's METHODS table (N=3,5,6,7,8) the reimplemented module's rows are BYTE-EQUAL to walkCourse(plainCourseTokens(name)) from the pinned clone, and every tested schedule (N=3..8) has max bell move <= 1 position per change (ropesight L49 law).",
+        "derivation": "adoption requires the reimplementation to match the source instrument exactly before any comparison claim means anything",
+        "verdict_rule": "PASS iff all 5 stages byte-equal AND maxMove <= 1 for N=3..8; else FAIL"
+      }
+    ]
+  }
+}

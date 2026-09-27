@@ -1,0 +1,32 @@
+{
+  "pre_registration": {
+    "task": "44-b deliverable 3: witness receipt grammar + verify (mavis STITCH/WITNESS/PROMOTE adoption, hardened)",
+    "registered_at_utc": "2026-09-28T00:00:00Z (mtime of this file is the binding receipt; recorded in results.json BEFORE any test run)",
+    "source_repo": "SuperInstance/mavis-substrate-walker",
+    "source_pinned_commit": "808f0d3ec8eaaba656412188e8337479e5d0b42a",
+    "attribution_and_hardening": "mavis's WitnessChain anchors each witness to the last THREE witnesses (rolling window) with FNV1a-64. The adopted grammar HARDENS this: single strict parent = full sha256 of the previous receipt (first receipt's parent = GENESIS sentinel), so ANY reorder, skip, or tamper anywhere in the chain breaks verification; mavis's 3-window catches many but not all deep reorderings, ours is fail-closed by construction.",
+    "grammar": {
+      "receipt": "{ claim: string, inputs_sha256: 64-hex, output_sha256: 64-hex, parent: 64-hex | \"GENESIS\", ts: ISO-8601 string }",
+      "id": "sha256 of canonical JSON (sorted keys, tight separators, UTF-8) of the receipt object",
+      "chain_file": "JSONL, one receipt per line, append-only",
+      "verify": "recompute every id; check parent link (prev hash / GENESIS); reject parse errors, duplicate ids, broken links; tip = id of last receipt; exit 0 iff all checks pass"
+    },
+    "claims": [
+      {
+        "id": "P1",
+        "text": "The committed KAT chain (kat/chain.jsonl, >= 5 receipts whose inputs_sha256/output_sha256 are the REAL sha256s of this wave's sibling artifacts) verifies end-to-end via the CLI: node verify.mjs kat/chain.jsonl exits 0 and reports ok=true with the correct receipt count and tip.",
+        "verdict_rule": "PASS iff exit 0 AND ok=true AND tip matches the independently recomputed last-receipt hash"
+      },
+      {
+        "id": "P2",
+        "text": "Every negative control FAILS (non-zero exit, ok=false): (a) tampered claim byte in any receipt; (b) wrong parent on a middle receipt; (c) skipped (deleted) middle receipt; (d) reordered receipts; (e) tampered ts byte; (f) forged first receipt whose parent is a 64-hex instead of GENESIS. All run end-to-end through verify.mjs as a subprocess.",
+        "verdict_rule": "PASS iff all 6 negatives exit non-zero with ok=false and a locating error; else FAIL naming the escape"
+      },
+      {
+        "id": "P3",
+        "text": "Determinism: hashing a fixed receipt object twice, in two processes, yields the identical sha256 id, and verify of a single-receipt chain with parent=GENESIS passes while the same receipt with a mutated claim fails.",
+        "verdict_rule": "PASS iff both determinism sub-checks hold"
+      }
+    ]
+  }
+}

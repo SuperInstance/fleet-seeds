@@ -1,0 +1,140 @@
+{
+  "receipts": {
+    "mq_path": "/home/z/my-project/pt44b-eq",
+    "pinned_commit": "82c295f1555062d80d7ff087aeb83667675062a3",
+    "source_files_sha256": {
+      "engine.py": "2e6daa969949034f78bb081910ed1a5a3bfb267184cae65a9b2a1a6bc854689c",
+      "auditor.py": "ec024c5293910126ad7050f9474ddb986608c880bed86854dc647ae28104ba42",
+      "tape.py": "4441ecb72bbdb5646c3117819fa60c2c80f96bcd007ea13b47c0a2449b0ee5c8"
+    },
+    "python": "3.12.14",
+    "clone_git_status_after_runs": "(clean)"
+  },
+  "claims_file": {
+    "sha256": "a9955586387632baa444385c97d94f7f3aacb003b81ab67917ce331369ac3eda",
+    "mtime_epoch": 1790545576,
+    "note": "pre-registered BEFORE any run (see verdict.md)"
+  },
+  "graphs": [
+    {
+      "name": "E1_dot",
+      "n_nodes": 31,
+      "n_leaves": 16,
+      "n_rows": 107,
+      "sink_id": 30,
+      "float_value": -0.7013999999999998,
+      "exact_value": "-455234627072041008000749863984903/649037107316853453566312041152512",
+      "fwd_drift_max": 3.1657343160112816e-16,
+      "grad_drift_max": 0.0,
+      "fwd_drift_max_node": 30,
+      "grad_drift_max_node": 0,
+      "auditor_exact_agrees": true,
+      "tape_verify_ok": true,
+      "replay_bitwise_equal": true,
+      "auditor_seed0": {
+        "n_nodes": 31,
+        "n_sampled": 2,
+        "n_paths": 34,
+        "unique_ancestors_covered": 31,
+        "covers_all_nodes": true,
+        "mean": 0.0,
+        "ci_half": 0.0,
+        "worst": [
+          30,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "E2_gate",
+      "n_nodes": 18,
+      "n_leaves": 9,
+      "n_rows": 62,
+      "sink_id": 17,
+      "float_value": -0.07281549169741436,
+      "exact_value": "-23629978049572090893122528346913/324518553658426726783156020576256",
+      "fwd_drift_max": 2.783909289431185e-16,
+      "grad_drift_max": 2.026946380426739e-16,
+      "fwd_drift_max_node": 14,
+      "grad_drift_max_node": 6,
+      "auditor_exact_agrees": true,
+      "tape_verify_ok": true,
+      "replay_bitwise_equal": true,
+      "auditor_seed0": {
+        "n_nodes": 18,
+        "n_sampled": 1,
+        "n_paths": 18,
+        "unique_ancestors_covered": 18,
+        "covers_all_nodes": true,
+        "mean": 4.1418650361402325e-17,
+        "ci_half": 3.253256235023564e-17,
+        "worst": [
+          6,
+          2.026946380426739e-16
+        ]
+      }
+    },
+    {
+      "name": "E3_norm",
+      "n_nodes": 25,
+      "n_leaves": 8,
+      "n_rows": 100,
+      "sink_id": 24,
+      "float_value": 0.2716407098877218,
+      "exact_value": "389422264390112057728268417105920/1433593162641465945764865011450539",
+      "fwd_drift_max": 1.393002540307599e-16,
+      "grad_drift_max": 0.0,
+      "fwd_drift_max_node": 12,
+      "grad_drift_max_node": 0,
+      "auditor_exact_agrees": true,
+      "tape_verify_ok": true,
+      "replay_bitwise_equal": true,
+      "auditor_seed0": {
+        "n_nodes": 25,
+        "n_sampled": 1,
+        "n_paths": 25,
+        "unique_ancestors_covered": 25,
+        "covers_all_nodes": true,
+        "mean": 0.0,
+        "ci_half": 0.0,
+        "worst": [
+          24,
+          0.0
+        ]
+      }
+    }
+  ],
+  "P1": {
+    "threshold_all": 1e-13,
+    "threshold_E1_E2": 1e-14,
+    "max_fwd_drift": 3.1657343160112816e-16,
+    "max_grad_drift": 2.026946380426739e-16,
+    "max_fwd_drift_E1_E2": 3.1657343160112816e-16,
+    "max_grad_drift_E1_E2": 2.026946380426739e-16,
+    "pass": true
+  },
+  "P2": {
+    "auditor_engine_exact_equal": true,
+    "max_denominator_digits": 67,
+    "bound_digits": 1000,
+    "n_gradients_receipted": 74,
+    "pass": true
+  },
+  "P3": {
+    "n_injections": 74,
+    "n_flagged": 74,
+    "n_missed": 0,
+    "missed": [],
+    "coverage_finding": {
+      "E1_dot": true,
+      "E2_gate": true,
+      "E3_norm": true
+    },
+    "pass": true
+  },
+  "P4": {
+    "tape_verify_all": true,
+    "replay_bitwise_all": true,
+    "pass": true
+  }
+}
