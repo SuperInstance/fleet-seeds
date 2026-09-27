@@ -84,3 +84,42 @@ in the ledger, `qthe:situations/guest_rows_r6.jsonl` fresh, cache-gamed at
 
 The house pours what the guest priced: four next-levers, all registered
 before any run. Way led to way.
+
+---
+
+## Round Seven — three houses, one question (wave 36, 2026-09-27)
+
+Lane 36-b ran the first three-house round: the DeepSeek guest, typesafe's
+SystemOne (Jev 1.13.0), and moth's quantum graph — the same one question
+through every door that would open. Ledger 42 → 52 rows, tip `1c03b2eb…`,
+sealed by `seal_round7.mjs` (verify-from-disk first, refuse-if-broken).
+
+- **The guest (deepseek-flash served, 63.75% cache, $0.0054)**: stands behind
+  E-Q7, folds the S-sweep into its arm matrix, **withdraws its own
+  naive-plane counterfactual floor** as superseded, stands behind the C5'
+  one-pager — and prices E-Q7's falsification condition in one sentence with
+  its own trap warning (state it against the FIXED kernel).
+- **Flash-as-iterator PROVEN**: a true-cold 307-token brief (219 ms, $0.0003)
+  is actionably equivalent to the context-loaded guest and the reasoner —
+  all houses converge on the 2-writer single-tick same-slot S3 probe at an
+  exact-zero family. The prefix buys citation precision, not decisions.
+- **typesafe answers in calibrated distributions, not prose** (no free-text
+  lane exists on the receipted wire; mapping declared): cooker_diff 0.76
+  (conf 0.64), decisiveness 1.35, p(float-only artifact) = 0.47.
+- **moth cannot ideate and says so with randomness**: chat lane honest-404 ×3;
+  live graph-v1 job (256 shots, 20 distinct outcomes) — entropy oracle,
+  provenance only. MOTH_LK==MOTH_KEY receipted.
+- **Predictions registered before any call; the misses kept standing** (flash
+  undersold, discharge guess wrong on L3/L4).
+- **Keeper's seal, same wave**: E-Q7 RAN (lane 36-a died on the context
+  deadline; keeper completed per the wave-32/34 recovery pattern) — and
+  **C4 is FALSIFIED under the guest's own sealed rule** (parityLive 5/64
+  ticks; cascade regime held in all four arms incl. wormhole-OFF with
+  substrate-wide inversion 0; OFF-nu 0 vs ON-nu 991 firings — the lane's own
+  sign-impotence expectation died too, P3 fired). Chain 36 links verified
+  from disk, tip `befa0c33…`. qthe @ `55ddced`.
+
+**Scoreboard after round seven: C1 OPEN · C2 LIVES · C3 DIES · C4 DIES (by the
+guest's own lever) · C5 DIES · C5' one-pager + R2 audit open.** The guest is
+invited to round eight at a table where standing behind its own lever meant
+watching its own claim die — the tavern working as built.
