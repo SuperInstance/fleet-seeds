@@ -1,0 +1,1674 @@
+{
+  "instrument": "fleet-seeds playtest/wave45/moth-census (lane 45-e)",
+  "step": "1b schema follow-up",
+  "ts": "2026-09-27T23:02:15.888Z",
+  "note": "GET-only; step-1+1b total 27/30 requests; no key material",
+  "rows": [
+    {
+      "endpoint": "/api/v1/engines/comet-qrng-v1",
+      "status": 200,
+      "contentType": "application/json",
+      "ms": 1210,
+      "body": {
+        "$schema": "https://api.mothquantum.com/schemas/Engine.json",
+        "engine_id": "comet-qrng-v1",
+        "name": "Comet Quantum RNG Engine",
+        "description": "Random bytes from Born-rule measurements on IBM hardware (or Aer baseline), with an SP 800-90B min-entropy certificate, Toeplitz extractor and CHSH witness.",
+        "version": "1.0.0",
+        "owner": "37eae1ca-66b4-46f8-aca3-0baa7b011987",
+        "owner_type": "user",
+        "created_by": "37eae1ca-66b4-46f8-aca3-0baa7b011987",
+        "visibility": "public",
+        "queue": "",
+        "input_type": "application/json",
+        "output_type": "application/json",
+        "is_multipart": false,
+        "is_async": false,
+        "execution_mode": "steps",
+        "run_policy": {
+          "timeout": 300,
+          "max_retries": 3,
+          "heartbeat": 60
+        },
+        "params_schema": {
+          "$defs": {
+            "Derivation": {
+              "properties": {
+                "floats": {
+                  "default": 0,
+                  "description": "Uniform doubles in [0, 1) with 53-bit mantissas.",
+                  "maximum": 100000,
+                  "minimum": 0,
+                  "title": "Floats",
+                  "type": "integer"
+                },
+                "integers": {
+                  "anyOf": [
+                    {
+                      "$ref": "#/$defs/IntegerDerivation"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "default": null,
+                  "description": "Uniform integers in [min, max] via rejection sampling."
+                }
+              },
+              "title": "Derivation",
+              "type": "object"
+            },
+            "IntegerDerivation": {
+              "properties": {
+                "count": {
+                  "description": "How many integers to derive.",
+                  "maximum": 100000,
+                  "minimum": 1,
+                  "title": "Count",
+                  "type": "integer"
+                },
+                "max": {
+                  "description": "Inclusive upper bound.",
+                  "title": "Max",
+                  "type": "integer"
+                },
+                "min": {
+                  "description": "Inclusive lower bound.",
+                  "title": "Min",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "min",
+                "max",
+                "count"
+              ],
+              "title": "IntegerDerivation",
+              "type": "object"
+            }
+          },
+          "properties": {
+            "backend_name": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "IBM backend to target; omit to auto-select the least busy device. Ignored when mode='emu'.",
+              "title": "Backend Name"
+            },
+            "bell_witness": {
+              "default": true,
+              "description": "Add 8 qubits carrying four CHSH Bell pairs measured in the same job (fidelity witness).",
+              "title": "Bell Witness",
+              "type": "boolean"
+            },
+            "derive": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/Derivation"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "Optional unbiased integers/floats derived from the conditioned bytes."
+            },
+            "epsilon_log2": {
+              "default": 64,
+              "description": "Extractor security parameter: output is 2^-epsilon_log2-close to uniform.",
+              "maximum": 128,
+              "minimum": 32,
+              "title": "Epsilon Log2",
+              "type": "integer"
+            },
+            "include_raw_counts": {
+              "default": true,
+              "description": "Echo the raw counts so third parties can recompute the output.",
+              "title": "Include Raw Counts",
+              "type": "boolean"
+            },
+            "mode": {
+              "default": "emu",
+              "description": "'emu' samples on a local Aer simulator (classical baseline, uncertified); 'qpu' samples IBM hardware.",
+              "enum": [
+                "emu",
+                "qpu"
+              ],
+              "title": "Mode",
+              "type": "string"
+            },
+            "num_qubits": {
+              "default": 12,
+              "description": "Width of the randomness register (Born-rule bits per shot).",
+              "maximum": 256,
+              "minimum": 1,
+              "title": "Num Qubits",
+              "type": "integer"
+            },
+            "output_bytes": {
+              "default": 32,
+              "description": "Conditioned bytes requested. You receive min(output_bytes, extractable).",
+              "maximum": 1000000,
+              "minimum": 1,
+              "title": "Output Bytes",
+              "type": "integer"
+            },
+            "prev_pulse_hash": {
+              "anyOf": [
+                {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "Previous beacon pulse hash to chain onto (hex).",
+              "title": "Prev Pulse Hash"
+            },
+            "public_seed": {
+              "default": "toeplitz-v1",
+              "description": "Toeplitz seed: a shipped seed id (default 'toeplitz-v1', uniform seed from a documented ceremony — information-theoretic mode) or any custom string (SHAKE-256 expanded — computational mode, labelled as such).",
+              "maxLength": 256,
+              "minLength": 1,
+              "title": "Public Seed",
+              "type": "string"
+            },
+            "pulse_index": {
+              "anyOf": [
+                {
+                  "minimum": 0,
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "Beacon pulse index, if chaining.",
+              "title": "Pulse Index"
+            },
+            "qpu_instance": {
+              "anyOf": [
+                {
+                  "format": "password",
+                  "type": "string",
+                  "writeOnly": true
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "IBM Quantum instance CRN; BYOK override, omit to use mothbackend's own shared IBM credentials.",
+              "title": "Qpu Instance"
+            },
+            "qpu_token": {
+              "anyOf": [
+                {
+                  "format": "password",
+                  "type": "string",
+                  "writeOnly": true
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "IBM Quantum API token; BYOK override, omit to use mothbackend's own shared IBM credentials.",
+              "title": "Qpu Token"
+            },
+            "require_assumption_free": {
+              "default": false,
+              "description": "Certify only on the assumption-free tier (whole-shot most-common-value bound, no independence assumed). Capped near log2(shots) bits per shot; ≈0 in counts mode, so this effectively needs per-shot memory readout.",
+              "title": "Require Assumption Free",
+              "type": "boolean"
+            },
+            "shots": {
+              "default": 4096,
+              "description": "Number of measurement shots (max 10,000). Raw bits = num_qubits × shots.",
+              "exclusiveMinimum": 0,
+              "maximum": 10000,
+              "title": "Shots",
+              "type": "integer"
+            }
+          },
+          "title": "Params",
+          "type": "object"
+        },
+        "credits_per_run": 5,
+        "enabled": true,
+        "registered_at": "2026-09-09T15:58:44Z",
+        "updated_at": "2026-09-09T15:58:44Z",
+        "description_md": "Comet Quantum RNG Engine (comet-qrng-v1) — hardware Born-rule randomness with an honest certificate.\n\nYou ask for random bytes. The engine prepares `num_qubits` qubits in |+⟩, measures\nthem on a simulator (`emu`) or an IBM QPU (`qpu`) through mothbackend, estimates\nhow much min-entropy the device's output actually carried (NIST SP 800-90B\nestimators on the real data — not an assumed constant), runs it through a\nseeded Toeplitz extractor with a stated security parameter, and returns the\nbytes together with everything needed to audit them.\n\n## What you send\n\n`application/json`:\n\n```json\n{\"num_qubits\": 12, \"shots\": 4096, \"mode\": \"emu\", \"output_bytes\": 32,\n \"bell_witness\": true, \"derive\": {\"integers\": {\"min\": 1, \"max\": 6, \"count\": 10}}}\n```\n\n- **`num_qubits`** — width of the randomness register (one Born-rule bit per\n  qubit per shot). `emu` caps the whole circuit at 20 qubits; `qpu` is bounded\n  by the backend.\n- **`shots`** — repetitions (≤ 10,000). Raw bits = num_qubits × shots.\n- **`bell_witness`** — add 8 qubits carrying four CHSH Bell pairs measured in the\n  same job. Yields an S value that *can fail* on hardware (a fidelity witness,\n  not device-independent certification — see `bell_witness.caveat`).\n- **`output_bytes`** — how many conditioned bytes you want. You get\n  `min(output_bytes, extractable)`; the certificate says which.\n- **`derive`** — optional unbiased integers / floats derived from the bytes.\n- **`prev_pulse_hash`, `pulse_index`** — chain this run as a beacon pulse.\n- **`public_seed`, `epsilon_log2`** — extractor parameters (public; defaults fine).\n\n## What you get back\n\n`GET /result/{job_id}` → `result.output`:\n\n```json\n{\n  \"random\": {\"hex\": \"9f3a…\", \"bytes\": 32, \"derived\": {\"integers\": {\"values\": [3, 6, 1, …]}}},\n  \"certificate\": {\"certified\": true, \"grade\": \"hardware\", \"h_bit\": 0.91,\n                  \"budget_bits\": 388211, \"output_bits\": 256, \"epsilon_log2\": 64, \"statements\": [\"…\"]},\n  \"entropy\": {\"readout\": \"counts\", \"h_bit\": 0.91, \"ordering_penalty_bits\": 43250.8, \"…\": \"…\"},\n  \"bell_witness\": {\"S\": 2.61, \"sigma_S\": 0.012, \"violates_classical_3sigma\": true, \"…\": \"…\"},\n  \"device_fingerprint\": {\"z_expectations\": [\"…\"], \"top_correlated_pairs\": [\"…\"]},\n  \"provenance\": {\"mode\": \"qpu\", \"backend\": \"ibm_miami\", \"provider_job_id\": \"…\", \"qpu_seconds\": 3.1, \"circuit_hash\": \"…\"},\n  \"commitment\": {\"commit\": \"…\", \"salt\": \"…\", \"committed_at\": \"…\"},\n  \"pulse\": {\"pulse_hash\": \"…\", \"prev_hash\": \"…\", \"…\": \"…\"},\n  \"raw\": {\"counts_sha256\": \"…\", \"counts\": {\"0110…\": 1, \"…\": \"…\"}}\n}\n```\n\n`emu` output is a classical simulator's pseudo-randomness. It is returned with\n`certificate.certified = false, grade = \"simulator-baseline\"` — it is the\ncontrol the hardware result is compared against, not a product claim.\n\n## Pipeline (internal)\n\n  build   → Params → CircuitSpec → QASM bytes (+ circuit_hash)\n  submit  → mothbackend.client: emu inline → counts; qpu → job id. Forms the\n            commitment C = H(circuit_hash ‖ backend ‖ job_id ‖ salt) BEFORE any\n            outcome exists and surfaces it via update_progress.\n  collect → emu passthrough │ qpu: poll until terminal → counts (+ memory if the\n            backend ever returns per-shot data), usage_seconds\n  format  → entropy assessment → Toeplitz extraction → derivations → CHSH\n            witness → device fingerprint → certificate → pulse\n\nBitstring convention: mothbackend reports counts qubit-0-LEFTMOST; everything\nhere consumes strings directly. Circuit qubits [0, num_qubits) are the\nrandomness register; the next 8 are the witness pairs.",
+        "code_samples": [
+          {
+            "lang": "Python (EMU baseline)",
+            "source": "import time, requests\n\nBASE = \"https://api.mothquantum.com/v1\"\nHEADERS = {\"Authorization\": \"Bearer YOUR_KEY\"}\n\nr = requests.post(f\"{BASE}/generation/comet-qrng-v1/process\", headers=HEADERS,\n                  json={\"num_qubits\": 12, \"shots\": 2048, \"mode\": \"emu\", \"output_bytes\": 32,\n                        \"derive\": {\"integers\": {\"min\": 1, \"max\": 6, \"count\": 10}}})\njob_id = r.json()[\"job_id\"]\nwhile True:\n    s = requests.get(f\"{BASE}/status/{job_id}\", headers=HEADERS).json()\n    if s[\"status\"] in (\"completed\", \"failed\"):\n        break\n    time.sleep(2)\nout = requests.get(f\"{BASE}/result/{job_id}\", headers=HEADERS).json()[\"result\"][\"output\"]\nprint(out[\"random\"][\"hex\"], out[\"random\"][\"derived\"][\"integers\"][\"values\"])\nprint(out[\"certificate\"][\"grade\"], out[\"certificate\"][\"statements\"])\n"
+          },
+          {
+            "lang": "Python (QPU, certified)",
+            "source": "import time, requests\n\nBASE = \"https://api.mothquantum.com/v1\"\nHEADERS = {\"Authorization\": \"Bearer YOUR_KEY\"}\n\nr = requests.post(f\"{BASE}/generation/comet-qrng-v1/process\", headers=HEADERS,\n                  json={\"num_qubits\": 100, \"shots\": 10000, \"mode\": \"qpu\",\n                        \"output_bytes\": 4096, \"bell_witness\": True})\njob_id = r.json()[\"job_id\"]\nwhile True:\n    s = requests.get(f\"{BASE}/status/{job_id}\", headers=HEADERS).json()\n    for step in s.get(\"steps\", []):\n        print(step[\"name\"], \"→\", step[\"status\"])   # the submit step surfaces the commitment\n    if s[\"status\"] in (\"completed\", \"failed\"):\n        break\n    time.sleep(10)\nout = requests.get(f\"{BASE}/result/{job_id}\", headers=HEADERS).json()[\"result\"][\"output\"]\nprint(out[\"certificate\"][\"certified\"], out[\"certificate\"][\"h_bit\"], out[\"random\"][\"bytes\"], \"bytes\")\nprint(\"CHSH S =\", out[\"bell_witness\"][\"S\"], \"±\", out[\"bell_witness\"][\"sigma_S\"])\nprint(\"pulse\", out[\"pulse\"][\"pulse_hash\"])\n"
+          },
+          {
+            "lang": "curl",
+            "source": "curl -X POST https://api.mothquantum.com/v1/generation/comet-qrng-v1/process \\\n  -H \"Authorization: Bearer YOUR_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"num_qubits\": 12, \"shots\": 2048, \"mode\": \"emu\", \"output_bytes\": 32}'\n"
+          }
+        ],
+        "error_codes": [
+          {
+            "type": "invalid_params",
+            "description": "Parameter validation failed (e.g. circuit exceeds the EMU cap of 20 qubits)."
+          },
+          {
+            "type": "backend_too_small",
+            "description": "The circuit needs more qubits than the selected IBM backend provides."
+          },
+          {
+            "type": "missing_credentials",
+            "description": "IBM authentication failed — no usable token/instance (shared or BYOK)."
+          },
+          {
+            "type": "simulation_failed",
+            "description": "Aer simulation failed."
+          },
+          {
+            "type": "collection_failed",
+            "description": "Could not retrieve the QPU result — job cancelled, failed, or backend errored."
+          },
+          {
+            "type": "collection_timeout",
+            "description": "The QPU job did not reach a terminal state within the engine's 6000 s poll deadline; the provider job was cancelled."
+          },
+          {
+            "type": "result_malformed",
+            "description": "The backend returned counts that do not match the submitted circuit."
+          }
+        ],
+        "steps": [
+          {
+            "name": "build",
+            "timeout": 300,
+            "heartbeat": 120,
+            "input_type": "application/json",
+            "max_retries": 0,
+            "output_type": "application/x-qasm"
+          },
+          {
+            "name": "submit",
+            "timeout": 3600,
+            "heartbeat": 1200,
+            "input_type": "application/x-qasm",
+            "max_retries": 2,
+            "output_type": "application/json"
+          },
+          {
+            "name": "collect",
+            "timeout": 6200,
+            "heartbeat": 3200,
+            "input_type": "application/json",
+            "max_retries": 5,
+            "output_type": "application/json"
+          },
+          {
+            "name": "format",
+            "timeout": 600,
+            "heartbeat": 300,
+            "input_type": "application/json",
+            "max_retries": 0,
+            "output_type": "application/json"
+          }
+        ],
+        "banner_image_id": null,
+        "card_image_id": null,
+        "banner_image_tag": null,
+        "card_image_tag": null,
+        "has_estimate": false,
+        "estimate": null,
+        "has_estimate_fn": false,
+        "estimate_needs_container": false,
+        "sidecar_endpoint": null,
+        "has_validate_fn": false
+      }
+    },
+    {
+      "endpoint": "/api/v1/engines/otoc-echo-v1",
+      "status": 200,
+      "contentType": "application/json",
+      "ms": 1125,
+      "body": {
+        "$schema": "https://api.mothquantum.com/schemas/Engine.json",
+        "engine_id": "otoc-echo-v1",
+        "name": "Quantum Echo",
+        "description": "Perturb a scrambled qubit chain, reverse it, and listen for what returns — a signed, complex multi-tap delay map.",
+        "version": "0.1.2",
+        "owner": "fccf0d75-76b1-4059-93ab-e1267885289e",
+        "owner_type": "user",
+        "created_by": "fccf0d75-76b1-4059-93ab-e1267885289e",
+        "visibility": "public",
+        "queue": "",
+        "input_type": "application/json",
+        "output_type": "application/json",
+        "is_multipart": false,
+        "is_async": false,
+        "execution_mode": "handler",
+        "run_policy": {
+          "timeout": 7200,
+          "max_retries": 1,
+          "heartbeat": 3600
+        },
+        "params_schema": {
+          "properties": {
+            "allow_high_shots": {
+              "default": false,
+              "description": "Permit shots above 8192 (QPU time scales linearly).",
+              "title": "Allow High Shots",
+              "type": "boolean"
+            },
+            "depth": {
+              "default": 8,
+              "description": "Echo depths t = 1..depth — the tap time slots. Each circuit has 2·depth layers.",
+              "maximum": 32,
+              "minimum": 1,
+              "title": "Depth",
+              "type": "integer"
+            },
+            "disorder": {
+              "default": 0,
+              "description": "Additive per-gate angle jitter, std in radians. 0 = clean Floquet. Localises the echo; the only lever that makes `seed` matter.",
+              "maximum": 1,
+              "minimum": 0,
+              "title": "Disorder",
+              "type": "number"
+            },
+            "exact": {
+              "default": true,
+              "description": "aer only: exact (infinite-shot) expectation values instead of sampling.",
+              "title": "Exact",
+              "type": "boolean"
+            },
+            "fractional_gates": {
+              "default": true,
+              "description": "Use native rzz/rx on hardware where available. Halves the forward half's two-qubit count; disables gate twirling.",
+              "title": "Fractional Gates",
+              "type": "boolean"
+            },
+            "height": {
+              "anyOf": [
+                {
+                  "maximum": 32,
+                  "minimum": 2,
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "Square lattice height. Required for `square`.",
+              "title": "Height"
+            },
+            "include_taps": {
+              "default": true,
+              "description": "Also emit a flattened tap list (site, depth, F_re, F_im, level, polarity) in extras.",
+              "title": "Include Taps",
+              "type": "boolean"
+            },
+            "include_z": {
+              "default": false,
+              "description": "Also measure <Z_i>, completing each site's Bloch vector. Free on aer; a third measurement basis (1.5x shots) on hardware.",
+              "title": "Include Z",
+              "type": "boolean"
+            },
+            "kick": {
+              "default": "Z",
+              "description": "Perturbation Pauli applied to the kick site between U and U†.",
+              "enum": [
+                "Z",
+                "Y",
+                "X"
+              ],
+              "title": "Kick",
+              "type": "string"
+            },
+            "kick_site": {
+              "anyOf": [
+                {
+                  "minimum": 0,
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "Regeneration source: the site that receives the impulse. Default: centre.",
+              "title": "Kick Site"
+            },
+            "lattice": {
+              "default": "chain",
+              "description": "Topology of the delay line. `chain`: site → pan. `square` (Nighthawk-native): x → pan, y → diffusion.",
+              "enum": [
+                "chain",
+                "square"
+              ],
+              "title": "Lattice",
+              "type": "string"
+            },
+            "machine": {
+              "default": "aer",
+              "description": "Backend: 'aer' (local, noiseless) or an IBM backend name such as 'ibm_phoenix'.",
+              "title": "Machine",
+              "type": "string"
+            },
+            "min_tap_level": {
+              "default": 0.02,
+              "description": "|F| threshold for the emitted tap list.",
+              "maximum": 1,
+              "minimum": 0,
+              "title": "Min Tap Level",
+              "type": "number"
+            },
+            "n_sites": {
+              "default": 8,
+              "description": "Chain length in qubits (= pan positions). Ignored for `square`.",
+              "maximum": 156,
+              "minimum": 2,
+              "title": "N Sites",
+              "type": "integer"
+            },
+            "qpu_instance": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "IBM Quantum instance CRN. As with the token: required for `via: direct`, optional BYOK for `via: mothbackend`.",
+              "format": "password",
+              "title": "Qpu Instance",
+              "writeOnly": true
+            },
+            "qpu_token": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "IBM Quantum API token. Required for `via: direct` on an IBM machine (or the QISKIT_IBM_TOKEN env var); optional BYOK for `via: mothbackend`, which otherwise uses Moth's own credentials.",
+              "format": "password",
+              "title": "Qpu Token",
+              "writeOnly": true
+            },
+            "ref_floor": {
+              "anyOf": [
+                {
+                  "exclusiveMinimum": 0,
+                  "maximum": 1,
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "|c_ref| below which F is null. Default: 4/sqrt(shots), ~0 for exact simulation.",
+              "title": "Ref Floor"
+            },
+            "seed": {
+              "anyOf": [
+                {
+                  "maximum": 9007199254740991,
+                  "minimum": 0,
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "RNG seed for the disorder realisation. Only audible when disorder > 0. Drawn as a 31-bit integer and returned in provenance if omitted. Capped at 2**53-1: above that, moth-api (Go) and any browser client re-spell the integer as a float64 and it stops matching the seed you sent.",
+              "title": "Seed"
+            },
+            "shots": {
+              "default": 4096,
+              "description": "Shots per circuit. Ignored when machine='aer' and exact=true. Above 8192 requires allow_high_shots.",
+              "minimum": 1,
+              "title": "Shots",
+              "type": "integer"
+            },
+            "theta_x": {
+              "default": 0.9424777960769379,
+              "description": "Transverse kick per layer (RX angle, rad). The 'how quantum' dial: low → loud regular taps; high → inverted, attenuated, erased.",
+              "maximum": 3.141592653589793,
+              "minimum": 0,
+              "title": "Theta X",
+              "type": "number"
+            },
+            "theta_z": {
+              "default": 0,
+              "description": "Phase layer (RZ angle, rad). 0 → real, two-signed F. >0 → complex F: taps acquire a phase.",
+              "maximum": 3.141592653589793,
+              "minimum": 0,
+              "title": "Theta Z",
+              "type": "number"
+            },
+            "theta_zz": {
+              "default": 1.0995574287564276,
+              "description": "Coupling per layer (RZZ, rad). Non-monotonic: ≈0.25π is the sparse setting. π is a Clifford (no scrambling). θ and π−θ coincide only when theta_x = 0, not at the default drive, so the upper half of the range is its own territory. The sign is invisible unless theta_z > 0.",
+              "exclusiveMinimum": -3.141592653589793,
+              "maximum": 3.141592653589793,
+              "title": "Theta Zz",
+              "type": "number"
+            },
+            "twirls": {
+              "default": 1,
+              "description": "ZZ-commutant Pauli twirls per circuit, averaged. Randomises off-axis coherent rzz error (not angle miscalibration, which the reference run absorbs). Multiplies circuit count.",
+              "maximum": 32,
+              "minimum": 1,
+              "title": "Twirls",
+              "type": "integer"
+            },
+            "via": {
+              "default": "direct",
+              "description": "How to reach the machine. `direct`: this engine drives qiskit-ibm-runtime itself (analytic emulation, native fractional gates, one batched QPU session). `mothbackend`: route through Moth's execution service, which holds the credentials — sampled only, so no analytic mode, no fractional gates, and one submission per circuit.",
+              "enum": [
+                "direct",
+                "mothbackend"
+              ],
+              "title": "Via",
+              "type": "string"
+            },
+            "width": {
+              "anyOf": [
+                {
+                  "maximum": 32,
+                  "minimum": 2,
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "Square lattice width. Required for `square`.",
+              "title": "Width"
+            }
+          },
+          "title": "Params",
+          "type": "object"
+        },
+        "credits_per_run": 1,
+        "enabled": true,
+        "registered_at": "2026-09-15T01:31:51Z",
+        "updated_at": "2026-09-15T13:00:44Z",
+        "description_md": "otoc-echo-v1 — Quantum Echo. A **core** engine.\n\nThin wrapper over the `quantum-echo` library: this file owns the platform contract\n(params schema, validation, credits, estimate, the typed result envelope) and the\nlibrary owns the physics. Same relationship qdrive-api has with QDrive.\n\n    params -> EchoSpec -> quantum_echo.measure_ir -> EchoIR.to_trajectory()\n\nMedia engines (retrocausal-echo-v1 and friends) depend on the same library and either\ncall `measure_ir` in-process or rebuild an IR from this engine's result with\n`EchoIR.from_trajectory`. Neither path reimplements the measurement.",
+        "code_samples": [
+          {
+            "lang": "Python",
+            "source": "import time\nimport requests\n\nAPI = \"https://api.mothquantum.com\"\n# An explicit User-Agent is not optional: Cloudflare fronts this API and 403s\n# the stdlib `Python-urllib/*` prefix with a plain-text `error code: 1010`\n# body that looks exactly like an auth failure.\nH = {\"Authorization\": \"Bearer moth_YOUR_KEY\",\n     \"User-Agent\": \"otoc-echo-example/1.0\"}\n\ndef check(r):\n    if not r.ok:                     # surface the body, or a 1010 is invisible\n        raise RuntimeError(f\"HTTP {r.status_code}: {r.text[:800]}\")\n    return r.json()\n\n# 1. Submit. 202 and a job id -- params are validated in the worker's `build`\n#    step, not here, so bad params come back as a job that fails.\njob = check(requests.post(f\"{API}/api/v1/engines/otoc-echo-v1/process\", headers=H,\n                          json={\"params\": {\"n_sites\": 8, \"depth\": 8,\n                                           \"theta_x\": 0.9425, \"theta_zz\": 1.0996}}))[\"job_id\"]\n\n# 2. Poll.\nwhile True:\n    st = check(requests.get(f\"{API}/api/v1/jobs/{job}/status\", headers=H))\n    if st[\"status\"] in (\"completed\", \"failed\", \"cancelled\"):\n        break\n    time.sleep(1.5)\nif st[\"status\"] != \"completed\":\n    raise RuntimeError(f\"{st['status']}: {(st.get('error') or {}).get('message')} \"\n                       f\"steps={{s['name']: s['status'] for s in st.get('steps', [])}}\")\n\n# 3. Read. The record sits at result.output; accept the looser shapes too.\nbody = check(requests.get(f\"{API}/api/v1/jobs/{job}/result\", headers=H))\nenv = body.get(\"result\", body)\nenv = env.get(\"output\", env)\n\nprint(env[\"result_type\"])             # \"trajectory\"\nprint(env[\"extras\"][\"summary\"])       # {live, inverted, regular, erased, complex, ...}\ntaps = env[\"extras\"][\"taps\"]          # [{site, depth, F_re, F_im, level, polarity}, ...]\n"
+          },
+          {
+            "lang": "curl",
+            "source": "# Submit (202 + job_id), then poll /status, then read /result.\ncurl -X POST https://api.mothquantum.com/api/v1/engines/otoc-echo-v1/process \\\n  -H \"Authorization: Bearer moth_YOUR_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -H \"User-Agent: otoc-echo-example/1.0\" \\\n  -d '{\"params\": {\"lattice\": \"square\", \"width\": 6, \"height\": 5, \"depth\": 6}}'\n\ncurl -s https://api.mothquantum.com/api/v1/jobs/$JOB_ID/result \\\n  -H \"Authorization: Bearer moth_YOUR_KEY\" -H \"User-Agent: otoc-echo-example/1.0\" \\\n  | jq '.result.output.extras.summary'\n"
+          }
+        ],
+        "error_codes": [
+          {
+            "type": "invalid_params",
+            "description": "params fail Params' own field validation (type/range) or a cross-field check (square lattice without width/height, kick_site outside the line, shots over the cap without allow_high_shots)."
+          },
+          {
+            "type": "too_many_qubits",
+            "description": "the delay line needs more qubits than the machine allows — 24 for aer, the device's own width for an IBM backend."
+          },
+          {
+            "type": "invalid_machine",
+            "description": "machine is neither 'aer' nor an IBM backend name the runtime knows."
+          },
+          {
+            "type": "backend_unavailable",
+            "description": "the requested execution route could not be reached — for `via: direct`, qiskit-ibm-runtime is missing or no credentials were supplied (qpu_token param / QISKIT_IBM_TOKEN); for `via: mothbackend`, the mothbackend package is absent or the service returned a transport error. Retryable."
+          },
+          {
+            "type": "execution_failed",
+            "description": "the estimator returned an error while running the echo circuits."
+          }
+        ],
+        "banner_image_id": null,
+        "card_image_id": null,
+        "banner_image_tag": null,
+        "card_image_tag": null,
+        "has_estimate": false,
+        "estimate": null,
+        "has_estimate_fn": false,
+        "estimate_needs_container": false,
+        "sidecar_endpoint": null,
+        "has_validate_fn": false
+      }
+    },
+    {
+      "endpoint": "/api/v1/engines/retrocausal-echo-v1",
+      "status": 200,
+      "contentType": "application/json",
+      "ms": 938,
+      "body": {
+        "$schema": "https://api.mothquantum.com/schemas/Engine.json",
+        "engine_id": "retrocausal-echo-v1",
+        "name": "Retrocausal Echo",
+        "description": "A multi-tap delay whose tap map is measured on a quantum computer — negative returns invert, reverse or rotate the signal.",
+        "version": "0.1.2",
+        "owner": "fccf0d75-76b1-4059-93ab-e1267885289e",
+        "owner_type": "user",
+        "created_by": "fccf0d75-76b1-4059-93ab-e1267885289e",
+        "visibility": "public",
+        "queue": "",
+        "input_type": "multipart/form-data",
+        "output_type": "audio/wav",
+        "input_files": [
+          {
+            "name": "audio",
+            "mime_types": [
+              "audio/wav",
+              "audio/x-wav",
+              "audio/wave",
+              "audio/mpeg",
+              "audio/ogg",
+              "audio/flac"
+            ],
+            "required": false,
+            "description": "Mono or stereo audio to process — WAV, MP3, OGG or FLAC. Stereo is summed to mono first, since the taps place their own stereo image. The file's own sample rate wins over the `sr` param."
+          },
+          {
+            "name": "ir",
+            "mime_types": [
+              "application/json"
+            ],
+            "required": false,
+            "description": "A previously measured impulse response — an otoc-echo `trajectory` envelope. Supply it to re-render without paying for the measurement again, and every echo param is ignored. Pass the asset id of a previous retrocausal-echo job's own `ir` output (output assets carry `slot` and `job_id`, so they chain straight into `input_files`), or upload the JSON yourself. `job:<id>/ir` is the documented alias for the same thing but may not resolve — prefer the asset id."
+          }
+        ],
+        "output_files": [
+          {
+            "name": "result",
+            "content_types": [
+              "audio/wav",
+              "application/json"
+            ],
+            "required": true,
+            "description": "The primary output. With `emit: audio` (the default) this is the rendered stereo WAV. With `emit: map` no audio is rendered at all and this is the tap map as JSON — the same envelope the `taps` slot carries — so a sequencer or plugin can place the events itself without downloading audio."
+          },
+          {
+            "name": "ir",
+            "content_types": [
+              "application/json"
+            ],
+            "required": true,
+            "description": "The impulse response actually used, as an otoc-echo `trajectory` envelope. Its output asset chains straight into another job's `input_files.ir` — one measurement, many mixes."
+          },
+          {
+            "name": "taps",
+            "content_types": [
+              "application/json"
+            ],
+            "required": true,
+            "description": "The full `media` result envelope: provenance, the audio's shape, the echo summary, the spec, and the rendered tap map (time_ms, level, pan, F, polarity per tap). This is where a caller reads the numbers; a DAW or plugin can load it directly."
+          }
+        ],
+        "is_multipart": true,
+        "is_async": false,
+        "execution_mode": "handler",
+        "run_policy": {
+          "timeout": 7200,
+          "max_retries": 1,
+          "heartbeat": 3600
+        },
+        "params_schema": {
+          "properties": {
+            "allow_high_shots": {
+              "default": false,
+              "description": "Permit shots above 8192.",
+              "title": "Allow High Shots",
+              "type": "boolean"
+            },
+            "bpm": {
+              "anyOf": [
+                {
+                  "exclusiveMinimum": 20,
+                  "maximum": 400,
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "Tempo. When set, one depth step = `division` of a bar instead of master_ms/depth.",
+              "title": "Bpm"
+            },
+            "decay": {
+              "default": 0.9,
+              "description": "Extra level roll-off per depth step, on top of |F|. 1.0 = none.",
+              "exclusiveMinimum": 0,
+              "maximum": 1,
+              "title": "Decay",
+              "type": "number"
+            },
+            "depth": {
+              "default": 8,
+              "description": "Echo depths t = 1..depth — the tap time slots.",
+              "maximum": 32,
+              "minimum": 1,
+              "title": "Depth",
+              "type": "integer"
+            },
+            "diffusion_ms": {
+              "default": 0,
+              "description": "Square lattice only: y spreads taps by up to ±diffusion_ms/2 inside their depth slot.",
+              "maximum": 500,
+              "minimum": 0,
+              "title": "Diffusion Ms",
+              "type": "number"
+            },
+            "disorder": {
+              "default": 0,
+              "description": "Additive per-gate angle jitter, std in radians. Localises the echo; the only lever that makes `seed` audible.",
+              "maximum": 1,
+              "minimum": 0,
+              "title": "Disorder",
+              "type": "number"
+            },
+            "division": {
+              "default": 0.25,
+              "description": "Step as a fraction of a beat when bpm is set. 0.25 sixteenth · 0.5 eighth · 0.75 dotted eighth · 0.3333 eighth-triplet · 1.0 quarter.",
+              "exclusiveMinimum": 0,
+              "maximum": 4,
+              "title": "Division",
+              "type": "number"
+            },
+            "emit": {
+              "default": "audio",
+              "description": "`audio` renders a WAV — your input processed, or the effect's own impulse response when no audio is supplied. `map` skips rendering entirely and returns only the time-mapped tap list, which is what a sequencer or a DAW plugin wants: same tap map, no audio work, no WAV to download.",
+              "enum": [
+                "audio",
+                "map"
+              ],
+              "title": "Emit",
+              "type": "string"
+            },
+            "exact": {
+              "default": true,
+              "description": "aer only: exact expectation values instead of sampling.",
+              "title": "Exact",
+              "type": "boolean"
+            },
+            "feedback": {
+              "default": 0,
+              "description": "Regeneration loop gain. The bus of selected taps is normalised first, so this is the fraction of signal that comes back round — always convergent, and 0.6 sounds like 0.6 on a rack unit rather than diverging.",
+              "exclusiveMaximum": 1,
+              "minimum": 0,
+              "title": "Feedback",
+              "type": "number"
+            },
+            "feedback_source": {
+              "default": "kick",
+              "description": "Which taps regenerate. `kick`: only the kick site's column (the classic single regeneration tap). `all`: every tap.",
+              "enum": [
+                "kick",
+                "all"
+              ],
+              "title": "Feedback Source",
+              "type": "string"
+            },
+            "fractional_gates": {
+              "default": true,
+              "description": "Use native rzz/rx where available.",
+              "title": "Fractional Gates",
+              "type": "boolean"
+            },
+            "grain_ms": {
+              "default": 120,
+              "description": "Grain length for `reverse` mode. Short → stuttered; long → whole phrases backwards.",
+              "exclusiveMinimum": 1,
+              "maximum": 2000,
+              "title": "Grain Ms",
+              "type": "number"
+            },
+            "height": {
+              "anyOf": [
+                {
+                  "maximum": 32,
+                  "minimum": 2,
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "Square lattice height. Required for `square`.",
+              "title": "Height"
+            },
+            "include_tap_map": {
+              "default": true,
+              "description": "Also emit the rendered tap map inline in the result (it is always written to taps.json).",
+              "title": "Include Tap Map",
+              "type": "boolean"
+            },
+            "ir_seconds": {
+              "default": 3,
+              "description": "With no `audio` input, render the effect's own stereo impulse response for this long.",
+              "exclusiveMinimum": 0,
+              "maximum": 30,
+              "title": "Ir Seconds",
+              "type": "number"
+            },
+            "kick": {
+              "default": "Z",
+              "description": "Perturbation Pauli applied to the kick site between U and U†.",
+              "enum": [
+                "Z",
+                "Y",
+                "X"
+              ],
+              "title": "Kick",
+              "type": "string"
+            },
+            "kick_site": {
+              "anyOf": [
+                {
+                  "minimum": 0,
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "Regeneration source: the site that receives the impulse. Default: centre.",
+              "title": "Kick Site"
+            },
+            "lattice": {
+              "default": "chain",
+              "description": "Delay-line topology. `chain`: site → pan. `square` (Nighthawk-native): x → pan, y → diffusion.",
+              "enum": [
+                "chain",
+                "square"
+              ],
+              "title": "Lattice",
+              "type": "string"
+            },
+            "machine": {
+              "default": "aer",
+              "description": "Backend for the measurement: 'aer' (local, noiseless) or an IBM backend name such as 'ibm_phoenix'.",
+              "title": "Machine",
+              "type": "string"
+            },
+            "master_ms": {
+              "default": 640,
+              "description": "Length of the master delay line in ms. One depth step = master_ms / depth. Ignored when bpm is set.",
+              "exclusiveMinimum": 0,
+              "maximum": 8000,
+              "title": "Master Ms",
+              "type": "number"
+            },
+            "max_regen": {
+              "default": 24,
+              "description": "Cap on regeneration iterations.",
+              "maximum": 64,
+              "minimum": 1,
+              "title": "Max Regen",
+              "type": "integer"
+            },
+            "min_level": {
+              "default": 0.05,
+              "description": "|F| threshold below which a tap is dropped.",
+              "maximum": 1,
+              "minimum": 0,
+              "title": "Min Level",
+              "type": "number"
+            },
+            "mix": {
+              "default": 0.6,
+              "description": "Dry/wet. 0 = dry, 1 = wet only.",
+              "maximum": 1,
+              "minimum": 0,
+              "title": "Mix",
+              "type": "number"
+            },
+            "n_sites": {
+              "default": 8,
+              "description": "Chain length in qubits (= pan positions). Ignored for `square`.",
+              "maximum": 156,
+              "minimum": 2,
+              "title": "N Sites",
+              "type": "integer"
+            },
+            "negative_mode": {
+              "default": "invert",
+              "description": "What a negative F does. `invert`: flip polarity (phase-cancelling echo). `reverse`: play that tap's grains backwards. `phase`: rotate by arg(F) via a Hilbert transform — the only mode that uses F_im, so pair it with theta_z > 0.",
+              "enum": [
+                "invert",
+                "reverse",
+                "phase"
+              ],
+              "title": "Negative Mode",
+              "type": "string"
+            },
+            "output_format": {
+              "default": "pcm_16",
+              "description": "WAV sample format.",
+              "enum": [
+                "pcm_16",
+                "pcm_32",
+                "float_32"
+              ],
+              "title": "Output Format",
+              "type": "string"
+            },
+            "qpu_instance": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "IBM Quantum instance CRN. As with the token: required for `via: direct`, optional BYOK for `via: mothbackend`.",
+              "format": "password",
+              "title": "Qpu Instance",
+              "writeOnly": true
+            },
+            "qpu_token": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "IBM Quantum API token when machine is an IBM backend; falls back to QISKIT_IBM_TOKEN.",
+              "format": "password",
+              "title": "Qpu Token",
+              "writeOnly": true
+            },
+            "ref_floor": {
+              "anyOf": [
+                {
+                  "exclusiveMinimum": 0,
+                  "maximum": 1,
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "|c_ref| below which a tap is dropped as unnormalisable. Default: 4/sqrt(shots), ~0 for exact simulation. Raise it to prune taps the noise floor cannot support.",
+              "title": "Ref Floor"
+            },
+            "seed": {
+              "anyOf": [
+                {
+                  "maximum": 9007199254740991,
+                  "minimum": 0,
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "RNG seed for the disorder realisation. Only audible when disorder > 0. Drawn as a 31-bit integer and returned in provenance if omitted. Capped at 2**53-1: above that, moth-api (Go) and any browser client re-spell the integer as a float64 and it stops matching the seed you sent.",
+              "title": "Seed"
+            },
+            "shots": {
+              "default": 4096,
+              "description": "Shots per circuit. Ignored when machine='aer' and exact=true. Above 8192 requires allow_high_shots.",
+              "minimum": 1,
+              "title": "Shots",
+              "type": "integer"
+            },
+            "sr": {
+              "default": 44100,
+              "description": "Sample rate. Ignored when an `audio` file is supplied — that file's own rate is used.",
+              "maximum": 192000,
+              "minimum": 8000,
+              "title": "Sr",
+              "type": "integer"
+            },
+            "stereo_width": {
+              "default": 1,
+              "description": "Scales the site → pan spread. 0 = mono.",
+              "maximum": 1,
+              "minimum": 0,
+              "title": "Stereo Width",
+              "type": "number"
+            },
+            "tail_ms": {
+              "anyOf": [
+                {
+                  "maximum": 30000,
+                  "minimum": 0,
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "Silence appended to the input so the last tap and its regenerations fit. Default: computed from the tap map.",
+              "title": "Tail Ms"
+            },
+            "theta_x": {
+              "default": 0.9424777960769379,
+              "description": "Transverse kick per layer (RX, rad) — the 'how quantum' dial. Low → loud regular taps; high → inverted, attenuated, erased.",
+              "maximum": 3.141592653589793,
+              "minimum": 0,
+              "title": "Theta X",
+              "type": "number"
+            },
+            "theta_z": {
+              "default": 0,
+              "description": "Phase layer (RZ, rad). 0 → real, two-signed taps. >0 → complex F, which `negative_mode: phase` renders as rotation.",
+              "maximum": 3.141592653589793,
+              "minimum": 0,
+              "title": "Theta Z",
+              "type": "number"
+            },
+            "theta_zz": {
+              "default": 1.0995574287564276,
+              "description": "Coupling per layer (RZZ, rad). Non-monotonic: ≈0.25π is the sparse setting. π is a Clifford (no scrambling). θ and π−θ coincide only when theta_x = 0, not at the default drive, so the upper half of the range is its own territory. The sign is invisible unless theta_z > 0.",
+              "exclusiveMinimum": -3.141592653589793,
+              "maximum": 3.141592653589793,
+              "title": "Theta Zz",
+              "type": "number"
+            },
+            "twirls": {
+              "default": 1,
+              "description": "ZZ-commutant Pauli twirls per circuit, averaged. Only useful on hardware: it randomises off-axis coherent error in the couplings. Multiplies the circuit count, so it multiplies QPU time.",
+              "maximum": 32,
+              "minimum": 1,
+              "title": "Twirls",
+              "type": "integer"
+            },
+            "via": {
+              "default": "direct",
+              "description": "How to reach the machine. `direct`: this engine drives qiskit-ibm-runtime itself (analytic emulation, native fractional gates, one batched QPU session). `mothbackend`: route through Moth's execution service, which holds the credentials — sampled only, so no analytic mode, no fractional gates, and one submission per circuit.",
+              "enum": [
+                "direct",
+                "mothbackend"
+              ],
+              "title": "Via",
+              "type": "string"
+            },
+            "width": {
+              "anyOf": [
+                {
+                  "maximum": 32,
+                  "minimum": 2,
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "Square lattice width. Required for `square`.",
+              "title": "Width"
+            }
+          },
+          "title": "Params",
+          "type": "object"
+        },
+        "credits_per_run": 2,
+        "enabled": true,
+        "registered_at": "2026-09-15T01:31:59Z",
+        "updated_at": "2026-09-15T13:00:47Z",
+        "description_md": "retrocausal-echo-v1 — Retrocausal Echo. A **media** engine.\n\nThe other half of the split. `otoc-echo-v1` is the *core* engine: it measures a\nquantum impulse response and returns it as a typed `trajectory`. This engine is a\n*media* engine: it turns an impulse response into audio. Both depend on the same\n`quantum-echo` library, so the measurement exists in exactly one place.\n\n    core   : params -> EchoSpec -> measure_ir -> EchoIR.to_trajectory()\n    media  : (EchoIR from a library call | a prior job's ir.json) -> MultiTapDelay -> WAV\n\nTwo ways in, one renderer:\n\n  * no `ir` file  -> this engine calls `quantum_echo.measure_ir` in-process. One\n    job, one price, audio out. The QPU work is identical to the core engine's.\n  * an `ir` file  -> `EchoIR.from_trajectory`. Re-render a measured response with\n    different audio, tempo, polarity behaviour or feedback without paying for the\n    measurement again. The slot is `by_reference: true`, so it takes either an\n    upload or `job:<id>/ir` off a previous retrocausal-echo job.\n\nNothing here builds a circuit and nothing in `render.py` knows what a qubit is.",
+        "code_samples": [
+          {
+            "lang": "Python",
+            "source": "import json\nimport os\nimport time\nimport requests\n\nAPI = \"https://api.mothquantum.com\"\n# Cloudflare 403s the stdlib `Python-urllib/*` User-Agent with a plain-text\n# `error code: 1010`, which reads exactly like an auth failure. Always identify\n# your client, and always print the response body on error.\nH = {\"Authorization\": \"Bearer moth_YOUR_KEY\",\n     \"User-Agent\": \"retrocausal-echo-example/1.0\"}\n\ndef check(r):\n    if not r.ok:\n        raise RuntimeError(f\"HTTP {r.status_code}: {r.text[:800]}\")\n    return r.json()\n\ndef upload(path, content_type):\n    \"\"\"File inputs are assets, not multipart fields: create, PUT, complete.\n    The presigned URL signs in the size and content type, so they must match.\"\"\"\n    size = os.path.getsize(path)\n    a = check(requests.post(f\"{API}/api/v1/assets\", headers=H,\n                            json={\"filename\": os.path.basename(path),\n                                  \"content_type\": content_type, \"size_bytes\": size}))\n    up = a[\"upload\"]\n    with open(path, \"rb\") as fh:\n        r = requests.put(up[\"url\"], data=fh, headers=up[\"headers\"])\n        if not r.ok:\n            raise RuntimeError(f\"upload HTTP {r.status_code}: {r.text[:400]}\")\n    check(requests.post(f\"{API}/api/v1/assets/{a['asset_id']}/complete\", headers=H))\n    return a[\"asset_id\"]\n\ndef run(params, input_files=None):\n    job = check(requests.post(f\"{API}/api/v1/engines/retrocausal-echo-v1/process\", headers=H,\n                              json={\"params\": params,\n                                    \"input_files\": input_files or {}}))[\"job_id\"]\n    while True:\n        st = check(requests.get(f\"{API}/api/v1/jobs/{job}/status\", headers=H))\n        if st[\"status\"] in (\"completed\", \"failed\", \"cancelled\"):\n            break\n        time.sleep(2)\n    if st[\"status\"] != \"completed\":\n        raise RuntimeError(f\"{st['status']}: {(st.get('error') or {}).get('message')}\")\n    return job, check(requests.get(f\"{API}/api/v1/jobs/{job}/result\", headers=H))\n\n# 1. Measure and render in one job. No audio input -> you get the effect's own\n#    stereo impulse response, ready for a convolver.\njob, body = run({\"n_sites\": 10, \"depth\": 8, \"theta_x\": 1.2,\n                 \"negative_mode\": \"reverse\", \"ir_seconds\": 4})\n\n# Outputs come back as presigned URLs in `outputs`, on a separate S3 host.\n# `result` is the WAV itself (the binary primary); `taps` carries the envelope.\nout = {o[\"slot\"]: o for o in (body.get(\"outputs\") or [])}\nopen(\"retrocausal_ir.wav\", \"wb\").write(requests.get(out[\"result\"][\"url\"]).content)\ntaps = requests.get(out[\"taps\"][\"url\"]).json()\nprint(taps[\"extras\"][\"tap_map\"][\"taps\"][:3])\n\n# 2. Re-render the same measured response over your own audio -- no quantum\n#    work, 1 credit. The `ir` output asset chains straight into `input_files`.\njob2, body2 = run(\n    {\"bpm\": 128, \"division\": 0.75, \"feedback\": 0.55, \"mix\": 0.7},\n    {\"audio\": upload(\"guitar.wav\", \"audio/wav\"), \"ir\": out[\"ir\"][\"asset_id\"]},\n)\nout2 = {o[\"slot\"]: o for o in (body2.get(\"outputs\") or [])}\nopen(\"guitar_retrocausal.wav\", \"wb\").write(requests.get(out2[\"result\"][\"url\"]).content)\n"
+          },
+          {
+            "lang": "curl",
+            "source": "# A WAV input is an asset, not a multipart field. Three calls to stage it:\n#   POST /api/v1/assets  {filename, content_type, size_bytes}  -> presigned upload\n#   PUT  <upload.url>    (with the exact headers it returns)\n#   POST /api/v1/assets/{asset_id}/complete\n# then pass the asset id in input_files:\ncurl -X POST https://api.mothquantum.com/api/v1/engines/retrocausal-echo-v1/process \\\n  -H \"Authorization: Bearer moth_YOUR_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -H \"User-Agent: retrocausal-echo-example/1.0\" \\\n  -d '{\"params\": {\"lattice\":\"square\",\"width\":5,\"height\":4,\"depth\":6,\n                  \"diffusion_ms\":40,\"negative_mode\":\"phase\",\"theta_z\":0.6,\"mix\":0.75},\n       \"input_files\": {\"audio\": \"<asset-uuid>\"}}'\n\n# Outputs are presigned URLs under `.outputs[]`, keyed by slot.\ncurl -s https://api.mothquantum.com/api/v1/jobs/$JOB_ID/result \\\n  -H \"Authorization: Bearer moth_YOUR_KEY\" -H \"User-Agent: retrocausal-echo-example/1.0\" \\\n  | jq '.outputs[] | {slot, url}'\n"
+          }
+        ],
+        "error_codes": [
+          {
+            "type": "invalid_params",
+            "description": "params fail Params' own field validation (type/range) or a cross-field check (square lattice without width/height, kick_site outside the line, shots over the cap without allow_high_shots)."
+          },
+          {
+            "type": "invalid_ir",
+            "description": "the `ir` input is not UTF-8 JSON, or not an otoc-echo `trajectory` envelope. A bare envelope, a handler return wrapped in `output`, and a whole job result wrapped in `result` are all accepted."
+          },
+          {
+            "type": "invalid_audio",
+            "description": "the `audio` input could not be decoded as a PCM or float WAV, is over the size cap, or decoded to zero samples."
+          },
+          {
+            "type": "audio_too_long",
+            "description": "the input, or the input plus its computed tail, exceeds the render length cap. Set tail_ms explicitly or send a shorter file."
+          },
+          {
+            "type": "no_taps",
+            "description": "no tap survived min_level — the echo was fully erased at this theta_x, or min_level is too high. The echo summary is in the message."
+          },
+          {
+            "type": "too_many_taps",
+            "description": "the tap map is larger than the render cap. Raise min_level or lower depth."
+          },
+          {
+            "type": "too_many_qubits",
+            "description": "the delay line needs more qubits than the machine allows — 24 for aer, the device's own width for an IBM backend. Supplying a measured `ir` sidesteps this entirely."
+          },
+          {
+            "type": "invalid_machine",
+            "description": "machine is neither 'aer' nor an IBM backend name the runtime knows."
+          },
+          {
+            "type": "backend_unavailable",
+            "description": "the requested execution route could not be reached — for `via: direct`, qiskit-ibm-runtime is missing or no credentials were supplied (qpu_token param / QISKIT_IBM_TOKEN); for `via: mothbackend`, the mothbackend package is absent or the service returned a transport error. Retryable."
+          },
+          {
+            "type": "execution_failed",
+            "description": "the estimator returned an error while running the echo circuits."
+          }
+        ],
+        "banner_image_id": null,
+        "card_image_id": null,
+        "banner_image_tag": null,
+        "card_image_tag": null,
+        "has_estimate": false,
+        "estimate": null,
+        "has_estimate_fn": false,
+        "estimate_needs_container": false,
+        "sidecar_endpoint": null,
+        "has_validate_fn": false
+      }
+    },
+    {
+      "endpoint": "/openapi.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "ms": 1635,
+      "body": {
+        "info": {
+          "title": "moth-api",
+          "version": "v0.41.0"
+        },
+        "pathCount": 63,
+        "paths": [
+          {
+            "p": "/api/v1/assets",
+            "methods": [
+              "get",
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/assets/{assetID}",
+            "methods": [
+              "delete",
+              "get"
+            ]
+          },
+          {
+            "p": "/api/v1/assets/{assetID}/complete",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/assets/{assetID}/download",
+            "methods": [
+              "get"
+            ]
+          },
+          {
+            "p": "/api/v1/assets/{resourceID}/permissions",
+            "methods": [
+              "get",
+              "put"
+            ]
+          },
+          {
+            "p": "/api/v1/assets/{resourceID}/permissions/{principalType}/{principalID}",
+            "methods": [
+              "delete"
+            ]
+          },
+          {
+            "p": "/api/v1/engines",
+            "methods": [
+              "get",
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/blur-core-v1/process",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/blur-midi-v1/process",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/blur-v0/process",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/blur-v1/process",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/coin-toss-v1/process",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/comet-qrng-v1/process",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/deep-fryer-v1/process",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/entanglement-shader-v0/process",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/entanglement-shader-v1/process",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/graph-v1/process",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/labyrinth-v1/process",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/otoc-echo-v1/process",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/qdrive-api-v1/process",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/qpixl-v1/process",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/qrc-audio-v1/process",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/qrc-gen-v2/process",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/qrc-image-v1/process",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/qrc-midi-v1/process",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/qrc-train-v2/process",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/retrocausal-echo-v1/process",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/tamagotchi-v0/process",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/tamagotchi-v1/process",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/telablur-v1/process",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/tessa-image-v1-test/process",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/tessa-image-v1/process",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/tomography-api-v2/process",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/{engineID}",
+            "methods": [
+              "get",
+              "patch"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/{engineID}/process",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/{engineID}/transfer",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/{resourceID}/permissions",
+            "methods": [
+              "get",
+              "put"
+            ]
+          },
+          {
+            "p": "/api/v1/engines/{resourceID}/permissions/{principalType}/{principalID}",
+            "methods": [
+              "delete"
+            ]
+          },
+          {
+            "p": "/api/v1/jobs",
+            "methods": [
+              "get"
+            ]
+          },
+          {
+            "p": "/api/v1/jobs/{jobID}",
+            "methods": [
+              "get"
+            ]
+          },
+          {
+            "p": "/api/v1/jobs/{jobID}/result",
+            "methods": [
+              "get"
+            ]
+          },
+          {
+            "p": "/api/v1/jobs/{jobID}/status",
+            "methods": [
+              "get"
+            ]
+          },
+          {
+            "p": "/api/v1/jobs/{resourceID}/permissions",
+            "methods": [
+              "get",
+              "put"
+            ]
+          },
+          {
+            "p": "/api/v1/jobs/{resourceID}/permissions/{principalType}/{principalID}",
+            "methods": [
+              "delete"
+            ]
+          },
+          {
+            "p": "/api/v1/keys",
+            "methods": [
+              "get",
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/keys/{keyID}",
+            "methods": [
+              "delete",
+              "patch"
+            ]
+          },
+          {
+            "p": "/api/v1/me",
+            "methods": [
+              "get"
+            ]
+          },
+          {
+            "p": "/api/v1/me/invitations",
+            "methods": [
+              "get"
+            ]
+          },
+          {
+            "p": "/api/v1/me/invitations/{invitationID}/accept",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/me/invitations/{invitationID}/decline",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/me/storage",
+            "methods": [
+              "get"
+            ]
+          },
+          {
+            "p": "/api/v1/orgs",
+            "methods": [
+              "get",
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/orgs/{id}",
+            "methods": [
+              "delete",
+              "get",
+              "patch"
+            ]
+          },
+          {
+            "p": "/api/v1/orgs/{id}/invitations",
+            "methods": [
+              "get",
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/orgs/{id}/invitations/{invitationID}",
+            "methods": [
+              "delete"
+            ]
+          },
+          {
+            "p": "/api/v1/orgs/{id}/members",
+            "methods": [
+              "get"
+            ]
+          },
+          {
+            "p": "/api/v1/orgs/{id}/members/{userID}",
+            "methods": [
+              "delete",
+              "patch"
+            ]
+          },
+          {
+            "p": "/api/v1/orgs/{id}/settings",
+            "methods": [
+              "get",
+              "patch"
+            ]
+          },
+          {
+            "p": "/api/v1/showcases",
+            "methods": [
+              "get",
+              "post"
+            ]
+          },
+          {
+            "p": "/api/v1/showcases/{resourceID}/permissions",
+            "methods": [
+              "get",
+              "put"
+            ]
+          },
+          {
+            "p": "/api/v1/showcases/{resourceID}/permissions/{principalType}/{principalID}",
+            "methods": [
+              "delete"
+            ]
+          },
+          {
+            "p": "/api/v1/showcases/{showcaseID}",
+            "methods": [
+              "delete",
+              "get",
+              "patch"
+            ]
+          },
+          {
+            "p": "/api/v1/showcases/{showcaseID}/transfer",
+            "methods": [
+              "post"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "endpoint": "/api/v1/jobs?limit=3",
+      "status": 200,
+      "contentType": "application/json",
+      "ms": 441,
+      "body": [
+        {
+          "engine": "comet-qrng-v1",
+          "status": "completed",
+          "created": "2026-09-27T21:55:56Z",
+          "keys": [
+            "job_id",
+            "engine_id",
+            "owner",
+            "status",
+            "gated_features",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "engine": "comet-qrng-v1",
+          "status": "completed",
+          "created": "2026-09-27T21:47:38Z",
+          "keys": [
+            "job_id",
+            "engine_id",
+            "owner",
+            "status",
+            "gated_features",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "engine": "comet-qrng-v1",
+          "status": "completed",
+          "created": "2026-09-27T21:45:11Z",
+          "keys": [
+            "job_id",
+            "engine_id",
+            "owner",
+            "status",
+            "gated_features",
+            "created_at",
+            "updated_at"
+          ]
+        }
+      ]
+    }
+  ]
+}

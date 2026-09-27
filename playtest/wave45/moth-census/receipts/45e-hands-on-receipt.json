@@ -1,0 +1,394 @@
+{
+  "instrument": "fleet-seeds playtest/wave45/moth-census (lane 45-e)",
+  "step": "2 hands-on",
+  "ts": "2026-09-27T23:05:33.012Z",
+  "budget": {
+    "jobCap": 10,
+    "jobsUsed": 8,
+    "pollSpacingMs": 550
+  },
+  "auth": "Authorization: Bearer *** (MOTH_KEY runtime-only; no key material in this receipt; URLs/tokens redacted)",
+  "rows": [
+    {
+      "engine": "comet-qrng-v1",
+      "note": "headline: raw Born-rule counts vs platform Toeplitz-extracted bytes in ONE run",
+      "params": {
+        "output_bytes": 512,
+        "include_raw_counts": true,
+        "bell_witness": true,
+        "num_qubits": 12,
+        "shots": 4096,
+        "mode": "emu"
+      },
+      "jobsUsed": 1,
+      "submitStatus": 422,
+      "verdict": "FAIL",
+      "error": {
+        "$schema": "https://api.mothquantum.com/schemas/ErrorModel.json",
+        "title": "Unprocessable Entity",
+        "status": 422,
+        "detail": "validation failed",
+        "errors": [
+          {
+            "message": "unexpected property",
+            "location": "body.output_bytes",
+            "value": {
+              "bell_witness": true,
+              "include_raw_counts": true,
+              "mode": "emu",
+              "num_qubits": 12,
+              "output_bytes": 512,
+              "shots": 4096
+            }
+          },
+          {
+            "message": "unexpected property",
+            "location": "body.include_raw_counts",
+            "value": {
+              "bell_witness": true,
+              "include_raw_counts": true,
+              "mode": "emu",
+              "num_qubits": 12,
+              "output_bytes": 512,
+              "shots": 4096
+            }
+          },
+          {
+            "message": "unexpected property",
+            "location": "body.bell_witness",
+            "value": {
+              "bell_witness": true,
+              "include_raw_counts": true,
+              "mode": "emu",
+              "num_qubits": 12,
+              "output_bytes": 512,
+              "shots": 4096
+            }
+          },
+          {
+            "message": "unexpected property",
+            "location": "body.num_qubits",
+            "value": {
+              "bell_witness": true,
+              "include_raw_counts": true,
+              "mode": "emu",
+              "num_qubits": 12,
+              "output_bytes": 512,
+              "shots": 4096
+            }
+          },
+          {
+            "message": "unexpected property",
+            "location": "body.shots",
+            "value": {
+              "bell_witness": true,
+              "include_raw_counts": true,
+              "mode": "emu",
+              "num_qubits": 12,
+              "output_bytes": 512,
+              "shots": 4096
+            }
+          }
+        ]
+      },
+      "ms": 865,
+      "bits": [],
+      "balanceNote": "no bit-bearing leaf found"
+    },
+    {
+      "engine": "coin-toss-v1",
+      "note": "control: known-good counts engine (E11 probe)",
+      "params": {
+        "mode": "emu",
+        "shots": 128
+      },
+      "jobsUsed": 2,
+      "submitStatus": 422,
+      "verdict": "FAIL",
+      "error": {
+        "$schema": "https://api.mothquantum.com/schemas/ErrorModel.json",
+        "title": "Unprocessable Entity",
+        "status": 422,
+        "detail": "validation failed",
+        "errors": [
+          {
+            "message": "unexpected property",
+            "location": "body.shots",
+            "value": {
+              "mode": "emu",
+              "shots": 128
+            }
+          }
+        ]
+      },
+      "ms": 369,
+      "bits": [],
+      "balanceNote": "no bit-bearing leaf found"
+    },
+    {
+      "engine": "qpixl-v1",
+      "note": "angle-encoded waveform decode noise",
+      "params": {
+        "values": [
+          0.05,
+          0.2,
+          0.4,
+          0.6,
+          0.8,
+          0.95
+        ],
+        "machine": "aer",
+        "mode": "emu",
+        "shots": 4096
+      },
+      "jobsUsed": 3,
+      "submitStatus": 422,
+      "verdict": "FAIL",
+      "error": {
+        "$schema": "https://api.mothquantum.com/schemas/ErrorModel.json",
+        "title": "Unprocessable Entity",
+        "status": 422,
+        "detail": "validation failed",
+        "errors": [
+          {
+            "message": "unexpected property",
+            "location": "body.values",
+            "value": {
+              "machine": "aer",
+              "mode": "emu",
+              "shots": 4096,
+              "values": [
+                0.05,
+                0.2,
+                0.4,
+                0.6,
+                0.8,
+                0.95
+              ]
+            }
+          },
+          {
+            "message": "unexpected property",
+            "location": "body.machine",
+            "value": {
+              "machine": "aer",
+              "mode": "emu",
+              "shots": 4096,
+              "values": [
+                0.05,
+                0.2,
+                0.4,
+                0.6,
+                0.8,
+                0.95
+              ]
+            }
+          },
+          {
+            "message": "unexpected property",
+            "location": "body.shots",
+            "value": {
+              "machine": "aer",
+              "mode": "emu",
+              "shots": 4096,
+              "values": [
+                0.05,
+                0.2,
+                0.4,
+                0.6,
+                0.8,
+                0.95
+              ]
+            }
+          }
+        ]
+      },
+      "ms": 306,
+      "bits": [],
+      "balanceNote": "no bit-bearing leaf found"
+    },
+    {
+      "engine": "graph-v1",
+      "note": "wave-42 control: reproduce top-20 truncation shape",
+      "params": {
+        "mode": "emu",
+        "num_qubits": 4,
+        "shots": 256
+      },
+      "jobsUsed": 4,
+      "submitStatus": 422,
+      "verdict": "FAIL",
+      "error": {
+        "$schema": "https://api.mothquantum.com/schemas/ErrorModel.json",
+        "title": "Unprocessable Entity",
+        "status": 422,
+        "detail": "validation failed",
+        "errors": [
+          {
+            "message": "unexpected property",
+            "location": "body.shots",
+            "value": {
+              "mode": "emu",
+              "num_qubits": 4,
+              "shots": 256
+            }
+          },
+          {
+            "message": "unexpected property",
+            "location": "body.num_qubits",
+            "value": {
+              "mode": "emu",
+              "num_qubits": 4,
+              "shots": 256
+            }
+          }
+        ]
+      },
+      "ms": 302,
+      "bits": [],
+      "balanceNote": "no bit-bearing leaf found"
+    },
+    {
+      "engine": "labyrinth-v1",
+      "note": "ZZ-correlated maze; top_n truncation knob",
+      "params": {
+        "mode": "emu",
+        "shots": 1024,
+        "steps": 2,
+        "k": 1,
+        "top_n": 16
+      },
+      "jobsUsed": 5,
+      "submitStatus": 422,
+      "verdict": "FAIL",
+      "error": {
+        "$schema": "https://api.mothquantum.com/schemas/ErrorModel.json",
+        "title": "Unprocessable Entity",
+        "status": 422,
+        "detail": "validation failed",
+        "errors": [
+          {
+            "message": "unexpected property",
+            "location": "body.shots",
+            "value": {
+              "k": 1,
+              "mode": "emu",
+              "shots": 1024,
+              "steps": 2,
+              "top_n": 16
+            }
+          },
+          {
+            "message": "unexpected property",
+            "location": "body.steps",
+            "value": {
+              "k": 1,
+              "mode": "emu",
+              "shots": 1024,
+              "steps": 2,
+              "top_n": 16
+            }
+          },
+          {
+            "message": "unexpected property",
+            "location": "body.k",
+            "value": {
+              "k": 1,
+              "mode": "emu",
+              "shots": 1024,
+              "steps": 2,
+              "top_n": 16
+            }
+          },
+          {
+            "message": "unexpected property",
+            "location": "body.top_n",
+            "value": {
+              "k": 1,
+              "mode": "emu",
+              "shots": 1024,
+              "steps": 2,
+              "top_n": 16
+            }
+          }
+        ]
+      },
+      "ms": 300,
+      "bits": [],
+      "balanceNote": "no bit-bearing leaf found"
+    },
+    {
+      "engine": "otoc-echo-v1",
+      "note": "quantum echo tap map (unknown output shape)",
+      "params": {
+        "depth": 2
+      },
+      "jobsUsed": 6,
+      "submitStatus": 422,
+      "verdict": "FAIL",
+      "error": {
+        "$schema": "https://api.mothquantum.com/schemas/ErrorModel.json",
+        "title": "Unprocessable Entity",
+        "status": 422,
+        "detail": "validation failed",
+        "errors": [
+          {
+            "message": "unexpected property",
+            "location": "body.depth",
+            "value": {
+              "depth": 2
+            }
+          }
+        ]
+      },
+      "ms": 301,
+      "bits": [],
+      "balanceNote": "no bit-bearing leaf found"
+    },
+    {
+      "engine": "blur-core-v1",
+      "note": "schema probe: expect honest 422 (params unknown)",
+      "params": {},
+      "jobsUsed": 7,
+      "submitStatus": 202,
+      "jobId": "4fb78dc9-c062-4332-9899-56e68a0868f9",
+      "polls": 1,
+      "finalStatus": "completed",
+      "result": {
+        "$schema": "https://api.mothquantum.com/schemas/JobResultOutputBody.json",
+        "result": {
+          "output": [
+            1
+          ]
+        }
+      },
+      "rawBodySha256": "786d03ec33091d7d62f02550efde2589cc9077e8d8dc949751e9ef64d0f907d1",
+      "ms": 4502,
+      "bits": [],
+      "balanceNote": "no bit-bearing leaf found"
+    },
+    {
+      "engine": "tomography-api-v2",
+      "note": "schema probe: expect honest 422 (params unknown)",
+      "params": {},
+      "jobsUsed": 8,
+      "submitStatus": 422,
+      "verdict": "FAIL",
+      "error": {
+        "$schema": "https://api.mothquantum.com/schemas/ErrorModel.json",
+        "title": "Unprocessable Entity",
+        "status": 422,
+        "detail": "params do not match the engine schema",
+        "errors": [
+          {
+            "message": "missing property 'circuit_qasm'",
+            "location": "body.params"
+          }
+        ]
+      },
+      "ms": 606,
+      "bits": [],
+      "balanceNote": "no bit-bearing leaf found"
+    }
+  ]
+}

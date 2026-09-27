@@ -1,0 +1,11 @@
+{
+  "registered": {
+    "file": "claims.json",
+    "sha256": "200313cc3b034d5e3819403c5110ec9705141ba1726dcebbd19814dfbea0bef9",
+    "size_bytes": 3502,
+    "mtime_iso": "2026-09-27T23:11:17.225Z"
+  },
+  "registered_by": "lane 45-e moth-census",
+  "method": "sha256+mtime seal BEFORE any census process job; hands-on budget already closed at 10/10; deepseek blind prediction to precede census run",
+  "key_material": "none"
+}

@@ -1,0 +1,43 @@
+{
+  "lane": "45-e moth-census",
+  "registered_at": "2026-09-28T00:00:00Z",
+  "pre_registered": true,
+  "note": "Pre-registration BEFORE the census run (claims JSON sha256+mtime sealed in receipts/45e-claims-registration.json). Registered_at timestamp above is nominal; the authoritative registration time is the mtime+sha receipt. No census process job had been submitted at registration time (hands-on budget 10/10 was already closed).",
+  "census_engines": ["comet-qrng-v1", "graph-v1", "coin-toss-v1"],
+  "census_design": "N=3 engines x 1 job each (emu), small shots; raw bitstream per engine -> registered mothbits whitening (von Neumann -> sha256 counter stream -> Fisher-Yates, pool 1134 take 16) -> balance + sha receipts; markdown verdict comparing engines.",
+  "job_budget": { "planned": 3, "retry_allowance": 1, "hard_cap": 4, "retry_rule": "the single retry is spent only if a job 422s with a 'missing property' error, and is retried with engine defaults ({}); both attempts receipted" },
+  "claims": [
+    {
+      "id": "P1",
+      "claim": "TOP-20 TRUNCATION: graph-v1 returns at most 20 distinct outcomes in its measurements multiset when theoretical support (2^12 = 4096 for num_qubits=12) exceeds 20; evidence = measurements.length <= 20 AND sum(measurements.count) < requested shots (1024).",
+      "falsifier": "FAIL if graph-v1 returns > 20 distinct outcomes, or returns sum(count) == shots with > 20 distinct outcomes."
+    },
+    {
+      "id": "P2",
+      "claim": "WHITENED BALANCE: every census engine yielding >= 64 raw bits (expected: comet-qrng-v1 raw randomness register, graph-v1 count-expanded measurement stream) whitens through the registered mothbits recipe to ones/length in [0.45, 0.55] over the counter-stream bytes consumed by the Fisher-Yates draws.",
+      "falsifier": "FAIL if any such engine's whitened balance falls outside [0.45, 0.55]."
+    },
+    {
+      "id": "P3",
+      "claim": "CATALOG: the instrument's read-only catalog survey returns the same visible-engine count as the manual step-1 survey receipt (33 engines @ 2026-09-27) and that set is a strict superset of the 13 engines in the archived 2026-09-25 docs (v0.41.0).",
+      "falsifier": "FAIL if the count differs from 33, or any archived-docs engine is absent from the live catalog."
+    },
+    {
+      "id": "P4",
+      "claim": "CERTIFIED-RANDOM LEG: comet-qrng-v1 (emu, bell_witness=false, num_qubits=12) passes its own health gate (entropy_report.health_passed === true) and its platform Toeplitz-extracted bits have ones/length in [0.45, 0.55].",
+      "falsifier": "FAIL if health_passed is false, or extracted balance outside [0.45, 0.55], or no extracted bytes returned for output_bytes=512 requested."
+    },
+    {
+      "id": "P5",
+      "claim": "COUNTS-ONLY ENGINE: coin-toss-v1 returns aggregate counts ONLY (heads/tails, no >= 16-bit bitstring payload anywhere in the result), i.e. it cannot feed the seed pipeline without a counts->bits convention; its whitening leg is honestly N/A.",
+      "falsifier": "FAIL if coin-toss-v1's result contains a >= 16-char 0/1 bitstring or >= 32-char hex payload."
+    }
+  ],
+  "order_of_operations": [
+    "1. claims registration (this file; sha256+mtime receipted)",
+    "2. optional deepseek-reasoner BLIND prediction (engine descriptions only, no hands-on balances leaked) - before any census job",
+    "3. census run (the only process jobs after registration)",
+    "4. verdict + prediction scoring"
+  ],
+  "honest_fails_welcome": true
+}

@@ -1,0 +1,858 @@
+{
+  "instrument": "fleet-seeds playtest/wave45/moth-census (lane 45-e)",
+  "step": "1 catalog survey",
+  "ts": "2026-09-27T23:01:16.095Z",
+  "base": "https://api.mothquantum.com",
+  "budget": {
+    "cap": 30,
+    "used": 22,
+    "rateLimitMs": 550
+  },
+  "auth": {
+    "header": "Authorization: Bearer *** (MOTH_KEY from .env, runtime-only; one probe sent unauthenticated, marked in rows)",
+    "keyMaterialInReceipt": "none"
+  },
+  "rows": [
+    {
+      "endpoint": "/",
+      "method": "GET",
+      "auth": true,
+      "note": "site root",
+      "status": 404,
+      "contentType": "text/plain; charset=utf-8",
+      "ms": 815,
+      "shape": {
+        "type": "text",
+        "len": 19,
+        "head": "404 page not found "
+      }
+    },
+    {
+      "endpoint": "/docs",
+      "method": "GET",
+      "auth": true,
+      "note": "docs page",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "ms": 726,
+      "shape": {
+        "type": "text",
+        "len": 789,
+        "head": "<!doctype html> <html> <head> <title>moth-api docs</title> <meta charset=\"utf-8\"> <meta name=\"viewport\" content=\"w"
+      }
+    },
+    {
+      "endpoint": "/openapi.json",
+      "method": "GET",
+      "auth": true,
+      "note": "machine-readable spec",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "ms": 1598,
+      "shape": {
+        "type": "object",
+        "keys": [
+          "components",
+          "info",
+          "openapi",
+          "paths"
+        ]
+      }
+    },
+    {
+      "endpoint": "/api/v1",
+      "method": "GET",
+      "auth": true,
+      "note": "bare api/v1",
+      "status": 404,
+      "contentType": "text/plain; charset=utf-8",
+      "ms": 249,
+      "shape": {
+        "type": "text",
+        "len": 19,
+        "head": "404 page not found "
+      }
+    },
+    {
+      "endpoint": "/api/v1/me",
+      "method": "GET",
+      "auth": true,
+      "note": "auth identity (baseline)",
+      "status": 200,
+      "contentType": "application/json",
+      "ms": 560,
+      "shape": {
+        "type": "object",
+        "keys": [
+          "$schema",
+          "id",
+          "email",
+          "role",
+          "platform_role",
+          "features",
+          "organizations"
+        ]
+      }
+    },
+    {
+      "endpoint": "/api/v1/engines",
+      "method": "GET",
+      "auth": true,
+      "note": "engine catalog (primary target)",
+      "status": 200,
+      "contentType": "application/json",
+      "ms": 2870,
+      "shape": {
+        "type": "object",
+        "keys": [
+          "$schema",
+          "engines",
+          "count"
+        ]
+      },
+      "ids": [
+        {
+          "id": "blur-core-v1",
+          "name": "Quantum Blur Core"
+        },
+        {
+          "id": "blur-midi-v1",
+          "name": "Blur Jazz"
+        },
+        {
+          "id": "blur-v0",
+          "name": "Quantum Blur"
+        },
+        {
+          "id": "blur-v1",
+          "name": "Quantum Blur"
+        },
+        {
+          "id": "coin-toss-v1",
+          "name": "Coin Toss"
+        },
+        {
+          "id": "comet-qrng-v1",
+          "name": "Comet Quantum RNG Engine"
+        },
+        {
+          "id": "deep-fryer-v1",
+          "name": "Deep Fryer"
+        },
+        {
+          "id": "demo-callback-v1",
+          "name": "Callback Bridge (Demo)"
+        },
+        {
+          "id": "entanglement-shader-v0",
+          "name": "Entanglement Shader"
+        },
+        {
+          "id": "entanglement-shader-v1",
+          "name": "Entanglement Shader"
+        },
+        {
+          "id": "graph-v1",
+          "name": "Quantum Graph Engine"
+        },
+        {
+          "id": "labyrinth-v1",
+          "name": "Quantum Labyrinth Engine"
+        },
+        {
+          "id": "otoc-echo-v1",
+          "name": "Quantum Echo"
+        },
+        {
+          "id": "qdrive-api-v1",
+          "name": "QDrive"
+        },
+        {
+          "id": "qpixl-v1",
+          "name": "Qpixl"
+        },
+        {
+          "id": "qrc-audio-v1",
+          "name": "QRC Audio"
+        },
+        {
+          "id": "qrc-gen-v2",
+          "name": "QRC Generate"
+        },
+        {
+          "id": "qrc-image-v1",
+          "name": "QRC Image"
+        },
+        {
+          "id": "qrc-midi-v1",
+          "name": "QRC MIDI"
+        },
+        {
+          "id": "qrc-train-v2",
+          "name": "QRC Train"
+        },
+        {
+          "id": "retrocausal-echo-v1",
+          "name": "Retrocausal Echo"
+        },
+        {
+          "id": "tamagotchi-v0",
+          "name": "Tamagotchi"
+        },
+        {
+          "id": "tamagotchi-v1",
+          "name": "Tamagotchi"
+        },
+        {
+          "id": "telablur-v1",
+          "name": "Quantum Teleblur"
+        },
+        {
+          "id": "tessa-image-v1",
+          "name": "Tessa Image"
+        },
+        {
+          "id": "tessa-image-v1-test",
+          "name": "Tessa Image"
+        },
+        {
+          "id": "test-binary-v1",
+          "name": "Test Binary"
+        },
+        {
+          "id": "test-engine-error-v1",
+          "name": "Test Engine Error"
+        },
+        {
+          "id": "test-engine-fail-v1",
+          "name": "Test Fail Engine"
+        },
+        {
+          "id": "test-engine-submission-v1",
+          "name": "Test Engine Submission"
+        },
+        {
+          "id": "test-engine-v1",
+          "name": "Test Engine"
+        },
+        {
+          "id": "tomography-api-v2",
+          "name": "Tomography Api"
+        }
+      ]
+    },
+    {
+      "endpoint": "/api/v1/engines/",
+      "method": "GET",
+      "auth": true,
+      "note": "catalog, trailing-slash variant",
+      "status": 404,
+      "contentType": "text/plain; charset=utf-8",
+      "ms": 253,
+      "shape": {
+        "type": "text",
+        "len": 19,
+        "head": "404 page not found "
+      }
+    },
+    {
+      "endpoint": "/api/v1/engines/list",
+      "method": "GET",
+      "auth": true,
+      "note": "catalog, /list variant",
+      "status": 404,
+      "contentType": "application/problem+json",
+      "ms": 378,
+      "shape": {
+        "type": "object",
+        "keys": [
+          "$schema",
+          "title",
+          "status",
+          "detail"
+        ]
+      }
+    },
+    {
+      "endpoint": "/api/v1/engines?limit=100",
+      "method": "GET",
+      "auth": true,
+      "note": "catalog, pagination param variant",
+      "status": 200,
+      "contentType": "application/json",
+      "ms": 3032,
+      "shape": {
+        "type": "object",
+        "keys": [
+          "$schema",
+          "engines",
+          "count"
+        ]
+      },
+      "ids": [
+        {
+          "id": "blur-core-v1",
+          "name": "Quantum Blur Core"
+        },
+        {
+          "id": "blur-midi-v1",
+          "name": "Blur Jazz"
+        },
+        {
+          "id": "blur-v0",
+          "name": "Quantum Blur"
+        },
+        {
+          "id": "blur-v1",
+          "name": "Quantum Blur"
+        },
+        {
+          "id": "coin-toss-v1",
+          "name": "Coin Toss"
+        },
+        {
+          "id": "comet-qrng-v1",
+          "name": "Comet Quantum RNG Engine"
+        },
+        {
+          "id": "deep-fryer-v1",
+          "name": "Deep Fryer"
+        },
+        {
+          "id": "demo-callback-v1",
+          "name": "Callback Bridge (Demo)"
+        },
+        {
+          "id": "entanglement-shader-v0",
+          "name": "Entanglement Shader"
+        },
+        {
+          "id": "entanglement-shader-v1",
+          "name": "Entanglement Shader"
+        },
+        {
+          "id": "graph-v1",
+          "name": "Quantum Graph Engine"
+        },
+        {
+          "id": "labyrinth-v1",
+          "name": "Quantum Labyrinth Engine"
+        },
+        {
+          "id": "otoc-echo-v1",
+          "name": "Quantum Echo"
+        },
+        {
+          "id": "qdrive-api-v1",
+          "name": "QDrive"
+        },
+        {
+          "id": "qpixl-v1",
+          "name": "Qpixl"
+        },
+        {
+          "id": "qrc-audio-v1",
+          "name": "QRC Audio"
+        },
+        {
+          "id": "qrc-gen-v2",
+          "name": "QRC Generate"
+        },
+        {
+          "id": "qrc-image-v1",
+          "name": "QRC Image"
+        },
+        {
+          "id": "qrc-midi-v1",
+          "name": "QRC MIDI"
+        },
+        {
+          "id": "qrc-train-v2",
+          "name": "QRC Train"
+        },
+        {
+          "id": "retrocausal-echo-v1",
+          "name": "Retrocausal Echo"
+        },
+        {
+          "id": "tamagotchi-v0",
+          "name": "Tamagotchi"
+        },
+        {
+          "id": "tamagotchi-v1",
+          "name": "Tamagotchi"
+        },
+        {
+          "id": "telablur-v1",
+          "name": "Quantum Teleblur"
+        },
+        {
+          "id": "tessa-image-v1",
+          "name": "Tessa Image"
+        },
+        {
+          "id": "tessa-image-v1-test",
+          "name": "Tessa Image"
+        },
+        {
+          "id": "test-binary-v1",
+          "name": "Test Binary"
+        },
+        {
+          "id": "test-engine-error-v1",
+          "name": "Test Engine Error"
+        },
+        {
+          "id": "test-engine-fail-v1",
+          "name": "Test Fail Engine"
+        },
+        {
+          "id": "test-engine-submission-v1",
+          "name": "Test Engine Submission"
+        },
+        {
+          "id": "test-engine-v1",
+          "name": "Test Engine"
+        },
+        {
+          "id": "tomography-api-v2",
+          "name": "Tomography Api"
+        }
+      ]
+    },
+    {
+      "endpoint": "/api/v1/engines",
+      "method": "GET",
+      "auth": false,
+      "note": "catalog WITHOUT auth (public?)",
+      "status": 401,
+      "contentType": "application/problem+json",
+      "ms": 249,
+      "shape": {
+        "type": "object",
+        "keys": [
+          "$schema",
+          "title",
+          "status",
+          "detail"
+        ]
+      }
+    },
+    {
+      "endpoint": "/api/v1/jobs?limit=20",
+      "method": "GET",
+      "auth": true,
+      "note": "job history newest-first (read-only)",
+      "status": 200,
+      "contentType": "application/json",
+      "ms": 379,
+      "shape": {
+        "type": "object",
+        "keys": [
+          "$schema",
+          "jobs",
+          "count",
+          "next_cursor"
+        ]
+      },
+      "ids": [
+        {
+          "id": "comet-qrng-v1",
+          "status": "completed"
+        },
+        {
+          "id": "comet-qrng-v1",
+          "status": "completed"
+        },
+        {
+          "id": "comet-qrng-v1",
+          "status": "completed"
+        },
+        {
+          "id": "comet-qrng-v1",
+          "status": "completed"
+        },
+        {
+          "id": "comet-qrng-v1",
+          "status": "completed"
+        },
+        {
+          "id": "comet-qrng-v1",
+          "status": "completed"
+        },
+        {
+          "id": "comet-qrng-v1",
+          "status": "completed"
+        },
+        {
+          "id": "comet-qrng-v1",
+          "status": "completed"
+        },
+        {
+          "id": "comet-qrng-v1",
+          "status": "completed"
+        },
+        {
+          "id": "comet-qrng-v1",
+          "status": "completed"
+        },
+        {
+          "id": "graph-v1",
+          "status": "completed"
+        },
+        {
+          "id": "graph-v1",
+          "status": "completed"
+        },
+        {
+          "id": "graph-v1",
+          "status": "completed"
+        },
+        {
+          "id": "graph-v1",
+          "status": "completed"
+        },
+        {
+          "id": "graph-v1",
+          "status": "completed"
+        },
+        {
+          "id": "graph-v1",
+          "status": "completed"
+        },
+        {
+          "id": "graph-v1",
+          "status": "completed"
+        },
+        {
+          "id": "graph-v1",
+          "status": "completed"
+        },
+        {
+          "id": "graph-v1",
+          "status": "completed"
+        },
+        {
+          "id": "graph-v1",
+          "status": "failed"
+        }
+      ]
+    },
+    {
+      "endpoint": "/api/v1/engines/coin-toss-v1",
+      "method": "GET",
+      "auth": true,
+      "note": "engine detail: coin-toss-v1",
+      "status": 200,
+      "contentType": "application/json",
+      "ms": 636,
+      "shape": {
+        "type": "object",
+        "keys": [
+          "$schema",
+          "engine_id",
+          "name",
+          "description",
+          "version",
+          "owner",
+          "owner_type",
+          "created_by",
+          "visibility",
+          "queue",
+          "input_type",
+          "output_type",
+          "is_multipart",
+          "is_async",
+          "execution_mode",
+          "run_policy",
+          "params_schema",
+          "credits_per_run",
+          "enabled",
+          "registered_at",
+          "updated_at",
+          "description_md",
+          "code_samples",
+          "error_codes"
+        ]
+      }
+    },
+    {
+      "endpoint": "/api/v1/engines/qpixl-v1",
+      "method": "GET",
+      "auth": true,
+      "note": "engine detail: qpixl-v1",
+      "status": 200,
+      "contentType": "application/json",
+      "ms": 617,
+      "shape": {
+        "type": "object",
+        "keys": [
+          "$schema",
+          "engine_id",
+          "name",
+          "description",
+          "owner",
+          "owner_type",
+          "created_by",
+          "visibility",
+          "queue",
+          "input_type",
+          "output_type",
+          "is_multipart",
+          "is_async",
+          "execution_mode",
+          "run_policy",
+          "params_schema",
+          "credits_per_run",
+          "enabled",
+          "registered_at",
+          "updated_at",
+          "description_md",
+          "code_samples",
+          "error_codes",
+          "banner_image_id"
+        ]
+      }
+    },
+    {
+      "endpoint": "/api/v1/engines/graph-v1",
+      "method": "GET",
+      "auth": true,
+      "note": "engine detail: graph-v1 (known working)",
+      "status": 200,
+      "contentType": "application/json",
+      "ms": 615,
+      "shape": {
+        "type": "object",
+        "keys": [
+          "$schema",
+          "engine_id",
+          "name",
+          "description",
+          "owner",
+          "owner_type",
+          "created_by",
+          "visibility",
+          "queue",
+          "input_type",
+          "output_type",
+          "is_multipart",
+          "is_async",
+          "execution_mode",
+          "run_policy",
+          "params_schema",
+          "credits_per_run",
+          "enabled",
+          "registered_at",
+          "updated_at",
+          "description_md",
+          "code_samples",
+          "error_codes",
+          "steps"
+        ]
+      }
+    },
+    {
+      "endpoint": "/api/v1/engines/labyrinth-v1",
+      "method": "GET",
+      "auth": true,
+      "note": "engine detail: labyrinth-v1",
+      "status": 200,
+      "contentType": "application/json",
+      "ms": 620,
+      "shape": {
+        "type": "object",
+        "keys": [
+          "$schema",
+          "engine_id",
+          "name",
+          "description",
+          "owner",
+          "owner_type",
+          "created_by",
+          "visibility",
+          "queue",
+          "input_type",
+          "output_type",
+          "is_multipart",
+          "is_async",
+          "execution_mode",
+          "run_policy",
+          "params_schema",
+          "credits_per_run",
+          "enabled",
+          "registered_at",
+          "updated_at",
+          "description_md",
+          "code_samples",
+          "error_codes",
+          "steps"
+        ]
+      }
+    },
+    {
+      "endpoint": "/api/v1/engines/entanglement-shader-v1",
+      "method": "GET",
+      "auth": true,
+      "note": "engine detail: entanglement-shader-v1",
+      "status": 200,
+      "contentType": "application/json",
+      "ms": 631,
+      "shape": {
+        "type": "object",
+        "keys": [
+          "$schema",
+          "engine_id",
+          "name",
+          "description",
+          "owner",
+          "owner_type",
+          "created_by",
+          "visibility",
+          "queue",
+          "input_type",
+          "output_type",
+          "output_files",
+          "is_multipart",
+          "is_async",
+          "execution_mode",
+          "run_policy",
+          "params_schema",
+          "credits_per_run",
+          "enabled",
+          "registered_at",
+          "updated_at",
+          "description_md",
+          "code_samples",
+          "error_codes"
+        ]
+      }
+    },
+    {
+      "endpoint": "/api/v1/engines/blur-core-v1",
+      "method": "GET",
+      "auth": true,
+      "note": "engine detail: blur-core-v1 (JSON->JSON)",
+      "status": 200,
+      "contentType": "application/json",
+      "ms": 611,
+      "shape": {
+        "type": "object",
+        "keys": [
+          "$schema",
+          "engine_id",
+          "name",
+          "description",
+          "owner",
+          "owner_type",
+          "created_by",
+          "visibility",
+          "queue",
+          "input_type",
+          "output_type",
+          "is_multipart",
+          "is_async",
+          "execution_mode",
+          "run_policy",
+          "params_schema",
+          "credits_per_run",
+          "enabled",
+          "registered_at",
+          "updated_at",
+          "description_md",
+          "code_samples",
+          "error_codes",
+          "banner_image_id"
+        ]
+      }
+    },
+    {
+      "endpoint": "/api/v1/engines/aer",
+      "method": "GET",
+      "auth": true,
+      "note": "engine detail: aer (wave-42 known working, NOT in docs)",
+      "status": 404,
+      "contentType": "application/problem+json",
+      "ms": 378,
+      "shape": {
+        "type": "object",
+        "keys": [
+          "$schema",
+          "title",
+          "status",
+          "detail"
+        ]
+      }
+    },
+    {
+      "endpoint": "/api/v1/engines/emu",
+      "method": "GET",
+      "auth": true,
+      "note": "engine detail: emu (wave-42 known working, NOT in docs)",
+      "status": 404,
+      "contentType": "application/problem+json",
+      "ms": 371,
+      "shape": {
+        "type": "object",
+        "keys": [
+          "$schema",
+          "title",
+          "status",
+          "detail"
+        ]
+      }
+    },
+    {
+      "endpoint": "/api/v1/engines/example-engine-v1",
+      "method": "GET",
+      "auth": true,
+      "note": "engine detail: example-engine-v1",
+      "status": 404,
+      "contentType": "application/problem+json",
+      "ms": 377,
+      "shape": {
+        "type": "object",
+        "keys": [
+          "$schema",
+          "title",
+          "status",
+          "detail"
+        ]
+      }
+    },
+    {
+      "endpoint": "/api/v1/me/storage",
+      "method": "GET",
+      "auth": true,
+      "note": "storage usage/quota shape",
+      "status": 200,
+      "contentType": "application/json",
+      "ms": 490,
+      "shape": {
+        "type": "object",
+        "keys": [
+          "$schema",
+          "usage",
+          "quota"
+        ]
+      }
+    },
+    {
+      "endpoint": "/api/v1/assets?limit=5",
+      "method": "GET",
+      "auth": true,
+      "note": "asset list shape",
+      "status": 200,
+      "contentType": "application/json",
+      "ms": 436,
+      "shape": {
+        "type": "object",
+        "keys": [
+          "$schema",
+          "assets",
+          "count"
+        ]
+      }
+    }
+  ]
+}
