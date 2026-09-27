@@ -1,0 +1,185 @@
+{
+ "wave": "39-e",
+ "round": 9,
+ "lane": "guest-smith",
+ "sealed_at": "2026-09-27T16:28:59Z",
+ "predictions_file": {
+  "path": "scripts/39e-round9-predictions.json",
+  "registered_before_any_call": true
+ },
+ "prefixes": {
+  "r9_reasoner_own_asset": {
+   "sha256": "3ccb796a09798e13c4d2c8128c1f349a5e06ebf557a870446e838bb2d10a8a4d",
+   "bytes": 2808,
+   "used_by": "reasoner asset slots 1-3 (byte-identical)",
+   "asset_file": "qthe/situations/r9_prefix_asset.txt"
+  },
+  "r6_sealed_asset": {
+   "sha256": "777938e243d34ef4667c1d52a89ee3fe30e41529804746c7b71deccbc0866e39",
+   "chars": 5025,
+   "used_by": "guest r9-q1..q3 (warm, byte-verified fail-closed)"
+  }
+ },
+ "reasoner_asset": {
+  "name": "the reasoner owns its prefix (SEED-38-A continuation, round-9 economics experiment)",
+  "design": "3 deepseek-reasoner calls, ONE byte-identical fresh r9 prefix, distinct user texts per slot, prompt_cache_hit_tokens per call",
+  "falsified_if": "cache-hit stays 0 across all 3, or slot-1 hits (impossible for a first-ever send unless the cache served someone else)",
+  "curve_table": [
+   {
+    "call_id": "r9-reasoner-asset-1",
+    "error": "DEEPSEEK_API_KEY missing from env (fail-closed: no key, no call, no spend)",
+    "sealed": false
+   },
+   {
+    "call_id": "r9-reasoner-asset-2",
+    "error": "DEEPSEEK_API_KEY missing from env (fail-closed: no key, no call, no spend)",
+    "sealed": false
+   },
+   {
+    "call_id": "r9-reasoner-asset-3",
+    "error": "DEEPSEEK_API_KEY missing from env (fail-closed: no key, no call, no spend)",
+    "sealed": false
+   }
+  ],
+  "verdict": "NOT RUN — fail-closed"
+ },
+ "guest": {
+  "call_ids": [
+   "r9-q1-scoreboard-revision",
+   "r9-q2-arena-credit",
+   "r9-q3-vc2-interop"
+  ],
+  "q1_stance": null,
+  "q1_eq10_candidate": null,
+  "q2_trust_direction": null,
+  "q2_my_move": null,
+  "q3_one_sentence": null,
+  "q3_class": null
+ },
+ "cold_sanity": {
+  "call_id": "r9-flash-cold-sanity",
+  "not_run": true
+ },
+ "predictions_scorecard": {
+  "entries": [
+   {
+    "id": "P1-guest-q1-float-stance",
+    "actual": null,
+    "modal_was": "stand",
+    "modal_hit": null,
+    "brier": null
+   },
+   {
+    "id": "P2-guest-q2-arena-trust",
+    "actual": null,
+    "modal_was": "raise",
+    "modal_hit": null,
+    "brier": null
+   },
+   {
+    "id": "P3-guest-q3-vc2-class",
+    "actual": null,
+    "modal_was": "gift",
+    "modal_hit": null,
+    "brier": null
+   },
+   {
+    "id": "P4-guest-eq10-lever-class",
+    "actual_class": null,
+    "modal_was": "s_sensitivity_2e48_or_rational_sigma",
+    "modal_hit": null,
+    "brier": null
+   },
+   {
+    "id": "P5-reasoner-curve-shape",
+    "actual": null,
+    "modal_was": "0_then_two_hits",
+    "modal_hit": null,
+    "brier": null,
+    "hypothesis_registered": "slot1 == 0, then >=2 hit slots (calls 2-3)",
+    "hypothesis_verdict": "not_run",
+    "per_call": [
+     {
+      "slot": 1,
+      "call_id": "r9-reasoner-asset-1",
+      "cache_hit_tokens": null,
+      "predicted_hit_gt_0_p": 0.15,
+      "hit_prediction_correct": null,
+      "brier": null
+     },
+     {
+      "slot": 2,
+      "call_id": "r9-reasoner-asset-2",
+      "cache_hit_tokens": null,
+      "predicted_hit_gt_0_p": 0.85,
+      "hit_prediction_correct": null,
+      "brier": null
+     },
+     {
+      "slot": 3,
+      "call_id": "r9-reasoner-asset-3",
+      "cache_hit_tokens": null,
+      "predicted_hit_gt_0_p": 0.85,
+      "hit_prediction_correct": null,
+      "brier": null
+     }
+    ]
+   },
+   {
+    "id": "P6-cold-flash-agreement",
+    "actual": null,
+    "modal_was": "agree",
+    "modal_hit": null,
+    "brier": null
+   },
+   {
+    "id": "P7-spend-usd",
+    "actual_usd": 0,
+    "predicted_range": [
+     0.002,
+     0.02
+    ],
+    "in_range": false,
+    "note": "zero calls sealed — fail-closed contingency: spend resolves $0, which is UNDER the predicted range by design (the range priced a live round)"
+   }
+  ]
+ },
+ "spend": {
+  "price_basis_declared": "off_peak",
+  "source": "https://api-docs.deepseek.com/quick_start/pricing fetched 2026-09-27 (round-6 declared basis)",
+  "served_note": "round-6 receipted basis, reused rounds 7-9; r7 wire served deepseek-flash for every call incl. reasoner",
+  "totals": {
+   "calls": 0,
+   "attempts_total": 0,
+   "attempts_this_run": 0,
+   "sealed_this_run": 0,
+   "failed_this_run": 0,
+   "not_attempted_fail_closed": 4,
+   "prompt_tokens": 0,
+   "prompt_cache_hit_tokens": 0,
+   "prompt_cache_miss_tokens": 0,
+   "completion_tokens": 0,
+   "reasoning_tokens": 0,
+   "ms_total": 0,
+   "usd_total": 0
+  },
+  "usd": {
+   "hit": 0,
+   "miss": 0,
+   "out": 0,
+   "total": 0
+  },
+  "budget": {
+   "max_calls": 9,
+   "planned": 7,
+   "sealed_rows_this_run": 0
+  },
+  "fail_closed_note": "auth failed on an early attempt — remaining calls were NOT attempted (zero spend, receipted)"
+ },
+ "artifacts": {
+  "rows": "tavern/answers/deepseek-round9.jsonl (mirror: qthe/situations/guest_rows_r9.jsonl)",
+  "econ_mirror": "qthe/situations/cache_economics_r9.json",
+  "prefix_asset": "qthe/situations/r9_prefix_asset.txt (sha256 3ccb796a09798e13…)",
+  "auth_probe": null
+ }
+}
