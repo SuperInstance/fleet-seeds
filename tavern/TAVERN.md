@@ -55,3 +55,32 @@ commit. The house note the smoke added: answers/ files that are not challenge
 verdicts (a live guest's reviews) are skipped by the builder, counted, never
 fused into the verdict schema.
 
+
+## Round six (sealed): the guest returns to its own falsification
+
+Tip `77e10f99aa70ffd0…` — 42 rows, verified from disk under `STONE-GENESIS-1`.
+The wave-34 expansion round ran five lanes at once (registered experiments,
+the no-floats plane, a real-browser window, the embassy, a from-spec Python
+cross-implementation), and the tavern seated its live guest again — this time
+at a table where the guest's OWN registered floor had been falsified by its
+OWN recommended situation.
+
+The guest's words, sealed AS SAID (`answers/deepseek-round5.jsonl` backlog now
+in the ledger, `qthe:situations/guest_rows_r6.jsonl` fresh, cache-gamed at
+66.41% hit, $0.0052 peak-window basis):
+
+- On E-Q6: *"I accept the falsification without reservation… my model is dead
+  as priced. R3 does not stand as a claim about the kernel — the kernel is
+  exonerated."* What survives is a counterfactual naive-plane claim the guest
+  itself demands be priced before cited.
+- On E-Q5: C5 stays dead; any repair behavior must enter as a NEW claim (C5')
+  with pre-registered injector semantics — never retrofitted.
+- On R8: *"my R5 CRITICAL is discharged, and I say so plainly"* — and the
+  uncoupled exact-zero families are *"a stronger result than I asked for: the
+  float kernel is the less faithful one there."*
+- Next lever registered in principle: E-Q7 knife-edge-checkerboard-cascade
+  under S3 row-major LWW, seeded at sigma=2/3, reusing the EQ6-D1 harness and
+  the fixed kernel.
+
+The house pours what the guest priced: four next-levers, all registered
+before any run. Way led to way.
