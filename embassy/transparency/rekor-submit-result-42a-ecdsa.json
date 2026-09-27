@@ -1,0 +1,45 @@
+{
+  "schema": "fleet-seeds/rekor-submit-ledger/1.0",
+  "lane": "42-a rekor-finisher",
+  "config": "ecdsa-p256+sha256 (server-mandated prehash-over-digest construction)",
+  "started_at": "2026-09-27T19:55:31.511600Z",
+  "wire_attempt_budget": "ONE POST /api/v1/log/entries, NO retry (mission: one attempt, 2 configs total)",
+  "artifact": {
+    "path": "embassy/vc-envelope/stone-checkpoint.vc.json",
+    "bytes": 1904,
+    "sha256": "94aa82cdde3a717dc9aa68729d9ef96a398daa39d2d83204edea26f5ba75b1e5"
+  },
+  "ephemeral_public_key_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEQv5dwSipYuTHeoLtzCwkJ/eZVuhS\ncmn1qZVoBBVrLAPJT9vNyUNr9lSNXDWXbj+rjwtGRDxHTdyDOgOEbh8Fkw==\n-----END PUBLIC KEY-----\n",
+  "ephemeral_public_key_sha256": "10813274bc401405c9c633ac918b114ab629d6d62fb353108ef5df91a63f3f23",
+  "local_selfverify_library": true,
+  "local_selfverify_first_principles": {
+    "ok": true,
+    "detail": "R.x mod n = 83e8df7d238caaeddf64bec7a8b3336c742e0a5dadd3449ceace040e6fd83759",
+    "r": "83e8df7d238caaeddf64bec7a8b3336c742e0a5dadd3449ceace040e6fd83759",
+    "s": "89bf2a34b0c42a175b8348289371c449f2aa8dab48c2e65e59aa38e996737b0b"
+  },
+  "signature_construction": "ECDSA-P256 DER over the RAW 32-byte sha256 artifact digest (cryptography Prehashed(SHA256); = Go ecdsa.SignASN1(priv, digest); server: sigstore ecdsa.go VerifyASN1(pub, WithDigest-bytes, sig))",
+  "proposed_entry_bytes": 573,
+  "wire_attempts": [
+    {
+      "n": 1,
+      "method": "POST /api/v1/log/entries",
+      "status": 201,
+      "response_body": "{\"108e9186e8c5677a264d92959c4b08de58cdc375aa0f78f5c180a1fc14610a7b79ba3a0a00ec06ef\":{\"body\":\"eyJhcGlWZXJzaW9uIjoiMC4wLjEiLCJraW5kIjoiaGFzaGVkcmVrb3JkIiwic3BlYyI6eyJkYXRhIjp7Imhhc2giOnsiYWxnb3JpdGhtIjoic2hhMjU2IiwidmFsdWUiOiI5NGFhODJjZGRlM2E3MTdkYzlhYTY4NzI5ZDllZjk2YTM5OGRhYTM5ZDJkODMyMDRlZGVhMjZmNWJhNzViMWU1In19LCJzaWduYXR1cmUiOnsiY29udGVudCI6Ik1FWUNJUUNENk45OUk0eXE3ZDlrdnNlb3N6TnNkQzRLWGEzVFJKenF6Z1FPYjlnM1dRSWhBSW0vS2pTd3hDb1hXNE5JS0pOeHhFbnlxbzJyU01MbVhsbXFPT21XYzNzTCIsInB1YmxpY0tleSI6eyJjb250ZW50IjoiTFMwdExTMUNSVWRKVGlCUVZVSk1TVU1nUzBWWkxTMHRMUzBLVFVacmQwVjNXVWhMYjFwSmVtb3dRMEZSV1VsTGIxcEplbW93UkVGUlkwUlJaMEZGVVhZMVpIZFRhWEJaZFZSSVpXOU1kSHBEZDJ0S0wyVmFWblZvVXdwamJXNHhjVnBXYjBKQ1ZuSk1RVkJLVkRsMlRubFZUbkk1YkZOT1dFUlhXR0pxSzNKcWQzUkhVa1I0U0ZSa2VVUlBaMDlGWW1nNFJtdDNQVDBLTFMwdExTMUZUa1FnVUZWQ1RFbERJRXRGV1MwdExTMHRDZz09In19fX0=\",\"integratedTime\":1790538931,\"logID\":\"c0d23d6ad406973f9559f3ba2d1ca01f84147d8ffc5b8445c224f98b9591801d\",\"logIndex\":2979164002,\"verification\":{\"inclusionProof\":{\"checkpoint\":\"rekor.sigstore.dev - 1193050959916656506\\n2857259747\\nQ/j150GPpeOZGAgxxfciVay4MNsMzCoonVayF4DPuE8=\\n\\n\u2014 rekor.sigstore.dev wNI9ajBGAiEA9Hz68KWF6qst7KZNsyLj1CIg8/08goom/vldkP+UEKYCIQDD1nu+KHRDFdpkLFQvGApLw/AD3TuOfP7xknP5/BgVAg==\\n\",\"hashes\":[\"f2725460cd5004199109ff53f71be4a22c713f3af2470a2da3b94752d2522bb7\",\"3f28871914ba872c6c224eda0776989329f07eca4fe6c7a55bf7132d1ce1540e\",\"bced02c9cbc48666f670cca7da18c44caca53968b8bd544b9fc97ee0c94ef84f\",\"b402f2f0203dd2d8475032e7d5eb3a45bf697873037164a49b2929060aff67fe\",\"273cbe13423a2d21b2bc461ec22065fd19d187dbe31274420e88da1b314c8f93\",\"04d9670c937ff6789dfe2719b6757dbe81bef6570a60b5ef75990afc466cb23c\",\"6795172937c46a99623c3fd037a2a003b0062f34ecbf5ed2b80f49549eac92e8\",\"a10b4102cc66edbc96a8eec3fe4c12431b4f5e361796ecf0635e8038a6216608\",\"e2b1a5a077f83c3c2f74b2c722440213967e081a5a14b8ba6641892f9abf2ae9\",\"b6bd37f36bf833337421c65b9c1244525600289b457daa1fb8439bc147a1e771\",\"49218c9007bde3bdb609851ca875e253de96c0e21b16d2197f2e818e146625ad\",\"b9401dd99"
+    }
+  ],
+  "entry_uuid": "108e9186e8c5677a264d92959c4b08de58cdc375aa0f78f5c180a1fc14610a7b79ba3a0a00ec06ef",
+  "integrated_time": 1790538931,
+  "log_id": "c0d23d6ad406973f9559f3ba2d1ca01f84147d8ffc5b8445c224f98b9591801d",
+  "log_index": 2979164002,
+  "inclusion_selfverify": {
+    "ok": false,
+    "reason": "unexpected tree state lo=1428629870 hi=1428629873"
+  },
+  "body_kind": "hashedrekord",
+  "body_digest_matches": true,
+  "body_sig_matches": true,
+  "final": "SUBMITTED_INCLUSION_UNVERIFIED",
+  "permanent_url": "https://rekor.sigstore.dev/api/v1/log/entries/108e9186e8c5677a264d92959c4b08de58cdc375aa0f78f5c180a1fc14610a7b79ba3a0a00ec06ef",
+  "finished_at": "2026-09-27T19:55:32.090683Z"
+}

@@ -1,0 +1,26 @@
+{
+  "started_at": "2026-09-27T20:13:31.423Z",
+  "hash_algorithm": "sha512",
+  "key_type": "ed25519",
+  "dry_run": false,
+  "artifact": {
+    "path": "embassy/vc-envelope/stone-checkpoint.vc.json",
+    "bytes": 1904,
+    "sha256": "94aa82cdde3a717dc9aa68729d9ef96a398daa39d2d83204edea26f5ba75b1e5",
+    "sha512": "706298e5c6e35630c56a1a0d70c5b75deb2dac8ae4e162dfc0b67333d143b5bc3f94eef28627f22499648167722914da79b9229119fad566ea11636a51472bf2"
+  },
+  "ephemeral_public_key_sha256": "edfbe883faab577d5deafdcb455e7ac44e8ae4886448d10c7ca4cdde38315628",
+  "proposedEntry_publicKey_pem_sha256": "edfbe883faab577d5deafdcb455e7ac44e8ae4886448d10c7ca4cdde38315628",
+  "local_selfverify": true,
+  "attempts": [
+    {
+      "status": 400,
+      "body": "{\"code\":400,\"message\":\"error processing entry: verifying signature: failed to verify signature: ed25519: invalid signature\"}\n"
+    },
+    {
+      "status": 400,
+      "body": "{\"code\":400,\"message\":\"error processing entry: verifying signature: failed to verify signature: ed25519: invalid signature\"}\n"
+    }
+  ],
+  "final": "REJECTED_AFTER_2_ATTEMPTS"
+}
