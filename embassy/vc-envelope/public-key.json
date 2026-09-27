@@ -1,0 +1,9 @@
+{
+  "note": "FRESH Ed25519 public key for lane 38-a stone-checkpoint VC. The private key existed ONLY in sign.mjs process memory during minting and was destroyed at process exit — never written to disk, never printed, never transmitted. Verification needs nothing but this file and the did:key embedded in the credential.",
+  "keyType": "Ed25519 (Multikey, multicodec 0xed01)",
+  "created": "2026-09-27T10:38:05Z",
+  "multibase": "z6MkjkY3QBSzMXq7c1pKEiEqtBFES7Yus4nq2Y88rHMx8Jjr",
+  "didKey": "did:key:z6MkjkY3QBSzMXq7c1pKEiEqtBFES7Yus4nq2Y88rHMx8Jjr",
+  "verificationMethod": "did:key:z6MkjkY3QBSzMXq7c1pKEiEqtBFES7Yus4nq2Y88rHMx8Jjr#z6MkjkY3QBSzMXq7c1pKEiEqtBFES7Yus4nq2Y88rHMx8Jjr",
+  "rawPublicKeyHex": "4eb7655b4cd9878968beae3195fa9fc297440f2e33fa74908d311cfedad9c6a1"
+}

@@ -1,0 +1,42 @@
+{
+  "reader": "B (verify.mjs)",
+  "spec": "https://www.w3.org/TR/vc-di-eddsa/",
+  "specVersion": "W3C Recommendation 15 May 2025",
+  "checkedAt": "2026-09-27T10:39:02Z",
+  "gate": "PASSED",
+  "vc": "/home/z/my-project/download/fleet-seeds/embassy/vc-envelope/stone-checkpoint.vc.json",
+  "verified": true,
+  "why": null,
+  "hashDataHex": "b941a0f2a40c5a6a9c46e08f3ad973f27c45ac3eae36fef4b78d44173912bbef9f1889e676f951fa7247076304bd8bbc5f12baa2ee6120927beec50500b33756",
+  "proofConfigHashHex": "b941a0f2a40c5a6a9c46e08f3ad973f27c45ac3eae36fef4b78d44173912bbef",
+  "documentHashHex": "9f1889e676f951fa7247076304bd8bbc5f12baa2ee6120927beec50500b33756",
+  "tamperControls": {
+    "subjectTamper": {
+      "expected": false,
+      "got": false,
+      "why": "Ed25519 verification returned false"
+    },
+    "signatureTamper": {
+      "expected": false,
+      "got": false,
+      "why": "Ed25519 verification returned false"
+    },
+    "contextReplace": {
+      "expected": false,
+      "got": false,
+      "why": "document @context does not start with proof @context in the same order"
+    }
+  },
+  "specSemanticsReceipts": {
+    "contextAppend": {
+      "specBehavior": "still verifies — §3.3.2 prefix rule + proof-context replacement",
+      "expected": true,
+      "got": true,
+      "why": null,
+      "note": "the scout's honest loss (mandatory @context validation) demonstrated on our own artifact"
+    }
+  },
+  "tamperControlsOk": true,
+  "verdict": "VERIFIED",
+  "falsifierStatus": "NOT triggered — a spec-conforming reader (KAT-proven on §B.3) ACCEPTS our proof"
+}

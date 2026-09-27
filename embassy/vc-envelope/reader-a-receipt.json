@@ -1,0 +1,10 @@
+{
+  "reader": "A (reader-a.mjs)",
+  "vc": "/home/z/my-project/download/fleet-seeds/embassy/vc-envelope/stone-checkpoint.vc.json",
+  "checkedAt": "2026-09-27T10:39:02Z",
+  "bindingOk": true,
+  "hashDataHex": "b941a0f2a40c5a6a9c46e08f3ad973f27c45ac3eae36fef4b78d44173912bbef9f1889e676f951fa7247076304bd8bbc5f12baa2ee6120927beec50500b33756",
+  "signatureBytes": 64,
+  "sigOk": true,
+  "verified": true
+}

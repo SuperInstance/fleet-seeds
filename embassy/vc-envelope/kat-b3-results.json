@@ -1,0 +1,70 @@
+{
+  "kat": "vc-di-eddsa §B.3 (eddsa-jcs-2022) — the spec's own test vector",
+  "source": "https://www.w3.org/TR/vc-di-eddsa/#B.3",
+  "ok": true,
+  "passed": 8,
+  "total": 8,
+  "steps": [
+    {
+      "id": "K1-jcs-document",
+      "claim": "JCS(Example 30) === Example 31 canonical credential, byte-exact",
+      "pass": true,
+      "detail": {
+        "bytes": 462
+      }
+    },
+    {
+      "id": "K2-document-hash",
+      "claim": "sha256(canonical credential) === Example 32",
+      "pass": true,
+      "detail": {
+        "got": "59b7cb6251b8991add1ce0bc83107e3db9dbbab5bd2c28f687db1a03abc92f19"
+      }
+    },
+    {
+      "id": "K3-jcs-proof-config",
+      "claim": "JCS(Example 33) === Example 34 canonical proof options, byte-exact",
+      "pass": true,
+      "detail": {
+        "bytes": 355
+      }
+    },
+    {
+      "id": "K4-proof-config-hash",
+      "claim": "sha256(canonical proof options) === Example 35",
+      "pass": true,
+      "detail": {
+        "got": "66ab154f5c2890a140cb8388a22a160454f80575f6eae09e5a097cabe539a1db"
+      }
+    },
+    {
+      "id": "K5-hash-composition",
+      "claim": "proofConfigHash || documentHash === Example 36",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "id": "K6-multibase-decode",
+      "claim": "base58-btc decode(Example 38 proofValue) === Example 37 signature hex",
+      "pass": true,
+      "detail": {
+        "bytes": 64
+      }
+    },
+    {
+      "id": "K7-verify-example-39",
+      "claim": "§3.3.2 Verify Proof(Example 39) === true",
+      "pass": true,
+      "detail": {
+        "hashDataHex": "66ab154f5c2890a140cb8388a22a160454f80575f6eae09e5a097cabe539a1db59b7cb6251b8991add1ce0bc83107e3db9dbbab5bd2c28f687db1a03abc92f19",
+        "why": null
+      }
+    },
+    {
+      "id": "K8-kat-hash-echo",
+      "claim": "KAT verify hashData === Example 36 combined hash",
+      "pass": true,
+      "detail": {}
+    }
+  ]
+}

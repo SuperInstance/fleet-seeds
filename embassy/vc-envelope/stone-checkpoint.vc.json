@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "id": "urn:stone:SuperInstance:qthe:e_q6_chain:ab4ea196",
+  "type": [
+    "VerifiableCredential",
+    "StoneCheckpointCredential"
+  ],
+  "issuer": "did:key:z6MkjkY3QBSzMXq7c1pKEiEqtBFES7Yus4nq2Y88rHMx8Jjr",
+  "validFrom": "2026-09-27T10:38:05Z",
+  "credentialSubject": {
+    "id": "urn:stone:SuperInstance:qthe:e_q6_chain",
+    "stoneChain": {
+      "format": "stone-v1",
+      "genesis": "STONE-GENESIS-1",
+      "repo": "SuperInstance/qthe",
+      "lane": "33-b field-smith",
+      "owns": "experiments/ receipts/",
+      "experiment": "E-Q6",
+      "claim": "R3",
+      "headerRowHash": "0edd00ddd07e40b02f0a35b6c07590eaa14d7cb84b731c8f789f94dcbc1d86df",
+      "links": 15,
+      "tipSha256": "ab4ea19681888b11c2843b9ca43d12f652dca045338217dc5bf1b5cd9e477db0",
+      "tipKind": "verdict.EQ6"
+    },
+    "artifact": {
+      "repo": "SuperInstance/qthe",
+      "path": "receipts/e_q6_chain.jsonl",
+      "mediaType": "application/x-ndjson",
+      "sha256": "3340b0823aabcd7773172c15104397452fdfbef01e006f25ed330dacf98018cc",
+      "bytes": 9242
+    },
+    "verifiedBy": "quilt-stone/stone.mjs verifyChainFile -> ok:true alg:stone-v1 links:15 tip:ab4ea19681888b11c2843b9ca43d12f652dca045338217dc5bf1b5cd9e477db0",
+    "verificationMethod": "did:key:z6MkjkY3QBSzMXq7c1pKEiEqtBFES7Yus4nq2Y88rHMx8Jjr#z6MkjkY3QBSzMXq7c1pKEiEqtBFES7Yus4nq2Y88rHMx8Jjr"
+  },
+  "proof": {
+    "type": "DataIntegrityProof",
+    "cryptosuite": "eddsa-jcs-2022",
+    "created": "2026-09-27T10:38:05Z",
+    "verificationMethod": "did:key:z6MkjkY3QBSzMXq7c1pKEiEqtBFES7Yus4nq2Y88rHMx8Jjr#z6MkjkY3QBSzMXq7c1pKEiEqtBFES7Yus4nq2Y88rHMx8Jjr",
+    "proofPurpose": "assertionMethod",
+    "@context": [
+      "https://www.w3.org/ns/credentials/v2"
+    ],
+    "proofValue": "z3ovApYvRhgWrVt3p9rD3cLPp2u28tPFYwSKHUDU2tHEWwEQmNnNfG4epa2gmFtQ9bLRSzCBQ9bdsSp5p5ouojAdm"
+  }
+}
