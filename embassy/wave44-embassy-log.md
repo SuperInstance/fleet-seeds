@@ -21,9 +21,11 @@ Runner-up: quilt-gpu-lab's experiment-loop-as-repo (QUEUE/RESULTS/guard with ver
 
 Also flagged honestly in 44-c: superinstance-advisor's FORGET("witness") resets its rolling-root chain with no tombstone (audit hole) and its latest commit uses `ssl._create_unverified_context()` — both noted read-only, repo is issues-off.
 
-## Letters — PRE-POST ARCHIVE
+## Letters — STAGED (all four)
 
-### Letter 1 → ropesight (issues-on, new issue) — POSTED after this commit
+POST-ARCHIVE CORRECTION (recorded before the seal commit): ropesight and micrograd-quilt LIST `has_issues: true` in the repos API, but POST returns `422 Issues has been disabled in this repository` on both. Finding: **the metadata flag is unreliable — only quilt-stone and exoj accept issues in practice. POST is the only honest test; one clean rejection is not a foreign write.** All four letters therefore STAGED here until a channel opens. Zero letters posted this wave.
+
+### Letter 1 → ropesight — STAGED (API 422 despite has_issues:true)
 
 Title: `[EMBASSY] Your method schedule is now our arena pairing primitive — measured, receipted, zero asks`
 
@@ -36,7 +38,7 @@ Title: `[EMBASSY] Your method schedule is now our arena pairing primitive — me
 >
 > Artifacts: `SuperInstance/fleet-seeds` `playtest/wave44/pairing/` (claims pre-registered before runs, results, verdict). Gift-framed: this is us telling you your idea moved, not asking for anything. If you'd rather we not reference your repo in our receipts, say so and we'll anonymize.
 
-### Letter 2 → micrograd-quilt (issues-on, new issue) — POSTED after this commit
+### Letter 2 → micrograd-quilt — STAGED (API 422 despite has_issues:true)
 
 Title: `[EMBASSY] Your exact twin is now our exactness audit — 74/74 nodes Fraction-exact, zero asks`
 
