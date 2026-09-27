@@ -1,0 +1,147 @@
+# pong49 scorecard — PREMATURE
+
+- generated_at: 2026-09-27T19:46:11.292Z
+- window: [2026-09-27T10:04:00Z, 2026-09-29T10:04:00Z] (registered in tavern/jev_calibration_battery_r8.json #scoring_rule.resolution_sources.c_pong49)
+- runner: lane 42-d (pong-scorer); scorer: embassy/battery/pong49_scorer.mjs (no deps, read-only API, zero foreign writes)
+
+**VERDICT WITHHELD — PREMATURE.** Now = 2026-09-27T19:46:11.292Z is before window close 2026-09-29T10:04:00Z. Exit code 2. No outcome resolved, no Brier emitted; interim state below is read-only observation, not a verdict.
+
+## Interim state (receipt)
+```json
+{
+  "pulled_at_utc": "2026-09-27T19:46:14.491Z",
+  "pong49_issue": {
+    "url": "https://github.com/SuperInstance/pong-quilt/issues/49",
+    "state": "open",
+    "comments_count": 5,
+    "updated_at": "2026-09-27T19:07:42Z",
+    "title": "A gift from another fleet's reader: your r37 stone-v1 chain verifies under the stone's published arithmetic"
+  },
+  "pong49_comments_total": 5,
+  "pong49_authors": [
+    "SuperInstance"
+  ],
+  "pong49_foreign_comments_ever": 0,
+  "pong49_foreign_in_registered_window": [],
+  "comments_after_our_wave41_5858861919": [],
+  "pong_replied_since_5858861919": false,
+  "pong_main": {
+    "default_branch": "main",
+    "sha": "1da41be23eff100f4d11df0e187311e12ad704f9",
+    "date": "2026-09-27T18:02:59Z",
+    "message": "Merge pull request #58 from SuperInstance/r42-site",
+    "moved_past_wave41_base_1da41be": false,
+    "html_url": "https://github.com/SuperInstance/pong-quilt/commit/1da41be23eff100f4d11df0e187311e12ad704f9"
+  },
+  "quilt_stone": {
+    "default_branch": "main",
+    "issues_enabled": false,
+    "open_issues_count": 0,
+    "pushed_at": "2026-09-27T16:15:37Z",
+    "head": "36253a74c80d497a293e413cb5bd33867df63fae",
+    "head_message": "Merge pull request #6 from SuperInstance/auditor-experience-doc",
+    "head_date": "2026-09-27T16:15:32Z",
+    "recent_commits_touching_edverify_pem_sign": [
+      {
+        "sha": "7f10b99de7be",
+        "date": "2026-09-27T16:09:40Z",
+        "message": "Merge pull request #7 from SuperInstance/key-provenance-seal"
+      },
+      {
+        "sha": "ecdb52fae25e",
+        "date": "2026-09-27T16:09:19Z",
+        "message": "Merge branch 'main' into key-provenance-seal"
+      },
+      {
+        "sha": "bb22e3de67de",
+        "date": "2026-09-27T12:04:45Z",
+        "message": "key provenance seal: trustedKeys registry upgrades binding to identity (verifyTipSignature)"
+      },
+      {
+        "sha": "4f99822b84c8",
+        "date": "2026-09-27T11:10:12Z",
+        "message": "docs: AUDITOR-EXPERIENCE.md — field report verifying a signed stone-v2 chain end-to-end (R39 pilot artifact, laundering controls, honest limits); +4 smoke pins (83/83); README counts 58→83"
+      },
+      {
+        "sha": "023edbed086f",
+        "date": "2026-09-27T09:02:00Z",
+        "message": "Merge pull request #4 from SuperInstance/stone-v2-sign-lane"
+      },
+      {
+        "sha": "047be7244dbf",
+        "date": "2026-09-27T07:09:03Z",
+        "message": "stone-v2 sign lane: signTip/verifyTipSignature ed25519 tip staples (STONE-V2-PILOTS first sign lane)"
+      },
+      {
+        "sha": "f3c2f0487b09",
+        "date": "2026-09-27T06:20:10Z",
+        "message": "stone-v2 annotation rows: self-hashed staples, prev never advances (STONE-V2-PILOTS resolution)"
+      },
+      {
+        "sha": "508191447811",
+        "date": "2026-09-27T04:20:48Z",
+        "message": "Merge pull request #2 from SuperInstance/design/stone-v2-pilots"
+      },
+      {
+        "sha": "c5d8e782a7da",
+        "date": "2026-09-27T03:49:43Z",
+        "message": "design: STONE-V2-PILOTS — first sign lanes, from this morning's two birth-sealed chains"
+      }
+    ],
+    "prs_touching_edverify_pem_sign": [
+      {
+        "no": 7,
+        "state": "closed",
+        "merged_at": "2026-09-27T16:09:41Z",
+        "title": "key provenance seal: trustedKeys registry upgrades binding to identity",
+        "html_url": "https://github.com/SuperInstance/quilt-stone/pull/7"
+      },
+      {
+        "no": 6,
+        "state": "closed",
+        "merged_at": "2026-09-27T16:15:32Z",
+        "title": "docs: AUDITOR-EXPERIENCE.md — consumer-side verification field report (R39 pilot, Task 26-d input)",
+        "html_url": "https://github.com/SuperInstance/quilt-stone/pull/6"
+      },
+      {
+        "no": 5,
+        "state": "closed",
+        "merged_at": "2026-09-27T16:08:34Z",
+        "title": "standards interop tracking: pin IETF compliance receipts + SCITT anchors",
+        "html_url": "https://github.com/SuperInstance/quilt-stone/pull/5"
+      },
+      {
+        "no": 4,
+        "state": "closed",
+        "merged_at": "2026-09-27T09:02:01Z",
+        "title": "stone-v2 sign lane: ed25519 tip signatures, signTip + auditor verifyTipSignature (STONE-V2-PILOTS first sign lane)",
+        "html_url": "https://github.com/SuperInstance/quilt-stone/pull/4"
+      },
+      {
+        "no": 3,
+        "state": "closed",
+        "merged_at": "2026-09-27T06:39:54Z",
+        "title": "stone-v2 annotation rows: the downgrade-safe staple rule (STONE-V2-PILOTS resolution)",
+        "html_url": "https://github.com/SuperInstance/quilt-stone/pull/3"
+      },
+      {
+        "no": 2,
+        "state": "closed",
+        "merged_at": "2026-09-27T04:20:48Z",
+        "title": "design: STONE-V2-PILOTS — first sign lanes",
+        "html_url": "https://github.com/SuperInstance/quilt-stone/pull/2"
+      },
+      {
+        "no": 1,
+        "state": "closed",
+        "merged_at": "2026-09-27T04:20:06Z",
+        "title": "smoke 12b: pong-quilt R36 is the first stone-v1 forward-format adopter (real exporter output pinned)",
+        "html_url": "https://github.com/SuperInstance/quilt-stone/pull/1"
+      }
+    ]
+  }
+}
+```
+
+---
+Registered artifacts (verbatim, not invented): tavern/jev_calibration_battery_r8.json (lane 0.07 / JEV r8 0.15), tavern/jev_remap_r9_rows.jsonl (JEV r9 priors 0.13 / 0.14). Everything not in the registration (sign-lane fix landed, letter acknowledged, …) is watch context only and is NEVER scored here.
