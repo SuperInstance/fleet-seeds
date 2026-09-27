@@ -1,0 +1,546 @@
+{
+  "tool": "fleet-seeds/tools/wal-conformance.mjs",
+  "adoptedFrom": "SuperInstance/tessera seeds/wal-edl/wal-edl.ts — replay semantics adopted (recover-to-prefix, stop at first bad record, explicit structured damage report); observed live via tools/wave45/45d-waledl-probe-receipt.json; re-expressed from scratch, no shared code",
+  "law": "stone chains verify as typed append-only WALs: torn tail -> good prefix verifies + explicit structured tear report (+ recovery position); corrupted byte -> nothing at-or-past the break applied, exact seq reported; full chain -> clean with pinned tip/links",
+  "semantics": "recover-to-prefix, READ-ONLY (goodBytes receipted, never truncated); default exit non-zero on ANY damage; --torn-ok exits 0 IFF torn-tail-only with verified prefix; mid-chain corruption never exits 0",
+  "ranAt": "2026-09-27T23:48:51.810Z",
+  "finishedAt": "2026-09-27T23:48:51.843Z",
+  "node": "v24.21.0",
+  "walEdlPort": {
+    "s0_fresh": {
+      "torn": false,
+      "class": null,
+      "applied": 7,
+      "seq": 0,
+      "reason": null,
+      "goodBytes": 1227,
+      "lastSum": "31f666125cc32f3c333f3a1b4ff5da61"
+    },
+    "s1_torn_tail": {
+      "torn": true,
+      "class": "torn-tail",
+      "applied": 6,
+      "seq": 0,
+      "reason": "torn tail: 178 byte(s) after last newline",
+      "goodBytes": 1044,
+      "lastSum": "600f2f5f608e388304a88a6625bc2107"
+    },
+    "s2_corrupt_delta": {
+      "torn": true,
+      "class": "checksum-mismatch",
+      "applied": 3,
+      "seq": 4,
+      "reason": "checksum mismatch at seq 4",
+      "goodBytes": 546,
+      "lastSum": "8cffa41c8ea85ef7a06b43ab2e5d338e",
+      "flip": "delta.srcOut undefined -> 0 (field added to record 4, probe-s2 shape)"
+    },
+    "s3_corrupt_prev": {
+      "torn": true,
+      "class": "chain-break",
+      "applied": 2,
+      "seq": 3,
+      "reason": "chain break at seq 3",
+      "goodBytes": 373,
+      "lastSum": "4865f35aa248aec66e007adc45c3b4c0",
+      "flip": "prev[0] 4 -> 0 (record 3)"
+    },
+    "s4_corrupt_json": {
+      "torn": true,
+      "class": "parse-break",
+      "applied": 4,
+      "seq": 0,
+      "reason": "Unexpected token '}', \"}\"seq\":5,\"\"... is not valid JSON",
+      "goodBytes": 733,
+      "lastSum": "7c86444afd355419cb0722c0654af828"
+    },
+    "s5_garbage_tail": {
+      "torn": true,
+      "class": "torn-tail",
+      "applied": 7,
+      "seq": 0,
+      "reason": "torn tail: 11 byte(s) after last newline",
+      "goodBytes": 1227,
+      "lastSum": "31f666125cc32f3c333f3a1b4ff5da61"
+    },
+    "conformanceToReceipt": [
+      {
+        "scenario": "s0_fresh",
+        "ok": true,
+        "fails": [],
+        "got": {
+          "torn": false,
+          "class": null,
+          "applied": 7,
+          "seq": 0,
+          "reason": null
+        }
+      },
+      {
+        "scenario": "s1_torn_tail",
+        "ok": true,
+        "fails": [],
+        "got": {
+          "torn": true,
+          "class": "torn-tail",
+          "applied": 6,
+          "seq": 0,
+          "reason": "torn tail: 178 byte(s) after last newline"
+        }
+      },
+      {
+        "scenario": "s2_corrupt_delta",
+        "ok": true,
+        "fails": [],
+        "got": {
+          "torn": true,
+          "class": "checksum-mismatch",
+          "applied": 3,
+          "seq": 4,
+          "reason": "checksum mismatch at seq 4"
+        }
+      },
+      {
+        "scenario": "s3_corrupt_prev",
+        "ok": true,
+        "fails": [],
+        "got": {
+          "torn": true,
+          "class": "chain-break",
+          "applied": 2,
+          "seq": 3,
+          "reason": "chain break at seq 3"
+        }
+      },
+      {
+        "scenario": "s4_corrupt_json",
+        "ok": true,
+        "fails": [],
+        "got": {
+          "torn": true,
+          "class": "parse-break",
+          "applied": 4,
+          "seq": 0,
+          "reason": "Unexpected token '}', \"}\"seq\":5,\"\"... is not valid JSON"
+        }
+      },
+      {
+        "scenario": "s5_garbage_tail",
+        "ok": true,
+        "fails": [],
+        "got": {
+          "torn": true,
+          "class": "torn-tail",
+          "applied": 7,
+          "seq": 0,
+          "reason": "torn tail: 11 byte(s) after last newline"
+        }
+      }
+    ],
+    "ok": true
+  },
+  "chains": {
+    "qthe": {
+      "id": "qthe_eq6",
+      "frame": "jsonl",
+      "bytes": 9242,
+      "rows": 15,
+      "endsWithNewline": true,
+      "full": {
+        "torn": false,
+        "applied": 15,
+        "tip": "ab4ea19681888b11c2843b9ca43d12f652dca045338217dc5bf1b5cd9e477db0",
+        "links": 15,
+        "tipMatchesPin": true,
+        "linksMatchPin": true
+      },
+      "tornTail": {
+        "cutAt": 8440,
+        "recoveryAt": 7639,
+        "torn": true,
+        "class": "torn-tail",
+        "seq": 15,
+        "ordinalSeq": null,
+        "applied": 14,
+        "goodBytes": 7639,
+        "reason": "torn tail: 801 byte(s) after last newline",
+        "ok": false,
+        "lastGoodRowHash": "6a2a8938e5dc203a0b456f33982bed9eab37eaa5a3b0827a2409d922820f0c3f",
+        "note": null,
+        "tornOkExits0": true,
+        "defaultExitsNonZero": true,
+        "reasonShapeOk": true,
+        "prefixRecoverable": true
+      },
+      "trailingNewlineControl": {
+        "cutAt": 9241,
+        "torn": true,
+        "class": "torn-tail",
+        "seq": 15,
+        "ordinalSeq": null,
+        "applied": 14,
+        "goodBytes": 7639,
+        "reason": "torn tail: 1602 byte(s) after last newline",
+        "ok": false,
+        "lastGoodRowHash": "6a2a8938e5dc203a0b456f33982bed9eab37eaa5a3b0827a2409d922820f0c3f",
+        "note": null,
+        "chainContentIdentical": true,
+        "twoLayerNote": "WAL durability layer vs chain-content layer receipted separately — see twoLayerNote semantics in the header"
+      },
+      "corruptRowHash": [
+        {
+          "ordinal": 1,
+          "flippedAt": 199,
+          "torn": true,
+          "class": "checksum-mismatch",
+          "seq": 1,
+          "ordinalSeq": null,
+          "applied": 0,
+          "goodBytes": 0,
+          "reason": "checksum mismatch at seq 1",
+          "ok": false,
+          "lastGoodRowHash": null,
+          "note": null,
+          "expectedSeq": 1,
+          "seqMatchesOrdinal": true
+        },
+        {
+          "ordinal": 8,
+          "flippedAt": 3344,
+          "torn": true,
+          "class": "checksum-mismatch",
+          "seq": 8,
+          "ordinalSeq": null,
+          "applied": 7,
+          "goodBytes": 3096,
+          "reason": "checksum mismatch at seq 8",
+          "ok": false,
+          "lastGoodRowHash": "78d2cd92b94c93cfa55b122b6b1dc6158aaabda7daa95107c3c5310761c4441f",
+          "note": null,
+          "expectedSeq": 8,
+          "seqMatchesOrdinal": true
+        },
+        {
+          "ordinal": 15,
+          "flippedAt": 9161,
+          "torn": true,
+          "class": "checksum-mismatch",
+          "seq": 15,
+          "ordinalSeq": null,
+          "applied": 14,
+          "goodBytes": 7639,
+          "reason": "checksum mismatch at seq 15",
+          "ok": false,
+          "lastGoodRowHash": "6a2a8938e5dc203a0b456f33982bed9eab37eaa5a3b0827a2409d922820f0c3f",
+          "note": null,
+          "expectedSeq": 15,
+          "seqMatchesOrdinal": true
+        }
+      ],
+      "structuralCorruption": {
+        "ordinal": 8,
+        "torn": true,
+        "class": "parse-break",
+        "seq": 8,
+        "ordinalSeq": null,
+        "applied": 7,
+        "goodBytes": 3096,
+        "reason": "Unexpected token '}', \"}\"kind\":\"d\"... is not valid JSON",
+        "ok": false,
+        "lastGoodRowHash": "78d2cd92b94c93cfa55b122b6b1dc6158aaabda7daa95107c3c5310761c4441f",
+        "note": null
+      }
+    },
+    "pong": {
+      "id": "pong_birth_seal",
+      "frame": "document",
+      "bytes": 1299,
+      "rows": 5,
+      "endsWithNewline": true,
+      "full": {
+        "torn": false,
+        "applied": 5,
+        "tip": "c155fd016b364335c076cc18772b835672581230c2fd377fd8ac9f2849d296c7",
+        "links": 5,
+        "tipMatchesPin": true,
+        "linksMatchPin": true
+      },
+      "tornTail": {
+        "cutAt": 1056,
+        "recoveryAt": null,
+        "torn": true,
+        "class": "parse-break",
+        "seq": 0,
+        "ordinalSeq": null,
+        "applied": 0,
+        "goodBytes": 0,
+        "reason": "Unterminated string in JSON at position 1056 (line 44 column 15)",
+        "ok": false,
+        "lastGoodRowHash": null,
+        "note": "document framing cannot recover a partial prefix",
+        "tornOkExits0": false,
+        "defaultExitsNonZero": true,
+        "reasonShapeOk": true,
+        "prefixRecoverable": false
+      },
+      "trailingNewlineControl": {
+        "cutAt": 1298,
+        "torn": false,
+        "class": null,
+        "seq": 0,
+        "ordinalSeq": null,
+        "applied": 5,
+        "goodBytes": 1298,
+        "reason": null,
+        "ok": true,
+        "lastGoodRowHash": "c155fd016b364335c076cc18772b835672581230c2fd377fd8ac9f2849d296c7",
+        "note": null,
+        "chainContentIdentical": true,
+        "twoLayerNote": "WAL durability layer vs chain-content layer receipted separately — see twoLayerNote semantics in the header"
+      },
+      "corruptRowHash": [
+        {
+          "ordinal": 1,
+          "flippedAt": 191,
+          "torn": true,
+          "class": "checksum-mismatch",
+          "seq": 0,
+          "ordinalSeq": 1,
+          "applied": 0,
+          "goodBytes": 0,
+          "reason": "checksum mismatch at seq 1",
+          "ok": false,
+          "lastGoodRowHash": null,
+          "note": "damage found by the post-parse row walk (bytes themselves parse)",
+          "expectedSeq": null,
+          "seqMatchesOrdinal": true
+        },
+        {
+          "ordinal": 3,
+          "flippedAt": 710,
+          "torn": true,
+          "class": "checksum-mismatch",
+          "seq": 2,
+          "ordinalSeq": 3,
+          "applied": 2,
+          "goodBytes": 0,
+          "reason": "checksum mismatch at seq 3",
+          "ok": false,
+          "lastGoodRowHash": "048df9a91eed63b08d5984ad5541e848c46ee8ee82e202f98ffec1a109df67d8",
+          "note": "damage found by the post-parse row walk (bytes themselves parse)",
+          "expectedSeq": null,
+          "seqMatchesOrdinal": true
+        },
+        {
+          "ordinal": 5,
+          "flippedAt": 1228,
+          "torn": true,
+          "class": "checksum-mismatch",
+          "seq": 4,
+          "ordinalSeq": 5,
+          "applied": 4,
+          "goodBytes": 0,
+          "reason": "checksum mismatch at seq 5",
+          "ok": false,
+          "lastGoodRowHash": "afcae506dc589868c52f5a278464e4e8fb91be56072de8527bffa8062805f6d1",
+          "note": "damage found by the post-parse row walk (bytes themselves parse)",
+          "expectedSeq": null,
+          "seqMatchesOrdinal": true
+        }
+      ],
+      "structuralCorruption": {
+        "ordinal": 3,
+        "torn": true,
+        "class": "parse-break",
+        "seq": 0,
+        "ordinalSeq": null,
+        "applied": 0,
+        "goodBytes": 0,
+        "reason": "Expected double-quoted property name in JSON at position 178 (line 8 column 3)",
+        "ok": false,
+        "lastGoodRowHash": null,
+        "note": "document framing cannot recover a partial prefix"
+      }
+    },
+    "toyStone": {
+      "id": "toy_45d_stone",
+      "frame": "jsonl",
+      "bytes": 1816,
+      "rows": 7,
+      "endsWithNewline": false,
+      "full": {
+        "torn": false,
+        "applied": 7,
+        "tip": "b415c1ac1aa52d54cd31acd7de0cd554ba1147842bd2704e5cb1b67ff0cdfd77",
+        "links": 7,
+        "tipMatchesPin": true,
+        "linksMatchPin": true,
+        "rawSerialization": {
+          "torn": true,
+          "class": "torn-tail",
+          "applied": 6,
+          "tornBytes": 221,
+          "note": "serialization lacks the final newline — final record is NON-DURABLE under wal-edl framing (bytes parse but were never newline-terminated); the newline-terminated serialization replays clean. Serialization artifact, disclosed."
+        },
+        "newlineTerminatedIsClean": true
+      },
+      "tornTail": {
+        "cutAt": 1705,
+        "recoveryAt": 1595,
+        "torn": true,
+        "class": "torn-tail",
+        "seq": 7,
+        "ordinalSeq": null,
+        "applied": 6,
+        "goodBytes": 1595,
+        "reason": "torn tail: 110 byte(s) after last newline",
+        "ok": false,
+        "lastGoodRowHash": "b415c1ac1aa52d54cd31acd7de0cd554ba1147842bd2704e5cb1b67ff0cdfd77",
+        "note": null,
+        "tornOkExits0": true,
+        "defaultExitsNonZero": true,
+        "reasonShapeOk": true,
+        "prefixRecoverable": true
+      },
+      "trailingNewlineControl": {
+        "cutAt": 1815,
+        "torn": true,
+        "class": "torn-tail",
+        "seq": 7,
+        "ordinalSeq": null,
+        "applied": 6,
+        "goodBytes": 1595,
+        "reason": "torn tail: 220 byte(s) after last newline",
+        "ok": false,
+        "lastGoodRowHash": "b415c1ac1aa52d54cd31acd7de0cd554ba1147842bd2704e5cb1b67ff0cdfd77",
+        "note": null,
+        "chainContentIdentical": false,
+        "twoLayerNote": "WAL durability layer vs chain-content layer receipted separately — see twoLayerNote semantics in the header"
+      },
+      "corruptRowHash": [
+        {
+          "ordinal": 1,
+          "flippedAt": 290,
+          "torn": true,
+          "class": "checksum-mismatch",
+          "seq": 1,
+          "ordinalSeq": null,
+          "applied": 0,
+          "goodBytes": 0,
+          "reason": "checksum mismatch at seq 1",
+          "ok": false,
+          "lastGoodRowHash": null,
+          "note": null,
+          "expectedSeq": 1,
+          "seqMatchesOrdinal": true
+        },
+        {
+          "ordinal": 4,
+          "flippedAt": 1009,
+          "torn": true,
+          "class": "checksum-mismatch",
+          "seq": 4,
+          "ordinalSeq": null,
+          "applied": 3,
+          "goodBytes": 874,
+          "reason": "checksum mismatch at seq 4",
+          "ok": false,
+          "lastGoodRowHash": "4f9aa15090d92c34276535dbeaa0ead78e348c75c7fc2e9693646672215d333b",
+          "note": null,
+          "expectedSeq": 4,
+          "seqMatchesOrdinal": true
+        },
+        {
+          "ordinal": 6,
+          "flippedAt": 1523,
+          "torn": true,
+          "class": "checksum-mismatch",
+          "seq": 6,
+          "ordinalSeq": null,
+          "applied": 5,
+          "goodBytes": 1339,
+          "reason": "checksum mismatch at seq 6",
+          "ok": false,
+          "lastGoodRowHash": "3c34948af7aa79b26783bf6c8d54d3cec48812d868b8589d51ba6828d4868774",
+          "note": null,
+          "expectedSeq": 6,
+          "seqMatchesOrdinal": true
+        }
+      ],
+      "structuralCorruption": {
+        "ordinal": 4,
+        "torn": true,
+        "class": "parse-break",
+        "seq": 4,
+        "ordinalSeq": null,
+        "applied": 3,
+        "goodBytes": 874,
+        "reason": "Unexpected token '}', \"}\"kind\":\"t\"... is not valid JSON",
+        "ok": false,
+        "lastGoodRowHash": "4f9aa15090d92c34276535dbeaa0ead78e348c75c7fc2e9693646672215d333b",
+        "note": null
+      }
+    }
+  },
+  "deployedControl": {
+    "qthe": {
+      "ok": true,
+      "tip": "ab4ea19681888b11c2843b9ca43d12f652dca045338217dc5bf1b5cd9e477db0",
+      "why": null
+    },
+    "pong": {
+      "ok": true,
+      "tip": "c155fd016b364335c076cc18772b835672581230c2fd377fd8ac9f2849d296c7",
+      "why": null
+    }
+  },
+  "scenarioChecks": [
+    {
+      "id": "qthe",
+      "ok": true,
+      "fails": []
+    },
+    {
+      "id": "pong",
+      "ok": true,
+      "fails": []
+    },
+    {
+      "id": "toyStone",
+      "ok": true,
+      "fails": []
+    }
+  ],
+  "claimsAssessment": [
+    {
+      "id": "C1",
+      "outcome": "PASS",
+      "evidence": "jsonl torn-tail cuts: class torn-tail everywhere, applied = rows-1, recovery position receipted (goodBytes = start of the torn record), reason matches wal-edl's exact shape, default exit non-zero, --torn-ok exits 0; document frame falsifies NOTHING here (C1 was scoped to the JSONL frame)"
+    },
+    {
+      "id": "C2",
+      "outcome": "PARTIAL — one clause falsified as written, amended + receipted",
+      "evidence": "exact-seq + apply-nothing-past-the-break PASS on every jsonl chain (checksum-mismatch at the exact ordinal, applied = ordinal-1); pong (document frame): the walk catches the flipped hash and receipts BOTH the row's own seq field and the 1-based ordinal — but pong's seq field is 0-BASED (header seq 0), so the claim's \"reported seq must equal the row's own seq AND its ordinal\" cannot hold simultaneously; amended: both values receipted verbatim (seq + ordinalSeq), relation seq = ordinal-1 disclosed"
+    },
+    {
+      "id": "C3",
+      "outcome": "PARTIAL — len-1 clause falsified at the WAL layer, amended to a two-layer reading",
+      "evidence": "full-chain ok + pinned tips/links (qthe ab4ea196…/15, pong c155fd01…/5, toy) + deployed-path control PASS; the \"len-1 newline truncation is whitespace-only, not damage\" clause held at the CHAIN-CONTENT layer for the newline-terminated fixture and the document frame (qthe content-identical, pong parse-clean + content-identical) but FALSIFIED at the WAL-durability layer for JSONL framing (removing the final newline leaves the final record non-durable -> torn-tail, applied rows-1); for the toy (no trailing newline) the len-1 cut lands INSIDE the already-non-durable final record, so chain-content identity is NOT establishable (tear class, not whitespace class); amended: the len-1 cut is receipted on BOTH layers separately, with the tear/whitespace distinction per chain"
+    },
+    {
+      "id": "C4",
+      "outcome": "PASS",
+      "evidence": "ported wal-edl replay matches the live probe receipt on class + applied counts exactly (fresh 7, torn 6, checksum 3@seq4, chain-break 2@seq3, parse 4, garbage 7) with the same reason shapes; one over-specification in the tool (not the claims): parse errors carry NO seq in the reference (raw JSON SyntaxError message) — the s4 seq expectation was corrected to match the receipt; stone chains exhibit the same damage classes (torn-tail / checksum-mismatch / parse-break)"
+    }
+  ],
+  "disclosures": [
+    "stone-v1 binds prev inside row_hash (no explicit prev field) -> wal-edl's 'chain break at seq N' class has no stone equivalent; exercised on the ported wal-edl WAL",
+    "framing: JSONL recovers a torn prefix byte-exactly; document framing (pong) is all-or-nothing (0 applied on any parse-breaking byte)",
+    "read-only: wal-edl's WalWriter destructively truncates a torn tail to goodBytes on open; this tool only receipts the recovery position",
+    "strict line framing adopted from wal-edl (a blank line would be parse damage); deployed verifyStoneJsonl tolerates blank lines — fixtures contain none",
+    "stone rows carry no explicit seq (ordinal = WAL seq); pong rows do — both receipted (ordinalSeq vs seq)",
+    "excluded: rekor ECDSA entry + VC envelope are single signed documents, not multi-record WALs"
+  ],
+  "ok": true,
+  "why": null
+}

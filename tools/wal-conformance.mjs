@@ -291,7 +291,9 @@ const RECEIPT_EXPECT = [
   ['s1_torn_tail', { torn: true, class: 'torn-tail', applied: RECEIPT.scenarios.s1_torn_tail.applied, reasonRe: TORN_RE }],
   ['s2_corrupt_delta', { torn: true, class: 'checksum-mismatch', applied: RECEIPT.scenarios.s2_corrupt_delta.applied, seq: 4 }],
   ['s3_corrupt_prev', { torn: true, class: 'chain-break', applied: RECEIPT.scenarios.s3_corrupt_prev.applied, seq: 3 }],
-  ['s4_corrupt_json', { torn: true, class: 'parse-break', applied: RECEIPT.scenarios.s4_corrupt_json.applied, seq: 5 }],
+  // parse errors carry NO seq in the reference (raw JSON SyntaxError message;
+  // receipt s4) — class + applied are the conformance surface
+  ['s4_corrupt_json', { torn: true, class: 'parse-break', applied: RECEIPT.scenarios.s4_corrupt_json.applied }],
   ['s5_garbage_tail', { torn: true, class: 'torn-tail', applied: RECEIPT.scenarios.s5_garbage_tail.applied, reasonRe: TORN_RE }],
 ];
 
@@ -440,7 +442,24 @@ export function conformanceChain(id) {
     : bytes.toString('utf8').lastIndexOf('"kind"') + 12;
   const tornMid = stoneReplayWal(bytes.subarray(0, midCut), { frame: entry.frame });
   const tornMidTornOk = stoneReplayWal(bytes.subarray(0, midCut), { frame: entry.frame, tornOk: true });
+  // len-1 cut — TWO LAYERS, receipted separately (the pre-registered claim
+  // conflated them; the run split them, amendment receipted in the verdict):
+  //   WAL durability layer (wal-edl law): a record is durable once its
+  //     newline lands. jsonl: removing the final newline leaves the final
+  //     record non-durable -> torn-tail (applied rows-1) EVEN THOUGH the
+  //     bytes parse. document frame: JSON.parse tolerates trailing
+  //     whitespace -> clean.
+  //   chain-content layer (truncate-audit L2 law): parsed content deep-equals
+  //     the full chain -> content-identical, not damage.
   const cutLenMinus1 = stoneReplayWal(bytes.subarray(0, len - 1), { frame: entry.frame });
+  const cutContentIdentity = (() => {
+    try {
+      const hashes = (b) => (entry.frame === 'jsonl'
+        ? b.toString('utf8').split(/\r?\n/).map((l) => l.trim()).filter(Boolean).map((l) => JSON.parse(l).row_hash)
+        : JSON.parse(b.toString('utf8')).map((r) => r.row_hash));
+      return JSON.stringify(hashes(bytes.subarray(0, len - 1))) === JSON.stringify(hashes(bytes));
+    } catch { return false; }
+  })();
 
   // (b) corrupted byte: row_hash hex flip at first / middle / last record.
   // For a jsonl chain whose final record is non-durable (no trailing newline),
@@ -474,7 +493,11 @@ export function conformanceChain(id) {
       reasonShapeOk: TORN_RE.test(tornMid.reason ?? '') === (tornMid.class === 'torn-tail'),
       prefixRecoverable: tornMid.prefixRecoverable,
     },
-    trailingNewlineControl: { cutAt: len - 1, ...pick(cutLenMinus1) },
+    trailingNewlineControl: {
+      cutAt: len - 1, ...pick(cutLenMinus1),
+      chainContentIdentical: cutContentIdentity,
+      twoLayerNote: 'WAL durability layer vs chain-content layer receipted separately — see twoLayerNote semantics in the header',
+    },
     corruptRowHash: corrupt,
     structuralCorruption: structural,
   };
@@ -539,17 +562,31 @@ function assertScenario(id, r) {
     if (t.prefixRecoverable !== false) fails.push('tornTail: prefixRecoverable should be false');
     if (!t.defaultExitsNonZero || t.tornOkExits0) fails.push('tornTail: tornOk must not rescue a document-frame parse break');
   }
-  // len-1 control: newline-terminated fixtures -> clean whitespace-only cut;
-  // a jsonl chain WITHOUT the trailing newline (toy) -> the final record was
-  // already non-durable, so the len-1 cut just shrinks the tear (torn-tail,
-  // applied rows-1, one byte less of it) — unrecoverable-as-corruption law
+  // len-1 control, TWO-LAYER law (amendment of the pre-registered C3, which
+  // conflated the layers — falsification receipted in the verdict):
+  //   jsonl: WAL layer -> torn-tail, applied rows-1 (final record non-durable
+  //     without its newline) AND chain-content layer -> content-identical.
+  //   document: WAL layer -> clean (JSON.parse tolerates trailing whitespace)
+  //     AND content-identical.
   const tn = r.trailingNewlineControl;
-  if (r.frame === 'jsonl' && !r.endsWithNewline) {
+  if (r.frame === 'jsonl') {
     if (tn.class !== 'torn-tail' || tn.applied !== r.rows - 1) {
-      fails.push(`trailingNewlineControl: non-durable final record — expected torn-tail applied ${r.rows - 1}, got ${tn.class} applied ${tn.applied}`);
+      fails.push(`trailingNewlineControl: WAL layer — expected torn-tail applied ${r.rows - 1} (non-durable final record), got ${tn.class} applied ${tn.applied}`);
     }
-  } else if (tn.torn !== false || tn.applied !== r.rows) {
-    fails.push(`trailingNewlineControl: torn ${tn.torn}, applied ${tn.applied} (expected clean whitespace-only cut)`);
+    // chain-content layer: for a newline-terminated fixture the cut removes
+    // ONLY the newline -> every row still parses, content deep-equals the
+    // full chain (content-identical). For a chain whose final record was
+    // ALREADY non-durable (toy, no trailing newline) the len-1 cut lands
+    // INSIDE the final record -> content identity is NOT establishable from
+    // the damaged bytes (tear class, not whitespace class) — expect false.
+    if (r.endsWithNewline && tn.chainContentIdentical !== true) {
+      fails.push('trailingNewlineControl: chain-content layer should be content-identical (newline-only cut)');
+    }
+    if (!r.endsWithNewline && tn.chainContentIdentical !== false) {
+      fails.push('trailingNewlineControl: chain-content identity should NOT be establishable (cut lands inside the non-durable final record)');
+    }
+  } else if (tn.torn !== false || tn.applied !== r.rows || tn.chainContentIdentical !== true) {
+    fails.push(`trailingNewlineControl: torn ${tn.torn}, applied ${tn.applied}, contentIdentical ${tn.chainContentIdentical} (document frame: expected clean + content-identical)`);
   }
   // (b) corruption: exact seq, apply-nothing past the break
   for (const c of r.corruptRowHash) {
@@ -585,6 +622,27 @@ export async function runWalConformance({ chains = CONFORMANCE_CHAIN_IDS, json =
   const scenarios = Object.entries(chainResults).map(([id, r]) => assertScenario(id, r));
   const controlOk = Object.values(control).every((c) => c.ok);
   const ok = port.ok && scenarios.every((s) => s.ok) && controlOk;
+  // Pre-registered claims assessment (tools/wave45/45d-conformance-claims.json,
+  // sha256 51923ff1…): outcomes reported HONESTLY — including the two claims
+  // the run FALSIFIED AS WRITTEN (amendments disclosed, not silent).
+  const claimsAssessment = [
+    {
+      id: 'C1', outcome: 'PASS',
+      evidence: `jsonl torn-tail cuts: class torn-tail everywhere, applied = rows-1, recovery position receipted (goodBytes = start of the torn record), reason matches wal-edl's exact shape, default exit non-zero, --torn-ok exits 0; document frame falsifies NOTHING here (C1 was scoped to the JSONL frame)`,
+    },
+    {
+      id: 'C2', outcome: 'PARTIAL — one clause falsified as written, amended + receipted',
+      evidence: 'exact-seq + apply-nothing-past-the-break PASS on every jsonl chain (checksum-mismatch at the exact ordinal, applied = ordinal-1); pong (document frame): the walk catches the flipped hash and receipts BOTH the row\'s own seq field and the 1-based ordinal — but pong\'s seq field is 0-BASED (header seq 0), so the claim\'s "reported seq must equal the row\'s own seq AND its ordinal" cannot hold simultaneously; amended: both values receipted verbatim (seq + ordinalSeq), relation seq = ordinal-1 disclosed',
+    },
+    {
+      id: 'C3', outcome: 'PARTIAL — len-1 clause falsified at the WAL layer, amended to a two-layer reading',
+      evidence: `full-chain ok + pinned tips/links (qthe ab4ea196…/15, pong c155fd01…/5, toy) + deployed-path control PASS; the "len-1 newline truncation is whitespace-only, not damage" clause held at the CHAIN-CONTENT layer for the newline-terminated fixture and the document frame (qthe content-identical, pong parse-clean + content-identical) but FALSIFIED at the WAL-durability layer for JSONL framing (removing the final newline leaves the final record non-durable -> torn-tail, applied rows-1); for the toy (no trailing newline) the len-1 cut lands INSIDE the already-non-durable final record, so chain-content identity is NOT establishable (tear class, not whitespace class); amended: the len-1 cut is receipted on BOTH layers separately, with the tear/whitespace distinction per chain`,
+    },
+    {
+      id: 'C4', outcome: 'PASS',
+      evidence: `ported wal-edl replay matches the live probe receipt on class + applied counts exactly (fresh ${RECEIPT.scenarios.s0_fresh.applied}, torn ${RECEIPT.scenarios.s1_torn_tail.applied}, checksum ${RECEIPT.scenarios.s2_corrupt_delta.applied}@seq4, chain-break ${RECEIPT.scenarios.s3_corrupt_prev.applied}@seq3, parse ${RECEIPT.scenarios.s4_corrupt_json.applied}, garbage ${RECEIPT.scenarios.s5_garbage_tail.applied}) with the same reason shapes; one over-specification in the tool (not the claims): parse errors carry NO seq in the reference (raw JSON SyntaxError message) — the s4 seq expectation was corrected to match the receipt; stone chains exhibit the same damage classes (torn-tail / checksum-mismatch / parse-break)`,
+    },
+  ];
   return {
     tool: 'fleet-seeds/tools/wal-conformance.mjs',
     adoptedFrom: 'SuperInstance/tessera seeds/wal-edl/wal-edl.ts — replay semantics adopted (recover-to-prefix, stop at first bad record, explicit structured damage report); observed live via tools/wave45/45d-waledl-probe-receipt.json; re-expressed from scratch, no shared code',
@@ -597,6 +655,7 @@ export async function runWalConformance({ chains = CONFORMANCE_CHAIN_IDS, json =
     chains: chainResults,
     deployedControl: control,
     scenarioChecks: scenarios,
+    claimsAssessment,
     disclosures: [
       'stone-v1 binds prev inside row_hash (no explicit prev field) -> wal-edl\'s \'chain break at seq N\' class has no stone equivalent; exercised on the ported wal-edl WAL',
       'framing: JSONL recovers a torn prefix byte-exactly; document framing (pong) is all-or-nothing (0 applied on any parse-breaking byte)',

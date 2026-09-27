@@ -1,0 +1,370 @@
+{
+  "tool": "fleet-seeds/tools/truncate-audit.mjs",
+  "adoptedFrom": "quilt-rust packages/core/tests/journal_power_yank.rs (wave 44-c concepts-44c.md §6) — pattern only, no shared code",
+  "law": "no silent wrong state: every byte-offset truncation fails closed; a prefix may verify as a shorter chain ONLY with an explicit tip/links-mismatch report; truncated input never exits 0",
+  "layers": "L1 deployed pinned path (sha gate first); L2 chain-semantics layer (sha pin neutralized; ok:true allowed only with deep-equal content)",
+  "ranAt": "2026-09-27T23:22:38.508Z",
+  "finishedAt": "2026-09-27T23:22:42.740Z",
+  "node": "v24.21.0",
+  "chains": {
+    "qthe": {
+      "id": "qthe_eq6",
+      "kind": "stone-jsonl",
+      "bytes": 9242,
+      "offsetsTested": 9242,
+      "offsetsSubset": false,
+      "l1": {
+        "failCount": 9242,
+        "okOffsets": [],
+        "classes": {
+          "sha-gate": 9242
+        },
+        "ok": true
+      },
+      "l2": {
+        "failCount": 9241,
+        "okOffsets": [],
+        "contentIdenticalOffsets": [
+          9241
+        ],
+        "silentOffsets": [],
+        "classes": {
+          "chain-break": 1,
+          "parse-break": 9212,
+          "prefix-honest": 28,
+          "content-identical": 1
+        },
+        "ok": true,
+        "contentIdenticalNote": "offset(s) 9241 drop only non-semantic whitespace (parsed content deep-equals the full chain) — allowed, not silent"
+      },
+      "control": {
+        "ok": true,
+        "tip": "ab4ea19681888b11c2843b9ca43d12f652dca045338217dc5bf1b5cd9e477db0",
+        "why": null
+      },
+      "sample": [
+        {
+          "offset": 0,
+          "class": "chain-break",
+          "firstBadIndex": 0,
+          "at": null,
+          "why": "chain is empty or not an array"
+        },
+        {
+          "offset": 265,
+          "class": "prefix-honest",
+          "firstBadIndex": null,
+          "at": null,
+          "why": "expected tip ab4ea196… / 15 links, got 0edd00ddd07e40b02f0a35b6c07590eaa14d7cb84b731c8f789f94dcbc1d86df / 1"
+        },
+        {
+          "offset": 266,
+          "class": "prefix-honest",
+          "firstBadIndex": null,
+          "at": null,
+          "why": "expected tip ab4ea196… / 15 links, got 0edd00ddd07e40b02f0a35b6c07590eaa14d7cb84b731c8f789f94dcbc1d86df / 1"
+        },
+        {
+          "offset": 1223,
+          "class": "prefix-honest",
+          "firstBadIndex": null,
+          "at": null,
+          "why": "expected tip ab4ea196… / 15 links, got b147afe4fe7692655707b0c298408edbe0acaf59b68b541d381d1e4957c42a5f / 2"
+        },
+        {
+          "offset": 1224,
+          "class": "prefix-honest",
+          "firstBadIndex": null,
+          "at": null,
+          "why": "expected tip ab4ea196… / 15 links, got b147afe4fe7692655707b0c298408edbe0acaf59b68b541d381d1e4957c42a5f / 2"
+        }
+      ],
+      "ok": true
+    },
+    "pong": {
+      "id": "pong_birth_seal",
+      "kind": "stone-json",
+      "bytes": 1299,
+      "offsetsTested": 1299,
+      "offsetsSubset": false,
+      "l1": {
+        "failCount": 1299,
+        "okOffsets": [],
+        "classes": {
+          "sha-gate": 1299
+        },
+        "ok": true
+      },
+      "l2": {
+        "failCount": 1298,
+        "okOffsets": [],
+        "contentIdenticalOffsets": [
+          1298
+        ],
+        "silentOffsets": [],
+        "classes": {
+          "parse-break": 1298,
+          "content-identical": 1
+        },
+        "ok": true,
+        "contentIdenticalNote": "offset(s) 1298 drop only non-semantic whitespace (parsed content deep-equals the full chain) — allowed, not silent"
+      },
+      "control": {
+        "ok": true,
+        "tip": "c155fd016b364335c076cc18772b835672581230c2fd377fd8ac9f2849d296c7",
+        "why": null
+      },
+      "sample": [],
+      "ok": true
+    },
+    "rekor": {
+      "id": "rekor_ecdsa",
+      "kind": "rekor",
+      "bytes": 3242,
+      "offsetsTested": 3242,
+      "offsetsSubset": false,
+      "l1": {
+        "failCount": 3242,
+        "okOffsets": [],
+        "classes": {
+          "parse-break": 3241,
+          "sha-gate": 1
+        },
+        "ok": true
+      },
+      "l2": {
+        "failCount": 3241,
+        "okOffsets": [],
+        "contentIdenticalOffsets": [
+          3241
+        ],
+        "silentOffsets": [],
+        "classes": {
+          "parse-break": 3241,
+          "content-identical": 1
+        },
+        "ok": true,
+        "contentIdenticalNote": "offset(s) 3241 drop only non-semantic whitespace (parsed content deep-equals the full chain) — allowed, not silent"
+      },
+      "control": {
+        "ok": true,
+        "tip": "d9e80d6da0277a125de03cbfa06e70494d5a097b41244f834a402c2885902b2c",
+        "why": null
+      },
+      "sample": [],
+      "ok": true
+    },
+    "vc": {
+      "id": "vc_envelope",
+      "kind": "vc",
+      "bytes": 1904,
+      "offsetsTested": 1904,
+      "offsetsSubset": false,
+      "l1": {
+        "failCount": 1904,
+        "okOffsets": [],
+        "classes": {
+          "parse-break": 1903,
+          "sha-gate": 1
+        },
+        "ok": true
+      },
+      "l2": {
+        "failCount": 1903,
+        "okOffsets": [],
+        "contentIdenticalOffsets": [
+          1903
+        ],
+        "silentOffsets": [],
+        "classes": {
+          "parse-break": 1903,
+          "content-identical": 1
+        },
+        "ok": true,
+        "contentIdenticalNote": "offset(s) 1903 drop only non-semantic whitespace (parsed content deep-equals the full chain) — allowed, not silent"
+      },
+      "control": {
+        "ok": true,
+        "tip": "94aa82cdde3a717dc9aa68729d9ef96a398daa39d2d83204edea26f5ba75b1e5",
+        "why": null
+      },
+      "sample": [],
+      "ok": true
+    }
+  },
+  "toy": {
+    "int": {
+      "id": "toy_45d_int",
+      "kind": "stone-jsonl",
+      "bytes": 1816,
+      "offsetsTested": 1816,
+      "offsetsSubset": false,
+      "l1": {
+        "failCount": 1816,
+        "okOffsets": [],
+        "classes": {
+          "sha-gate": 1816
+        },
+        "ok": true
+      },
+      "l2": {
+        "failCount": 1816,
+        "okOffsets": [],
+        "contentIdenticalOffsets": [],
+        "silentOffsets": [],
+        "classes": {
+          "chain-break": 1,
+          "parse-break": 1803,
+          "prefix-honest": 12
+        },
+        "ok": true,
+        "contentIdenticalNote": "no content-identical offsets"
+      },
+      "control": {
+        "ok": true,
+        "tip": "b415c1ac1aa52d54cd31acd7de0cd554ba1147842bd2704e5cb1b67ff0cdfd77",
+        "why": null
+      },
+      "sample": [
+        {
+          "offset": 0,
+          "class": "chain-break",
+          "firstBadIndex": 0,
+          "at": null,
+          "why": "chain is empty or not an array"
+        },
+        {
+          "offset": 361,
+          "class": "prefix-honest",
+          "firstBadIndex": null,
+          "at": null,
+          "why": "expected tip b415c1ac… / 7 links, got a9441e55a587d41889d309e7e93abc11f00508fc9c06fffee32c47a7445bec88 / 1"
+        },
+        {
+          "offset": 362,
+          "class": "prefix-honest",
+          "firstBadIndex": null,
+          "at": null,
+          "why": "expected tip b415c1ac… / 7 links, got a9441e55a587d41889d309e7e93abc11f00508fc9c06fffee32c47a7445bec88 / 1"
+        },
+        {
+          "offset": 619,
+          "class": "prefix-honest",
+          "firstBadIndex": null,
+          "at": null,
+          "why": "expected tip b415c1ac… / 7 links, got 798257f244eebf03a4797865a571999f56bcaaf6cf2d8fd0fe8628876e8ad4f2 / 2"
+        },
+        {
+          "offset": 620,
+          "class": "prefix-honest",
+          "firstBadIndex": null,
+          "at": null,
+          "why": "expected tip b415c1ac… / 7 links, got 798257f244eebf03a4797865a571999f56bcaaf6cf2d8fd0fe8628876e8ad4f2 / 2"
+        }
+      ],
+      "ok": true
+    },
+    "float": {
+      "id": "toy_45d_float",
+      "kind": "stone-jsonl",
+      "bytes": 1602,
+      "offsetsTested": 1602,
+      "offsetsSubset": false,
+      "l1": {
+        "failCount": 1602,
+        "okOffsets": [],
+        "classes": {
+          "sha-gate": 1602
+        },
+        "ok": true
+      },
+      "l2": {
+        "failCount": 1602,
+        "okOffsets": [],
+        "contentIdenticalOffsets": [],
+        "silentOffsets": [],
+        "classes": {
+          "chain-break": 1,
+          "parse-break": 1591,
+          "prefix-honest": 10
+        },
+        "ok": true,
+        "contentIdenticalNote": "no content-identical offsets"
+      },
+      "control": {
+        "ok": true,
+        "tip": "b2a84bbd8258cbf4798122a0f0c8e0d2659aea6fcaadf752c766b02614b40c63",
+        "why": null
+      },
+      "sample": [
+        {
+          "offset": 0,
+          "class": "chain-break",
+          "firstBadIndex": 0,
+          "at": null,
+          "why": "chain is empty or not an array"
+        },
+        {
+          "offset": 363,
+          "class": "prefix-honest",
+          "firstBadIndex": null,
+          "at": null,
+          "why": "expected tip b2a84bbd… / 6 links, got cf5c6290132eb0d15e350741fdad9543ff442d48f355840a9feca64b41e5d330 / 1"
+        },
+        {
+          "offset": 364,
+          "class": "prefix-honest",
+          "firstBadIndex": null,
+          "at": null,
+          "why": "expected tip b2a84bbd… / 6 links, got cf5c6290132eb0d15e350741fdad9543ff442d48f355840a9feca64b41e5d330 / 1"
+        },
+        {
+          "offset": 625,
+          "class": "prefix-honest",
+          "firstBadIndex": null,
+          "at": null,
+          "why": "expected tip b2a84bbd… / 6 links, got 76a2724f5f83a3b14284124e569aea017bce730fe5610a3e98ea32db0a5c83cc / 2"
+        },
+        {
+          "offset": 626,
+          "class": "prefix-honest",
+          "firstBadIndex": null,
+          "at": null,
+          "why": "expected tip b2a84bbd… / 6 links, got 76a2724f5f83a3b14284124e569aea017bce730fe5610a3e98ea32db0a5c83cc / 2"
+        }
+      ],
+      "ok": true
+    }
+  },
+  "deltaProperty": {
+    "identity": "imbalance (Σ credits − Σ debits, row seal) ≡ field edge Δ (Σ after − before)",
+    "int": {
+      "rowsWithValue": 5,
+      "globalImbalance": 12,
+      "globalFieldDelta": 12,
+      "maxResidual": 0,
+      "ok": true
+    },
+    "float": {
+      "rowsWithValue": 4,
+      "globalImbalance": 0.05,
+      "globalFieldDelta": 0.04999999999999999,
+      "maxResidual": 5.551115123125783e-17,
+      "ok": true
+    },
+    "ok": true
+  },
+  "annotationTailProbe": {
+    "prefixVerifiesAsShorterChain": true,
+    "tipUnchangedByAnnotationDrop": true,
+    "linksPinCatchesIt": true,
+    "why": "expected tip b415c1ac… / 7 links, got b415c1ac1aa52d54cd31acd7de0cd554ba1147842bd2704e5cb1b67ff0cdfd77 / 6",
+    "verdict": "PASS — prefix-honest: explicit links-mismatch, exit non-zero; the links pin is load-bearing (tip-only pinning would be silent)",
+    "ok": true
+  },
+  "excluded": {
+    "moth-42b-raw-bits": "raw quantum-job bitstream, not a chain (no chain verifier consumes it)"
+  },
+  "ok": true,
+  "why": null
+}
