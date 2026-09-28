@@ -1,7 +1,7 @@
 {
   "tool": "fleet-seeds/playtest/wave46/witness-rollout/rollup.mjs",
   "lane": "46-e witness-roller",
-  "run_at": "2026-09-28T00:42:54.612Z",
+  "run_at": "2026-09-28T00:48:42.400Z",
   "mode": "live",
   "all_ok": true,
   "provenance": {
@@ -18,7 +18,7 @@
       "sha256": "acaa36c1f0cea402840c81d51f815cab94ac616714232941920dc67a9146d1c0"
     },
     "claimsSha256": "cfaf425b42ac2824b91c9190a0d89d34be9158657815399e12e0513d4ca0118a",
-    "fleetHead": "a2c7399fa7f51bf45c7f64f1f333b97162736ae4",
+    "fleetHead": "acf501595456322715b417053c8da391db62a185",
     "node": "v24.21.0"
   },
   "targets": [
@@ -119,7 +119,7 @@
     {
       "id": "tavern_round11",
       "kind": "stone-v1",
-      "source": "FIXTURE:fleet-seeds@a2c7399fa7f5:tavern/round-11/round11_ledger.jsonl",
+      "source": "FIXTURE:fleet-seeds@acf501595456:tavern/round-11/round11_ledger.jsonl",
       "label": "FIXTURE",
       "ok": true,
       "why": null,
@@ -220,7 +220,7 @@
     {
       "id": "fleetseeds_fixtures",
       "kind": "fixture-manifest",
-      "source": "FIXTURE:fleet-seeds@a2c7399fa7f5:tools/fixtures/",
+      "source": "FIXTURE:fleet-seeds@acf501595456:tools/fixtures/",
       "label": "FIXTURE",
       "ok": true,
       "why": null,
@@ -245,13 +245,13 @@
   "wave46_chain": {
     "file": "receipts/rollup-chain.jsonl",
     "receipts": 8,
-    "tip": "b2442e0943c5f69e1a201a0f42107485ddd6cfb28e7119cfa4331f1394ba64be",
+    "tip": "6e4cdb8f2ca27607f74068b4640258c0c363957fb55248ea8a2f357740451407",
     "tipFile": "receipts/rollup-chain.tip",
     "genesis": "GENESIS (row 1 anchors the wave-44 KAT tip by content: output_sha256 = e4226c88…)",
     "grammar_lib_verdict": {
       "ok": true,
       "receipts": 8,
-      "tip": "b2442e0943c5f69e1a201a0f42107485ddd6cfb28e7119cfa4331f1394ba64be",
+      "tip": "6e4cdb8f2ca27607f74068b4640258c0c363957fb55248ea8a2f357740451407",
       "error": null
     },
     "wave44_cli": {
@@ -260,7 +260,7 @@
       "verdict": {
         "ok": true,
         "receipts": 8,
-        "tip": "b2442e0943c5f69e1a201a0f42107485ddd6cfb28e7119cfa4331f1394ba64be",
+        "tip": "6e4cdb8f2ca27607f74068b4640258c0c363957fb55248ea8a2f357740451407",
         "error": null
       }
     }

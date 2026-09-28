@@ -1,9 +1,9 @@
 {
   "tool": "fleet-seeds/playtest/wave46/witness-rollout/self-test.mjs",
   "lane": "46-e witness-roller",
-  "ran_at": "2026-09-28T00:45:00.616Z",
-  "official_chain_tip": "b2442e0943c5f69e1a201a0f42107485ddd6cfb28e7119cfa4331f1394ba64be",
-  "tmp_dir": "/tmp/46e-selftest-m4m6S3",
+  "ran_at": "2026-09-28T00:48:45.148Z",
+  "official_chain_tip": "6e4cdb8f2ca27607f74068b4640258c0c363957fb55248ea8a2f357740451407",
+  "tmp_dir": "/tmp/46e-selftest-VwK7X5",
   "controls": [
     {
       "id": "N1",
@@ -38,21 +38,21 @@
       "name": "tampered wave-46 receipt -> CLI fails",
       "expect": "fail",
       "ok": true,
-      "detail": "exit=1 verdict={\"ok\":false,\"receipts\":3,\"tip\":null,\"error\":\"receipt 3: parent link broken (expected 9d660305d3d9..., got e3e038e5f545...)\"}"
+      "detail": "exit=1 verdict={\"ok\":false,\"receipts\":3,\"tip\":null,\"error\":\"receipt 3: parent link broken (expected 0f29f542e846..., got 152a34dc346c...)\"}"
     },
     {
       "id": "N6",
       "name": "tampered last receipt vs pinned tip -> CLI fails",
       "expect": "fail",
       "ok": true,
-      "detail": "exit=1 verdict={\"ok\":false,\"receipts\":8,\"tip\":\"0486b9d0c473d2f450799c81564763c5865da95a138510dc6e6aa3491056eb2f\",\"error\":\"tip mismatch (computed 0486b9d0c473..., expected b2442e0943c5...)\"}"
+      "detail": "exit=1 verdict={\"ok\":false,\"receipts\":8,\"tip\":\"6c5f702c5f0cddaeec6f7c04d5863aa2bdeda5f693de5558c543c0b9c34bf6de\",\"error\":\"tip mismatch (computed 6c5f702c5f0c..., expected 6e4cdb8f2ca2...)\"}"
     },
     {
       "id": "N7",
       "name": "skipped middle receipt -> CLI fails",
       "expect": "fail",
       "ok": true,
-      "detail": "exit=1 verdict={\"ok\":false,\"receipts\":4,\"tip\":null,\"error\":\"receipt 4: parent link broken (expected 3fb0b7dac9cb..., got ef9bf13d9853...)\"}"
+      "detail": "exit=1 verdict={\"ok\":false,\"receipts\":4,\"tip\":null,\"error\":\"receipt 4: parent link broken (expected 34868e782f94..., got 1a9b1f45085a...)\"}"
     },
     {
       "id": "N8",
