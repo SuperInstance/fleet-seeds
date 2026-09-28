@@ -1,0 +1,683 @@
+# quilt playtest 2026-09-28T15:38:34Z
+HEAD 8072f346897d98778de2415e91a9b560fe7048e2
+CMD: npm install --no-audit --no-fund
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: @typescript-eslint/eslint-plugin@8.70.1
+npm error Found: typescript@7.0.2
+npm error node_modules/typescript
+npm error   dev typescript@"^7.0.2" from the root project
+npm error   peer typescript@">=4.8.4" from ts-api-utils@2.5.0
+npm error   node_modules/ts-api-utils
+npm error     ts-api-utils@"^2.5.0" from @typescript-eslint/eslint-plugin@8.70.1
+npm error     node_modules/@typescript-eslint/eslint-plugin
+npm error       dev @typescript-eslint/eslint-plugin@"^8.70.1" from the root project
+npm error     ts-api-utils@"^2.5.0" from @typescript-eslint/type-utils@8.70.1
+npm error     node_modules/@typescript-eslint/eslint-plugin/node_modules/@typescript-eslint/type-utils
+npm error       @typescript-eslint/type-utils@"8.70.1" from @typescript-eslint/eslint-plugin@8.70.1
+npm error       node_modules/@typescript-eslint/eslint-plugin
+npm error         dev @typescript-eslint/eslint-plugin@"^8.70.1" from the root project
+npm error     3 more (@typescript-eslint/typescript-estree, ...)
+npm error   5 more (@quilt/cli, @quilt/core, @quilt/mcp, @quilt/sdk, @quilt/tui)
+npm error
+npm error Could not resolve dependency:
+npm error peer typescript@">=4.8.4 <6.1.0" from @typescript-eslint/eslint-plugin@8.70.1
+npm error node_modules/@typescript-eslint/eslint-plugin
+npm error   dev @typescript-eslint/eslint-plugin@"^8.70.1" from the root project
+npm error
+npm error Conflicting peer dependency: typescript@6.0.3
+npm error node_modules/typescript
+npm error   peer typescript@">=4.8.4 <6.1.0" from @typescript-eslint/eslint-plugin@8.70.1
+npm error   node_modules/@typescript-eslint/eslint-plugin
+npm error     dev @typescript-eslint/eslint-plugin@"^8.70.1" from the root project
+npm error
+npm error Fix the upstream dependency conflict, or retry this command with --force or --legacy-peer-deps to accept an incorrect (and potentially broken) dependency resolution.
+npm error
+npm error
+npm error For a full report see:
+npm error /home/z/.npm/_logs/2026-09-28T15_38_34_084Z-eresolve-report.txt
+npm error A complete log of this run can be found in: /home/z/.npm/_logs/2026-09-28T15_38_34_084Z-debug-0.log
+
+real	0m0.936s
+user	0m0.675s
+sys	0m0.170s
+INSTALL-EXIT:1
+CMD: npm ci --no-audit --no-fund
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: @typescript-eslint/eslint-plugin@8.70.1
+npm error Found: typescript@7.0.2
+npm error node_modules/typescript
+npm error   dev typescript@"^7.0.2" from the root project
+npm error   peer typescript@">=4.8.4" from ts-api-utils@2.5.0
+npm error   node_modules/ts-api-utils
+npm error     ts-api-utils@"^2.5.0" from @typescript-eslint/eslint-plugin@8.70.1
+npm error     node_modules/@typescript-eslint/eslint-plugin
+npm error       dev @typescript-eslint/eslint-plugin@"^8.70.1" from the root project
+npm error     ts-api-utils@"^2.5.0" from @typescript-eslint/type-utils@8.70.1
+npm error     node_modules/@typescript-eslint/eslint-plugin/node_modules/@typescript-eslint/type-utils
+npm error       @typescript-eslint/type-utils@"8.70.1" from @typescript-eslint/eslint-plugin@8.70.1
+npm error       node_modules/@typescript-eslint/eslint-plugin
+npm error         dev @typescript-eslint/eslint-plugin@"^8.70.1" from the root project
+npm error     3 more (@typescript-eslint/typescript-estree, ...)
+npm error   5 more (@quilt/cli, @quilt/core, @quilt/mcp, @quilt/sdk, @quilt/tui)
+npm error
+npm error Could not resolve dependency:
+npm error peer typescript@">=4.8.4 <6.1.0" from @typescript-eslint/eslint-plugin@8.70.1
+npm error node_modules/@typescript-eslint/eslint-plugin
+npm error   dev @typescript-eslint/eslint-plugin@"^8.70.1" from the root project
+npm error
+npm error Conflicting peer dependency: typescript@6.0.3
+npm error node_modules/typescript
+npm error   peer typescript@">=4.8.4 <6.1.0" from @typescript-eslint/eslint-plugin@8.70.1
+npm error   node_modules/@typescript-eslint/eslint-plugin
+npm error     dev @typescript-eslint/eslint-plugin@"^8.70.1" from the root project
+npm error
+npm error Fix the upstream dependency conflict, or retry this command with --force or --legacy-peer-deps to accept an incorrect (and potentially broken) dependency resolution.
+npm error
+npm error
+npm error For a full report see:
+npm error /home/z/.npm/_logs/2026-09-28T15_39_08_906Z-eresolve-report.txt
+npm error A complete log of this run can be found in: /home/z/.npm/_logs/2026-09-28T15_39_08_906Z-debug-0.log
+
+real	0m0.526s
+user	0m0.596s
+sys	0m0.080s
+CI-EXIT:1
+CMD: npm install --no-audit --no-fund --legacy-peer-deps --no-package-lock (workaround after declared paths failed; receipt only)
+
+added 218 packages in 14s
+npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+
+real	0m14.174s
+user	0m6.580s
+sys	0m1.660s
+LPI-EXIT:0
+CMD: npm test
+
+> quilt@0.3.0 test
+> npm run test --workspaces --if-present
+
+
+> @quilt/core@0.3.0 test
+> vitest run
+
+
+⎯⎯⎯⎯⎯⎯⎯ Startup Error ⎯⎯⎯⎯⎯⎯⎯⎯
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'vite' imported from /home/z/my-project/playtest-lane/quilt/node_modules/vitest/dist/chunks/index.C-uw7tH9.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:331:9)
+    at packageResolve (node:internal/modules/esm/resolve:784:25)
+    at moduleResolve (node:internal/modules/esm/resolve:873:18)
+    at defaultResolve (node:internal/modules/esm/resolve:1006:11)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:705:20)
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:725:38)
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:763:56)
+    at #resolve (node:internal/modules/esm/loader:687:17)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:607:35)
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:276:33) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+
+
+npm error Lifecycle script `test` failed with error:
+npm error code 1
+npm error path /home/z/my-project/playtest-lane/quilt/packages/core
+npm error workspace @quilt/core@0.3.0
+npm error location /home/z/my-project/playtest-lane/quilt/packages/core
+npm error command failed
+npm error command sh -c vitest run
+
+
+> @quilt/sdk@0.2.0 test
+> tsx --test test/*.test.js
+
+✔ FederatedArtifactStore — basic put/get with in-memory local (1.519831ms)
+✔ FederatedArtifactStore — get throws when not found (0.411292ms)
+✔ FederatedArtifactStore — listVersions (0.353106ms)
+✔ FederatedArtifactStore — R2 tier puts are best-effort (failure does not break put) (0.295767ms)
+✔ FederatedArtifactStore — R2 get promotes to local (21.350659ms)
+✔ FederatedArtifactStore — exists checks all tiers (0.380621ms)
+✔ FederatedArtifactStore — invalidate removes from all tiers (0.36673ms)
+✔ FederatedArtifactStore — LRU eviction when over maxLocalBytes (0.433908ms)
+✔ FederatedArtifactStore — custom local backend (0.210082ms)
+✔ MemoryCacheBackend — basic put/get (0.555058ms)
+✔ MemoryCacheBackend — list with prefix (0.199627ms)
+✔ mqttTopicMatches — exact (0.367393ms)
+✔ mqttTopicMatches — single-level wildcard + (0.125692ms)
+✔ mqttTopicMatches — multi-level wildcard # (0.096214ms)
+✔ MqttCellTransport — publish → subscribe round-trip (1.123332ms)
+✔ MqttCellTransport — getValue resolves from retained message (9.782517ms)
+✔ MqttCellTransport — getValue times out (50.418608ms)
+✔ MqttCellTransport — isConnected reflects connect/close (0.373027ms)
+✔ parseCellRef: simple local ref (0.973022ms)
+✔ parseCellRef: remote instance (0.149235ms)
+✔ parseCellRef: dotted sheet name (0.132841ms)
+✔ parseCellRef: deep cell path (0.084185ms)
+✔ parseCellRef: instance wildcard (0.108867ms)
+✔ parseCellRef: sheet wildcard (0.098817ms)
+✔ parseCellRef: cell wildcard (0.094248ms)
+✔ parseCellRef: rejects non-quilt scheme (0.396608ms)
+✔ parseCellRef: rejects missing hash (0.116038ms)
+✔ parseCellRef: rejects empty cell path (0.171585ms)
+✔ parseCellRef: rejects missing sheet (0.113848ms)
+✔ resolveCell: local engine returns live handle (0.315163ms)
+✔ resolveCell: set propagates (0.174898ms)
+✔ resolveCell: subscribe fires on change (14.394072ms)
+✔ resolveCell: subscribe can be unsubscribed (15.056601ms)
+✔ resolveCell: rejects wildcard (0.368439ms)
+✔ LocalCellTransport: routes "local" to first engine (0.09002ms)
+✔ LocalCellTransport: routes named instance (0.071251ms)
+✔ LocalCellTransport: rejects unknown instance (0.103137ms)
+✔ CellRouter: routes to the right transport (0.213871ms)
+✔ CellRouter: subscribe receives cross-instance updates (10.438716ms)
+✔ CellRouter: rejects unknown instance (0.241546ms)
+✔ CellRouter: instances() lists registered (0.091811ms)
+✔ detectTier: honors QUILT_TIER override (0.27107ms)
+✔ detectTier: detects Codespace from CODESPACES env var (0.092943ms)
+✔ detectTier: falls back to server in Node (0.073166ms)
+✔ tierInfoFor: esp32 has no async but has network (0.091853ms)
+✔ tierInfoFor: codespace has async + llm but no GPU (0.044316ms)
+✔ tierInfoFor: jetson has GPU (0.037108ms)
+✔ tierInfoFor: cloudflare has no filesystem but has persistence via D1/KV (0.050506ms)
+✔ tierInfoFor: instance id has tier prefix (0.13632ms)
+✔ tierInfoFor: unknown has no capabilities (0.050581ms)
+✔ HttpCellTransport: stores baseUrl and token (0.0535ms)
+✔ resolveTemplate: substitutes simple variables (1.163167ms)
+✔ resolveTemplate: handles multiple variables in one string (0.137424ms)
+✔ resolveTemplate: tolerates whitespace inside braces (0.131346ms)
+✔ resolveTemplate: throws on missing variable (0.393498ms)
+✔ resolveTemplate: returns input unchanged when no tokens present (0.114979ms)
+✔ resolveArtifact: pure resolve (no store) for templated URI (0.472071ms)
+✔ resolveArtifact: rejects non-quilt URIs (0.258862ms)
+✔ resolveArtifact: pins :latest to most recent version (13.707385ms)
+✔ resolveArtifact: returns metadata from store (0.412934ms)
+✔ resolveArtifact: templating error is wrapped in ResolveError (0.255818ms)
+✔ validateManifest: accepts a minimal valid manifest (115.142039ms)
+✔ validateManifest: accepts a fully-decorated manifest (14.652932ms)
+✔ validateManifest: rejects manifest without id (11.875878ms)
+✔ validateManifest: rejects bad precondition type (12.480923ms)
+✔ validateManifest: rejects bad rollback type (24.243524ms)
+✔ validateManifest: with checkExists — passes when artifact is present (8.813151ms)
+✔ validateManifest: with checkExists — fails when artifact is absent (8.861191ms)
+✔ validateManifest: with checkExists — substitutes templates in preconditions (8.32095ms)
+✔ publishArtifact: returns canonical URI and content hash (0.213295ms)
+✔ publishArtifact: idempotent — same content → same hash (0.151657ms)
+✔ publishArtifact: different content → different hash (0.180801ms)
+✔ publishArtifact: can be read back (0.10411ms)
+✔ publishArtifact: accepts Uint8Array (0.443692ms)
+✔ publishRunTrace: stores a complete trace (0.430931ms)
+✔ publishRunTrace: requires runId (0.208164ms)
+✔ publishRunTrace: requires at least one node (0.098686ms)
+✔ publishRunTrace: includes provenance tags in metadata (0.590824ms)
+✔ end-to-end: validate → publish artifact → publish run trace → replay-resolve (9.450618ms)
+ℹ tests 79
+ℹ suites 0
+ℹ pass 79
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 788.769031
+
+> @quilt/tui@0.3.0 test
+> node --test --import tsx src/*.test.ts
+
+✔ renders an empty state (1.17552ms)
+✔ renders cell list with id, kind, value (0.236653ms)
+✔ highlights the selected cell (0.192043ms)
+✔ shows error state in red (0.129963ms)
+✔ shows idle state in dim (0.125224ms)
+✔ shows dependencies of selected cell (0.127651ms)
+✔ shows dependents of selected cell (0.161482ms)
+✔ shows mode bar in normal mode (0.13122ms)
+✔ shows mode bar in edit mode with buffer (0.144967ms)
+✔ shows mode bar in set mode (0.158367ms)
+✔ shows mode bar in command mode (0.110695ms)
+✔ shows status line when set (0.074509ms)
+✔ truncates long values (0.114466ms)
+✔ handles many cells with scroll indicator (0.133369ms)
+✔ cell kind gets a color code (0.121884ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 179.312859
+
+real	0m1.471s
+user	0m1.476s
+sys	0m0.239s
+TEST-EXIT:1
+CMD: npm test (retry after --no-save vite)
+
+> quilt@0.3.0 test
+> npm run test --workspaces --if-present
+
+
+> @quilt/core@0.3.0 test
+> vitest run
+
+
+ RUN  v5.0.2 /home/z/my-project/playtest-lane/quilt/packages/core
+
+ ✓ test/playtest-gold.test.ts (21 tests) 31ms
+ ✓ test/gesture.test.ts (14 tests) 11ms
+ ✓ test/ai.test.ts (6 tests) 28ms
+ ✓ test/engine.test.ts (9 tests) 32ms
+ ✓ test/playtest-gold.fix12-deps-version-key.test.ts (3 tests) 5ms
+ ✓ test/playtest-gold.fix11-bound-runtime.test.ts (3 tests) 4ms
+ ❯ test/examples.test.mts (0 test)
+ ✓ test/playtest-gold.fix10-input-memo.test.ts (3 tests) 5ms
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  test/examples.test.mts [ test/examples.test.mts ]
+Error: Failed to resolve entry for package "@quilt/core". The package may have incorrect main/module/exports specified in its package.json.
+ ❯ test/examples.test.mts:8:1
+      6|
+      7| import { describe, it, expect } from 'vitest';
+      8| import { QuiltEngine, parseSheet } from '@quilt/core';
+       | ^
+      9| import { readFileSync } from 'node:fs';
+     10| import { dirname, join } from 'node:path';
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 7 passed (8)
+      Tests  59 passed (59)
+   Start at  15:41:06
+   Duration  1.39s (import 50%, transform 26%, tests 19%, worker 5%)
+
+    Isolate  8 workers spawned · ~87ms startup each (spawn + environment, per file)
+             at least ~606ms faster with isolate: false — reuses workers across files instead of one per file
+
+npm error Lifecycle script `test` failed with error:
+npm error code 1
+npm error path /home/z/my-project/playtest-lane/quilt/packages/core
+npm error workspace @quilt/core@0.3.0
+npm error location /home/z/my-project/playtest-lane/quilt/packages/core
+npm error command failed
+npm error command sh -c vitest run
+
+
+> @quilt/sdk@0.2.0 test
+> tsx --test test/*.test.js
+
+✔ FederatedArtifactStore — basic put/get with in-memory local (1.692152ms)
+✔ FederatedArtifactStore — get throws when not found (0.481175ms)
+✔ FederatedArtifactStore — listVersions (0.424887ms)
+✔ FederatedArtifactStore — R2 tier puts are best-effort (failure does not break put) (0.315994ms)
+✔ FederatedArtifactStore — R2 get promotes to local (18.856493ms)
+✔ FederatedArtifactStore — exists checks all tiers (0.357709ms)
+✔ FederatedArtifactStore — invalidate removes from all tiers (0.377401ms)
+✔ FederatedArtifactStore — LRU eviction when over maxLocalBytes (0.312197ms)
+✔ FederatedArtifactStore — custom local backend (0.247056ms)
+✔ MemoryCacheBackend — basic put/get (0.333856ms)
+✔ MemoryCacheBackend — list with prefix (0.209543ms)
+✔ mqttTopicMatches — exact (0.151738ms)
+✔ mqttTopicMatches — single-level wildcard + (0.115919ms)
+✔ mqttTopicMatches — multi-level wildcard # (0.092659ms)
+✔ MqttCellTransport — publish → subscribe round-trip (1.138584ms)
+✔ MqttCellTransport — getValue resolves from retained message (10.335068ms)
+✔ MqttCellTransport — getValue times out (49.879057ms)
+✔ MqttCellTransport — isConnected reflects connect/close (0.320565ms)
+✔ parseCellRef: simple local ref (1.077243ms)
+✔ parseCellRef: remote instance (0.184467ms)
+✔ parseCellRef: dotted sheet name (0.142703ms)
+✔ parseCellRef: deep cell path (0.110637ms)
+✔ parseCellRef: instance wildcard (0.091448ms)
+✔ parseCellRef: sheet wildcard (0.103802ms)
+✔ parseCellRef: cell wildcard (0.094508ms)
+✔ parseCellRef: rejects non-quilt scheme (0.361189ms)
+✔ parseCellRef: rejects missing hash (0.137706ms)
+✔ parseCellRef: rejects empty cell path (0.19225ms)
+✔ parseCellRef: rejects missing sheet (0.140533ms)
+✔ resolveCell: local engine returns live handle (0.291143ms)
+✔ resolveCell: set propagates (0.206786ms)
+✔ resolveCell: subscribe fires on change (11.321391ms)
+✔ resolveCell: subscribe can be unsubscribed (15.024567ms)
+✔ resolveCell: rejects wildcard (0.413892ms)
+✔ LocalCellTransport: routes "local" to first engine (0.101373ms)
+✔ LocalCellTransport: routes named instance (0.058356ms)
+✔ LocalCellTransport: rejects unknown instance (0.124928ms)
+✔ CellRouter: routes to the right transport (0.25338ms)
+✔ CellRouter: subscribe receives cross-instance updates (10.480505ms)
+✔ CellRouter: rejects unknown instance (0.291501ms)
+✔ CellRouter: instances() lists registered (0.099834ms)
+✔ detectTier: honors QUILT_TIER override (0.306746ms)
+✔ detectTier: detects Codespace from CODESPACES env var (0.104651ms)
+✔ detectTier: falls back to server in Node (0.074774ms)
+✔ tierInfoFor: esp32 has no async but has network (0.124933ms)
+✔ tierInfoFor: codespace has async + llm but no GPU (0.055249ms)
+✔ tierInfoFor: jetson has GPU (0.040371ms)
+✔ tierInfoFor: cloudflare has no filesystem but has persistence via D1/KV (0.048603ms)
+✔ tierInfoFor: instance id has tier prefix (0.137219ms)
+✔ tierInfoFor: unknown has no capabilities (0.050864ms)
+✔ HttpCellTransport: stores baseUrl and token (0.055079ms)
+✔ resolveTemplate: substitutes simple variables (1.211488ms)
+✔ resolveTemplate: handles multiple variables in one string (0.188009ms)
+✔ resolveTemplate: tolerates whitespace inside braces (0.16563ms)
+✔ resolveTemplate: throws on missing variable (0.484734ms)
+✔ resolveTemplate: returns input unchanged when no tokens present (0.110032ms)
+✔ resolveArtifact: pure resolve (no store) for templated URI (0.529648ms)
+✔ resolveArtifact: rejects non-quilt URIs (0.268768ms)
+✔ resolveArtifact: pins :latest to most recent version (12.639764ms)
+✔ resolveArtifact: returns metadata from store (0.453972ms)
+✔ resolveArtifact: templating error is wrapped in ResolveError (3.533059ms)
+✔ validateManifest: accepts a minimal valid manifest (91.485764ms)
+✔ validateManifest: accepts a fully-decorated manifest (15.413694ms)
+✔ validateManifest: rejects manifest without id (15.878209ms)
+✔ validateManifest: rejects bad precondition type (12.106135ms)
+✔ validateManifest: rejects bad rollback type (10.208542ms)
+✔ validateManifest: with checkExists — passes when artifact is present (10.539996ms)
+✔ validateManifest: with checkExists — fails when artifact is absent (8.690009ms)
+✔ validateManifest: with checkExists — substitutes templates in preconditions (8.685885ms)
+✔ publishArtifact: returns canonical URI and content hash (0.232606ms)
+✔ publishArtifact: idempotent — same content → same hash (0.17674ms)
+✔ publishArtifact: different content → different hash (0.159073ms)
+✔ publishArtifact: can be read back (0.128376ms)
+✔ publishArtifact: accepts Uint8Array (0.514245ms)
+✔ publishRunTrace: stores a complete trace (0.356443ms)
+✔ publishRunTrace: requires runId (0.175141ms)
+✔ publishRunTrace: requires at least one node (0.096445ms)
+✔ publishRunTrace: includes provenance tags in metadata (0.579473ms)
+✔ end-to-end: validate → publish artifact → publish run trace → replay-resolve (8.095075ms)
+ℹ tests 79
+ℹ suites 0
+ℹ pass 79
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 658.493515
+
+> @quilt/tui@0.3.0 test
+> node --test --import tsx src/*.test.ts
+
+✔ renders an empty state (1.277074ms)
+✔ renders cell list with id, kind, value (0.249274ms)
+✔ highlights the selected cell (0.181762ms)
+✔ shows error state in red (0.168261ms)
+✔ shows idle state in dim (0.126353ms)
+✔ shows dependencies of selected cell (0.135946ms)
+✔ shows dependents of selected cell (0.134733ms)
+✔ shows mode bar in normal mode (0.145779ms)
+✔ shows mode bar in edit mode with buffer (0.158472ms)
+✔ shows mode bar in set mode (0.258985ms)
+✔ shows mode bar in command mode (0.138964ms)
+✔ shows status line when set (0.089938ms)
+✔ truncates long values (0.120102ms)
+✔ handles many cells with scroll indicator (0.185857ms)
+✔ cell kind gets a color code (0.122254ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 109.680828
+
+real	0m2.978s
+user	0m3.063s
+sys	0m0.456s
+TEST-EXIT:1
+CMD: npm run build
+
+> quilt@0.3.0 build
+> npm run build -w @quilt/core -w @quilt/sdk -w @quilt/mcp -w @quilt/tui -w @quilt/cli --if-present
+
+
+> @quilt/core@0.3.0 build
+> tsc
+
+
+> @quilt/sdk@0.2.0 build
+> tsc
+
+
+> @quilt/mcp@0.3.0 build
+> tsc
+
+
+> @quilt/tui@0.3.0 build
+> tsc
+
+
+> @quilt/cli@0.3.0 build
+> tsc
+
+
+real	0m1.089s
+user	0m1.196s
+sys	0m0.260s
+BUILD-EXIT:0
+CMD: npm test (after declared build)
+
+> quilt@0.3.0 test
+> npm run test --workspaces --if-present
+
+
+> @quilt/core@0.3.0 test
+> vitest run
+
+
+ RUN  v5.0.2 /home/z/my-project/playtest-lane/quilt/packages/core
+
+stderr | test/examples.test.mts > production examples > chat-router loads and evaluates end-to-end
+[quilt] evalWhen failed: input.message_length > 500 ReferenceError: input is not defined
+    at eval (eval at evalWhen (/home/z/my-project/playtest-lane/quilt/packages/core/src/context.ts:170:16), <anonymous>:3:1)
+    at evalWhen (/home/z/my-project/playtest-lane/quilt/packages/core/src/context.ts:171:20)
+    at evaluateRouter (/home/z/my-project/playtest-lane/quilt/packages/core/src/cells/router.ts:89:9)
+    at QuiltEngine.evaluateEffectful (/home/z/my-project/playtest-lane/quilt/packages/core/src/engine.ts:635:22)
+    at QuiltEngine.get (/home/z/my-project/playtest-lane/quilt/packages/core/src/engine.ts:378:30)
+    at /home/z/my-project/playtest-lane/quilt/packages/core/test/examples.test.mts:81:34
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at file:///home/z/my-project/playtest-lane/quilt/node_modules/vitest/dist/chunks/run.C5UmxDPh.js:2783:20
+
+stderr | test/examples.test.mts > production examples > ab-test-router loads and evaluates end-to-end
+[quilt] evalWhen failed: variant.bucket < config.split_ratio ReferenceError: variant is not defined
+    at eval (eval at evalWhen (/home/z/my-project/playtest-lane/quilt/packages/core/src/context.ts:170:16), <anonymous>:3:1)
+    at evalWhen (/home/z/my-project/playtest-lane/quilt/packages/core/src/context.ts:171:20)
+    at evaluateRouter (/home/z/my-project/playtest-lane/quilt/packages/core/src/cells/router.ts:89:9)
+    at QuiltEngine.evaluateEffectful (/home/z/my-project/playtest-lane/quilt/packages/core/src/engine.ts:635:22)
+    at QuiltEngine.get (/home/z/my-project/playtest-lane/quilt/packages/core/src/engine.ts:378:30)
+    at /home/z/my-project/playtest-lane/quilt/packages/core/test/examples.test.mts:81:34
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at file:///home/z/my-project/playtest-lane/quilt/node_modules/vitest/dist/chunks/run.C5UmxDPh.js:2783:20
+
+stderr | test/examples.test.mts > production examples > iot-dashboard loads and evaluates end-to-end
+[quilt] listener "alert.lobby_hot" routes to io/sensor cell "log.lobby_hot" — routing is not implemented for io cells yet
+[quilt] listener "alert.building_critical" routes to io/sensor cell "log.building_critical" — routing is not implemented for io cells yet
+
+stderr | test/examples.test.mts > production examples > iot-dashboard loads and evaluates end-to-end
+[quilt] evalWhen failed: building.rooms_with_problems && building.rooms_with_problems.includes("hot") ReferenceError: building is not defined
+    at eval (eval at evalWhen (/home/z/my-project/playtest-lane/quilt/packages/core/src/context.ts:170:16), <anonymous>:3:1)
+    at evalWhen (/home/z/my-project/playtest-lane/quilt/packages/core/src/context.ts:171:20)
+    at evaluateRouter (/home/z/my-project/playtest-lane/quilt/packages/core/src/cells/router.ts:89:9)
+    at QuiltEngine.evaluateEffectful (/home/z/my-project/playtest-lane/quilt/packages/core/src/engine.ts:635:22)
+    at QuiltEngine.get (/home/z/my-project/playtest-lane/quilt/packages/core/src/engine.ts:378:30)
+    at /home/z/my-project/playtest-lane/quilt/packages/core/test/examples.test.mts:81:34
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at file:///home/z/my-project/playtest-lane/quilt/node_modules/vitest/dist/chunks/run.C5UmxDPh.js:2783:20
+[quilt] evalWhen failed: building.rooms_with_problems && (building.rooms_with_problems.includes("warm") || building.rooms_with_problems.includes("cold")) ReferenceError: building is not defined
+    at eval (eval at evalWhen (/home/z/my-project/playtest-lane/quilt/packages/core/src/context.ts:170:16), <anonymous>:3:1)
+    at evalWhen (/home/z/my-project/playtest-lane/quilt/packages/core/src/context.ts:171:20)
+    at evaluateRouter (/home/z/my-project/playtest-lane/quilt/packages/core/src/cells/router.ts:89:9)
+    at QuiltEngine.evaluateEffectful (/home/z/my-project/playtest-lane/quilt/packages/core/src/engine.ts:635:22)
+    at QuiltEngine.get (/home/z/my-project/playtest-lane/quilt/packages/core/src/engine.ts:378:30)
+    at /home/z/my-project/playtest-lane/quilt/packages/core/test/examples.test.mts:81:34
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at file:///home/z/my-project/playtest-lane/quilt/node_modules/vitest/dist/chunks/run.C5UmxDPh.js:2783:20
+
+stderr | test/examples.test.mts > production examples > rate-limiter loads and evaluates end-to-end
+[quilt] evalWhen failed: bucket.projected >= config.cost_per_request ReferenceError: bucket is not defined
+    at eval (eval at evalWhen (/home/z/my-project/playtest-lane/quilt/packages/core/src/context.ts:170:16), <anonymous>:3:1)
+    at evalWhen (/home/z/my-project/playtest-lane/quilt/packages/core/src/context.ts:171:20)
+    at evaluateRouter (/home/z/my-project/playtest-lane/quilt/packages/core/src/cells/router.ts:89:9)
+    at QuiltEngine.evaluateEffectful (/home/z/my-project/playtest-lane/quilt/packages/core/src/engine.ts:635:22)
+    at QuiltEngine.get (/home/z/my-project/playtest-lane/quilt/packages/core/src/engine.ts:378:30)
+    at /home/z/my-project/playtest-lane/quilt/packages/core/test/examples.test.mts:81:34
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at file:///home/z/my-project/playtest-lane/quilt/node_modules/vitest/dist/chunks/run.C5UmxDPh.js:2783:20
+
+stderr | test/examples.test.mts > production examples > rate-limiter loads and evaluates end-to-end
+[quilt] evalWhen failed: allow.request == true ReferenceError: allow is not defined
+    at eval (eval at evalWhen (/home/z/my-project/playtest-lane/quilt/packages/core/src/context.ts:170:16), <anonymous>:3:1)
+    at evalWhen (/home/z/my-project/playtest-lane/quilt/packages/core/src/context.ts:171:20)
+    at evaluateRouter (/home/z/my-project/playtest-lane/quilt/packages/core/src/cells/router.ts:89:9)
+    at QuiltEngine.evaluateEffectful (/home/z/my-project/playtest-lane/quilt/packages/core/src/engine.ts:635:22)
+    at QuiltEngine.get (/home/z/my-project/playtest-lane/quilt/packages/core/src/engine.ts:378:30)
+    at /home/z/my-project/playtest-lane/quilt/packages/core/test/examples.test.mts:81:34
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at file:///home/z/my-project/playtest-lane/quilt/node_modules/vitest/dist/chunks/run.C5UmxDPh.js:2783:20
+
+ ✓ test/examples.test.mts (7 tests) 71ms
+ ✓ test/engine.test.ts (9 tests) 39ms
+ ✓ test/playtest-gold.test.ts (21 tests) 14ms
+ ✓ test/ai.test.ts (6 tests) 18ms
+ ✓ test/gesture.test.ts (14 tests) 10ms
+ ✓ test/playtest-gold.fix10-input-memo.test.ts (3 tests) 5ms
+ ✓ test/playtest-gold.fix12-deps-version-key.test.ts (3 tests) 5ms
+ ✓ test/playtest-gold.fix11-bound-runtime.test.ts (3 tests) 4ms
+
+ Test Files  8 passed (8)
+      Tests  66 passed (66)
+   Start at  15:41:37
+   Duration  1.57s (import 39%, transform 35%, tests 22%, worker 4%)
+
+    Isolate  8 workers spawned · ~94ms startup each (spawn + environment, per file)
+             at least ~660ms faster with isolate: false — reuses workers across files instead of one per file
+
+
+> @quilt/sdk@0.2.0 test
+> tsx --test test/*.test.js
+
+✔ FederatedArtifactStore — basic put/get with in-memory local (1.61665ms)
+✔ FederatedArtifactStore — get throws when not found (0.493756ms)
+✔ FederatedArtifactStore — listVersions (0.418154ms)
+✔ FederatedArtifactStore — R2 tier puts are best-effort (failure does not break put) (0.316588ms)
+✔ FederatedArtifactStore — R2 get promotes to local (18.920906ms)
+✔ FederatedArtifactStore — exists checks all tiers (0.361972ms)
+✔ FederatedArtifactStore — invalidate removes from all tiers (0.379376ms)
+✔ FederatedArtifactStore — LRU eviction when over maxLocalBytes (0.459161ms)
+✔ FederatedArtifactStore — custom local backend (0.26633ms)
+✔ MemoryCacheBackend — basic put/get (0.357327ms)
+✔ MemoryCacheBackend — list with prefix (0.203491ms)
+✔ mqttTopicMatches — exact (0.171201ms)
+✔ mqttTopicMatches — single-level wildcard + (0.104715ms)
+✔ mqttTopicMatches — multi-level wildcard # (0.072513ms)
+✔ MqttCellTransport — publish → subscribe round-trip (1.091741ms)
+✔ MqttCellTransport — getValue resolves from retained message (10.720798ms)
+✔ MqttCellTransport — getValue times out (49.848798ms)
+✔ MqttCellTransport — isConnected reflects connect/close (0.295721ms)
+✔ parseCellRef: simple local ref (1.010745ms)
+✔ parseCellRef: remote instance (0.14999ms)
+✔ parseCellRef: dotted sheet name (0.152138ms)
+✔ parseCellRef: deep cell path (0.089626ms)
+✔ parseCellRef: instance wildcard (0.09248ms)
+✔ parseCellRef: sheet wildcard (0.093703ms)
+✔ parseCellRef: cell wildcard (0.094155ms)
+✔ parseCellRef: rejects non-quilt scheme (3.593716ms)
+✔ parseCellRef: rejects missing hash (0.132ms)
+✔ parseCellRef: rejects empty cell path (0.154191ms)
+✔ parseCellRef: rejects missing sheet (0.133234ms)
+✔ resolveCell: local engine returns live handle (0.339151ms)
+✔ resolveCell: set propagates (0.17418ms)
+✔ resolveCell: subscribe fires on change (11.456955ms)
+✔ resolveCell: subscribe can be unsubscribed (15.947114ms)
+✔ resolveCell: rejects wildcard (0.337089ms)
+✔ LocalCellTransport: routes "local" to first engine (0.101413ms)
+✔ LocalCellTransport: routes named instance (0.082005ms)
+✔ LocalCellTransport: rejects unknown instance (0.119602ms)
+✔ CellRouter: routes to the right transport (0.227426ms)
+✔ CellRouter: subscribe receives cross-instance updates (11.36065ms)
+✔ CellRouter: rejects unknown instance (0.224334ms)
+✔ CellRouter: instances() lists registered (0.088505ms)
+✔ detectTier: honors QUILT_TIER override (0.259338ms)
+✔ detectTier: detects Codespace from CODESPACES env var (0.099182ms)
+✔ detectTier: falls back to server in Node (0.078848ms)
+✔ tierInfoFor: esp32 has no async but has network (0.091688ms)
+✔ tierInfoFor: codespace has async + llm but no GPU (0.062394ms)
+✔ tierInfoFor: jetson has GPU (0.069424ms)
+✔ tierInfoFor: cloudflare has no filesystem but has persistence via D1/KV (0.060435ms)
+✔ tierInfoFor: instance id has tier prefix (0.151175ms)
+✔ tierInfoFor: unknown has no capabilities (0.051093ms)
+✔ HttpCellTransport: stores baseUrl and token (0.054858ms)
+✔ resolveTemplate: substitutes simple variables (1.097905ms)
+✔ resolveTemplate: handles multiple variables in one string (0.136486ms)
+✔ resolveTemplate: tolerates whitespace inside braces (0.121536ms)
+✔ resolveTemplate: throws on missing variable (0.436771ms)
+✔ resolveTemplate: returns input unchanged when no tokens present (0.139868ms)
+✔ resolveArtifact: pure resolve (no store) for templated URI (0.450125ms)
+✔ resolveArtifact: rejects non-quilt URIs (0.261962ms)
+✔ resolveArtifact: pins :latest to most recent version (12.53159ms)
+✔ resolveArtifact: returns metadata from store (0.412531ms)
+✔ resolveArtifact: templating error is wrapped in ResolveError (0.239723ms)
+✔ validateManifest: accepts a minimal valid manifest (77.007325ms)
+✔ validateManifest: accepts a fully-decorated manifest (14.098652ms)
+✔ validateManifest: rejects manifest without id (10.913219ms)
+✔ validateManifest: rejects bad precondition type (10.486422ms)
+✔ validateManifest: rejects bad rollback type (9.124156ms)
+✔ validateManifest: with checkExists — passes when artifact is present (13.746205ms)
+✔ validateManifest: with checkExists — fails when artifact is absent (7.599099ms)
+✔ validateManifest: with checkExists — substitutes templates in preconditions (8.077835ms)
+✔ publishArtifact: returns canonical URI and content hash (0.190011ms)
+✔ publishArtifact: idempotent — same content → same hash (0.151808ms)
+✔ publishArtifact: different content → different hash (0.168415ms)
+✔ publishArtifact: can be read back (0.106199ms)
+✔ publishArtifact: accepts Uint8Array (0.381566ms)
+✔ publishRunTrace: stores a complete trace (0.302645ms)
+✔ publishRunTrace: requires runId (0.158933ms)
+✔ publishRunTrace: requires at least one node (0.131561ms)
+✔ publishRunTrace: includes provenance tags in metadata (0.532629ms)
+✔ end-to-end: validate → publish artifact → publish run trace → replay-resolve (7.535791ms)
+ℹ tests 79
+ℹ suites 0
+ℹ pass 79
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 637.95238
+
+> @quilt/tui@0.3.0 test
+> node --test --import tsx src/*.test.ts
+
+✔ renders an empty state (1.267316ms)
+✔ renders cell list with id, kind, value (0.260918ms)
+✔ highlights the selected cell (0.20431ms)
+✔ shows error state in red (0.151829ms)
+✔ shows idle state in dim (0.156127ms)
+✔ shows dependencies of selected cell (0.145757ms)
+✔ shows dependents of selected cell (0.142347ms)
+✔ shows mode bar in normal mode (0.146768ms)
+✔ shows mode bar in edit mode with buffer (0.189141ms)
+✔ shows mode bar in set mode (0.283627ms)
+✔ shows mode bar in command mode (0.12313ms)
+✔ shows status line when set (0.086593ms)
+✔ truncates long values (0.143362ms)
+✔ handles many cells with scroll indicator (0.155837ms)
+✔ cell kind gets a color code (0.104635ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 111.197314
+
+real	0m3.004s
+user	0m3.042s
+sys	0m0.505s
+TEST2-EXIT:0

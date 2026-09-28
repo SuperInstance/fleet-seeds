@@ -1,0 +1,57 @@
+# coev playtest 2026-09-28T15:37:17Z
+HEAD 88a9d8cc0dab98caf90bf59e5a33db1902abd34d
+CMD: npm test
+
+> coev@0.1.0 test
+> node --test test/
+
+node:internal/modules/cjs/loader:1568
+  throw err;
+  ^
+
+Error: Cannot find module '/home/z/my-project/playtest-lane/coev/test'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1564:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1118:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1142:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1169:12)
+    at Module._load (node:internal/modules/cjs/loader:1341:5)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.21.0
+✖ test (44.135914ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 52.347697
+
+✖ failing tests:
+
+test at test:1:1
+✖ test (44.135914ms)
+  'test failed'
+npm notice
+npm notice New major version of npm available! 11.19.0 -> 12.1.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.1.0
+npm notice To update run: npm install -g npm@12.1.0
+npm notice
+
+real	0m0.509s
+user	0m0.401s
+sys	0m0.128s
+EXIT:1
+
+--- ISOLATION (playtester diagnosis, not a fix) ---
+A: node --test test/   -> fail ("Cannot find module '/…/coev/test'", MODULE_NOT_FOUND) [script verbatim]
+B: node --test test    -> fail (same) [directory positional treated as entry module on Node v24.21.0]
+C: node --test         -> PASS 33/33, 0 fail, 1017ms (auto-discovery of test/*.test.js)
+Gift: package.json scripts.test = "node --test test/" breaks on Node >= 24 (v24.21.0 tested);
+      zero-arg node --test is green. One-line fix candidate for owner lane: drop the "test/" arg.

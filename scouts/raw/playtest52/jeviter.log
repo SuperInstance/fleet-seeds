@@ -1,0 +1,106 @@
+# jeviter playtest 2026-09-28T15:37:18Z
+HEAD 7693bc13c6afc4938b2f38d1b647fe4962c9fdcf
+CMD: npm test
+
+> jeviter@0.1.0 test
+> node --test
+
+✔ manifest names the bridge, doctrine, and callable gates (1.326796ms)
+✔ artifactReader reads the provided world and nothing else (0.936518ms)
+✔ fleet_doctrine books the manifest as a replayable receipt (0.592952ms)
+✔ fleet_spec_fidelity crosses as named drift, not a scalar vibe (0.337325ms)
+✔ fleet_spec_fidelity refuses incomplete readings as fidelity null (0.221686ms)
+✔ fleet_collab_read carries named review walls (0.407658ms)
+✔ unknown bridge tool is an error, not a silent receipt (0.438867ms)
+✔ classifies by resolution path and reads the band (2.188349ms)
+✔ walls are named per-item, never averaged away (0.238401ms)
+✔ a 21%+ sample reads divergent and names the sample, not the paper (0.182458ms)
+✔ empty ledger of items is a null reading, not a zero (0.111223ms)
+✔ duplicate ids and unknown paths are errors, not merges (0.442119ms)
+✔ reviewPasses defaults to 0; resolved reviewed items are not walls (0.110675ms)
+✔ the reading is booked and the chain verifies (0.608701ms)
+✔ a tampered booked row breaks the chain at its own row (0.227487ms)
+✔ café Δ pin — fleet canon cross-language (0.809568ms)
+✔ seed is not news (1.28314ms)
+✔ one shift yields exactly once; silence booked (2.540255ms)
+✔ THE RATCHET: fixed-amplitude oscillation silences after one admission (21.841941ms)
+✔ throttle: flood self-sheds, ratchet blocks alternating-payload attacker (7.968417ms)
+✔ ledger tamper breaks at its own row (0.385106ms)
+✔ Q16 exactness: reciprocal multiplication, no float identity (0.194696ms)
+✔ async stream: next() awaits — tail emits real lines, not fabricated silences (regression #16) (0.83916ms)
+✔ citation resolves → lesson pinned with hash (3.188272ms)
+✔ unresolved ref → REFUSED naming the bad ref, never silently dropped (0.497437ms)
+✔ no citation group at all → REFUSED (CITATION) (0.323727ms)
+✔ dup vs priorLessons → silence booked, admission counted, not re-pinned (0.368776ms)
+✔ stub frontmatter carries provenance + real transcript sha (0.65841ms)
+✔ fnv1a-64 is UTF-8 bytes — the fleet café vector holds (0.55154ms)
+✔ never-throw: empty transcript → refused INPUT + honest stub, no exception (1.031213ms)
+✔ never-throw: no lessons section → refused SECTION (0.390949ms)
+✔ JEV gate: first new lesson seeds belief (escalated); identical profile sheds at gain 0 ≤ threshold (1.28155ms)
+✔ determinism: same transcript → identical stub bytes and stub hash (0.904244ms)
+✔ receipt chain verifies TRUE; tamper named at its own row (0.649475ms)
+✔ cross-refs are bidirectional: see L1 appears as referenced_by on L1 (1.292967ms)
+✔ forward/missing see-ref → REFUSED (XREF), target lesson not pinned (0.373842ms)
+✔ whitespace jitter cannot rewrite a pinned lesson hash (0.148464ms)
+✔ no float identity: numbers hash as their literal text, not a value (0.174412ms)
+✔ rendered stub re-verifies: wellFormed true, booked as a receipt (0.791297ms)
+✔ verifyStub catches a hand-edited lie: forged hash fails once hashes are recomputed (0.519204ms)
+✔ the shipped fixture: golden end-to-end run pins the story (2.030844ms)
+✔ old tail consolidates; recent row stays live; originals achieved not deleted (2.904103ms)
+✔ no summarizer → refusal receipts, originals stay live, nothing invented (0.471391ms)
+✔ empty summary is a refusal, not a memory (0.280843ms)
+✔ booked dream row is replayable and tamper-named at its own index (1.062985ms)
+✔ same inputs and summarizer produce the same consolidated id (0.415484ms)
+✔ all claims hash-match → fidelity 1.0, complete (1.323481ms)
+✔ hash mismatch is named drift per path — never a scalar (0.332129ms)
+✔ absent artifact → MISSING, reading INCOMPLETE (fidelity null) (0.20252ms)
+✔ zero claims → fidelity null (undefined, not high) (0.108599ms)
+✔ reading books as a replayable, chain-verified receipt (1.483792ms)
+✔ tampered booked row breaks the chain at its own index (0.297142ms)
+✔ shape: top-level areas + magnitude class, deterministic (0.920677ms)
+✔ no belief, no rest: the first merge seeds and is not news (0.433264ms)
+✔ a divergent merge admits AND the queue rests a fixed length (1.615452ms)
+✔ rest length is a count of held PRs, never wall-clock (1.120057ms)
+✔ THE RATCHET: one divergent shape buys exactly one rest (0.729795ms)
+✔ alternating fixed shapes cannot keep the queue closed (anti-jam) (0.537335ms)
+✔ every decision is booked and the chain verifies; held included (0.584922ms)
+✔ tamper with a held row breaks the chain at its own row (0.361725ms)
+✔ readGovernor reports the queue state without scalar hiding places (0.665807ms)
+✔ scan: fresh ledger verifies and reads EMPTY (1.29834ms)
+✔ scan: all-silence ledger verifies and reads QUIET (not a hang) (6.286906ms)
+✔ scan: mixed stream reads ALIVE with admission rate (3.409328ms)
+✔ scan: tamper breaks at its own row (0.820883ms)
+✔ scan: accepts persisted-hex hashes (jsonl round-trip form) (0.741858ms)
+✔ scan: throttle ledger kinds counted (shed receipts are first-class) (2.53985ms)
+✔ categorical replacement is visible (the three-sighting defect) (0.966512ms)
+✔ deletion counts: vanished mass is news (0.305184ms)
+✔ strict keeps shared-support agreement with stock klGain (1.022782ms)
+✔ profileValue: single leaf flip escalates (coroner v2 falsifier) (0.361806ms)
+✔ profileValue: path=value classes — same value, different path, different class (0.208048ms)
+✔ starvation feed: old law freezes, EWMA law descends (Arm A/C of w4) (2.071241ms)
+✔ EWMA still admits a post-starvation surge (recovery, not just descent) (0.477605ms)
+✔ renderer is pure: same state, same string (1.270178ms)
+✔ does not mutate its input state (0.780487ms)
+✔ seed is booked, not counted as an event (0.1181ms)
+✔ silence counts as data, admission reflects the ratio (0.290487ms)
+✔ recent receipts are capped at maxRecent, newest last (0.174165ms)
+✔ escape sequences never appear inside truncated text (0.321669ms)
+✔ frame homes and clears; teardown restores cursor (0.15317ms)
+✔ scan panel: verified chain renders VERIFIED and the reading (0.742486ms)
+✔ scan panel: kinds histogram is sorted and counted (1.586547ms)
+✔ scan panel: tamper renders BROKEN, names the row, never softens (0.43794ms)
+✔ scan panel: empty ledger renders honest quiet, not a failure costume (0.141064ms)
+✔ scan panel: pure — same scan, same string (0.242466ms)
+ℹ tests 86
+ℹ suites 0
+ℹ pass 86
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 659.355885
+
+real	0m0.799s
+user	0m0.748s
+sys	0m0.172s
+EXIT:0
