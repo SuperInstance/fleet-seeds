@@ -37,9 +37,14 @@ const MAIN_TIP_AT_REG = '1c03b2eb7a2b15e0a6ffec536c0d5c60c3e2586806ca6caaced65f9
 // =========== A. registration (pre-run receipts) ==============================
 const regPath = path.join(OUT, 'predictions/46d-round12-predictions.json');
 check('A1 registration file sha = registered ffb3d245…', sha256(fs.readFileSync(regPath, 'utf8')) === REG_SHA);
-const regMtime = fs.statSync(regPath).mtime.toISOString().replace(/\.\d{3}Z$/, 'Z');
-check('A2 registration mtime unchanged since registration', regMtime === REG_MTIME, regMtime);
+// mtime receipt: git operations (rebase/checkout) rewrite working-tree mtimes, so the
+// live mtime is NOT the receipt — the receipt is the embedded registered_utc plus the
+// git history: the registration commit must PREDATE the first deepseek call (D16).
 const reg = JSON.parse(fs.readFileSync(regPath, 'utf8'));
+check('A2 registration embeds its mtime receipt (registered_utc = REG_MTIME)', reg.registered_utc.startsWith(REG_MTIME), reg.registered_utc.slice(0, 32));
+const regCommitLine = execFileSync('git', ['log', '--diff-filter=A', '--format=%H %cI', '--', 'tavern/round-12/predictions/46d-round12-predictions.json'], { cwd: REPO, encoding: 'utf8' }).trim().split('\n').at(-1);
+const regCommit = { sha: regCommitLine.split(' ')[0], date: regCommitLine.split(' ')[1] };
+check('A2b registration is committed (pre-registration anchor for D16)', /^[0-9a-f]{40}$/.test(regCommit.sha) && !Number.isNaN(Date.parse(regCommit.date)), `${regCommit.sha.slice(0, 8)}… at ${regCommit.date}`);
 check('A3 registration carries 5 numbered predictions P1-P5', JSON.stringify(reg.predictions.map((p) => p.id)) === JSON.stringify(['P1-asset-free-calibration-gap', 'P2-seat-agreement-0.05', 'P3-noul-discipline-holds', 'P4-ledger-fold-verifies', 'P5-budget-spend']));
 check('A4 registration declares zero deepseek traffic before it', reg.registered_before_any_deepseek_traffic === true);
 
@@ -127,6 +132,8 @@ if (!fs.existsSync(rowsPath)) {
   }
   check('D7 every sent request body rebuilds byte-exact from the registered prompts', promptOk, promptDetail);
   check('D8 blind prompts precede reveal prompts (send-order law)', (() => { const o = posts.map((r) => r.probe_id); return o.indexOf('r12-reasoner-blind') < o.indexOf('r12-reasoner-reveal') && o.indexOf('r12-chat-blind') < o.indexOf('r12-chat-reveal') && Math.max(o.indexOf('r12-reasoner-blind'), o.indexOf('r12-chat-blind')) < Math.min(o.indexOf('r12-reasoner-reveal'), o.indexOf('r12-chat-reveal')); })());
+  const firstCallTs = [...posts, ...gets].map((r) => r.ts).sort()[0];
+  check('D16 first deepseek call happened AFTER the registration commit (pre-registration, git-anchored)', firstCallTs > regCommit.date, `first call ${firstCallTs} > commit ${regCommit.date}`);
 
   // asset-freeness mechanical re-check
   const forbidden = ['E-Q8', 'E-Q9', 'eq8_established', 'eq9_census', '466,932', 'Brier', '3ccb796a', 'b46effd4', '0.35', '0.47', '0.97', '0.99', 'qthe', 'JEV', 'jev', 'ROUND NINE', 'ROUND ELEVEN', 'round-11', 'round-10', 'r9_prefix_asset', 'census', 'kernel runs'];
