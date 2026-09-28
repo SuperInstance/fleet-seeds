@@ -22,6 +22,7 @@ import process from 'node:process';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { PINS, walkStoneBytes, walkArtifactBytes, walkFixturesBytes } from './walkers.mjs';
+import { receiptId } from '../../wave44/witness-grammar/witness.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(HERE, '..', '..', '..');
@@ -118,6 +119,12 @@ const writeTampered = (name, mutate) => {
 
 // N8 (P4): reproducibility — independent LIVE rollup into tmp, normalize ts,
 // byte-compare with the official chain.
+// FINDING RECEIPTED (see verdict.md claimsAssessment): the 46-e receipt
+// template puts the wall-clock timestamp in TWO places — the ts field AND the
+// claim text ("… by walker W at time S", per the brief). P4's letter said
+// "normalize every ts field"; normalization is amended (45-d precedent) to
+// cover the SAME emission timestamp wherever it appears: ts field + the
+// claim's trailing " at <ts>". No other byte may differ.
 {
   const reproOut = path.join(tmp, 'repro');
   const rr = spawnSync(process.execPath, [path.join(HERE, 'rollup.mjs'), `--out=${reproOut}`, '--quiet'], { encoding: 'utf8' });
@@ -125,15 +132,33 @@ const writeTampered = (name, mutate) => {
   if (rr.status !== 0 || !fs.existsSync(reproChain)) {
     controls('N8', 'repro rollup run', 'exit 0 + chain', false, `repro exit=${rr.status} stderr=${(rr.stderr || '').slice(-300)}`);
   } else {
-    const norm = (file) => fs.readFileSync(file, 'utf8').trim().split('\n')
+    const normFieldOnly = (file) => fs.readFileSync(file, 'utf8').trim().split('\n')
       .map((l) => { const r = JSON.parse(l); r.ts = '<TS>'; return JSON.stringify(r); }).join('\n') + '\n';
-    const a = norm(CHAIN); const b = norm(reproChain);
+    // normalize the emission timestamp wherever it appears, then RECOMPUTE the
+    // parent links over the normalized receipts (parent ids are sha256s of
+    // the receipts themselves, hence ts-DERIVED; recomputing them over
+    // identical normalized content is what "modulo ts" must mean).
+    const normAmended = (file) => {
+      const rs = fs.readFileSync(file, 'utf8').trim().split('\n').map((l) => JSON.parse(l));
+      for (const r of rs) {
+        r.ts = '<TS>';
+        r.claim = r.claim.replace(/ at \d{4}-\d{2}-\d{2}T[\d:.]+Z/g, ' at <TS>');
+      }
+      let parent = 'GENESIS';
+      for (const r of rs) { r.parent = parent; parent = receiptId(r); }
+      return rs.map((r) => JSON.stringify(r)).join('\n') + '\n';
+    };
+    const aF = normFieldOnly(CHAIN); const bF = normFieldOnly(reproChain);
+    const fieldOnlyIdentical = aF === bF;
+    const a = normAmended(CHAIN); const b = normAmended(reproChain);
     if (a === b) {
-      controls('N8', 'repro chain byte-identical modulo ts (P4)', 'identical', true, 'ts-normalized official == ts-normalized repro');
+      controls('N8', 'repro chain byte-identical modulo emission ts (P4, amended normalization)', 'identical', true,
+        `ts+ts-derived-parents normalized official == repro; claim-text ts also normalized (template embeds it) — fieldOnlyIdentical=${fieldOnlyIdentical}, amendment receipted in verdict.md`);
     } else {
       const la = a.split('\n'); const lb = b.split('\n');
       const i = la.findIndex((l, k) => l !== lb[k]);
-      controls('N8', 'repro chain byte-identical modulo ts (P4)', 'identical', false, `first differing receipt ${i}: official=${la[i]?.slice(0, 200)} repro=${lb[i]?.slice(0, 200)}`);
+      controls('N8', 'repro chain byte-identical modulo emission ts (P4, amended normalization)', 'identical', false,
+        `first differing receipt ${i}: official=${la[i]?.slice(0, 200)} repro=${lb[i]?.slice(0, 200)}`);
     }
   }
 }

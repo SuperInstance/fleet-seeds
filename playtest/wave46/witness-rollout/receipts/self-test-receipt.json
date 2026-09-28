@@ -1,0 +1,68 @@
+{
+  "tool": "fleet-seeds/playtest/wave46/witness-rollout/self-test.mjs",
+  "lane": "46-e witness-roller",
+  "ran_at": "2026-09-28T00:45:00.616Z",
+  "official_chain_tip": "b2442e0943c5f69e1a201a0f42107485ddd6cfb28e7119cfa4331f1394ba64be",
+  "tmp_dir": "/tmp/46e-selftest-m4m6S3",
+  "controls": [
+    {
+      "id": "N1",
+      "name": "tampered chain byte -> walker fails",
+      "expect": "fail",
+      "ok": true,
+      "detail": "row 0 is not a stone.header"
+    },
+    {
+      "id": "N2",
+      "name": "wrong pinned tip -> walker fails",
+      "expect": "fail",
+      "ok": true,
+      "detail": "expected tip ffffffffffff… / 24 links, got 50ddf5f9226d8c847948ea4916c54af6338775bd9f8d42b5bd314063317e6938 / 24"
+    },
+    {
+      "id": "N3",
+      "name": "tampered fixture byte -> manifest fails",
+      "expect": "fail",
+      "ok": true,
+      "detail": "fixture sha mismatches: tools/fixtures/qthe-e_q6-chain-905bb2f57ba369500359dc255aeaaeb681125fa6.jsonl got 2ec2812a5e99… want 3340b0823aab…"
+    },
+    {
+      "id": "N4",
+      "name": "tampered artifact byte -> pin check fails",
+      "expect": "fail",
+      "ok": true,
+      "detail": "artifact bytes sha 5a728fa72583… != pinned 6d7db23ec86e…"
+    },
+    {
+      "id": "N5",
+      "name": "tampered wave-46 receipt -> CLI fails",
+      "expect": "fail",
+      "ok": true,
+      "detail": "exit=1 verdict={\"ok\":false,\"receipts\":3,\"tip\":null,\"error\":\"receipt 3: parent link broken (expected 9d660305d3d9..., got e3e038e5f545...)\"}"
+    },
+    {
+      "id": "N6",
+      "name": "tampered last receipt vs pinned tip -> CLI fails",
+      "expect": "fail",
+      "ok": true,
+      "detail": "exit=1 verdict={\"ok\":false,\"receipts\":8,\"tip\":\"0486b9d0c473d2f450799c81564763c5865da95a138510dc6e6aa3491056eb2f\",\"error\":\"tip mismatch (computed 0486b9d0c473..., expected b2442e0943c5...)\"}"
+    },
+    {
+      "id": "N7",
+      "name": "skipped middle receipt -> CLI fails",
+      "expect": "fail",
+      "ok": true,
+      "detail": "exit=1 verdict={\"ok\":false,\"receipts\":4,\"tip\":null,\"error\":\"receipt 4: parent link broken (expected 3fb0b7dac9cb..., got ef9bf13d9853...)\"}"
+    },
+    {
+      "id": "N8",
+      "name": "repro chain byte-identical modulo emission ts (P4, amended normalization)",
+      "expect": "identical",
+      "ok": true,
+      "detail": "ts+ts-derived-parents normalized official == repro; claim-text ts also normalized (template embeds it) — fieldOnlyIdentical=false, amendment receipted in verdict.md"
+    }
+  ],
+  "pass": 8,
+  "fail": 0,
+  "all_ok": true
+}

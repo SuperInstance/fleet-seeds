@@ -1,0 +1,268 @@
+{
+  "tool": "fleet-seeds/playtest/wave46/witness-rollout/rollup.mjs",
+  "lane": "46-e witness-roller",
+  "run_at": "2026-09-28T00:42:54.612Z",
+  "mode": "live",
+  "all_ok": true,
+  "provenance": {
+    "grammar": {
+      "module": "playtest/wave44/witness-grammar/witness.mjs",
+      "sha256": "7546cf845770ec63c29db42379b65b69619a03b235232aac85ec691b0f435722"
+    },
+    "stoneWalker": {
+      "module": "tools/lib/stone-v1.mjs",
+      "sha256": "c678c4dc500352b93da2cf64810fb58fe287913a02562776f329d30bb4b87ff1"
+    },
+    "fleetAdapter": {
+      "module": "playtest/wave46/witness-rollout/walkers.mjs",
+      "sha256": "acaa36c1f0cea402840c81d51f815cab94ac616714232941920dc67a9146d1c0"
+    },
+    "claimsSha256": "cfaf425b42ac2824b91c9190a0d89d34be9158657815399e12e0513d4ca0118a",
+    "fleetHead": "a2c7399fa7f51bf45c7f64f1f333b97162736ae4",
+    "node": "v24.21.0"
+  },
+  "targets": [
+    {
+      "id": "wave44_kat",
+      "kind": "witness-chain",
+      "source": "FIXTURE:playtest/wave44/witness-grammar/kat/chain.jsonl",
+      "label": "FIXTURE",
+      "ok": true,
+      "why": null,
+      "links": 5,
+      "tip": "e4226c8846a9528253a4f193e21099abb87b275859edd7290556f8b3c7cdc69c",
+      "bytesSha256": "c68175e7aa54383a6c4795595c7d7ee4eef4c68628d2e96f5720b28e6033f7c9",
+      "output": "e4226c8846a9528253a4f193e21099abb87b275859edd7290556f8b3c7cdc69c",
+      "detail": null,
+      "extra": {},
+      "fetchReceipt": {
+        "mode": "in-repo-fixture"
+      }
+    },
+    {
+      "id": "qthe_e_q10",
+      "kind": "stone-v1",
+      "source": "https://raw.githubusercontent.com/SuperInstance/qthe/0f5be9d6652d90b7984ebfaa5394a6e20179c7dc/receipts/e_q10_chain.jsonl",
+      "label": "LIVE",
+      "ok": true,
+      "why": null,
+      "links": 24,
+      "tip": "50ddf5f9226d8c847948ea4916c54af6338775bd9f8d42b5bd314063317e6938",
+      "bytesSha256": "6637ce7dfb2d68718cc0a09d13fbe6311d59f52d3a91c8e00264546911f1fc59",
+      "output": "50ddf5f9226d8c847948ea4916c54af6338775bd9f8d42b5bd314063317e6938",
+      "detail": null,
+      "extra": {
+        "bytesMatchPin": true
+      },
+      "fetchReceipt": {
+        "mode": "live",
+        "url": "https://raw.githubusercontent.com/SuperInstance/qthe/0f5be9d6652d90b7984ebfaa5394a6e20179c7dc/receipts/e_q10_chain.jsonl",
+        "pinnedSha": "0f5be9d6652d90b7984ebfaa5394a6e20179c7dc",
+        "status": 200,
+        "bytesSha256": "6637ce7dfb2d68718cc0a09d13fbe6311d59f52d3a91c8e00264546911f1fc59",
+        "bytesMatchPin": true,
+        "savedAs": "fetched/qthe_e_q10/e_q10_chain.jsonl"
+      }
+    },
+    {
+      "id": "qthe_e_q6",
+      "kind": "stone-v1",
+      "source": "https://raw.githubusercontent.com/SuperInstance/qthe/905bb2f57ba369500359dc255aeaaeb681125fa6/receipts/e_q6_chain.jsonl",
+      "label": "LIVE",
+      "ok": true,
+      "why": null,
+      "links": 15,
+      "tip": "ab4ea19681888b11c2843b9ca43d12f652dca045338217dc5bf1b5cd9e477db0",
+      "bytesSha256": "3340b0823aabcd7773172c15104397452fdfbef01e006f25ed330dacf98018cc",
+      "output": "ab4ea19681888b11c2843b9ca43d12f652dca045338217dc5bf1b5cd9e477db0",
+      "detail": null,
+      "extra": {
+        "bytesMatchPin": true,
+        "fixtureByteEqual": true
+      },
+      "fetchReceipt": {
+        "mode": "live",
+        "url": "https://raw.githubusercontent.com/SuperInstance/qthe/905bb2f57ba369500359dc255aeaaeb681125fa6/receipts/e_q6_chain.jsonl",
+        "pinnedSha": "905bb2f57ba369500359dc255aeaaeb681125fa6",
+        "status": 200,
+        "bytesSha256": "3340b0823aabcd7773172c15104397452fdfbef01e006f25ed330dacf98018cc",
+        "bytesMatchPin": true,
+        "savedAs": "fetched/qthe_e_q6/e_q6_chain.jsonl"
+      }
+    },
+    {
+      "id": "pong_birth_seal",
+      "kind": "stone-v1",
+      "source": "https://raw.githubusercontent.com/SuperInstance/pong-quilt/1da41be23eff100f4d11df0e187311e12ad704f9/checkpoints/stone-v1.json",
+      "label": "LIVE",
+      "ok": true,
+      "why": null,
+      "links": 5,
+      "tip": "c155fd016b364335c076cc18772b835672581230c2fd377fd8ac9f2849d296c7",
+      "bytesSha256": "6e958f6716225872c613be556a3e0bd754628c7c4c47c3c378220a70e84ed576",
+      "output": "c155fd016b364335c076cc18772b835672581230c2fd377fd8ac9f2849d296c7",
+      "detail": null,
+      "extra": {
+        "bytesMatchPin": true,
+        "fixtureByteEqual": true
+      },
+      "fetchReceipt": {
+        "mode": "live",
+        "url": "https://raw.githubusercontent.com/SuperInstance/pong-quilt/1da41be23eff100f4d11df0e187311e12ad704f9/checkpoints/stone-v1.json",
+        "pinnedSha": "1da41be23eff100f4d11df0e187311e12ad704f9",
+        "status": 200,
+        "bytesSha256": "6e958f6716225872c613be556a3e0bd754628c7c4c47c3c378220a70e84ed576",
+        "bytesMatchPin": true,
+        "savedAs": "fetched/pong_birth_seal/stone-v1.json"
+      }
+    },
+    {
+      "id": "tavern_round11",
+      "kind": "stone-v1",
+      "source": "FIXTURE:fleet-seeds@a2c7399fa7f5:tavern/round-11/round11_ledger.jsonl",
+      "label": "FIXTURE",
+      "ok": true,
+      "why": null,
+      "links": 6,
+      "tip": "db324fd05d0a4373b4f8ec8fc395039065e1b54494ba546425fd3e76054dc1b5",
+      "bytesSha256": "bdf3be0641f51b4241d3846b16744e2623bfb4ec24f5374f931d7618d1d19bf5",
+      "output": "db324fd05d0a4373b4f8ec8fc395039065e1b54494ba546425fd3e76054dc1b5",
+      "detail": null,
+      "extra": {
+        "bytesMatchPin": true,
+        "gitBlobMatchesPin": true
+      },
+      "fetchReceipt": {
+        "mode": "in-repo-fixture",
+        "gitBlob": "913eea42b2b0f34ff669c74c3a6156dc2319a471"
+      }
+    },
+    {
+      "id": "crabtraps_45c",
+      "kind": "artifact+pre-registration-binding",
+      "source": "https://raw.githubusercontent.com/SuperInstance/crab-traps/e6f5ce3342e12280d7ef70d982ec4c6d709540e9/worker/src/arena-scenarios-003-live-reasoner-results.json",
+      "label": "LIVE",
+      "ok": true,
+      "why": null,
+      "links": null,
+      "tip": null,
+      "bytesSha256": "818e66834edb5ed1d21f1a2070eeb860d6cc8dd291546deaa59ea3fb61bc2184",
+      "output": "9267feb453683e993fa4bb395a7b15c7177e8740a90bd67e62a8c11bce17d5e4",
+      "detail": {
+        "artifact_sha256": "818e66834edb5ed1d21f1a2070eeb860d6cc8dd291546deaa59ea3fb61bc2184",
+        "predictions_sha256": "76bf72511c5507d0997eb7a2dc4d152090a8f7a0860f42b8159248fc21beac2a",
+        "embedded_pre_registration_sha256": "76bf72511c5507d0997eb7a2dc4d152090a8f7a0860f42b8159248fc21beac2a",
+        "artifactShaMatchesPin": true,
+        "embeddedMatchesPredictions": true,
+        "embeddedMatchesPin": true,
+        "hasVerdict": true
+      },
+      "extra": {},
+      "fetchReceipt": {
+        "mode": "live",
+        "artifactUrl": "https://raw.githubusercontent.com/SuperInstance/crab-traps/e6f5ce3342e12280d7ef70d982ec4c6d709540e9/worker/src/arena-scenarios-003-live-reasoner-results.json",
+        "predictionsUrl": "https://raw.githubusercontent.com/SuperInstance/crab-traps/e6f5ce3342e12280d7ef70d982ec4c6d709540e9/worker/src/arena-scenarios-003-live-reasoner-predictions.json",
+        "pinnedSha": "e6f5ce3342e12280d7ef70d982ec4c6d709540e9",
+        "status": [
+          200,
+          200
+        ],
+        "artifactBytesSha256": "818e66834edb5ed1d21f1a2070eeb860d6cc8dd291546deaa59ea3fb61bc2184",
+        "artifactBytesMatchPin": true,
+        "predictionsBytesSha256": "76bf72511c5507d0997eb7a2dc4d152090a8f7a0860f42b8159248fc21beac2a",
+        "predictionsBytesMatchPin": true,
+        "savedAs": [
+          "fetched/crabtraps_45c/arena-scenarios-003-live-reasoner-results.json",
+          "fetched/crabtraps_45c/arena-scenarios-003-live-reasoner-predictions.json"
+        ]
+      }
+    },
+    {
+      "id": "crabtraps_44a",
+      "kind": "artifact+pre-registration-binding",
+      "source": "https://raw.githubusercontent.com/SuperInstance/crab-traps/fed1e98502dfcedbd3669652bbe3d713e1156d78/worker/src/arena-scenarios-003-gan-results.json",
+      "label": "LIVE",
+      "ok": true,
+      "why": null,
+      "links": null,
+      "tip": null,
+      "bytesSha256": "6d7db23ec86e2ffb79d8dcae65b9972fd87bd6f012ecc33d596fb7ebe47a0d78",
+      "output": "5e7d51ca4487d90d92cc9c65d19a66d94822f85c7e3f16fba76648698b348f41",
+      "detail": {
+        "artifact_sha256": "6d7db23ec86e2ffb79d8dcae65b9972fd87bd6f012ecc33d596fb7ebe47a0d78",
+        "predictions_sha256": "76e5ef055f74c4d3b59d2021f1cfb59c994c44ad6119fedae6db5950b0b3ece7",
+        "embedded_pre_registration_sha256": "76e5ef055f74c4d3b59d2021f1cfb59c994c44ad6119fedae6db5950b0b3ece7",
+        "artifactShaMatchesPin": true,
+        "embeddedMatchesPredictions": true,
+        "embeddedMatchesPin": true,
+        "hasVerdict": true
+      },
+      "extra": {},
+      "fetchReceipt": {
+        "mode": "live",
+        "artifactUrl": "https://raw.githubusercontent.com/SuperInstance/crab-traps/fed1e98502dfcedbd3669652bbe3d713e1156d78/worker/src/arena-scenarios-003-gan-results.json",
+        "predictionsUrl": "https://raw.githubusercontent.com/SuperInstance/crab-traps/fed1e98502dfcedbd3669652bbe3d713e1156d78/worker/src/arena-scenarios-003-gan-predictions.json",
+        "pinnedSha": "fed1e98502dfcedbd3669652bbe3d713e1156d78",
+        "status": [
+          200,
+          200
+        ],
+        "artifactBytesSha256": "6d7db23ec86e2ffb79d8dcae65b9972fd87bd6f012ecc33d596fb7ebe47a0d78",
+        "artifactBytesMatchPin": true,
+        "predictionsBytesSha256": "76e5ef055f74c4d3b59d2021f1cfb59c994c44ad6119fedae6db5950b0b3ece7",
+        "predictionsBytesMatchPin": true,
+        "savedAs": [
+          "fetched/crabtraps_44a/arena-scenarios-003-gan-results.json",
+          "fetched/crabtraps_44a/arena-scenarios-003-gan-predictions.json"
+        ]
+      }
+    },
+    {
+      "id": "fleetseeds_fixtures",
+      "kind": "fixture-manifest",
+      "source": "FIXTURE:fleet-seeds@a2c7399fa7f5:tools/fixtures/",
+      "label": "FIXTURE",
+      "ok": true,
+      "why": null,
+      "links": null,
+      "tip": null,
+      "bytesSha256": null,
+      "output": "108f535f78bfee266ce2550267285c9c461cd5fcab2c045e06579f4ec7530239",
+      "detail": null,
+      "extra": {},
+      "fetchReceipt": {
+        "mode": "in-repo-fixture",
+        "files": [
+          "tools/fixtures/qthe-e_q6-chain-905bb2f57ba369500359dc255aeaaeb681125fa6.jsonl",
+          "tools/fixtures/pong-stone-v1-1da41be23eff100f4d11df0e187311e12ad704f9.json",
+          "tools/fixtures/rekor-ecdsa-entry-108e9186-a00ec06ef.live-get.json",
+          "tools/fixtures/moth-42b-raw-bits-2caa822b-7c46-4f65-a0c9-152c46272e19.txt"
+        ]
+      }
+    }
+  ],
+  "chains_verified": 8,
+  "wave46_chain": {
+    "file": "receipts/rollup-chain.jsonl",
+    "receipts": 8,
+    "tip": "b2442e0943c5f69e1a201a0f42107485ddd6cfb28e7119cfa4331f1394ba64be",
+    "tipFile": "receipts/rollup-chain.tip",
+    "genesis": "GENESIS (row 1 anchors the wave-44 KAT tip by content: output_sha256 = e4226c88…)",
+    "grammar_lib_verdict": {
+      "ok": true,
+      "receipts": 8,
+      "tip": "b2442e0943c5f69e1a201a0f42107485ddd6cfb28e7119cfa4331f1394ba64be",
+      "error": null
+    },
+    "wave44_cli": {
+      "cmd": "node ../../wave44/witness-grammar/verify.mjs receipts/rollup-chain.jsonl --expect-tip=<tip>",
+      "exit": 0,
+      "verdict": {
+        "ok": true,
+        "receipts": 8,
+        "tip": "b2442e0943c5f69e1a201a0f42107485ddd6cfb28e7119cfa4331f1394ba64be",
+        "error": null
+      }
+    }
+  }
+}

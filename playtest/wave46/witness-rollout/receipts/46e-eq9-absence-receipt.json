@@ -1,0 +1,54 @@
+{
+  "receipt": "46e-eq9-absence-receipt",
+  "lane": "46-e witness-roller",
+  "claim": "P5 disclosure evidence: no e_q9 stone chain exists at pinned qthe shas; the brief's \"e_q9 @ 905bb2f5 per tools/fixtures\" resolves to the e_q6 chain the fixture pins; no e_q9 receipt fabricated in the wave-46 chain",
+  "collected_at": "2026-09-28T00:45:59.485Z",
+  "method": "GitHub API git/trees?recursive=1 at the two pinned commits; receipt-chains listed by name",
+  "key_material": "none",
+  "probes": [
+    {
+      "target": "qthe@905bb2f57ba369500359dc255aeaaeb681125fa6 (fixture pin, sealed E-Q6 34-a)",
+      "api_status": 200,
+      "receipt_chains": [
+        "crossimpl/receipts/crossimpl_chain.jsonl",
+        "receipts/e_q1_chain.jsonl",
+        "receipts/e_q2_chain.jsonl",
+        "receipts/e_q5_chain.jsonl",
+        "receipts/e_q6_chain.jsonl"
+      ],
+      "eq9_artifacts_present": [],
+      "e_q9_chain_present": false
+    },
+    {
+      "target": "qthe@0f5be9d6652d90b7984ebfaa5394a6e20179c7dc (qthe tip at 46-e launch, sealed E-Q10 45-b)",
+      "api_status": 200,
+      "receipt_chains": [
+        "crossimpl/receipts/crossimpl_chain.jsonl",
+        "fixedpoint/receipts/fixedpoint_chain.jsonl",
+        "receipts/e_q10_chain.jsonl",
+        "receipts/e_q1_chain.jsonl",
+        "receipts/e_q2_chain.jsonl",
+        "receipts/e_q5_chain.jsonl",
+        "receipts/e_q6_chain.jsonl",
+        "receipts/e_q7_chain.jsonl",
+        "receipts/e_q8_chain.jsonl"
+      ],
+      "eq9_artifacts_present": [
+        "experiments/e_q9_sweep.mjs",
+        "experiments/eq9_deep_trace_moth.mjs",
+        "experiments/eq9_family_census.mjs",
+        "experiments/outputs/eq9_census.json",
+        "experiments/outputs/eq9_sweep_results.json",
+        "experiments/outputs/eq9_sweep_rows.jsonl",
+        "experiments/outputs/eq9dt_results.json",
+        "experiments/outputs/eq9dt_rows.jsonl",
+        "experiments/outputs/eq9dt_seed_receipt.json",
+        "situations/eq9_deep_trace_registration.json",
+        "situations/eq9_predictions.json",
+        "situations/eq9_verdict.md"
+      ],
+      "e_q9_chain_present": false
+    }
+  ],
+  "conclusion": "e_q9_chain_present=false at BOTH pins; E-Q9 exists only as eq9_sweep_results.json / eq9dt_seed_receipt.json / situations/eq9_verdict.md artifacts, never a stone chain. The 46-e rollout therefore rolls the e_q6 chain (the chain tools/fixtures actually pins at 905bb2f5) + the e_q10 chain, per claims.json P5."
+}
