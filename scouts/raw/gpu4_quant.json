@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://arxiv.org",
+    "name": "1 Introduction",
+    "snippet": "The per-channel INT8 key quantization and per-group INT4 value quantization adapt to different head dimensions and value distributions without model -specific ... Read more",
+    "host_name": "arxiv.org",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com",
+    "name": "LLM-INFERENCE-OPTIMIZATION-SENPAI-GUIDE.md",
+    "snippet": "This guide distills the inference-optimization lessons from the Senpai Fast Gemma Challenge autoresearch run. The source material is the full GitHub pull ... Read more",
+    "host_name": "github.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.technolynx.com",
+    "name": "LLM Inference Optimization Techniques: Algorithmic vs Kernel-",
+    "snippet": "LLM inference optimization techniques: KV cache, speculative decoding, quantization , FlashAttention, and fused kernels — when each one applies.",
+    "host_name": "www.technolynx.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://memx.app",
+    "name": "Quantization: Run a Big LLM on a Laptop",
+    "snippet": "INT8 / 8-bit: one byte per weight . The safe choice, near-baseline accuracy. INT4 / 4-bit: half a byte per weight. The popular default for running big models on ...",
+    "host_name": "memx.app",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.vikassri.com",
+    "name": "LLM Quantization Explained — From FP32 to 4-bit, With Code",
+    "snippet": "INT8 errors are tiny ; INT4 errors jump—especially on outlier weights—but memory drops by ~87.5% vs FP32. That is the trade-off every deployment makes.",
+    "host_name": "www.vikassri.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://huggingface.co",
+    "name": "Daily Papers",
+    "snippet": "We present a comprehensive empirical study of quantized accuracy , evaluating popular quantization formats (FP8, INT8 , INT4 ) across academic benchmarks and real- ... Read more",
+    "host_name": "huggingface.co",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "http://scalable-ai.eecs.berkeley.edu",
+    "name": "EchoKV — Watching a language model decide its own",
+    "snippet": "EchoKV lands at 0.236 accuracy. INT8 (0.1 83 ), and INT4. Periodically a small \"canary\" measurement fires: for every layer, it computes how much the attention ...",
+    "host_name": "scalable-ai.eecs.berkeley.edu",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://perimattic.com",
+    "name": "AI Model Optimization & Compression Services",
+    "snippet": "Reduce model size by 2-4Ã- and inference latency by up to 4Ã- through INT8 and INT4 quantization , with accuracy preserved within 0.5-2% of the original FP32 ...",
+    "host_name": "perimattic.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

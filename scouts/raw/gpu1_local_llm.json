@@ -1,0 +1,56 @@
+[
+  {
+    "url": "https://cobhamconsultinggroup.us",
+    "name": "Local LLM Deployment Guide. From Model to Production",
+    "snippet": "A consumer GPU with 8GB VRAM runs 7B models at Q4_K_M quantization . For CPU inference with llama . cpp on a 7B model, plan for 16GB RAM, though it will be slow at ... Read more",
+    "host_name": "cobhamconsultinggroup.us",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://dev.to",
+    "name": "Running Local AI Models on a Consumer GPU",
+    "snippet": "Sep 1, 2026 — A 7B or 8B Llama or Mistral model on 16 GB handles everyday questions fine. Syntax points out it gets better when you bolt on tool access, like ...",
+    "host_name": "dev.to",
+    "rank": 1,
+    "date": "Sep 1, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://insiderllm.com",
+    "name": "Guides",
+    "snippet": "The best local LLMs for coding in 2026 , Lookup tables for 7B , 9B, 13B, 27B, 32B, 70B, and 120B models with real measurements and GPU recommendations. Updated ...",
+    "host_name": "insiderllm.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://computecomparison.com",
+    "name": "vLLM Deployment Guide: Serve Open-Weight LLMs in",
+    "snippet": "Jul 31, 2026 — This guide covers installing vLLM , serving Llama 3 and Mistral models, configuring tensor parallelism for multi- GPU setups, and deploying ...",
+    "host_name": "computecomparison.com",
+    "rank": 3,
+    "date": "Jul 31, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.runlocalai.co",
+    "name": "Running local AI on multiple GPUs in 2026 - RunLocalAI",
+    "snippet": "May 6, 2026 — A 70B model at Q4 quantization is roughly 40 GB of weights. On dual RTX 3090 with vLLM , the runtime distributes the weights across the two cards ... Read more",
+    "host_name": "www.runlocalai.co",
+    "rank": 4,
+    "date": "May 6, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://singularitybyte.com",
+    "name": "Ollama vs llama.cpp vs vLLM vs LM Studio: Which Local AI",
+    "snippet": "Jul 25, 2026 — Ollama and LM Studio both embed llama . cpp , so they land within 5 percent of each other. vLLM and SGLang are a different architecture.",
+    "host_name": "singularitybyte.com",
+    "rank": 5,
+    "date": "Jul 25, 2026",
+    "favicon": ""
+  }
+]

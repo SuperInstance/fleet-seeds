@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://docs.gensyn.ai",
+    "name": "Using the TUI | Tech",
+    "snippet": "Aug 31, 2026 — PyTorch's deterministic kernels , It determines what kind of reproducibility guarantees your run has, Uses PyTorch's built-in deterministic ...",
+    "host_name": "docs.gensyn.ai",
+    "rank": 0,
+    "date": "Aug 31, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org",
+    "name": "Deterministic Attention Scheduling for High-throughput",
+    "snippet": "Jan 29, 2026 — Reproducibility empowers practitioners to diagnose training instabilities, such as loss divergence, and to evaluate the impact of architectural ... Read more",
+    "host_name": "arxiv.org",
+    "rank": 1,
+    "date": "Jan 29, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.researchgate.net",
+    "name": "(PDF) PySIFT: GPU-Resident Deterministic SIFT for Deep",
+    "snippet": "May 18, 2026 — PyTorch's use deterministic algorithms mode cannot guarantee bitwise reproducibility for all operations. bitwise reproducibility structurally ...",
+    "host_name": "www.researchgate.net",
+    "rank": 2,
+    "date": "May 18, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.emergentmind.com",
+    "name": "BlazeFL: Deterministic FL Simulator",
+    "snippet": "Its deterministic randomness management ensures bitwise -identical outcomes across runs, making it ideal for controlled algorithm development and reproducibility ...",
+    "host_name": "www.emergentmind.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://openreview.net",
+    "name": "Deterministic Inference across Tensor Parallel Sizes That",
+    "snippet": "We propose Tree-Based Invariant Kernels to eliminate Tensor-Parallelism-induced nondeterminism, enabling deterministic LLM inference and bit-wise identical ...",
+    "host_name": "openreview.net",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.intel.com",
+    "name": "Obtaining Numerically Reproducible Results",
+    "snippet": "When GPU CNR mode is enabled, oneMKL guarantees that running the same computation multiple times on the same GPU will result in deterministic , bitwise -identical ... Read more",
+    "host_name": "www.intel.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com",
+    "name": "Deploying PyTorch Models on Edge Devices with Reproducible",
+    "snippet": "... PyTorch model from “trained on an HPC GPU ... ⚙️   Making GPU Computations Reproducible with Deterministic ... bitwise -identical outputs across different GPUs ...",
+    "host_name": "www.linkedin.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.rohan-paul.com",
+    "name": "ML Interview Q Series: Reproducible Machine Learning: Seeds",
+    "snippet": "However, GPU operations (especially on certain hardware) can still have non- deterministic kernels . Setting torch.backends.cudnn. deterministic = True forces some ...",
+    "host_name": "www.rohan-paul.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

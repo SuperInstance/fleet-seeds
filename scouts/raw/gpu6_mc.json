@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://www.frontiersin.org/journals/applied-mathematics-and-statistics/articles/10.3389/fams.2022.818016/full",
+    "name": "GPU Accelerated Parallel Processing for Large-Scale",
+    "snippet": "by B Suchoski · 2022 · Cited by 9 — Markov Chain Monte Carlo methods have emerged as one of the premier approaches to estimating posterior distributions for use in Bayesian ...",
+    "host_name": "www.frontiersin.org",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Monte_Carlo_method",
+    "name": "Monte Carlo method",
+    "snippet": "Monte Carlo methods are often implemented using computer simulations. They can provide approximate solutions to problems too complex for mathematical analysis.",
+    "host_name": "en.wikipedia.org",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9100851",
+    "name": "GPU-accelerated Monte Carlo simulation of MV-CBCT - PMC",
+    "snippet": "by M Shi · 2020 · Cited by 20 — Abstract. Monte Carlo simulation (MCS) is one of the most accurate computation methods for dose calculation and image formation in radiation therapy.",
+    "host_name": "pmc.ncbi.nlm.nih.gov",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://developer.nvidia.com/gpugems/gpugems3/part-vi-gpu-computing/chapter-37-efficient-random-number-generation-and-application",
+    "name": "Chapter 37. Efficient Random Number Generation and",
+    "snippet": "The defining characteristic of Monte Carlo simulations is the use of multiple independent trials, each driven by some stochastic (random) process. The results ...",
+    "host_name": "developer.nvidia.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://stackoverflow.com/questions/5556648/monte-carlo-on-gpu",
+    "name": "random - Monte carlo on GPU",
+    "snippet": "Today I had a talk with a friend of mine told me he tries to make some monte carlo simulations using GPU. What was interesting he told me that he wanted ...",
+    "host_name": "stackoverflow.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://dc.ewu.edu/cgi/viewcontent.cgi?article=1506&context=theses",
+    "name": "GPU accelerated risk quantification - EWU Digital Commons",
+    "snippet": "by FL Ireland · 2018 — Monte Carlo simulations employ random sampling techniques to model certain systems through the course of many iterations. Due to their sequential nature, FAIR ...",
+    "host_name": "dc.ewu.edu",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://cdrh-rst.fda.gov/mcgpu-gpu-accelerated-monte-carlo-x-ray-imaging-simulator",
+    "name": "MCGPU: GPU-accelerated Monte Carlo X-ray Imaging Simulator",
+    "snippet": "The MCGPU simulation software is intended to generate virtual radiographic images of computational anatomical models and estimate the radiation dose received by ...",
+    "host_name": "cdrh-rst.fda.gov",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.cadence.com/en_US/home/resources/white-papers/accelerating-monte-carlo-simulations-wp.html",
+    "name": "Accelerating Monte Carlo Simulations for Faster Statistical",
+    "snippet": "Therefore, a faster Monte Carlo analysis-based solution is required for low-sigma and high-sigma analysis to ensure lower uncertainty of an IC failure before ...",
+    "host_name": "www.cadence.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

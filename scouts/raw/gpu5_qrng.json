@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://qutip.readthedocs.io",
+    "name": "Monte Carlo Solver — QuTiP 5.0 Documentation",
+    "snippet": "Mar 28, 2024 — Monte Carlo (MC), or quantum-jump approach to wave function evolution, allows for simulating an individual realization of the system dynamics . ...",
+    "host_name": "qutip.readthedocs.io",
+    "rank": 0,
+    "date": "Mar 28, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.preprints.org",
+    "name": "Design and Hardware Implementation of a Highly Flexible",
+    "snippet": "Mar 5, 2025 — Montecarlo simulation method . The Monte Carlo method is based on sequences of pseudorandom numbers, Quantum Random Generator … seed data for a ...",
+    "host_name": "www.preprints.org",
+    "rank": 1,
+    "date": "Mar 5, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.mineshp.com",
+    "name": "QUAC-TRNG: High-Throughput True Random Number",
+    "snippet": "by A Olgun · Cited by 112 — True random numbers are used in a wide range of applica- tions, including cryptography, scientific simulations , machine learning, and recreational entertainment ... Read more 15 pages",
+    "host_name": "www.mineshp.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.cs.fsu.edu",
+    "name": "Random Number Generation A Practitioner's Overview",
+    "snippet": "by M Mascagni · Cited by 1 — Random numbers are used extensively in simulation , statistics, and in Monte Carlo computations I Simulation : use random numbers to “randomly pick\" event ... 103 pages",
+    "host_name": "www.cs.fsu.edu",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.computer.org",
+    "name": "RHS-TRNG: A Resilient High-Speed True Random",
+    "snippet": "by S Fu · 2023 · Cited by 46 — Similarly, in scientific simulations , the Monte Carlo method relies on high-quality random numbers to simulate random behavior in different processes",
+    "host_name": "www.computer.org",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.researchgate.net",
+    "name": "(PDF) A true random number generator based on mouse",
+    "snippet": "True random number generators are in general more secure than pseudo random number generators . In this paper, we propose a novel true random number ... Read more",
+    "host_name": "www.researchgate.net",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org",
+    "name": "The influence of the random numbers quality on the results",
+    "snippet": "Oct 29, 2025 — Quality of random number generators significantly affects results of monte carlo simulations for organic and biological systems, Journal of ...",
+    "host_name": "arxiv.org",
+    "rank": 6,
+    "date": "Oct 29, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.boost.org",
+    "name": "Random Number Generator Library Concepts",
+    "snippet": "Introduction. Random numbers are required in a number of different problem domains, such as. numerics ( simulation , Monte - Carlo integration); games (non ... Read more",
+    "host_name": "www.boost.org",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]
