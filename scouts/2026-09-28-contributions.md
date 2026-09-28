@@ -103,3 +103,37 @@ Buckets are commit counts among the last ≤10 commits per repo. F = fleet, C = 
 - **quilt-jepa** — Latent-grid JEPA world model; round-5 resumed and closed 11/11 (amplitude lever closed, K4 transfers, finite-horizon two-phase optimizer-borne). The 49-a "easy world" failure is now fully priced. Healthy, per PLANNING.
 - **quilt-research-canons** — mavis-bot's research canon (round-1/2 ideation incl. pincher-super-site visions and a fleet-state report "Mavis × Casey retrospective on the other agents"). kimi1 (stranger identity) has 1 commit here. *Advancing:* read the fleet-state-report — mavis is studying us the way we study others; a read-and-respond lane is cheap intel.
 - **SmartCRDT** — CRDT + federated-learning substrate. Busy shared surface: our gift-53 shamir-repair merged (#75), fleet lint/ERESOLVE fixes on main, mavis CI bumps, and 3 OPEN dependabot dev-dep bumps (#71 eslint group, #72 testing group, #74 prettier). *Advancing:* triage the 3 dependabot PRs (all safe-range dev-deps — recommend merge after CI green; see §6).
+
+## 5. Issue triage — AI-Writings #38 (canon-md branch)
+
+**Issue #38** "canon-md branch: CANON.md validated but stranded (coverage 1/27 → 2/27 on merge)", opened 2026-09-19 by SuperInstance (fleet-authored). Claim: CANON.md exists and parses on branch `canon-md` but not on `main`; the Tier-1 lint sweep (fleet-canon/lint.py) counts the repo as uncurated; asks to merge `canon-md` → main (or cherry-pick). Two principal comments (2026-09-22): first a stale-close attempt, then a reopen under the no-deletion doctrine with a resolution definition — *"merge canon-md → main, **or confirm content is already equivalent**"* — plus an action item to re-run the lint.
+
+Evidence gathered this lane (receipts in `scouts/raw/2026-09-28-contribs/`):
+
+| check | result |
+|---|---|
+| `contents/CANON.md?ref=main` | 200 — 365 bytes, git blob sha **9688e8bb4e** |
+| `contents/CANON.md?ref=canon-md` | 200 — 365 bytes, git blob sha **9688e8bb4e** (byte-identical) |
+| CANON.md content (decoded) | schema-valid stub: canon:1, name AI-Writings, state active, family infra, feeds [duke-lab, quilt-live-canon], ledger git-log, verified 2026-09-18 — inside the MAX_LINES guard |
+| `compare/main...canon-md` | **status=behind, ahead_by=0, behind_by=518, total_commits=0, files_changed=0** — canon-md is strictly an ancestor of main; a merge would be a no-op |
+| branch heads | canon-md `6fd1a351` (2026-09-18T04:38Z, "CANON.md: AI-Writings joins the fleet canon (Layer C)") vs main `2dd73f47` (2026-09-28T21:21Z, claude agent) |
+| prior intent | a Sept-22 status check already confirmed CANON.md present on main — the file reached main organically (cherry-pick or an early merge) within days of the issue being filed |
+| fleet-canon repo | `GET /repos/SuperInstance/fleet-canon` → **404** — the lint tool is not on this account, so the sweep cannot be re-run from here (1/27→2/27 stays a historical claim) |
+| canon edges | duke-lab HAS a CANON.md on main (416b, f89117443c, verified 2026-09-18); quilt-live-canon exists (live-canon reader, pushed 2026-09-24) |
+
+**Decision: DO NOT MERGE — the merge is provably empty.** `ahead_by=0` with `files_changed=0` means there is nothing on canon-md that main lacks; a merge call would change nothing and would satisfy nobody. The issue's own reopen comment defines the alternative resolution path — "confirm content is already equivalent" — and the blob-sha equality (9688e8bb4e on both refs) is exactly that confirmation, at byte precision.
+
+**Action taken:** comment on #38 with the evidence table (blob-sha equality, compare numbers, main-head and branch-head shas, fleet-canon 404 note) and close as **completed** — not "stale" — because the no-deletion doctrine bars stale-dismissal while explicitly sanctioning resolution-by-equivalence-confirmation. The `canon-md` branch is left undeleted (no-deletion doctrine). Outcome receipt appended below after the calls.
+
+## 6. Advance-target list (prioritized next-lane actions)
+
+1. **[DONE this lane] AI-Writings #38** — evidence-commented + closed completed (§5). Residual: if a future lint sweep runs, expect AI-Writings already counted; the declared feeds (duke-lab ✓ has canon, quilt-live-canon — needs a canon stub) are the next coverage items.
+2. **qthe-verify: give the repo its body.** Root = LICENSE only; the real verifier sits in fleet-seeds/qthe-verify/ (wave M8). Port README + reference/qthe-kernel.mjs + verify.mjs + corpus + tools into SuperInstance/qthe-verify (direct push, 53-a precedent — it is a SuperInstance repo with a fleet-authored purpose and an empty shell today).
+3. **quilt SYNERGY #3/#4 — start the coordination debt repayment.** Eight open proposals by a fleet author, zero progress. Pick SYNERGY-1 (Tap→Quilt living room, room-as-cell): post a concrete work-plan comment on #3 that binds it to assets we already own (quilt-qcells cell ledger 16/16, jev-garden systemone serve, quilt-atlas cell fabric) with owners and a first-mile checklist.
+4. **pong-quilt #49 + pong49 scorer window.** `scripts/pong49_scorer.mjs` is landed; window opens 2026-09-29T10:04Z. Run it, then reply on #49 with the score receipt AND our own stone-v1 verification of their r37 claim (tools/lib/stone-v1.mjs exists) — mirror their letters-only etiquette, propose the next r-chain checkpoint.
+5. **SmartCRDT dependabot #71/#72/#74** — three dev-dep bumps (eslint group ×3, testing group ×2, prettier patch). All safe-range; check CI green on each head branch, then merge (keeper has merged every fleet-presented PR today — this is more of the same discipline), or post a per-PR triage comment if CI is red.
+6. **TS7 post-merge health check (quilt-cloudflare #15, quilt #31).** The typescript 6.0.3→7.0.2 majors are already on both mains (merged 15:19Z) — the risk has moved from "should we merge" to "did anything break after". Verify Actions runs green + `tsc --noEmit` on both repos; the claude agent's rate-component (post-bump commits) is a good stress test. Open receipted issues with failures if any.
+7. **PuddnHead README gift (content warrants).** Seven real essays, zero structure: gift a PR adding a README that indexes thought1-7 with one-line extracts + reading order (thought1 maps Pudd'nhead Wilson onto the JEV/quilt architecture — lead with it). PR only; principal's personal repo.
+8. **CCC `<ccc@fleet.local>` identity reconciliation.** 6 commits on MicroMoth-quilt/quilt/quilt-cloudflare from an identity matching no documented lane. Ask the principal (or check .mailmap/hooks): sanctioned sibling lane → document it in FLEET.md; unsanctioned → account-integrity item. Also worth reading quilt-research-canons' kimi1 commit (second stranger identity) with the same question in mind.
+
+Honorable mentions: glyphcast/glyphspace Phase-0 prediction registration (seedbox-style, matches house method); mavis-pincher lineage map (which pincher is canonical); cellforge↔quilt-raw rewind cross-verification letter; quilt-codespace-lab attempt-8 recipe productization.
