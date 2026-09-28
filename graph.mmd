@@ -1,0 +1,45 @@
+graph LR
+  cargo_line_tycoon["cargo-line-tycoon"]
+  jev_quilt["jev-quilt"]
+  qthe["qthe"]
+  pong_quilt["pong-quilt"]
+  chiaroscuro["chiaroscuro"]
+  eos_seed["eos-seed"]
+  quilt_dba["quilt-dba"]
+  exoj["exoj"]
+  fleet_seeds["fleet-seeds"]
+  hermes_construct["hermes-construct"]
+  laya4quilt["laya4quilt"]
+  micrograd_quilt["micrograd-quilt"]
+  NousResearch_hermes_agent["NousResearch/hermes-agent"]
+  NandhaKishorM_laya["NandhaKishorM/laya"]
+  karpathy_micrograd["karpathy/micrograd"]
+  quilt_edge_ml["quilt-edge-ml"]
+  tessera["tessera"]
+  cargo_line_tycoon ==>|grown on| jev_quilt
+  cargo_line_tycoon -.->|consumes| jev_quilt
+  cargo_line_tycoon ---|related| qthe
+  cargo_line_tycoon ---|related| pong_quilt
+  eos_seed ==>|grown on| quilt_dba
+  eos_seed ==>|grown on| exoj
+  eos_seed ---|related| pong_quilt
+  fleet_seeds -.->|consumes| jev_quilt
+  hermes_construct ==>|grown on| jev_quilt
+  hermes_construct ---|related| laya4quilt
+  hermes_construct ---|related| micrograd_quilt
+  hermes_construct ===>|fork of| NousResearch_hermes_agent
+  laya4quilt ==>|grown on| jev_quilt
+  laya4quilt -.->|consumes| jev_quilt
+  laya4quilt ---|related| hermes_construct
+  laya4quilt ---|related| micrograd_quilt
+  laya4quilt ===>|fork of| NandhaKishorM_laya
+  micrograd_quilt ==>|grown on| jev_quilt
+  micrograd_quilt ---|related| laya4quilt
+  micrograd_quilt ---|related| hermes_construct
+  micrograd_quilt ===>|fork of| karpathy_micrograd
+  pong_quilt ==>|grown on| quilt_edge_ml
+  pong_quilt -.->|consumes| quilt_edge_ml
+  pong_quilt ---|related| eos_seed
+  pong_quilt ---|related| cargo_line_tycoon
+  tessera -.->|consumes| chiaroscuro
+  tessera ---|related| pong_quilt
