@@ -1,0 +1,11 @@
+{
+  "registered": {
+    "file": "claims.json",
+    "sha256": "cfaf425b42ac2824b91c9190a0d89d34be9158657815399e12e0513d4ca0118a",
+    "size_bytes": 8692,
+    "mtime_iso": "2026-09-28T00:36:49.008Z"
+  },
+  "registered_by": "lane 46-e witness-roller",
+  "method": "sha256+mtime seal BEFORE the official rollup run; pin values inside were resolved by disclosed pre-registration reconnaissance probes; the official run re-fetches every remote byte at the pinned URLs and must match these pre-registered values",
+  "key_material": "none"
+}
