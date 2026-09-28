@@ -1,0 +1,34 @@
+{
+  "instrument": "scripts/46b-moth/46b-deepseek-predict.mjs (project-side runner; receipt committed by lane 46-b)",
+  "step": "blind prediction BEFORE the registered run (1 call = the lane deepseek cap)",
+  "ts": "2026-09-28T00:48:20.306Z",
+  "ms": 1271,
+  "endpoint": "POST https://api.deepseek.com/chat/completions",
+  "request": {
+    "model": "deepseek-chat",
+    "max_tokens": 800,
+    "response_format": "json_object",
+    "keyHandling": "DEEPSEEK_API_KEY runtime-only; never printed/committed"
+  },
+  "httpStatus": 200,
+  "usage": {
+    "prompt_tokens": 379,
+    "completion_tokens": 143,
+    "total_tokens": 522,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 379
+  },
+  "servedModel": "deepseek-flash",
+  "promptContext": "comet-qrng-v1 description + wave-45 historical h_bit 0.8945 and single prior balance 0.4918; NO current-run data (run had not happened)",
+  "predictionRaw": "{\"mean_balance_point\": 0.5000, \"p_pooled_in_band\": 0.9999, \"p_all5_in_band\": 0.9996, \"reasoning\": \"Extracted bits are near-uniform 0/1 (min-entropy ~0.89, Toeplitz extraction whitens bias). Balance SD ~0.5/sqrt(n); each job ~584 bits gives SD~0.021, well inside [0.45,0.55]. Pooled ~2920 bits SD~0.0092, virtually certain in band. Prior 0.4918 is sampling noise.\", \"confidence\": 0.93}",
+  "prediction": {
+    "mean_balance_point": 0.5,
+    "p_pooled_in_band": 0.9999,
+    "p_all5_in_band": 0.9996,
+    "reasoning": "Extracted bits are near-uniform 0/1 (min-entropy ~0.89, Toeplitz extraction whitens bias). Balance SD ~0.5/sqrt(n); each job ~584 bits gives SD~0.021, well inside [0.45,0.55]. Pooled ~2920 bits SD~0.0092, virtually certain in band. Prior 0.4918 is sampling noise.",
+    "confidence": 0.93
+  }
+}

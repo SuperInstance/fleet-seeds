@@ -1,0 +1,372 @@
+{
+  "instrument": "fleet-seeds/tools/moth-seal.mjs",
+  "runId": "46b-registered-run",
+  "ts": "2026-09-28T00:53:22.385Z",
+  "claimsGate": {
+    "claimsSha256": "d44da4af71cfdea33038f1771695a9a3260cd6611ca3eabfb9a02e3aecc33c50",
+    "sealedSha256": "d44da4af71cfdea33038f1771695a9a3260cd6611ca3eabfb9a02e3aecc33c50",
+    "match": true,
+    "sealedAt": "2026-09-28T00:46:31.607Z"
+  },
+  "jobsUsed": 7,
+  "jobCap": 10,
+  "jobRows": [
+    {
+      "jobName": "k1",
+      "engine": "comet-qrng-v1",
+      "mode": "certified",
+      "jobId": "227d8a77-fe13-4a17-8341-91deabedc891",
+      "polls": 6,
+      "ms": 21132,
+      "selected": [
+        1050,
+        673,
+        284,
+        481,
+        931,
+        910,
+        589,
+        725,
+        7,
+        471,
+        464,
+        672,
+        632,
+        367,
+        1040,
+        967
+      ]
+    },
+    {
+      "jobName": "k2",
+      "engine": "comet-qrng-v1",
+      "mode": "certified",
+      "jobId": "ff47767b-7a3c-493c-a247-77de66a7dc0d",
+      "polls": 6,
+      "ms": 19808,
+      "selected": [
+        787,
+        171,
+        114,
+        596,
+        793,
+        376,
+        781,
+        458,
+        503,
+        766,
+        411,
+        201,
+        610,
+        247,
+        938,
+        673
+      ]
+    },
+    {
+      "jobName": "k3",
+      "engine": "comet-qrng-v1",
+      "mode": "certified",
+      "jobId": "b1fccc10-0bfb-499e-bf2a-69e4dc6f23d4",
+      "polls": 6,
+      "ms": 19728,
+      "selected": [
+        785,
+        413,
+        338,
+        637,
+        836,
+        289,
+        735,
+        1106,
+        1073,
+        302,
+        1085,
+        847,
+        191,
+        109,
+        918,
+        690
+      ]
+    },
+    {
+      "jobName": "k4",
+      "engine": "comet-qrng-v1",
+      "mode": "certified",
+      "jobId": "e5b989f7-f45f-4f50-a5e5-e0d15a01f3be",
+      "polls": 6,
+      "ms": 19567,
+      "selected": [
+        993,
+        635,
+        344,
+        429,
+        446,
+        313,
+        363,
+        880,
+        970,
+        1037,
+        927,
+        585,
+        330,
+        331,
+        204,
+        801
+      ]
+    },
+    {
+      "jobName": "k5",
+      "engine": "comet-qrng-v1",
+      "mode": "certified",
+      "jobId": "ed553fab-7445-4f16-94b8-26bceb515299",
+      "polls": 6,
+      "ms": 19440,
+      "selected": [
+        610,
+        522,
+        838,
+        208,
+        358,
+        1084,
+        890,
+        1007,
+        828,
+        655,
+        451,
+        229,
+        224,
+        140,
+        430,
+        400
+      ]
+    },
+    {
+      "jobName": "fallback",
+      "engine": "graph-v1",
+      "mode": "FALLBACK",
+      "jobId": "d1f23314-0f39-4f12-996d-a49bc4531dcc",
+      "polls": 2,
+      "ms": 8991,
+      "selected": [
+        966,
+        764,
+        348,
+        219,
+        227,
+        514,
+        428,
+        848,
+        944,
+        1091,
+        1017,
+        309,
+        443,
+        1082,
+        979,
+        914
+      ]
+    },
+    {
+      "jobName": "demo",
+      "engine": "comet-qrng-v1",
+      "mode": "certified",
+      "jobId": "4caec968-16f5-409f-948a-dab4baf6f06f",
+      "polls": 6,
+      "ms": 19571,
+      "selected": [
+        6,
+        1,
+        5,
+        3
+      ]
+    }
+  ],
+  "P1": {
+    "perSealBalances": {
+      "k1": 0.5181,
+      "k2": 0.4932,
+      "k3": 0.5122,
+      "k4": 0.5168,
+      "k5": 0.5098
+    },
+    "pooledBalance": 0.513,
+    "pooledBits": 5392,
+    "pooledOnes": 2766,
+    "band": "[0.45,0.55]",
+    "perSealAllInBand": true,
+    "pooledInBand": true,
+    "verdict": "PASS"
+  },
+  "P2": {
+    "seals": [
+      {
+        "label": "46b-seal-k1",
+        "jobId": "227d8a77-fe13-4a17-8341-91deabedc891",
+        "healthPassed": true,
+        "hBit": 0.8938409594591646,
+        "extractor": "toeplitz",
+        "commitmentBinds": 4,
+        "pulseHashLen": 64,
+        "deviceFpP1": 20
+      },
+      {
+        "label": "46b-seal-k2",
+        "jobId": "ff47767b-7a3c-493c-a247-77de66a7dc0d",
+        "healthPassed": true,
+        "hBit": 0.897580243512343,
+        "extractor": "toeplitz",
+        "commitmentBinds": 4,
+        "pulseHashLen": 64,
+        "deviceFpP1": 20
+      },
+      {
+        "label": "46b-seal-k3",
+        "jobId": "b1fccc10-0bfb-499e-bf2a-69e4dc6f23d4",
+        "healthPassed": true,
+        "hBit": 0.9142497648620128,
+        "extractor": "toeplitz",
+        "commitmentBinds": 4,
+        "pulseHashLen": 64,
+        "deviceFpP1": 20
+      },
+      {
+        "label": "46b-seal-k4",
+        "jobId": "e5b989f7-f45f-4f50-a5e5-e0d15a01f3be",
+        "healthPassed": true,
+        "hBit": 0.8984231434770307,
+        "extractor": "toeplitz",
+        "commitmentBinds": 4,
+        "pulseHashLen": 64,
+        "deviceFpP1": 20
+      },
+      {
+        "label": "46b-seal-k5",
+        "jobId": "ed553fab-7445-4f16-94b8-26bceb515299",
+        "healthPassed": true,
+        "hBit": 0.9095364656364815,
+        "extractor": "toeplitz",
+        "commitmentBinds": 4,
+        "pulseHashLen": 64,
+        "deviceFpP1": 20
+      },
+      {
+        "label": "wave46-near-arc-spot-audit",
+        "jobId": "4caec968-16f5-409f-948a-dab4baf6f06f",
+        "healthPassed": true,
+        "hBit": 0.8918818058012464,
+        "extractor": "toeplitz",
+        "commitmentBinds": 4,
+        "pulseHashLen": 64,
+        "deviceFpP1": 20
+      }
+    ],
+    "certErrorTripped": false,
+    "verdict": "PASS (all 6 comet seals carried full certification payloads; zero CertError trips)"
+  },
+  "P3": {
+    "fallbackLabeled": true,
+    "katReference": "tools/fixtures/moth-42b-raw-bits-2caa822b-7c46-4f65-a0c9-152c46272e19.txt (42-b sealed KAT, byte-exact, lane 43-c)",
+    "sourceVerdict": "graph-v1 top-20 truncation confirmed in wave-45 census (P1); distinct=20, shotsSeen=137/1024",
+    "verdict": "PASS"
+  },
+  "P4": {
+    "sealsChecked": 6,
+    "jobIdsDistinct": 6,
+    "byteStreamsDistinct": 6,
+    "permutationPairs": [
+      {
+        "pair": "1-2",
+        "identical": false
+      },
+      {
+        "pair": "1-3",
+        "identical": false
+      },
+      {
+        "pair": "1-4",
+        "identical": false
+      },
+      {
+        "pair": "1-5",
+        "identical": false
+      },
+      {
+        "pair": "2-3",
+        "identical": false
+      },
+      {
+        "pair": "2-4",
+        "identical": false
+      },
+      {
+        "pair": "2-5",
+        "identical": false
+      },
+      {
+        "pair": "3-4",
+        "identical": false
+      },
+      {
+        "pair": "3-5",
+        "identical": false
+      },
+      {
+        "pair": "4-5",
+        "identical": false
+      }
+    ],
+    "identicalPairs": 0,
+    "verdict": "PASS"
+  },
+  "P5": {
+    "demo": {
+      "label": "wave46-near-arc-spot-audit",
+      "selected": [
+        6,
+        1,
+        5,
+        3
+      ],
+      "poolSize": 10,
+      "take": 4,
+      "mode": "certified",
+      "jobId": "4caec968-16f5-409f-948a-dab4baf6f06f",
+      "hexSha256": "922b3d64e91a0813ab8db8765359ba04ea307b943f1903ef305586469193f8dc",
+      "stream": "certified-direct",
+      "consumedBits": 144,
+      "deliveredBits": 456
+    },
+    "schemaValidatedAll": true,
+    "verdict": "PASS"
+  },
+  "deepseekBlindPredictionScore": {
+    "predictionTs": "2026-09-28T00:48:20.306Z",
+    "servedModel": "deepseek-flash",
+    "usage": {
+      "prompt_tokens": 379,
+      "completion_tokens": 143,
+      "total_tokens": 522,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 379
+    },
+    "predicted": {
+      "mean_balance_point": 0.5,
+      "p_pooled_in_band": 0.9999,
+      "p_all5_in_band": 0.9996,
+      "confidence": 0.93
+    },
+    "actual": {
+      "meanBalance": 0.51,
+      "pooledInBand": true,
+      "all5InBand": true
+    },
+    "brier_pooled": 0,
+    "brier_all5": 0,
+    "absError_point": 0.01
+  },
+  "rawDisclosure": "full redacted raw API results committed per seal (46b-raw-*.json); redaction covers presigned URLs/tokens only — counts and cert payloads intact"
+}

@@ -1,0 +1,126 @@
+{
+  "instrument": "fleet-seeds/tools/moth-seal.mjs",
+  "sealVersion": "1",
+  "schema": "moth-seal/receipt-v1",
+  "ts": "2026-09-28T00:52:52.700Z",
+  "label": "46b-fallback-live",
+  "mode": "FALLBACK",
+  "seedUseDeclaration": {
+    "consumer": "46b-fallback-live",
+    "poolSize": 1134,
+    "take": 16,
+    "stream": "whitening(mothbits-registered-recipe)",
+    "declaredAt": "2026-09-28T00:52:52.700Z",
+    "singleUse": true,
+    "binding": "this seal binds seed material (jobId + seed-material sha256) to the ONE draw described by chosen{} for the consumer above; re-deriving another permutation from the same material is a protocol violation, detectable by comparing receipts (same jobId or same seed-material sha256 twice = reuse)",
+    "note": "FALLBACK PATH — source is graph-v1 (top-20-truncated, NOT a certified QRNG raw) + registered whitening; not certified randomness"
+  },
+  "job": {
+    "engine": "graph-v1",
+    "jobId": "d1f23314-0f39-4f12-996d-a49bc4531dcc",
+    "finalStatus": "completed",
+    "polls": 2,
+    "params": {
+      "mode": "emu",
+      "num_qubits": 12,
+      "shots": 1024
+    }
+  },
+  "certifiedBits": null,
+  "cert": null,
+  "fallback": {
+    "reason": "explicit --fallback flag (comet unavailable or operator-degraded mode)",
+    "engine": "graph-v1",
+    "sourceVerdict": "graph-v1 top-20 truncation confirmed in wave-45 census (P1); distinct=20, shotsSeen=137/1024",
+    "rawBits": {
+      "len": 1644,
+      "sha256": "3d48bb43fa549a8f043f847a49d5bac9f22d8fc68304219157a7c64251f0d8f8",
+      "distinct": 20,
+      "outcomeWidth": 12
+    },
+    "whitening": {
+      "instrument": "fleet-seeds/tools/mothbits.mjs",
+      "recipe": "STEP1 von Neumann debias (pairs 01->0, 10->1, 00/11 discard) -> STEP2 MSB-first byte pack (trailing zero pad, pad_len receipted) -> STEP3 SHA-256 counter stream block_c = SHA256(u32be(c) || vn_bytes), consumed MSB-first -> STEP4 Fisher-Yates over the pool (registered census order), 16-bit rejection-sampled draws, selected = first take IN MOTH SHUFFLE ORDER",
+      "input": {
+        "kind": "raw_bits",
+        "len": 1644,
+        "sha256": "3d48bb43fa549a8f043f847a49d5bac9f22d8fc68304219157a7c64251f0d8f8"
+      },
+      "step1_vonNeumann": {
+        "bitsLen": 576,
+        "bitsSha256": "6fe029eb1503eefa52992929cf511d07848738b6b442586b1fd2f249e8e297f3",
+        "pairStats": {
+          "pairs": 822,
+          "emit0": 467,
+          "emit1": 109,
+          "discard00": 80,
+          "discard11": 166
+        }
+      },
+      "step2_pack": {
+        "bytesLen": 72,
+        "padLen": 0,
+        "bytesSha256": "f730471dcdebb5556013a55fc81fc160e029ce79cb57bfa266447d0edebbcfa5"
+      },
+      "step3_counterStream": {
+        "block0Hex": "534c670ac8fd8f6d6b0964d55e04c29bd319fa9b8195e0d446759bc6172a0c6b",
+        "block0Sha256": "b24783f1dc9de154d0d1a08f86da7df5fcacae190db3c06e8164969ce7d3b4b5",
+        "note": "the 256-bit SEED is block_0; whitened_seed_sha256 = SHA-256(block_0)"
+      },
+      "step4_fisherYates": {
+        "poolSize": 1134,
+        "take": 16,
+        "selected": [
+          966,
+          764,
+          348,
+          219,
+          227,
+          514,
+          428,
+          848,
+          944,
+          1091,
+          1017,
+          309,
+          443,
+          1082,
+          979,
+          914
+        ],
+        "draws": 1138,
+        "rejects": 5
+      },
+      "keysUsed": "none"
+    },
+    "katReference": "tools/fixtures/moth-42b-raw-bits-2caa822b-7c46-4f65-a0c9-152c46272e19.txt (42-b sealed KAT, byte-exact, lane 43-c)"
+  },
+  "rawResultSha256": "ed71ad8ad7c12f9758b39724deea30cf5300cc4ebfdad11b6186351a78381d86",
+  "chosen": {
+    "poolSize": 1134,
+    "take": 16,
+    "selected": [
+      966,
+      764,
+      348,
+      219,
+      227,
+      514,
+      428,
+      848,
+      944,
+      1091,
+      1017,
+      309,
+      443,
+      1082,
+      979,
+      914
+    ],
+    "draws": 1138,
+    "rejects": 5,
+    "shuffleOrderHead": null
+  },
+  "keysUsed": "MOTH_KEY runtime-only (never printed, never receipted)",
+  "note": ""
+}

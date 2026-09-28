@@ -1,0 +1,1528 @@
+{
+  "instrument": "fleet-seeds/tools/moth-seal.mjs",
+  "sealVersion": "1",
+  "schema": "moth-seal/receipt-v1",
+  "ts": "2026-09-28T00:52:12.583Z",
+  "label": "46b-seal-k4",
+  "mode": "certified",
+  "seedUseDeclaration": {
+    "consumer": "46b-seal-k4",
+    "poolSize": 1134,
+    "take": 16,
+    "stream": "prf",
+    "declaredAt": "2026-09-28T00:52:12.583Z",
+    "singleUse": true,
+    "binding": "this seal binds seed material (jobId + seed-material sha256) to the ONE draw described by chosen{} for the consumer above; re-deriving another permutation from the same material is a protocol violation, detectable by comparing receipts (same jobId or same seed-material sha256 twice = reuse)"
+  },
+  "job": {
+    "engine": "comet-qrng-v1",
+    "jobId": "e5b989f7-f45f-4f50-a5e5-e0d15a01f3be",
+    "finalStatus": "completed",
+    "polls": 6,
+    "params": {
+      "mode": "emu",
+      "num_qubits": 12,
+      "shots": 4096,
+      "output_bytes": 512,
+      "include_raw_counts": true,
+      "bell_witness": true
+    }
+  },
+  "certifiedBits": {
+    "requestedBytes": 512,
+    "deliveredBytes": 97,
+    "bits": 776,
+    "hexSha256": "f957aa5ade079d90093b3e6600a0bff60d03258fb288113ad554a683689d3402",
+    "balance": 0.516753,
+    "declaredBits": 776,
+    "hBit": 0.8984231434770307,
+    "grade": "simulator-baseline",
+    "healthPassed": true,
+    "budgetBits": 909.2474582477662,
+    "effectiveEntropyBits": 909.25,
+    "stream": "prf-extension(mothbits-STEP3)",
+    "consumedBits": 18176,
+    "requiredBits": 18128,
+    "extractor": {
+      "kind": "toeplitz",
+      "publicSeed": "toeplitz-v1",
+      "inputBits": 49152,
+      "outputBits": 776,
+      "epsilonLog2": 64
+    }
+  },
+  "cert": {
+    "entropyReport": {
+      "accounting_basis": "modelled-independence",
+      "assumptions": [
+        "shots are independent repetitions (untestable without per-shot memory)",
+        "per-bit min-entropy = min(per-qubit MCV, pairwise joint MCV/2) at 99% confidence",
+        "qubits within a shot carry no dependence beyond pairwise correlations: this is ASSUMED, not proven — it is falsified (health failure) only when collision counts on the full register or on 512 random 8/16-qubit sub-registers exceed the pairwise tree model's prediction, which catches any structure collapsing a tested alphabet below ~2·log2(shots) bits and nothing subtler",
+        "ordering entropy log2(shots!) subtracted because the backend returned counts only",
+        "the assumption-free tier (whole-shot MCV) is capped near log2(shots) bits per shot by sample size and is ≈0 in counts mode",
+        "extractor seed: uniform, from the shipped seed ceremony (see seeds/README.md); strong-extractor seeds may be public and reused",
+        "no statistical test on S shots can establish more than ~log2(S) bits per shot without a structural assumption; the modelled tier makes one and names it"
+      ],
+      "budget_bits": 909.2474582477662,
+      "budget_bits_assumption_free": 0,
+      "budget_bits_modelled": 909.2474582477662,
+      "entropy_accounted": false,
+      "epsilon_log2": 64,
+      "grade": "simulator-baseline",
+      "h_bit": 0.8984231434770307,
+      "h_shot_assumption_free": 8.378755220123537,
+      "health_passed": true,
+      "independence_model_falsified": false,
+      "output_bits": 776,
+      "public_output": true,
+      "raw_bits": 49152,
+      "seed_mode": "shipped",
+      "statements": [
+        "49152 raw Born-rule bits from 12 qubits × 4096 shots (counts readout)",
+        "conservative per-bit min-entropy h = 0.8984 (SP 800-90B estimators at 99% confidence)",
+        "modelled budget = 909.2 bits (no dependence beyond pairwise correlations — ASSUMED, tested only by collision consistency against the pairwise tree model: full-register z = 0.02, 0/256 sub-registers failed)",
+        "assumption-free budget = 0.0 bits (whole-shot most-common-value bound, 8.38 bits/shot; capped near log2(shots) by sample size)",
+        "extractable min-entropy budget = 909.2 bits after subtracting log2(shots!) = 43250.0 bits for counts-only readout",
+        "bytes were extracted on the modelled-independence tier",
+        "Toeplitz extractor output 776 bits, 2^-64-close to uniform given that budget (leftover hash lemma: m ≤ budget − 2·64); seed 'toeplitz-v1' is a shipped uniform seed from a documented ceremony (information-theoretic)",
+        "OUTPUT BYTES ARE PUBLIC: recomputable by anyone from the raw counts and the seed. Not key material.",
+        "requested 512 bytes, delivered 97: budget-limited",
+        "mode='emu': bits come from a classical simulator's PRNG; not accounted as hardware entropy by construction",
+        "CHSH witness S = 2.790 ± 0.022 (violates the classical bound at 3σ)"
+      ],
+      "witness_violates_classical": true
+    },
+    "extractor": {
+      "epsilon_log2": 64,
+      "input_bits": 49152,
+      "input_serialisation": "sorted bitstrings repeated by count (canonical multiset)",
+      "kind": "toeplitz",
+      "output_bits": 776,
+      "public_seed": "toeplitz-v1",
+      "seed_id": "toeplitz-v1",
+      "seed_mode": "shipped"
+    },
+    "deviceFingerprint": {
+      "bias_pvalues": [
+        0.3405276433739561,
+        0.19466801006943088,
+        0.8390404297215438,
+        0.4076027137221254,
+        0.4076027137221254,
+        0.22892371643656792,
+        0.6061217285755821,
+        0.962613611976425,
+        0.48198236380057324,
+        0.03768492572466914,
+        0.5016680544578743,
+        0.09453692965659755,
+        0.30980768828658806,
+        0.8390404297215438,
+        0.696079424504532,
+        0.9875338146362402,
+        0.888168413744764,
+        0.7428216578835588,
+        0.8146973647982482,
+        0.9129068062781927
+      ],
+      "n_qubits": 20,
+      "n_significant_pairs": 4,
+      "note": "⟨Z⟩ on randomness qubits should be ≈0 (readout/prep bias shows as a nonzero value); witness qubits are expected to be biased by their rotated bases. ZZ pairs between randomness qubits should be ≈0 — nonzero values are crosstalk / correlated readout and lower the entropy budget.",
+      "p1": [
+        0.492431640625,
+        0.48974609375,
+        0.501708984375,
+        0.493408203125,
+        0.506591796875,
+        0.490478515625,
+        0.495849609375,
+        0.49951171875,
+        0.494384765625,
+        0.483642578125,
+        0.49462890625,
+        0.48681640625,
+        0.508056640625,
+        0.501708984375,
+        0.496826171875,
+        0.499755859375,
+        0.498779296875,
+        0.497314453125,
+        0.498046875,
+        0.5009765625
+      ],
+      "roles": {
+        "randomness": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "witness_pairs": [
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            18,
+            19
+          ]
+        ]
+      },
+      "stuck_qubits": [],
+      "top_correlated_pairs": [
+        {
+          "h_pair": 1.1500944368029287,
+          "p_max_joint": 0.4306640625,
+          "phi": 0.7148430785515487,
+          "qubits": [
+            16,
+            17
+          ],
+          "z": 45.74995702729912
+        },
+        {
+          "h_pair": 1.1563973562843932,
+          "p_max_joint": 0.4287109375,
+          "phi": 0.695351762192209,
+          "qubits": [
+            12,
+            13
+          ],
+          "z": 44.50251278030137
+        },
+        {
+          "h_pair": 1.168292836400192,
+          "p_max_joint": 0.425048828125,
+          "phi": -0.6943531085487097,
+          "qubits": [
+            14,
+            15
+          ],
+          "z": -44.43859894711742
+        },
+        {
+          "h_pair": 1.1786851414351849,
+          "p_max_joint": 0.421875,
+          "phi": 0.6855610424253394,
+          "qubits": [
+            18,
+            19
+          ],
+          "z": 43.875906715221724
+        },
+        {
+          "h_pair": 1.8014136957672469,
+          "p_max_joint": 0.26904296875,
+          "phi": 0.053158314544681826,
+          "qubits": [
+            5,
+            18
+          ],
+          "z": 3.402132130859637
+        },
+        {
+          "h_pair": 1.8421103683570927,
+          "p_max_joint": 0.26123046875,
+          "phi": 0.037150320219433784,
+          "qubits": [
+            8,
+            13
+          ],
+          "z": 2.377620494043762
+        },
+        {
+          "h_pair": 1.8395318303891863,
+          "p_max_joint": 0.26171875,
+          "phi": 0.035123370383052195,
+          "qubits": [
+            14,
+            17
+          ],
+          "z": 2.2478957045153405
+        },
+        {
+          "h_pair": 1.814004637442806,
+          "p_max_joint": 0.2666015625,
+          "phi": -0.03492088172932337,
+          "qubits": [
+            0,
+            12
+          ],
+          "z": -2.234936430676696
+        },
+        {
+          "h_pair": 1.8254342415075089,
+          "p_max_joint": 0.264404296875,
+          "phi": 0.034625285968684506,
+          "qubits": [
+            1,
+            16
+          ],
+          "z": 2.2160183019958084
+        },
+        {
+          "h_pair": 1.8254342415075089,
+          "p_max_joint": 0.264404296875,
+          "phi": 0.03306002492787746,
+          "qubits": [
+            3,
+            8
+          ],
+          "z": 2.1158415953841576
+        },
+        {
+          "h_pair": 1.8228862436830497,
+          "p_max_joint": 0.264892578125,
+          "phi": -0.033035059585198784,
+          "qubits": [
+            3,
+            4
+          ],
+          "z": -2.114243813452722
+        },
+        {
+          "h_pair": 1.857682250451337,
+          "p_max_joint": 0.25830078125,
+          "phi": 0.032228546687508866,
+          "qubits": [
+            7,
+            19
+          ],
+          "z": 2.0626269880005674
+        },
+        {
+          "h_pair": 1.8216139837406056,
+          "p_max_joint": 0.26513671875,
+          "phi": 0.03137879775463958,
+          "qubits": [
+            2,
+            9
+          ],
+          "z": 2.008243056296933
+        },
+        {
+          "h_pair": 1.8356729167546284,
+          "p_max_joint": 0.262451171875,
+          "phi": -0.031202020119115336,
+          "qubits": [
+            0,
+            13
+          ],
+          "z": -1.9969292876233815
+        },
+        {
+          "h_pair": 1.8550748650283373,
+          "p_max_joint": 0.2587890625,
+          "phi": 0.030269868178073332,
+          "qubits": [
+            7,
+            18
+          ],
+          "z": 1.9372715633966933
+        },
+        {
+          "h_pair": 1.8241596622352738,
+          "p_max_joint": 0.2646484375,
+          "phi": 0.029424615323260715,
+          "qubits": [
+            9,
+            13
+          ],
+          "z": 1.8831753806886857
+        }
+      ],
+      "z_expectations": [
+        0.01513671875,
+        0.0205078125,
+        -0.00341796875,
+        0.01318359375,
+        -0.01318359375,
+        0.01904296875,
+        0.00830078125,
+        0.0009765625,
+        0.01123046875,
+        0.03271484375,
+        0.0107421875,
+        0.0263671875,
+        -0.01611328125,
+        -0.00341796875,
+        0.00634765625,
+        0.00048828125,
+        0.00244140625,
+        0.00537109375,
+        0.00390625,
+        -0.001953125
+      ],
+      "zz_pairs": [
+        [
+          0,
+          1,
+          0.00146484375
+        ],
+        [
+          0,
+          2,
+          -0.0078125
+        ],
+        [
+          0,
+          3,
+          0.017578125
+        ],
+        [
+          0,
+          4,
+          -0.0068359375
+        ],
+        [
+          0,
+          5,
+          -0.01953125
+        ],
+        [
+          0,
+          6,
+          0.0068359375
+        ],
+        [
+          0,
+          7,
+          0.01416015625
+        ],
+        [
+          0,
+          8,
+          -0.0048828125
+        ],
+        [
+          0,
+          9,
+          0.0244140625
+        ],
+        [
+          0,
+          10,
+          0.01318359375
+        ],
+        [
+          0,
+          11,
+          -0.01513671875
+        ],
+        [
+          0,
+          12,
+          -0.03515625
+        ],
+        [
+          0,
+          13,
+          -0.03125
+        ],
+        [
+          0,
+          14,
+          0.01171875
+        ],
+        [
+          0,
+          15,
+          -0.0029296875
+        ],
+        [
+          0,
+          16,
+          0.0078125
+        ],
+        [
+          0,
+          17,
+          0.00390625
+        ],
+        [
+          0,
+          18,
+          -0.01318359375
+        ],
+        [
+          0,
+          19,
+          -0.00927734375
+        ],
+        [
+          1,
+          2,
+          0.00146484375
+        ],
+        [
+          1,
+          3,
+          -0.00634765625
+        ],
+        [
+          1,
+          4,
+          0.01025390625
+        ],
+        [
+          1,
+          5,
+          0.02392578125
+        ],
+        [
+          1,
+          6,
+          -0.00146484375
+        ],
+        [
+          1,
+          7,
+          -0.0166015625
+        ],
+        [
+          1,
+          8,
+          -0.01416015625
+        ],
+        [
+          1,
+          9,
+          0.01513671875
+        ],
+        [
+          1,
+          10,
+          0.005859375
+        ],
+        [
+          1,
+          11,
+          -0.0244140625
+        ],
+        [
+          1,
+          12,
+          0.00341796875
+        ],
+        [
+          1,
+          13,
+          0.01416015625
+        ],
+        [
+          1,
+          14,
+          0.00244140625
+        ],
+        [
+          1,
+          15,
+          -0.01513671875
+        ],
+        [
+          1,
+          16,
+          0.03466796875
+        ],
+        [
+          1,
+          17,
+          0.02880859375
+        ],
+        [
+          1,
+          18,
+          -0.009765625
+        ],
+        [
+          1,
+          19,
+          0.0068359375
+        ],
+        [
+          2,
+          3,
+          0
+        ],
+        [
+          2,
+          4,
+          -0.009765625
+        ],
+        [
+          2,
+          5,
+          0.013671875
+        ],
+        [
+          2,
+          6,
+          -0.02734375
+        ],
+        [
+          2,
+          7,
+          0.00732421875
+        ],
+        [
+          2,
+          8,
+          0.01953125
+        ],
+        [
+          2,
+          9,
+          0.03125
+        ],
+        [
+          2,
+          10,
+          0.00146484375
+        ],
+        [
+          2,
+          11,
+          0.00634765625
+        ],
+        [
+          2,
+          12,
+          0.0185546875
+        ],
+        [
+          2,
+          13,
+          0.0029296875
+        ],
+        [
+          2,
+          14,
+          0.009765625
+        ],
+        [
+          2,
+          15,
+          0.0009765625
+        ],
+        [
+          2,
+          16,
+          0.0029296875
+        ],
+        [
+          2,
+          17,
+          0.0068359375
+        ],
+        [
+          2,
+          18,
+          -0.00048828125
+        ],
+        [
+          2,
+          19,
+          -0.00048828125
+        ],
+        [
+          3,
+          4,
+          -0.033203125
+        ],
+        [
+          3,
+          5,
+          -0.0078125
+        ],
+        [
+          3,
+          6,
+          -0.0048828125
+        ],
+        [
+          3,
+          7,
+          0.00634765625
+        ],
+        [
+          3,
+          8,
+          0.033203125
+        ],
+        [
+          3,
+          9,
+          -0.001953125
+        ],
+        [
+          3,
+          10,
+          -0.00537109375
+        ],
+        [
+          3,
+          11,
+          -0.01025390625
+        ],
+        [
+          3,
+          12,
+          0.009765625
+        ],
+        [
+          3,
+          13,
+          0.017578125
+        ],
+        [
+          3,
+          14,
+          -0.0205078125
+        ],
+        [
+          3,
+          15,
+          0.0107421875
+        ],
+        [
+          3,
+          16,
+          0.0244140625
+        ],
+        [
+          3,
+          17,
+          0.0087890625
+        ],
+        [
+          3,
+          18,
+          0.00634765625
+        ],
+        [
+          3,
+          19,
+          -0.00537109375
+        ],
+        [
+          4,
+          5,
+          0.0009765625
+        ],
+        [
+          4,
+          6,
+          0.0078125
+        ],
+        [
+          4,
+          7,
+          -0.01025390625
+        ],
+        [
+          4,
+          8,
+          0.00390625
+        ],
+        [
+          4,
+          9,
+          -0.001953125
+        ],
+        [
+          4,
+          10,
+          0.00927734375
+        ],
+        [
+          4,
+          11,
+          0.01416015625
+        ],
+        [
+          4,
+          12,
+          0.0078125
+        ],
+        [
+          4,
+          13,
+          0.005859375
+        ],
+        [
+          4,
+          14,
+          -0.001953125
+        ],
+        [
+          4,
+          15,
+          -0.0078125
+        ],
+        [
+          4,
+          16,
+          0.0009765625
+        ],
+        [
+          4,
+          17,
+          -0.0029296875
+        ],
+        [
+          4,
+          18,
+          0.01806640625
+        ],
+        [
+          4,
+          19,
+          0.01220703125
+        ],
+        [
+          5,
+          6,
+          0.0185546875
+        ],
+        [
+          5,
+          7,
+          -0.01708984375
+        ],
+        [
+          5,
+          8,
+          0.0029296875
+        ],
+        [
+          5,
+          9,
+          0.00390625
+        ],
+        [
+          5,
+          10,
+          -0.00341796875
+        ],
+        [
+          5,
+          11,
+          -0.01611328125
+        ],
+        [
+          5,
+          12,
+          0.0009765625
+        ],
+        [
+          5,
+          13,
+          0.001953125
+        ],
+        [
+          5,
+          14,
+          -0.021484375
+        ],
+        [
+          5,
+          15,
+          0.00390625
+        ],
+        [
+          5,
+          16,
+          -0.005859375
+        ],
+        [
+          5,
+          17,
+          0.0107421875
+        ],
+        [
+          5,
+          18,
+          0.05322265625
+        ],
+        [
+          5,
+          19,
+          0.02685546875
+        ],
+        [
+          6,
+          7,
+          0.02294921875
+        ],
+        [
+          6,
+          8,
+          0.0283203125
+        ],
+        [
+          6,
+          9,
+          0.01171875
+        ],
+        [
+          6,
+          10,
+          -0.01513671875
+        ],
+        [
+          6,
+          11,
+          -0.00146484375
+        ],
+        [
+          6,
+          12,
+          0.0029296875
+        ],
+        [
+          6,
+          13,
+          0.0078125
+        ],
+        [
+          6,
+          14,
+          -0.0126953125
+        ],
+        [
+          6,
+          15,
+          0.0234375
+        ],
+        [
+          6,
+          16,
+          0.0029296875
+        ],
+        [
+          6,
+          17,
+          0.0087890625
+        ],
+        [
+          6,
+          18,
+          -0.01416015625
+        ],
+        [
+          6,
+          19,
+          -0.00830078125
+        ],
+        [
+          7,
+          8,
+          -0.01318359375
+        ],
+        [
+          7,
+          9,
+          -0.02001953125
+        ],
+        [
+          7,
+          10,
+          0.0205078125
+        ],
+        [
+          7,
+          11,
+          -0.0224609375
+        ],
+        [
+          7,
+          12,
+          -0.01416015625
+        ],
+        [
+          7,
+          13,
+          -0.00341796875
+        ],
+        [
+          7,
+          14,
+          -0.01123046875
+        ],
+        [
+          7,
+          15,
+          0.00439453125
+        ],
+        [
+          7,
+          16,
+          -0.02783203125
+        ],
+        [
+          7,
+          17,
+          -0.02490234375
+        ],
+        [
+          7,
+          18,
+          0.0302734375
+        ],
+        [
+          7,
+          19,
+          0.0322265625
+        ],
+        [
+          8,
+          9,
+          -0.00390625
+        ],
+        [
+          8,
+          10,
+          -0.01220703125
+        ],
+        [
+          8,
+          11,
+          0.00439453125
+        ],
+        [
+          8,
+          12,
+          0.0146484375
+        ],
+        [
+          8,
+          13,
+          0.037109375
+        ],
+        [
+          8,
+          14,
+          -0.013671875
+        ],
+        [
+          8,
+          15,
+          0.00390625
+        ],
+        [
+          8,
+          16,
+          -0.0048828125
+        ],
+        [
+          8,
+          17,
+          0.00390625
+        ],
+        [
+          8,
+          18,
+          -0.00537109375
+        ],
+        [
+          8,
+          19,
+          -0.02001953125
+        ],
+        [
+          9,
+          10,
+          -0.01806640625
+        ],
+        [
+          9,
+          11,
+          -0.02099609375
+        ],
+        [
+          9,
+          12,
+          0.015625
+        ],
+        [
+          9,
+          13,
+          0.029296875
+        ],
+        [
+          9,
+          14,
+          0.0126953125
+        ],
+        [
+          9,
+          15,
+          -0.0146484375
+        ],
+        [
+          9,
+          16,
+          0.005859375
+        ],
+        [
+          9,
+          17,
+          0.01171875
+        ],
+        [
+          9,
+          18,
+          -0.01025390625
+        ],
+        [
+          9,
+          19,
+          -0.01318359375
+        ],
+        [
+          10,
+          11,
+          0.017578125
+        ],
+        [
+          10,
+          12,
+          0.01708984375
+        ],
+        [
+          10,
+          13,
+          0.02099609375
+        ],
+        [
+          10,
+          14,
+          -0.01220703125
+        ],
+        [
+          10,
+          15,
+          0.01513671875
+        ],
+        [
+          10,
+          16,
+          0.00830078125
+        ],
+        [
+          10,
+          17,
+          0.01416015625
+        ],
+        [
+          10,
+          18,
+          0.025390625
+        ],
+        [
+          10,
+          19,
+          -0.0078125
+        ],
+        [
+          11,
+          12,
+          -0.01025390625
+        ],
+        [
+          11,
+          13,
+          -0.01025390625
+        ],
+        [
+          11,
+          14,
+          0.00732421875
+        ],
+        [
+          11,
+          15,
+          0.00048828125
+        ],
+        [
+          11,
+          16,
+          0.00634765625
+        ],
+        [
+          11,
+          17,
+          0.01318359375
+        ],
+        [
+          11,
+          18,
+          -0.0029296875
+        ],
+        [
+          11,
+          19,
+          -0.0234375
+        ],
+        [
+          12,
+          13,
+          0.6953125
+        ],
+        [
+          12,
+          14,
+          0.0126953125
+        ],
+        [
+          12,
+          15,
+          -0.0087890625
+        ],
+        [
+          12,
+          16,
+          0.0146484375
+        ],
+        [
+          12,
+          17,
+          0.0078125
+        ],
+        [
+          12,
+          18,
+          -0.01123046875
+        ],
+        [
+          12,
+          19,
+          -0.01806640625
+        ],
+        [
+          13,
+          14,
+          0.0009765625
+        ],
+        [
+          13,
+          15,
+          -0.0166015625
+        ],
+        [
+          13,
+          16,
+          0.0107421875
+        ],
+        [
+          13,
+          17,
+          0.0224609375
+        ],
+        [
+          13,
+          18,
+          -0.01806640625
+        ],
+        [
+          13,
+          19,
+          -0.01318359375
+        ],
+        [
+          14,
+          15,
+          -0.6943359375
+        ],
+        [
+          14,
+          16,
+          0.009765625
+        ],
+        [
+          14,
+          17,
+          0.03515625
+        ],
+        [
+          14,
+          18,
+          0.00244140625
+        ],
+        [
+          14,
+          19,
+          0.01123046875
+        ],
+        [
+          15,
+          16,
+          -0.009765625
+        ],
+        [
+          15,
+          17,
+          -0.021484375
+        ],
+        [
+          15,
+          18,
+          0.02099609375
+        ],
+        [
+          15,
+          19,
+          -0.01123046875
+        ],
+        [
+          16,
+          17,
+          0.71484375
+        ],
+        [
+          16,
+          18,
+          -0.01318359375
+        ],
+        [
+          16,
+          19,
+          -0.02490234375
+        ],
+        [
+          17,
+          18,
+          0.00146484375
+        ],
+        [
+          17,
+          19,
+          -0.01806640625
+        ],
+        [
+          18,
+          19,
+          0.685546875
+        ]
+      ]
+    },
+    "commitment": {
+      "binds": [
+        "circuit_hash",
+        "backend",
+        "provider_job_id",
+        "salt"
+      ],
+      "commit": "37f44e52d9d667c97bd3fdf3175d82020bf3c82901663e419fa4a14c437705a8",
+      "committed_at": "2026-09-28T00:52:15+00:00",
+      "note": "Formed at submit, after the provider accepted the job and before any outcome existed. Publish `commit` before collect completes for it to mean anything to a third party.",
+      "salt": "ef0fcebe7c8c9a202adc23168c661af7b034172aa9e519790a69464c855716e7"
+    },
+    "pulse": {
+      "commitment": {
+        "commit": "37f44e52d9d667c97bd3fdf3175d82020bf3c82901663e419fa4a14c437705a8",
+        "salt": "ef0fcebe7c8c9a202adc23168c661af7b034172aa9e519790a69464c855716e7"
+      },
+      "entropy": {
+        "basis": "modelled-independence",
+        "budget_bits": 909.2474582477662,
+        "budget_bits_assumption_free": 0,
+        "h_bit": 0.8984231434770307,
+        "health_passed": true,
+        "readout": "counts"
+      },
+      "extractor": {
+        "epsilon_log2": 64,
+        "input_bits": 49152,
+        "input_serialisation": "sorted bitstrings repeated by count (canonical multiset)",
+        "kind": "toeplitz",
+        "output_bits": 776,
+        "public_seed": "toeplitz-v1",
+        "seed_id": "toeplitz-v1",
+        "seed_mode": "shipped"
+      },
+      "index": null,
+      "output_hash": "f957aa5ade079d90093b3e6600a0bff60d03258fb288113ad554a683689d3402",
+      "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "provenance": {
+        "backend": "aer",
+        "built_at": "2026-09-28T00:52:14+00:00",
+        "circuit": {
+          "bell_witness": true,
+          "n_rand": 12,
+          "n_total": 20,
+          "witness_pairs": [
+            [
+              12,
+              13
+            ],
+            [
+              14,
+              15
+            ],
+            [
+              16,
+              17
+            ],
+            [
+              18,
+              19
+            ]
+          ]
+        },
+        "circuit_hash": "76b9752d54d5aa067d4b615ddb73b55669bad46a4a2d51e754d7da4bf9c05d16",
+        "collected_at": null,
+        "committed_at": "2026-09-28T00:52:15+00:00",
+        "engine": "comet-qrng-v1",
+        "engine_version": "1.0.0",
+        "formatted_at": "2026-09-28T00:52:26+00:00",
+        "initial_layout": null,
+        "mode": "emu",
+        "provider_job_id": "d4fa1530b7fa4d31af468fb7d2df5a9f",
+        "qpu_seconds": null,
+        "readout": "counts",
+        "shots": 4096
+      },
+      "pulse_hash": "0333c896e3c10812ba1382546641bc74eb390d37e1ee25ad6e31475b0c87f145",
+      "raw_counts_hash": "94df2b3dec937559ed75afd084d637d76836306403330657bd0e89240cdca37c",
+      "timestamp": "2026-09-28T00:52:26+00:00",
+      "version": 2
+    },
+    "bellWitness": {
+      "S": 2.7900390625,
+      "caveat": "Fixed measurement settings, no space-like separation, fair sampling assumed: this witnesses entangling-gate and readout fidelity on the device that produced the randomness. It is not device-independent certification.",
+      "classical_bound": 2,
+      "correlators": [
+        {
+          "E": 0.6953125,
+          "counts": {
+            "10": 325,
+            "11": 1756,
+            "00": 1716,
+            "01": 299
+          },
+          "qubits": [
+            12,
+            13
+          ],
+          "setting": "E(a,b)",
+          "sigma": 0.011229805304791918
+        },
+        {
+          "E": -0.6943359375,
+          "counts": {
+            "10": 1729,
+            "11": 306,
+            "00": 320,
+            "01": 1741
+          },
+          "qubits": [
+            14,
+            15
+          ],
+          "setting": "E(a,b')",
+          "sigma": 0.011244547353693353
+        },
+        {
+          "E": 0.71484375,
+          "counts": {
+            "10": 295,
+            "11": 1748,
+            "00": 1764,
+            "01": 289
+          },
+          "qubits": [
+            16,
+            17
+          ],
+          "setting": "E(a',b)",
+          "sigma": 0.010926315856445344
+        },
+        {
+          "E": 0.685546875,
+          "counts": {
+            "10": 316,
+            "11": 1724,
+            "00": 1728,
+            "01": 328
+          },
+          "qubits": [
+            18,
+            19
+          ],
+          "setting": "E(a',b')",
+          "sigma": 0.011375445155456486
+        }
+      ],
+      "enabled": true,
+      "equivalent_depolarising_p": 0.013572229565446237,
+      "kind": "chsh_fidelity_witness",
+      "p_value_local_realist": 5.058341561153404e-273,
+      "sigma_S": 0.022390477954983282,
+      "tsirelson_bound": 2.8284271247461903,
+      "violates_classical_3sigma": true,
+      "z_above_classical": 35.284600180862455
+    }
+  },
+  "rawResultSha256": "0bae363244e9d1aaaf40cacc77479bc3f90b6c3d641465aa51f2558e6a81f69b",
+  "chosen": {
+    "poolSize": 1134,
+    "take": 16,
+    "selected": [
+      993,
+      635,
+      344,
+      429,
+      446,
+      313,
+      363,
+      880,
+      970,
+      1037,
+      927,
+      585,
+      330,
+      331,
+      204,
+      801
+    ],
+    "draws": 1136,
+    "rejects": 3,
+    "shuffleOrderHead": [
+      993,
+      635,
+      344,
+      429,
+      446,
+      313,
+      363,
+      880,
+      970,
+      1037,
+      927,
+      585,
+      330,
+      331,
+      204,
+      801
+    ]
+  },
+  "keysUsed": "MOTH_KEY runtime-only (never printed, never receipted)",
+  "note": ""
+}
