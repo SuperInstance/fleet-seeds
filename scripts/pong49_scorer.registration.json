@@ -1,0 +1,49 @@
+{
+  "registration_id": "pong49-scorer-preparation-53f",
+  "registered_at_utc": "2026-09-28T17:21:00Z",
+  "registered_by": "lane 53-f (G7 schema + pong49 scorer preparation), wave 53",
+  "what": "PRE-REGISTRATION of the prepared pong49 scoring instrument. This file seals the sha256 of scripts/pong49_scorer.mjs BEFORE any scoring run, per the house pre-registration discipline (predictions and scoring procedures are sealed BEFORE runs).",
+  "status": "PREPARED_NOT_FIRED",
+  "scorer": {
+    "path": "scripts/pong49_scorer.mjs",
+    "sha256": "08b6480f757110760ee7ed844b89becdf13cfbfee8563fa97adc788e170bfcd1",
+    "bytes": 27156,
+    "language": "node >= 18, stdlib-only (node:fs, node:url, node:path, node:crypto)",
+    "modes": {
+      "default": "PREPARED — zero network, zero files written, exit 3 (the no-fire state itself)",
+      "--arm": "the only firing path; refuses (exit 2, NO network call) while now < window close",
+      "--selftest": "hermetic KAT + registration-binding battery; the only pre-fire execution (receipted below)"
+    }
+  },
+  "no_run_declaration": "As of this registration, the scorer has NOT been executed against live window data and will not be before the registered window close. Executions performed before this seal, all offline and receipted: (1) --selftest 23/23 controls (hermetic, zero network, zero writes); (2) default prepared mode (exit 3, zero network, zero writes); (3) --arm before close (exit 2 premature refusal, zero network, zero files — guard verified live without any fetch).",
+  "firing_instruction": "The scorer FIRES AT THE FIRST SEAL AFTER 2026-09-29T10:04Z (the registered window close). At that seal, and not before: node scripts/pong49_scorer.mjs --arm → exit 0 writes scripts/pong49_scorecard.json + .md; exit 1 = fail-closed (nothing written). GH_TOKEN/GITHUB_TOKEN optional (read-only GitHub API, higher rate limit).",
+  "registered_question": {
+    "id": "p_pong49_external_comment",
+    "registration_source": "tavern/jev_calibration_battery_r8.json (wave 37, lane 37-a, registered_at 2026-09-27T10:04:00Z)",
+    "text": "p = probability that issue pong49 receives ANY comment authored by a non-SuperInstance GitHub account within 48 hours of registration",
+    "resolution_source": "scoring_rule.resolution_sources.c_pong49: GitHub API read of SuperInstance/pong-quilt issue #49 comments at registered_at + 48h = 2026-09-29T10:04:00Z",
+    "window": { "open": "2026-09-27T10:04:00Z", "close": "2026-09-29T10:04:00Z" }
+  },
+  "registration_sources": {
+    "tavern/jev_calibration_battery_r8.json": {
+      "sha256": "93e1ead1169c3ecb0cc84b9aba10e023112297d048a3f3d686b45ab9c2e4159f",
+      "role": "registered question, scoring rule (pre-declared Brier + unresolved_policy), lane 37-a price 0.07, JEV r8 price 0.15, multiclass probability sets"
+    },
+    "tavern/jev_battery_scores_r8.json": {
+      "sha256": "9c406d01ae1bf0c846726c5296a61e2d7effa915be3fd61896a51a5c3a15da90",
+      "role": "3 keeper-sealed r8 noul resolutions (carried VERBATIM, never re-adjudicated) + typed_seat_outcome (multiclass annex outcome: stand) + running_brier_3_resolved reference"
+    },
+    "tavern/jev_remap_r9_rows.jsonl": {
+      "sha256": "9a729a1a8abff4aa6966d587c4251a146aedcd937fe6058c7c9b751e483c83e8",
+      "role": "JEV r9 remap fresh priors on the open pong49 question: jev-latest 0.13, jev-preview 0.14 (scored for the record; not r8 battery predictors)"
+    }
+  },
+  "procedure_summary": "At close: resolve outcome per the registered c_pong49 text (any comment by login != 'SuperInstance' on SuperInstance/pong-quilt #49 within [2026-09-27T10:04:00Z, 2026-09-29T10:04:00Z] = 1, else 0, inclusive window); binary Brier (p-outcome)^2 for the four registered prices; registered battery mean = mean Brier over resolved noul questions (3 keeper-sealed r8 + pong49 = 4/4, predictors lane_37a and jev_r8; r9 remaps are fresh-prior reference rows, excluded from the mean — the same faithful reading as the registered runner of record embassy/battery/pong49_scorer.mjs lane 42-d); multiclass annex on guest_c5_stance per d_choice_multiclass with keeper-sealed outcome; guest_surviving_standing excluded per the registered unresolved_policy. Registered artifacts are the ONLY scoring inputs; nothing not in the registration is scored.",
+  "ambiguity_receipt": "The registration does not name the scoring script or its output location; lane 42-d's scorer (embassy/battery/pong49_scorer.mjs) is the established reading and runner of record. This scripts/ copy implements the identical registered procedure, artifact-bound (prices/scales/outcomes read from the registration files at run time, not hardcoded), and adds the arming gate so the prepared instrument cannot touch live window data before close. If both scorers are ever run at close, their scorecards must agree on every number; disagreement = fail-closed incident, both VOID until reconciled.",
+  "pre_fire_executions": [
+    { "mode": "--selftest", "result": "23/23 controls behaved as registered (Brier KATs, resolution logic incl. inclusive window boundaries, battery mean KAT, guard logic, artifact bindings)", "network": false, "writes": "none (stdout only)" },
+    { "mode": "default (prepared)", "result": "exit 3, PREPARED_NOT_FIRED receipt printed", "network": false, "writes": "none" },
+    { "mode": "--arm before close", "result": "exit 2 premature refusal (now=2026-09-28T17:20:14.290Z < 2026-09-29T10:04:00Z)", "network": false, "writes": "none" }
+  ],
+  "related_instrument": "embassy/battery/pong49_scorer.mjs (lane 42-d runner of record, same registered procedure, premature-guard verified wave 44, PREMATURE interim scorecard already on file there)"
+}
