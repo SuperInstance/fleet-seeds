@@ -1,0 +1,222 @@
+#!/usr/bin/env node
+// 46d-round12-register.mjs — builds the ROUND TWELVE pre-registration file.
+// Task 46-d lane (tavern round-12 + ledger fold). Zero network (the pricing
+// receipt below is pasted in by the operator from the live fetch receipt
+// already taken this round). Deterministic; reads only repo artifacts.
+//
+// LAW: this file must exist (sha256 + mtime receipted) BEFORE any
+// api.deepseek.com traffic this round. The run script builds every request
+// body FROM the strings registered here, byte-exact, and fail-closes on any
+// drift — the registration is the single source of truth for the prompts.
+import fs from 'node:fs';
+import path from 'node:path';
+import { createHash } from 'node:crypto';
+
+const REPO = '/home/z/my-project/pt45a-fs';
+const OUT = path.join(REPO, 'tavern/round-12');
+const sha256 = (s) => createHash('sha256').update(Buffer.from(s, 'utf8')).digest('hex');
+const nowIso = () => new Date().toISOString().replace(/\.\d{3}Z$/, 'Z');
+
+// ---- sealed inputs ----------------------------------------------------------
+const R10_STATE = fs.readFileSync(path.join(REPO, 'tavern/answers/jev-round10.jsonl'), 'utf8')
+  .trim().split('\n').map((l) => JSON.parse(l)).find((r) => r.probe_id === 'r10-q1-eq9-posterior').request.body.state;
+const r10StateSha = sha256(R10_STATE);
+if (r10StateSha !== 'b46effd4cf5c951f0cd93052f0a9082225010daad8e09b8c950a31d51bcf21a5') {
+  console.error(`R10 STATE sha drift: ${r10StateSha} — fail-closed`); process.exit(1);
+}
+const r11LedgerBytes = fs.readFileSync(path.join(REPO, 'tavern/round-11/round11_ledger.jsonl'));
+const r11LedgerSha = sha256(r11LedgerBytes.toString('utf8'));
+const r11LedgerRows = r11LedgerBytes.toString('utf8').trim().split('\n').map((l) => JSON.parse(l));
+if (r11LedgerRows.length !== 6 || r11LedgerRows[0].kind !== 'stone.header') { console.error('r11 ledger shape unexpected — fail-closed'); process.exit(1); }
+const r11Tip = r11LedgerRows.at(-1).row_hash;
+if (r11Tip !== 'db324fd05d0a4373b4f8ec8fc395039065e1b54494ba546425fd3e76054dc1b5') { console.error('r11 ledger tip drift — fail-closed'); process.exit(1); }
+const mainRows = fs.readFileSync(path.join(REPO, 'tavern/tavern_ledger.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l));
+const mainTip = mainRows.at(-1).row_hash;
+if (mainRows.length !== 52) { console.error(`main ledger rows ${mainRows.length} != 52 — fail-closed`); process.exit(1); }
+
+// ---- registered prompt texts (single source of truth) -----------------------
+const HOUSE_LINE = "You are deepseek-chat, the quick house of the erised fleet's tavern, ROUND TWELVE. Your words are sealed AS SAID into receipt ledgers with token and cache telemetry — precision and honesty are your reputation. Speak only through strict JSON, no prose outside it.";
+const CONTRACT = `OUTPUT CONTRACT (round twelve): Return ONE strict JSON object — no markdown fences, no prose outside it — of the shape
+{"question_id": "<the question_id given above>", "answers": {<one object per question, keyed exactly as the question keys>}, "one_sentence": "<your one-sentence verdict on the round-twelve question>"}
+RULES: (1) a probability ("noul") answer object must be EXACTLY {"type":"noul","noul":<number in [0,1]>} — the noul instrument has NO confidence field by house law: no "confidence" key, no "probabilities" key, no other key of any kind; (2) a choice answer object must be {"type":"choice","choice":<criterion key>,"confidence":<number in [0,1]>} — choice instruments DO carry confidence; (3) pick exactly one criterion key per choice question. Your words are sealed AS SAID — wrong or undisciplined answers are recorded exactly as said.`;
+const BLIND_TEXT = `ROUND TWELVE — the blind prior seat. This message is ASSET-FREE: it carries no prior round's asset, no scoreboard, no sealed receipts, and no other house's answers — only the claim's definition. You are asked for a PRIOR: what you believe before any evidence is shown.
+
+The claim ("the float-only artifact"): a fleet's numeric kernel comes in two arithmetics — float and fixed (Q32.32) — and the claim says the float kernel HOLDS (state stops moving) at some uncoupled exact-zero families where the fixed Q32.32 kernel MOVES, i.e. the two arithmetics diverge on the same inputs. The open question is whether this divergence is a REAL property of the kernel's arithmetic (as claimed) or an instrumentation error.
+
+QUESTIONS:
+- "q_float_blind" (noul): p = your probability, with NO evidence shown, that the float-only artifact claim is TRUE as stated.
+- "q_blind_source" (noul): p = your probability that your answer to q_float_blind would CHANGE by more than 0.10 if decisive sealed experimental receipts were put in front of you.`;
+const REVEAL_FRAME = `ROUND TWELVE — the reveal seat. Below is the byte-exact state the typesafe instrument JEV was shown in round ten; you are asked the same questions as the next house (the "your_prior" line inside addresses the JEV seat — read it as the instrument's prior, yours to compare against).`;
+const REVEAL_QUESTIONS = `QUESTIONS:
+- "p_float_artifact_revised" (noul): p = your REVISED probability, given the sealed receipts in "eq8_established" and "eq9_census", that the float-only artifact claim is TRUE as established (family-bound counts as TRUE).
+- "posterior_move" (choice; criteria: "moves_up_to_0_5_or_above" = the receipts move me, my revised p is 0.50 or above | "moves_up_but_below_0_5" = I move up but stay below 0.50 | "stays_within_noise" = I hold my prior, between 0.31 and 0.39 | "moves_down" = the receipts push me down, below 0.31): relative to the prior 0.35, where does your revised probability land?`;
+const REVEAL_TEXT = `${REVEAL_FRAME}
+
+STATE (byte-exact from the round-ten record):
+${R10_STATE}
+
+${REVEAL_QUESTIONS}`;
+
+const reg = {
+  task: 'Tap Tavern ROUND TWELVE — task 46-d, lane tavern-round12 (the blind prior, asked asset-free + the round-11 ledger fold)',
+  registered_utc: `${nowIso()} (file mtime = receipt; sandbox clock; briefing calendar date 2026-09-28 — both carried AS SAID, r9/r10/r11 convention)`,
+  registered_before_any_deepseek_traffic: true,
+  wire_traffic_before_this_file: 'ZERO requests to api.deepseek.com this round before this file was written. Receipt = file mtime. (One GET of the public deepseek pricing DOCS page this round, 2026-09-28T00:36:59Z, HTTP 200, 23,982 bytes, sha256 210f102275ccf1a6542f08a3bc9e4b4c7c83278cb74b35217bffa112df6363b2 — not deepseek API traffic.)',
+  round_mission: 'Round-11 left two open threads (round11_summary.json open_threads): (1) fold round11_ledger.jsonl into the main tavern ledger; (2) re-run the blind prior ASSET-FREE — r11\'s blind slot was receipted designed-contaminated because the r9 asset ITSELF carries E-Q8 ESTABLISHED (the model noticed mid-trace). This round fixes the design: the blind prior is asked from NOTHING but the claim\'s definition, with the exact prompt receipted here, verbatim, BEFORE any call.',
+  house_status_at_registration: {
+    deepseek_houses: 'DEEPSEEK_API_KEY PRESENT (len withheld) — both seats callable (deepseek-reasoner, deepseek-chat; r11 sealed that the wire serves deepseek-flash for both legacy names).',
+    typesafe_jev: 'TYPESAFE_API_KEY ABSENT (unchanged since the wave-45 incident receipt) — JEV participates only through its sealed r10/r11 AS SAID answers on the record.',
+    github: 'GH_TOKEN present (verified live in the wave-45 lanes; re-verified at push time per the push law).',
+  },
+  carry_forward_sealed_state: {
+    r11_receipted_posteriors: {
+      reasoner_thinking_voice: { noul: 0.99, posterior_move: 'moves_up_to_0_5_or_above', source: 'tavern/round-11/round11_summary.json answers_as_said.reasoner_state_question (drafted key-complete JSON in the byte-identical repeat call\'s reasoning trace, extraction law)' },
+      chat: { noul: 0.97, posterior_move: 'moves_up_to_0_5_or_above', source: 'tavern/round-11/round11_summary.json answers_as_said.chat_state (final content, direct parse, 0 repairs)' },
+      jev_r10: { noul: 0.97, source: 'tavern/answers/jev-round10.jsonl (sealed AS SAID)' },
+      note: 'three houses within 0.02 on the same receipt state — the r11 calibration finding this round\'s P1 quantifies the OTHER end of (the blind prior of)',
+    },
+    r10_q1_state: {
+      chars: R10_STATE.length,
+      sha256: r10StateSha,
+      source: 'tavern/answers/jev-round10.jsonl probe r10-q1-eq9-posterior request.body.state — byte-exact, sha-pinned here; the reveal prompt embeds it VERBATIM (registered below)',
+      declared_frame_delta_vs_r11_slot2: "the reveal frame line differs from r11's registered slot2 instrument ONLY in: 'ROUND ELEVEN — slot two of your registered three-slot curve.' -> 'ROUND TWELVE — the reveal seat.' and 'you are asked the same questions as a second house' -> '...as the next house'. The STATE string and the two QUESTIONS lines are byte-identical to r11's registered instrument.",
+    },
+    what_the_reveal_does_NOT_contain: 'The reveal prompt discloses the EVIDENCE STATE (the same receipts r11\'s seats answered on) but NOT r11\'s answers (0.99/0.97). The round-11 receipted posteriors enter P1 only as the registered comparison anchors, never as prompt content. A seat that echoes an answer it was never shown would be a leak, not a posterior; the prompts here prove none was shown.',
+  },
+  asset_freeness_receipt: {
+    law: 'the blind prompt must contain NOTHING but the claim\'s definition. Receipt: the exact blind prompt text is registered VERBATIM below (both seats see the same blind text; the chat seat additionally gets the registered house line as its system message). The run script fail-closes if the built request content differs by one byte from the registered text.',
+    checked_absent: [
+      'no r9 prefix asset (or any prefix asset) — r11\'s contamination channel',
+      'no E-Q8/E-Q9 receipt strings (eq8_established, eq9_census, E-Q9, 466,932, Brier figures, kernel run counts)',
+      'no scoreboard, no prior-round answers (0.35/0.97/0.99), no other house\'s words',
+      'no qthe experiment identifiers, no repo names beyond the claim\'s own framing ("a fleet\'s numeric kernel")',
+    ],
+    verification_commitment: 'the round-12 verifier re-checks asset-freeness mechanically: it scans the registered blind prompt for the forbidden substrings AND re-derives the request bodies from this file.',
+  },
+  pricing_basis_declared: {
+    source: 'https://api-docs.deepseek.com/quick_start/pricing — LIVE-fetched 2026-09-28T00:36:59Z, HTTP 200, 23,982 bytes, sha256 210f102275ccf1a6542f08a3bc9e4b4c7c83278cb74b35217bffa112df6363b2 (round-12 refreshes the r11 declared basis with a fresh live receipt)',
+    served_lineup_as_documented: 'deepseek-flash = DeepSeek-V4.1-Flash; THINKING MODE "Supports both non-thinking and thinking (default) modes"; legacy names deepseek-v4-flash / deepseek-v4-flash-vision-exp documented as retired-and-served-by-Flash (r11 sealed on the WIRE that deepseek-reasoner / deepseek-chat are likewise accepted-and-routed to deepseek-flash; this round re-receipts served_model per row).',
+    rates_off_peak_usd_per_Mtok: { flash_input_cache_hit: 0.003, flash_input_cache_miss: 0.15, flash_output: 0.6 },
+    rates_peak_usd_per_Mtok: { flash_input_cache_hit: 0.006, flash_input_cache_miss: 0.3, flash_output: 1.2 },
+    peak_window_as_documented: '01:00-04:00 and 06:00-10:00 UTC Mon-Fri, excluding Chinese public holidays; all other hours off-peak',
+    window_at_registration: '2026-09-28T00:3xZ UTC Monday = OFF-PEAK (peak starts 01:00Z). Straddle law: spend is computed PER CALL from that row\'s receipted ts against the basis in force at its send time; if any POST lands at/after 01:00Z its spend line is ALSO computed at peak rates and the worse case is reported. Run is sized to finish before 01:00Z (r11 run: 5 POSTs in ~40s).',
+  },
+  call_plan_budget: {
+    max_deepseek_http_calls: 6,
+    planned_calls: 5,
+    planned_paid_2xx_posts: 4,
+    free_gets: [{ probe_id: 'r12-models-list', call: 'GET /models', why: 'per-round wire-state receipt: what names does the wire list this round (r11 convention)' }],
+    plan_in_send_order: [
+      { probe_id: 'r12-reasoner-blind', model: 'deepseek-reasoner', content: 'ASSET-FREE blind prior: registered BLIND_TEXT + CONTRACT, no prefix, no receipts -> noul q_float_blind + q_blind_source', expected_cache_hit_tokens: 0 },
+      { probe_id: 'r12-chat-blind', model: 'deepseek-chat', temperature: 0.3, content: 'same registered BLIND_TEXT + CONTRACT, system = registered house line -> noul q_float_blind + q_blind_source', expected_cache_hit_tokens: 0 },
+      { probe_id: 'r12-reasoner-reveal', model: 'deepseek-reasoner', content: 'REVEAL: registered frame + byte-exact r10 q1 STATE + questions + CONTRACT -> noul p_float_artifact_revised + choice posterior_move', expected_cache_hit_tokens: 0 },
+      { probe_id: 'r12-chat-reveal', model: 'deepseek-chat', temperature: 0.3, content: 'same reveal text, system = registered house line -> noul p_float_artifact_revised + choice posterior_move', expected_cache_hit_tokens: 0 },
+    ],
+    send_order_law: 'BOTH blind calls precede BOTH reveal calls (the reveal cannot contaminate the prior); GET /models precedes all POSTs.',
+    retry_law: 'single retry per call on transient failure (429/5xx/network) — each attempt receipted as its own row; retries count against the 6-call cap; 1 reserve call held',
+    max_tokens_per_call: 2000,
+    temperature: { 'deepseek-reasoner': 'parameter NOT sent (r11 law: documented as ignored/unsupported on the reasoner seat; service-default sampling)', 'deepseek-chat': 0.3 },
+    cache_note: 'fresh per-round prompts share no cache-block-sized prefix with anything (r11\'s assets are deliberately absent) — expected prompt_cache_hit_tokens 0 on every POST; actual receipted per row as a freshness receipt, not a numbered claim.',
+  },
+  registered_prompts_verbatim: {
+    HOUSE_LINE, CONTRACT, BLIND_TEXT, REVEAL_FRAME, REVEAL_QUESTIONS,
+    R10_STATE_VERBATIM: R10_STATE,
+    r10_state_sha256: r10StateSha,
+    assembly_law: 'reasoner/chat blind user content = BLIND_TEXT + "\\n\\n" + CONTRACT.replace("<the question_id given above>", probe_id); reveal user content = REVEAL_TEXT-equivalent assembled as REVEAL_FRAME + "\\n\\nSTATE (byte-exact from the round-ten record):\\n" + R10_STATE_VERBATIM + "\\n\\n" + REVEAL_QUESTIONS + "\\n\\n" + CONTRACT.replace(..., probe_id). The run script reads THIS file and assembles; any byte drift fail-closes.',
+  },
+  predictions: [
+    {
+      id: 'P1-asset-free-calibration-gap',
+      claim: "The ASSET-FREE blind prior sits LOWER than the receipted posterior — the r11 calibration move (0.35 -> 0.97/0.99) was caused by the receipts, not by the contaminated asset. Registered, per seat where both its blind prior and its reveal posterior concluded: (i) reveal_posterior - blind_prior >= +0.30; (ii) blind_prior <= 0.60; and (iii) each concluded blind prior sits at least 0.25 below the r11 receipted posteriors (reasoner-thinking-voice 0.99, chat 0.97).",
+      outcome_variable: 'q_float_blind noul (blind) vs p_float_artifact_revised noul (reveal), per seat; anchors = r11 sealed posteriors (above)',
+      buckets: {
+        gap_confirmed_both_seats: 0.50,
+        gap_confirmed_one_seat_other_unmeasured: 0.25,
+        'gap_positive_but_small_below_0.30_on_some_seat': 0.15,
+        gap_absent_or_inverted: 0.10,
+      },
+      modal: 'gap_confirmed_both_seats',
+      modal_p: 0.50,
+      falsified_if: 'any concluded seat shows reveal_posterior - blind_prior < 0, OR any concluded blind prior >= 0.90 (an evidence-free seat already at the receipted posterior kills the calibration-gap story). A voiceless/unmeasured seat cannot falsify — it resolves the claim DOWN one bucket (one_seat_unmeasured), honestly.',
+      reasoning: "An evidence-free prior on a fleet-internal kernel claim should sit mid-range (0.3-0.6); the receipts moved every house that saw them to 0.97-0.99. The r11 blind trace was 'weighing 0.47' before the cap cut it — consistent with mid-range. Risks: the reasoner may again be voiceless at max_tokens 2000 (r11: 4/4 finish=length), making the prior unmeasurable; the chat seat might read 'diverge on the same inputs' as already-demonstrated and answer high despite the careful claim wording. Honest 0.50 on the full confirmation.",
+    },
+    {
+      id: 'P2-seat-agreement-0.05',
+      claim: 'The two seats agree within 0.05 on BOTH the asset-free blind prior and the reveal posterior: |blind_reasoner - blind_chat| <= 0.05 AND |reveal_reasoner - reveal_chat| <= 0.05 (r11 sealed |posterior delta| 0.02 between the modes; this round tests the agreement band 0.05 on fresh instruments).',
+      outcome_variable: 'seat-pair noul deltas on the blind pair and the reveal pair',
+      buckets: {
+        'both_within_0.05': 0.35,
+        'exactly_one_within_0.05': 0.35,
+        'neither_within_0.05': 0.10,
+        any_component_unmeasured_partial: 0.20,
+      },
+      modal: 'both_within_0.05',
+      modal_p: 0.35,
+      falsified_if: 'both components measured and both outside 0.05 — one model in two modes disagreeing on both a prior and a receipts-loaded posterior would break the r11 "one posterior" finding.',
+      reasoning: 'Same wire model (deepseek-flash) in two modes; r11 landed 0.02 apart on the posterior. The prior question is more open (no evidence to converge on), so priors may drift apart further than posteriors. Voicelessness risk (r11: 4/4 reasoner rows) takes honest 0.20 mass. Even split on the two measured outcomes.',
+    },
+    {
+      id: 'P3-noul-discipline-holds',
+      claim: 'Zero noul contract violations across EVERY noul answer the round produces (2 blind + 2 reveal + any extracted drafts): a noul-typed answer object is exactly {"type":"noul","noul":<number in [0,1]>} with no other field. HARDER surface than r11: the blind prompt carries the prohibition ONLY in the contract block — the r9 asset that repeated it in r11 is deliberately absent.',
+      outcome_variable: 'count of contract-violating noul answers across all 2xx rows and extracted drafts',
+      buckets: { zero_violations_full_discipline: 0.70, violated_once_or_more: 0.30 },
+      modal: 'zero_violations_full_discipline',
+      modal_p: 0.70,
+      falsified_if: 'any noul answer (final content or extracted draft) carries a confidence/probabilities/extra field or a non-[0,1] noul — receipted AS SAID, scored a violation, and the r11 transfer finding is narrowed to instrument-shaped prompts.',
+      reasoning: "R11's P2 modal ('violated_once_or_more') was FALSIFIED — zero violations in every observed answer, with the reasoner self-auditing the noul shape unprompted. The law transferred once; expecting it to hold again is the informed modal, discounted for the harder surface (no asset repetition) and the smaller evidence base.",
+    },
+    {
+      id: 'P4-ledger-fold-verifies',
+      claim: 'The round-11 LEDGER FOLD verifies end-to-end: the main tavern ledger (52 existing rows + 6 appended fold rows = 58) link-verifies from disk under the stone-v1 law (sha256 over canonicalJSON([prev, row-minus-row_hash]), genesis STONE-GENESIS-1); each of the 5 folded content rows is content-deep-equal (canonical JSON) to its round-11 source row modulo row_hash; the fold receipt row embeds the round-11 stone.header verbatim, the source tip db324fd0…, the source file sha256, and the pre-fold main tip 1c03b2eb…; round-11\'s own verifier stays ALL CHECKS PASS (16/16) on the untouched round-11 artifacts.',
+      outcome_variable: 'verify_round12.mjs fold checks + verify_round11.mjs result',
+      buckets: { fold_verifies_end_to_end: 0.85, fold_defect_found: 0.15 },
+      modal: 'fold_verifies_end_to_end',
+      modal_p: 0.85,
+      falsified_if: 'any fold check fails (chain break, content drift, receipt mismatch) OR verify_round11.mjs regresses below 16/16.',
+      reasoning: 'The fold is deterministic repo work under a law round-11 already sealed standalone; the risks are transcription (mitigated: the fold script copies parsed rows, not strings) and concurrent main-ledger drift (mitigated: the fold fail-closes if the on-disk tip differs from the registered pre-fold tip, and rebase-before-push catches remote drift). Honest 0.85.',
+    },
+    {
+      id: 'P5-budget-spend',
+      claim: 'Round-12 stays inside the hard budget: total api.deepseek.com HTTP calls <= 6 (planned 5: 1 GET + 4 POSTs, 1 reserve), max_tokens parameter = 2000 on every POST, estimated spend at the live-declared per-call basis <= $0.05, billed completion tokens <= 8,000.',
+      outcome_variable: 'call count, per-call usage, est USD (per-call basis law above)',
+      predicted_range_usd: [0.002, 0.02],
+      modal_usd: 0.008,
+      hard_cap_usd: 0.05,
+      modal: 'under_all_caps',
+      modal_p: 0.90,
+      falsified_if: 'any call exceeds max_tokens 2000 as a SENT parameter, total calls > 6, est spend > $0.05 (worst-case basis if a straddle), or billed completion tokens > 8,000.',
+      reasoning: '4 POSTs at ~450-800 prompt tokens each (short registered prompts, no asset) + 4 x <=2000 output. R11 pattern: spend lands under the modal (3 rounds running). Peak-straddle risk is receipted with the worse-case law.',
+    },
+  ],
+  scoring_law: "multiclass Brier = sum over buckets of (predicted_bucket_p - indicator(actual_bucket))^2, resolved at seal (round-12 is self-contained; no STANDING entries). Seat answers are sealed AS SAID (ghostwriting law) — wrong, malformed, or undisciplined answers are recorded exactly as said, never repaired to fit predictions. Parse-repair receipts are part of the answer. Extraction law (r11, carried): an answer is EXTRACTED only where the reasoning trace contains a drafted final JSON object (question_id present, brace-matched, key-complete); where the trace was cut mid-deliberation the receipt is 'no concluded answer' — deliberation fragments are quoted but NEVER scored as answers.",
+  ghostwriting_note: "no free-text lane exists on the deepseek wire; the r10/r11 doctrine carries: the lane maps the instruments (noul / choice) onto a strict-JSON output contract and the model's selections are the answer; 'one_sentence' fields are the model's own words, quoted verbatim in the ledger.",
+  fold_design_registered_before_fold_build: {
+    law: 'this fold design is registered BEFORE the fold is built (the registration commit precedes the fold commit; P4 is scored against the BUILT fold, and the build must match this design or the deviation is receipted in the verdict).',
+    source_ledger: 'tavern/round-11/round11_ledger.jsonl',
+    source_rows: 6,
+    source_sha256_at_registration: r11LedgerSha,
+    source_tip: r11Tip,
+    main_ledger: 'tavern/tavern_ledger.jsonl',
+    main_ledger_rows_at_registration: mainRows.length,
+    main_ledger_tip_at_registration: mainTip,
+    method: [
+      'append 6 rows to the main ledger, in source order: source rows 1-5 (the five tavern.round content rows) re-parented onto the current main tip — content deep-equal to the source rows (canonical-JSON equality of the parsed objects minus row_hash), row_hash recomputed link-by-link under the stone-v1 law;',
+      'then append ONE fold receipt row (kind tavern.fold, round 11) carrying: source path + source sha256 + source tip + source header row VERBATIM (the 6th source row, embedded as an object) + the row mapping (source ordinal -> main row_hash) + the pre-fold main tip + the method string + this registration\'s sha256;',
+      'the fold script fail-closes if the on-disk main tip differs from main_ledger_tip_at_registration (concurrent-drift guard) or if the source file sha differs from source_sha256_at_registration;',
+      'no existing row is edited, reordered, or deleted — append-only; the builder (tavern/build_ledger.mjs) is unrunnable in this repo (its ../../quilt-stone/stone.mjs import does not exist here — r11 README receipt) and its SECTION-B replay law (verify-then-adopt disk rows) is compatible with an append-only fold: a future keeper run with the import restored verifies the folded chain and replays it unchanged.',
+    ],
+    fold_row_schema: "{kind:'tavern.fold', round:11, voice:'the-fold', lane:'46-d', message:string, source_ledger, source_sha256, source_tip, source_header:{...verbatim row 0...}, mapping:[{source_ordinal, source_row_hash, folded_row_hash}], pre_fold_main_tip, method:string[], registration_sha256, refs:[...]}",
+    verifier: 'tavern/round-12/verify_round12.mjs (independent stone-v1 reimplementation, repo-relative paths, zero shared code with any producer; also re-runs the r11 checks that are expressible repo-relative and invokes verify_round11.mjs for its 16)',
+  },
+  clock_note: 'sandbox clock 2026-09-28T00:3xZ; briefing calendar date 2026-09-28 — both carried AS SAID (r9/r10/r11 convention)',
+};
+
+const file = path.join(OUT, 'predictions/46d-round12-predictions.json');
+fs.writeFileSync(file, JSON.stringify(reg, null, 2) + '\n');
+console.log(JSON.stringify({
+  written: path.relative(REPO, file),
+  sha256: sha256(fs.readFileSync(file, 'utf8')),
+  mtime_utc: fs.statSync(file).mtime.toISOString().replace(/\.\d{3}Z$/, 'Z'),
+  r11_source_sha: r11LedgerSha,
+  main_tip_at_registration: mainTip,
+}, null, 1));
