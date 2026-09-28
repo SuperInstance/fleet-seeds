@@ -1,0 +1,40 @@
+[
+  {
+    "sha": "bbc14cf98394076202b589b1f0df5aa43de96cc6",
+    "node_id": "C_kwDOUw3Xy9oAKGJiYzE0Y2Y5ODM5NDA3NjIwMmI1ODliMWYwZGY1YWE0M2RlOTZjYzY",
+    "commit": {
+      "author": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T17:27:10Z"
+      },
+      "committer": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T17:27:10Z"
+      },
+      "message": "fleet-hooks: fail-closed credential key-scan pre-commit + setup + 11/11 test battery\n\nProductizes the wave-52 house practice (rg \"ghp_|gho_|github_pat_\" on staged\nfiles before every push) into a self-enforcing git hook.\n\n- .githooks/pre-commit: scans staged INDEX blobs (git grep --cached), not the\n  worktree; deletions excluded; binaries skipped (documented blind spot);\n  .git/* + node_modules/* excluded; report = class + file:line, matched content\n  never echoed; FLEET_ALLOW=<ERE> line-granular escape hatch (loud, per-run);\n  control-char filenames fail closed; exit 0/1/2 (pass/violation/scan-error).\n- setup.sh: arms core.hooksPath .githooks, fail-closed if hook file missing,\n  smoke-scans the current index.\n- tests/test_hooks.sh: 11/11 controls (positive/negative/escape/binary/deletion/\n  multi-class/node_modules/newline/setup) in throwaway repos; fixtures built at\n  runtime from obviously-fake chars (ghp_ + 36 x) so the source is scan-clean.\n- README.md: install one-liner, design law, wave-52 provenance, honest limits.\n\nScan classes: ghp_/gho_/ghs_/ghu_ (36), github_pat_ (22+), sk-ant prefix, AKIA+16.\nNo network, stdlib-only POSIX sh. Identity: SuperInstance <fleet@superinstance.dev>.",
+      "tree": {
+        "sha": "b55b7c484f8f3df8d7e3abf0d54d111ebbf553d2",
+        "url": "https://api.github.com/repos/SuperInstance/fleet-hooks/git/trees/b55b7c484f8f3df8d7e3abf0d54d111ebbf553d2"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/fleet-hooks/git/commits/bbc14cf98394076202b589b1f0df5aa43de96cc6",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/fleet-hooks/commits/bbc14cf98394076202b589b1f0df5aa43de96cc6",
+    "html_url": "https://github.com/SuperInstance/fleet-hooks/commit/bbc14cf98394076202b589b1f0df5aa43de96cc6",
+    "comments_url": "https://api.github.com/repos/SuperInstance/fleet-hooks/commits/bbc14cf98394076202b589b1f0df5aa43de96cc6/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+
+    ]
+  }
+]

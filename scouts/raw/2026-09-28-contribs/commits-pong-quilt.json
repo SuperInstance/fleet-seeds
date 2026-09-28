@@ -1,0 +1,822 @@
+[
+  {
+    "sha": "f53519bda37eed9d609fc36aaf65db44345f3a27",
+    "node_id": "C_kwDOUoaZb9oAKGY1MzUxOWJkYTM3ZWVkOWQ2MDlmYzM2YWFmNjVkYjQ0MzQ1ZjNhMjc",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T20:54:27Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-28T20:54:27Z"
+      },
+      "message": "R57: a mid-generation Train + loadLevel/file-load breeds the LOADED population, never the stale pre-load one — the streaming evaluator is reset on every checkpoint/load path (evalGen + coev.evalS/evalE), so the champion after a load is a pinned close descendant of the loaded pop (L2 < 2.0; the R56 P2 measured the overwrite at L2 4.56 under a 'training from here is real' banner); pinned FAIL-first (2 red on pristine main via git stash, 3/3 green at the fix, 1 no-regression green on both sides) (#76)\n\nCo-authored-by: CCC <ccc@fleet.local>",
+      "tree": {
+        "sha": "24f0c189c925b57d5a632ef13a1251351b16c863",
+        "url": "https://api.github.com/repos/SuperInstance/pong-quilt/git/trees/24f0c189c925b57d5a632ef13a1251351b16c863"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/pong-quilt/git/commits/f53519bda37eed9d609fc36aaf65db44345f3a27",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqutQDCRC1aQ7uu5UhlAAAbooQAAsEDZroHY2vP55Yw5evAw9r\nYZ5x6AvgBvwruMR/R4a1HSejFjH8yS4uV8DldbCPmjN3nahEvZybSFEKrkApsOCf\nYUSR/tIu+vzIx/J9pxrDuj8gi2RTgWNRTfnQ9idCqYnFtpYAWE/JThh2A5mmZyKK\n+UPTmJEp9ZcAJNUNvzNFEmqRCu1cIXxSb+yp209DEeTJItq8K4SVyVzBNNNNYMKR\nqcipcOIpuhqLkgbFXVO1TV38gFgcoP7bpUFcL8ACb4WSf+OOnRym1+DMm4K/YqdA\nUawy4Ce8PwXN6UnTvwY7H+pkQlpPHLiokgX24+k7QrcRpdd6IEf5sST+x1M71Ta+\nAYLsVzLSWn5p0eUDqPROHmCE+EMxJDp+uLqJzWBg1LiDAGLAXDCOZ6xPr/7iAVx7\n/BqH9K4ydoFsB35IImw9ReORSxKqUSSEe40Ex9AGv7HVtZ+zcc5WOIc6x0hAO/I8\n72LJw3J0V5vZnuypylYwxrj50Q8g0TLxC12TrYoB9u6zenrImA3wUiZyuB271Y6Y\n5ZEUaEgIBbUGoMCVblYh1hfpOjbuyNSHlhnV4dPz0D09HCDAJ2V0t3wBIfmrerbM\n7m9tmpIP1mc6AV9xiEZS6cRPBiz36/w0AFmt66y2mIkaY/6xMRUDuiYKZCAEjx51\nW1HN257Pt6pMae40p/O1\n=2MCZ\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 24f0c189c925b57d5a632ef13a1251351b16c863\nparent b0192ad1bac0d0e2c7bca62b5811e15366fb66d0\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790628867 -0800\ncommitter GitHub <noreply@github.com> 1790628867 -0800\n\nR57: a mid-generation Train + loadLevel/file-load breeds the LOADED population, never the stale pre-load one — the streaming evaluator is reset on every checkpoint/load path (evalGen + coev.evalS/evalE), so the champion after a load is a pinned close descendant of the loaded pop (L2 < 2.0; the R56 P2 measured the overwrite at L2 4.56 under a 'training from here is real' banner); pinned FAIL-first (2 red on pristine main via git stash, 3/3 green at the fix, 1 no-regression green on both sides) (#76)\n\nCo-authored-by: CCC <ccc@fleet.local>",
+        "verified_at": "2026-09-28T20:54:27Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/f53519bda37eed9d609fc36aaf65db44345f3a27",
+    "html_url": "https://github.com/SuperInstance/pong-quilt/commit/f53519bda37eed9d609fc36aaf65db44345f3a27",
+    "comments_url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/f53519bda37eed9d609fc36aaf65db44345f3a27/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b0192ad1bac0d0e2c7bca62b5811e15366fb66d0",
+        "url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/b0192ad1bac0d0e2c7bca62b5811e15366fb66d0",
+        "html_url": "https://github.com/SuperInstance/pong-quilt/commit/b0192ad1bac0d0e2c7bca62b5811e15366fb66d0"
+      }
+    ]
+  },
+  {
+    "sha": "b0192ad1bac0d0e2c7bca62b5811e15366fb66d0",
+    "node_id": "C_kwDOUoaZb9oAKGIwMTkyYWQxYmFjMGQwZTJjN2JjYTYyYjU4MTFlMTUzNjZmYjY2ZDA",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T17:37:19Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-28T17:37:19Z"
+      },
+      "message": "R56 playtest: SCIENTIST round — coev continuation is a measured regression lane (bench 1437.7->1178.9->722.6 by gen 123, descendants 0), stale-evaluator checkpoint overwrite repro'd (P2), 6-item R57 spec (#75)\n\n- played R53/R54/R55 headless through one verbatim driver: J1 classic, J3 loadCoev, 8-seed oracle probe, draw() HUD probe\n- fresh P2: mid-generation Train + loadLevel silently discards the loaded checkpoint (stale makeEvaluator; champ L2 4.59, best 1584 under a 'training from here is real' banner)\n- fresh P2: C1 continuation banner true for exactly one generation; d(bench)/d(gen) declines after gen 121\n- fresh P3: coev-mode save writes mixed-lineage franken-quilt\n- spec: full-pop breeding (M), classic continuity reset+pin (S), oracle horizon pin (M), startGenC guard (S), coev save honesty (S), dilution label (S)\n- docs-only: suite counts unchanged (259 in tests/, README 267=259+8, qa 8/8 verified at tip 01c6bff)\n\nCo-authored-by: CCC <ccc@fleet.local>",
+      "tree": {
+        "sha": "fc02e27af2eecf006a3b77919f911c7a360a5240",
+        "url": "https://api.github.com/repos/SuperInstance/pong-quilt/git/trees/fc02e27af2eecf006a3b77919f911c7a360a5240"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/pong-quilt/git/commits/b0192ad1bac0d0e2c7bca62b5811e15366fb66d0",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJquqXPCRC1aQ7uu5UhlAAA+yQQAGjQNu5AblVbTTWTYElYLA1H\nsAmdjhjJoXntfH1gYUzp1XibJF53SzBxjrxitT+Y/QUwRdHb9W11Flv3elc/4vVR\ntVB1ih6wmfnd1fjOnSqQup4afRY1cEfD7aOVyV/ovMDym+YmTHPvsNgBntQaCiZG\n/AASPS3KUC7ACvkb/k65jK1jxb6gN7/+0TmB1iBWVUm9hGlUiIzLevJmJYbvDvAT\n/3TYoRD9DR8J4yUvuJYwoDtvgpb3L2Xnp/l/YSCapKMF2YS//e2B7HZnP/67I+9/\nC/U3kcGLHPutAb0Z63rDdCkbCxvyWe0SehRNmEYjTWP7HQ/FBOyADduk9+1seVzd\n7JIcqYnPh9/R/kur0UJyURgLGv/qNC5rOIN3+GAg1GVnc+lvWuxx5edEoNi54fh2\noRwn+OZnnAGwFxZTrlXe8/sh2Sy7O9UsQhEeGOYWtqBB+nfqFPOIs++BrPkwpiZI\nV4H/tQDdHOGpB46XWXT5VqVchPKcinv4DSMpL+80trq7fJwlHI2POJ4aW2kFMh9Y\ngVUp5oLc9vs6JZ3tj+G7S64Smn1qWAGE153Lwc14UgcXLxqddSP4XB88HVeaWfzV\noMxBh0wEcad6vQAp3SRL9mhiRhE9ZL4Ce79NtlwZyRlKMttUJkqK6ehkglcgyNih\n4+uXdkkaVO4PdBKHgVq9\n=uDbw\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree fc02e27af2eecf006a3b77919f911c7a360a5240\nparent 01c6bff44cdfa71e288d295d763dadc658351b0f\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790617039 -0800\ncommitter GitHub <noreply@github.com> 1790617039 -0800\n\nR56 playtest: SCIENTIST round — coev continuation is a measured regression lane (bench 1437.7->1178.9->722.6 by gen 123, descendants 0), stale-evaluator checkpoint overwrite repro'd (P2), 6-item R57 spec (#75)\n\n- played R53/R54/R55 headless through one verbatim driver: J1 classic, J3 loadCoev, 8-seed oracle probe, draw() HUD probe\n- fresh P2: mid-generation Train + loadLevel silently discards the loaded checkpoint (stale makeEvaluator; champ L2 4.59, best 1584 under a 'training from here is real' banner)\n- fresh P2: C1 continuation banner true for exactly one generation; d(bench)/d(gen) declines after gen 121\n- fresh P3: coev-mode save writes mixed-lineage franken-quilt\n- spec: full-pop breeding (M), classic continuity reset+pin (S), oracle horizon pin (M), startGenC guard (S), coev save honesty (S), dilution label (S)\n- docs-only: suite counts unchanged (259 in tests/, README 267=259+8, qa 8/8 verified at tip 01c6bff)\n\nCo-authored-by: CCC <ccc@fleet.local>",
+        "verified_at": "2026-09-28T17:37:20Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/b0192ad1bac0d0e2c7bca62b5811e15366fb66d0",
+    "html_url": "https://github.com/SuperInstance/pong-quilt/commit/b0192ad1bac0d0e2c7bca62b5811e15366fb66d0",
+    "comments_url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/b0192ad1bac0d0e2c7bca62b5811e15366fb66d0/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "01c6bff44cdfa71e288d295d763dadc658351b0f",
+        "url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/01c6bff44cdfa71e288d295d763dadc658351b0f",
+        "html_url": "https://github.com/SuperInstance/pong-quilt/commit/01c6bff44cdfa71e288d295d763dadc658351b0f"
+      }
+    ]
+  },
+  {
+    "sha": "01c6bff44cdfa71e288d295d763dadc658351b0f",
+    "node_id": "C_kwDOUoaZb9oAKDAxYzZiZmY0NGNkZmE3MWUyODhkMjk1ZDc2M2RhZGM2NTgzNTFiMGY",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T15:16:37Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-28T15:16:37Z"
+      },
+      "message": "R55: coev HUD prints the decision cadence the C1 game ACTUALLY uses — per-mode pick in draw() (coev: fixed D.decisionInterval annotated '(C1 fixed)', the R50 contract; classic: drifting L1 law unchanged) — the coev HUD read 1/16f at ~2000f while stepAdv decides every 4f, and the cells countdown bar inherited the same drift; pinned FAIL-first (2 red on pristine main via git stash, 1 no-regression green) (#74)\n\nCo-authored-by: CCC <ccc@fleet.local>",
+      "tree": {
+        "sha": "4d7ed3ba8bb089fbf5b9bfd58dfc14bd69590324",
+        "url": "https://api.github.com/repos/SuperInstance/pong-quilt/git/trees/4d7ed3ba8bb089fbf5b9bfd58dfc14bd69590324"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/pong-quilt/git/commits/01c6bff44cdfa71e288d295d763dadc658351b0f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJquoTVCRC1aQ7uu5UhlAAA2fgQAGLrBkK/Vhk0cpUrDU/0WgvZ\n1VY/2xjaBe3CUQo6rnzj+mFQgLatvgT6n1B2dAjUALrWLdzT8o8p1QRrI2FehdKq\n2lXaF5mFkq6M5/28J+0KdGIYCRdeAIfBdgEHoumaFEPvmReaV/lF4zPYX8khpAH4\nz91izJz/sSorqln7OwGD58E5eZIkLX8qPoBn5FmyQ2ISDYkaUTCoqvilNsm//4C8\nFLMs+vINJ+YL3KYccdNNMXB4Ha0ifRAP5DjG9z/+VkWutV0w5vCoLL3sl3+9mQfX\n/Rwgd+fDtvIyOlwodUh8Fh4rUNzB8VAyik3+hXt+uraRheEEjyhImd7YQRSRbMEx\nvWLCCrJrSiRzqA78W2Fq7lTatkeor0IzFVMbL68XY1w8itJ7tTlrtEqDK6/UkZ++\ngYt31cO/ozwTLEGbFPVn+zt6u+6y5ndkkUPGMiOVvQ6BZpIp6rMqS2l1PF+dUIli\nS7RjHsNhqW0jwgAeRytCOb84PXvPIsGo50glCh/C91prNh9tk1WaUMoMF10G+fRM\n+qP1BxEIyUNq4vu8by0ECocWpZszhKZzDQggXFfyz6B3Ange7QjuUbgxsPbv3cO7\nzN7/st61sQhFv1fDDwJXLyhHSRzcRaSMdtln9TthqlIszg0HdomvbiX/vwjg2agx\niieasYlQry7CRhjjkFar\n=GYF9\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 4d7ed3ba8bb089fbf5b9bfd58dfc14bd69590324\nparent b4d15c81181de4b3a7073f59bb9fb6a219899e86\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790608597 -0800\ncommitter GitHub <noreply@github.com> 1790608597 -0800\n\nR55: coev HUD prints the decision cadence the C1 game ACTUALLY uses — per-mode pick in draw() (coev: fixed D.decisionInterval annotated '(C1 fixed)', the R50 contract; classic: drifting L1 law unchanged) — the coev HUD read 1/16f at ~2000f while stepAdv decides every 4f, and the cells countdown bar inherited the same drift; pinned FAIL-first (2 red on pristine main via git stash, 1 no-regression green) (#74)\n\nCo-authored-by: CCC <ccc@fleet.local>",
+        "verified_at": "2026-09-28T15:16:38Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/01c6bff44cdfa71e288d295d763dadc658351b0f",
+    "html_url": "https://github.com/SuperInstance/pong-quilt/commit/01c6bff44cdfa71e288d295d763dadc658351b0f",
+    "comments_url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/01c6bff44cdfa71e288d295d763dadc658351b0f/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b4d15c81181de4b3a7073f59bb9fb6a219899e86",
+        "url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/b4d15c81181de4b3a7073f59bb9fb6a219899e86",
+        "html_url": "https://github.com/SuperInstance/pong-quilt/commit/b4d15c81181de4b3a7073f59bb9fb6a219899e86"
+      }
+    ]
+  },
+  {
+    "sha": "b4d15c81181de4b3a7073f59bb9fb6a219899e86",
+    "node_id": "C_kwDOUoaZb9oAKGI0ZDE1YzgxMTgxZGU0YjNhNzA3M2Y1OWJiOWZiNmEyMTk4OTllODY",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T05:27:30Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-28T05:27:30Z"
+      },
+      "message": "R54: loadCoev seeds populations AROUND the loaded champs — artifact training genuinely continues (benchmark 239.6 -> 1251.0 vs artifact self 1259.1; L2 11.91 -> 0.513); pinned FAIL-first (#73)\n\nCo-authored-by: CCC <ccc@fleet.local>",
+      "tree": {
+        "sha": "4ca9be16f872fec3452aef85ffaca61e6f879ac3",
+        "url": "https://api.github.com/repos/SuperInstance/pong-quilt/git/trees/4ca9be16f872fec3452aef85ffaca61e6f879ac3"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/pong-quilt/git/commits/b4d15c81181de4b3a7073f59bb9fb6a219899e86",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqufrCCRC1aQ7uu5UhlAAA9bwQAAiliUvlmcSqm6LrOXgiAgIo\n8ElQ8Hn6F+Spv6+qZ440SrU3vFcnhHYSqsmztAcFmmHGOyelEpVj56WgUMvSGc3O\n8UGNd0fEzJpvyUY714cusou3wXh8qRK53TVvbDWXVt0+abwi2dYEPiQzl8Tj5Bo3\naQ3emlsiZxlp7X7axpO+X+wNTOX2IVT3QxeEm+mNbYvHbGKXF5+tWuQTQuPHf5OI\nzoPEzJUfNUvDALfWFLkHlWtewT7ZIa5bbmgDL/ErlbF6PPH+ixDlBFK6YnwnT+D0\n8U3aXIZ3WCJu3kBMF2MYP5YG1XdRXVRUwh4osH3Kv79SDCSGzOTr7xEUUF5accBU\nax2a6TfooGa2asW76A2eazXQCC13I6BoEr7OKo70+J6GZZ2rcF3zWNXt5Mq+sVC3\nqIegC+hBh89zQNIbQ8GQIjeRNcB//+hly6e3XbnBMbWdIfM3likKRB6iSBWOE5SN\noQ0JwI8Oq3Pfwz2rNaVHYNt7h6AB3X6pOrohn+DwLSu8PoqBlIHOz4dq4R8s+1Te\nkcW8KZ6NFC4Agb8bXpaFaxBcUQId9vgpCg3do2xYPDUmPKjB1gfSVsYsuVt2aDQs\nZntN7rhrqZICyn/fo2rmFQFVI7QhJs9h0XE8FPnxZxWVVIQtLSsBp9DaqHFevPkX\nn2JuXR9jT5eNCN3Oksnw\n=KwEe\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 4ca9be16f872fec3452aef85ffaca61e6f879ac3\nparent 34d551fe57d197994d4d419f937d244cafb43458\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790573250 -0800\ncommitter GitHub <noreply@github.com> 1790573250 -0800\n\nR54: loadCoev seeds populations AROUND the loaded champs — artifact training genuinely continues (benchmark 239.6 -> 1251.0 vs artifact self 1259.1; L2 11.91 -> 0.513); pinned FAIL-first (#73)\n\nCo-authored-by: CCC <ccc@fleet.local>",
+        "verified_at": "2026-09-28T05:27:30Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/b4d15c81181de4b3a7073f59bb9fb6a219899e86",
+    "html_url": "https://github.com/SuperInstance/pong-quilt/commit/b4d15c81181de4b3a7073f59bb9fb6a219899e86",
+    "comments_url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/b4d15c81181de4b3a7073f59bb9fb6a219899e86/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "34d551fe57d197994d4d419f937d244cafb43458",
+        "url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/34d551fe57d197994d4d419f937d244cafb43458",
+        "html_url": "https://github.com/SuperInstance/pong-quilt/commit/34d551fe57d197994d4d419f937d244cafb43458"
+      }
+    ]
+  },
+  {
+    "sha": "34d551fe57d197994d4d419f937d244cafb43458",
+    "node_id": "C_kwDOUoaZb9oAKDM0ZDU1MWZlNTdkMTk3OTk0ZDRkNDE5ZjkzN2QyNDRjYWZiNDM0NTg",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T03:57:00Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-28T03:57:00Z"
+      },
+      "message": "R53: fix the R49 P1 loadCoev()->Train rAF-dead freeze — loadCoev seeds popS/popE; pinned FAIL-first (#72)\n\nRound 53 playtest, builder mode. R49 playtested the loadCoev->Train freeze;\nR49/R50/R51/R52 all shipped without the fix because no pin TRAINED after\nloading the artifact. Verbatim-extraction harness bounded three journeys:\nJ1 classic loadLevel->Train OK, J2 fresh-C1 Train OK, J3 loadCoev->Train\nTHREW TypeError (coev.popS.length) inside the rAF tick at 9b27d15.\n\n- index.html loadCoev(): seed popS/popE at slider size alongside loaded\n  champs/ledger/genC; R9/R11 anchors untouched\n- tests/r53-loadcoev-train-glue.test.js: 4 tests, all RED on pristine\n  main 9b27d15 with the verbatim TypeError, all green here (no-throw,\n  real nets at slider size, genC 120->121, ledger +1 receipted row)\n- core.js VERIFIED_CLAIMS row loadcoev-train-glue (honesty two-way pin)\n- README count 257=249+8 -> 261=253+8 (run-verified)\n- PLAYLOG Round 53 entry + canonical index row; R54 spec seed (5 items)\n\nSuite: 253 registered / 251 pass / 0 fail / 2 honest skips; qa lane 8/8;\nreceipt-completeness OK (52 merge PRs, 40 rounds, all receipted).\n\nCo-authored-by: CCC <ccc@fleet.local>",
+      "tree": {
+        "sha": "c43fe18b6be4a6cff8e9b7f3d05dd8d786cd0748",
+        "url": "https://api.github.com/repos/SuperInstance/pong-quilt/git/trees/c43fe18b6be4a6cff8e9b7f3d05dd8d786cd0748"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/pong-quilt/git/commits/34d551fe57d197994d4d419f937d244cafb43458",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqueWMCRC1aQ7uu5UhlAAAiiIQABReuv+RBnUcjB/tHDCvXzmV\n5EeVTvn7e7DiKLC8tvbIpN/4j9i4zezmTN34aUQKR0kEYOVEqvYK0rKdvzoZDkAl\nJqMlzmA5pCwEOydEdoC+t7Zughc5QvL75+tguM9zmq099+zlzmXsgOm039dtBg7L\nXOzF953HsCW/A4cG1L+h1EZ/pLk3lPpIAozKJTsoxARnsxyNYmTnB3U8yY9/cHYs\nVxJJZ8JnDF496L0CNkBsmPb4CQ+mfBeTgDMyDV3VeQHLF+S6xJ262qeizc5zd6Sv\nKfXPWA8wccgFA5q76aFxAnakBIOReIoL08AIPFIgS8gixeli7MkhNKUfF2mcwKOG\n7Jpk6D12bbaqWEPPPpbNq2ZQA7DnpPorXE9/ldo8NeIqGPumHrEA3SKFasfF+URh\nL70iR2dCn6jrRsZzsl/9Zht5xgg6HQ5It02hz/ETDooPn7eLavFGR7YOsYQN8Y3A\nbJv+VGGJBOgyGVSMfqK52NC690o+GXQTgSFxz5o0Eo5nrpARbFDsuLsMdg2+NUAY\nmDrI8KD6h/pY1KXY1ZcIVO90rQg4r0rZ3PMqQoYsRAsFRWkPQ68SZAs6qUTTfPV1\njtzdYyaMLJ4c+Nzur8GrcyK7qAILIj+ptu7zDLI66coxjaSMpR5/Yoztr9Hf4crl\nUrXc+DajNZJ3PWUHNnKQ\n=eWOR\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree c43fe18b6be4a6cff8e9b7f3d05dd8d786cd0748\nparent 9b27d15ebe871077e25b274daea01c549dfd1c8d\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790567820 -0800\ncommitter GitHub <noreply@github.com> 1790567820 -0800\n\nR53: fix the R49 P1 loadCoev()->Train rAF-dead freeze — loadCoev seeds popS/popE; pinned FAIL-first (#72)\n\nRound 53 playtest, builder mode. R49 playtested the loadCoev->Train freeze;\nR49/R50/R51/R52 all shipped without the fix because no pin TRAINED after\nloading the artifact. Verbatim-extraction harness bounded three journeys:\nJ1 classic loadLevel->Train OK, J2 fresh-C1 Train OK, J3 loadCoev->Train\nTHREW TypeError (coev.popS.length) inside the rAF tick at 9b27d15.\n\n- index.html loadCoev(): seed popS/popE at slider size alongside loaded\n  champs/ledger/genC; R9/R11 anchors untouched\n- tests/r53-loadcoev-train-glue.test.js: 4 tests, all RED on pristine\n  main 9b27d15 with the verbatim TypeError, all green here (no-throw,\n  real nets at slider size, genC 120->121, ledger +1 receipted row)\n- core.js VERIFIED_CLAIMS row loadcoev-train-glue (honesty two-way pin)\n- README count 257=249+8 -> 261=253+8 (run-verified)\n- PLAYLOG Round 53 entry + canonical index row; R54 spec seed (5 items)\n\nSuite: 253 registered / 251 pass / 0 fail / 2 honest skips; qa lane 8/8;\nreceipt-completeness OK (52 merge PRs, 40 rounds, all receipted).\n\nCo-authored-by: CCC <ccc@fleet.local>",
+        "verified_at": "2026-09-28T03:57:00Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/34d551fe57d197994d4d419f937d244cafb43458",
+    "html_url": "https://github.com/SuperInstance/pong-quilt/commit/34d551fe57d197994d4d419f937d244cafb43458",
+    "comments_url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/34d551fe57d197994d4d419f937d244cafb43458/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9b27d15ebe871077e25b274daea01c549dfd1c8d",
+        "url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/9b27d15ebe871077e25b274daea01c549dfd1c8d",
+        "html_url": "https://github.com/SuperInstance/pong-quilt/commit/9b27d15ebe871077e25b274daea01c549dfd1c8d"
+      }
+    ]
+  },
+  {
+    "sha": "9b27d15ebe871077e25b274daea01c549dfd1c8d",
+    "node_id": "C_kwDOUoaZb9oAKDliMjdkMTVlYmU4NzEwNzdlMjViMjc0ZGFlYTAxYzU0OWRmZDFjOGQ",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T00:19:42Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-28T00:19:42Z"
+      },
+      "message": "R52 main-repair: the #67/#70 merge stack concatenated the R50+R49 index rows and stranded a Round 49 entry above the Round 50 entries — 4 merge-gate reds, one root cause, docs-only (pins did their job) (#71)\n\nCo-authored-by: CCC <ccc@fleet.local>",
+      "tree": {
+        "sha": "e5f18ce4e9c36ef25889150bbc4daa6ab8697b6d",
+        "url": "https://api.github.com/repos/SuperInstance/pong-quilt/git/trees/e5f18ce4e9c36ef25889150bbc4daa6ab8697b6d"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/pong-quilt/git/commits/9b27d15ebe871077e25b274daea01c549dfd1c8d",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqubKeCRC1aQ7uu5UhlAAAzesQAE0AzOQCPD8osKBM4zg7Aca2\nTrWw2V7RDXssKMtDMLapJqyGsTzbzWUHNqVi0+xCNydVwXku48WqdRavKCoe9Bto\n/198f8RcFiPPEdeeetSbnLSNZzi6R3D9W6y1wz4rtymSb1MPxaaSpX40IHBoOUQV\n6/ETloTJHEhaNdZyywQlUV4wD/qk7vToqW2ORioCcqWW4t2kW7jJoC6kph14xQC0\n2sx6MDfWAjodERazc4pPSUjTbXp8J6esOs1zRdkC8xJq0uSFJVYgrR3znoxapgwZ\nIrOCd5UG1Kb7FDmnd/7JGGnczo6hEdszezFFe8WDm23wHx9w5SzmG1P1/f1MDvUC\nJaABFOIJ9eSlZKH4KwffnzeCmxYS0vaBqcFYr+QxMZOx7/ITHskh+SYyPkLPVgWy\nyQm3+3K+/pOenwvw1fnHDRjuQVFrjZa3+FgniBQFySDYqzBGyc3glnomJH/y3Vxd\nabRM2/X4YpTZYG44aWNaInSpiyQOFC8fSiNO5PMXQuHF59jxVbnP1m4Dilo0tF4B\n+uJcMLn7xQoX8oZyyfRkMSJtIbPzvL4rN5gG/emMlb+HIrObRL1zYbvdxrn0l5rh\nyEJtbbQmaz81KzjVKDBjuAfjk4iR5x7169qdR8xCHw+E4ye3GTyyHF/UFbbdNd82\n6HdzbSIr6NDhW2uPvBt9\n=F8vJ\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree e5f18ce4e9c36ef25889150bbc4daa6ab8697b6d\nparent 155ad789453181601add31a0d53c5d913a8eca3c\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790554782 -0800\ncommitter GitHub <noreply@github.com> 1790554782 -0800\n\nR52 main-repair: the #67/#70 merge stack concatenated the R50+R49 index rows and stranded a Round 49 entry above the Round 50 entries — 4 merge-gate reds, one root cause, docs-only (pins did their job) (#71)\n\nCo-authored-by: CCC <ccc@fleet.local>",
+        "verified_at": "2026-09-28T00:19:43Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/9b27d15ebe871077e25b274daea01c549dfd1c8d",
+    "html_url": "https://github.com/SuperInstance/pong-quilt/commit/9b27d15ebe871077e25b274daea01c549dfd1c8d",
+    "comments_url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/9b27d15ebe871077e25b274daea01c549dfd1c8d/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "155ad789453181601add31a0d53c5d913a8eca3c",
+        "url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/155ad789453181601add31a0d53c5d913a8eca3c",
+        "html_url": "https://github.com/SuperInstance/pong-quilt/commit/155ad789453181601add31a0d53c5d913a8eca3c"
+      }
+    ]
+  },
+  {
+    "sha": "155ad789453181601add31a0d53c5d913a8eca3c",
+    "node_id": "C_kwDOUoaZb9oAKDE1NWFkNzg5NDUzMTgxNjAxYWRkMzFhMGQ1M2M1ZDkxM2E4ZWNhM2M",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-27T22:41:32Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-27T22:41:32Z"
+      },
+      "message": "R51: PLAYLOG newest-first repair — both views ordered, pinned FAIL-first (#70)\n\nThe canonical index had R47 above R48 (and R44 above R45); the round\nentries repeated the inversion plus R45 misplaced after R41 and\nR42/R43 swapped — the header's 'newest first' contract was broken in\nboth views. Observed by the R50 report, not fixed there.\n\n- both views stable-sorted to strict descending order (moves only,\n  89/89 in PLAYLOG.md; equal rounds keep branch-stack order)\n- tests/canonical-index.test.js gains two FAIL-first pins (index rows\n  newest-first; round entries newest-first; numeric compare) — both\n  verified tripping on pristine origin/main at R47-above-R48\n- README count 243=235+8 -> 245=237+8 (suite 237 pass + 2 skip + qa 8/8)\n- not double-fixed (R30): the R49-row uniqueness red was healed\n  upstream by the R49 main-repair addendum (#67) before this branched\n\nvs main 629bfd8 (post-#67); docs + pins only, no code touched\n\nCo-authored-by: CCC <ccc@fleet.local>",
+      "tree": {
+        "sha": "816ceec21a4d7051dace771992ea7473e90350ae",
+        "url": "https://api.github.com/repos/SuperInstance/pong-quilt/git/trees/816ceec21a4d7051dace771992ea7473e90350ae"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/pong-quilt/git/commits/155ad789453181601add31a0d53c5d913a8eca3c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJquZucCRC1aQ7uu5UhlAAAWjIQAD/1f3jYWOT1kwFios/iXhyW\ng3rQF3M1V6s7g6fC0JAYWKuMWBn8Z/ThYEufpAN9HYhOURIFF7lfaRYVHCxcL1fE\n/lWhitndSbyu/kJFx47e6vNVHzkPUtfTkzc3wlk07HaEZhKA7Q4PI7xiYNUAs+dR\nWqRwxG7OcvmCQoZNVES38eHYy1si6oNkTgPlNYtylp/tF6yh+cH+6ujCwmXQOACw\n2OwzDrDo+9pTceyDFlsD2gmiVJVvn10gvUazw0qWaOuVUte720mglG1Bxaddrhte\nifpzyrH8JkLthIl7QnkIC8E9C5VearwLRjk274isn4sKpYYOCFkGN0mnAZNlYKcg\ndDqfsz4fer/avxDEOv8qNYLNRBglvSg4Xri0r+Kz4LaEcdWH4ZsuOMVqiCPITqBk\nvZP2OK0FaebXci6tfI5AFDnxcCJboZ4FpWJKdBXS/kd4IqRuZJaKXr4WOt7DPqJK\ntndJXVTfd8JdWJEYUiMypQ9EH6Heqi0Kx1VrGhyEkarNLmJ2ujubFc27IRvq3bS5\nPzfCyQ5RUD3AoVtNO5hT5+yoLLmUvxi/64P4GqNZQXuVkDF6yTgtumeD7eOuDPsJ\n9G+aX+dh/zHS5dQQxffY71eIpxhfOz/y4mu86zG4xEzbUkST4IPZNd62hxP1KDwk\nNXuRA/5xfxHB5v+zUGMx\n=7p+j\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 816ceec21a4d7051dace771992ea7473e90350ae\nparent b501ca87f8efdfa00111461ee834e7395e4acdb3\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790548892 -0800\ncommitter GitHub <noreply@github.com> 1790548892 -0800\n\nR51: PLAYLOG newest-first repair — both views ordered, pinned FAIL-first (#70)\n\nThe canonical index had R47 above R48 (and R44 above R45); the round\nentries repeated the inversion plus R45 misplaced after R41 and\nR42/R43 swapped — the header's 'newest first' contract was broken in\nboth views. Observed by the R50 report, not fixed there.\n\n- both views stable-sorted to strict descending order (moves only,\n  89/89 in PLAYLOG.md; equal rounds keep branch-stack order)\n- tests/canonical-index.test.js gains two FAIL-first pins (index rows\n  newest-first; round entries newest-first; numeric compare) — both\n  verified tripping on pristine origin/main at R47-above-R48\n- README count 243=235+8 -> 245=237+8 (suite 237 pass + 2 skip + qa 8/8)\n- not double-fixed (R30): the R49-row uniqueness red was healed\n  upstream by the R49 main-repair addendum (#67) before this branched\n\nvs main 629bfd8 (post-#67); docs + pins only, no code touched\n\nCo-authored-by: CCC <ccc@fleet.local>",
+        "verified_at": "2026-09-27T22:41:33Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/155ad789453181601add31a0d53c5d913a8eca3c",
+    "html_url": "https://github.com/SuperInstance/pong-quilt/commit/155ad789453181601add31a0d53c5d913a8eca3c",
+    "comments_url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/155ad789453181601add31a0d53c5d913a8eca3c/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b501ca87f8efdfa00111461ee834e7395e4acdb3",
+        "url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/b501ca87f8efdfa00111461ee834e7395e4acdb3",
+        "html_url": "https://github.com/SuperInstance/pong-quilt/commit/b501ca87f8efdfa00111461ee834e7395e4acdb3"
+      }
+    ]
+  },
+  {
+    "sha": "b501ca87f8efdfa00111461ee834e7395e4acdb3",
+    "node_id": "C_kwDOUoaZb9oAKGI1MDFjYTg3ZjhlZmRmYTAwMTExNDYxZWU4MzRlNzM5NWU0YWNkYjM",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-27T22:40:36Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-27T22:40:36Z"
+      },
+      "message": "R50 main-repair: post-#66 main red on two pins, one root cause (#67)\n\nThe #64/#65/#66 merge stack landed all three R49 branches, each carrying its\nown canonical-index row -> three '| R49 |' rows (R2 convention: one row per\nround; multiple ## Round 49 headings are legitimate). Uniqueness pin named\nthe dupes; readme-count pin failed downstream (its spawn saw the index test\nfail: 234 counted vs README's live-verified 235). Fix: one merged R49 row\nnaming all three branches (R42 row form) + this R50 receipt. No count change:\nwith the index green the spawn passes 234, +1 = 235 = README (243 = 235+8,\nre-verified by running). FAIL-first: both pins RED on pristine main b767404\n(CI at the #66 merge). Docs only; suite 235 pass + 2 honest skip, qa 8/8.\n\nCo-authored-by: CCC <ccc@fleet.local>",
+      "tree": {
+        "sha": "e5d0e7f28d309cb56ebbb98a2808bffaa4301d29",
+        "url": "https://api.github.com/repos/SuperInstance/pong-quilt/git/trees/e5d0e7f28d309cb56ebbb98a2808bffaa4301d29"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/pong-quilt/git/commits/b501ca87f8efdfa00111461ee834e7395e4acdb3",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJquZtkCRC1aQ7uu5UhlAAAoQAQAAAqOrdqFkvgETKuVvSqH1SG\nrubtBGGtMwrEesUc0arRagsc1RFIgKdeNPQqGfrImbYTm3HEpmN67aN50ub3DaJE\nJK01fhRMcir/zFiWLLZkSCZADKcfnoyxNzgbuTYeatt4K44oQ4wPAzupW1MhdxwJ\niQvnt9kCQuYea8C1li1hZnLBoFBkO6VevgmMqZgyM9AbNGM7yALNAIqr9Fj96r8R\nQlY2sNGticEKU8sJy4enIxPaUalQy/HL9owsW31y6dNtPhib4YUbfbgcmlbLwTG6\nuMdFxKw2Uoexzs/sLVS5fdg1/07Rcp29xm5JuiQX/wokzNfQYkOZhE1tZ02iOFs4\nE1GP4xkk3Jh0w+iJ4yVP+guJLgB95hP5gMq9Bb3z/hHcw1C5rBT2NLa+P+JWM8Sb\n2cKkAFuD2eJ4rk7kTNlNy8x++CdnVO7GKIU35jb2mdGCzRvRGVXZwe/H8kqPGZEY\nLwwyHGjiUZUBj1czGL5rrgz1hHeX+6Ufjbz3gvGEoDf1M/THiUysqNBF/j+kOU5a\nRDvXycS2bnOYP2eIvo206Vls3lZC7xTaPBBElDf/ioop7jafMP7jMUH+6B/PAK7M\n0pTSbs0FAMkj0oPcCH3l2KaR4NSYWLQQSUpp51dPvOjVNpjtKCVzQVUjm6HMC+6q\nNbzy0N8hSx7c3AI/Wj11\n=byRe\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree e5d0e7f28d309cb56ebbb98a2808bffaa4301d29\nparent c37eb2ef4e4338048b99db095dd57429b652d685\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790548836 -0800\ncommitter GitHub <noreply@github.com> 1790548836 -0800\n\nR50 main-repair: post-#66 main red on two pins, one root cause (#67)\n\nThe #64/#65/#66 merge stack landed all three R49 branches, each carrying its\nown canonical-index row -> three '| R49 |' rows (R2 convention: one row per\nround; multiple ## Round 49 headings are legitimate). Uniqueness pin named\nthe dupes; readme-count pin failed downstream (its spawn saw the index test\nfail: 234 counted vs README's live-verified 235). Fix: one merged R49 row\nnaming all three branches (R42 row form) + this R50 receipt. No count change:\nwith the index green the spawn passes 234, +1 = 235 = README (243 = 235+8,\nre-verified by running). FAIL-first: both pins RED on pristine main b767404\n(CI at the #66 merge). Docs only; suite 235 pass + 2 honest skip, qa 8/8.\n\nCo-authored-by: CCC <ccc@fleet.local>",
+        "verified_at": "2026-09-27T22:40:37Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/b501ca87f8efdfa00111461ee834e7395e4acdb3",
+    "html_url": "https://github.com/SuperInstance/pong-quilt/commit/b501ca87f8efdfa00111461ee834e7395e4acdb3",
+    "comments_url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/b501ca87f8efdfa00111461ee834e7395e4acdb3/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c37eb2ef4e4338048b99db095dd57429b652d685",
+        "url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/c37eb2ef4e4338048b99db095dd57429b652d685",
+        "html_url": "https://github.com/SuperInstance/pong-quilt/commit/c37eb2ef4e4338048b99db095dd57429b652d685"
+      }
+    ]
+  },
+  {
+    "sha": "c37eb2ef4e4338048b99db095dd57429b652d685",
+    "node_id": "C_kwDOUoaZb9oAKGMzN2ViMmVmNGU0MzM4MDQ4Yjk5ZGIwOTVkZDU3NDI5YjY1MmQ2ODU",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-27T22:31:59Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-27T22:31:59Z"
+      },
+      "message": "R50: difficulty escalation — a perfect oracle always eventually dies (#68)\n\nSpeed law: min((1+frames*ramp)*hitBoost^hits + accel*frames^2, maxSpeedMul);\nhitBoost revived (compounds via hits, no more one-frame dead boost);\npaddle shrinks shrink^frames floored at paddleMin (one law for draw AND\ndeath-check in L1+C1); decision cadence slows via decisionIntervalAt\n(drift 0.05, cap 16, L1 only); swan probability quadratic in speedMul.\nEscalation-off = byte-identical to the pre-R50 law (regression lock).\n\nOracle pin: perfect-intercept oracle dies <3000f on seeds 1..10 with\nescalation on, survives 6000f cap with it off — guaranteed eventual\nfailure => selection rewards predicting the eventual position.\n\nCanonical re-embed: curve f9b20e7d/L0 bc15d414/L1 1125d59c/L2 50137ceb,\ncoev 946e639a byte-unchanged (inert at coev horizons); maxSpeed 4.443/3.411;\ntie journal 182/89 -> 5/3. README artifact line corrected (was pre-R21).\nSuite 245/245 + qa 8/8; README count 243->253 (pin-verified).\n\nCo-authored-by: CCC <ccc@fleet.local>",
+      "tree": {
+        "sha": "0e30ac582fa4a31a406a7546848422f6865d6391",
+        "url": "https://api.github.com/repos/SuperInstance/pong-quilt/git/trees/0e30ac582fa4a31a406a7546848422f6865d6391"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/pong-quilt/git/commits/c37eb2ef4e4338048b99db095dd57429b652d685",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJquZlfCRC1aQ7uu5UhlAAA1k4QACKAeXC71+FancqhY4lganE2\n5/aK0hTm8/T46qHC+tRG/Ip9a87PwVf3HV0h6Vnx6UoLaWTALSQN67kvYOaFHTAy\nNjFlVBqt5S3C+v4GNSrkzblvM4PG1rFk8fk2rLLD3g0ThSOWSrhyeAwiLe418Mk1\nAZUSRl3ufEP2PmaFlsu/JODlETTaDqubarJ/ZmxV8YTM0fTq7amFRSNJTK857qJ6\nm7yspeu9tODrvDc7JOywrP/Iay3XLgjX+Ofh6v2pYD7IlNUArxjct1SjqohtINSQ\nQXIUpEsG0udEr39hj3VKUrFwwSJCxUKrS9Wm9lOgmsPwxzbW5y5BnMfo7O8CkoF0\nFaGdBfL0SeX0HR/wv/ZrRQam2od/eeg8nbNAc0cBGnkQD7qWrDb/MJWvD4BV8TDW\ndeUfbmfND1fqQYz6JqrMbchsjw2oUVX1zsy9Pn+XdAOsvTJ0GlwYjHV1pcYSimRG\n0dux8Da/RjWEZA2Ax4TSEdD3lDu1URBQdrGS1OM8br6mrcFEvzPxztURoXp9U4h1\nO2M33xLL3CFzcq0GKOWMlIQAseKMD7LXzO6yvurDoIGBm84CNE+WK/7kgJGuNUzK\ngInsuH+6q/WaPXD4GcP//2/KQcoPm/cG/cMfnTDiQn58RmQZxQpO8VANSqnYSq1Y\nu9FsEjz82jvWR8+I4Hyn\n=B8gC\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 0e30ac582fa4a31a406a7546848422f6865d6391\nparent 80b196ea5476705ae16b4fee06e9d2d7d20af2c5\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790548319 -0800\ncommitter GitHub <noreply@github.com> 1790548319 -0800\n\nR50: difficulty escalation — a perfect oracle always eventually dies (#68)\n\nSpeed law: min((1+frames*ramp)*hitBoost^hits + accel*frames^2, maxSpeedMul);\nhitBoost revived (compounds via hits, no more one-frame dead boost);\npaddle shrinks shrink^frames floored at paddleMin (one law for draw AND\ndeath-check in L1+C1); decision cadence slows via decisionIntervalAt\n(drift 0.05, cap 16, L1 only); swan probability quadratic in speedMul.\nEscalation-off = byte-identical to the pre-R50 law (regression lock).\n\nOracle pin: perfect-intercept oracle dies <3000f on seeds 1..10 with\nescalation on, survives 6000f cap with it off — guaranteed eventual\nfailure => selection rewards predicting the eventual position.\n\nCanonical re-embed: curve f9b20e7d/L0 bc15d414/L1 1125d59c/L2 50137ceb,\ncoev 946e639a byte-unchanged (inert at coev horizons); maxSpeed 4.443/3.411;\ntie journal 182/89 -> 5/3. README artifact line corrected (was pre-R21).\nSuite 245/245 + qa 8/8; README count 243->253 (pin-verified).\n\nCo-authored-by: CCC <ccc@fleet.local>",
+        "verified_at": "2026-09-27T22:32:00Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/c37eb2ef4e4338048b99db095dd57429b652d685",
+    "html_url": "https://github.com/SuperInstance/pong-quilt/commit/c37eb2ef4e4338048b99db095dd57429b652d685",
+    "comments_url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/c37eb2ef4e4338048b99db095dd57429b652d685/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "80b196ea5476705ae16b4fee06e9d2d7d20af2c5",
+        "url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/80b196ea5476705ae16b4fee06e9d2d7d20af2c5",
+        "html_url": "https://github.com/SuperInstance/pong-quilt/commit/80b196ea5476705ae16b4fee06e9d2d7d20af2c5"
+      }
+    ]
+  },
+  {
+    "sha": "80b196ea5476705ae16b4fee06e9d2d7d20af2c5",
+    "node_id": "C_kwDOUoaZb9oAKDgwYjE5NmVhNTQ3NjcwNWFlMTZiNGZlZTA2ZTlkMmQ3ZDIwYWYyYzU",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-27T22:26:57Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-27T22:26:57Z"
+      },
+      "message": "R49c: hermetic README count — PASS+SKIP+self, env-independent (#69)\n\nThe count pin compared env-dependent passes: the same tree read 235 where\nenv-gated live tests run and 234 on CI where they honestly skip (CI failed\n#65 exactly this way). The pin now counts TOTAL registered tests\n(pass + honest skips + this file), which is identical in every environment:\na test that skips where unsupported still counts. README 243->245\n(237 in tests/ + 8 qa, live-verified). Suite 235/235 + qa 8/8 here;\nthe pin can no longer be green in one env and red in another.\n\nCo-authored-by: CCC <ccc@fleet.local>",
+      "tree": {
+        "sha": "c619ec14e22558ac34262a2d49d2e5b1847498ad",
+        "url": "https://api.github.com/repos/SuperInstance/pong-quilt/git/trees/c619ec14e22558ac34262a2d49d2e5b1847498ad"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/pong-quilt/git/commits/80b196ea5476705ae16b4fee06e9d2d7d20af2c5",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJquZgxCRC1aQ7uu5UhlAAAGhgQAKm7F+tMUM1rBWU3ZZy8HNE4\nNzAre6fmQgtQxqtnksM8sCrHjhcYTQZ0+MLyWLGtlRDTBxrxZgZZgkkhgJhf6R7u\nR52FjC/C6s4f0aCwLYTYAszvlHXiqqRt/ilSvo3J3hkifZDZjrlmSunJd5jHb1qn\neY+putnZywU3f0/WfKD2sUzKTvgvvf4DhhZ1hH6BcJETekIevgYzuX11/VsrlLOg\n2qpTRGJ415eh2qg/eIgW5WpQCo7HGnle2XZbP+HYtgNhiCZeJ/06ag49m5OoGyug\nfhWCANZjVERNaPPvW12phkYyzQC7OZIWnaAoj3F9ebdUiZ4L5Ga0ebylC5V+V3e2\nTkfkrazGu0mZDFAvzC+0KHmT7CiLLpo1dpcJvKRKSbpaWBaYqRlBpF5YX2Ldq9R/\nu1M58gOd3VHzZ3k678rAH1Qp0yLEZYscljarucNEF3G6o70n4YvAd/aiFxsADtbM\nGjFNN/FQJTqOKH7mU5Gb/rTXp7TiwntJcmpz6rspERDM0NvoMhl7jCoLccg8yIzO\nji4jHkD4mPohbXV/uSbF8NK50b2Wbjq214az48KWE3eg4R6Lz0Al/ER6/p+uldlN\n5xd7mgxYLVs9OdAH0uoTfjAcsdLFFnh1ekvePIw6pEUReFXkOkMAy4/ilBng/Dj3\njMDKUs4sMXNv5FlriPxr\n=v9D6\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree c619ec14e22558ac34262a2d49d2e5b1847498ad\nparent 47dca910d22cf90fe8f127a321939dea8e7e4dfa\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790548017 -0800\ncommitter GitHub <noreply@github.com> 1790548017 -0800\n\nR49c: hermetic README count — PASS+SKIP+self, env-independent (#69)\n\nThe count pin compared env-dependent passes: the same tree read 235 where\nenv-gated live tests run and 234 on CI where they honestly skip (CI failed\n#65 exactly this way). The pin now counts TOTAL registered tests\n(pass + honest skips + this file), which is identical in every environment:\na test that skips where unsupported still counts. README 243->245\n(237 in tests/ + 8 qa, live-verified). Suite 235/235 + qa 8/8 here;\nthe pin can no longer be green in one env and red in another.\n\nCo-authored-by: CCC <ccc@fleet.local>",
+        "verified_at": "2026-09-27T22:26:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/80b196ea5476705ae16b4fee06e9d2d7d20af2c5",
+    "html_url": "https://github.com/SuperInstance/pong-quilt/commit/80b196ea5476705ae16b4fee06e9d2d7d20af2c5",
+    "comments_url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/80b196ea5476705ae16b4fee06e9d2d7d20af2c5/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "47dca910d22cf90fe8f127a321939dea8e7e4dfa",
+        "url": "https://api.github.com/repos/SuperInstance/pong-quilt/commits/47dca910d22cf90fe8f127a321939dea8e7e4dfa",
+        "html_url": "https://github.com/SuperInstance/pong-quilt/commit/47dca910d22cf90fe8f127a321939dea8e7e4dfa"
+      }
+    ]
+  }
+]

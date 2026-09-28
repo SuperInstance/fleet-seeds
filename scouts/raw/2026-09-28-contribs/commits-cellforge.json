@@ -1,0 +1,467 @@
+[
+  {
+    "sha": "85920b8d272de9e47b523ec29b19dd9f600d2a4c",
+    "node_id": "C_kwDOUnwMEdoAKDg1OTIwYjhkMjcyZGU5ZTQ3YjUyM2VjMjliMTlkZDlmNjAwZDJhNGM",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T20:53:26Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-28T20:53:26Z"
+      },
+      "message": "Merge pull request #1 from SuperInstance/gift-55/self-contained-test-killer\n\nfix: make 'cellforge test-killer' self-contained — its designed fallback path was unreachable",
+      "tree": {
+        "sha": "1c71d7792220d3860787c3c9dab859e5af6931c2",
+        "url": "https://api.github.com/repos/SuperInstance/cellforge/git/trees/1c71d7792220d3860787c3c9dab859e5af6931c2"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/cellforge/git/commits/85920b8d272de9e47b523ec29b19dd9f600d2a4c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqutPGCRC1aQ7uu5UhlAAAXUkQAI4K7BLDJ6vj0YgBh0vI30Sr\nGZt9wZNWVO9TQT3m+Kri/DhO/BSIdeihhmFIvV8yYmDrD4O6jJYKu6zX1wFWI48i\nB4QqQCiSsXjGKSDHDMfVQNFH/LRWJWqwOw6m9NPi8pl7r3JTfWKc8e8aNQknRhOF\nvV19h9uhNkWxawP0JgB2ckH8BtrRJlTGfGnO4OudzMqtn7iJueFh2Jr2gNLNUrUq\nFtCwZB6P9u6K815O1iM90s42V+xHTM7pwB6Ro+97IwJb+avrbzk2AXh0OdIISZt0\ncamKkXEMY6FEOgxfWZedUw9HgDyggit9OO3GNfqpmt18YgNe3LHZsSIDcL583idI\nW9sBq2Iil7n40XJwYICjCcOesoOjQgk1Y+1sXmTWDEErFvex2Bn0NNyLxpD1Drng\nJJXY4+9BPij34k7J5od2Ez3fu1GipkWioBWOA1YztrjNU1DOBpqWA6joqCIbrj+a\nGMdcDfpnX68kH/4sNMg/Bp9Yl9eblqbOGRf50tIXMJ9/p/33DbI0BFE3zSvV05c2\n0D3SVKuEGJU3RkqD39lQK1c1oUrfyuaaonURp56QD28ssNZUvNxcMMlqXBNNCgGF\nK7oEZup7PXolZ4isiwM3d9Wf6ulTaUacrpLyvKyWu6ygEKa8GI+gbN/MMM4+3kf6\n5thDpQOpP2q04gzxwCni\n=wtW7\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 1c71d7792220d3860787c3c9dab859e5af6931c2\nparent 1a475f707986e407cc781d096f2c9afbe96fffbf\nparent c6c0ff96c1bba52b741cb7950bebb89f2fd4b4bd\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790628806 -0800\ncommitter GitHub <noreply@github.com> 1790628806 -0800\n\nMerge pull request #1 from SuperInstance/gift-55/self-contained-test-killer\n\nfix: make 'cellforge test-killer' self-contained — its designed fallback path was unreachable",
+        "verified_at": "2026-09-28T20:53:27Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/cellforge/commits/85920b8d272de9e47b523ec29b19dd9f600d2a4c",
+    "html_url": "https://github.com/SuperInstance/cellforge/commit/85920b8d272de9e47b523ec29b19dd9f600d2a4c",
+    "comments_url": "https://api.github.com/repos/SuperInstance/cellforge/commits/85920b8d272de9e47b523ec29b19dd9f600d2a4c/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1a475f707986e407cc781d096f2c9afbe96fffbf",
+        "url": "https://api.github.com/repos/SuperInstance/cellforge/commits/1a475f707986e407cc781d096f2c9afbe96fffbf",
+        "html_url": "https://github.com/SuperInstance/cellforge/commit/1a475f707986e407cc781d096f2c9afbe96fffbf"
+      },
+      {
+        "sha": "c6c0ff96c1bba52b741cb7950bebb89f2fd4b4bd",
+        "url": "https://api.github.com/repos/SuperInstance/cellforge/commits/c6c0ff96c1bba52b741cb7950bebb89f2fd4b4bd",
+        "html_url": "https://github.com/SuperInstance/cellforge/commit/c6c0ff96c1bba52b741cb7950bebb89f2fd4b4bd"
+      }
+    ]
+  },
+  {
+    "sha": "c6c0ff96c1bba52b741cb7950bebb89f2fd4b4bd",
+    "node_id": "C_kwDOUnwMEdoAKGM2YzBmZjk2YzFiYmE1MmI3NDFjYjc5NTBiZWJiODlmMmZkNGI0YmQ",
+    "commit": {
+      "author": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T19:27:07Z"
+      },
+      "committer": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T19:27:07Z"
+      },
+      "message": "fix: make 'cellforge test-killer' self-contained (its designed fallback path was unreachable)\n\nEach CLI invocation is a fresh process, but main() stored init state only in\nmodule memory (main.state). So 'cellforge test-killer' ALWAYS hit the\n'Initialize first with \"cellforge init\"' guard and exited 1 — running\n'cellforge init' first cannot help, and the self-contained scaffold path\ninside cmd_killer_demo (workbook='killer-demo' + fresh Dispatcher, written for\nexactly this case) was dead code.\n\nFix: pass a blank state to cmd_killer_demo when no dispatcher is live; its\nexisting 'd is None' branch scaffolds the demo. 'cellforge status' keeps its\ngraceful message (fixing init-state persistence is a design decision left to\nthe owner — noted, not smuggled in).\n\nReceipts (Python 3.12.14):\n- before: PYTHONPATH=src python3 -m cellforge test-killer -> exit 1,\n  'Initialize first with \"cellforge init\"'\n- after:  PYTHONPATH=src python3 -m cellforge test-killer -> exit 0,\n  100/100 workers acked, drift 0 ticks, latency 1.05ms, '[OK] PERFECT PAUSE'\n- suite unaffected: python3 run_tests.py -> 42/42 passed, exit 0",
+      "tree": {
+        "sha": "1c71d7792220d3860787c3c9dab859e5af6931c2",
+        "url": "https://api.github.com/repos/SuperInstance/cellforge/git/trees/1c71d7792220d3860787c3c9dab859e5af6931c2"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/cellforge/git/commits/c6c0ff96c1bba52b741cb7950bebb89f2fd4b4bd",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/cellforge/commits/c6c0ff96c1bba52b741cb7950bebb89f2fd4b4bd",
+    "html_url": "https://github.com/SuperInstance/cellforge/commit/c6c0ff96c1bba52b741cb7950bebb89f2fd4b4bd",
+    "comments_url": "https://api.github.com/repos/SuperInstance/cellforge/commits/c6c0ff96c1bba52b741cb7950bebb89f2fd4b4bd/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "1a475f707986e407cc781d096f2c9afbe96fffbf",
+        "url": "https://api.github.com/repos/SuperInstance/cellforge/commits/1a475f707986e407cc781d096f2c9afbe96fffbf",
+        "html_url": "https://github.com/SuperInstance/cellforge/commit/1a475f707986e407cc781d096f2c9afbe96fffbf"
+      }
+    ]
+  },
+  {
+    "sha": "1a475f707986e407cc781d096f2c9afbe96fffbf",
+    "node_id": "C_kwDOUnwMEdoAKDFhNDc1ZjcwNzk4NmU0MDdjYzc4MWQwOTZmMmM5YWZiZTk2ZmZmYmY",
+    "commit": {
+      "author": {
+        "name": "Mavis",
+        "email": "superinstance@anthropic.com",
+        "date": "2026-09-24T18:52:09Z"
+      },
+      "committer": {
+        "name": "Mavis",
+        "email": "superinstance@anthropic.com",
+        "date": "2026-09-24T18:52:09Z"
+      },
+      "message": "Cleanup gitignored artifacts + sync local state (2026-09-24)",
+      "tree": {
+        "sha": "20038196cc94f407fb478591c05244eb4ec5ca20",
+        "url": "https://api.github.com/repos/SuperInstance/cellforge/git/trees/20038196cc94f407fb478591c05244eb4ec5ca20"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/cellforge/git/commits/1a475f707986e407cc781d096f2c9afbe96fffbf",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/cellforge/commits/1a475f707986e407cc781d096f2c9afbe96fffbf",
+    "html_url": "https://github.com/SuperInstance/cellforge/commit/1a475f707986e407cc781d096f2c9afbe96fffbf",
+    "comments_url": "https://api.github.com/repos/SuperInstance/cellforge/commits/1a475f707986e407cc781d096f2c9afbe96fffbf/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "8c03fae3b6d87dd3a918285d53761c7c038db3cc",
+        "url": "https://api.github.com/repos/SuperInstance/cellforge/commits/8c03fae3b6d87dd3a918285d53761c7c038db3cc",
+        "html_url": "https://github.com/SuperInstance/cellforge/commit/8c03fae3b6d87dd3a918285d53761c7c038db3cc"
+      }
+    ]
+  },
+  {
+    "sha": "8c03fae3b6d87dd3a918285d53761c7c038db3cc",
+    "node_id": "C_kwDOUnwMEdoAKDhjMDNmYWUzYjZkODdkZDNhOTE4Mjg1ZDUzNzYxYzdjMDM4ZGIzY2M",
+    "commit": {
+      "author": {
+        "name": "Mavis",
+        "email": "superinstance@anthropic.com",
+        "date": "2026-09-23T17:35:05Z"
+      },
+      "committer": {
+        "name": "Mavis",
+        "email": "superinstance@anthropic.com",
+        "date": "2026-09-23T17:35:05Z"
+      },
+      "message": "v0.4.1 — Causal-consistency verdict on rewind (R10 Theme T5)\n\nAdds a small but important doctrinal safeguard discovered by the multi-LLM\nAdversary Round 10: when rewinding, check that the witness chain is causally\nlinked — i.e., that replaying tick N will reproduce tick N+1. Without this,\nusers get subtle 'future doesn't match past' bugs after rewind.\n\nNew API:\n- Dispatcher.bind_workbook(wb) — wire dispatcher↔workbook in both dirs\n- Dispatcher.rewind_to(target_tick) now returns a verdict dict:\n    {ok, violations, checks, target_tick, recommended_action, reason}\n  - 'proceed' if no violations\n  - 'warn'   if ≤10% violations\n  - 'block'  if >10% violations (or no ticks/non-causal adjacency)\n  - 'skip'   if no workbook bound (assume causal)\n\nNew Workbook helpers:\n- witnessed_state_hash(tick) — sha256 of all event content_hashes at tick\n- causally_consistent(tick_t, tick_t1) — True if t1 events reference t0 events\n\n5 new tests (42 total, was 37). All pass.\n\nCross-project durable insight (cellforge): Rewind is a trust claim, not a\nstate operation. The user is asking 'will the past I see be the past I\nget if I press play?' — make that claim auditable.",
+      "tree": {
+        "sha": "0c26e8f64a9d8f1bcbb1d9ad2fba7d73498580b7",
+        "url": "https://api.github.com/repos/SuperInstance/cellforge/git/trees/0c26e8f64a9d8f1bcbb1d9ad2fba7d73498580b7"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/cellforge/git/commits/8c03fae3b6d87dd3a918285d53761c7c038db3cc",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/cellforge/commits/8c03fae3b6d87dd3a918285d53761c7c038db3cc",
+    "html_url": "https://github.com/SuperInstance/cellforge/commit/8c03fae3b6d87dd3a918285d53761c7c038db3cc",
+    "comments_url": "https://api.github.com/repos/SuperInstance/cellforge/commits/8c03fae3b6d87dd3a918285d53761c7c038db3cc/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "dd842093a1af318f68d5f36441bb453384aad843",
+        "url": "https://api.github.com/repos/SuperInstance/cellforge/commits/dd842093a1af318f68d5f36441bb453384aad843",
+        "html_url": "https://github.com/SuperInstance/cellforge/commit/dd842093a1af318f68d5f36441bb453384aad843"
+      }
+    ]
+  },
+  {
+    "sha": "dd842093a1af318f68d5f36441bb453384aad843",
+    "node_id": "C_kwDOUnwMEdoAKGRkODQyMDkzYTFhZjMxOGY2OGQ1ZjM2NDQxYmI0NTMzODRhYWQ4NDM",
+    "commit": {
+      "author": {
+        "name": "Mavis",
+        "email": "superinstance@anthropic.com",
+        "date": "2026-09-23T17:26:41Z"
+      },
+      "committer": {
+        "name": "Mavis",
+        "email": "superinstance@anthropic.com",
+        "date": "2026-09-23T17:26:41Z"
+      },
+      "message": "v0.4.0 — EXPERIMENTAL mode consolidates PREDICTING + BACKTESTING\n\nMode.EXPERIMENTAL (6th dispatcher mode):\n- enter_experimental(scenarios, replay_chain=None)\n  - pure PREDICTING if no chain\n  - BACKTESTING if replay chain provided\n- compare_scenarios(scenario_ids) returns divergence scores\n- exit_experimental() returns to PAUSED\n\n6 new tests (37 total, was 31):\n- experimental_pure_predicting\n- experimental_with_replay_is_backtesting\n- experimental_exits_to_paused\n- compare_scenarios_returns_dict\n- compare_scenarios_only_in_experimental\n- experimental_multi_scenario_promises\n\nAll 31 prior tests still pass.",
+      "tree": {
+        "sha": "9fa8ba9a1ea6393745c05be06a8e9e9a4aa73fa4",
+        "url": "https://api.github.com/repos/SuperInstance/cellforge/git/trees/9fa8ba9a1ea6393745c05be06a8e9e9a4aa73fa4"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/cellforge/git/commits/dd842093a1af318f68d5f36441bb453384aad843",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/cellforge/commits/dd842093a1af318f68d5f36441bb453384aad843",
+    "html_url": "https://github.com/SuperInstance/cellforge/commit/dd842093a1af318f68d5f36441bb453384aad843",
+    "comments_url": "https://api.github.com/repos/SuperInstance/cellforge/commits/dd842093a1af318f68d5f36441bb453384aad843/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "f9ec6cbdabfc47899e1eae716e353bd19b6c6d59",
+        "url": "https://api.github.com/repos/SuperInstance/cellforge/commits/f9ec6cbdabfc47899e1eae716e353bd19b6c6d59",
+        "html_url": "https://github.com/SuperInstance/cellforge/commit/f9ec6cbdabfc47899e1eae716e353bd19b6c6d59"
+      }
+    ]
+  },
+  {
+    "sha": "f9ec6cbdabfc47899e1eae716e353bd19b6c6d59",
+    "node_id": "C_kwDOUnwMEdoAKGY5ZWM2Y2JkYWJmYzQ3ODk5ZTFlYWU3MTZlMzUzYmQxOWI2YzZkNTk",
+    "commit": {
+      "author": {
+        "name": "Mavis",
+        "email": "superinstance@anthropic.com",
+        "date": "2026-09-23T17:08:39Z"
+      },
+      "committer": {
+        "name": "Mavis",
+        "email": "superinstance@anthropic.com",
+        "date": "2026-09-23T17:08:39Z"
+      },
+      "message": "cellforge v0.3.0: PREDICTING + JEPA stub + JEV verifier\n\nAdversary Round 6-8 prioritized PREDICTING as the third mode after\npause + rewind. With JEPA-style forecasting + uncertainty quantification.\n\nAdded:\n- Mode.PREDICTING (5th mode) — fork ledger, write to PREDICTION_CELLs\n- Dispatcher.enter_predicting(scenarios) / exit_predicting()\n- Dispatcher.active_fork_id — fork metadata\n- PredictionCell — distribution over values (NOT point estimate)\n  - normalized() — sums to 1.0\n  - entropy() — Shannon entropy\n  - to_canonical() — highest-prob value if confidence > threshold\n- JEPAPredictor (stub) — linear extrapolation + Gaussian uncertainty\n- JEVVerifier (stub) — cosine-style score vs observed value\n  - should_promote() — boolean gate based on agreement_threshold\n\n6 new tests (31/31 total):\n- predicting_creates_fork_id\n- predicting_exits_to_paused\n- prediction_cell_normalized\n- prediction_cell_entropy\n- jepa_predictor_basic\n- jev_verifier_basic\n\nPer Qwen-Max-Thinking Theme 22: predictions are epistemic (distributions),\nnot ontic (point estimates). The stub uses Gaussian bins with std growing\nwith horizon.\n\nCo-Authored-By: Mavis <noreply@anthropic.com>",
+      "tree": {
+        "sha": "0d38cc91d8dc8a9c97cd44993c7dcaac8f927aa7",
+        "url": "https://api.github.com/repos/SuperInstance/cellforge/git/trees/0d38cc91d8dc8a9c97cd44993c7dcaac8f927aa7"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/cellforge/git/commits/f9ec6cbdabfc47899e1eae716e353bd19b6c6d59",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/cellforge/commits/f9ec6cbdabfc47899e1eae716e353bd19b6c6d59",
+    "html_url": "https://github.com/SuperInstance/cellforge/commit/f9ec6cbdabfc47899e1eae716e353bd19b6c6d59",
+    "comments_url": "https://api.github.com/repos/SuperInstance/cellforge/commits/f9ec6cbdabfc47899e1eae716e353bd19b6c6d59/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "1438a5c032b8b65a887566e9fefc1285b2efbf92",
+        "url": "https://api.github.com/repos/SuperInstance/cellforge/commits/1438a5c032b8b65a887566e9fefc1285b2efbf92",
+        "html_url": "https://github.com/SuperInstance/cellforge/commit/1438a5c032b8b65a887566e9fefc1285b2efbf92"
+      }
+    ]
+  },
+  {
+    "sha": "1438a5c032b8b65a887566e9fefc1285b2efbf92",
+    "node_id": "C_kwDOUnwMEdoAKDE0MzhhNWMwMzJiOGI2NWE4ODc1NjZlOWZlZmMxMjg1YjJlZmJmOTI",
+    "commit": {
+      "author": {
+        "name": "Mavis",
+        "email": "superinstance@anthropic.com",
+        "date": "2026-09-23T17:03:48Z"
+      },
+      "committer": {
+        "name": "Mavis",
+        "email": "superinstance@anthropic.com",
+        "date": "2026-09-23T17:03:48Z"
+      },
+      "message": "cellforge v0.2.0: REWINDING mode + REPLAY_CELL\n\nAdversary Round 6 (seed_pro) prioritized: REWINDING + REPLAY_CELL are\nthe v0.2 killer, not all 7 dispatcher modes. Ship the minimal version.\n\nAdded:\n- Mode.REWINDING (4th mode) — read-only backward traversal\n- Dispatcher.rewind_to(target_tick) — sets mode, target, rewinding flag\n- ReplayCell dataclass — captures witness chain snapshot\n  - integrity_check() verifies parent hash chain\n  - event_at_tick(tick) retrieves specific event\n- Workbook.add_replay(replay) — write-lock-protected\n- Workbook.capture_replay(replay_id, zone_id) — snapshot current witness_log\n- Workbook write-lock extends to REWINDING mode (read-only)\n- Dispatcher.tick_window — for Qwen-Max-Thinking Theme 23 (learning windows)\n\n5 new tests (25/25 total):\n- rewind_to_tick_n\n- rewind_blocked_when_no_ticks_happened\n- rewind_blocks_writes_to_canon\n- replay_cell_integrity\n- pause_rewind_change_resume_diverges (the v0.2 killer)\n\nREADME updated with the second killer demo.\n\nCo-Authored-By: Mavis <noreply@anthropic.com>",
+      "tree": {
+        "sha": "d3fe84d79c6fda3f6cce7076e5abe7f53fc0f21d",
+        "url": "https://api.github.com/repos/SuperInstance/cellforge/git/trees/d3fe84d79c6fda3f6cce7076e5abe7f53fc0f21d"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/cellforge/git/commits/1438a5c032b8b65a887566e9fefc1285b2efbf92",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/cellforge/commits/1438a5c032b8b65a887566e9fefc1285b2efbf92",
+    "html_url": "https://github.com/SuperInstance/cellforge/commit/1438a5c032b8b65a887566e9fefc1285b2efbf92",
+    "comments_url": "https://api.github.com/repos/SuperInstance/cellforge/commits/1438a5c032b8b65a887566e9fefc1285b2efbf92/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "b75b25485c25ab551eaf38ab7567fa7060f21d06",
+        "url": "https://api.github.com/repos/SuperInstance/cellforge/commits/b75b25485c25ab551eaf38ab7567fa7060f21d06",
+        "html_url": "https://github.com/SuperInstance/cellforge/commit/b75b25485c25ab551eaf38ab7567fa7060f21d06"
+      }
+    ]
+  },
+  {
+    "sha": "b75b25485c25ab551eaf38ab7567fa7060f21d06",
+    "node_id": "C_kwDOUnwMEdoAKGI3NWIyNTQ4NWMyNWFiNTUxZWFmMzhhYjc1NjdmYTcwNjBmMjFkMDY",
+    "commit": {
+      "author": {
+        "name": "Mavis",
+        "email": "superinstance@anthropic.com",
+        "date": "2026-09-23T16:58:42Z"
+      },
+      "committer": {
+        "name": "Mavis",
+        "email": "superinstance@anthropic.com",
+        "date": "2026-09-23T16:58:42Z"
+      },
+      "message": "cellforge v0.1.2: JEV oracle integration\n\nAdded cellforge/jev.py — canonical gate using JEV (Joint Embedding Validator)\nat api.typesafe.ai/v1/systemone.\n\nJEV verdict (live query, jev-1.13.0):\n- canon_score: 0.73 (Solid canon-worthy, conf 0.66)\n- paradigm_shift: 0.74 (Notable shift, conf 0.65)\n- is_inversion: 0.86 (yes — the town-and-laborers inversion is real)\n- is_canon yes/no: 0.28 (keep building — promotion not yet automatic)\n\nHelpers:\n- jev_oracle(state, questions) — direct JEV query\n- canon_gate(state, threshold) — normalized gate for promotion\n  returns {gate_passed: bool, canon_score, is_canon, details}\n\n20/20 tests pass (was 18, +2 for jev_helper_smoke, canon_gate_shape).\n\nCo-Authored-By: Mavis <noreply@anthropic.com>",
+      "tree": {
+        "sha": "dcad59c8fb4277a756f88b048c2f550e07811d8b",
+        "url": "https://api.github.com/repos/SuperInstance/cellforge/git/trees/dcad59c8fb4277a756f88b048c2f550e07811d8b"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/cellforge/git/commits/b75b25485c25ab551eaf38ab7567fa7060f21d06",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/cellforge/commits/b75b25485c25ab551eaf38ab7567fa7060f21d06",
+    "html_url": "https://github.com/SuperInstance/cellforge/commit/b75b25485c25ab551eaf38ab7567fa7060f21d06",
+    "comments_url": "https://api.github.com/repos/SuperInstance/cellforge/commits/b75b25485c25ab551eaf38ab7567fa7060f21d06/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "f2fd56f1f89539221405b787bcf165fb683e7fa3",
+        "url": "https://api.github.com/repos/SuperInstance/cellforge/commits/f2fd56f1f89539221405b787bcf165fb683e7fa3",
+        "html_url": "https://github.com/SuperInstance/cellforge/commit/f2fd56f1f89539221405b787bcf165fb683e7fa3"
+      }
+    ]
+  },
+  {
+    "sha": "f2fd56f1f89539221405b787bcf165fb683e7fa3",
+    "node_id": "C_kwDOUnwMEdoAKGYyZmQ1NmYxZjg5NTM5MjIxNDA1Yjc4N2JjZjE2NWZiNjgzZTdmYTM",
+    "commit": {
+      "author": {
+        "name": "Mavis",
+        "email": "superinstance@anthropic.com",
+        "date": "2026-09-23T16:55:43Z"
+      },
+      "committer": {
+        "name": "Mavis",
+        "email": "superinstance@anthropic.com",
+        "date": "2026-09-23T16:55:43Z"
+      },
+      "message": "cellforge v0.1.1: Write-lock safety interlock\n\nAdversary Round 5 (seed_pro) found: 'When dispatcher is in PLAYING mode,\nno external actor may write to canon cells. This is a safety interlock.'\n\nApplied:\n- Workbook.bind_dispatcher(d) - link workbook to dispatcher for lock checks\n- add_cell(force=False) raises PermissionError when mode=PLAYING\n- add_fork(force=False) same protection\n- record_witness() ALWAYS allowed (witness is canon, not a modification)\n- force=True escape hatch for admins\n\n3 new tests (18/18 total now pass):\n- cannot_modify_canon_while_playing\n- force_write_bypasses_lock\n- witness_log_writes_always_allowed\n\nCo-Authored-By: Mavis <noreply@anthropic.com>",
+      "tree": {
+        "sha": "70502dd5b7e33f0874ef67d94df1fc29f0718bcb",
+        "url": "https://api.github.com/repos/SuperInstance/cellforge/git/trees/70502dd5b7e33f0874ef67d94df1fc29f0718bcb"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/cellforge/git/commits/f2fd56f1f89539221405b787bcf165fb683e7fa3",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/cellforge/commits/f2fd56f1f89539221405b787bcf165fb683e7fa3",
+    "html_url": "https://github.com/SuperInstance/cellforge/commit/f2fd56f1f89539221405b787bcf165fb683e7fa3",
+    "comments_url": "https://api.github.com/repos/SuperInstance/cellforge/commits/f2fd56f1f89539221405b787bcf165fb683e7fa3/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "13f54dd086b63d4dda0484bc5f156ce3ac3a4a0c",
+        "url": "https://api.github.com/repos/SuperInstance/cellforge/commits/13f54dd086b63d4dda0484bc5f156ce3ac3a4a0c",
+        "html_url": "https://github.com/SuperInstance/cellforge/commit/13f54dd086b63d4dda0484bc5f156ce3ac3a4a0c"
+      }
+    ]
+  },
+  {
+    "sha": "13f54dd086b63d4dda0484bc5f156ce3ac3a4a0c",
+    "node_id": "C_kwDOUnwMEdoAKDEzZjU0ZGQwODZiNjNkNGRkYTA0ODRiYzVmMTU2Y2UzYWMzYTRhMGM",
+    "commit": {
+      "author": {
+        "name": "Mavis",
+        "email": "superinstance@anthropic.com",
+        "date": "2026-09-23T16:53:25Z"
+      },
+      "committer": {
+        "name": "Mavis",
+        "email": "superinstance@anthropic.com",
+        "date": "2026-09-23T16:53:25Z"
+      },
+      "message": "Add polyformalism canary (FNV-1a 64-bit, 0x24a555471370b18d)\n\nCo-Authored-By: Mavis <noreply@anthropic.com>",
+      "tree": {
+        "sha": "988671def00b0193b1d009831881be4e3dcbc35e",
+        "url": "https://api.github.com/repos/SuperInstance/cellforge/git/trees/988671def00b0193b1d009831881be4e3dcbc35e"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/cellforge/git/commits/13f54dd086b63d4dda0484bc5f156ce3ac3a4a0c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/cellforge/commits/13f54dd086b63d4dda0484bc5f156ce3ac3a4a0c",
+    "html_url": "https://github.com/SuperInstance/cellforge/commit/13f54dd086b63d4dda0484bc5f156ce3ac3a4a0c",
+    "comments_url": "https://api.github.com/repos/SuperInstance/cellforge/commits/13f54dd086b63d4dda0484bc5f156ce3ac3a4a0c/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "debb3f4ff4d51e6a732042bcfc831d422f355a70",
+        "url": "https://api.github.com/repos/SuperInstance/cellforge/commits/debb3f4ff4d51e6a732042bcfc831d422f355a70",
+        "html_url": "https://github.com/SuperInstance/cellforge/commit/debb3f4ff4d51e6a732042bcfc831d422f355a70"
+      }
+    ]
+  }
+]

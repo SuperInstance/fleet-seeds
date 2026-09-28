@@ -1,0 +1,422 @@
+[
+  {
+    "sha": "01de9b202cb446c0277c209684595c241dda126b",
+    "node_id": "C_kwDOUu8_j9oAKDAxZGU5YjIwMmNiNDQ2YzAyNzdjMjA5Njg0NTk1YzI0MWRkYTEyNmI",
+    "commit": {
+      "author": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T21:18:36Z"
+      },
+      "committer": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T21:18:36Z"
+      },
+      "message": "D2 free-delta KEEP: val_bpb 1.6666 vs 1.6959 (-0.0293) — the difference-operator transformer's first win, zero new params, -2% tok/s",
+      "tree": {
+        "sha": "654e13a6fcbfda9349e7715043a4f08e275b071b",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/git/trees/654e13a6fcbfda9349e7715043a4f08e275b071b"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/git/commits/01de9b202cb446c0277c209684595c241dda126b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/01de9b202cb446c0277c209684595c241dda126b",
+    "html_url": "https://github.com/SuperInstance/quilt-gpu-lab/commit/01de9b202cb446c0277c209684595c241dda126b",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/01de9b202cb446c0277c209684595c241dda126b/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "5da81018c64b65452bee09c2a4011ca427397728",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/5da81018c64b65452bee09c2a4011ca427397728",
+        "html_url": "https://github.com/SuperInstance/quilt-gpu-lab/commit/5da81018c64b65452bee09c2a4011ca427397728"
+      }
+    ]
+  },
+  {
+    "sha": "5da81018c64b65452bee09c2a4011ca427397728",
+    "node_id": "C_kwDOUu8_j9oAKDVkYTgxMDE4YzY0YjY1NDUyYmVlMDljMmE0MDExY2E0MjczOTc3Mjg",
+    "commit": {
+      "author": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T21:17:37Z"
+      },
+      "committer": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T21:17:37Z"
+      },
+      "message": "D2 free-delta KEEP: val_bpb 1.666624 vs baseline 1.695939 (-0.029315) at same 300s budget. One projection pass, delta k/v are post-projection temporal diffs of the same row-slices (q as-is) — no second linear, no hidden shift: tok/s ~71.3K vs 73K baseline (-2%, was -9% in D1), 52 vs 53 steps (27.3M vs 27.8M tokens), VRAM back to baseline exactly (3745.3MB). D1's signal kept, D1's cost removed. Pathspec: training/delta_free only; no autoclaw tracked file touched.",
+      "tree": {
+        "sha": "8d1daf98ab8d5d5b0866162c6192da2897fab3f9",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/git/trees/8d1daf98ab8d5d5b0866162c6192da2897fab3f9"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/git/commits/5da81018c64b65452bee09c2a4011ca427397728",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/5da81018c64b65452bee09c2a4011ca427397728",
+    "html_url": "https://github.com/SuperInstance/quilt-gpu-lab/commit/5da81018c64b65452bee09c2a4011ca427397728",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/5da81018c64b65452bee09c2a4011ca427397728/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "9ed6f2f0ecf9df46028c122d7dfde996a14d667a",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/9ed6f2f0ecf9df46028c122d7dfde996a14d667a",
+        "html_url": "https://github.com/SuperInstance/quilt-gpu-lab/commit/9ed6f2f0ecf9df46028c122d7dfde996a14d667a"
+      }
+    ]
+  },
+  {
+    "sha": "9ed6f2f0ecf9df46028c122d7dfde996a14d667a",
+    "node_id": "C_kwDOUu8_j9oAKDllZDZmMmYwZWNmOWRmNDYwMjhjMTIyZDdkZmRlOTk2YTE0ZDY2N2E",
+    "commit": {
+      "author": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T21:13:22Z"
+      },
+      "committer": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T21:13:22Z"
+      },
+      "message": "X9 FALLS: presence falls to statistics (battery-MLP 0.895 > embedding-MLP 0.835 room-level) — the falsifier campaign sweeps the table; E12's dial read fully statistics-explainable on all 3 dials",
+      "tree": {
+        "sha": "27b001295dea717e34357029cf101997b25cf10e",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/git/trees/27b001295dea717e34357029cf101997b25cf10e"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/git/commits/9ed6f2f0ecf9df46028c122d7dfde996a14d667a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/9ed6f2f0ecf9df46028c122d7dfde996a14d667a",
+    "html_url": "https://github.com/SuperInstance/quilt-gpu-lab/commit/9ed6f2f0ecf9df46028c122d7dfde996a14d667a",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/9ed6f2f0ecf9df46028c122d7dfde996a14d667a/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "38a7b4fc11999d7a7a573c8bcce7fb1fa40f427d",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/38a7b4fc11999d7a7a573c8bcce7fb1fa40f427d",
+        "html_url": "https://github.com/SuperInstance/quilt-gpu-lab/commit/38a7b4fc11999d7a7a573c8bcce7fb1fa40f427d"
+      }
+    ]
+  },
+  {
+    "sha": "38a7b4fc11999d7a7a573c8bcce7fb1fa40f427d",
+    "node_id": "C_kwDOUu8_j9oAKDM4YTdiNGZjMTE5OTlkN2E3YTU3M2M4YmNjZTdmYjFmYTQwZjQyN2Q",
+    "commit": {
+      "author": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T21:12:19Z"
+      },
+      "committer": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T21:12:19Z"
+      },
+      "message": "X9 FALLS: presence falls to statistics — X3's room-level battery collapse (0.028) was the LINEAR reader, not the features. E13b's MLP (16h/lbfgs/alpha 0.1) lifts battery presence to 0.895 refit / 0.806 avg-pred vs embedding-MLP 0.835 (ratio 1.07x >= 0.7x gate). Ridge rows reproduce X3 exactly (0.0277/0.9374 drift check). All validity gates green (self-tests, staging, battery->lum 1.0, curvature 6.3/4.0 non-affine, nulls far below). With X3+X6+X2: the E12-family dial read is fully stats-explainable on all three dials",
+      "tree": {
+        "sha": "b5842226d79ed0cec069724a9e52ce890ee0db3f",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/git/trees/b5842226d79ed0cec069724a9e52ce890ee0db3f"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/git/commits/38a7b4fc11999d7a7a573c8bcce7fb1fa40f427d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/38a7b4fc11999d7a7a573c8bcce7fb1fa40f427d",
+    "html_url": "https://github.com/SuperInstance/quilt-gpu-lab/commit/38a7b4fc11999d7a7a573c8bcce7fb1fa40f427d",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/38a7b4fc11999d7a7a573c8bcce7fb1fa40f427d/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "1eb15f4cc5054ecb2be5a19d67a6fa930f1f0c91",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/1eb15f4cc5054ecb2be5a19d67a6fa930f1f0c91",
+        "html_url": "https://github.com/SuperInstance/quilt-gpu-lab/commit/1eb15f4cc5054ecb2be5a19d67a6fa930f1f0c91"
+      }
+    ]
+  },
+  {
+    "sha": "1eb15f4cc5054ecb2be5a19d67a6fa930f1f0c91",
+    "node_id": "C_kwDOUu8_j9oAKDFlYjE1ZjRjYzUwNTRlY2IyYmU1YTE5ZDY3YTZmYTkzMGYxZjBjOTE",
+    "commit": {
+      "author": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T20:53:29Z"
+      },
+      "committer": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T20:53:29Z"
+      },
+      "message": "D1 delta-attention KILL at fixed budget (+0.000154 bpb) but per-token parity on 7.5% fewer tokens — the difference signal is real, the implementation wasn't free. D2 (free-delta) queued",
+      "tree": {
+        "sha": "5d1f427c28311a9f5bcde6d8b856b8e29822b655",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/git/trees/5d1f427c28311a9f5bcde6d8b856b8e29822b655"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/git/commits/1eb15f4cc5054ecb2be5a19d67a6fa930f1f0c91",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/1eb15f4cc5054ecb2be5a19d67a6fa930f1f0c91",
+    "html_url": "https://github.com/SuperInstance/quilt-gpu-lab/commit/1eb15f4cc5054ecb2be5a19d67a6fa930f1f0c91",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/1eb15f4cc5054ecb2be5a19d67a6fa930f1f0c91/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "8871a10850c78a3a94e1b384727b99154609f574",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/8871a10850c78a3a94e1b384727b99154609f574",
+        "html_url": "https://github.com/SuperInstance/quilt-gpu-lab/commit/8871a10850c78a3a94e1b384727b99154609f574"
+      }
+    ]
+  },
+  {
+    "sha": "8871a10850c78a3a94e1b384727b99154609f574",
+    "node_id": "C_kwDOUu8_j9oAKDg4NzFhMTA4NTBjNzhhM2E5NGUxYjM4NDcyN2I5OTE1NDYwOWY1NzQ",
+    "commit": {
+      "author": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T20:52:33Z"
+      },
+      "committer": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T20:52:33Z"
+      },
+      "message": "D1 delta-attention increment: KILL — val_bpb 1.696093 vs baseline 1.695939 (+0.000154) at same 300s budget. Half the heads attend on h−shift(h,1) (zero new params, 50.3M); tracked baseline train loss the whole way on 7.5% fewer tokens, but 9% wall-clock overhead (66K vs 73K tok/s, 49 vs 53 steps) ate the advantage. Difference signal real, not yet free enough. Pathspec: training/delta_increment only; no autoclaw tracked file touched.",
+      "tree": {
+        "sha": "fa4eff76a714095d11ff77190320886b59a3c483",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/git/trees/fa4eff76a714095d11ff77190320886b59a3c483"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/git/commits/8871a10850c78a3a94e1b384727b99154609f574",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/8871a10850c78a3a94e1b384727b99154609f574",
+    "html_url": "https://github.com/SuperInstance/quilt-gpu-lab/commit/8871a10850c78a3a94e1b384727b99154609f574",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/8871a10850c78a3a94e1b384727b99154609f574/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "06e1533904e644f1d8f8dfd278f76928b94df2fc",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/06e1533904e644f1d8f8dfd278f76928b94df2fc",
+        "html_url": "https://github.com/SuperInstance/quilt-gpu-lab/commit/06e1533904e644f1d8f8dfd278f76928b94df2fc"
+      }
+    ]
+  },
+  {
+    "sha": "06e1533904e644f1d8f8dfd278f76928b94df2fc",
+    "node_id": "C_kwDOUu8_j9oAKDA2ZTE1MzM5MDRlNjQ0ZjFkOGY4ZGZkMjc4Zjc2OTI4Yjk0ZGYyZmM",
+    "commit": {
+      "author": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T20:26:39Z"
+      },
+      "committer": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T20:26:39Z"
+      },
+      "message": "X2 INCONCLUSIVE (substance: renderer-bound) — cross-renderer transfer fails on every dial both directions; volume anti-transfers (below shuffle null). With X3+X6: E12's read is renderer-bound, range-local, stats-explainable",
+      "tree": {
+        "sha": "988e6b406764dacadb913ca373342de8d53dfe1c",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/git/trees/988e6b406764dacadb913ca373342de8d53dfe1c"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/git/commits/06e1533904e644f1d8f8dfd278f76928b94df2fc",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/06e1533904e644f1d8f8dfd278f76928b94df2fc",
+    "html_url": "https://github.com/SuperInstance/quilt-gpu-lab/commit/06e1533904e644f1d8f8dfd278f76928b94df2fc",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/06e1533904e644f1d8f8dfd278f76928b94df2fc/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "65f56c7eea4efe75d5600edd2cc93f5cc731fcdc",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/65f56c7eea4efe75d5600edd2cc93f5cc731fcdc",
+        "html_url": "https://github.com/SuperInstance/quilt-gpu-lab/commit/65f56c7eea4efe75d5600edd2cc93f5cc731fcdc"
+      }
+    ]
+  },
+  {
+    "sha": "65f56c7eea4efe75d5600edd2cc93f5cc731fcdc",
+    "node_id": "C_kwDOUu8_j9oAKDY1ZjU2YzdlZWE0ZWZlNzVkNTYwMGVkZDJjYzkzZjVjYzczMWZjZGM",
+    "commit": {
+      "author": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T20:25:35Z"
+      },
+      "committer": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T20:25:35Z"
+      },
+      "message": "X2 renderer transfer INCONCLUSIVE (renderer-parameterization-leaning): both renderers read within — A replicates E12 exactly (0.811/0.962/0.948), B keeps on hue/stripe/blob primitives (0.767/0.944/0.911) — but cross ratios are 0.00-0.32 with volume at/below zero in BOTH directions (A-trained volume direction is worse than a shuffled-label probe on B frames); A→B collapses 2/3 dials, B→A 1/3 with mood 0.25 / presence 0.22 just above the 0.2 collapse floor",
+      "tree": {
+        "sha": "b74f4e6c197d62b6e9e46096cec12f29286abf87",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/git/trees/b74f4e6c197d62b6e9e46096cec12f29286abf87"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/git/commits/65f56c7eea4efe75d5600edd2cc93f5cc731fcdc",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/65f56c7eea4efe75d5600edd2cc93f5cc731fcdc",
+    "html_url": "https://github.com/SuperInstance/quilt-gpu-lab/commit/65f56c7eea4efe75d5600edd2cc93f5cc731fcdc",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/65f56c7eea4efe75d5600edd2cc93f5cc731fcdc/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "6bd3e22235e952527fa80671c9a9f9556355ab9c",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/6bd3e22235e952527fa80671c9a9f9556355ab9c",
+        "html_url": "https://github.com/SuperInstance/quilt-gpu-lab/commit/6bd3e22235e952527fa80671c9a9f9556355ab9c"
+      }
+    ]
+  },
+  {
+    "sha": "6bd3e22235e952527fa80671c9a9f9556355ab9c",
+    "node_id": "C_kwDOUu8_j9oAKDZiZDNlMjIyMzVlOTUyNTI3ZmE4MDY3MWM5YTlmOTU1NjM1NWFiOWM",
+    "commit": {
+      "author": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T20:23:49Z"
+      },
+      "committer": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T20:23:49Z"
+      },
+      "message": "autoclaw train receipt: FIRST local increment complete on RTX 4050 — val_bpb 1.695939 (50.3M GPT, 27.8M tokens, 302s budget, peak 3.7GB/6.1GB). 3 documented deviations (kernels 0.17 revision arg, DEVICE_BATCH_SIZE 8, FA3 bf16 boundary casts for torch 2.14 inductor bug). No autoclaw tracked file touched.",
+      "tree": {
+        "sha": "93aa4cee6822d4f32413e5afa477d0979e340e14",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/git/trees/93aa4cee6822d4f32413e5afa477d0979e340e14"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/git/commits/6bd3e22235e952527fa80671c9a9f9556355ab9c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/6bd3e22235e952527fa80671c9a9f9556355ab9c",
+    "html_url": "https://github.com/SuperInstance/quilt-gpu-lab/commit/6bd3e22235e952527fa80671c9a9f9556355ab9c",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/6bd3e22235e952527fa80671c9a9f9556355ab9c/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "055d1881d22be620ef18d7aa9bff07e109562206",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/055d1881d22be620ef18d7aa9bff07e109562206",
+        "html_url": "https://github.com/SuperInstance/quilt-gpu-lab/commit/055d1881d22be620ef18d7aa9bff07e109562206"
+      }
+    ]
+  },
+  {
+    "sha": "055d1881d22be620ef18d7aa9bff07e109562206",
+    "node_id": "C_kwDOUu8_j9oAKDA1NWQxODgxZDIyYmU2MjBlZjE4ZDdhYTliZmYwN2UxMDk1NjIyMDY",
+    "commit": {
+      "author": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T19:56:55Z"
+      },
+      "committer": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T19:56:55Z"
+      },
+      "message": "X6 KILL: the dial read is range-local — all 3 dials collapse on dial-range extrapolation (mood -3.1, volume -0.1, presence -4.3); LORO was interpolation, not generalization",
+      "tree": {
+        "sha": "eff8cae8e4883aa52d64c3a385c266914eac14ed",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/git/trees/eff8cae8e4883aa52d64c3a385c266914eac14ed"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/git/commits/055d1881d22be620ef18d7aa9bff07e109562206",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/055d1881d22be620ef18d7aa9bff07e109562206",
+    "html_url": "https://github.com/SuperInstance/quilt-gpu-lab/commit/055d1881d22be620ef18d7aa9bff07e109562206",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/055d1881d22be620ef18d7aa9bff07e109562206/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "1c78fed6a9ccb7be3cd45785f08b148a4f885a2f",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-gpu-lab/commits/1c78fed6a9ccb7be3cd45785f08b148a4f885a2f",
+        "html_url": "https://github.com/SuperInstance/quilt-gpu-lab/commit/1c78fed6a9ccb7be3cd45785f08b148a4f885a2f"
+      }
+    ]
+  }
+]

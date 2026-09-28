@@ -1,0 +1,422 @@
+[
+  {
+    "sha": "6017f806473eb766029a174a0e32287a19ac8db9",
+    "node_id": "C_kwDOUt0fdtoAKDYwMTdmODA2NDczZWI3NjYwMjlhMTc0YTBlMzIyODdhMTlhYzhkYjk",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T18:10:32Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T18:10:32Z"
+      },
+      "message": "wave 52 residue (53-a): hermetic CRAB resolution chain (env > bundled fixtures > repo sibling, statSync probe on worker/src) + fresh strict receipt 54/54 escapes=0 — landed on disk during 52-e arc, keeper-verified now",
+      "tree": {
+        "sha": "1045e1fa427a1aa060f04f7969bd8f9e7759578b",
+        "url": "https://api.github.com/repos/SuperInstance/qthe/git/trees/1045e1fa427a1aa060f04f7969bd8f9e7759578b"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/qthe/git/commits/6017f806473eb766029a174a0e32287a19ac8db9",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/qthe/commits/6017f806473eb766029a174a0e32287a19ac8db9",
+    "html_url": "https://github.com/SuperInstance/qthe/commit/6017f806473eb766029a174a0e32287a19ac8db9",
+    "comments_url": "https://api.github.com/repos/SuperInstance/qthe/commits/6017f806473eb766029a174a0e32287a19ac8db9/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "de7d73cfce27c2405035d0787c8a1b1157feae7b",
+        "url": "https://api.github.com/repos/SuperInstance/qthe/commits/de7d73cfce27c2405035d0787c8a1b1157feae7b",
+        "html_url": "https://github.com/SuperInstance/qthe/commit/de7d73cfce27c2405035d0787c8a1b1157feae7b"
+      }
+    ]
+  },
+  {
+    "sha": "de7d73cfce27c2405035d0787c8a1b1157feae7b",
+    "node_id": "C_kwDOUt0fdtoAKGRlN2Q3M2NmY2UyN2MyNDA1MDM1ZDA3ODdjOGExYjExNTdmZWFlN2I",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T16:35:20Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T16:35:20Z"
+      },
+      "message": "wave 52 registered seal evolution (fleet law A4): reader --mtime-witness flag (strict default preserved; mtime demoted to witness under explicit flag) — root cause receipted by ephemeral codespace worker: npm install normalizes mtimes to epoch 499162500000 (1985-10-26T08:15Z), distribution consumers cannot carry sealed local mtime; registration resealed (7efea995…, witness law self-declared in seal.method), selftest mode-aware (strict in-repo 54/54, witness under distribution), reseal tool added",
+      "tree": {
+        "sha": "918f1f1359c1a5b9135368921ba153fd3ee68836",
+        "url": "https://api.github.com/repos/SuperInstance/qthe/git/trees/918f1f1359c1a5b9135368921ba153fd3ee68836"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/qthe/git/commits/de7d73cfce27c2405035d0787c8a1b1157feae7b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/qthe/commits/de7d73cfce27c2405035d0787c8a1b1157feae7b",
+    "html_url": "https://github.com/SuperInstance/qthe/commit/de7d73cfce27c2405035d0787c8a1b1157feae7b",
+    "comments_url": "https://api.github.com/repos/SuperInstance/qthe/commits/de7d73cfce27c2405035d0787c8a1b1157feae7b/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "43d741b3a359d593da1a5e9e80575204a499d217",
+        "url": "https://api.github.com/repos/SuperInstance/qthe/commits/43d741b3a359d593da1a5e9e80575204a499d217",
+        "html_url": "https://github.com/SuperInstance/qthe/commit/43d741b3a359d593da1a5e9e80575204a499d217"
+      }
+    ]
+  },
+  {
+    "sha": "43d741b3a359d593da1a5e9e80575204a499d217",
+    "node_id": "C_kwDOUt0fdtoAKDQzZDc0MWIzYTM1OWQ1OTNkYTFhNWU5ZTgwNTc1MjA0YTQ5OWQyMTc",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T04:11:38Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T04:11:38Z"
+      },
+      "message": "48-b two-reader installment 2: qthe-side reader for crab-traps chains — 3/3 chains (crab45c 19 rows @e6f5ce3, crab44a 4 @fed1e98, crab46a 26 @6bcc757), 49/49 rows re-hash to pins, tips equal pinned folds (f3ed1b63…/0886f81d…/45812cff…), P1-P5 ALL PASS, tamper localization 49/49 + selftest 54/54 zero escapes, registration sealed pre-run (masked-self-sha + mtime binding, mutated-registration refused S6), zero API spend, keeper-verified after lane dispatch death (resume-first law)",
+      "tree": {
+        "sha": "09478c9f030101e6a1270b0d6054a4c36d69d8db",
+        "url": "https://api.github.com/repos/SuperInstance/qthe/git/trees/09478c9f030101e6a1270b0d6054a4c36d69d8db"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/qthe/git/commits/43d741b3a359d593da1a5e9e80575204a499d217",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/qthe/commits/43d741b3a359d593da1a5e9e80575204a499d217",
+    "html_url": "https://github.com/SuperInstance/qthe/commit/43d741b3a359d593da1a5e9e80575204a499d217",
+    "comments_url": "https://api.github.com/repos/SuperInstance/qthe/commits/43d741b3a359d593da1a5e9e80575204a499d217/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "0c36dd2406b8e493458a92fa00ecf0cc64b1b553",
+        "url": "https://api.github.com/repos/SuperInstance/qthe/commits/0c36dd2406b8e493458a92fa00ecf0cc64b1b553",
+        "html_url": "https://github.com/SuperInstance/qthe/commit/0c36dd2406b8e493458a92fa00ecf0cc64b1b553"
+      }
+    ]
+  },
+  {
+    "sha": "0c36dd2406b8e493458a92fa00ecf0cc64b1b553",
+    "node_id": "C_kwDOUt0fdtoAKDBjMzZkZDI0MDZiOGU0OTM0NThhOTJmYTAwZWNmMGNjNjRiMWI1NTM",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T01:51:48Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T01:51:48Z"
+      },
+      "message": "e_q12 (47-a): run + verdict — k-family extension DISCHARGED 10/10, Brier(P1..P10) 0.00167\n\nThe float-collapse set is NOT k-invariant under odd scaling: 3,546\nflips sealed (LOST 2,462 A->B/C; GAINED 1,084 B/C->A) while the fixed\nplane is exactly k-invariant (T-K2 0 violations / 254,520 triples),\npowers of two invisible (T-K3), F-INV empty at every k (T-K4). 7/10\ndies at the 9-scaled tuning (k in {9,17,18,33,34,35,36}); 2/3 and 8/5\nnever flip. Per-k closed form D_k exact for all k 1..504; D_full 2772.\nCascade half RE-PARKED with committed-byte receipt (remnant\n1631->97->97). P11 AS SAID: deepseek independently reaches the\nsingle-vs-double rounding mechanism. Falsifier did not fire.",
+      "tree": {
+        "sha": "490ba132d0698b165cb92d5fdd45667492a57d61",
+        "url": "https://api.github.com/repos/SuperInstance/qthe/git/trees/490ba132d0698b165cb92d5fdd45667492a57d61"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/qthe/git/commits/0c36dd2406b8e493458a92fa00ecf0cc64b1b553",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/qthe/commits/0c36dd2406b8e493458a92fa00ecf0cc64b1b553",
+    "html_url": "https://github.com/SuperInstance/qthe/commit/0c36dd2406b8e493458a92fa00ecf0cc64b1b553",
+    "comments_url": "https://api.github.com/repos/SuperInstance/qthe/commits/0c36dd2406b8e493458a92fa00ecf0cc64b1b553/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "59dc015e4ee203ce83efd9c2be7dc867a7f1ddb1",
+        "url": "https://api.github.com/repos/SuperInstance/qthe/commits/59dc015e4ee203ce83efd9c2be7dc867a7f1ddb1",
+        "html_url": "https://github.com/SuperInstance/qthe/commit/59dc015e4ee203ce83efd9c2be7dc867a7f1ddb1"
+      }
+    ]
+  },
+  {
+    "sha": "59dc015e4ee203ce83efd9c2be7dc867a7f1ddb1",
+    "node_id": "C_kwDOUt0fdtoAKDU5ZGMwMTVlNGVlMjAzY2U4M2VmZDljMmJlN2RjODY3YTdmMWRkYjE",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T01:39:34Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T01:39:34Z"
+      },
+      "message": "e_q12 (47-a): registration + k-family closed-form predicate — PRE-RUN floors sealed (k-half registered; cascade half re-parked w/ receipt P10; pre-seal QA disclosed 19,228 triples, 0 disagreements)",
+      "tree": {
+        "sha": "f85f3dd439292b4ab6304c62ea29b11fd04a2c5b",
+        "url": "https://api.github.com/repos/SuperInstance/qthe/git/trees/f85f3dd439292b4ab6304c62ea29b11fd04a2c5b"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/qthe/git/commits/59dc015e4ee203ce83efd9c2be7dc867a7f1ddb1",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/qthe/commits/59dc015e4ee203ce83efd9c2be7dc867a7f1ddb1",
+    "html_url": "https://github.com/SuperInstance/qthe/commit/59dc015e4ee203ce83efd9c2be7dc867a7f1ddb1",
+    "comments_url": "https://api.github.com/repos/SuperInstance/qthe/commits/59dc015e4ee203ce83efd9c2be7dc867a7f1ddb1/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "151cb10f8c5d8d73746211ccefb37b26fabd898e",
+        "url": "https://api.github.com/repos/SuperInstance/qthe/commits/151cb10f8c5d8d73746211ccefb37b26fabd898e",
+        "html_url": "https://github.com/SuperInstance/qthe/commit/151cb10f8c5d8d73746211ccefb37b26fabd898e"
+      }
+    ]
+  },
+  {
+    "sha": "151cb10f8c5d8d73746211ccefb37b26fabd898e",
+    "node_id": "C_kwDOUt0fdtoAKDE1MWNiMTBmOGM1ZDhkNzM3NDYyMTFjY2VmYjM3YjI2ZmFiZDg5OGU",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T01:10:15Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T01:10:15Z"
+      },
+      "message": "e_q11 (46-c): run + verdict — closed-form A+D collapse-set predicate DISCHARGED 8/8, Brier(Q1..Q8) 0.009775\n\nE(n,dd) = R53(dd*R53(n/dd)) == n byte-exactly reproduces the committed\nE-Q9 record: membership 38,911/38,911; four-class counts EXACT; six\nobserved fields from (n,dd) alone; NOT-E == B|C 3,633 keys byte-identical;\nfull-box BigInt==native 0 disagreements over 306,773 pairs; regions\n38,911/116,176/151,686 EXACT; D_full = 2,772 = 504 + 9*252 (closed form);\nF-INV_full = 0; stable-box fraction 35,278/38,911 = the committed 90.67%\nnow a PROVEN set. E-Q10 hook: tau in {1,2}, 17/17 firstZeroTick 105.\nQ9 (AS SAID, informational): deepseek derives the dyadic-only subset —\nsubstantive disagreement receipted (A-class counterexamples 3*(2/3)==2,\n7*(5/7)==5, 5*(3/5)==3 checked natively). Falsifier did not fire.",
+      "tree": {
+        "sha": "ef4cd91a7a6fe6453b4f3da6f1466eb3ba235a63",
+        "url": "https://api.github.com/repos/SuperInstance/qthe/git/trees/ef4cd91a7a6fe6453b4f3da6f1466eb3ba235a63"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/qthe/git/commits/151cb10f8c5d8d73746211ccefb37b26fabd898e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/qthe/commits/151cb10f8c5d8d73746211ccefb37b26fabd898e",
+    "html_url": "https://github.com/SuperInstance/qthe/commit/151cb10f8c5d8d73746211ccefb37b26fabd898e",
+    "comments_url": "https://api.github.com/repos/SuperInstance/qthe/commits/151cb10f8c5d8d73746211ccefb37b26fabd898e/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "e212dbf4bd0f3f59c40326a3531d4423536019da",
+        "url": "https://api.github.com/repos/SuperInstance/qthe/commits/e212dbf4bd0f3f59c40326a3531d4423536019da",
+        "html_url": "https://github.com/SuperInstance/qthe/commit/e212dbf4bd0f3f59c40326a3531d4423536019da"
+      }
+    ]
+  },
+  {
+    "sha": "e212dbf4bd0f3f59c40326a3531d4423536019da",
+    "node_id": "C_kwDOUt0fdtoAKGUyMTJkYmY0YmQwZjNmNTljNDAzMjZhMzUzMWQ0NDIzNTM2MDE5ZGE",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T00:54:27Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T00:54:27Z"
+      },
+      "message": "e_q11 (46-c): registration + closed-form A+D collapse-set predicate — PRE-RUN floors sealed\n\n- the guest's r9-q1 parked lever (AS SAID, truncation disclosed): closed-form\n  sigma predicate for the A+D float-collapse set; discharged, not renamed\n- experiments/e_q11_collapse_predicate.mjs: R53 = IEEE-754 round-to-nearest-even\n  on rationals, bit-exact BigInt (zero native float in the decision path);\n  E(n,dd) = R53(dd*R53(n/dd))==n is the collapse set; X = fixed R8 law;\n  classifier A/B/C/D/F-INV + predicted row fields from (n,dd) alone\n- situations/eq11_predictions.json: Q1..Q9 sealed pre-run (mtime 00:53:30Z\n  predates every LLM response and eval run); pre-seal QA disclosed (derivation\n  subset dd<=32: 10,010 native bit checks, 0 disagreements); template VOID\n  claim honestly remapped (carve-geometry clause has no sigma hook)",
+      "tree": {
+        "sha": "4e3d5a0cd0eaa17c04116bec1743f444a932863d",
+        "url": "https://api.github.com/repos/SuperInstance/qthe/git/trees/4e3d5a0cd0eaa17c04116bec1743f444a932863d"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/qthe/git/commits/e212dbf4bd0f3f59c40326a3531d4423536019da",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/qthe/commits/e212dbf4bd0f3f59c40326a3531d4423536019da",
+    "html_url": "https://github.com/SuperInstance/qthe/commit/e212dbf4bd0f3f59c40326a3531d4423536019da",
+    "comments_url": "https://api.github.com/repos/SuperInstance/qthe/commits/e212dbf4bd0f3f59c40326a3531d4423536019da/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "0f5be9d6652d90b7984ebfaa5394a6e20179c7dc",
+        "url": "https://api.github.com/repos/SuperInstance/qthe/commits/0f5be9d6652d90b7984ebfaa5394a6e20179c7dc",
+        "html_url": "https://github.com/SuperInstance/qthe/commit/0f5be9d6652d90b7984ebfaa5394a6e20179c7dc"
+      }
+    ]
+  },
+  {
+    "sha": "0f5be9d6652d90b7984ebfaa5394a6e20179c7dc",
+    "node_id": "C_kwDOUt0fdtoAKDBmNWJlOWQ2NjUyZDkwYjc5ODRlYmZhYTUzOTRhNmUyMDE3OWM3ZGM",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-27T23:24:15Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-27T23:24:15Z"
+      },
+      "message": "e_q10 (45-b): stone resolution receipt — pinned canonical quilt-stone module (run-2 instrumentation fix, predictions untouched)\n\nRun-1 receipted _stone_link exhaustion (THE STONE absent from this sandbox; results already written, no chain faked). Run-2 resolves the canonical module from a lane-pinned copy (scripts/45b-stone/stone.mjs, quilt-stone blob 4ef3e1b8937c9571f1439d5bd73a87a9292d716f, sha256 73c28357a3c245e45ed13d0834e26d1712cc9cd0a9d71e02690a28e59cf550fa, fetched read-only; zero network inside the run). A pinned copy of the canonical module, NOT a fork: sealed chains verify in any environment holding the real quilt-stone. Run-1/run-2 results byte-identical (sha256 33b9c99d).",
+      "tree": {
+        "sha": "ca770ab269530f75acb74f604c4ea79510ea78ca",
+        "url": "https://api.github.com/repos/SuperInstance/qthe/git/trees/ca770ab269530f75acb74f604c4ea79510ea78ca"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/qthe/git/commits/0f5be9d6652d90b7984ebfaa5394a6e20179c7dc",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/qthe/commits/0f5be9d6652d90b7984ebfaa5394a6e20179c7dc",
+    "html_url": "https://github.com/SuperInstance/qthe/commit/0f5be9d6652d90b7984ebfaa5394a6e20179c7dc",
+    "comments_url": "https://api.github.com/repos/SuperInstance/qthe/commits/0f5be9d6652d90b7984ebfaa5394a6e20179c7dc/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "351beb79fc8e5601e8cb4b8afcb52ddeed1a31e4",
+        "url": "https://api.github.com/repos/SuperInstance/qthe/commits/351beb79fc8e5601e8cb4b8afcb52ddeed1a31e4",
+        "html_url": "https://github.com/SuperInstance/qthe/commit/351beb79fc8e5601e8cb4b8afcb52ddeed1a31e4"
+      }
+    ]
+  },
+  {
+    "sha": "351beb79fc8e5601e8cb4b8afcb52ddeed1a31e4",
+    "node_id": "C_kwDOUt0fdtoAKDM1MWJlYjc5ZmM4ZTU2MDFlOGNiNGI4YWZjYjUyZGRlZWQxYTMxZTQ",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-27T23:24:05Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-27T23:24:05Z"
+      },
+      "message": "e_q10 (45-b): run + verdict — round-9 keyed session sealed AS SAID; C5' injector one-pager executed; falsifier did NOT fire; C5' AS STATED STANDS\n\nLLM phase (6/8 wire budget, $0.0057 off-peak, zero key material): guest arm on the r6 sealed asset (1280-token warm hits) + reasoner arm on its own prefix asset (registered curve 0/640/640 = the reasoner warms its own prefix in-session, r8 precedent repeated); THE LEVER sealed AS SAID: E-Q10 = C5' injector one-pager (r9-q2 next_lever). Q1/Q3 FAIL honestly (max_tokens truncation parse layer 1/6; Q3 registration over-reach on the reasoner's free-form question_id) — mean Brier 0.22595, nothing edited post-run. Kernel phase (180 harness runs x 400 ticks, 2.6s, zero network/keys/moth): harness VERBATIM from E-Q5, one-page injector spec = 1 application x 698 cell-writes at t=50; C1..C9 ALL TRUE (restore exactly 1.000 17/17, re-erosion monotone 17/17, firstZeroTick=105 everywhere, zero self-repair anywhere, repairTick null 34/34 arms, fixed-kernel byte-identical 17/17, D1 clean, 17/20 admissible = the E-Q5 VOID set exactly); guest falsifier did NOT fire; mean Brier 0.00703. Run-1/run-2 results byte-identical (33b9c99d). Stone chain 24 links verified from disk (tip 50ddf5f9; canonical module pinned lane-side after _stone_link exhausted — receipted, not a fork). C5' RESOLVED AS STATED: repair is injector semantics; the kernel has no repair term to find. Honest notes receipted: wire race ~5ms (disclosed, no post-hoc edits), THE STONE absent from sandbox, served deepseek-flash on all calls incl. reasoner-requested.",
+      "tree": {
+        "sha": "8791f629444ef5bf66adbe19c061841b3a701189",
+        "url": "https://api.github.com/repos/SuperInstance/qthe/git/trees/8791f629444ef5bf66adbe19c061841b3a701189"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/qthe/git/commits/351beb79fc8e5601e8cb4b8afcb52ddeed1a31e4",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/qthe/commits/351beb79fc8e5601e8cb4b8afcb52ddeed1a31e4",
+    "html_url": "https://github.com/SuperInstance/qthe/commit/351beb79fc8e5601e8cb4b8afcb52ddeed1a31e4",
+    "comments_url": "https://api.github.com/repos/SuperInstance/qthe/commits/351beb79fc8e5601e8cb4b8afcb52ddeed1a31e4/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "3d8a1b726080ddd1d8453da0aae8ac619e9a29da",
+        "url": "https://api.github.com/repos/SuperInstance/qthe/commits/3d8a1b726080ddd1d8453da0aae8ac619e9a29da",
+        "html_url": "https://github.com/SuperInstance/qthe/commit/3d8a1b726080ddd1d8453da0aae8ac619e9a29da"
+      }
+    ]
+  },
+  {
+    "sha": "3d8a1b726080ddd1d8453da0aae8ac619e9a29da",
+    "node_id": "C_kwDOUt0fdtoAKDNkOGExYjcyNjA4MGRkZDFkODQ1M2RhMGFhZThhYzYxOWU5YTI5ZGE",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-27T23:19:10Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-27T23:19:10Z"
+      },
+      "message": "e_q10 (45-b): lever registration (kernel phase) + runner — PRE-TICK floors sealed\n\nThe guest's round-9 registered lever sealed verbatim from situations/guest_rows_r9_keyed.jsonl (r9-q2-next-lever): E-Q10 = C5' injector one-pager — is 'repair' purely injector semantics, and does a one-page injector spec reproduce E-Q5's restore-to-1.000-then-re-erode without any substrate self-repair term? Falsifier = the guest's three branches verbatim (self-repair without injection | repairTick non-null | non-monotone re-erosion). 9 Brier-scoreable claims C1..C9 sealed (incl. fixed-kernel invariance arm + admissible-floor >= 17/20). One-page injector spec: harness-side byte-writes (NOT a kernel primitive), budget = 1 full-ring application (|ring| writes). Addition-only clarifications disclosed (17/17 = ALL admissible under the inherited E-Q5 VOID clause; re-erosion on t>=51; same seeds 55001..55020). Moth: 0 jobs (registered — no sampling needed). ZERO E-Q10 kernel ticks exist at seal time; git history is the witness.",
+      "tree": {
+        "sha": "a277fd148211e609c4f130368ddb1270793ed30c",
+        "url": "https://api.github.com/repos/SuperInstance/qthe/git/trees/a277fd148211e609c4f130368ddb1270793ed30c"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/qthe/git/commits/3d8a1b726080ddd1d8453da0aae8ac619e9a29da",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/qthe/commits/3d8a1b726080ddd1d8453da0aae8ac619e9a29da",
+    "html_url": "https://github.com/SuperInstance/qthe/commit/3d8a1b726080ddd1d8453da0aae8ac619e9a29da",
+    "comments_url": "https://api.github.com/repos/SuperInstance/qthe/commits/3d8a1b726080ddd1d8453da0aae8ac619e9a29da/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "bd0dc3ae85aba5c1aa2c82f71cbb187f136e7456",
+        "url": "https://api.github.com/repos/SuperInstance/qthe/commits/bd0dc3ae85aba5c1aa2c82f71cbb187f136e7456",
+        "html_url": "https://github.com/SuperInstance/qthe/commit/bd0dc3ae85aba5c1aa2c82f71cbb187f136e7456"
+      }
+    ]
+  }
+]

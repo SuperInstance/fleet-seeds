@@ -1,0 +1,692 @@
+[
+  {
+    "sha": "e03bd2dda9d2a3daf744ed1617959f71f431726d",
+    "node_id": "C_kwDOUu9KWtoAKGUwM2JkMmRkYTlkMmEzZGFmNzQ0ZWQxNjE3OTU5ZjcxZjQzMTcyNmQ",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T20:54:09Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-28T20:54:09Z"
+      },
+      "message": "Merge pull request #14 from SuperInstance/exp009-budget-sweep-receipt\n\nexp009 receipt: budget-length control sweep — 6-gate ceiling NOT binding (no-op proven from telemetry)",
+      "tree": {
+        "sha": "44f7f0f2c841ec772bd8a64a5cc12d0b520deca1",
+        "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/git/trees/44f7f0f2c841ec772bd8a64a5cc12d0b520deca1"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/git/commits/e03bd2dda9d2a3daf744ed1617959f71f431726d",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqutPxCRC1aQ7uu5UhlAAAEDkQAGh5KeD8EboAqBfhAi15z30I\nAnS+viVo+PPa1LE1kerbUS0I2JyB7N3jzG5DTLO9Y5HCkVeAvQNNEmI+VjAB6glR\nhKvU95PKZd2BvN/EaoGPI81mS7asriWNkNviGZfMuinos5CTkqcvrQHf6vRzLfv7\nYihEUp+1PzXl07UWRcnQw04srUOGtB5cBPmwdSyraM42PIZpQeny27zUVdH+USBZ\n1P8eKd5nYg1/SCY8piy17eivnNbah506ddXYv3sGQ0qWABYA+eZ0UGoNKS+PTGuN\n6IEIe9iyZfu9bV/pqay1s9hQqXR4zDaECrchQpvhED/iNFldrhM5WjQ+8TN+gmdj\nFAnMzf7ruSFfXA9HswW6CSLjApYLGT3O1RP/q5XpbtcnmP30danapMawIvzH7Kq0\ndBCoI3BZXGqtK1EI2rDwnk6XvBGzR9v6hSTtnewyvk4XhDZfH/RqXlBe+MbYcixD\nAL1R35NlQ9Q5aiM19pT/IW/bD4VWzBlXqKZuj6fXLbTigtLfIUJ+WanEdeb7XnhG\n1C76lUCs14du/yUEXyd+kDXhBiot2va0Fo8GuM4aIaWf4hd/J5SJJv827eIgvHGT\n55uahiYV6NkTSZVTnB5qShki9Q1LyrXPGKyGWYNbIX10iX+/sghPOYudXGs2+FbC\nqY9OeRCUPqV4S7xcS38f\n=/eqX\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 44f7f0f2c841ec772bd8a64a5cc12d0b520deca1\nparent 62bcc3dc88256844c0532f6479f7c3692d54519c\nparent fb6c25a684879f8bf234148f53d48a55b51f1abc\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790628849 -0800\ncommitter GitHub <noreply@github.com> 1790628849 -0800\n\nMerge pull request #14 from SuperInstance/exp009-budget-sweep-receipt\n\nexp009 receipt: budget-length control sweep — 6-gate ceiling NOT binding (no-op proven from telemetry)",
+        "verified_at": "2026-09-28T20:54:10Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/e03bd2dda9d2a3daf744ed1617959f71f431726d",
+    "html_url": "https://github.com/SuperInstance/MicroMoth-quilt/commit/e03bd2dda9d2a3daf744ed1617959f71f431726d",
+    "comments_url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/e03bd2dda9d2a3daf744ed1617959f71f431726d/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "62bcc3dc88256844c0532f6479f7c3692d54519c",
+        "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/62bcc3dc88256844c0532f6479f7c3692d54519c",
+        "html_url": "https://github.com/SuperInstance/MicroMoth-quilt/commit/62bcc3dc88256844c0532f6479f7c3692d54519c"
+      },
+      {
+        "sha": "fb6c25a684879f8bf234148f53d48a55b51f1abc",
+        "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/fb6c25a684879f8bf234148f53d48a55b51f1abc",
+        "html_url": "https://github.com/SuperInstance/MicroMoth-quilt/commit/fb6c25a684879f8bf234148f53d48a55b51f1abc"
+      }
+    ]
+  },
+  {
+    "sha": "62bcc3dc88256844c0532f6479f7c3692d54519c",
+    "node_id": "C_kwDOUu9KWtoAKDYyYmNjM2RjODgyNTY4NDRjMDUzMmY2NDc5ZjdjMzY5MmQ1NDUxOWM",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T20:53:44Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-28T20:53:44Z"
+      },
+      "message": "Merge pull request #13 from SuperInstance/exp008-ghz4-scale-receipt\n\nexp008 receipt: n=4 GHZ balance scale test (doctrine holds, Finding 4 partially refuted)",
+      "tree": {
+        "sha": "7ed8c9c6eeee9a7355237e05e2c608f641ae8d18",
+        "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/git/trees/7ed8c9c6eeee9a7355237e05e2c608f641ae8d18"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/git/commits/62bcc3dc88256844c0532f6479f7c3692d54519c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqutPYCRC1aQ7uu5UhlAAAFOoQAHlRDbx6ZMth5AFE/SOGKxw4\nqia66UMRJ2WEaycECQOty53u+JNvGOwWCFWAPm9bcWFMdQzBQrRqiXmF3KcllWP8\nvsRUU0CQMVNRm+Buw2qJK4sVeX2dE3urtFsbxTXrOfymP+iOUrH5i1wlmTjqPtfm\nxa1hsYhBgEJSgfQysRQhfTzeABuSdEwHMQi4kYfjc6KnQHETysuypg+b1+mxjA0N\nrC4z9Cwj+E+zC6HIzrq9YpwpOZxRCJoFWbig2gu3k/asunEAPhu9JNqKi4kKJy3g\nzarT9mSZSfc3I40O7+UParANRZ6F5zsKWy9MqoZ8WYzxgHKmXazwu/AyHm83TeOq\n+owTpRxfPJZcAta3VaujK9ubXhklFbZ+20x+lXxANw0LTXRZz99nedN8fI8oRS4s\n0vnSOSS+TDRIdJJajgWDu0VCAPiJxfOCvkp+hTMJdKW8jOinPp4eEkDEGyXnaSrw\nIGY//jK1aW3YUZ9H3cbUHaIm1POvjtPj9YFjIag6wJ5qviilWu3m1C2HUwvJYNxp\n55s01xX6uIAPE+k4+rdQbEP/L0Cn9fiHQy0Wk0HHZfFSYnJhV3RWqBfzzDZL0UXI\nw+BJU5nW4MiR0Id1potFhbcavg9VjCC0VW67roqTDRmMXV23ZMzE0OoFcEQqQRtc\n+7S8BHdQfRS2wShDJ7A8\n=wnlp\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 7ed8c9c6eeee9a7355237e05e2c608f641ae8d18\nparent a402b252231ef2b375ddd0640123be079f4eb705\nparent 908fc05bcc5ef16379a4ff8f2621da5ac1775626\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790628824 -0800\ncommitter GitHub <noreply@github.com> 1790628824 -0800\n\nMerge pull request #13 from SuperInstance/exp008-ghz4-scale-receipt\n\nexp008 receipt: n=4 GHZ balance scale test (doctrine holds, Finding 4 partially refuted)",
+        "verified_at": "2026-09-28T20:53:45Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/62bcc3dc88256844c0532f6479f7c3692d54519c",
+    "html_url": "https://github.com/SuperInstance/MicroMoth-quilt/commit/62bcc3dc88256844c0532f6479f7c3692d54519c",
+    "comments_url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/62bcc3dc88256844c0532f6479f7c3692d54519c/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a402b252231ef2b375ddd0640123be079f4eb705",
+        "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/a402b252231ef2b375ddd0640123be079f4eb705",
+        "html_url": "https://github.com/SuperInstance/MicroMoth-quilt/commit/a402b252231ef2b375ddd0640123be079f4eb705"
+      },
+      {
+        "sha": "908fc05bcc5ef16379a4ff8f2621da5ac1775626",
+        "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/908fc05bcc5ef16379a4ff8f2621da5ac1775626",
+        "html_url": "https://github.com/SuperInstance/MicroMoth-quilt/commit/908fc05bcc5ef16379a4ff8f2621da5ac1775626"
+      }
+    ]
+  },
+  {
+    "sha": "a402b252231ef2b375ddd0640123be079f4eb705",
+    "node_id": "C_kwDOUu9KWtoAKGE0MDJiMjUyMjMxZWYyYjM3NWRkZDA2NDAxMjNiZTA3OWY0ZWI3MDU",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T20:52:56Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-28T20:52:56Z"
+      },
+      "message": "Merge pull request #12 from SuperInstance/exp007-bell-balance-receipt\n\nexp007 experiment receipt: Bell-balance n=2 control — H1 refuted for the balance witness",
+      "tree": {
+        "sha": "deb28ce684928ba01c35d5c5de608ea5872e394b",
+        "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/git/trees/deb28ce684928ba01c35d5c5de608ea5872e394b"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/git/commits/a402b252231ef2b375ddd0640123be079f4eb705",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqutOoCRC1aQ7uu5UhlAAANKQQACi9BFBPgi3hhW/xMpjPvuc4\n/5noVCAW1JkOqZiRpoSRd0r1MCIm844SjeyJIDJGVedsxTLJFqRRuu+J9I9y8nfh\nUshqs+HIGFImfL0m/skawgnXPjxCS2Y0vC6sXy+i0xEEMXIX54k2da+0yc2CZnjw\nOMNwMt9724gK6AoY+uU11NH8+3QceFmLYoUd0LFH2AxJ0U+VVi86nFyo345gI6Lb\nM/mNfGkEvLgWSQWWxiaJe+WhO/j67XPkmqHdmR+fGWeHydlHWOEsLD718qeE/b8a\nP1MU9LwE7t0TUFKGhTf+0kqDnP9BlXj1ZeuBe8bVBARbFr0DY7yAuWq7cO+4tVqA\n4a2EId14SYxypVNkzQqJ6vYOAxNaf18qDQXHXe6kQKqNpP1sg45k5eLvw9EY6HYv\n597ZMO3g4LjMLLahuMElC+P3Cz0MoymcH7zcF1FHSPKheJzw+PsVtJOh+1JRMV3d\nZWadwfLa6sMraxFg9GQ6U+ktn6JW1Jkg7bRyQqbvq4zgTPeHOVD9g3f53XYZLIXL\nlhjom4Ebsm/tLFT0rlMBas7wW//YGgDPyGN4sSoF2qRT06rv1jT0eDkkj3zTB+KI\nTmLGTGRd1Y0rdcBq9EgFjxc678H46SK0keLtEMgzsh8KBADz2XWBVXcNNnbEY8pT\n0UirJQsPHi9X/eM/LY0h\n=6dxm\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree deb28ce684928ba01c35d5c5de608ea5872e394b\nparent d6f342fd5c2f90b10c1e16303ce36deec6120e67\nparent ad9474f663a1560532aeeabb901d4ade0b2d74cc\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790628776 -0800\ncommitter GitHub <noreply@github.com> 1790628776 -0800\n\nMerge pull request #12 from SuperInstance/exp007-bell-balance-receipt\n\nexp007 experiment receipt: Bell-balance n=2 control — H1 refuted for the balance witness",
+        "verified_at": "2026-09-28T20:52:56Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/a402b252231ef2b375ddd0640123be079f4eb705",
+    "html_url": "https://github.com/SuperInstance/MicroMoth-quilt/commit/a402b252231ef2b375ddd0640123be079f4eb705",
+    "comments_url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/a402b252231ef2b375ddd0640123be079f4eb705/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d6f342fd5c2f90b10c1e16303ce36deec6120e67",
+        "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/d6f342fd5c2f90b10c1e16303ce36deec6120e67",
+        "html_url": "https://github.com/SuperInstance/MicroMoth-quilt/commit/d6f342fd5c2f90b10c1e16303ce36deec6120e67"
+      },
+      {
+        "sha": "ad9474f663a1560532aeeabb901d4ade0b2d74cc",
+        "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/ad9474f663a1560532aeeabb901d4ade0b2d74cc",
+        "html_url": "https://github.com/SuperInstance/MicroMoth-quilt/commit/ad9474f663a1560532aeeabb901d4ade0b2d74cc"
+      }
+    ]
+  },
+  {
+    "sha": "ad9474f663a1560532aeeabb901d4ade0b2d74cc",
+    "node_id": "C_kwDOUu9KWtoAKGFkOTQ3NGY2NjNhMTU2MDUzMmFlZWFiYjkwMWQ0YWRlMGIyZDc0Y2M",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T20:52:44Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-28T20:52:44Z"
+      },
+      "message": "Merge branch 'main' into exp007-bell-balance-receipt",
+      "tree": {
+        "sha": "deb28ce684928ba01c35d5c5de608ea5872e394b",
+        "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/git/trees/deb28ce684928ba01c35d5c5de608ea5872e394b"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/git/commits/ad9474f663a1560532aeeabb901d4ade0b2d74cc",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqutOcCRC1aQ7uu5UhlAAAQb0QAIaJlf3aAglER+uJWl0TIu24\nwhY9HFE0eOSf2DwAvqflBVwvlvzy2RbLZsQDa4AytwbeJ24PznK9QVN83OPA8UNL\nVrK1TNaqzELucsa1bjsW9ZI0JBBZ7K2Gcnl/Zohiiw8rjYzb0G408wo5Ro+cxNlb\nQgRaOkPsQY3EuvSXiT58E6d91LTCdxDoLyY0OuPbWr7Qnqtbmsm89IutNZSRjIDx\n2u+c4MM5pHYgY70KkRduN2vQJ43/BlxVqwXjskhTr5CoO7eGTJBOl6+b5XqtMhG8\nXoWkc80aI4HYeD2qCQmSXCCLcVqc/PKc4W99lnAOZ3YXaCzLWuLeaAviGU4jhrgC\nnKhYVVBhMESvFyebM55aSC9cr/J/0FRwjCBcANMg5JXdcGDPdS8ciJiliIMwQj51\nzh7vtB5N2eWkmsBaP6vtIOmyu8Czuy5vOR+R9vR85aReth1PMlIQ2GUgesIWxXXa\naR8469hfHdDubPojxOaj+EJ+aK06umow+nNRy0ecyfO9H1+xxhBQKQdAzy3fEWqY\nNxINKSdEry3l684hIYUz1H6NDonv+5lVGM8G5HfnALQXBaZiUXJAG8p40ho1/qdo\neewGf6oKz2zCkwkm6huCOb9iltQR6EY3e81gRNMPA8eKPRCwQEuw7Jxfun6mZWUm\nEZ/WT/NDnZoYqoweFf6l\n=R8r3\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree deb28ce684928ba01c35d5c5de608ea5872e394b\nparent fcb95319aab854d3cbaf53d58bcc47ece392dd95\nparent d6f342fd5c2f90b10c1e16303ce36deec6120e67\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790628764 -0800\ncommitter GitHub <noreply@github.com> 1790628764 -0800\n\nMerge branch 'main' into exp007-bell-balance-receipt",
+        "verified_at": "2026-09-28T20:52:45Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/ad9474f663a1560532aeeabb901d4ade0b2d74cc",
+    "html_url": "https://github.com/SuperInstance/MicroMoth-quilt/commit/ad9474f663a1560532aeeabb901d4ade0b2d74cc",
+    "comments_url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/ad9474f663a1560532aeeabb901d4ade0b2d74cc/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "fcb95319aab854d3cbaf53d58bcc47ece392dd95",
+        "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/fcb95319aab854d3cbaf53d58bcc47ece392dd95",
+        "html_url": "https://github.com/SuperInstance/MicroMoth-quilt/commit/fcb95319aab854d3cbaf53d58bcc47ece392dd95"
+      },
+      {
+        "sha": "d6f342fd5c2f90b10c1e16303ce36deec6120e67",
+        "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/d6f342fd5c2f90b10c1e16303ce36deec6120e67",
+        "html_url": "https://github.com/SuperInstance/MicroMoth-quilt/commit/d6f342fd5c2f90b10c1e16303ce36deec6120e67"
+      }
+    ]
+  },
+  {
+    "sha": "d6f342fd5c2f90b10c1e16303ce36deec6120e67",
+    "node_id": "C_kwDOUu9KWtoAKGQ2ZjM0MmZkNWMyZjkwYjEwYzFlMTYzMDNjZTM2ZGVlYzYxMjBlNjc",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T20:51:42Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-28T20:51:42Z"
+      },
+      "message": "Merge pull request #11 from SuperInstance/exp006-ghz-seeded-receipt\n\nexp006 experiment receipt: GHZ-prefix seeded restart (Finding 3a CONFIRMED + Finding 4)",
+      "tree": {
+        "sha": "ea61e321860f0a2a8ee4abfd986b08c8f1860f4a",
+        "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/git/trees/ea61e321860f0a2a8ee4abfd986b08c8f1860f4a"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/git/commits/d6f342fd5c2f90b10c1e16303ce36deec6120e67",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqutNeCRC1aQ7uu5UhlAAAZqUQAFlCf40CI3LDeUWMbhjGBl9j\n4pJbgMNlnWLk5nxMW0+Qi0jOhFdOJfwq9xjkMNq1c0mR57N0eRo1aAjK1XNeIU4H\nyE88WNa71GO2AR7K/u3k3ri8rojLABTcKbRBasyCNkQCdGqBw7qbSaFNmY2gv+C7\n9qVWCmwzPNudKwn454AXo5yPNa0oytxSGwXvYJxJCTbZrLCrdGzaDbL/53xmJS8S\n4bNJZpl3u7zcjkdqAZp14bmix8qPvQ2bNcthmRu/541NCK1ZbtNCtGh8y6jaYO/t\nsSldjQOdY62zMfLKIB33ZHeZ5/nkJGrZSr3VhnghKC7QL0cISca0XcV4yQ4LlY9/\nHW8MZnzwUz66UwAZIaIWwbCLb6395rZS+zesNkCqm6RJUcdFeoS9CUWl4LoD8/TI\nYAO5jPm2m+erVcvkCalOSsQ3/zC3KcDNwavC7/gBcI9FQqhfT7Y0QdGDh+OynANz\nljU56mponWdNq9u62dTodwuAdJeBpab3bXgIz7c2LEnQgk3kul1ZvCDdLtoRbe0N\nMQMv1VxqDXMM4E+utPC6ARRrTQRjCmBEdQCfYGS58mW/3lmOkvOi5eGOwJQ3LelG\nm/468M6ahv6isFZl6Rm9z3yqyhw7d7U4d0aUWADzYv+hN/tPOux5xk/jDtp9ydzD\ngsIJIlfEwwGSDZOCz5Uu\n=YTao\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree ea61e321860f0a2a8ee4abfd986b08c8f1860f4a\nparent 125b0f530c29d4922d91e4757d4202b4335c708a\nparent 2606a3bac1b3de2a302c9f3ff6333486f01e5414\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790628702 -0800\ncommitter GitHub <noreply@github.com> 1790628702 -0800\n\nMerge pull request #11 from SuperInstance/exp006-ghz-seeded-receipt\n\nexp006 experiment receipt: GHZ-prefix seeded restart (Finding 3a CONFIRMED + Finding 4)",
+        "verified_at": "2026-09-28T20:51:43Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/d6f342fd5c2f90b10c1e16303ce36deec6120e67",
+    "html_url": "https://github.com/SuperInstance/MicroMoth-quilt/commit/d6f342fd5c2f90b10c1e16303ce36deec6120e67",
+    "comments_url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/d6f342fd5c2f90b10c1e16303ce36deec6120e67/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "125b0f530c29d4922d91e4757d4202b4335c708a",
+        "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/125b0f530c29d4922d91e4757d4202b4335c708a",
+        "html_url": "https://github.com/SuperInstance/MicroMoth-quilt/commit/125b0f530c29d4922d91e4757d4202b4335c708a"
+      },
+      {
+        "sha": "2606a3bac1b3de2a302c9f3ff6333486f01e5414",
+        "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/2606a3bac1b3de2a302c9f3ff6333486f01e5414",
+        "html_url": "https://github.com/SuperInstance/MicroMoth-quilt/commit/2606a3bac1b3de2a302c9f3ff6333486f01e5414"
+      }
+    ]
+  },
+  {
+    "sha": "fb6c25a684879f8bf234148f53d48a55b51f1abc",
+    "node_id": "C_kwDOUu9KWtoAKGZiNmMyNWE2ODQ4NzlmOGJmMjM0MTQ4ZjUzZDQ4YTU1YjUxZjFhYmM",
+    "commit": {
+      "author": {
+        "name": "CCC",
+        "email": "ccc@fleet.local",
+        "date": "2026-09-28T20:18:59Z"
+      },
+      "committer": {
+        "name": "CCC",
+        "email": "ccc@fleet.local",
+        "date": "2026-09-28T20:18:59Z"
+      },
+      "message": "exp009 experiment receipt: seal qcells-lab budget-length control sweep (6-gate ceiling NOT binding — the no-op is proven, not assumed) - isolation test for the one structural variable every frozen-unaided verdict was recorded under; budget swept 6/8/12 on the doctrine lane (seedA GHZ3 skeleton, n=4 GHZ balance, restrict=('replace','indel'), same named seeds) with byte-identical outcomes at every arm: same exp008 non-canonical champion [h(0),cx(0,1),crx(pi,1,3),cx(1,2)], same crossing gen 5, same held-out verify 0.4824; no-op mechanism proven from telemetry (max_champion_len_seen=4 at every budget < 6; budget only enters the move choice at len>=budget, which never occurs) so the exp005-008 frozen verdicts stand as engine laws, not leash artifacts; identical is the honest result, anti-laundering rationale recorded in-receipt; control reproduces exp001 byte-for-byte in-harness; 19 witness-ledger rows, PROOF head ef538852ee95f4ad, replay OK; 10 pins (chain re-derived in-repo, seed-in-WORLD-row, executable champion w/ live histogram train+verify, crx pi-expansion load-bearing honesty pin, control guard, budget-sweep-noop across all three arms incl. identical curves + telemetry ceiling headroom, seed birth zero-fitness, honest-limit scope, tamper trip); FAIL-first 10 errors on pristine main; baseline unchanged (branch off merged exp005 seal HEAD 125b0f5, same base as open #11/#12/#13, independent files); suite 71/71 green",
+      "tree": {
+        "sha": "0044db1d29ded25c6656077d98fce6801240e654",
+        "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/git/trees/0044db1d29ded25c6656077d98fce6801240e654"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/git/commits/fb6c25a684879f8bf234148f53d48a55b51f1abc",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/fb6c25a684879f8bf234148f53d48a55b51f1abc",
+    "html_url": "https://github.com/SuperInstance/MicroMoth-quilt/commit/fb6c25a684879f8bf234148f53d48a55b51f1abc",
+    "comments_url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/fb6c25a684879f8bf234148f53d48a55b51f1abc/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "125b0f530c29d4922d91e4757d4202b4335c708a",
+        "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/125b0f530c29d4922d91e4757d4202b4335c708a",
+        "html_url": "https://github.com/SuperInstance/MicroMoth-quilt/commit/125b0f530c29d4922d91e4757d4202b4335c708a"
+      }
+    ]
+  },
+  {
+    "sha": "908fc05bcc5ef16379a4ff8f2621da5ac1775626",
+    "node_id": "C_kwDOUu9KWtoAKDkwOGZjMDViY2M1ZWYxNjM3OWE0ZmY4ZjI2MjFkYTVhYzE3NzU2MjY",
+    "commit": {
+      "author": {
+        "name": "CCC",
+        "email": "ccc@fleet.local",
+        "date": "2026-09-28T20:05:01Z"
+      },
+      "committer": {
+        "name": "CCC",
+        "email": "ccc@fleet.local",
+        "date": "2026-09-28T20:05:01Z"
+      },
+      "message": "exp008 experiment receipt: seal qcells-lab n=4 GHZ balance scale test (doctrine generalizes + Finding 4 partially REFUTED) - the PROOF statevector witness cell's named 'n=4+' target; unaided lane FROZEN 0.000 all 12 gens (never-crosses law generalizes across n=2,3,4), GHZ3 structural-prefix skeleton CROSSES gen 5 via non-canonical partial-rotation route [h(0),cx(0,1),crx(pi,1,3),cx(1,2)] verify 0.4824, |++++> Finding-4 trap ESCAPES at n=4 (gen 8 vs skeleton gen 5) - trap SLOWS but does not freeze: dimension-dependent, not a universal engine law; control reproduces exp001 byte-for-byte in-harness; 19 witness-ledger rows, PROOF head f0fdc047b46ae575, replay OK; 11 pins (chain re-derived in-repo, seed-in-WORLD-row, executable champion w/ live histogram train+verify, crx pi-expansion load-bearing honesty pin, control guard, live seed-prelude, lane A crosses / lane B escapes-slower / unseeded freezes curves, escaped-trap champion live verify, honest-limit scope, tamper trip); FAIL-first 10 errors+1 fail on pristine main; baseline unchanged (branch off merged exp005 seal HEAD 125b0f5)",
+      "tree": {
+        "sha": "10888d1688faef85fe26deecba8d80e717945e69",
+        "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/git/trees/10888d1688faef85fe26deecba8d80e717945e69"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/git/commits/908fc05bcc5ef16379a4ff8f2621da5ac1775626",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/908fc05bcc5ef16379a4ff8f2621da5ac1775626",
+    "html_url": "https://github.com/SuperInstance/MicroMoth-quilt/commit/908fc05bcc5ef16379a4ff8f2621da5ac1775626",
+    "comments_url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/908fc05bcc5ef16379a4ff8f2621da5ac1775626/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "125b0f530c29d4922d91e4757d4202b4335c708a",
+        "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/125b0f530c29d4922d91e4757d4202b4335c708a",
+        "html_url": "https://github.com/SuperInstance/MicroMoth-quilt/commit/125b0f530c29d4922d91e4757d4202b4335c708a"
+      }
+    ]
+  },
+  {
+    "sha": "fcb95319aab854d3cbaf53d58bcc47ece392dd95",
+    "node_id": "C_kwDOUu9KWtoAKGZjYjk1MzE5YWFiODU0ZDNjYmFmNTNkNThiY2M0N2VjZTM5MmRkOTU",
+    "commit": {
+      "author": {
+        "name": "CCC",
+        "email": "ccc@fleet.local",
+        "date": "2026-09-28T19:21:18Z"
+      },
+      "committer": {
+        "name": "CCC",
+        "email": "ccc@fleet.local",
+        "date": "2026-09-28T19:21:18Z"
+      },
+      "message": "exp007 experiment receipt: seal qcells-lab Bell-balance n=2 control (H1 REFUTED for the balance witness + Finding 5 scope boundary) - exp006's seeded-restart doctrine is engine-general not an n=3 artifact: on 2-qubit Bell balance ('01','10') the UNSEEDED home-turf lane FREEZES at the ~0.23 plateau all 8 gens, lane A phi+ wrong-bell skeleton [h(0),cx(0,1)] birth balance 0.0 (target mismatch, not weakness) CROSSES gen 5 via the x-insert route [x(1),h(0),cx(0,1)] to verify 0.4824, lane B |++> trap (|+> X-eigenstate, cx insert no-op) TRAPS all 8 gens champion==seed; zero-fitness skeleton still the only crossing; control reproduces exp001 byte-for-byte in-harness; 13 witness-ledger rows, PROOF head a62029c424a2f0fe, replay OK; 10 pins (chain re-derived in-repo, seed-in-WORLD-row, executable champion w/ live histogram, control guard, live seed-prelude, lane A crosses / lane B traps / unseeded freezes curves, honest-limit scope, tamper trip); FAIL-first 10/10 errors on pristine main; baseline regenerated against merged exp005 seal HEAD 125b0f5; suite 70/70 green",
+      "tree": {
+        "sha": "21f238ad3dc10db984005c58137c3d71c42bb2a2",
+        "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/git/trees/21f238ad3dc10db984005c58137c3d71c42bb2a2"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/git/commits/fcb95319aab854d3cbaf53d58bcc47ece392dd95",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/fcb95319aab854d3cbaf53d58bcc47ece392dd95",
+    "html_url": "https://github.com/SuperInstance/MicroMoth-quilt/commit/fcb95319aab854d3cbaf53d58bcc47ece392dd95",
+    "comments_url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/fcb95319aab854d3cbaf53d58bcc47ece392dd95/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "125b0f530c29d4922d91e4757d4202b4335c708a",
+        "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/125b0f530c29d4922d91e4757d4202b4335c708a",
+        "html_url": "https://github.com/SuperInstance/MicroMoth-quilt/commit/125b0f530c29d4922d91e4757d4202b4335c708a"
+      }
+    ]
+  },
+  {
+    "sha": "2606a3bac1b3de2a302c9f3ff6333486f01e5414",
+    "node_id": "C_kwDOUu9KWtoAKDI2MDZhM2JhYzFiM2RlMmEzMDJjOWYzZmY2MzMzNDg2ZjAxZTU0MTQ",
+    "commit": {
+      "author": {
+        "name": "CCC",
+        "email": "ccc@fleet.local",
+        "date": "2026-09-28T19:03:43Z"
+      },
+      "committer": {
+        "name": "CCC",
+        "email": "ccc@fleet.local",
+        "date": "2026-09-28T19:03:43Z"
+      },
+      "message": "exp006 experiment receipt: seal qcells-lab GHZ-prefix seeded restart (Finding 3 candidate (a) CONFIRMED + Finding 4 born) - exp005 froze the unaided engine on n=3 balanced GHZ, ranked first fix = seed a GHZ PREFIX at birth (loadCoev doctrine, pong-quilt #73); two seeded lanes on identical named seeds (root 7, train 101, verify 202, 512 shots) and the exp004 jitter-dropped replace/indel policy: lane A bare skeleton [h(0),cx(0,1)] birth balance 0.0 CROSSES to verify 0.4824 by gen 2 via non-canonical crx route [h(0),crx(pi,0,2),cx(0,1)] the unaided search never found, lane B partial entangler [h(0),cx(0,1),h(2)] birth 0.2422 TRAPS - never sampled above birth fitness in 120 draws, champion == seed genome; seed CHOICE beats seed FITNESS; control reproduces exp001 byte-for-byte in-harness; 15 witness-ledger rows, PROOF head bfe7bd25cd7b6f79, replay OK; 10 pins (chain re-derived in-repo, seed-in-WORLD-row, executable champion w/ live histogram + crx pi-expansion pin, control guard, live seed-choice prelude, lane A crosses / lane B traps curves, honest-limit scope, tamper trip); FAIL-first 10/10 errors on pristine main; baseline regenerated against merged exp005 seal HEAD 125b0f5; suite 70/70 green",
+      "tree": {
+        "sha": "ea61e321860f0a2a8ee4abfd986b08c8f1860f4a",
+        "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/git/trees/ea61e321860f0a2a8ee4abfd986b08c8f1860f4a"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/git/commits/2606a3bac1b3de2a302c9f3ff6333486f01e5414",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/2606a3bac1b3de2a302c9f3ff6333486f01e5414",
+    "html_url": "https://github.com/SuperInstance/MicroMoth-quilt/commit/2606a3bac1b3de2a302c9f3ff6333486f01e5414",
+    "comments_url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/2606a3bac1b3de2a302c9f3ff6333486f01e5414/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "125b0f530c29d4922d91e4757d4202b4335c708a",
+        "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/125b0f530c29d4922d91e4757d4202b4335c708a",
+        "html_url": "https://github.com/SuperInstance/MicroMoth-quilt/commit/125b0f530c29d4922d91e4757d4202b4335c708a"
+      }
+    ]
+  },
+  {
+    "sha": "125b0f530c29d4922d91e4757d4202b4335c708a",
+    "node_id": "C_kwDOUu9KWtoAKDEyNWIwZjUzMGMyOWQ0OTIyZDkxZTQ3NTdkNDIwMmI0MzM1YzcwOGE",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T18:54:35Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-28T18:54:35Z"
+      },
+      "message": "Merge pull request #10 from SuperInstance/exp005-ghz-balance-receipt\n\nexp005 experiment receipt — qcells-lab n=3 GHZ balance freeze (Finding 3 precursor)",
+      "tree": {
+        "sha": "7b25955ab3e539eeee232195ca0a039a96880cf7",
+        "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/git/trees/7b25955ab3e539eeee232195ca0a039a96880cf7"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/git/commits/125b0f530c29d4922d91e4757d4202b4335c708a",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqurfrCRC1aQ7uu5UhlAAAHA8QAHvyCHVBtni9IM+234FK9OaD\npcYEJsoOnxan551AZBPAVWjpr0TKc4JhtzknLEGMwSXRbhsp6W02tXWij/6T2ZBx\ncyCxs5+9jOIFnYcbAgNg68XNzeiq3UVBFdpNrNrRJaQa6VdQeURXoMNQpiKnyeOi\nGj719/lwZBF5rHzuVesqYeoT9CNFn0I92dD9XOGvKp7lEHUTRje/jnPbn56kS2e2\nHtlP/V46AndBi3cqZGzK+kl1JYwoJiiUFDh77ruZSk94xKOhxz2T7RqfhKSE58np\nPTYwIXCE6zl3rJt3zZAbSU4/dlEZPw4VAWqIXR6OOudNiGleLk6nOsItst+abwPA\njqz6+7ociRY89LW/5l+RUwWIVyzmQh+NTQxETMmETlMj0DYrk9iJnYGSjQIxKFJz\nPg62PoxET7I7CAiGFN5vz9CV21gtipFukYqlo4t9yJkJD3lgymqFW1zN8TU9Y1JC\nea3dzm8B133ThrIE0YZHqHayRy0zFcNETaZlI+/0YSq0XI3LMlndDkkqHssaMAoa\n//+4arcR6yE7Z38q3PCvXK/oYQOdlUqgpoQtQHrwOT0GeIhLUONOh8qkSGRf0Mm0\nWblAWWfXCXcKv0X6TeHJly/6CbEAhatgSMJrlA1dNx+B53n2qXzIsK14Km5uPfce\n2vnbVjx0FKi8686hmEN8\n=5XGZ\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 7b25955ab3e539eeee232195ca0a039a96880cf7\nparent 651d8f5eec88cbac15ccb225bae6925b2df4147a\nparent 9aa1437e2e5f31dccf8e1c699cac6764f5b128e7\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790621675 -0800\ncommitter GitHub <noreply@github.com> 1790621675 -0800\n\nMerge pull request #10 from SuperInstance/exp005-ghz-balance-receipt\n\nexp005 experiment receipt — qcells-lab n=3 GHZ balance freeze (Finding 3 precursor)",
+        "verified_at": "2026-09-28T18:54:36Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/125b0f530c29d4922d91e4757d4202b4335c708a",
+    "html_url": "https://github.com/SuperInstance/MicroMoth-quilt/commit/125b0f530c29d4922d91e4757d4202b4335c708a",
+    "comments_url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/125b0f530c29d4922d91e4757d4202b4335c708a/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "651d8f5eec88cbac15ccb225bae6925b2df4147a",
+        "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/651d8f5eec88cbac15ccb225bae6925b2df4147a",
+        "html_url": "https://github.com/SuperInstance/MicroMoth-quilt/commit/651d8f5eec88cbac15ccb225bae6925b2df4147a"
+      },
+      {
+        "sha": "9aa1437e2e5f31dccf8e1c699cac6764f5b128e7",
+        "url": "https://api.github.com/repos/SuperInstance/MicroMoth-quilt/commits/9aa1437e2e5f31dccf8e1c699cac6764f5b128e7",
+        "html_url": "https://github.com/SuperInstance/MicroMoth-quilt/commit/9aa1437e2e5f31dccf8e1c699cac6764f5b128e7"
+      }
+    ]
+  }
+]

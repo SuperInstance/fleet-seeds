@@ -1,0 +1,334 @@
+[
+  {
+    "sha": "d0be172af05d5cf70415af3f3ca1f77cd69f09a2",
+    "node_id": "C_kwDOUwpeqNoAKGQwYmUxNzJhZjA1ZDVjZjcwNDE1YWYzZjNjYTFmNzdjZDY5ZjA5YTI",
+    "commit": {
+      "author": {
+        "name": "quilt-atlas bot",
+        "email": "agents@superinstance.local",
+        "date": "2026-09-28T19:30:13Z"
+      },
+      "committer": {
+        "name": "quilt-atlas bot",
+        "email": "agents@superinstance.local",
+        "date": "2026-09-28T19:30:13Z"
+      },
+      "message": "atlas: scheduled regen 2026-09-28T19:30Z",
+      "tree": {
+        "sha": "db8e75b9a7ae0736ef3ac48abae0470801c638b9",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/git/trees/db8e75b9a7ae0736ef3ac48abae0470801c638b9"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/git/commits/d0be172af05d5cf70415af3f3ca1f77cd69f09a2",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/commits/d0be172af05d5cf70415af3f3ca1f77cd69f09a2",
+    "html_url": "https://github.com/SuperInstance/quilt-atlas/commit/d0be172af05d5cf70415af3f3ca1f77cd69f09a2",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-atlas/commits/d0be172af05d5cf70415af3f3ca1f77cd69f09a2/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "727a3168beb76ca419d0ff8b9c86e1f9ac210181",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/commits/727a3168beb76ca419d0ff8b9c86e1f9ac210181",
+        "html_url": "https://github.com/SuperInstance/quilt-atlas/commit/727a3168beb76ca419d0ff8b9c86e1f9ac210181"
+      }
+    ]
+  },
+  {
+    "sha": "727a3168beb76ca419d0ff8b9c86e1f9ac210181",
+    "node_id": "C_kwDOUwpeqNoAKDcyN2EzMTY4YmViNzZjYTQxOWQwZmY4YjljODZlMWY5YWMyMTAxODE",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T19:28:56Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T19:28:56Z"
+      },
+      "message": "atlas (55-c): qthe audit — 87% strict precision (26/30), synonym table kept; canonical-adjective residual census-receipted (9/25 canon-surface, priced not fixed); stability vs 42e085b: 0 drift / 0 lost, +1 new repo",
+      "tree": {
+        "sha": "54bbbd43db6b11149cf3e1978d2e6b70d483a1ad",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/git/trees/54bbbd43db6b11149cf3e1978d2e6b70d483a1ad"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/git/commits/727a3168beb76ca419d0ff8b9c86e1f9ac210181",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/commits/727a3168beb76ca419d0ff8b9c86e1f9ac210181",
+    "html_url": "https://github.com/SuperInstance/quilt-atlas/commit/727a3168beb76ca419d0ff8b9c86e1f9ac210181",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-atlas/commits/727a3168beb76ca419d0ff8b9c86e1f9ac210181/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "42e085b94c7067b88b06a3d166efbfd205a32ccd",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/commits/42e085b94c7067b88b06a3d166efbfd205a32ccd",
+        "html_url": "https://github.com/SuperInstance/quilt-atlas/commit/42e085b94c7067b88b06a3d166efbfd205a32ccd"
+      }
+    ]
+  },
+  {
+    "sha": "42e085b94c7067b88b06a3d166efbfd205a32ccd",
+    "node_id": "C_kwDOUwpeqNoAKDQyZTA4NWI5NGM3MDY3Yjg4YjA2YTNkMTY2ZWZiZmQyMDVhMzJjY2Q",
+    "commit": {
+      "author": {
+        "name": "quilt-atlas bot",
+        "email": "agents@superinstance.local",
+        "date": "2026-09-28T19:02:57Z"
+      },
+      "committer": {
+        "name": "quilt-atlas bot",
+        "email": "agents@superinstance.local",
+        "date": "2026-09-28T19:02:57Z"
+      },
+      "message": "atlas: scheduled regen 2026-09-28T19:02Z",
+      "tree": {
+        "sha": "bfc308088a99bd519bc8dd8e917141c2ebe14529",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/git/trees/bfc308088a99bd519bc8dd8e917141c2ebe14529"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/git/commits/42e085b94c7067b88b06a3d166efbfd205a32ccd",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/commits/42e085b94c7067b88b06a3d166efbfd205a32ccd",
+    "html_url": "https://github.com/SuperInstance/quilt-atlas/commit/42e085b94c7067b88b06a3d166efbfd205a32ccd",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-atlas/commits/42e085b94c7067b88b06a3d166efbfd205a32ccd/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "1f866a8a3ecf82bc6f2e010d77c2e31b8ec68343",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/commits/1f866a8a3ecf82bc6f2e010d77c2e31b8ec68343",
+        "html_url": "https://github.com/SuperInstance/quilt-atlas/commit/1f866a8a3ecf82bc6f2e010d77c2e31b8ec68343"
+      }
+    ]
+  },
+  {
+    "sha": "1f866a8a3ecf82bc6f2e010d77c2e31b8ec68343",
+    "node_id": "C_kwDOUwpeqNoAKDFmODY2YThhM2VjZjgyYmM2ZjJlMDEwZDc3YzJlMzFiOGVjNjgzNDM",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T19:01:49Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T19:01:49Z"
+      },
+      "message": "atlas (54-c): cap raised + fleet audit — true count 4848 (49 pages, Link-follow, cap 120 not hit)\n\nCAP RAISE: pagination follows Link headers (rel=next) until exhausted,\nbounded by a 120-page hard safety cap; pages_fetched/pagination_cap/\npagination_cap_hit receipted in atlas.json. Old 40-page cap pinned the\nmap at exactly 4000; true account count is 4848 (independently confirmed\nby rel=last page 4848 at per_page=1).\n\nSTABILITY (audit rule): all 4000 previously-classified repos keep family,\nstage and matched keywords byte-identical — drift = 0, lost = 0; 848 new\nrepos added (fleet 154, other 322, quilt 17, qthe 344, latent 2, jev 5,\nmoth 4). One upstream metadata change receipted: MicroMoth-quilt language\nC#->Python (classification evidence untouched).\n\nFLEET AUDIT: deterministic 30-of-1153 sample of desc-stage fleet repos\nread by hand — 25/30 genuinely fleet (83% strict; 27/30 with defensible\nmulti-agent-theory borderlines) >= 70% bar, synonym table KEPT; 53-e\nhoover suspicion refuted on this account (surface: agent=844, fleet=425,\ncrab=9, lane=6, receipt=6, seeds=2). Misses receipted: lau-compilers\n('agent DSL' tail-match), superinstance-embedder ('Seeds' as verb).\nQueued (next lane): qthe synonym audit — desc 83->427 with new pages,\n'canon' matches adjective 'canonical' (substrate-opposites).\n\nFamilies now: other=2502 fleet=1555 quilt=246 qthe=460 jev=44 moth=23\nlatent=18. Env-gated ATLAS_DUMP audit lane added to the builder.",
+      "tree": {
+        "sha": "56c5cbea11480c695d591f237d5e2a7b8b6c1cea",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/git/trees/56c5cbea11480c695d591f237d5e2a7b8b6c1cea"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/git/commits/1f866a8a3ecf82bc6f2e010d77c2e31b8ec68343",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/commits/1f866a8a3ecf82bc6f2e010d77c2e31b8ec68343",
+    "html_url": "https://github.com/SuperInstance/quilt-atlas/commit/1f866a8a3ecf82bc6f2e010d77c2e31b8ec68343",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-atlas/commits/1f866a8a3ecf82bc6f2e010d77c2e31b8ec68343/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "f70e087cf5998fb99cf71c4695c6d02ffb8c5a4e",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/commits/f70e087cf5998fb99cf71c4695c6d02ffb8c5a4e",
+        "html_url": "https://github.com/SuperInstance/quilt-atlas/commit/f70e087cf5998fb99cf71c4695c6d02ffb8c5a4e"
+      }
+    ]
+  },
+  {
+    "sha": "f70e087cf5998fb99cf71c4695c6d02ffb8c5a4e",
+    "node_id": "C_kwDOUwpeqNoAKGY3MGUwODdjZjU5OThmYjk5Y2Y3MWM0Njk1YzZkMDJmZmI4YzVhNGU",
+    "commit": {
+      "author": {
+        "name": "quilt-atlas bot",
+        "email": "agents@superinstance.local",
+        "date": "2026-09-28T17:17:06Z"
+      },
+      "committer": {
+        "name": "quilt-atlas bot",
+        "email": "agents@superinstance.local",
+        "date": "2026-09-28T17:17:06Z"
+      },
+      "message": "atlas: scheduled regen 2026-09-28T17:17Z",
+      "tree": {
+        "sha": "a6925b1e870151d4e2e4bdf55f1aa03f488b82b7",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/git/trees/a6925b1e870151d4e2e4bdf55f1aa03f488b82b7"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/git/commits/f70e087cf5998fb99cf71c4695c6d02ffb8c5a4e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/commits/f70e087cf5998fb99cf71c4695c6d02ffb8c5a4e",
+    "html_url": "https://github.com/SuperInstance/quilt-atlas/commit/f70e087cf5998fb99cf71c4695c6d02ffb8c5a4e",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-atlas/commits/f70e087cf5998fb99cf71c4695c6d02ffb8c5a4e/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "ab5905e76813425bf4a6570b289dc5764917dffa",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/commits/ab5905e76813425bf4a6570b289dc5764917dffa",
+        "html_url": "https://github.com/SuperInstance/quilt-atlas/commit/ab5905e76813425bf4a6570b289dc5764917dffa"
+      }
+    ]
+  },
+  {
+    "sha": "ab5905e76813425bf4a6570b289dc5764917dffa",
+    "node_id": "C_kwDOUwpeqNoAKGFiNTkwNWU3NjgxMzQyNWJmNGE2NTcwYjI4OWRjNTc2NDkxN2RmZmE",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T17:16:12Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T17:16:12Z"
+      },
+      "message": "atlas classifier v2 (53-e): description+keyword families, evidence recorded — other 3326→2180 (−1146), fleet 1401, quilt 229, qthe 116, jev 39, moth 19, latent 16",
+      "tree": {
+        "sha": "d552d35187216d18a098c234cb63de995a025337",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/git/trees/d552d35187216d18a098c234cb63de995a025337"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/git/commits/ab5905e76813425bf4a6570b289dc5764917dffa",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/commits/ab5905e76813425bf4a6570b289dc5764917dffa",
+    "html_url": "https://github.com/SuperInstance/quilt-atlas/commit/ab5905e76813425bf4a6570b289dc5764917dffa",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-atlas/commits/ab5905e76813425bf4a6570b289dc5764917dffa/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "40f983aef897feee088d33a84940d80b830e0694",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/commits/40f983aef897feee088d33a84940d80b830e0694",
+        "html_url": "https://github.com/SuperInstance/quilt-atlas/commit/40f983aef897feee088d33a84940d80b830e0694"
+      }
+    ]
+  },
+  {
+    "sha": "40f983aef897feee088d33a84940d80b830e0694",
+    "node_id": "C_kwDOUwpeqNoAKDQwZjk4M2FlZjg5N2ZlZWUwODhkMzNhODQ5NDBkODBiODMwZTA2OTQ",
+    "commit": {
+      "author": {
+        "name": "quilt-atlas bot",
+        "email": "agents@superinstance.local",
+        "date": "2026-09-28T16:05:15Z"
+      },
+      "committer": {
+        "name": "quilt-atlas bot",
+        "email": "agents@superinstance.local",
+        "date": "2026-09-28T16:05:15Z"
+      },
+      "message": "atlas: scheduled regen 2026-09-28T16:05Z",
+      "tree": {
+        "sha": "ef8165a5416d2012d0f51721e69e3de6a3782531",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/git/trees/ef8165a5416d2012d0f51721e69e3de6a3782531"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/git/commits/40f983aef897feee088d33a84940d80b830e0694",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/commits/40f983aef897feee088d33a84940d80b830e0694",
+    "html_url": "https://github.com/SuperInstance/quilt-atlas/commit/40f983aef897feee088d33a84940d80b830e0694",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-atlas/commits/40f983aef897feee088d33a84940d80b830e0694/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "08b7cd8b5663230943ee73e22069cd2df35f3ee7",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/commits/08b7cd8b5663230943ee73e22069cd2df35f3ee7",
+        "html_url": "https://github.com/SuperInstance/quilt-atlas/commit/08b7cd8b5663230943ee73e22069cd2df35f3ee7"
+      }
+    ]
+  },
+  {
+    "sha": "08b7cd8b5663230943ee73e22069cd2df35f3ee7",
+    "node_id": "C_kwDOUwpeqNoAKDA4YjdjZDhiNTY2MzIzMDk0M2VlNzNlMjIwNjljZDJkZjM1ZjNlZTc",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T16:04:25Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T16:04:25Z"
+      },
+      "message": "quilt-atlas seed: living map of the account (4000-repo cap receipted) + scheduled atlas.yml regen organ",
+      "tree": {
+        "sha": "27de03ce87d573b66044fdbf427cfc186b2233bf",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/git/trees/27de03ce87d573b66044fdbf427cfc186b2233bf"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/git/commits/08b7cd8b5663230943ee73e22069cd2df35f3ee7",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-atlas/commits/08b7cd8b5663230943ee73e22069cd2df35f3ee7",
+    "html_url": "https://github.com/SuperInstance/quilt-atlas/commit/08b7cd8b5663230943ee73e22069cd2df35f3ee7",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-atlas/commits/08b7cd8b5663230943ee73e22069cd2df35f3ee7/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+
+    ]
+  }
+]

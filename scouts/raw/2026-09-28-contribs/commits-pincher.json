@@ -1,0 +1,502 @@
+[
+  {
+    "sha": "6600b7eaf2b728f5d90ded183434a1530f3f6008",
+    "node_id": "C_kwDOSuvx6toAKDY2MDBiN2VhZjJiNzI4ZjVkOTBkZWQxODM0MzRhMTUzMGYzZjYwMDg",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T18:54:13Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-28T18:54:13Z"
+      },
+      "message": "proposal: glyph reflexes — host the chiaroscuro middle-agent in pincher (#11)",
+      "tree": {
+        "sha": "fd0b84e6a74ff06cbca9b11eff69bd63c50f9fe0",
+        "url": "https://api.github.com/repos/SuperInstance/pincher/git/trees/fd0b84e6a74ff06cbca9b11eff69bd63c50f9fe0"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/pincher/git/commits/6600b7eaf2b728f5d90ded183434a1530f3f6008",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqurfVCRC1aQ7uu5UhlAAAWLAQAF+SpMBgdQ0L+UM1jcJaX0pr\nAsCMSw8hWy4Cj5T6m8BwPkdF3Fs+TaW5h4XCs1EidJe0vDMdJ+Pua3st1UeJvX02\ndTreQzn7mYVA5YNn6COSvk//jHqvBk2yTgtdIlYbbpJRq5CNiTKGCepuiwl6xLe5\nAcVLkxxxmoPWh6eBJ/98YLS7NgvpJuxeljrimZCLGg/IWnx9iRXeu+5WtuJJI+2u\nHpX5y5F2kGABzufW2Zx/sk7Gq/gHjqEvs4xBuQT+FgDjx5O7sqIPIyRBySwRSoym\nCpCpPuds6s+i1i2Ltyk8AMRz6hh1PSVK9J0MO+NUOaf/8xg9s38AINoKE9OCH/fx\naFsLYy0fF0tET+4516H5tpOAAdudcBNg3uJgH2wVbEanqqrH2rEnj2RCiMT1+tmO\np2zmKglXtzhvi/WT9dKzjvvW/oNnPd5FI7ZJ9VXo2mTykz8YN3sEzA5ocsguyMQo\nLuviRiALqAH3Xacxz1jRlbGPntWq1aYq1HCM9MN+ps7SVuGAGIqFV+XD4RAMjzvt\nDv50QLRgfxhngvBsT+8NM/nwbGTh8CyMpgkdZJedd7/GUyf1odbkadmPKFeKyIOK\nRRaaQ63k6DRGDOIw5CPa7XwTx35khRNPCeyd8SMRbRH7WeihL6+8MD6EFP9yGtBT\n2v0Fq8goDmmyfvcQcrSY\n=aXwT\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree fd0b84e6a74ff06cbca9b11eff69bd63c50f9fe0\nparent 02ae9bdc26021d27aa928d589cecce17cc5fddc7\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790621653 -0800\ncommitter GitHub <noreply@github.com> 1790621653 -0800\n\nproposal: glyph reflexes — host the chiaroscuro middle-agent in pincher (#11)",
+        "verified_at": "2026-09-28T18:54:13Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/pincher/commits/6600b7eaf2b728f5d90ded183434a1530f3f6008",
+    "html_url": "https://github.com/SuperInstance/pincher/commit/6600b7eaf2b728f5d90ded183434a1530f3f6008",
+    "comments_url": "https://api.github.com/repos/SuperInstance/pincher/commits/6600b7eaf2b728f5d90ded183434a1530f3f6008/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "02ae9bdc26021d27aa928d589cecce17cc5fddc7",
+        "url": "https://api.github.com/repos/SuperInstance/pincher/commits/02ae9bdc26021d27aa928d589cecce17cc5fddc7",
+        "html_url": "https://github.com/SuperInstance/pincher/commit/02ae9bdc26021d27aa928d589cecce17cc5fddc7"
+      }
+    ]
+  },
+  {
+    "sha": "02ae9bdc26021d27aa928d589cecce17cc5fddc7",
+    "node_id": "C_kwDOSuvx6toAKDAyYWU5YmRjMjYwMjFkMjdhYTkyOGQ1ODljZWNjZTE3Y2M1ZmRkYzc",
+    "commit": {
+      "author": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-08-21T21:13:41Z"
+      },
+      "committer": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-08-21T21:13:41Z"
+      },
+      "message": "docs: point to quilt-pincher — the reflexes live on as reactive cells\n\nTombstone-style pointer under the header: the same reflex engine now\nexists as quilt-pincher (github.com/SuperInstance/quilt-pincher).\nX4 of the quilt synergy map — additive; no quilt repos touched.",
+      "tree": {
+        "sha": "db3a8edd0a2336226596352440faa5c69f402556",
+        "url": "https://api.github.com/repos/SuperInstance/pincher/git/trees/db3a8edd0a2336226596352440faa5c69f402556"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/pincher/git/commits/02ae9bdc26021d27aa928d589cecce17cc5fddc7",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/pincher/commits/02ae9bdc26021d27aa928d589cecce17cc5fddc7",
+    "html_url": "https://github.com/SuperInstance/pincher/commit/02ae9bdc26021d27aa928d589cecce17cc5fddc7",
+    "comments_url": "https://api.github.com/repos/SuperInstance/pincher/commits/02ae9bdc26021d27aa928d589cecce17cc5fddc7/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "be49c255f6b3a31a055a8c682129ea6cc66c19e7",
+        "url": "https://api.github.com/repos/SuperInstance/pincher/commits/be49c255f6b3a31a055a8c682129ea6cc66c19e7",
+        "html_url": "https://github.com/SuperInstance/pincher/commit/be49c255f6b3a31a055a8c682129ea6cc66c19e7"
+      }
+    ]
+  },
+  {
+    "sha": "be49c255f6b3a31a055a8c682129ea6cc66c19e7",
+    "node_id": "C_kwDOSuvx6toAKGJlNDljMjU1ZjZiM2EzMWEwNTVhOGM2ODIxMjllYTZjYzY2YzE5ZTc",
+    "commit": {
+      "author": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-08-13T04:35:17Z"
+      },
+      "committer": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-08-13T04:35:17Z"
+      },
+      "message": "ci: actually run tests instead of placeholder echo",
+      "tree": {
+        "sha": "35c2e79c015ce6d959be785164601f3d40ff0265",
+        "url": "https://api.github.com/repos/SuperInstance/pincher/git/trees/35c2e79c015ce6d959be785164601f3d40ff0265"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/pincher/git/commits/be49c255f6b3a31a055a8c682129ea6cc66c19e7",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/pincher/commits/be49c255f6b3a31a055a8c682129ea6cc66c19e7",
+    "html_url": "https://github.com/SuperInstance/pincher/commit/be49c255f6b3a31a055a8c682129ea6cc66c19e7",
+    "comments_url": "https://api.github.com/repos/SuperInstance/pincher/commits/be49c255f6b3a31a055a8c682129ea6cc66c19e7/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "8bf37274cf26e642ff5186b181668e8e5f36625a",
+        "url": "https://api.github.com/repos/SuperInstance/pincher/commits/8bf37274cf26e642ff5186b181668e8e5f36625a",
+        "html_url": "https://github.com/SuperInstance/pincher/commit/8bf37274cf26e642ff5186b181668e8e5f36625a"
+      }
+    ]
+  },
+  {
+    "sha": "8bf37274cf26e642ff5186b181668e8e5f36625a",
+    "node_id": "C_kwDOSuvx6toAKDhiZjM3Mjc0Y2YyNmU2NDJmZjUxODZiMTgxNjY4ZThlNWYzNjYyNWE",
+    "commit": {
+      "author": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-08-08T02:29:22Z"
+      },
+      "committer": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-08-08T02:29:28Z"
+      },
+      "message": "Fix: pytest discovery for pincher-infer tests\n\nTests couldn't import pincher_infer because the package wasn't installed\nand the tests weren't in the Python path. Added conftest.py and pytest.ini.\n\n26 tests now passing via 'python3 -m pytest'.",
+      "tree": {
+        "sha": "c31ea28cae0998289b7588aaa2fcbf6ac2a8d97c",
+        "url": "https://api.github.com/repos/SuperInstance/pincher/git/trees/c31ea28cae0998289b7588aaa2fcbf6ac2a8d97c"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/pincher/git/commits/8bf37274cf26e642ff5186b181668e8e5f36625a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/pincher/commits/8bf37274cf26e642ff5186b181668e8e5f36625a",
+    "html_url": "https://github.com/SuperInstance/pincher/commit/8bf37274cf26e642ff5186b181668e8e5f36625a",
+    "comments_url": "https://api.github.com/repos/SuperInstance/pincher/commits/8bf37274cf26e642ff5186b181668e8e5f36625a/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "e40eebb94170153774ba7e2850777f06ec63a561",
+        "url": "https://api.github.com/repos/SuperInstance/pincher/commits/e40eebb94170153774ba7e2850777f06ec63a561",
+        "html_url": "https://github.com/SuperInstance/pincher/commit/e40eebb94170153774ba7e2850777f06ec63a561"
+      }
+    ]
+  },
+  {
+    "sha": "e40eebb94170153774ba7e2850777f06ec63a561",
+    "node_id": "C_kwDOSuvx6toAKGU0MGVlYmI5NDE3MDE1Mzc3NGJhN2UyODUwNzc3ZjA2ZWM2M2E1NjE",
+    "commit": {
+      "author": {
+        "name": "superinstance",
+        "email": "casey.digennaro@gmail.com",
+        "date": "2026-08-04T23:54:56Z"
+      },
+      "committer": {
+        "name": "superinstance",
+        "email": "casey.digennaro@gmail.com",
+        "date": "2026-08-04T23:54:56Z"
+      },
+      "message": "docs: deploy Motor Cortex Agent Dossier (AGENTS.md)",
+      "tree": {
+        "sha": "a094985a13d6638f5868ce5829ff6a2f0da3cdef",
+        "url": "https://api.github.com/repos/SuperInstance/pincher/git/trees/a094985a13d6638f5868ce5829ff6a2f0da3cdef"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/pincher/git/commits/e40eebb94170153774ba7e2850777f06ec63a561",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/pincher/commits/e40eebb94170153774ba7e2850777f06ec63a561",
+    "html_url": "https://github.com/SuperInstance/pincher/commit/e40eebb94170153774ba7e2850777f06ec63a561",
+    "comments_url": "https://api.github.com/repos/SuperInstance/pincher/commits/e40eebb94170153774ba7e2850777f06ec63a561/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "162b49d66fd34a4ed13caa37268ab592792e3cec",
+        "url": "https://api.github.com/repos/SuperInstance/pincher/commits/162b49d66fd34a4ed13caa37268ab592792e3cec",
+        "html_url": "https://github.com/SuperInstance/pincher/commit/162b49d66fd34a4ed13caa37268ab592792e3cec"
+      }
+    ]
+  },
+  {
+    "sha": "162b49d66fd34a4ed13caa37268ab592792e3cec",
+    "node_id": "C_kwDOSuvx6toAKDE2MmI0OWQ2NmZkMzRhNGVkMTNjYWEzNzI2OGFiNTkyNzkyZTNjZWM",
+    "commit": {
+      "author": {
+        "name": "SuperInstance DocBot",
+        "email": "docbot@superinstance.ai",
+        "date": "2026-06-18T06:53:01Z"
+      },
+      "committer": {
+        "name": "SuperInstance DocBot",
+        "email": "docbot@superinstance.ai",
+        "date": "2026-06-18T06:53:01Z"
+      },
+      "message": "docs: trust pipeline integration — lever-runner patterns for reflex engine\n\nFive specific patterns pincher can borrow: trust-as-gate (mathematical\nfix), auto-promote loop, LLM blindfold contract, consistency-immediate\nreads, per-instance isolation. Includes token budget analysis and\ndependency sizing.",
+      "tree": {
+        "sha": "d293d180dc00ababfef8d85864632de19b8faa04",
+        "url": "https://api.github.com/repos/SuperInstance/pincher/git/trees/d293d180dc00ababfef8d85864632de19b8faa04"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/pincher/git/commits/162b49d66fd34a4ed13caa37268ab592792e3cec",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "no_user",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEETKHZjurjWkWCWHAdsKgci/5SdyQFAmozlc0ACgkQsKgci/5S\ndySC0g//Yq0gY3AzWRJ8LveRi7uDkfiT9tIBAiJZBqNAqUIPxwC+OJN1a0yQxdxK\nRN5KYBimKBrg++Uaf0pYirieW9Fp7ZujhHL8pfnhdRVXxhOPrEgzVIDJAu96B4G/\nBkzxjr31LmAkPFtjgwYhgSLjw9YdTFv9I0GBXpUZGelUmpqD+jyV5Us9teIjF3qn\nSjdDrg+JvV99Dz4+OSyWWzRt0z+xDsp1m8hH4/zB326KcexlvbNqwDlLG9WG0hf6\n6FU8mQDMtNOBobBBaQ41PvXLXDnh6UEJ0VzeLhxQOLc62z0ntWlYvw6tqNCrZS4e\nJ06Wb/B8llBUpsrvwXmRPHo2TNA1AjpjT6MlLa+vDxorz8oq6ginTZuLLVo9n7fK\nrbJ0a2ZvZKHVMR/+fbp1RJ7vX+HoRJeBWJH79VBcY8LpAD4pIUgKlAK06XodaPtm\nUy04XXM8VZBLBPYRu9Ebype6Jr53A0RMdoagkY/7hjeSB5YPlsrRH4j2BzX4n3HV\ne6VF0+3bXlQZUmIUXp2tu1jBL4CvipVL3ZXpeuZlxfo3yk+Wi6phLaQXYCHQgq9L\nXR6goBnYrvcsJVqjFF9YlhrEhD2FaTFTNZu7NP6D4stJBb0Y09piZTxthwPryxGE\nvoBIrt6815qK6obz4tVqDtDHeYvSsUWDzQHHiBiNRC98vCI97rY=\n=09+9\n-----END PGP SIGNATURE-----",
+        "payload": "tree d293d180dc00ababfef8d85864632de19b8faa04\nparent 56ad31c03a5c2fba6aa4af80a36e52bedb405a19\nauthor SuperInstance DocBot <docbot@superinstance.ai> 1781765581 +0000\ncommitter SuperInstance DocBot <docbot@superinstance.ai> 1781765581 +0000\n\ndocs: trust pipeline integration — lever-runner patterns for reflex engine\n\nFive specific patterns pincher can borrow: trust-as-gate (mathematical\nfix), auto-promote loop, LLM blindfold contract, consistency-immediate\nreads, per-instance isolation. Includes token budget analysis and\ndependency sizing.\n",
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/pincher/commits/162b49d66fd34a4ed13caa37268ab592792e3cec",
+    "html_url": "https://github.com/SuperInstance/pincher/commit/162b49d66fd34a4ed13caa37268ab592792e3cec",
+    "comments_url": "https://api.github.com/repos/SuperInstance/pincher/commits/162b49d66fd34a4ed13caa37268ab592792e3cec/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "56ad31c03a5c2fba6aa4af80a36e52bedb405a19",
+        "url": "https://api.github.com/repos/SuperInstance/pincher/commits/56ad31c03a5c2fba6aa4af80a36e52bedb405a19",
+        "html_url": "https://github.com/SuperInstance/pincher/commit/56ad31c03a5c2fba6aa4af80a36e52bedb405a19"
+      }
+    ]
+  },
+  {
+    "sha": "56ad31c03a5c2fba6aa4af80a36e52bedb405a19",
+    "node_id": "C_kwDOSuvx6toAKDU2YWQzMWMwM2E1YzJmYmE2YWE0YWY4MGEzNmU1MmJlZGI0MDVhMTk",
+    "commit": {
+      "author": {
+        "name": "SuperInstance DocBot",
+        "email": "docbot@superinstance.ai",
+        "date": "2026-06-16T06:24:10Z"
+      },
+      "committer": {
+        "name": "SuperInstance DocBot",
+        "email": "docbot@superinstance.ai",
+        "date": "2026-06-16T06:24:10Z"
+      },
+      "message": "fix: optional feature builds (wasmtime/landlock) for Rust 1.96 compatibility\n\nwasmtime fixes (guest.rs):\n- Remove config.cranelift() call (removed in wasmtime v28+)\n- Replace wasmtime::WASM_PAGE_SIZE with 65536u64 (removed in v28+)\n\nlandlock fixes (sandbox.rs):\n- Add missing trait imports (RulesetAttr, RulesetCreated, RulesetCreatedAttr)\n- Fix Access::from_all(abi) syntax using turbofish\n- Use ABI::V7 enum instead of Access::all() placeholder\n- Insert .create() step between Ruleset and RulesetCreated\n- Fix PathBeneath::new() to use PathFd wrapper\n- Replace nonexistent from_execute() with bitflags pattern\n- Match on status.ruleset (RestrictionStatus struct, not RulesetStatus)\n\nAll 12 errors resolved. cargo check --all-features now passes.",
+      "tree": {
+        "sha": "840c17c005eaf94896c8790ddc9e4be94a29a7f3",
+        "url": "https://api.github.com/repos/SuperInstance/pincher/git/trees/840c17c005eaf94896c8790ddc9e4be94a29a7f3"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/pincher/git/commits/56ad31c03a5c2fba6aa4af80a36e52bedb405a19",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "no_user",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEETKHZjurjWkWCWHAdsKgci/5SdyQFAmow7AoACgkQsKgci/5S\ndyS6yhAAoKFDpu3E4zh1QytfRa5/Sci6izeJLcBnHvf7VDORplFphJl9+9EjW3nH\nm2UFsOb2XPI102+/EFsl2WGr2u7hFwO4TDyeSL4b/FE8vCA50fcJ6BNLAngtqKWU\nfX9wWU1N6IWn/wzPkXkyf3u4le+2uAMO5rRWghTlIOb0CP+Nyr7NRMB7nTrpMGJ5\nK3VjI+X0s3GmdkenpvK8Amo+mn56AvRWk7rNz7VjZdI2jw0dmWLbUo7zN4bhhHBX\ng4/EXplsCsAg/iLrn1+38rMralVN8CF4bsOB/cuOKjj8iqdd3BOj+EzEov7ATXa9\nTruesccuOtLSNpAV5KGiBupX4wAmO0jk7Jv6j9wzc5B9rlqBo3ZmhLBk5eq4qgie\nle7CTztVwvxgf9PTSgkcnjmr8kZ9M7VAI5iWeW6QYpn2gWX6sdP/YfJJvcIo8GJ6\ne7IUSBtIe5CfGwhO3XUehhCFgioHzjAUed8WMujVu//UXtoFpnuY7IlN7Apd5el0\nB36L1pnrDHYXwRg5xxcKDgrClSGqjHFuKDqO+Ap4c+eprigys3CjdhgA7ADHRNOM\n4vZJJ607X/NTCRuxxyWZyX1qfAIeKgPnmBFvk5P5K4r//sRvJrxGHRLg1qNfv1rX\n8tV6RGUrYk8XDL5qFpQ81FVounwf7XEIUSg2i5PsvQ6JEdG2oPM=\n=dAnM\n-----END PGP SIGNATURE-----",
+        "payload": "tree 840c17c005eaf94896c8790ddc9e4be94a29a7f3\nparent 2c242df75996d658fe3c466c765ee9ba08e8aa33\nauthor SuperInstance DocBot <docbot@superinstance.ai> 1781591050 +0000\ncommitter SuperInstance DocBot <docbot@superinstance.ai> 1781591050 +0000\n\nfix: optional feature builds (wasmtime/landlock) for Rust 1.96 compatibility\n\nwasmtime fixes (guest.rs):\n- Remove config.cranelift() call (removed in wasmtime v28+)\n- Replace wasmtime::WASM_PAGE_SIZE with 65536u64 (removed in v28+)\n\nlandlock fixes (sandbox.rs):\n- Add missing trait imports (RulesetAttr, RulesetCreated, RulesetCreatedAttr)\n- Fix Access::from_all(abi) syntax using turbofish\n- Use ABI::V7 enum instead of Access::all() placeholder\n- Insert .create() step between Ruleset and RulesetCreated\n- Fix PathBeneath::new() to use PathFd wrapper\n- Replace nonexistent from_execute() with bitflags pattern\n- Match on status.ruleset (RestrictionStatus struct, not RulesetStatus)\n\nAll 12 errors resolved. cargo check --all-features now passes.\n",
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/pincher/commits/56ad31c03a5c2fba6aa4af80a36e52bedb405a19",
+    "html_url": "https://github.com/SuperInstance/pincher/commit/56ad31c03a5c2fba6aa4af80a36e52bedb405a19",
+    "comments_url": "https://api.github.com/repos/SuperInstance/pincher/commits/56ad31c03a5c2fba6aa4af80a36e52bedb405a19/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "2c242df75996d658fe3c466c765ee9ba08e8aa33",
+        "url": "https://api.github.com/repos/SuperInstance/pincher/commits/2c242df75996d658fe3c466c765ee9ba08e8aa33",
+        "html_url": "https://github.com/SuperInstance/pincher/commit/2c242df75996d658fe3c466c765ee9ba08e8aa33"
+      }
+    ]
+  },
+  {
+    "sha": "2c242df75996d658fe3c466c765ee9ba08e8aa33",
+    "node_id": "C_kwDOSuvx6toAKDJjMjQyZGY3NTk5NmQ2NThmZTNjNDY2Yzc2NWVlOWJhMDhlOGFhMzM",
+    "commit": {
+      "author": {
+        "name": "SuperInstance DocBot",
+        "email": "docbot@superinstance.ai",
+        "date": "2026-06-15T04:04:43Z"
+      },
+      "committer": {
+        "name": "SuperInstance DocBot",
+        "email": "docbot@superinstance.ai",
+        "date": "2026-06-15T04:04:43Z"
+      },
+      "message": "fix: adapt onnx module to ort 2.0.0-rc.12 final API\n\nFixes SuperInstance/pincher#10 — --features onnx compilation broken by\nadditional API drift in ort 2.0.0-rc.12 beyond the Session::builder()\nchain already fixed in 9fc2e49.\n\nChanges:\n- Remove ort::prelude import (removed in rc.12)\n- Wrap Session in Arc<Mutex<>> (not Send-safe in rc.12)\n- Update session.run() return type handling (try_extract_tensor returns\n  (&Shape, &[T]) tuple, not a typed tensor)\n- Replace output[[i,j,k]] indexing with flat index into data slice\n- Handle shape.len() returning isize vs usize\n- Fix attention_mask cloning for moved-from-array semantics\n- Add mutex error mapping to EmbedError::Ort\n\nBuild verified: cargo build --features onnx -p pincher-core (debug + release)\nTesting blocked: ort_sys prebuilt archives lack ARM64 exception handling\ntables (__cxa_call_terminate) — not a code issue.",
+      "tree": {
+        "sha": "c9c1398bea8a003827c0f718a13d7cc763da4d12",
+        "url": "https://api.github.com/repos/SuperInstance/pincher/git/trees/c9c1398bea8a003827c0f718a13d7cc763da4d12"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/pincher/git/commits/2c242df75996d658fe3c466c765ee9ba08e8aa33",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "no_user",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEETKHZjurjWkWCWHAdsKgci/5SdyQFAmovedsACgkQsKgci/5S\ndySJgg/+N8D2fCk1kuih1AX1IqDfTdjY88ZhhUaFI9y83Lsu1C/fUUXU7ZG6HNTF\ndm/rsdPdszJkAcBhVCQqCGmiRjHuZLWT/2CMEB8oG2iwn5IqmRk0BiefdzKvMNOZ\nGnPpPeaEsIVZiXjC85nSFkA8D0zC0jsrb+P2ddJkopqnejTvLOhj7JTdN3fl2jlg\ncDZpcIlg9IOxa+4f904BxeLHnVZk54FLR+Jwa49TldknQsTBKOMIMq6WKD63yXuz\nDaph1TG8sVVZe6C1e9Jl9BQh6F5USUs396/uTpZ9kdmOHxzWMyPDbeQAsKRQkbJo\nEoSVM2jAdLwH9u40G0l89evt0X2NB1oC8HgO0aCCTIZU5hWTs4+jW0T06D1Zwwg3\nFoORJert2K8pVrYX5HmCu0o0k6M4hu/1R5LgEWZbA61PlOdqsnrsXKSjyUYxayxH\ngx8MCsgXWpcpD9Z1YmWoe5YJAKCC0EI1xIRcN/+yA+yFEzvZL2qn2VQFxTCuorNM\ndhfQes38Md43eDASAIf1eS/27pwIzPc/U9PN8PLZC8wwhdJtBh63YesK7y6TrXDJ\nwLmBRzi5UiKUQtzO1pgtNUk78HKuobNxWTqu0xr32amLD9NdGgqj/5lKFludwjy4\nkXdxYnM7LOAUKWa4LPq1q97OV4gccxvIURQWE6nzeKEtR3TJqkY=\n=tycY\n-----END PGP SIGNATURE-----",
+        "payload": "tree c9c1398bea8a003827c0f718a13d7cc763da4d12\nparent 9fc2e49aed89654653222a0dccdbfb0c66787b1d\nauthor SuperInstance DocBot <docbot@superinstance.ai> 1781496283 +0000\ncommitter SuperInstance DocBot <docbot@superinstance.ai> 1781496283 +0000\n\nfix: adapt onnx module to ort 2.0.0-rc.12 final API\n\nFixes SuperInstance/pincher#10 — --features onnx compilation broken by\nadditional API drift in ort 2.0.0-rc.12 beyond the Session::builder()\nchain already fixed in 9fc2e49.\n\nChanges:\n- Remove ort::prelude import (removed in rc.12)\n- Wrap Session in Arc<Mutex<>> (not Send-safe in rc.12)\n- Update session.run() return type handling (try_extract_tensor returns\n  (&Shape, &[T]) tuple, not a typed tensor)\n- Replace output[[i,j,k]] indexing with flat index into data slice\n- Handle shape.len() returning isize vs usize\n- Fix attention_mask cloning for moved-from-array semantics\n- Add mutex error mapping to EmbedError::Ort\n\nBuild verified: cargo build --features onnx -p pincher-core (debug + release)\nTesting blocked: ort_sys prebuilt archives lack ARM64 exception handling\ntables (__cxa_call_terminate) — not a code issue.\n",
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/pincher/commits/2c242df75996d658fe3c466c765ee9ba08e8aa33",
+    "html_url": "https://github.com/SuperInstance/pincher/commit/2c242df75996d658fe3c466c765ee9ba08e8aa33",
+    "comments_url": "https://api.github.com/repos/SuperInstance/pincher/commits/2c242df75996d658fe3c466c765ee9ba08e8aa33/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "9fc2e49aed89654653222a0dccdbfb0c66787b1d",
+        "url": "https://api.github.com/repos/SuperInstance/pincher/commits/9fc2e49aed89654653222a0dccdbfb0c66787b1d",
+        "html_url": "https://github.com/SuperInstance/pincher/commit/9fc2e49aed89654653222a0dccdbfb0c66787b1d"
+      }
+    ]
+  },
+  {
+    "sha": "9fc2e49aed89654653222a0dccdbfb0c66787b1d",
+    "node_id": "C_kwDOSuvx6toAKDlmYzJlNDlhZWQ4OTY1NDY1MzIyMmEwZGNjZGJmYjBjNjY3ODdiMWQ",
+    "commit": {
+      "author": {
+        "name": "SuperInstance DocBot",
+        "email": "docbot@superinstance.ai",
+        "date": "2026-06-15T00:56:53Z"
+      },
+      "committer": {
+        "name": "SuperInstance DocBot",
+        "email": "docbot@superinstance.ai",
+        "date": "2026-06-15T00:57:02Z"
+      },
+      "message": "fix: pin ndarray 0.17 and adapt ort 2.0.0-rc.12 API for Session builder error handling\n\nUpstream API drift in ort 2.0.0-rc.12:\n- Session::builder() now returns Result<Session, ort::Error<()>> requiring\n  explicit map_err on each method chain\n- GraphOptimizationLevel moved to ort::session::builder::\n- ort::Error<()> no longer auto-converts from builder errors\n\nAlso bump ndarray from 0.16 to 0.17 for compatibility.",
+      "tree": {
+        "sha": "5376bfe6f93df40e816bd9dafd3f614b3708c5cb",
+        "url": "https://api.github.com/repos/SuperInstance/pincher/git/trees/5376bfe6f93df40e816bd9dafd3f614b3708c5cb"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/pincher/git/commits/9fc2e49aed89654653222a0dccdbfb0c66787b1d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "no_user",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEETKHZjurjWkWCWHAdsKgci/5SdyQFAmovTd4ACgkQsKgci/5S\ndyT6hA//a4u3nHSy3oLymT99TKFSYu7t7ZwhxQXiqK/MUQKuzDf11/LANkZtIVdQ\ntx8J410jcSMnWwD2Gp+PMUFRBgD616SwXSwUfWQr8LSKMu5WfFo1rMhvCtWcH4H3\n4yMt4yk+XGsshZEbpNjyl2pDi1MyazhoPE3TNiVwfjtm77K/4wGjX7uwp8qaxw4K\n2Cps7Mxnm0jCQ16wuDg1xdUDkQ4WCVzAvZTGBtMVRJdHRXk5TtDaJ4EiqkeSs8C1\nTrX+pKvhgIjagerIEaYN6gf0FbanCDsKmclN1Ioj5PRjRUmJlkuMLeYB3sYkeDM+\ncm3GIHo5LMFSsSWFfhCGFxOkTgiYNkAifqTkU5ekG66sSetFKqLTNJ7g3qoouRXx\naVdbsdxrHlZCt31y0hapc+UvMOrb+rjwcA78fLBrom6l6xPt/cqtYG9DPY+Xa46p\n1JlFK6WGSPWaHF2Q0McntxNR9sxyeA/qp/v6nmSZRwLp3Zs2/6gNxUUKYcVi6r5t\nwVGFf6g2E2SaDpm9SmSEuC1pERWCOzUuuO4mrZnh0Vw6iP9/PI0i8v3WfM0S2EMG\ndjHypaXM8PIVb44ji7GgutYLMwhLzAJSZLfUwEM1PmCkkBv9caDh3RvxyU9o2+Ej\nifRODASyxGOMoTfIryWCdsJw+g5uvr5tSWAt7WofVh4ykB4p8FY=\n=kHbm\n-----END PGP SIGNATURE-----",
+        "payload": "tree 5376bfe6f93df40e816bd9dafd3f614b3708c5cb\nparent 9d51f87e3a3cbb39a4b9f6a2fdd1961f03397c83\nauthor SuperInstance DocBot <docbot@superinstance.ai> 1781485013 +0000\ncommitter SuperInstance DocBot <docbot@superinstance.ai> 1781485022 +0000\n\nfix: pin ndarray 0.17 and adapt ort 2.0.0-rc.12 API for Session builder error handling\n\nUpstream API drift in ort 2.0.0-rc.12:\n- Session::builder() now returns Result<Session, ort::Error<()>> requiring\n  explicit map_err on each method chain\n- GraphOptimizationLevel moved to ort::session::builder::\n- ort::Error<()> no longer auto-converts from builder errors\n\nAlso bump ndarray from 0.16 to 0.17 for compatibility.\n",
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/pincher/commits/9fc2e49aed89654653222a0dccdbfb0c66787b1d",
+    "html_url": "https://github.com/SuperInstance/pincher/commit/9fc2e49aed89654653222a0dccdbfb0c66787b1d",
+    "comments_url": "https://api.github.com/repos/SuperInstance/pincher/commits/9fc2e49aed89654653222a0dccdbfb0c66787b1d/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "9d51f87e3a3cbb39a4b9f6a2fdd1961f03397c83",
+        "url": "https://api.github.com/repos/SuperInstance/pincher/commits/9d51f87e3a3cbb39a4b9f6a2fdd1961f03397c83",
+        "html_url": "https://github.com/SuperInstance/pincher/commit/9d51f87e3a3cbb39a4b9f6a2fdd1961f03397c83"
+      }
+    ]
+  },
+  {
+    "sha": "9d51f87e3a3cbb39a4b9f6a2fdd1961f03397c83",
+    "node_id": "C_kwDOSuvx6toAKDlkNTFmODdlM2EzY2JiMzlhNGI5ZjZhMmZkZDE5NjFmMDMzOTdjODM",
+    "commit": {
+      "author": {
+        "name": "SuperInstance DocBot",
+        "email": "docbot@superinstance.ai",
+        "date": "2026-06-14T20:51:58Z"
+      },
+      "committer": {
+        "name": "SuperInstance DocBot",
+        "email": "docbot@superinstance.ai",
+        "date": "2026-06-14T20:51:58Z"
+      },
+      "message": "Rewrite README with shell-and-signal narrative\n\nFull rewrite of the pincher README using the hermit-crab / shell-and-signal\nnarrative framework from the AI Writings essays and the official design system.\n\nNew structure:\n- Opening: hermit-crab hook + reflex engine positioning\n- The Shell: what pincher is, how reflexes work, the intent->action pipeline\n- The Signal: the pinch protocol, how triggers and actions flow through the shell\n- The Architecture: Rust workspace, crate layout, la-link diagram\n- The Fleet Context: how pincher fits in the SuperInstance stack\n- Quick Start: minimal install + reflex config\n- Design: brass/copper/teal palette reference\n- Footer: 'The crab inherits the shell.'\n\n~230 lines, ~14KB.",
+      "tree": {
+        "sha": "827e9bb9713c8f6224f659a02f97145621311d5a",
+        "url": "https://api.github.com/repos/SuperInstance/pincher/git/trees/827e9bb9713c8f6224f659a02f97145621311d5a"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/pincher/git/commits/9d51f87e3a3cbb39a4b9f6a2fdd1961f03397c83",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "no_user",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEETKHZjurjWkWCWHAdsKgci/5SdyQFAmovFG4ACgkQsKgci/5S\ndyTL2w//UYTddkGPO/VTuSH6BVQO1aja/WyOx24hcezFvJeGEKJDkNwQJi1g6Czm\nJk+lYuLRtdJtlM4wKmqMxEKuHDzRKCg79LzCuc11Na26oRRsY1tWdqv5kUDg4+3J\nbFavg0Jr/S0E0nUQ7r8sggV1Cp3ZZNekvXctwaxvCOoO3MTQM3q4cjb81APMUgdV\nsHrJbg+vVhztwChI2a5ddvH/MDkTPtXmYQPTQGfmw2lbUvRi3NO26VA77ftb1+7i\nDs4367D2tHkzGY002AZULezyHbNSsYYdDOD/ufh/Z1JenDiqUPp1YN9Nnsq0wpsO\n7xPtPVri8tXkDIs52GnrccwZ1ZliWl1rdOOc/edH8Bb5SawnX7TLE0veQs/JBOoE\nCe9O7LdTCm01rjMf+ZeDPhNaHNG+77GlIzUgyqHvrhl6UeetzvXUIoBYS6oUw2AA\nL6MSb5cQq1KNXWg/mdUmXQPIcADlxX62JQIZGtWQpB817WInTCq9yHjN0TVHMpMq\nJ/MTCcqnSG8bYxV9POnuNG1IBfa9DUEfRFrNJLvChE6Bln5+CDnrzo/uoA/E+9lX\nqmbp/YHkVkk2R99kIVjs2S0Eo2SnywMiljemXhA4F3DYKHYjJ7f0gpagQUW/ww4O\nQoy1QSAeGnJrcL97SY1mApVYS31mIMOETEoUeQmir0VMOCj5aJw=\n=+5FW\n-----END PGP SIGNATURE-----",
+        "payload": "tree 827e9bb9713c8f6224f659a02f97145621311d5a\nparent 2ecafabb050e4f3953f89ac6e0d811a6e0839723\nauthor SuperInstance DocBot <docbot@superinstance.ai> 1781470318 +0000\ncommitter SuperInstance DocBot <docbot@superinstance.ai> 1781470318 +0000\n\nRewrite README with shell-and-signal narrative\n\nFull rewrite of the pincher README using the hermit-crab / shell-and-signal\nnarrative framework from the AI Writings essays and the official design system.\n\nNew structure:\n- Opening: hermit-crab hook + reflex engine positioning\n- The Shell: what pincher is, how reflexes work, the intent->action pipeline\n- The Signal: the pinch protocol, how triggers and actions flow through the shell\n- The Architecture: Rust workspace, crate layout, la-link diagram\n- The Fleet Context: how pincher fits in the SuperInstance stack\n- Quick Start: minimal install + reflex config\n- Design: brass/copper/teal palette reference\n- Footer: 'The crab inherits the shell.'\n\n~230 lines, ~14KB.\n",
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/pincher/commits/9d51f87e3a3cbb39a4b9f6a2fdd1961f03397c83",
+    "html_url": "https://github.com/SuperInstance/pincher/commit/9d51f87e3a3cbb39a4b9f6a2fdd1961f03397c83",
+    "comments_url": "https://api.github.com/repos/SuperInstance/pincher/commits/9d51f87e3a3cbb39a4b9f6a2fdd1961f03397c83/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "2ecafabb050e4f3953f89ac6e0d811a6e0839723",
+        "url": "https://api.github.com/repos/SuperInstance/pincher/commits/2ecafabb050e4f3953f89ac6e0d811a6e0839723",
+        "html_url": "https://github.com/SuperInstance/pincher/commit/2ecafabb050e4f3953f89ac6e0d811a6e0839723"
+      }
+    ]
+  }
+]

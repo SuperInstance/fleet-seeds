@@ -1,0 +1,101 @@
+{
+  "sha": "6fd1a351c3f66b82d80faf28fa083bf369c27528",
+  "node_id": "C_kwDORhuGetoAKDZmZDFhMzUxYzNmNjZiODJkODBmYWYyOGZhMDgzYmYzNjljMjc1Mjg",
+  "commit": {
+    "author": {
+      "name": "Casey Digennaro",
+      "email": "193104091+SuperInstance@users.noreply.github.com",
+      "date": "2026-09-18T04:38:40Z"
+    },
+    "committer": {
+      "name": "Casey Digennaro",
+      "email": "193104091+SuperInstance@users.noreply.github.com",
+      "date": "2026-09-18T04:38:40Z"
+    },
+    "message": "CANON.md: AI-Writings joins the fleet canon (Layer C)",
+    "tree": {
+      "sha": "a4bdf9ccaf08fc1a76cbf32522ea2813ef87c3e9",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/git/trees/a4bdf9ccaf08fc1a76cbf32522ea2813ef87c3e9"
+    },
+    "url": "https://api.github.com/repos/SuperInstance/AI-Writings/git/commits/6fd1a351c3f66b82d80faf28fa083bf369c27528",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/6fd1a351c3f66b82d80faf28fa083bf369c27528",
+  "html_url": "https://github.com/SuperInstance/AI-Writings/commit/6fd1a351c3f66b82d80faf28fa083bf369c27528",
+  "comments_url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/6fd1a351c3f66b82d80faf28fa083bf369c27528/comments",
+  "author": {
+    "login": "SuperInstance",
+    "id": 193104091,
+    "node_id": "U_kgDOC4KI2w",
+    "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/SuperInstance",
+    "html_url": "https://github.com/SuperInstance",
+    "followers_url": "https://api.github.com/users/SuperInstance/followers",
+    "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+    "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+    "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+    "repos_url": "https://api.github.com/users/SuperInstance/repos",
+    "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "SuperInstance",
+    "id": 193104091,
+    "node_id": "U_kgDOC4KI2w",
+    "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/SuperInstance",
+    "html_url": "https://github.com/SuperInstance",
+    "followers_url": "https://api.github.com/users/SuperInstance/followers",
+    "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+    "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+    "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+    "repos_url": "https://api.github.com/users/SuperInstance/repos",
+    "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "dc6f1e269681a2174152f1680a7c7279889f7296",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/dc6f1e269681a2174152f1680a7c7279889f7296",
+      "html_url": "https://github.com/SuperInstance/AI-Writings/commit/dc6f1e269681a2174152f1680a7c7279889f7296"
+    }
+  ],
+  "stats": {
+    "total": 14,
+    "additions": 14,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "9688e8bb4ee00fe3d213b706b95fda5bf94574ce",
+      "filename": "CANON.md",
+      "status": "added",
+      "additions": 14,
+      "deletions": 0,
+      "changes": 14,
+      "blob_url": "https://github.com/SuperInstance/AI-Writings/blob/6fd1a351c3f66b82d80faf28fa083bf369c27528/CANON.md",
+      "raw_url": "https://github.com/SuperInstance/AI-Writings/raw/6fd1a351c3f66b82d80faf28fa083bf369c27528/CANON.md",
+      "contents_url": "https://api.github.com/repos/SuperInstance/AI-Writings/contents/CANON.md?ref=6fd1a351c3f66b82d80faf28fa083bf369c27528",
+      "patch": "@@ -0,0 +1,14 @@\n+---\n+canon: 1\n+name: AI-Writings\n+mission: \"Creative writing, essays, and philosophical explorations from the Exocortex project — the fleet's canon of AI-authored text (2,786+ pieces).\"\n+state: active\n+family: infra\n+vessel: unattributed\n+born_from: []\n+feeds: [duke-lab, quilt-live-canon]\n+owed_by: []\n+canonical_docs: [README.md]\n+ledger: git-log\n+verified: 2026-09-18\n+---"
+    }
+  ]
+}

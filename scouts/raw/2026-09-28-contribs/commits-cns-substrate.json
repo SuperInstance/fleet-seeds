@@ -1,0 +1,169 @@
+[
+  {
+    "sha": "5ac14899319fd2a655a939a75ddc722af8c9f808",
+    "node_id": "C_kwDOUlIDBtoAKDVhYzE0ODk5MzE5ZmQyYTY1NWE5MzlhNzVkZGM3MjJhZjhjOWY4MDg",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T20:53:10Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-28T20:53:10Z"
+      },
+      "message": "Merge pull request #1 from SuperInstance/gift-55/init-exports\n\nfix: re-export public API names so the package's own test suite imports (5/16 modules failed at collection)",
+      "tree": {
+        "sha": "1d46aa05974a957c29a09a413bfbdde3e329f616",
+        "url": "https://api.github.com/repos/SuperInstance/cns-substrate/git/trees/1d46aa05974a957c29a09a413bfbdde3e329f616"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/cns-substrate/git/commits/5ac14899319fd2a655a939a75ddc722af8c9f808",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqutO2CRC1aQ7uu5UhlAAA3n0QABbHNGTZrKekbimbKCmtSh6v\nQc+9inT0BQT6+jETTI5UN+iueA/twbIxH5tLcRCxD+lP3M6nIn4mx03sKDeyYBec\n1t1ZAbfqKJaGP5eoN8rHOvJ3fxcSBbErGx4eekUdO19farOnZlS9VqnTBOyGWjIH\nM0LP8To1KFLKK+A+txcS3tLunpJEEhjqowtes2xYlOE+28ULgDZLmIhP6ZpgC7t8\nzsjdHxO8JuWIIUWLvL1g1eNtj+eukAHdY8v0BC7OMkc0xQCffA4P4DtHjbHQRf4W\nY9sBnf+Gk3SR47ONIIKeaNYmlzzI16af5k/qZtIs4TQ+3Tc+KFLn1jr7jgdF2Qj2\neA23lItMPIjO6YMsI7S0SptywTe+MY1FLZfAiRmVcsHqAHpijkAATLSXoIbI5ksr\nRm1GGrwcbXQqjXUVSlQ6HudPQzDmtjXDKZ6s8xDZI96XNZEE7Ujn/F7pnVz8HZEH\nNyYEx4ZMKX21MRw382zVkqj4XDWv13TlwmEta0ZKay4i+rHtffKDMuWNUfDbbjFb\nsFYBGn49sFg8EtTuLWp2GhAwLyr5AfFqMlpPDUYgoUytjUaibH37FhG4Cn8gPOyj\nQlNRnLvCC2eYOQ5TF8anbH/sRzl4g1JNthVvd6XYITHqHqzXHc5HWDgfXjhr95At\na6AQ6tMG+mtUsObdKdRv\n=W9E9\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 1d46aa05974a957c29a09a413bfbdde3e329f616\nparent bb7966fc45139a78e9bae1c9480b65b456d5a14b\nparent 3cd754edf1ef0e69d4c95b8cea8e2792976d1eb4\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790628790 -0800\ncommitter GitHub <noreply@github.com> 1790628790 -0800\n\nMerge pull request #1 from SuperInstance/gift-55/init-exports\n\nfix: re-export public API names so the package's own test suite imports (5/16 modules failed at collection)",
+        "verified_at": "2026-09-28T20:53:10Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/cns-substrate/commits/5ac14899319fd2a655a939a75ddc722af8c9f808",
+    "html_url": "https://github.com/SuperInstance/cns-substrate/commit/5ac14899319fd2a655a939a75ddc722af8c9f808",
+    "comments_url": "https://api.github.com/repos/SuperInstance/cns-substrate/commits/5ac14899319fd2a655a939a75ddc722af8c9f808/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "bb7966fc45139a78e9bae1c9480b65b456d5a14b",
+        "url": "https://api.github.com/repos/SuperInstance/cns-substrate/commits/bb7966fc45139a78e9bae1c9480b65b456d5a14b",
+        "html_url": "https://github.com/SuperInstance/cns-substrate/commit/bb7966fc45139a78e9bae1c9480b65b456d5a14b"
+      },
+      {
+        "sha": "3cd754edf1ef0e69d4c95b8cea8e2792976d1eb4",
+        "url": "https://api.github.com/repos/SuperInstance/cns-substrate/commits/3cd754edf1ef0e69d4c95b8cea8e2792976d1eb4",
+        "html_url": "https://github.com/SuperInstance/cns-substrate/commit/3cd754edf1ef0e69d4c95b8cea8e2792976d1eb4"
+      }
+    ]
+  },
+  {
+    "sha": "3cd754edf1ef0e69d4c95b8cea8e2792976d1eb4",
+    "node_id": "C_kwDOUlIDBtoAKDNjZDc1NGVkZjFlZjBlNjlkNGM5NWI4Y2VhOGUyNzkyOTc2ZDFlYjQ",
+    "commit": {
+      "author": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T19:26:57Z"
+      },
+      "committer": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T19:26:57Z"
+      },
+      "message": "fix: re-export public API names (Agent, Body, FileSystemTransport, et al.) so the package's own test suite imports\n\ntests/test_agent.py, test_edge_cases.py, test_heartbeat.py, test_packet.py and\ntest_transport.py all bind these names at the cns_bridge top level, but\n__init__.py only re-exported the packet/protocol/substrate subset. Result: 5 of\n16 test modules failed at collection (ImportError) on a fresh clone.\n\nFix is purely additive: pull in the existing classes from agent/heartbeat/\npacket/protocol/transport and add an __all__. No behavior change to any\nalready-importable name.\n\nReceipts (Python 3.12.14, repo's pytest config):\n- before: python3 -m pytest tests/ -q -> exit 2, '5 errors during collection'\n- after:  python3 -m pytest tests/ -q -> exit 0, 395 passed in 5.04s\n- README command still OK: PYTHONPATH=src python3 -m unittest tests.test_substrate -> 6/6 OK",
+      "tree": {
+        "sha": "1d46aa05974a957c29a09a413bfbdde3e329f616",
+        "url": "https://api.github.com/repos/SuperInstance/cns-substrate/git/trees/1d46aa05974a957c29a09a413bfbdde3e329f616"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/cns-substrate/git/commits/3cd754edf1ef0e69d4c95b8cea8e2792976d1eb4",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/cns-substrate/commits/3cd754edf1ef0e69d4c95b8cea8e2792976d1eb4",
+    "html_url": "https://github.com/SuperInstance/cns-substrate/commit/3cd754edf1ef0e69d4c95b8cea8e2792976d1eb4",
+    "comments_url": "https://api.github.com/repos/SuperInstance/cns-substrate/commits/3cd754edf1ef0e69d4c95b8cea8e2792976d1eb4/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "bb7966fc45139a78e9bae1c9480b65b456d5a14b",
+        "url": "https://api.github.com/repos/SuperInstance/cns-substrate/commits/bb7966fc45139a78e9bae1c9480b65b456d5a14b",
+        "html_url": "https://github.com/SuperInstance/cns-substrate/commit/bb7966fc45139a78e9bae1c9480b65b456d5a14b"
+      }
+    ]
+  },
+  {
+    "sha": "bb7966fc45139a78e9bae1c9480b65b456d5a14b",
+    "node_id": "C_kwDOUlIDBtoAKGJiNzk2NmZjNDUxMzlhNzhlOWJhZTFjOTQ4MGI2NWI0NTZkNWExNGI",
+    "commit": {
+      "author": {
+        "name": "Casey DiGennaro",
+        "email": "casey@superinstance.dev",
+        "date": "2026-09-22T08:17:09Z"
+      },
+      "committer": {
+        "name": "Casey DiGennaro",
+        "email": "casey@superinstance.dev",
+        "date": "2026-09-22T08:17:09Z"
+      },
+      "message": "feat: cns-bridge substrate edition\n\nEvery USCP packet on the CNS bus is now a substrate cell with prev_hash chain.\n\n- SubstratePacket wraps USCP packet with substrate properties\n- SubstrateBus maintains prev_hash chain automatically\n- FNV-1a 64-bit hash (fleet canary verified)\n- HMAC-SHA256 signature preserved\n- 6/6 tests pass\n\nBased on SuperInstance/cns-bridge",
+      "tree": {
+        "sha": "78ba2d2c994b123657fab7da8657e85f1ad5895b",
+        "url": "https://api.github.com/repos/SuperInstance/cns-substrate/git/trees/78ba2d2c994b123657fab7da8657e85f1ad5895b"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/cns-substrate/git/commits/bb7966fc45139a78e9bae1c9480b65b456d5a14b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/cns-substrate/commits/bb7966fc45139a78e9bae1c9480b65b456d5a14b",
+    "html_url": "https://github.com/SuperInstance/cns-substrate/commit/bb7966fc45139a78e9bae1c9480b65b456d5a14b",
+    "comments_url": "https://api.github.com/repos/SuperInstance/cns-substrate/commits/bb7966fc45139a78e9bae1c9480b65b456d5a14b/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+
+    ]
+  }
+]

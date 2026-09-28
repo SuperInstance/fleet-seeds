@@ -1,0 +1,18 @@
+{
+  "name": "CANON.md",
+  "path": "CANON.md",
+  "sha": "9688e8bb4ee00fe3d213b706b95fda5bf94574ce",
+  "size": 365,
+  "url": "https://api.github.com/repos/SuperInstance/AI-Writings/contents/CANON.md?ref=canon-md",
+  "html_url": "https://github.com/SuperInstance/AI-Writings/blob/canon-md/CANON.md",
+  "git_url": "https://api.github.com/repos/SuperInstance/AI-Writings/git/blobs/9688e8bb4ee00fe3d213b706b95fda5bf94574ce",
+  "download_url": "https://raw.githubusercontent.com/SuperInstance/AI-Writings/canon-md/CANON.md",
+  "type": "file",
+  "content": "LS0tCmNhbm9uOiAxCm5hbWU6IEFJLVdyaXRpbmdzCm1pc3Npb246ICJDcmVh\ndGl2ZSB3cml0aW5nLCBlc3NheXMsIGFuZCBwaGlsb3NvcGhpY2FsIGV4cGxv\ncmF0aW9ucyBmcm9tIHRoZSBFeG9jb3J0ZXggcHJvamVjdCDigJQgdGhlIGZs\nZWV0J3MgY2Fub24gb2YgQUktYXV0aG9yZWQgdGV4dCAoMiw3ODYrIHBpZWNl\ncykuIgpzdGF0ZTogYWN0aXZlCmZhbWlseTogaW5mcmEKdmVzc2VsOiB1bmF0\ndHJpYnV0ZWQKYm9ybl9mcm9tOiBbXQpmZWVkczogW2R1a2UtbGFiLCBxdWls\ndC1saXZlLWNhbm9uXQpvd2VkX2J5OiBbXQpjYW5vbmljYWxfZG9jczogW1JF\nQURNRS5tZF0KbGVkZ2VyOiBnaXQtbG9nCnZlcmlmaWVkOiAyMDI2LTA5LTE4\nCi0tLQo=\n",
+  "encoding": "base64",
+  "_links": {
+    "self": "https://api.github.com/repos/SuperInstance/AI-Writings/contents/CANON.md?ref=canon-md",
+    "git": "https://api.github.com/repos/SuperInstance/AI-Writings/git/blobs/9688e8bb4ee00fe3d213b706b95fda5bf94574ce",
+    "html": "https://github.com/SuperInstance/AI-Writings/blob/canon-md/CANON.md"
+  }
+}

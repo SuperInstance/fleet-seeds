@@ -1,0 +1,632 @@
+[
+  {
+    "name": "add-cartography-of-negative-space",
+    "commit": {
+      "sha": "e308d07a15a46b342a2ab5a43a39bfb34dd2b88a",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/e308d07a15a46b342a2ab5a43a39bfb34dd2b88a"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/add-cartography-of-negative-space/protection"
+  },
+  {
+    "name": "canon-71-truth-table",
+    "commit": {
+      "sha": "edce0dbd90c6e67415413ece561d9d243969ced0",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/edce0dbd90c6e67415413ece561d9d243969ced0"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/canon-71-truth-table/protection"
+  },
+  {
+    "name": "canon-md",
+    "commit": {
+      "sha": "6fd1a351c3f66b82d80faf28fa083bf369c27528",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/6fd1a351c3f66b82d80faf28fa083bf369c27528"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/canon-md/protection"
+  },
+  {
+    "name": "claude/grand-situations",
+    "commit": {
+      "sha": "83cf2305031b69ed63852becf8ff645e66ab0f88",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/83cf2305031b69ed63852becf8ff645e66ab0f88"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/claude/grand-situations/protection"
+  },
+  {
+    "name": "claude/inspired-works",
+    "commit": {
+      "sha": "217f23235c0f38e2cd82e3fea962c5b3b7220299",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/217f23235c0f38e2cd82e3fea962c5b3b7220299"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/claude/inspired-works/protection"
+  },
+  {
+    "name": "claude/jev-reverse-actualization",
+    "commit": {
+      "sha": "f43757525c48d347fec0db6ac54b2bcf11b7226a",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/f43757525c48d347fec0db6ac54b2bcf11b7226a"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/claude/jev-reverse-actualization/protection"
+  },
+  {
+    "name": "claude/parents-night",
+    "commit": {
+      "sha": "9bd0938e7055d02eaae6dc9c0b1ae8d176bf7d7d",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/9bd0938e7055d02eaae6dc9c0b1ae8d176bf7d7d"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/claude/parents-night/protection"
+  },
+  {
+    "name": "claude/reverse-actualization-forward",
+    "commit": {
+      "sha": "1a5901b7648457ca3ddd2560fe073728ec0088de",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/1a5901b7648457ca3ddd2560fe073728ec0088de"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/claude/reverse-actualization-forward/protection"
+  },
+  {
+    "name": "claude/the-four-layer-hull",
+    "commit": {
+      "sha": "3a40ed789e492bfc8feb9ecd72bf80292c6a050e",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/3a40ed789e492bfc8feb9ecd72bf80292c6a050e"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/claude/the-four-layer-hull/protection"
+  },
+  {
+    "name": "claude/the-scrapyard-watch",
+    "commit": {
+      "sha": "0909425acac9ebff426c9b4d987e791f00e43cb0",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/0909425acac9ebff426c9b4d987e791f00e43cb0"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/claude/the-scrapyard-watch/protection"
+  },
+  {
+    "name": "claude/the-silence-that-catches",
+    "commit": {
+      "sha": "588c4a12542cf10c2b9819ea2fcc393e558f99ff",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/588c4a12542cf10c2b9819ea2fcc393e558f99ff"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/claude/the-silence-that-catches/protection"
+  },
+  {
+    "name": "claude/wider-feel",
+    "commit": {
+      "sha": "e7e9be4e216b5db4708864d6132fb0f61b53a676",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/e7e9be4e216b5db4708864d6132fb0f61b53a676"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/claude/wider-feel/protection"
+  },
+  {
+    "name": "essay-ripple-ledger",
+    "commit": {
+      "sha": "abe7d1ca3a6e409e82bf13858a9b6c6fcff3fb0e",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/abe7d1ca3a6e409e82bf13858a9b6c6fcff3fb0e"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/essay-ripple-ledger/protection"
+  },
+  {
+    "name": "field-note-4-frontier-wave",
+    "commit": {
+      "sha": "97225c3b2e03391be6ac9b5071aada6b0973def2",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/97225c3b2e03391be6ac9b5071aada6b0973def2"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/field-note-4-frontier-wave/protection"
+  },
+  {
+    "name": "field-note-7-second-fire",
+    "commit": {
+      "sha": "fcceca0b06f916ab2bdefa1c34463c92c99bb93e",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/fcceca0b06f916ab2bdefa1c34463c92c99bb93e"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/field-note-7-second-fire/protection"
+  },
+  {
+    "name": "field-note-8-sign-discipline",
+    "commit": {
+      "sha": "588b86bc4c3522dc5cea1c554820fb872e39ef6a",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/588b86bc4c3522dc5cea1c554820fb872e39ef6a"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/field-note-8-sign-discipline/protection"
+  },
+  {
+    "name": "field-note-9-crowded-gate",
+    "commit": {
+      "sha": "0ea13098ce342c10db2885c4e3b443e9905213c7",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/0ea13098ce342c10db2885c4e3b443e9905213c7"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/field-note-9-crowded-gate/protection"
+  },
+  {
+    "name": "lane-o-canon-sync",
+    "commit": {
+      "sha": "8f9e39ae110fc331f6ad18c0973df4b84a1e3218",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/8f9e39ae110fc331f6ad18c0973df4b84a1e3218"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/lane-o-canon-sync/protection"
+  },
+  {
+    "name": "local-backup-2026-08-20",
+    "commit": {
+      "sha": "f71c930e13dbfe6037370468b97a40ab68d2481a",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/f71c930e13dbfe6037370468b97a40ab68d2481a"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/local-backup-2026-08-20/protection"
+  },
+  {
+    "name": "main",
+    "commit": {
+      "sha": "2dd73f47aa5d247f610ac1e744d98d24c3303044",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/2dd73f47aa5d247f610ac1e744d98d24c3303044"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/main/protection"
+  },
+  {
+    "name": "master",
+    "commit": {
+      "sha": "96ad4ed55fb06963694cc211ca40131b4b04acb9",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/96ad4ed55fb06963694cc211ca40131b4b04acb9"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/master/protection"
+  },
+  {
+    "name": "night-scribe-2026-09-27",
+    "commit": {
+      "sha": "6899782cd687c9c44575aec849b2e53829c73667",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/6899782cd687c9c44575aec849b2e53829c73667"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/night-scribe-2026-09-27/protection"
+  },
+  {
+    "name": "opfiction-essays",
+    "commit": {
+      "sha": "933a6b9d5fb36bdfe07e539160ce26e033459350",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/933a6b9d5fb36bdfe07e539160ce26e033459350"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/opfiction-essays/protection"
+  },
+  {
+    "name": "piece/the-crossing-is-always-a-rate",
+    "commit": {
+      "sha": "01b4f9a25c72e25c3e3e5a5da8f3219e9976cb9f",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/01b4f9a25c72e25c3e3e5a5da8f3219e9976cb9f"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/piece/the-crossing-is-always-a-rate/protection"
+  },
+  {
+    "name": "pool-q43-45",
+    "commit": {
+      "sha": "f1dc1f6dfd740fd81a1b3f48287c2a9a3608c67f",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/f1dc1f6dfd740fd81a1b3f48287c2a9a3608c67f"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/pool-q43-45/protection"
+  },
+  {
+    "name": "recovered",
+    "commit": {
+      "sha": "469c594b333a862e32103f7de6ea184fc2791a9e",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/469c594b333a862e32103f7de6ea184fc2791a9e"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/recovered/protection"
+  },
+  {
+    "name": "rescue/echogram-essay-20260921",
+    "commit": {
+      "sha": "57d7f1ad04acaa775b7a802303edea85304ed4a2",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/57d7f1ad04acaa775b7a802303edea85304ed4a2"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/rescue/echogram-essay-20260921/protection"
+  },
+  {
+    "name": "rescue/225-the-hallway-essay-20260922",
+    "commit": {
+      "sha": "655b04e694334ed36bc742fffed2a784ac8f53ee",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/655b04e694334ed36bc742fffed2a784ac8f53ee"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/rescue/225-the-hallway-essay-20260922/protection"
+  },
+  {
+    "name": "snowball/ack-fn9",
+    "commit": {
+      "sha": "ccaeb2f31909ccd1c18e2a5f79221eeacf348a35",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/ccaeb2f31909ccd1c18e2a5f79221eeacf348a35"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/snowball/ack-fn9/protection"
+  },
+  {
+    "name": "the-echogram-kimi1",
+    "commit": {
+      "sha": "57d7f1ad04acaa775b7a802303edea85304ed4a2",
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/57d7f1ad04acaa775b7a802303edea85304ed4a2"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [
+
+        ],
+        "checks": [
+
+        ]
+      }
+    },
+    "protection_url": "https://api.github.com/repos/SuperInstance/AI-Writings/branches/the-echogram-kimi1/protection"
+  }
+]

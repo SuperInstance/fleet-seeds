@@ -1,0 +1,162 @@
+[
+  {
+    "sha": "1493eba5c6075df8e5a31fb11619cc96fd2beb4b",
+    "node_id": "C_kwDOUw6FvNoAKDE0OTNlYmE1YzYwNzVkZjhlNWEzMWZiMTE2MTljYzk2ZmQyYmViNGI",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T17:46:21Z"
+      },
+      "committer": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T17:46:21Z"
+      },
+      "message": "glyphcast: receipt-gated roadmap (Phases 0-4, FAIL-first pins)",
+      "tree": {
+        "sha": "dde54651066eb9a9fe73a8ab9ba3fb4af263738e",
+        "url": "https://api.github.com/repos/SuperInstance/glyphcast/git/trees/dde54651066eb9a9fe73a8ab9ba3fb4af263738e"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/glyphcast/git/commits/1493eba5c6075df8e5a31fb11619cc96fd2beb4b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/glyphcast/commits/1493eba5c6075df8e5a31fb11619cc96fd2beb4b",
+    "html_url": "https://github.com/SuperInstance/glyphcast/commit/1493eba5c6075df8e5a31fb11619cc96fd2beb4b",
+    "comments_url": "https://api.github.com/repos/SuperInstance/glyphcast/commits/1493eba5c6075df8e5a31fb11619cc96fd2beb4b/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a51535758b00b0f048739cf450b715966a6c50f5",
+        "url": "https://api.github.com/repos/SuperInstance/glyphcast/commits/a51535758b00b0f048739cf450b715966a6c50f5",
+        "html_url": "https://github.com/SuperInstance/glyphcast/commit/a51535758b00b0f048739cf450b715966a6c50f5"
+      }
+    ]
+  },
+  {
+    "sha": "a51535758b00b0f048739cf450b715966a6c50f5",
+    "node_id": "C_kwDOUw6FvNoAKGE1MTUzNTc1OGIwMGIwZjA0ODczOWNmNDUwYjcxNTk2NmE2YzUwZjU",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T17:46:20Z"
+      },
+      "committer": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T17:46:20Z"
+      },
+      "message": "glyphcast: README — glyph-domain next-frame prediction & frame-rate synthesis (proposal stage, receipt-gated)",
+      "tree": {
+        "sha": "6623965d0d189205e289ec46d936e9454652274f",
+        "url": "https://api.github.com/repos/SuperInstance/glyphcast/git/trees/6623965d0d189205e289ec46d936e9454652274f"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/glyphcast/git/commits/a51535758b00b0f048739cf450b715966a6c50f5",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/glyphcast/commits/a51535758b00b0f048739cf450b715966a6c50f5",
+    "html_url": "https://github.com/SuperInstance/glyphcast/commit/a51535758b00b0f048739cf450b715966a6c50f5",
+    "comments_url": "https://api.github.com/repos/SuperInstance/glyphcast/commits/a51535758b00b0f048739cf450b715966a6c50f5/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+
+    ]
+  }
+]

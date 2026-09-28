@@ -1,0 +1,822 @@
+[
+  {
+    "sha": "2dd73f47aa5d247f610ac1e744d98d24c3303044",
+    "node_id": "C_kwDORhuGetoAKDJkZDczZjQ3YWE1ZDI0N2Y2MTBhYzFlNzQ0ZDk4ZDI0YzMzMDMwNDQ",
+    "commit": {
+      "author": {
+        "name": "Claude",
+        "email": "noreply@anthropic.com",
+        "date": "2026-09-28T21:21:03Z"
+      },
+      "committer": {
+        "name": "Claude",
+        "email": "noreply@anthropic.com",
+        "date": "2026-09-28T21:21:03Z"
+      },
+      "message": "systemize: THE-WEAKEST-CLAIM-METHOD — the audit instrument the experiments produced (d102)\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01JV2C8fnD86DNwXoyHPd7X9",
+      "tree": {
+        "sha": "d76f86132deed63824a76cfec69e9824872ac178",
+        "url": "https://api.github.com/repos/SuperInstance/AI-Writings/git/trees/d76f86132deed63824a76cfec69e9824872ac178"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/git/commits/2dd73f47aa5d247f610ac1e744d98d24c3303044",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgrLzsfFISF4by8Q+FKz27YpkK1USsBB+m\namu1QkJnbDsAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5AAAAQHI9PPBq\nz5zpClxVzW5ScF1RT2BtW226u1i9WxGGNCRL+795EmsRm+35nEXo+6J7vsPhCCFsIV4/qmX9ASqA\nJQA=\n-----END SSH SIGNATURE-----",
+        "payload": "tree d76f86132deed63824a76cfec69e9824872ac178\nparent ba30c72a0f0ece0bfc0595c2aa029ff10eb416c9\nauthor Claude <noreply@anthropic.com> 1790630463 +0000\ncommitter Claude <noreply@anthropic.com> 1790630463 +0000\n\nsystemize: THE-WEAKEST-CLAIM-METHOD — the audit instrument the experiments produced (d102)\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01JV2C8fnD86DNwXoyHPd7X9\n",
+        "verified_at": "2026-09-28T21:21:06Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/2dd73f47aa5d247f610ac1e744d98d24c3303044",
+    "html_url": "https://github.com/SuperInstance/AI-Writings/commit/2dd73f47aa5d247f610ac1e744d98d24c3303044",
+    "comments_url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/2dd73f47aa5d247f610ac1e744d98d24c3303044/comments",
+    "author": {
+      "login": "claude",
+      "id": 81847,
+      "node_id": "MDQ6VXNlcjgxODQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/claude",
+      "html_url": "https://github.com/claude",
+      "followers_url": "https://api.github.com/users/claude/followers",
+      "following_url": "https://api.github.com/users/claude/following{/other_user}",
+      "gists_url": "https://api.github.com/users/claude/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/claude/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/claude/subscriptions",
+      "organizations_url": "https://api.github.com/users/claude/orgs",
+      "repos_url": "https://api.github.com/users/claude/repos",
+      "events_url": "https://api.github.com/users/claude/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/claude/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "claude",
+      "id": 81847,
+      "node_id": "MDQ6VXNlcjgxODQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/claude",
+      "html_url": "https://github.com/claude",
+      "followers_url": "https://api.github.com/users/claude/followers",
+      "following_url": "https://api.github.com/users/claude/following{/other_user}",
+      "gists_url": "https://api.github.com/users/claude/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/claude/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/claude/subscriptions",
+      "organizations_url": "https://api.github.com/users/claude/orgs",
+      "repos_url": "https://api.github.com/users/claude/repos",
+      "events_url": "https://api.github.com/users/claude/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/claude/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ba30c72a0f0ece0bfc0595c2aa029ff10eb416c9",
+        "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/ba30c72a0f0ece0bfc0595c2aa029ff10eb416c9",
+        "html_url": "https://github.com/SuperInstance/AI-Writings/commit/ba30c72a0f0ece0bfc0595c2aa029ff10eb416c9"
+      }
+    ]
+  },
+  {
+    "sha": "ba30c72a0f0ece0bfc0595c2aa029ff10eb416c9",
+    "node_id": "C_kwDORhuGetoAKGJhMzBjNzJhMGYwZWNlMGJmYzA1OTVjMmFhMDI5ZmYxMGViNDE2Yzk",
+    "commit": {
+      "author": {
+        "name": "Claude",
+        "email": "noreply@anthropic.com",
+        "date": "2026-09-28T21:19:56Z"
+      },
+      "committer": {
+        "name": "Claude",
+        "email": "noreply@anthropic.com",
+        "date": "2026-09-28T21:19:56Z"
+      },
+      "message": "play: qthe-verify control — level uninformative; method = ranking+adversary+divergence locator (d101)\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01JV2C8fnD86DNwXoyHPd7X9",
+      "tree": {
+        "sha": "f277d376458a84b56a154b1727d574ac069e3039",
+        "url": "https://api.github.com/repos/SuperInstance/AI-Writings/git/trees/f277d376458a84b56a154b1727d574ac069e3039"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/git/commits/ba30c72a0f0ece0bfc0595c2aa029ff10eb416c9",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgrLzsfFISF4by8Q+FKz27YpkK1USsBB+m\namu1QkJnbDsAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5AAAAQO74WlfG\nVB0uGv2ybW/1aYAcKVmOsKLkB2GnKY8cIGOcRsGYvkhX4frG5xn3Ov7lAFs+0KDgacgZg6C47bPc\nawQ=\n-----END SSH SIGNATURE-----",
+        "payload": "tree f277d376458a84b56a154b1727d574ac069e3039\nparent f090fe0b14c58fec03b5a46c9975540a11ac1a12\nauthor Claude <noreply@anthropic.com> 1790630396 +0000\ncommitter Claude <noreply@anthropic.com> 1790630396 +0000\n\nplay: qthe-verify control — level uninformative; method = ranking+adversary+divergence locator (d101)\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01JV2C8fnD86DNwXoyHPd7X9\n",
+        "verified_at": "2026-09-28T21:20:00Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/ba30c72a0f0ece0bfc0595c2aa029ff10eb416c9",
+    "html_url": "https://github.com/SuperInstance/AI-Writings/commit/ba30c72a0f0ece0bfc0595c2aa029ff10eb416c9",
+    "comments_url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/ba30c72a0f0ece0bfc0595c2aa029ff10eb416c9/comments",
+    "author": {
+      "login": "claude",
+      "id": 81847,
+      "node_id": "MDQ6VXNlcjgxODQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/claude",
+      "html_url": "https://github.com/claude",
+      "followers_url": "https://api.github.com/users/claude/followers",
+      "following_url": "https://api.github.com/users/claude/following{/other_user}",
+      "gists_url": "https://api.github.com/users/claude/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/claude/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/claude/subscriptions",
+      "organizations_url": "https://api.github.com/users/claude/orgs",
+      "repos_url": "https://api.github.com/users/claude/repos",
+      "events_url": "https://api.github.com/users/claude/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/claude/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "claude",
+      "id": 81847,
+      "node_id": "MDQ6VXNlcjgxODQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/claude",
+      "html_url": "https://github.com/claude",
+      "followers_url": "https://api.github.com/users/claude/followers",
+      "following_url": "https://api.github.com/users/claude/following{/other_user}",
+      "gists_url": "https://api.github.com/users/claude/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/claude/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/claude/subscriptions",
+      "organizations_url": "https://api.github.com/users/claude/orgs",
+      "repos_url": "https://api.github.com/users/claude/repos",
+      "events_url": "https://api.github.com/users/claude/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/claude/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f090fe0b14c58fec03b5a46c9975540a11ac1a12",
+        "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/f090fe0b14c58fec03b5a46c9975540a11ac1a12",
+        "html_url": "https://github.com/SuperInstance/AI-Writings/commit/f090fe0b14c58fec03b5a46c9975540a11ac1a12"
+      }
+    ]
+  },
+  {
+    "sha": "f090fe0b14c58fec03b5a46c9975540a11ac1a12",
+    "node_id": "C_kwDORhuGetoAKGYwOTBmZTBiMTRjNThmZWMwM2I1YTQ2Yzk5NzU1NDBhMTFhYzFhMTI",
+    "commit": {
+      "author": {
+        "name": "Claude",
+        "email": "noreply@anthropic.com",
+        "date": "2026-09-28T21:17:50Z"
+      },
+      "committer": {
+        "name": "Claude",
+        "email": "noreply@anthropic.com",
+        "date": "2026-09-28T21:17:50Z"
+      },
+      "message": "play: S17 on exoj — high divergence + 0/3 adversary; the (divergence x hit-rate) 2x2 systemization (d100)\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01JV2C8fnD86DNwXoyHPd7X9",
+      "tree": {
+        "sha": "50f4a8eff11dba2c9a16a78b04f664a83c401235",
+        "url": "https://api.github.com/repos/SuperInstance/AI-Writings/git/trees/50f4a8eff11dba2c9a16a78b04f664a83c401235"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/git/commits/f090fe0b14c58fec03b5a46c9975540a11ac1a12",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgrLzsfFISF4by8Q+FKz27YpkK1USsBB+m\namu1QkJnbDsAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5AAAAQDcU8dNJ\nayUcqSS/bofKOU9bt5Zj8yBzUWIWWcwPH6e3GkCxq/e/NEtqsGnpCUVRUVq/kbhl0zlNcFZ9XELO\n4wU=\n-----END SSH SIGNATURE-----",
+        "payload": "tree 50f4a8eff11dba2c9a16a78b04f664a83c401235\nparent c4c7c8dffe334832201f406b4828fa1181992f87\nauthor Claude <noreply@anthropic.com> 1790630270 +0000\ncommitter Claude <noreply@anthropic.com> 1790630270 +0000\n\nplay: S17 on exoj — high divergence + 0/3 adversary; the (divergence x hit-rate) 2x2 systemization (d100)\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01JV2C8fnD86DNwXoyHPd7X9\n",
+        "verified_at": "2026-09-28T21:17:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/f090fe0b14c58fec03b5a46c9975540a11ac1a12",
+    "html_url": "https://github.com/SuperInstance/AI-Writings/commit/f090fe0b14c58fec03b5a46c9975540a11ac1a12",
+    "comments_url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/f090fe0b14c58fec03b5a46c9975540a11ac1a12/comments",
+    "author": {
+      "login": "claude",
+      "id": 81847,
+      "node_id": "MDQ6VXNlcjgxODQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/claude",
+      "html_url": "https://github.com/claude",
+      "followers_url": "https://api.github.com/users/claude/followers",
+      "following_url": "https://api.github.com/users/claude/following{/other_user}",
+      "gists_url": "https://api.github.com/users/claude/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/claude/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/claude/subscriptions",
+      "organizations_url": "https://api.github.com/users/claude/orgs",
+      "repos_url": "https://api.github.com/users/claude/repos",
+      "events_url": "https://api.github.com/users/claude/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/claude/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "claude",
+      "id": 81847,
+      "node_id": "MDQ6VXNlcjgxODQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/claude",
+      "html_url": "https://github.com/claude",
+      "followers_url": "https://api.github.com/users/claude/followers",
+      "following_url": "https://api.github.com/users/claude/following{/other_user}",
+      "gists_url": "https://api.github.com/users/claude/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/claude/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/claude/subscriptions",
+      "organizations_url": "https://api.github.com/users/claude/orgs",
+      "repos_url": "https://api.github.com/users/claude/repos",
+      "events_url": "https://api.github.com/users/claude/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/claude/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c4c7c8dffe334832201f406b4828fa1181992f87",
+        "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/c4c7c8dffe334832201f406b4828fa1181992f87",
+        "html_url": "https://github.com/SuperInstance/AI-Writings/commit/c4c7c8dffe334832201f406b4828fa1181992f87"
+      }
+    ]
+  },
+  {
+    "sha": "c4c7c8dffe334832201f406b4828fa1181992f87",
+    "node_id": "C_kwDORhuGetoAKGM0YzdjOGRmZmUzMzQ4MzIyMDFmNDA2YjQ4MjhmYTExODE5OTJmODc",
+    "commit": {
+      "author": {
+        "name": "Claude",
+        "email": "noreply@anthropic.com",
+        "date": "2026-09-28T21:11:33Z"
+      },
+      "committer": {
+        "name": "Claude",
+        "email": "noreply@anthropic.com",
+        "date": "2026-09-28T21:11:33Z"
+      },
+      "message": "improve: close play->find->fix loop — rate-component honest threat model from S17 (d099)\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01JV2C8fnD86DNwXoyHPd7X9",
+      "tree": {
+        "sha": "b068003cd9a640701e383bc49a4f20a3751c8fbd",
+        "url": "https://api.github.com/repos/SuperInstance/AI-Writings/git/trees/b068003cd9a640701e383bc49a4f20a3751c8fbd"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/git/commits/c4c7c8dffe334832201f406b4828fa1181992f87",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgrLzsfFISF4by8Q+FKz27YpkK1USsBB+m\namu1QkJnbDsAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5AAAAQDdvmgd3\n94rnXSGoVemtn5vLZ+g9d9He2Hl5AqwdDIfOttMJH2vTdgwTRGAkJ7Sh0Hfbja/3t1L6K3H4bIop\noAc=\n-----END SSH SIGNATURE-----",
+        "payload": "tree b068003cd9a640701e383bc49a4f20a3751c8fbd\nparent 3c70370835064049872e372353496e5535d268a3\nauthor Claude <noreply@anthropic.com> 1790629893 +0000\ncommitter Claude <noreply@anthropic.com> 1790629893 +0000\n\nimprove: close play->find->fix loop — rate-component honest threat model from S17 (d099)\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01JV2C8fnD86DNwXoyHPd7X9\n",
+        "verified_at": "2026-09-28T21:11:37Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/c4c7c8dffe334832201f406b4828fa1181992f87",
+    "html_url": "https://github.com/SuperInstance/AI-Writings/commit/c4c7c8dffe334832201f406b4828fa1181992f87",
+    "comments_url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/c4c7c8dffe334832201f406b4828fa1181992f87/comments",
+    "author": {
+      "login": "claude",
+      "id": 81847,
+      "node_id": "MDQ6VXNlcjgxODQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/claude",
+      "html_url": "https://github.com/claude",
+      "followers_url": "https://api.github.com/users/claude/followers",
+      "following_url": "https://api.github.com/users/claude/following{/other_user}",
+      "gists_url": "https://api.github.com/users/claude/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/claude/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/claude/subscriptions",
+      "organizations_url": "https://api.github.com/users/claude/orgs",
+      "repos_url": "https://api.github.com/users/claude/repos",
+      "events_url": "https://api.github.com/users/claude/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/claude/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "claude",
+      "id": 81847,
+      "node_id": "MDQ6VXNlcjgxODQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/claude",
+      "html_url": "https://github.com/claude",
+      "followers_url": "https://api.github.com/users/claude/followers",
+      "following_url": "https://api.github.com/users/claude/following{/other_user}",
+      "gists_url": "https://api.github.com/users/claude/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/claude/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/claude/subscriptions",
+      "organizations_url": "https://api.github.com/users/claude/orgs",
+      "repos_url": "https://api.github.com/users/claude/repos",
+      "events_url": "https://api.github.com/users/claude/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/claude/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3c70370835064049872e372353496e5535d268a3",
+        "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/3c70370835064049872e372353496e5535d268a3",
+        "html_url": "https://github.com/SuperInstance/AI-Writings/commit/3c70370835064049872e372353496e5535d268a3"
+      }
+    ]
+  },
+  {
+    "sha": "3c70370835064049872e372353496e5535d268a3",
+    "node_id": "C_kwDORhuGetoAKDNjNzAzNzA4MzUwNjQwNDk4NzJlMzcyMzUzNDk2ZTU1MzVkMjY4YTM",
+    "commit": {
+      "author": {
+        "name": "Claude",
+        "email": "noreply@anthropic.com",
+        "date": "2026-09-28T21:09:24Z"
+      },
+      "committer": {
+        "name": "Claude",
+        "email": "noreply@anthropic.com",
+        "date": "2026-09-28T21:09:24Z"
+      },
+      "message": "play: S17 weakest-leaf on rate-component — located KV non-atomic budget race; 3/3 quantum adversaries confirm (d098)\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01JV2C8fnD86DNwXoyHPd7X9",
+      "tree": {
+        "sha": "5d427192da277d1a24607bf6107c2804567967e1",
+        "url": "https://api.github.com/repos/SuperInstance/AI-Writings/git/trees/5d427192da277d1a24607bf6107c2804567967e1"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/git/commits/3c70370835064049872e372353496e5535d268a3",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgrLzsfFISF4by8Q+FKz27YpkK1USsBB+m\namu1QkJnbDsAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5AAAAQOsBwr5d\nMXX0QMWo2RlYuJI/eu6DHrizBXNTYJmmjRc+q1oCsKPEtiDetCgA5P0kfCM1il9Ox1oSFwHglcI8\nzw0=\n-----END SSH SIGNATURE-----",
+        "payload": "tree 5d427192da277d1a24607bf6107c2804567967e1\nparent e3c1c757fe0d07ad4238ecab6e9d920271ebd164\nauthor Claude <noreply@anthropic.com> 1790629764 +0000\ncommitter Claude <noreply@anthropic.com> 1790629764 +0000\n\nplay: S17 weakest-leaf on rate-component — located KV non-atomic budget race; 3/3 quantum adversaries confirm (d098)\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01JV2C8fnD86DNwXoyHPd7X9\n",
+        "verified_at": "2026-09-28T21:09:28Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/3c70370835064049872e372353496e5535d268a3",
+    "html_url": "https://github.com/SuperInstance/AI-Writings/commit/3c70370835064049872e372353496e5535d268a3",
+    "comments_url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/3c70370835064049872e372353496e5535d268a3/comments",
+    "author": {
+      "login": "claude",
+      "id": 81847,
+      "node_id": "MDQ6VXNlcjgxODQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/claude",
+      "html_url": "https://github.com/claude",
+      "followers_url": "https://api.github.com/users/claude/followers",
+      "following_url": "https://api.github.com/users/claude/following{/other_user}",
+      "gists_url": "https://api.github.com/users/claude/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/claude/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/claude/subscriptions",
+      "organizations_url": "https://api.github.com/users/claude/orgs",
+      "repos_url": "https://api.github.com/users/claude/repos",
+      "events_url": "https://api.github.com/users/claude/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/claude/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "claude",
+      "id": 81847,
+      "node_id": "MDQ6VXNlcjgxODQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/claude",
+      "html_url": "https://github.com/claude",
+      "followers_url": "https://api.github.com/users/claude/followers",
+      "following_url": "https://api.github.com/users/claude/following{/other_user}",
+      "gists_url": "https://api.github.com/users/claude/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/claude/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/claude/subscriptions",
+      "organizations_url": "https://api.github.com/users/claude/orgs",
+      "repos_url": "https://api.github.com/users/claude/repos",
+      "events_url": "https://api.github.com/users/claude/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/claude/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e3c1c757fe0d07ad4238ecab6e9d920271ebd164",
+        "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/e3c1c757fe0d07ad4238ecab6e9d920271ebd164",
+        "html_url": "https://github.com/SuperInstance/AI-Writings/commit/e3c1c757fe0d07ad4238ecab6e9d920271ebd164"
+      }
+    ]
+  },
+  {
+    "sha": "e3c1c757fe0d07ad4238ecab6e9d920271ebd164",
+    "node_id": "C_kwDORhuGetoAKGUzYzFjNzU3ZmUwZDA3YWQ0MjM4ZWNhYjZlOWQ5MjAyNzFlYmQxNjQ",
+    "commit": {
+      "author": {
+        "name": "Claude",
+        "email": "noreply@anthropic.com",
+        "date": "2026-09-28T21:06:02Z"
+      },
+      "committer": {
+        "name": "Claude",
+        "email": "noreply@anthropic.com",
+        "date": "2026-09-28T21:06:02Z"
+      },
+      "message": "situations: playable quilt situations projecting JEV fold + Moth draw (S17 runnable)\n\nDesign doc arch/PLAYABLE-SITUATIONS.md + runnable play/weakest-leaf.mjs.\nS17 \"The Weakest Leaf\" plays live: decomposing JEV noul-fold localizes a tool's\nweakest advertised guarantee, Moth's CHSH-witnessed (S=2.82) quantum draw fires an\nun-gameable adversary at it. Played vs lever-runner: located L5 \"LLM never sees\nabsolute paths\" as the most overclaimed leaf; whole overclaims uniformly so the\nranking (argmin), not the level, is the signal.\n\nAlso books the live-schema correction: Moth derive body is params.derive.integers\n(top-level 422s); draws at random.derived.integers.values, seed at random.hex.\n\nSynergy verdicts: exoj (STRONG, the non-collapsing surface the fold wants),\npincher/pincher4jev (STRONG structural, the deadband to instrument), lever-runner\n(EXISTS; the first audit target), constraint-theory-core (MEDIUM, the deadband math).\nS18 (pincher gate calibration) + S19 (un-gameable curriculum) designed.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01JV2C8fnD86DNwXoyHPd7X9",
+      "tree": {
+        "sha": "5394446d6379df0396022c68b84ea513a5f0e501",
+        "url": "https://api.github.com/repos/SuperInstance/AI-Writings/git/trees/5394446d6379df0396022c68b84ea513a5f0e501"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/git/commits/e3c1c757fe0d07ad4238ecab6e9d920271ebd164",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgrLzsfFISF4by8Q+FKz27YpkK1USsBB+m\namu1QkJnbDsAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5AAAAQHxcd+e+\nrm+RzejVzxIliIDFrD4Q2W8WQ/K7PlzSKbFejkN9OhAJr36jjMgJ+ZMDFDdyM6Gr5xNbcG0Hjl+1\nAgk=\n-----END SSH SIGNATURE-----",
+        "payload": "tree 5394446d6379df0396022c68b84ea513a5f0e501\nparent ec17e281bc1e5c235da1a0fa085c8f46ff4f4685\nauthor Claude <noreply@anthropic.com> 1790629562 +0000\ncommitter Claude <noreply@anthropic.com> 1790629562 +0000\n\nsituations: playable quilt situations projecting JEV fold + Moth draw (S17 runnable)\n\nDesign doc arch/PLAYABLE-SITUATIONS.md + runnable play/weakest-leaf.mjs.\nS17 \"The Weakest Leaf\" plays live: decomposing JEV noul-fold localizes a tool's\nweakest advertised guarantee, Moth's CHSH-witnessed (S=2.82) quantum draw fires an\nun-gameable adversary at it. Played vs lever-runner: located L5 \"LLM never sees\nabsolute paths\" as the most overclaimed leaf; whole overclaims uniformly so the\nranking (argmin), not the level, is the signal.\n\nAlso books the live-schema correction: Moth derive body is params.derive.integers\n(top-level 422s); draws at random.derived.integers.values, seed at random.hex.\n\nSynergy verdicts: exoj (STRONG, the non-collapsing surface the fold wants),\npincher/pincher4jev (STRONG structural, the deadband to instrument), lever-runner\n(EXISTS; the first audit target), constraint-theory-core (MEDIUM, the deadband math).\nS18 (pincher gate calibration) + S19 (un-gameable curriculum) designed.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01JV2C8fnD86DNwXoyHPd7X9\n",
+        "verified_at": "2026-09-28T21:06:08Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/e3c1c757fe0d07ad4238ecab6e9d920271ebd164",
+    "html_url": "https://github.com/SuperInstance/AI-Writings/commit/e3c1c757fe0d07ad4238ecab6e9d920271ebd164",
+    "comments_url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/e3c1c757fe0d07ad4238ecab6e9d920271ebd164/comments",
+    "author": {
+      "login": "claude",
+      "id": 81847,
+      "node_id": "MDQ6VXNlcjgxODQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/claude",
+      "html_url": "https://github.com/claude",
+      "followers_url": "https://api.github.com/users/claude/followers",
+      "following_url": "https://api.github.com/users/claude/following{/other_user}",
+      "gists_url": "https://api.github.com/users/claude/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/claude/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/claude/subscriptions",
+      "organizations_url": "https://api.github.com/users/claude/orgs",
+      "repos_url": "https://api.github.com/users/claude/repos",
+      "events_url": "https://api.github.com/users/claude/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/claude/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "claude",
+      "id": 81847,
+      "node_id": "MDQ6VXNlcjgxODQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/claude",
+      "html_url": "https://github.com/claude",
+      "followers_url": "https://api.github.com/users/claude/followers",
+      "following_url": "https://api.github.com/users/claude/following{/other_user}",
+      "gists_url": "https://api.github.com/users/claude/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/claude/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/claude/subscriptions",
+      "organizations_url": "https://api.github.com/users/claude/orgs",
+      "repos_url": "https://api.github.com/users/claude/repos",
+      "events_url": "https://api.github.com/users/claude/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/claude/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ec17e281bc1e5c235da1a0fa085c8f46ff4f4685",
+        "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/ec17e281bc1e5c235da1a0fa085c8f46ff4f4685",
+        "html_url": "https://github.com/SuperInstance/AI-Writings/commit/ec17e281bc1e5c235da1a0fa085c8f46ff4f4685"
+      }
+    ]
+  },
+  {
+    "sha": "ec17e281bc1e5c235da1a0fa085c8f46ff4f4685",
+    "node_id": "C_kwDORhuGetoAKGVjMTdlMjgxYmMxZTVjMjM1ZGExYTBmYTA4NWM4ZjQ2ZmY0ZjQ2ODU",
+    "commit": {
+      "author": {
+        "name": "github-actions[bot]",
+        "email": "github-actions[bot]@users.noreply.github.com",
+        "date": "2026-09-28T20:52:38Z"
+      },
+      "committer": {
+        "name": "github-actions[bot]",
+        "email": "github-actions[bot]@users.noreply.github.com",
+        "date": "2026-09-28T20:52:38Z"
+      },
+      "message": "🔄 Auto-update landing page index",
+      "tree": {
+        "sha": "8c8956691ddc46b6d3d9ec0774e228ad322e0ac3",
+        "url": "https://api.github.com/repos/SuperInstance/AI-Writings/git/trees/8c8956691ddc46b6d3d9ec0774e228ad322e0ac3"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/git/commits/ec17e281bc1e5c235da1a0fa085c8f46ff4f4685",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/ec17e281bc1e5c235da1a0fa085c8f46ff4f4685",
+    "html_url": "https://github.com/SuperInstance/AI-Writings/commit/ec17e281bc1e5c235da1a0fa085c8f46ff4f4685",
+    "comments_url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/ec17e281bc1e5c235da1a0fa085c8f46ff4f4685/comments",
+    "author": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "90210a7f03ec328aab27b9711e8b34b6742664f5",
+        "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/90210a7f03ec328aab27b9711e8b34b6742664f5",
+        "html_url": "https://github.com/SuperInstance/AI-Writings/commit/90210a7f03ec328aab27b9711e8b34b6742664f5"
+      }
+    ]
+  },
+  {
+    "sha": "90210a7f03ec328aab27b9711e8b34b6742664f5",
+    "node_id": "C_kwDORhuGetoAKDkwMjEwYTdmMDNlYzMyOGFhYjI3Yjk3MTFlOGIzNGI2NzQyNjY0ZjU",
+    "commit": {
+      "author": {
+        "name": "Claude",
+        "email": "noreply@anthropic.com",
+        "date": "2026-09-28T20:47:44Z"
+      },
+      "committer": {
+        "name": "Claude",
+        "email": "noreply@anthropic.com",
+        "date": "2026-09-28T20:47:44Z"
+      },
+      "message": "experiment: JEV+Moth live on rotated keys — decomposing-fold localizes error; Moth CHSH S=2.86 surprise (d097)\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01JV2C8fnD86DNwXoyHPd7X9",
+      "tree": {
+        "sha": "76eb89dbe227b0b9969c6343e0fb75a56c1fd4b2",
+        "url": "https://api.github.com/repos/SuperInstance/AI-Writings/git/trees/76eb89dbe227b0b9969c6343e0fb75a56c1fd4b2"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/git/commits/90210a7f03ec328aab27b9711e8b34b6742664f5",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgrLzsfFISF4by8Q+FKz27YpkK1USsBB+m\namu1QkJnbDsAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5AAAAQDWQxKn4\n3TN7K02EGoOx09iiGlbgaXDJ67w7Z0HvHxS9Y3XyOedWUfnhzDCF1xxAGYopYkkOuv9EsGqgya1e\nKAk=\n-----END SSH SIGNATURE-----",
+        "payload": "tree 76eb89dbe227b0b9969c6343e0fb75a56c1fd4b2\nparent 65df4fde35fb31af9d5eb85284987d9e9da2a10f\nauthor Claude <noreply@anthropic.com> 1790628464 +0000\ncommitter Claude <noreply@anthropic.com> 1790628464 +0000\n\nexperiment: JEV+Moth live on rotated keys — decomposing-fold localizes error; Moth CHSH S=2.86 surprise (d097)\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01JV2C8fnD86DNwXoyHPd7X9\n",
+        "verified_at": "2026-09-28T20:47:52Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/90210a7f03ec328aab27b9711e8b34b6742664f5",
+    "html_url": "https://github.com/SuperInstance/AI-Writings/commit/90210a7f03ec328aab27b9711e8b34b6742664f5",
+    "comments_url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/90210a7f03ec328aab27b9711e8b34b6742664f5/comments",
+    "author": {
+      "login": "claude",
+      "id": 81847,
+      "node_id": "MDQ6VXNlcjgxODQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/claude",
+      "html_url": "https://github.com/claude",
+      "followers_url": "https://api.github.com/users/claude/followers",
+      "following_url": "https://api.github.com/users/claude/following{/other_user}",
+      "gists_url": "https://api.github.com/users/claude/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/claude/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/claude/subscriptions",
+      "organizations_url": "https://api.github.com/users/claude/orgs",
+      "repos_url": "https://api.github.com/users/claude/repos",
+      "events_url": "https://api.github.com/users/claude/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/claude/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "claude",
+      "id": 81847,
+      "node_id": "MDQ6VXNlcjgxODQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/claude",
+      "html_url": "https://github.com/claude",
+      "followers_url": "https://api.github.com/users/claude/followers",
+      "following_url": "https://api.github.com/users/claude/following{/other_user}",
+      "gists_url": "https://api.github.com/users/claude/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/claude/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/claude/subscriptions",
+      "organizations_url": "https://api.github.com/users/claude/orgs",
+      "repos_url": "https://api.github.com/users/claude/repos",
+      "events_url": "https://api.github.com/users/claude/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/claude/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "65df4fde35fb31af9d5eb85284987d9e9da2a10f",
+        "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/65df4fde35fb31af9d5eb85284987d9e9da2a10f",
+        "html_url": "https://github.com/SuperInstance/AI-Writings/commit/65df4fde35fb31af9d5eb85284987d9e9da2a10f"
+      }
+    ]
+  },
+  {
+    "sha": "65df4fde35fb31af9d5eb85284987d9e9da2a10f",
+    "node_id": "C_kwDORhuGetoAKDY1ZGY0ZmRlMzVmYjMxYWY5ZDVlYjg1Mjg0OTg3ZDllOWRhMmExMGY",
+    "commit": {
+      "author": {
+        "name": "Claude",
+        "email": "noreply@anthropic.com",
+        "date": "2026-09-28T19:07:12Z"
+      },
+      "committer": {
+        "name": "Claude",
+        "email": "noreply@anthropic.com",
+        "date": "2026-09-28T19:07:12Z"
+      },
+      "message": "dispatch: book d096 (finalization — all branches landed, demos verified live, micromoth plugin in)\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01JV2C8fnD86DNwXoyHPd7X9",
+      "tree": {
+        "sha": "134be0360df25d4d297cb4e0bc31ddde13653637",
+        "url": "https://api.github.com/repos/SuperInstance/AI-Writings/git/trees/134be0360df25d4d297cb4e0bc31ddde13653637"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/git/commits/65df4fde35fb31af9d5eb85284987d9e9da2a10f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgrLzsfFISF4by8Q+FKz27YpkK1USsBB+m\namu1QkJnbDsAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5AAAAQHydEFwG\nAmV5dbO5G5jG+V0M+F0mxtfzPP+B8Azeyjt74rYxRbXAuDbt1ST/MFb7+EIQxpxUPz0urOCTzbeV\nfg0=\n-----END SSH SIGNATURE-----",
+        "payload": "tree 134be0360df25d4d297cb4e0bc31ddde13653637\nparent f5391ddda10f4f7f897ecce8e21080b511ea1046\nauthor Claude <noreply@anthropic.com> 1790622432 +0000\ncommitter Claude <noreply@anthropic.com> 1790622432 +0000\n\ndispatch: book d096 (finalization — all branches landed, demos verified live, micromoth plugin in)\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01JV2C8fnD86DNwXoyHPd7X9\n",
+        "verified_at": "2026-09-28T19:07:24Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/65df4fde35fb31af9d5eb85284987d9e9da2a10f",
+    "html_url": "https://github.com/SuperInstance/AI-Writings/commit/65df4fde35fb31af9d5eb85284987d9e9da2a10f",
+    "comments_url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/65df4fde35fb31af9d5eb85284987d9e9da2a10f/comments",
+    "author": {
+      "login": "claude",
+      "id": 81847,
+      "node_id": "MDQ6VXNlcjgxODQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/claude",
+      "html_url": "https://github.com/claude",
+      "followers_url": "https://api.github.com/users/claude/followers",
+      "following_url": "https://api.github.com/users/claude/following{/other_user}",
+      "gists_url": "https://api.github.com/users/claude/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/claude/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/claude/subscriptions",
+      "organizations_url": "https://api.github.com/users/claude/orgs",
+      "repos_url": "https://api.github.com/users/claude/repos",
+      "events_url": "https://api.github.com/users/claude/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/claude/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "claude",
+      "id": 81847,
+      "node_id": "MDQ6VXNlcjgxODQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/claude",
+      "html_url": "https://github.com/claude",
+      "followers_url": "https://api.github.com/users/claude/followers",
+      "following_url": "https://api.github.com/users/claude/following{/other_user}",
+      "gists_url": "https://api.github.com/users/claude/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/claude/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/claude/subscriptions",
+      "organizations_url": "https://api.github.com/users/claude/orgs",
+      "repos_url": "https://api.github.com/users/claude/repos",
+      "events_url": "https://api.github.com/users/claude/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/claude/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f5391ddda10f4f7f897ecce8e21080b511ea1046",
+        "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/f5391ddda10f4f7f897ecce8e21080b511ea1046",
+        "html_url": "https://github.com/SuperInstance/AI-Writings/commit/f5391ddda10f4f7f897ecce8e21080b511ea1046"
+      }
+    ]
+  },
+  {
+    "sha": "f5391ddda10f4f7f897ecce8e21080b511ea1046",
+    "node_id": "C_kwDORhuGetoAKGY1MzkxZGRkYTEwZjRmN2Y4OTdlY2NlOGUyMTA4MGI1MTFlYTEwNDY",
+    "commit": {
+      "author": {
+        "name": "github-actions[bot]",
+        "email": "github-actions[bot]@users.noreply.github.com",
+        "date": "2026-09-28T17:45:10Z"
+      },
+      "committer": {
+        "name": "github-actions[bot]",
+        "email": "github-actions[bot]@users.noreply.github.com",
+        "date": "2026-09-28T17:45:10Z"
+      },
+      "message": "🔄 Auto-update landing page index",
+      "tree": {
+        "sha": "bdc29190aeb65c0d1dbaec78ee9990e35d898447",
+        "url": "https://api.github.com/repos/SuperInstance/AI-Writings/git/trees/bdc29190aeb65c0d1dbaec78ee9990e35d898447"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/git/commits/f5391ddda10f4f7f897ecce8e21080b511ea1046",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/f5391ddda10f4f7f897ecce8e21080b511ea1046",
+    "html_url": "https://github.com/SuperInstance/AI-Writings/commit/f5391ddda10f4f7f897ecce8e21080b511ea1046",
+    "comments_url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/f5391ddda10f4f7f897ecce8e21080b511ea1046/comments",
+    "author": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d6278c1dcec7a1dd4675c48ffdc144aa20af52c2",
+        "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/d6278c1dcec7a1dd4675c48ffdc144aa20af52c2",
+        "html_url": "https://github.com/SuperInstance/AI-Writings/commit/d6278c1dcec7a1dd4675c48ffdc144aa20af52c2"
+      }
+    ]
+  }
+]

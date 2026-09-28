@@ -1,0 +1,337 @@
+[
+  {
+    "sha": "bb3d6d9d66e7c0905d36d6e7a22e2020ab1c1f78",
+    "node_id": "C_kwDOUp7mjtoAKGJiM2Q2ZDlkNjZlN2MwOTA1ZDM2ZDZlN2EyMmUyMDIwYWIxYzFmNzg",
+    "commit": {
+      "author": {
+        "name": "mavis-bot",
+        "email": "mavis@superinstance.dev",
+        "date": "2026-09-28T18:05:19Z"
+      },
+      "committer": {
+        "name": "mavis-bot",
+        "email": "mavis@superinstance.dev",
+        "date": "2026-09-28T18:05:19Z"
+      },
+      "message": "Add pincher-round2-visions.md + zai-far-future.md — round 2 wide ideation. PLATO TUTOR alternate past (4-layer substrate walker from 1977), 2086 far future (3-era synthesis from ZAI chord + Mavis re-aiming), 12 organic stories (lighthouse, scripture, coral, cookbook, jazz, beehive, mycelium, plankton, glacier, dream, language, quantum field). The vessel fills. (Mavis, 2026-09-28)",
+      "tree": {
+        "sha": "91529643f815beb825f4eac6baef20f338bdfa0c",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/git/trees/91529643f815beb825f4eac6baef20f338bdfa0c"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/git/commits/bb3d6d9d66e7c0905d36d6e7a22e2020ab1c1f78",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/commits/bb3d6d9d66e7c0905d36d6e7a22e2020ab1c1f78",
+    "html_url": "https://github.com/SuperInstance/quilt-research-canons/commit/bb3d6d9d66e7c0905d36d6e7a22e2020ab1c1f78",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/commits/bb3d6d9d66e7c0905d36d6e7a22e2020ab1c1f78/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "e92e88aa6c69a545ce48b7c8b943b6ef09d0ccbe",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/commits/e92e88aa6c69a545ce48b7c8b943b6ef09d0ccbe",
+        "html_url": "https://github.com/SuperInstance/quilt-research-canons/commit/e92e88aa6c69a545ce48b7c8b943b6ef09d0ccbe"
+      }
+    ]
+  },
+  {
+    "sha": "e92e88aa6c69a545ce48b7c8b943b6ef09d0ccbe",
+    "node_id": "C_kwDOUp7mjtoAKGU5MmU4OGFhNmM2OWE1NDVjZTQ4YjdjOGI5NDNiNmVmMDlkMGNjYmU",
+    "commit": {
+      "author": {
+        "name": "mavis-bot",
+        "email": "mavis@superinstance.dev",
+        "date": "2026-09-28T17:49:05Z"
+      },
+      "committer": {
+        "name": "mavis-bot",
+        "email": "mavis@superinstance.dev",
+        "date": "2026-09-28T17:49:05Z"
+      },
+      "message": "Add pincher-super-site-round1.md — round-1 ideation for SuperInstance super-site + A2A knowledge substrate (the mavis-pincher). 6 directions, 6 open questions for round 2, 3 concrete next actions. (Mavis, 2026-09-28)",
+      "tree": {
+        "sha": "1a8bae3b095bb2f18f34630ecd0efbc288cbd7ba",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/git/trees/1a8bae3b095bb2f18f34630ecd0efbc288cbd7ba"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/git/commits/e92e88aa6c69a545ce48b7c8b943b6ef09d0ccbe",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/commits/e92e88aa6c69a545ce48b7c8b943b6ef09d0ccbe",
+    "html_url": "https://github.com/SuperInstance/quilt-research-canons/commit/e92e88aa6c69a545ce48b7c8b943b6ef09d0ccbe",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/commits/e92e88aa6c69a545ce48b7c8b943b6ef09d0ccbe/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "4cd55f1637cdb5df7769efbb007a8cdb20620351",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/commits/4cd55f1637cdb5df7769efbb007a8cdb20620351",
+        "html_url": "https://github.com/SuperInstance/quilt-research-canons/commit/4cd55f1637cdb5df7769efbb007a8cdb20620351"
+      }
+    ]
+  },
+  {
+    "sha": "4cd55f1637cdb5df7769efbb007a8cdb20620351",
+    "node_id": "C_kwDOUp7mjtoAKDRjZDU1ZjE2MzdjZGI1ZGY3NzY5ZWZiYjAwN2E4Y2RiMjA2MjAzNTE",
+    "commit": {
+      "author": {
+        "name": "mavis-bot",
+        "email": "mavis@superinstance.dev",
+        "date": "2026-09-28T16:45:47Z"
+      },
+      "committer": {
+        "name": "mavis-bot",
+        "email": "mavis@superinstance.dev",
+        "date": "2026-09-28T16:45:47Z"
+      },
+      "message": "Add fleet-state-report-2026-09-28.md — Mavis × Casey retrospective on the other agent's 7-day wave 45-52 drive. 4000+ repos, stone-v1 verification model, mavis-substrate-walker dogfooded at 15/15. Strategic gap analysis + 7 concrete moves to align with keeper's verification rails.",
+      "tree": {
+        "sha": "79d0d8b1fcbeb05c72683a50db98a67cc44dd1b8",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/git/trees/79d0d8b1fcbeb05c72683a50db98a67cc44dd1b8"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/git/commits/4cd55f1637cdb5df7769efbb007a8cdb20620351",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/commits/4cd55f1637cdb5df7769efbb007a8cdb20620351",
+    "html_url": "https://github.com/SuperInstance/quilt-research-canons/commit/4cd55f1637cdb5df7769efbb007a8cdb20620351",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/commits/4cd55f1637cdb5df7769efbb007a8cdb20620351/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "282839ef9374b0f76ff8a31c2d240ace6e0f3e1f",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/commits/282839ef9374b0f76ff8a31c2d240ace6e0f3e1f",
+        "html_url": "https://github.com/SuperInstance/quilt-research-canons/commit/282839ef9374b0f76ff8a31c2d240ace6e0f3e1f"
+      }
+    ]
+  },
+  {
+    "sha": "282839ef9374b0f76ff8a31c2d240ace6e0f3e1f",
+    "node_id": "C_kwDOUp7mjtoAKDI4MjgzOWVmOTM3NGIwZjc2ZmY4YTMxYzJkMjQwYWNlNmUwZjNlMWY",
+    "commit": {
+      "author": {
+        "name": "mavis-bot",
+        "email": "mavis@superinstance.dev",
+        "date": "2026-09-24T19:00:15Z"
+      },
+      "committer": {
+        "name": "mavis-bot",
+        "email": "mavis@superinstance.dev",
+        "date": "2026-09-24T19:00:42Z"
+      },
+      "message": "Add active-repos-report.md — canonical 'what we're working on' doc with status + production-readiness gaps for 30+ repos (2026-09-24)",
+      "tree": {
+        "sha": "2fb0906597b69b1b26a3e3c4ed000742911b1b51",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/git/trees/2fb0906597b69b1b26a3e3c4ed000742911b1b51"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/git/commits/282839ef9374b0f76ff8a31c2d240ace6e0f3e1f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/commits/282839ef9374b0f76ff8a31c2d240ace6e0f3e1f",
+    "html_url": "https://github.com/SuperInstance/quilt-research-canons/commit/282839ef9374b0f76ff8a31c2d240ace6e0f3e1f",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/commits/282839ef9374b0f76ff8a31c2d240ace6e0f3e1f/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "c50352101b803eff3ff63953de62a7ba079214f8",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/commits/c50352101b803eff3ff63953de62a7ba079214f8",
+        "html_url": "https://github.com/SuperInstance/quilt-research-canons/commit/c50352101b803eff3ff63953de62a7ba079214f8"
+      }
+    ]
+  },
+  {
+    "sha": "c50352101b803eff3ff63953de62a7ba079214f8",
+    "node_id": "C_kwDOUp7mjtoAKGM1MDM1MjEwMWI4MDNlZmYzZmY2Mzk1M2RlNjJhN2JhMDc5MjE0Zjg",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-24T18:59:58Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-24T18:59:58Z"
+      },
+      "message": "Merge pull request #1 from SuperInstance/sprint-quantum-001\n\nsprint-quantum-001: quantum-chaos lineage opens (honest falsification inside)",
+      "tree": {
+        "sha": "66b005ae9288d07adfda0399f506cf443c2c5d18",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/git/trees/66b005ae9288d07adfda0399f506cf443c2c5d18"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/git/commits/c50352101b803eff3ff63953de62a7ba079214f8",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqtXMuCRC1aQ7uu5UhlAAAwmEQAAGIg225RDJssN+954uQjHs/\n3k6VbFwYfjj6sglZP9cZ7ETxsjTe9/D6P5RJXah3Cl+VpCePQwFXuXLQ+oKYHV47\nMKKJ7fgre1fuGmvLVBwqBJgN5IJlIoAPwUdRCWMg1ZyRB0RvIAIjYwR5RYRtWymv\niRPlL83WZMa1hYOJYu/WeiCssF0ff8iEJ3RAIynCewcoVzYg4QyJ4ZeBGweGONZD\nL/IEHzmWEvwLmomXLiTUiMMJiMW3aJXzs1a1WjxG3TxLmr+DA1RM9sGEcrTo5MQG\n+zMj8e07n0SaRXPvXgiT/Km6SXZS/m/LR+cbiH2fzT1mpPB5kKEZc37E7KNApnsN\nWs5AcZwPMe8UY+jiAXKIUHmkqnsNlQsog1TbFf6ZWkyjbEAICahb4c23J0gYCJ+U\nvs/L5YFc6I1a9OE+XuBiey0CPtgjhtN0WGkOUckLPG7ztBm+Uq0MUmuZITkdHoHN\n0oPzup5YaV8tGJrNvfOpoqA97AhZTFUz0ss0SkbT8ath+FtyVsTp3FjMhoaj+nke\n/95fnUkGsarwlJTiUkxt7xI+KLocD4KZVAM2uaYibIF5qPOtxH3bgvVpTnQMYAav\nda311qvy6TRHKwJtktCSPRCFPHUvn9Cpe1pa/9Qp6w9GA6fsFcDxkkSaTAFgDOWb\nEYMVwyOj5Hqrnhj9mCVd\n=gI9T\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 66b005ae9288d07adfda0399f506cf443c2c5d18\nparent f454b974a4d45fe61a97718aab75b3049959836a\nparent e1e6f000377109f0cc4f058982e2106133237bfe\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790276398 -0800\ncommitter GitHub <noreply@github.com> 1790276398 -0800\n\nMerge pull request #1 from SuperInstance/sprint-quantum-001\n\nsprint-quantum-001: quantum-chaos lineage opens (honest falsification inside)",
+        "verified_at": "2026-09-24T18:59:59Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/commits/c50352101b803eff3ff63953de62a7ba079214f8",
+    "html_url": "https://github.com/SuperInstance/quilt-research-canons/commit/c50352101b803eff3ff63953de62a7ba079214f8",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/commits/c50352101b803eff3ff63953de62a7ba079214f8/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f454b974a4d45fe61a97718aab75b3049959836a",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/commits/f454b974a4d45fe61a97718aab75b3049959836a",
+        "html_url": "https://github.com/SuperInstance/quilt-research-canons/commit/f454b974a4d45fe61a97718aab75b3049959836a"
+      },
+      {
+        "sha": "e1e6f000377109f0cc4f058982e2106133237bfe",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/commits/e1e6f000377109f0cc4f058982e2106133237bfe",
+        "html_url": "https://github.com/SuperInstance/quilt-research-canons/commit/e1e6f000377109f0cc4f058982e2106133237bfe"
+      }
+    ]
+  },
+  {
+    "sha": "e1e6f000377109f0cc4f058982e2106133237bfe",
+    "node_id": "C_kwDOUp7mjtoAKGUxZTZmMDAwMzc3MTA5ZjBjYzRmMDU4OTgyZTIxMDYxMzMyMzdiZmU",
+    "commit": {
+      "author": {
+        "name": "kimi1",
+        "email": "kimi1@cocapn.local",
+        "date": "2026-09-24T18:42:03Z"
+      },
+      "committer": {
+        "name": "kimi1",
+        "email": "kimi1@cocapn.local",
+        "date": "2026-09-24T18:42:03Z"
+      },
+      "message": "sprint-quantum-001: quantum-chaos lineage opens — receipts enter the canon gate and the gate says 'not yet, comparatively'\n\nLive run: fresh comet-qrng job (bell_S=2.8428) + otoc-echo seed-1234 reproduction,\n7-row FNV witness chain verified (tip b372875ad9894d41). JEV verdict Q1 0.14 /\nQ2 0.31 / control 0.13 — prediction falsified honestly; the resolution limit is\nabsolute-vs-comparative questions, calibrated against jev-velocity.json bedrock\nband (0.29-0.54). Prescribes comparative paired gates for quantum-002.",
+      "tree": {
+        "sha": "66b005ae9288d07adfda0399f506cf443c2c5d18",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/git/trees/66b005ae9288d07adfda0399f506cf443c2c5d18"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/git/commits/e1e6f000377109f0cc4f058982e2106133237bfe",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/commits/e1e6f000377109f0cc4f058982e2106133237bfe",
+    "html_url": "https://github.com/SuperInstance/quilt-research-canons/commit/e1e6f000377109f0cc4f058982e2106133237bfe",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/commits/e1e6f000377109f0cc4f058982e2106133237bfe/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "f454b974a4d45fe61a97718aab75b3049959836a",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/commits/f454b974a4d45fe61a97718aab75b3049959836a",
+        "html_url": "https://github.com/SuperInstance/quilt-research-canons/commit/f454b974a4d45fe61a97718aab75b3049959836a"
+      }
+    ]
+  },
+  {
+    "sha": "f454b974a4d45fe61a97718aab75b3049959836a",
+    "node_id": "C_kwDOUp7mjtoAKGY0NTRiOTc0YTRkNDVmZTYxYTk3NzE4YWFiNzViMzA0OTk1OTgzNmE",
+    "commit": {
+      "author": {
+        "name": "mavis-bot",
+        "email": "mavis@superinstance.dev",
+        "date": "2026-09-24T18:23:53Z"
+      },
+      "committer": {
+        "name": "mavis-bot",
+        "email": "mavis@superinstance.dev",
+        "date": "2026-09-24T18:23:53Z"
+      },
+      "message": "Initial publish — sprint lineage + novel-problems canon (2026-09-24)",
+      "tree": {
+        "sha": "f2ac91b7393e82a5518c23b39f6b166aaef36386",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/git/trees/f2ac91b7393e82a5518c23b39f6b166aaef36386"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/git/commits/f454b974a4d45fe61a97718aab75b3049959836a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/commits/f454b974a4d45fe61a97718aab75b3049959836a",
+    "html_url": "https://github.com/SuperInstance/quilt-research-canons/commit/f454b974a4d45fe61a97718aab75b3049959836a",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-research-canons/commits/f454b974a4d45fe61a97718aab75b3049959836a/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+
+    ]
+  }
+]

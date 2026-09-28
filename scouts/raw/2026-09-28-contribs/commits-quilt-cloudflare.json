@@ -1,0 +1,787 @@
+[
+  {
+    "sha": "e75061cc093a12959b18503f671bc6e1b05e0775",
+    "node_id": "C_kwDOT9tOvNoAKGU3NTA2MWNjMDkzYTEyOTU5YjE4NTAzZjY3MWJjNmUxYjA1ZTA3NzU",
+    "commit": {
+      "author": {
+        "name": "Claude",
+        "email": "noreply@anthropic.com",
+        "date": "2026-09-28T21:11:11Z"
+      },
+      "committer": {
+        "name": "Claude",
+        "email": "noreply@anthropic.com",
+        "date": "2026-09-28T21:11:11Z"
+      },
+      "message": "rate-component: honest limitations & threat model (S17 audit finding)\n\nThe quilt situation S17 'The Weakest Leaf' (AI-Writings d098) located the budget\ncap as the weakest guarantee. Correct the overclaim: it is a soft budget GUARD,\nnot an atomic hard stop (Workers KV is eventually consistent). Document the real\nthreat model — concurrent-burst overshoot, forgeable same-origin gate, distributed\nabuse bounded by the global cap — plus the reserve-before-call mitigation already\nin the code and the Durable-Objects path to a true hard cap. No overclaims.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01JV2C8fnD86DNwXoyHPd7X9",
+      "tree": {
+        "sha": "3bdbb992557290ed1f49b24754bbf99462b5b373",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/git/trees/3bdbb992557290ed1f49b24754bbf99462b5b373"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/git/commits/e75061cc093a12959b18503f671bc6e1b05e0775",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgrLzsfFISF4by8Q+FKz27YpkK1USsBB+m\namu1QkJnbDsAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5AAAAQNxhLILt\nYHivUiaUenitMFYnBXy9WLgJ++T4EFh9tIXNQzgfr7QNrCAeIAS6D6TnfABYi5hyLiOP0rWvn2Ps\niww=\n-----END SSH SIGNATURE-----",
+        "payload": "tree 3bdbb992557290ed1f49b24754bbf99462b5b373\nparent df7741429224b1b235a641f4b124275b9df3e04a\nauthor Claude <noreply@anthropic.com> 1790629871 +0000\ncommitter Claude <noreply@anthropic.com> 1790629871 +0000\n\nrate-component: honest limitations & threat model (S17 audit finding)\n\nThe quilt situation S17 'The Weakest Leaf' (AI-Writings d098) located the budget\ncap as the weakest guarantee. Correct the overclaim: it is a soft budget GUARD,\nnot an atomic hard stop (Workers KV is eventually consistent). Document the real\nthreat model — concurrent-burst overshoot, forgeable same-origin gate, distributed\nabuse bounded by the global cap — plus the reserve-before-call mitigation already\nin the code and the Durable-Objects path to a true hard cap. No overclaims.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01JV2C8fnD86DNwXoyHPd7X9\n",
+        "verified_at": "2026-09-28T21:11:14Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/e75061cc093a12959b18503f671bc6e1b05e0775",
+    "html_url": "https://github.com/SuperInstance/quilt-cloudflare/commit/e75061cc093a12959b18503f671bc6e1b05e0775",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/e75061cc093a12959b18503f671bc6e1b05e0775/comments",
+    "author": {
+      "login": "claude",
+      "id": 81847,
+      "node_id": "MDQ6VXNlcjgxODQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/claude",
+      "html_url": "https://github.com/claude",
+      "followers_url": "https://api.github.com/users/claude/followers",
+      "following_url": "https://api.github.com/users/claude/following{/other_user}",
+      "gists_url": "https://api.github.com/users/claude/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/claude/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/claude/subscriptions",
+      "organizations_url": "https://api.github.com/users/claude/orgs",
+      "repos_url": "https://api.github.com/users/claude/repos",
+      "events_url": "https://api.github.com/users/claude/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/claude/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "claude",
+      "id": 81847,
+      "node_id": "MDQ6VXNlcjgxODQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/claude",
+      "html_url": "https://github.com/claude",
+      "followers_url": "https://api.github.com/users/claude/followers",
+      "following_url": "https://api.github.com/users/claude/following{/other_user}",
+      "gists_url": "https://api.github.com/users/claude/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/claude/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/claude/subscriptions",
+      "organizations_url": "https://api.github.com/users/claude/orgs",
+      "repos_url": "https://api.github.com/users/claude/repos",
+      "events_url": "https://api.github.com/users/claude/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/claude/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "df7741429224b1b235a641f4b124275b9df3e04a",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/df7741429224b1b235a641f4b124275b9df3e04a",
+        "html_url": "https://github.com/SuperInstance/quilt-cloudflare/commit/df7741429224b1b235a641f4b124275b9df3e04a"
+      }
+    ]
+  },
+  {
+    "sha": "df7741429224b1b235a641f4b124275b9df3e04a",
+    "node_id": "C_kwDOT9tOvNoAKGRmNzc0MTQyOTIyNGIxYjIzNWE2NDFmNGIxMjQyNzViOWRmM2UwNGE",
+    "commit": {
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "date": "2026-09-28T15:19:17Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-28T15:19:17Z"
+      },
+      "message": "deps: bump typescript from 6.0.3 to 7.0.2 in the major group (#15)\n\nBumps the major group with 1 update: [typescript](https://github.com/microsoft/TypeScript).\n\n\nUpdates `typescript` from 6.0.3 to 7.0.2\n- [Release notes](https://github.com/microsoft/TypeScript/releases)\n- [Commits](https://github.com/microsoft/TypeScript/compare/v6.0.3...v7.0.2)\n\n---\nupdated-dependencies:\n- dependency-name: typescript\n  dependency-version: 7.0.2\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n  dependency-group: major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Casey Digennaro <193104091+SuperInstance@users.noreply.github.com>",
+      "tree": {
+        "sha": "0a8dd7fe941f20520dde3fa7ef14ea1efe5eaec2",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/git/trees/0a8dd7fe941f20520dde3fa7ef14ea1efe5eaec2"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/git/commits/df7741429224b1b235a641f4b124275b9df3e04a",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJquoV1CRC1aQ7uu5UhlAAAfZIQAJ36MPYTdGAitYbN9HDFdk8e\nVpHEnSxxDraVjwu1vaoREnOoTTcUE0YAZcmE7XUPbDc4wFA3CiF9uJEaPIqdI9iz\neRAmCA+MyPSlIAiiOapaTFWZR+kHlHlEZaVCwv+xSkOw3XbDHS6Y+nbqSXbAwpRh\nuHu0ITIsPjpuTzNZmVxXVcX4lCVpXmrJ/1YRHTrXgfEOcqA5r1SX2XSB3L+rov6t\nx1rn+dxSMqJOH5flupcYsvR/17bysssZd9DSYT7mSTCerFVBLuGnvYmlYZLcbjq1\n4IwFkCk57JhLRfh5PFKa/pVdkMq05EXfE6awg6Z8/fejcfXmNnCG6PKxt1/phQ//\nWOihffH62lGpBiwjXFE/RvnJRQ4QEQbsIAiwSVBxjAGAQNr6+plnryMmt/o8U0nU\nzG0zuRBhWW5k2eOdcPYAtZol6wn5l5NQy2tNwryJ2ttv9d9xMrCI1rDGBDBiGyWG\nLsxnt50hIgeJtDrKs5ltvGF+u7quVvDv0KchxilBs9R8mCTFclXNDWU030CagSO7\nNDThsRDKwbLvacDegiCHVmCgYqgod9m7T0Dh5qGbK9pGxaKKjcu8z73wrl0iJqC5\nYrsMPWmen3Yx/WPjxGPJkKoe/ng25B6C6tqSndtDql40XY5tHuZZ1j0zZMTcqKAf\nkn7lZh0B31pyjno/+L8k\n=2ZXQ\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 0a8dd7fe941f20520dde3fa7ef14ea1efe5eaec2\nparent 708e1bf4472514e2178fa2e2cb19b1ee030dd859\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1790608757 -0800\ncommitter GitHub <noreply@github.com> 1790608757 -0800\n\ndeps: bump typescript from 6.0.3 to 7.0.2 in the major group (#15)\n\nBumps the major group with 1 update: [typescript](https://github.com/microsoft/TypeScript).\n\n\nUpdates `typescript` from 6.0.3 to 7.0.2\n- [Release notes](https://github.com/microsoft/TypeScript/releases)\n- [Commits](https://github.com/microsoft/TypeScript/compare/v6.0.3...v7.0.2)\n\n---\nupdated-dependencies:\n- dependency-name: typescript\n  dependency-version: 7.0.2\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n  dependency-group: major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Casey Digennaro <193104091+SuperInstance@users.noreply.github.com>",
+        "verified_at": "2026-09-28T15:19:18Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/df7741429224b1b235a641f4b124275b9df3e04a",
+    "html_url": "https://github.com/SuperInstance/quilt-cloudflare/commit/df7741429224b1b235a641f4b124275b9df3e04a",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/df7741429224b1b235a641f4b124275b9df3e04a/comments",
+    "author": {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+      "html_url": "https://github.com/apps/dependabot",
+      "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "708e1bf4472514e2178fa2e2cb19b1ee030dd859",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/708e1bf4472514e2178fa2e2cb19b1ee030dd859",
+        "html_url": "https://github.com/SuperInstance/quilt-cloudflare/commit/708e1bf4472514e2178fa2e2cb19b1ee030dd859"
+      }
+    ]
+  },
+  {
+    "sha": "708e1bf4472514e2178fa2e2cb19b1ee030dd859",
+    "node_id": "C_kwDOT9tOvNoAKDcwOGUxYmY0NDcyNTE0ZTIxNzhmYTJlMmNiMTliMWVlMDMwZGQ4NTk",
+    "commit": {
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "date": "2026-09-28T15:17:00Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-28T15:17:00Z"
+      },
+      "message": "deps: bump the patch-and-minor group with 2 updates (#14)\n\nBumps the patch-and-minor group with 2 updates: [@cloudflare/workers-types](https://github.com/cloudflare/workerd) and [wrangler](https://github.com/cloudflare/workers-sdk/tree/HEAD/packages/wrangler).\n\n\nUpdates `@cloudflare/workers-types` from 5.20260921.1 to 5.20260925.1\n- [Release notes](https://github.com/cloudflare/workerd/releases)\n- [Changelog](https://github.com/cloudflare/workerd/blob/main/RELEASE.md)\n- [Commits](https://github.com/cloudflare/workerd/commits)\n\nUpdates `wrangler` from 4.136.1 to 4.140.0\n- [Release notes](https://github.com/cloudflare/workers-sdk/releases)\n- [Commits](https://github.com/cloudflare/workers-sdk/commits/wrangler@4.140.0/packages/wrangler)\n\n---\nupdated-dependencies:\n- dependency-name: \"@cloudflare/workers-types\"\n  dependency-version: 5.20260925.1\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: patch-and-minor\n- dependency-name: wrangler\n  dependency-version: 4.140.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: patch-and-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+      "tree": {
+        "sha": "7acecbb9c6571718bba736ebab132899c0826724",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/git/trees/7acecbb9c6571718bba736ebab132899c0826724"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/git/commits/708e1bf4472514e2178fa2e2cb19b1ee030dd859",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJquoTsCRC1aQ7uu5UhlAAAm9EQAHBybsUgG6iCydyFBmzWyC39\nZGMHs5QOHYs5S5Cp0TtJOJloJLuF1z6pngc5P4avObD/BQRiFWH7pgIVXnIjGIQj\nQiCbyxJ2Gl7RmKr0B+IJbVJmiJWOR53AJjNyqfJclVeWkgJ6vYb1bG8b3WENX5fq\nf2dHsqLd6auiOxlogxYpmrXKVLd2gkaXEODdf+9IIbyc+Orh7JEVarVq0r/80Ho8\nZRr1AESoVwZaU+USogK1GwOjd615yFEZe9ybGZ7sprUxnTtUabGSe+2VL+JzAo44\nkJn8TtzFI5E1328FeObjvPA1J0iX2mPR8bJg7cQjGyqZCX34sy3K79FF6EyLzDWo\ng8XIGYKOjmhUxJksMYtXgG7mYsysw89Pvyto+GVaSSJ8eoAKHianawJXMixcqJpL\nCdZf21UCfiBLSrrMNzzLqyCebRPi/uimO+XUz2X3sbGsSXr/gjU/m9GJtcgijDWx\nENWJKJ5CSJuNL45BQ/IQmrn7IDgC7WSXdqKyJlM4RuiF8KpsdkMix1K4AlP9skOe\nxW2NtGrlHt/c4FTnvkEqCuJFP9raHlCg3v/uHWG1W1bvCGNHsxmliankSj9gtnOI\nyJKuNX1IZhQHPoPPNtdVc6UVLWYkGvCixoDH35MNdsotN7wTtR1l5AmJ8WtdzCze\nSYCPBmocVk+EtN9KSDzR\n=Ekvs\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 7acecbb9c6571718bba736ebab132899c0826724\nparent 1842b0ed0d6175fb85fcce23445bbd709eb95950\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1790608620 -0800\ncommitter GitHub <noreply@github.com> 1790608620 -0800\n\ndeps: bump the patch-and-minor group with 2 updates (#14)\n\nBumps the patch-and-minor group with 2 updates: [@cloudflare/workers-types](https://github.com/cloudflare/workerd) and [wrangler](https://github.com/cloudflare/workers-sdk/tree/HEAD/packages/wrangler).\n\n\nUpdates `@cloudflare/workers-types` from 5.20260921.1 to 5.20260925.1\n- [Release notes](https://github.com/cloudflare/workerd/releases)\n- [Changelog](https://github.com/cloudflare/workerd/blob/main/RELEASE.md)\n- [Commits](https://github.com/cloudflare/workerd/commits)\n\nUpdates `wrangler` from 4.136.1 to 4.140.0\n- [Release notes](https://github.com/cloudflare/workers-sdk/releases)\n- [Commits](https://github.com/cloudflare/workers-sdk/commits/wrangler@4.140.0/packages/wrangler)\n\n---\nupdated-dependencies:\n- dependency-name: \"@cloudflare/workers-types\"\n  dependency-version: 5.20260925.1\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: patch-and-minor\n- dependency-name: wrangler\n  dependency-version: 4.140.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: patch-and-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+        "verified_at": "2026-09-28T15:17:01Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/708e1bf4472514e2178fa2e2cb19b1ee030dd859",
+    "html_url": "https://github.com/SuperInstance/quilt-cloudflare/commit/708e1bf4472514e2178fa2e2cb19b1ee030dd859",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/708e1bf4472514e2178fa2e2cb19b1ee030dd859/comments",
+    "author": {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+      "html_url": "https://github.com/apps/dependabot",
+      "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1842b0ed0d6175fb85fcce23445bbd709eb95950",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/1842b0ed0d6175fb85fcce23445bbd709eb95950",
+        "html_url": "https://github.com/SuperInstance/quilt-cloudflare/commit/1842b0ed0d6175fb85fcce23445bbd709eb95950"
+      }
+    ]
+  },
+  {
+    "sha": "1842b0ed0d6175fb85fcce23445bbd709eb95950",
+    "node_id": "C_kwDOT9tOvNoAKDE4NDJiMGVkMGQ2MTc1ZmI4NWZjY2UyMzQ0NWJiZDcwOWViOTU5NTA",
+    "commit": {
+      "author": {
+        "name": "Claude",
+        "email": "noreply@anthropic.com",
+        "date": "2026-09-28T08:39:42Z"
+      },
+      "committer": {
+        "name": "Claude",
+        "email": "noreply@anthropic.com",
+        "date": "2026-09-28T08:39:42Z"
+      },
+      "message": "Add rate-component: drop-in budgeted-JEV rate-my-work backend (M4)\n\nExtracts the live-verified budgeted-JEV pattern (AI-Writings\nCF-BACKEND-WOW-BUDGET.md; dispatch-ledger d070/d077/d083,\naha-budget-proof.pages.dev) into a self-contained, copy-in Cloudflare\nPages Function at rate-component/functions/api/rate.js: same-origin\nenforcement, 4KB request cap, per-visitor budget (first-party cookie +\nhashed IP, tighter-wins) plus a global daily ceiling, both as rolling-24h\nKV token buckets, cost booked to KV per call, and a mandatory graceful\nHTTP-200 degrade on budget-spent, missing key, or upstream error. Key is\nread only from the TYPESAFEAI_KEY secret binding and never echoed.\n\nIncludes an offline Node test harness (13 passing cases: same-origin\naccept/reject, size cap, per-visitor + hashed-IP bucket exhaustion,\nglobal-cap tighter-wins, degrade on missing key/KV/upstream 401/500/\nnetwork-failure, and a secret-hygiene sweep) plus a README with the\n~5-line adoption steps, KV schema, and tunable caps.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01JV2C8fnD86DNwXoyHPd7X9",
+      "tree": {
+        "sha": "2a70fbc2624d0c04a958a236e4b6d8a9e001a217",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/git/trees/2a70fbc2624d0c04a958a236e4b6d8a9e001a217"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/git/commits/1842b0ed0d6175fb85fcce23445bbd709eb95950",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgrLzsfFISF4by8Q+FKz27YpkK1USsBB+m\namu1QkJnbDsAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5AAAAQIhiBkXq\nWPLbzRs+L3XvGCUmm/yF9C203mvjyXTitJErknrab77gzcc9+iBXIFmiSsMkbe0t9nM7hwbrmCZN\nhgc=\n-----END SSH SIGNATURE-----",
+        "payload": "tree 2a70fbc2624d0c04a958a236e4b6d8a9e001a217\nparent 7ac3c1937e141333e0e8e38fd0077a0180b42d76\nauthor Claude <noreply@anthropic.com> 1790584782 +0000\ncommitter Claude <noreply@anthropic.com> 1790584782 +0000\n\nAdd rate-component: drop-in budgeted-JEV rate-my-work backend (M4)\n\nExtracts the live-verified budgeted-JEV pattern (AI-Writings\nCF-BACKEND-WOW-BUDGET.md; dispatch-ledger d070/d077/d083,\naha-budget-proof.pages.dev) into a self-contained, copy-in Cloudflare\nPages Function at rate-component/functions/api/rate.js: same-origin\nenforcement, 4KB request cap, per-visitor budget (first-party cookie +\nhashed IP, tighter-wins) plus a global daily ceiling, both as rolling-24h\nKV token buckets, cost booked to KV per call, and a mandatory graceful\nHTTP-200 degrade on budget-spent, missing key, or upstream error. Key is\nread only from the TYPESAFEAI_KEY secret binding and never echoed.\n\nIncludes an offline Node test harness (13 passing cases: same-origin\naccept/reject, size cap, per-visitor + hashed-IP bucket exhaustion,\nglobal-cap tighter-wins, degrade on missing key/KV/upstream 401/500/\nnetwork-failure, and a secret-hygiene sweep) plus a README with the\n~5-line adoption steps, KV schema, and tunable caps.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01JV2C8fnD86DNwXoyHPd7X9\n",
+        "verified_at": "2026-09-28T08:39:48Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/1842b0ed0d6175fb85fcce23445bbd709eb95950",
+    "html_url": "https://github.com/SuperInstance/quilt-cloudflare/commit/1842b0ed0d6175fb85fcce23445bbd709eb95950",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/1842b0ed0d6175fb85fcce23445bbd709eb95950/comments",
+    "author": {
+      "login": "claude",
+      "id": 81847,
+      "node_id": "MDQ6VXNlcjgxODQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/claude",
+      "html_url": "https://github.com/claude",
+      "followers_url": "https://api.github.com/users/claude/followers",
+      "following_url": "https://api.github.com/users/claude/following{/other_user}",
+      "gists_url": "https://api.github.com/users/claude/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/claude/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/claude/subscriptions",
+      "organizations_url": "https://api.github.com/users/claude/orgs",
+      "repos_url": "https://api.github.com/users/claude/repos",
+      "events_url": "https://api.github.com/users/claude/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/claude/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "claude",
+      "id": 81847,
+      "node_id": "MDQ6VXNlcjgxODQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/claude",
+      "html_url": "https://github.com/claude",
+      "followers_url": "https://api.github.com/users/claude/followers",
+      "following_url": "https://api.github.com/users/claude/following{/other_user}",
+      "gists_url": "https://api.github.com/users/claude/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/claude/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/claude/subscriptions",
+      "organizations_url": "https://api.github.com/users/claude/orgs",
+      "repos_url": "https://api.github.com/users/claude/repos",
+      "events_url": "https://api.github.com/users/claude/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/claude/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7ac3c1937e141333e0e8e38fd0077a0180b42d76",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/7ac3c1937e141333e0e8e38fd0077a0180b42d76",
+        "html_url": "https://github.com/SuperInstance/quilt-cloudflare/commit/7ac3c1937e141333e0e8e38fd0077a0180b42d76"
+      }
+    ]
+  },
+  {
+    "sha": "7ac3c1937e141333e0e8e38fd0077a0180b42d76",
+    "node_id": "C_kwDOT9tOvNoAKDdhYzNjMTkzN2UxNDEzMzNlMGU4ZTM4ZmQwMDc3YTAxODBiNDJkNzY",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-25T00:23:41Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-25T00:23:41Z"
+      },
+      "message": "systemone proxy: true {model,state,questions} wire shape (live-verified), legacy shim (#13)\n\nDeployed worker 400s reproduced live: /api/systemone answered 'schema must\nbe an object' because the proxy forwarded the stale deep-dive shape\n{schema,context,samples}. The verified wire (HTTP 200 0.86s jev-1.13.0,\ncross-checked vs AI-Writings callJev in production) is:\n  POST api.typesafe.ai/v1/systemone {model, state, questions{name:{type:choice|score|noul,...}}}\n  -> 200 {model, answers, usage}\n\n- normalizeSystemOneBody: true shape validated (state <=20k chars, 1..32\n  questions, choice options 1..255 strings, score needs criteria/scale,\n  noul free-form); legacy {schema,context} still accepted but MAPPED onto\n  the true shape (decision question; samples dropped — no wire counterpart)\n  and never forwarded verbatim\n- header VERIFIED note rewritten with the boundary segment\n- pins re-pinned against recorded-shape fixture {model,answers,usage}\n- 13/13 livekeys, 35/35 suite, eslint clean\n\nCo-authored-by: CCC <ccc@fleet.local>\nCo-authored-by: kimi1 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "c79cb1e2d9425d5f720f4b2b54c7b5584ba1c1a5",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/git/trees/c79cb1e2d9425d5f720f4b2b54c7b5584ba1c1a5"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/git/commits/7ac3c1937e141333e0e8e38fd0077a0180b42d76",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqtb8NCRC1aQ7uu5UhlAAAlDIQAGjakpUpCVqIkfCyrYJST6O1\niYwJKZ/6O3H1t7h4ueabCblDFZ+1qodlvcsiD5R8sDQec36JVDehcn/i0ZXkkr53\nQyntYBTP2wGK1CpwbQSU9OQ40YcrJ/p1UF5ikgEZGAq/wTmad4JLDPYRdXE0Uhhl\nKZtaNGVUklVJvu+TLrWqJQpM+wj+kBWbdnlXAEHsPQH+/gugJAOqhYyswubVuO/R\nHaFLCP2JaTaHbDuo3I3JgTy4h6lSrk1zaNojsdZppaoNgRaLl1SzsuhnFzvxGgdQ\n2NBSpfzVr3FJ3K9VpJ7CrHYPo7TE5l5HVTBU1lh7kc1CpgoiMZOWStgS5a86fCxH\nkip5BOOLJlMiHP2K/PVlrsX/FAtSt0QpL6ciA+BJ8/MiKD8D3Zdvu4pwPz1Kx5o9\nDBvuDBQx3mDxyImroTXkgjEAdG96Rr/rUkYSuxZcGGFNGiJiwiGqJspfO+OoUXgR\nFDPPHTSsHb0Kjvcc5MWiE7bazrejwLHafe7W64YFjwuLF5e8PgdqXKi2P+JByG1K\nvL3PXExL8cXeQWfrloBaJt4ARP0wvBxVzTOZRDxwkCUa5dG9ETiI5yWYXjs3qMqv\n0RIGObsQ83Ur14/RWbBS0BXJzZICCGtwtrbfPgFWY0isYwSDmp9ugiFW1DZR3z6e\nbha0Zj2ZiZ2gYIP2dfEN\n=6ol3\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree c79cb1e2d9425d5f720f4b2b54c7b5584ba1c1a5\nparent 5b9419f02df108268a7adb455b80363fd0a9fdb2\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790295821 -0800\ncommitter GitHub <noreply@github.com> 1790295821 -0800\n\nsystemone proxy: true {model,state,questions} wire shape (live-verified), legacy shim (#13)\n\nDeployed worker 400s reproduced live: /api/systemone answered 'schema must\nbe an object' because the proxy forwarded the stale deep-dive shape\n{schema,context,samples}. The verified wire (HTTP 200 0.86s jev-1.13.0,\ncross-checked vs AI-Writings callJev in production) is:\n  POST api.typesafe.ai/v1/systemone {model, state, questions{name:{type:choice|score|noul,...}}}\n  -> 200 {model, answers, usage}\n\n- normalizeSystemOneBody: true shape validated (state <=20k chars, 1..32\n  questions, choice options 1..255 strings, score needs criteria/scale,\n  noul free-form); legacy {schema,context} still accepted but MAPPED onto\n  the true shape (decision question; samples dropped — no wire counterpart)\n  and never forwarded verbatim\n- header VERIFIED note rewritten with the boundary segment\n- pins re-pinned against recorded-shape fixture {model,answers,usage}\n- 13/13 livekeys, 35/35 suite, eslint clean\n\nCo-authored-by: CCC <ccc@fleet.local>\nCo-authored-by: kimi1 <noreply@anthropic.com>",
+        "verified_at": "2026-09-25T00:23:42Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/7ac3c1937e141333e0e8e38fd0077a0180b42d76",
+    "html_url": "https://github.com/SuperInstance/quilt-cloudflare/commit/7ac3c1937e141333e0e8e38fd0077a0180b42d76",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/7ac3c1937e141333e0e8e38fd0077a0180b42d76/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5b9419f02df108268a7adb455b80363fd0a9fdb2",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/5b9419f02df108268a7adb455b80363fd0a9fdb2",
+        "html_url": "https://github.com/SuperInstance/quilt-cloudflare/commit/5b9419f02df108268a7adb455b80363fd0a9fdb2"
+      }
+    ]
+  },
+  {
+    "sha": "5b9419f02df108268a7adb455b80363fd0a9fdb2",
+    "node_id": "C_kwDOT9tOvNoAKDViOTQxOWYwMmRmMTA4MjY4YTdhZGI0NTViODAzNjNmZDBhOWZkYjI",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-24T22:59:29Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-24T22:59:29Z"
+      },
+      "message": "wrangler.toml: real binding IDs (D1 quilt-db, KV CACHE) + drop legacy [build] blocks (#12)\n\nPost-deploy fix: the live deployment (quilt-cloudflare.casey-digennaro.workers.dev,\naccount casey.digennaro@gmail.com) runs with these real IDs provisioned 06:15 CST,\nbut the toml patch was only ever local to the deploy workdir — main still carried\nplaceholders, so anyone cloning + deploying would get a broken worker.\n\n- D1 quilt-db = d782be6b-b0ab-4dfa-b8f4-cb875bc11fc1 (schema.sql executed remote)\n- KV CACHE = 76094ed27a6447d1bf5627bf33e71fb9 (pre-existing namespace)\n- Vectorize quilt-embeddings binding already correct (768-dim cosine)\n- Legacy [build] blocks removed (modern wrangler errors on them; build is a no-op)\n\nCo-authored-by: kimi1 <kimi1@superinstance.dev>",
+      "tree": {
+        "sha": "97281f98e8f0188094dc57f52c2222bd3dfbfdce",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/git/trees/97281f98e8f0188094dc57f52c2222bd3dfbfdce"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/git/commits/5b9419f02df108268a7adb455b80363fd0a9fdb2",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqtatRCRC1aQ7uu5UhlAAAi5EQAAiIlaf5NjfAXn0FyRzlyinX\nkwo49xaqf0KWvCoB+KOeTgVZHuEB6QvI7m2qjAT5xnThBfb9cfHT5r10utkxMcL3\nP6TuF2t9efo4ZxzeNlHKrhsG8imSx+MzfxUiIgcP/K5q9mPwVgvIYrLwOc51slnh\nzIVe1/UgHx5vJQ2yZYtb6YMZzVZONLvrWJmY9t/eBU44nN7cbcZvHX4gAd/EOT0H\ni4vsahAmTy0zAXVEe5s4W+efs4OFFbg+E3BhV/oml1xtsPYP8wLIAXk2uUXPRaNF\ns29WcYCYiBJmaJCwAto5/Qx2NlF3KicFB2xZ58kOLmNdIDLFwd6rWZx0zkr8Ea13\natd2KjZLN7RrKF50q1FpgScholffmZeXD4D0ysQDXptD1Secc/OksuuGGQa5zt/i\nP2hU2SEAgqFhkJe4ycca83GMMdcDjH4GFPvmLYJLKHw7yXfegZajMQKXAC6nxYDc\nP0hARyPTqeX1PyhJ+SKrbTJUsB40kH4/K3HDMcXVd7+oyUriYS/hTalR2dYnh0i4\n4Zs+cBwENnwnpfBDSnTC2SAxBy4IiXdgpuz69ghbd/kmCRNIRmYiOhNhCW3OI3oL\ncnNmBvKciLnMWpYYnz6tyJMPA5N86kpmmHR2r9aaNRi8I8tQbmwR0gO8ZMIWGA74\nVkUypG4zL5pTEl7b00hO\n=3Buy\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 97281f98e8f0188094dc57f52c2222bd3dfbfdce\nparent f6e7b23d3eaf534097beb45e3433c4ce3d064044\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790290769 -0800\ncommitter GitHub <noreply@github.com> 1790290769 -0800\n\nwrangler.toml: real binding IDs (D1 quilt-db, KV CACHE) + drop legacy [build] blocks (#12)\n\nPost-deploy fix: the live deployment (quilt-cloudflare.casey-digennaro.workers.dev,\naccount casey.digennaro@gmail.com) runs with these real IDs provisioned 06:15 CST,\nbut the toml patch was only ever local to the deploy workdir — main still carried\nplaceholders, so anyone cloning + deploying would get a broken worker.\n\n- D1 quilt-db = d782be6b-b0ab-4dfa-b8f4-cb875bc11fc1 (schema.sql executed remote)\n- KV CACHE = 76094ed27a6447d1bf5627bf33e71fb9 (pre-existing namespace)\n- Vectorize quilt-embeddings binding already correct (768-dim cosine)\n- Legacy [build] blocks removed (modern wrangler errors on them; build is a no-op)\n\nCo-authored-by: kimi1 <kimi1@superinstance.dev>",
+        "verified_at": "2026-09-24T22:59:29Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/5b9419f02df108268a7adb455b80363fd0a9fdb2",
+    "html_url": "https://github.com/SuperInstance/quilt-cloudflare/commit/5b9419f02df108268a7adb455b80363fd0a9fdb2",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/5b9419f02df108268a7adb455b80363fd0a9fdb2/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f6e7b23d3eaf534097beb45e3433c4ce3d064044",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/f6e7b23d3eaf534097beb45e3433c4ce3d064044",
+        "html_url": "https://github.com/SuperInstance/quilt-cloudflare/commit/f6e7b23d3eaf534097beb45e3433c4ce3d064044"
+      }
+    ]
+  },
+  {
+    "sha": "f6e7b23d3eaf534097beb45e3433c4ce3d064044",
+    "node_id": "C_kwDOT9tOvNoAKGY2ZTdiMjNkM2VhZjUzNDA5N2JlYjQ1ZTM0MzNjNGNlM2QwNjQwNDQ",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-24T22:25:40Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-24T22:25:40Z"
+      },
+      "message": "hotfix: 3.1-8b-instruct also dead → 3.1-8b-instruct-fp8 (live catalog verified) (#11)\n\nCo-authored-by: kimi1 <kimi1@fleet.local>",
+      "tree": {
+        "sha": "eb7292bbe721dbca657eade6256e8831c911b729",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/git/trees/eb7292bbe721dbca657eade6256e8831c911b729"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/git/commits/f6e7b23d3eaf534097beb45e3433c4ce3d064044",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqtaNkCRC1aQ7uu5UhlAAAPSMQAKYmdF71dz7+j3OC5F4Qj/9F\ngWI9B7yw/LIplPlyK2scLob/CfQWSYj6N/oHk/Yx59BKarXUa4H/ZWRgQArJf8P3\nh7bsrVLD2vKm06rMM70MqKOb6fu3SUCiB6NLs6YWVtNYFXokqPEdGQSqZloXBnQI\nClRaA41bvuU6C/1k2k7VIyVdu0CKyhfoDtCmNNXDLwoWicRBaE52bRl2W3QZi+5z\ny8ktWhDP0UFFFXjUCzLq9gXJkjhqJ6oB/kFiok2Hrg3H13Sqj/Q8C1j93y1k2L1V\n3n3v573IomQh/0gCBoJWzUlrfCAk3ZkirKTqepmGAqt+WoiogKx4UGp1YLNmuOT2\nMi9zjQ71FG01zTpMCewD4OXbdzJFkGodrLWvB+lv52FPPUAWQ6FFN1jyF/lVgfLQ\nCAfQPS2EYXSWExdgDDAg+3a/ntUcI3NMWBU249xwAZcrJo0Ml4h6TDd34atVI5YF\nlzdN912F/kykVM9EtqoPmly/4nMgG8aLuPOaPvLuAblORQ6VaztJT7zX8aMZjFjf\nhUZWzcmJRyrxbQTdWy1zbDqAOXq08lV4Hv4IlgGUz0Vg7AD8j4zhgUCfmLDW4iuo\nk/LEkj3tdtFzRvCWCXalhOZU9CbsPWb/vzwtaNuBwHZU7JhFwMBjSJlqp8ME0t8E\n1v06Sj+upNedn+ss2+Lt\n=Qkls\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree eb7292bbe721dbca657eade6256e8831c911b729\nparent 55158abaed90d47e72e051298510cda2dc453a8d\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790288740 -0800\ncommitter GitHub <noreply@github.com> 1790288740 -0800\n\nhotfix: 3.1-8b-instruct also dead → 3.1-8b-instruct-fp8 (live catalog verified) (#11)\n\nCo-authored-by: kimi1 <kimi1@fleet.local>",
+        "verified_at": "2026-09-24T22:25:41Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/f6e7b23d3eaf534097beb45e3433c4ce3d064044",
+    "html_url": "https://github.com/SuperInstance/quilt-cloudflare/commit/f6e7b23d3eaf534097beb45e3433c4ce3d064044",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/f6e7b23d3eaf534097beb45e3433c4ce3d064044/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "55158abaed90d47e72e051298510cda2dc453a8d",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/55158abaed90d47e72e051298510cda2dc453a8d",
+        "html_url": "https://github.com/SuperInstance/quilt-cloudflare/commit/55158abaed90d47e72e051298510cda2dc453a8d"
+      }
+    ]
+  },
+  {
+    "sha": "55158abaed90d47e72e051298510cda2dc453a8d",
+    "node_id": "C_kwDOT9tOvNoAKDU1MTU4YWJhZWQ5MGQ0N2U3MmUwNTEyOTg1MTBjZGEyZGM0NTNhOGQ",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-24T22:23:58Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-24T22:23:58Z"
+      },
+      "message": "hotfix: llama-3-8b-instruct deprecated 2026-05-30 → llama-3.1-8b-instruct (ocean ask 1101 root cause) (#10)\n\nCo-authored-by: kimi1 <kimi1@fleet.local>",
+      "tree": {
+        "sha": "e6a74e0184757b77e8b17867f29d75f9389557a3",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/git/trees/e6a74e0184757b77e8b17867f29d75f9389557a3"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/git/commits/55158abaed90d47e72e051298510cda2dc453a8d",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqtaL+CRC1aQ7uu5UhlAAA0T0QAFUpKK+kLP1DG9nqKXYHz/Kh\nRgsCzCq2urWOZJ+lrXhr+R15JCEzYqn2bVkqt+wdGEccZghJ+4eDH9ZTY0URf+xa\nNBJHjhGJry0wZyANCPAuOYn19OyuvxRT6ymsIc8L2ASX3zLrGs8wmrqBjeQatFx5\nZ/2pbgzKiHZDMDyo0+dQ18DxBi1E657u17qC8p1pZvVKQUPzOYHB3rhCCezjD+yL\nEqD3n2R4Jk+U4MfGvP4qW8qDoOtwk+diHx/XtxdIkRlCx83AxSCLrgI+JKJ6GaDZ\n5FsjktC4rqEQAhRy/PlFLmKKRMGShPwdPInc5yKWa61wk1Jy4sITz32u7qgaX7kZ\niZWfREuXP5ODcrEDXiud66V33aoLII6Atiy4311vCc2yh/8dsgfMSEVOe/EIQxLw\nE7Lue2dAX/Cr7VuSuK8bAZaXMS5w+piJPOvuew3WEbSEBf4N+2voTzq9KjLRzhXk\nYtVewVmpMuQFFlqSX93xvBZU1VEJspxkG1uWpbZfF5WTJc6P7ObNBjCAYCbzUlrX\nAHfCys0yRoxMPycOyL/Vv2QSxyC+tL0hUrRFbaORIpj6CZPbixLCpYpSde+jgyVu\njjgoa8l66QbjFbGm6tjQMyIGYzIUCCOwuKkuRDAbu1YUbPdY9yP92LLABrJUAQ77\n66rIzblvAtSqP9di9pHZ\n=YY1O\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree e6a74e0184757b77e8b17867f29d75f9389557a3\nparent a122ef1ed0a699e8b9106b90e85d4832086f5bcf\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790288638 -0800\ncommitter GitHub <noreply@github.com> 1790288638 -0800\n\nhotfix: llama-3-8b-instruct deprecated 2026-05-30 → llama-3.1-8b-instruct (ocean ask 1101 root cause) (#10)\n\nCo-authored-by: kimi1 <kimi1@fleet.local>",
+        "verified_at": "2026-09-24T22:23:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/55158abaed90d47e72e051298510cda2dc453a8d",
+    "html_url": "https://github.com/SuperInstance/quilt-cloudflare/commit/55158abaed90d47e72e051298510cda2dc453a8d",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/55158abaed90d47e72e051298510cda2dc453a8d/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a122ef1ed0a699e8b9106b90e85d4832086f5bcf",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/a122ef1ed0a699e8b9106b90e85d4832086f5bcf",
+        "html_url": "https://github.com/SuperInstance/quilt-cloudflare/commit/a122ef1ed0a699e8b9106b90e85d4832086f5bcf"
+      }
+    ]
+  },
+  {
+    "sha": "a122ef1ed0a699e8b9106b90e85d4832086f5bcf",
+    "node_id": "C_kwDOT9tOvNoAKGExMjJlZjFlZDBhNjk5ZThiOTEwNmI5MGU4NWQ0ODMyMDg2ZjViY2Y",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-24T22:22:37Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-24T22:22:37Z"
+      },
+      "message": "Merge pull request #9 from SuperInstance/ocean-boundary-study\n\ndocs: Ocean semantic-cache boundary study — measured cartography of the 0.92 threshold",
+      "tree": {
+        "sha": "080ac06235d0bc04f277d9b1067cfa35bf18d0af",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/git/trees/080ac06235d0bc04f277d9b1067cfa35bf18d0af"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/git/commits/a122ef1ed0a699e8b9106b90e85d4832086f5bcf",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqtaKtCRC1aQ7uu5UhlAAAncQQABGnvJv3mB+knAJfqzGnnP/G\neIvZk4ZdK0P3xgoi7u7bUC2izMXpc5JMogVYWhA+gQKX3GupZOz54sd5r/3d58xN\nrcuVhFXpqp71CBVFfHabIT8n4EU0fCSx9xRUMGBMmRYtZ0hTv8M19z83dk0HNBqM\nrAIlITuKUa+4BmnPahRyKE1IlXo4Gwl4/X3UU2N5DH0ub7H1YXLRMNVBM2rSR+sJ\nHXswtvKtXfrXUJS1ipk2jnx+6PaEVFjfp51AoiYJ5Rb98VAzP7NjhU00VmyC1NqG\nTVm25YdzikgfjUusELHuVuEORknH+Uk3Zeq+skKdqs+d34bAUZhw3BWidnlRP5GT\noiOVxZvkkM5HkCMIIJqZtcp56A62qWOt3GWz3pGQKa706SEx1GOpswoNaJ/BTsKe\nprHk8VfQMgQ1PUCGaM9Cr8g7kHgWOK8/Rauao82SpsJ570nN6d7YTBe2b4MTEjXE\nC6yetEICktqJEfyGSnjpqp+cjoKTT7o6dM/FdpFVgpaJgP9oVswHVNxHNllnAg/f\nbv+pNWDnDv/xKKXByaVLCndzTShP5UlC5lTuHMeotkPXLpc0Ffj+XrtsM+KUckui\nFkAUevkgvZC4ZQZUaioiz+IWxs9DIW45Ntq7qcQK3PyxtzmOctHYVqBa0VvWURB4\nTQBM9piwTnuxEb+d++9R\n=JTUj\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 080ac06235d0bc04f277d9b1067cfa35bf18d0af\nparent 779b89f8da5821b75cbfea18d61c6e56e526f207\nparent 11932963838c69b3578b5e2fbb2af9cabcb778f2\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790288557 -0800\ncommitter GitHub <noreply@github.com> 1790288557 -0800\n\nMerge pull request #9 from SuperInstance/ocean-boundary-study\n\ndocs: Ocean semantic-cache boundary study — measured cartography of the 0.92 threshold",
+        "verified_at": "2026-09-24T22:22:38Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/a122ef1ed0a699e8b9106b90e85d4832086f5bcf",
+    "html_url": "https://github.com/SuperInstance/quilt-cloudflare/commit/a122ef1ed0a699e8b9106b90e85d4832086f5bcf",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/a122ef1ed0a699e8b9106b90e85d4832086f5bcf/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "779b89f8da5821b75cbfea18d61c6e56e526f207",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/779b89f8da5821b75cbfea18d61c6e56e526f207",
+        "html_url": "https://github.com/SuperInstance/quilt-cloudflare/commit/779b89f8da5821b75cbfea18d61c6e56e526f207"
+      },
+      {
+        "sha": "11932963838c69b3578b5e2fbb2af9cabcb778f2",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/11932963838c69b3578b5e2fbb2af9cabcb778f2",
+        "html_url": "https://github.com/SuperInstance/quilt-cloudflare/commit/11932963838c69b3578b5e2fbb2af9cabcb778f2"
+      }
+    ]
+  },
+  {
+    "sha": "11932963838c69b3578b5e2fbb2af9cabcb778f2",
+    "node_id": "C_kwDOT9tOvNoAKDExOTMyOTYzODM4YzY5YjM1NzhiNWUyZmJiMmFmOWNhYmNiNzc4ZjI",
+    "commit": {
+      "author": {
+        "name": "CCC",
+        "email": "ccc@fleet.local",
+        "date": "2026-09-24T21:59:07Z"
+      },
+      "committer": {
+        "name": "CCC",
+        "email": "ccc@fleet.local",
+        "date": "2026-09-24T21:59:07Z"
+      },
+      "message": "docs: OCEAN-BOUNDARY study — measured threshold cartography, verdict keep 0.92\n\n6 seeds x 8-rung paraphrase ladders + adversary axis, 56 real BGE-base-en-v1.5\nembeddings (twice-run, max delta 2.3e-4). Precision 100% (0/18 intent-changing\ncrossed), recall 75% (6/24 intent-preserving missed). Overlap band\n[0.8845, 0.9089] — no scalar separates classes on short questions.\n\nSECURITY SEGMENT: minimal prompt-injection wrapper clusters with target topic\n(0.9520 vs witness seed) — bounded today (questions embedded, never executed;\ninjections booked as witness rows), hard boundary for future agentic consumers.\n\nVerdict: keep 0.92. Welding point: test pin 0.9199/0.92 documented with\nevidence baseline. Next probes: length, population, verifier axes.",
+      "tree": {
+        "sha": "080ac06235d0bc04f277d9b1067cfa35bf18d0af",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/git/trees/080ac06235d0bc04f277d9b1067cfa35bf18d0af"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/git/commits/11932963838c69b3578b5e2fbb2af9cabcb778f2",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/11932963838c69b3578b5e2fbb2af9cabcb778f2",
+    "html_url": "https://github.com/SuperInstance/quilt-cloudflare/commit/11932963838c69b3578b5e2fbb2af9cabcb778f2",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/11932963838c69b3578b5e2fbb2af9cabcb778f2/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "779b89f8da5821b75cbfea18d61c6e56e526f207",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-cloudflare/commits/779b89f8da5821b75cbfea18d61c6e56e526f207",
+        "html_url": "https://github.com/SuperInstance/quilt-cloudflare/commit/779b89f8da5821b75cbfea18d61c6e56e526f207"
+      }
+    ]
+  }
+]

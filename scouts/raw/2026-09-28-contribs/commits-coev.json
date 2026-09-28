@@ -1,0 +1,298 @@
+[
+  {
+    "sha": "bed862b6fc42dd61daad5c31a7416e75f82fd34d",
+    "node_id": "C_kwDOUvkTDdoAKGJlZDg2MmI2ZmM0MmRkNjFkYWFkNWMzMWE3NDE2ZTc1ZjgyZmQzNGQ",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T17:37:35Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-28T17:37:35Z"
+      },
+      "message": "Merge pull request #2 from SuperInstance/gift-53/node24-test-script\n\nfix: npm test script for Node >= 20.14/22/24 — drop the `test/` directory positional",
+      "tree": {
+        "sha": "215f4be0e18b34e8d7836ef83b99b3b6bc143830",
+        "url": "https://api.github.com/repos/SuperInstance/coev/git/trees/215f4be0e18b34e8d7836ef83b99b3b6bc143830"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/coev/git/commits/bed862b6fc42dd61daad5c31a7416e75f82fd34d",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJquqXfCRC1aQ7uu5UhlAAAwu4QAKrGeFs7ycLaHOjiBzhi9cHn\nWaWLj+sQEGY2pOfyAmUOiEKix3iZv24oLJ5SPKymueMo6i4maBCIKmjyJ86+Evlt\nC77jR2lY0H9gyxGz/yMP8fRmIu7vu9Mh3duoZM0+yABGASqFyzCUvOtoo+Akq5k7\n6OoSAFvQecLfv+V1nPGJI7E+jlsC4SP3M0FEdcLFFUHfozBHqCLFEjWQDWCMwqL3\ndsz9sv7vgq56l2m6B+UlpNkBk5JYruRK5TzGdf9ZjPFH8/zZ7V9BOf84gPCNVY9w\ngBLjcrrhSANvtJ617caFLJenJIliA757/yt3bdV/hNMYWw370U3aKIH8Nfd7T68v\nlX7/V5R2t2+8ClJQjDwnOCL9N0ONcrnjjye3XwUUjY8tnHqjYMQO6pV8WlqyW4QY\nG2A0qhaqQ+kS//bWxe5hQtYXwsrp4yBRYEGxF+QAoc/m2dP0x83ezrfLhl/lMqNt\nrl8fMHi9Rypeo7cqZTA3iugrzU8JERATVFFV+nTwZ9h2g8yk85/FK9z2MxoMLv9k\nVllfBAk20YwPe2k39sj3mL/B5SevoQxMJmjQ/gZteyiIiwAB9vFsyOeIOiT68eEW\n3laOxx0tYiBMPH2KiIGgKyZ0dPO7qIGsaBDkvzn7FQDCdqUKL5F4p6U+Xy5gYM3W\nO18veiWIouEJ1vV4M+uN\n=V98l\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 215f4be0e18b34e8d7836ef83b99b3b6bc143830\nparent b6ad736e3ad090ec52618b3e5575a7eaf7aae877\nparent 303b43546e1ffd7546d01f2dde58cf8b2e13a203\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790617055 -0800\ncommitter GitHub <noreply@github.com> 1790617055 -0800\n\nMerge pull request #2 from SuperInstance/gift-53/node24-test-script\n\nfix: npm test script for Node >= 20.14/22/24 — drop the `test/` directory positional",
+        "verified_at": "2026-09-28T17:37:36Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/coev/commits/bed862b6fc42dd61daad5c31a7416e75f82fd34d",
+    "html_url": "https://github.com/SuperInstance/coev/commit/bed862b6fc42dd61daad5c31a7416e75f82fd34d",
+    "comments_url": "https://api.github.com/repos/SuperInstance/coev/commits/bed862b6fc42dd61daad5c31a7416e75f82fd34d/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b6ad736e3ad090ec52618b3e5575a7eaf7aae877",
+        "url": "https://api.github.com/repos/SuperInstance/coev/commits/b6ad736e3ad090ec52618b3e5575a7eaf7aae877",
+        "html_url": "https://github.com/SuperInstance/coev/commit/b6ad736e3ad090ec52618b3e5575a7eaf7aae877"
+      },
+      {
+        "sha": "303b43546e1ffd7546d01f2dde58cf8b2e13a203",
+        "url": "https://api.github.com/repos/SuperInstance/coev/commits/303b43546e1ffd7546d01f2dde58cf8b2e13a203",
+        "html_url": "https://github.com/SuperInstance/coev/commit/303b43546e1ffd7546d01f2dde58cf8b2e13a203"
+      }
+    ]
+  },
+  {
+    "sha": "303b43546e1ffd7546d01f2dde58cf8b2e13a203",
+    "node_id": "C_kwDOUvkTDdoAKDMwM2I0MzU0NmUxZmZkNzU0NmQwMWYyZGRlNThjZjhiMmUxM2EyMDM",
+    "commit": {
+      "author": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T17:10:55Z"
+      },
+      "committer": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T17:10:55Z"
+      },
+      "message": "fix: npm test script for Node >= 20.14 / 22 / 24 — drop the directory positional\n\n'node --test test/' throws MODULE_NOT_FOUND on modern Node (the bare\ndirectory positional after --test is no longer resolved as a scan dir /\nspawned as a test runner since the test-runner glob/positional rework,\nbreaking on Node v24). Bare 'node --test' auto-discovers test/*.test.js\nand is the supported form.\n\nLocal receipt (Node v24.21.0): before fix 'npm test' exit 1 (Cannot find\nmodule '.../coev/test'); after fix exit 0, tests 33 / pass 33 / fail 0.\nCI (tools/run-tests.js) already used the robust explicit-file form.",
+      "tree": {
+        "sha": "215f4be0e18b34e8d7836ef83b99b3b6bc143830",
+        "url": "https://api.github.com/repos/SuperInstance/coev/git/trees/215f4be0e18b34e8d7836ef83b99b3b6bc143830"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/coev/git/commits/303b43546e1ffd7546d01f2dde58cf8b2e13a203",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/coev/commits/303b43546e1ffd7546d01f2dde58cf8b2e13a203",
+    "html_url": "https://github.com/SuperInstance/coev/commit/303b43546e1ffd7546d01f2dde58cf8b2e13a203",
+    "comments_url": "https://api.github.com/repos/SuperInstance/coev/commits/303b43546e1ffd7546d01f2dde58cf8b2e13a203/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "b6ad736e3ad090ec52618b3e5575a7eaf7aae877",
+        "url": "https://api.github.com/repos/SuperInstance/coev/commits/b6ad736e3ad090ec52618b3e5575a7eaf7aae877",
+        "html_url": "https://github.com/SuperInstance/coev/commit/b6ad736e3ad090ec52618b3e5575a7eaf7aae877"
+      }
+    ]
+  },
+  {
+    "sha": "b6ad736e3ad090ec52618b3e5575a7eaf7aae877",
+    "node_id": "C_kwDOUvkTDdoAKGI2YWQ3MzZlM2FkMDkwZWM1MjYxOGIzZTU1NzVhN2VhZjdhYWU4Nzc",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T16:06:45Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-28T16:06:45Z"
+      },
+      "message": "Merge pull request #1 from SuperInstance/ci-seed-52/coev\n\nci: seed minimal GitHub Actions workflow (test suite)",
+      "tree": {
+        "sha": "bcedd3d3ebc356b6f4f6f85a970d9ff9b53e3d16",
+        "url": "https://api.github.com/repos/SuperInstance/coev/git/trees/bcedd3d3ebc356b6f4f6f85a970d9ff9b53e3d16"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/coev/git/commits/b6ad736e3ad090ec52618b3e5575a7eaf7aae877",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqupCVCRC1aQ7uu5UhlAAADRkQABV2VrkkdSKvsvBYN1TPilaL\neOyn4iDKhCZ3mU396OZwmND2qA8juqM2B0rFSKwDaHX4xKD7N72ErDKn5n2zIrMi\nng0rRU/Bwfa/exnvTMYPdeNuR6te98bZMqpGbaNfwHPU19yKB9tnNRP5QyMrYBrB\nPx3WvHJ5zKMwLCY8+L5jXBV7V4O7BCPc2t2EJQCaf1Om1LsyFOqfXasVlwh233um\nDVilX5F0g24SlC/fVh3Jd2FFQvwkl3Ez9ck37onUB1X3hHNQg8CGqQ2k1oC9gIC5\nWCcjDAlC3msGHWHrzATyRDIx1Ho6Z/G15eajwEFAPAcEXWN5Uqdiowg/SEfEBFSE\nxTHf/QSsOQV4+CGu4LOCbI1DGCi9tgmzMn+bcyhWLY9wFwM6RULaqH0p6o+QTGdr\nMGy7vIJbMqoSgmnxBKxsifrhgnelhfvdKZRXiW+cNyBYrChxV7XmVBv8I0GI/yK9\nHQogZf+pBU2DAR7J87BzVrDIY78z3x3vg7jVaRdES4cfRwJz/JBPs898AQmf7uf5\nIW1BxPyy6CQ0bb2PgNEHvyFE/XkzOFEyVjQiyavs8D/n1neV2jkVcumpoXBNljSk\n5fvjz7Mt8HJMUQrna2YQartaHJII5KZQk/hFdTxQatSRG4M2Js2utM8nk1lzCXYU\n1fj0k1X6QT66saN74AK9\n=Iadr\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree bcedd3d3ebc356b6f4f6f85a970d9ff9b53e3d16\nparent 88a9d8cc0dab98caf90bf59e5a33db1902abd34d\nparent ff42508f3c0323f802cf7d83880b19a76fe9555d\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790611605 -0800\ncommitter GitHub <noreply@github.com> 1790611605 -0800\n\nMerge pull request #1 from SuperInstance/ci-seed-52/coev\n\nci: seed minimal GitHub Actions workflow (test suite)",
+        "verified_at": "2026-09-28T16:06:45Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/coev/commits/b6ad736e3ad090ec52618b3e5575a7eaf7aae877",
+    "html_url": "https://github.com/SuperInstance/coev/commit/b6ad736e3ad090ec52618b3e5575a7eaf7aae877",
+    "comments_url": "https://api.github.com/repos/SuperInstance/coev/commits/b6ad736e3ad090ec52618b3e5575a7eaf7aae877/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "88a9d8cc0dab98caf90bf59e5a33db1902abd34d",
+        "url": "https://api.github.com/repos/SuperInstance/coev/commits/88a9d8cc0dab98caf90bf59e5a33db1902abd34d",
+        "html_url": "https://github.com/SuperInstance/coev/commit/88a9d8cc0dab98caf90bf59e5a33db1902abd34d"
+      },
+      {
+        "sha": "ff42508f3c0323f802cf7d83880b19a76fe9555d",
+        "url": "https://api.github.com/repos/SuperInstance/coev/commits/ff42508f3c0323f802cf7d83880b19a76fe9555d",
+        "html_url": "https://github.com/SuperInstance/coev/commit/ff42508f3c0323f802cf7d83880b19a76fe9555d"
+      }
+    ]
+  },
+  {
+    "sha": "ff42508f3c0323f802cf7d83880b19a76fe9555d",
+    "node_id": "C_kwDOUvkTDdoAKGZmNDI1MDhmM2MwMzIzZjgwMmNmN2Q4Mzg4MGIxOWE3NmZlOTU1NWQ",
+    "commit": {
+      "author": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T15:38:41Z"
+      },
+      "committer": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T15:38:41Z"
+      },
+      "message": "ci: seed GitHub Actions workflow running the canonical test suite\n\nAdds a minimal honest CI: checkout, setup-node 20, npm install (no deps\ndeclared today), then `node tools/run-tests.js` — the repo's canonical\nrunner (bare `node --test test/` is version-fragile per the repo's own\nnote in tools/run-tests.js). Verified locally: 33/33 tests pass.",
+      "tree": {
+        "sha": "bcedd3d3ebc356b6f4f6f85a970d9ff9b53e3d16",
+        "url": "https://api.github.com/repos/SuperInstance/coev/git/trees/bcedd3d3ebc356b6f4f6f85a970d9ff9b53e3d16"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/coev/git/commits/ff42508f3c0323f802cf7d83880b19a76fe9555d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/coev/commits/ff42508f3c0323f802cf7d83880b19a76fe9555d",
+    "html_url": "https://github.com/SuperInstance/coev/commit/ff42508f3c0323f802cf7d83880b19a76fe9555d",
+    "comments_url": "https://api.github.com/repos/SuperInstance/coev/commits/ff42508f3c0323f802cf7d83880b19a76fe9555d/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "88a9d8cc0dab98caf90bf59e5a33db1902abd34d",
+        "url": "https://api.github.com/repos/SuperInstance/coev/commits/88a9d8cc0dab98caf90bf59e5a33db1902abd34d",
+        "html_url": "https://github.com/SuperInstance/coev/commit/88a9d8cc0dab98caf90bf59e5a33db1902abd34d"
+      }
+    ]
+  },
+  {
+    "sha": "88a9d8cc0dab98caf90bf59e5a33db1902abd34d",
+    "node_id": "C_kwDOUvkTDdoAKDg4YTlkOGNjMGRhYjk4Y2FmOTBiZjU5ZTVhMzNkYjE5MDJhYmQzNGQ",
+    "commit": {
+      "author": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T06:53:16Z"
+      },
+      "committer": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T06:53:16Z"
+      },
+      "message": "coev v0.1.0 — adversarial coevolution engine + champion-integrity auditor\n\nExtracted from SuperInstance/pong-quilt core.js @ b4d15c8 (C1 engine);\nring/evaluator lineage via quilt-edge-ml. The auditor encodes the\nR53/R54 save: a champion claiming 1259.1 that benched 239.6 (hollow).\n\n- src/: rng (seeded LCG), ring (honest-eviction FIFO), evaluator\n  (streaming top-K + onTie seam), ledger (hash-chained, tamper-evident,\n  verifyLedger), engine (loser-mutates-harder; runTournament), audit\n  (auditClaim/benchmarkChamp/championReport; CONFIRMED/REFUTED/SIMULATED/MEASURED)\n- arenas/pong.js: reference arena, full C1 port (escalation laws intact)\n- bin/coev.js: run/audit/demo CLI; usage errors exit 2; audit REFUSED exits 1;\n  result.json unwraps announced on stderr; arena validate hook\n- docs/: ARENA.md (write-your-own-arena), INTEGRITY.md (the R53/R54 essay)\n- 33 pins green (node tools/run-tests.js)",
+      "tree": {
+        "sha": "95422c1c1428735ba7e7128aedc366c875a755f6",
+        "url": "https://api.github.com/repos/SuperInstance/coev/git/trees/95422c1c1428735ba7e7128aedc366c875a755f6"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/coev/git/commits/88a9d8cc0dab98caf90bf59e5a33db1902abd34d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/coev/commits/88a9d8cc0dab98caf90bf59e5a33db1902abd34d",
+    "html_url": "https://github.com/SuperInstance/coev/commit/88a9d8cc0dab98caf90bf59e5a33db1902abd34d",
+    "comments_url": "https://api.github.com/repos/SuperInstance/coev/commits/88a9d8cc0dab98caf90bf59e5a33db1902abd34d/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+
+    ]
+  }
+]

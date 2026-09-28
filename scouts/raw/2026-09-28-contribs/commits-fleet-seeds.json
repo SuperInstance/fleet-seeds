@@ -1,0 +1,422 @@
+[
+  {
+    "sha": "0b35c48727aa6b33e9d1fecc5f1908f1ece1440d",
+    "node_id": "C_kwDOUtmKztoAKDBiMzVjNDg3MjdhYTZiMzNlOWQxZmVjYzVmMTkwOGYxZWNlMTQ0MGQ",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T20:07:48Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T20:07:48Z"
+      },
+      "message": "Round 55 refinement: jepa round-5 11/11 (amplitude lever closed, K4 transfers, finite-horizon two-phase optimizer-borne), A9 fresh-memory serve law PASS 4/4 (+0.0292 shift-H2, P-G2d pin reproduced), qthe audit KEEP 86.7% (canon census 9/2.1% priced), 2 stranger gift PRs + 1 zero-bug receipt; pong49 still open at seal",
+      "tree": {
+        "sha": "7012b4cf5101dc33ed0d382f71e6f17a773cb4fc",
+        "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/git/trees/7012b4cf5101dc33ed0d382f71e6f17a773cb4fc"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/git/commits/0b35c48727aa6b33e9d1fecc5f1908f1ece1440d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/0b35c48727aa6b33e9d1fecc5f1908f1ece1440d",
+    "html_url": "https://github.com/SuperInstance/fleet-seeds/commit/0b35c48727aa6b33e9d1fecc5f1908f1ece1440d",
+    "comments_url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/0b35c48727aa6b33e9d1fecc5f1908f1ece1440d/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "c898d8d0556e5b6e98a90b90cdd97d24da3b6c7c",
+        "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/c898d8d0556e5b6e98a90b90cdd97d24da3b6c7c",
+        "html_url": "https://github.com/SuperInstance/fleet-seeds/commit/c898d8d0556e5b6e98a90b90cdd97d24da3b6c7c"
+      }
+    ]
+  },
+  {
+    "sha": "c898d8d0556e5b6e98a90b90cdd97d24da3b6c7c",
+    "node_id": "C_kwDOUtmKztoAKGM4OThkOGQwNTU2ZTViNmU5OGE5MGI5MGNkZDk3ZDI0ZGEzYjZjN2M",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T19:18:02Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T19:18:02Z"
+      },
+      "message": "Round 54 refinement: jepa round-4 8/8 (pace-aware EMA + percentile-z laws landed), A8 honest FAIL (freshness > archival on hard soil), atlas unpinned 4848/stability 0-drift/fleet precision 83%, G1 spike fail-closed + 10 predictions sealed, platform layer dedup-verified live; pong49 window still open at seal",
+      "tree": {
+        "sha": "17acd8c5fa6d0d8cd3757768bc75dcc61219f5f9",
+        "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/git/trees/17acd8c5fa6d0d8cd3757768bc75dcc61219f5f9"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/git/commits/c898d8d0556e5b6e98a90b90cdd97d24da3b6c7c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/c898d8d0556e5b6e98a90b90cdd97d24da3b6c7c",
+    "html_url": "https://github.com/SuperInstance/fleet-seeds/commit/c898d8d0556e5b6e98a90b90cdd97d24da3b6c7c",
+    "comments_url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/c898d8d0556e5b6e98a90b90cdd97d24da3b6c7c/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "8839d1362110a145545f220e7e21e12971cf2d0d",
+        "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/8839d1362110a145545f220e7e21e12971cf2d0d",
+        "html_url": "https://github.com/SuperInstance/fleet-seeds/commit/8839d1362110a145545f220e7e21e12971cf2d0d"
+      }
+    ]
+  },
+  {
+    "sha": "8839d1362110a145545f220e7e21e12971cf2d0d",
+    "node_id": "C_kwDOUtmKztoAKDg4MzlkMTM2MjExMGExNDU1NDVmMjIwZTdlMjFlMTI5NzFjZjJkMGQ",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T19:10:05Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T19:10:05Z"
+      },
+      "message": "g1 spike (54-d): G1 seat design + fail-closed harness — honest no-GPU verdict, zero real receipts\n\n- docs/G1-SEAT-SPIKE.md: seat spec (7B-8B Q4_K_M, 8000-token budget as variable, the 45-c\n  starvation context it unblocks), harness contract (probe order ollama HTTP -> llama.cpp;\n  fail-closed exit 2 + g1-void-record@1; success path gated on g7_validate exit 0 =\n  receipt-or-VOID as code), honest current-state verdict: NO SEAT, zero real watt-receipts.\n- docs/g1/predictions.json: 10 predictions registered BLIND before any hardware exists\n  (7 new S1-S7: CPU/GPU latency bands, 4GiB-cgroup residency, receipt-fields, temp-0\n  determinism, quantization-erosion-vs-FP16 with G3 monotonicity link, 8000-budget\n  completion rate; 3 carried verbatim from playbook G1 P1-P3 wave 48, sha-bound).\n  Seal in doc: sha256 fb98ca29..., 9317 bytes, mtime 1790621920275.\n- scripts/g1_seat_harness.mjs: stdlib-only; probe chain + evidence probes; VOID record\n  writes ZERO fabricated numbers (energy null, gpu_seconds 0, no device block — a g7\n  receipt would require fabricating vram_gb>0, so the void record is its own schema and\n  is EXPECTED to be refused by g7_validate, selftest C3); --run-evidence gate keeps the\n  harness from ever computing its own energy numbers; uncertified battery => receipt\n  declares VOID, no shipping verdict.\n- receipts/g1/: 4 VOID records, append-only history (3 superseded by the corrected\n  record 20260928T190638Z-no_seat-syizg.json, whose harness_sha256 binds the committed\n  harness). Run receipted: exit 2 no_seat. Selftest receipted: 8/8 controls exit 0.\n- Incidents receipted in doc: masked lsmod probe corrected (/proc/modules readable,\n  0 modules — GPU absence now evidenced, not asserted); harness evidence-label bug fixed\n  (empty-vs-unreadable); one accidental rm of a VOID record regenerated byte-faithfully\n  from transcript with probes-digest self-check MATCH.",
+      "tree": {
+        "sha": "c9c0c2ede4d30877d9fbb56856511c43b5a54852",
+        "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/git/trees/c9c0c2ede4d30877d9fbb56856511c43b5a54852"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/git/commits/8839d1362110a145545f220e7e21e12971cf2d0d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/8839d1362110a145545f220e7e21e12971cf2d0d",
+    "html_url": "https://github.com/SuperInstance/fleet-seeds/commit/8839d1362110a145545f220e7e21e12971cf2d0d",
+    "comments_url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/8839d1362110a145545f220e7e21e12971cf2d0d/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "e8e7f55ba2cfff4105ccf77b0311e726772a297d",
+        "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/e8e7f55ba2cfff4105ccf77b0311e726772a297d",
+        "html_url": "https://github.com/SuperInstance/fleet-seeds/commit/e8e7f55ba2cfff4105ccf77b0311e726772a297d"
+      }
+    ]
+  },
+  {
+    "sha": "e8e7f55ba2cfff4105ccf77b0311e726772a297d",
+    "node_id": "C_kwDOUtmKztoAKGU4ZTdmNTViYTJjZmZmNDEwNWNjZjc3YjAzMTFlNzI2NzcyYTI5N2Q",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T17:21:27Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T17:21:27Z"
+      },
+      "message": "Round 53 refinement: G7 watt-receipt schema + validator landed (gate 'no receipt → run VOID' now executable); pong49 scorer PREPARED_NOT_FIRED (sha256-sealed pre-registration, arming-gated, fires at first seal after 2026-09-29T10:04Z); E-Q13 + round-13 still await guest pricing",
+      "tree": {
+        "sha": "6c7fe475d832b8dceb71c84b3ad304c6d775582f",
+        "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/git/trees/6c7fe475d832b8dceb71c84b3ad304c6d775582f"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/git/commits/e8e7f55ba2cfff4105ccf77b0311e726772a297d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/e8e7f55ba2cfff4105ccf77b0311e726772a297d",
+    "html_url": "https://github.com/SuperInstance/fleet-seeds/commit/e8e7f55ba2cfff4105ccf77b0311e726772a297d",
+    "comments_url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/e8e7f55ba2cfff4105ccf77b0311e726772a297d/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "e4ab6f7d21b76994eb07719b93bcc7e615b6b229",
+        "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/e4ab6f7d21b76994eb07719b93bcc7e615b6b229",
+        "html_url": "https://github.com/SuperInstance/fleet-seeds/commit/e4ab6f7d21b76994eb07719b93bcc7e615b6b229"
+      }
+    ]
+  },
+  {
+    "sha": "e4ab6f7d21b76994eb07719b93bcc7e615b6b229",
+    "node_id": "C_kwDOUtmKztoAKGU0YWI2ZjdkMjFiNzY5OTRlYjA3NzE5YjkzYmNjN2U2MTViNmIyMjk",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T17:20:59Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T17:20:59Z"
+      },
+      "message": "G7 watt-receipts schema + validator (53-f) + pong49 scorer prepared — fires at first seal after 2026-09-29T10:04Z\n\nscripts/pong49_scorer.mjs (08b6480f75711076..., sealed in scripts/pong49_scorer.registration.json BEFORE any scoring run): prepared instrument for registered question p_pong49_external_comment (tavern/jev_calibration_battery_r8.json #c_pong49, wave 37 lane 37-a; window closes 2026-09-29T10:04:00Z). Implements the REGISTERED procedure exactly, artifact-bound (prices 0.07/0.15 from the r8 registration, r9 remap priors 0.13/0.14 from jev_remap_r9_rows.jsonl, 3 keeper-sealed resolutions carried verbatim from jev_battery_scores_r8.json, multiclass annex outcome from typed_seat_outcome, guest_surviving_standing excluded per registered unresolved_policy). Ambiguity receipted in script header + registration: registration names no script/location; embassy/battery/pong49_scorer.mjs (lane 42-d) is the runner of record — identical procedure, scorecards must agree at close. Arming gate: default mode exit 3 (zero network/writes), --arm refuses exit 2 before close (guard verified live, no fetch), --selftest 23/23 hermetic controls is the only pre-fire execution. NOT fired — PREPARED_NOT_FIRED.",
+      "tree": {
+        "sha": "336346c1d75ce8fdf57bb4d85e81c661f969c6b2",
+        "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/git/trees/336346c1d75ce8fdf57bb4d85e81c661f969c6b2"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/git/commits/e4ab6f7d21b76994eb07719b93bcc7e615b6b229",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/e4ab6f7d21b76994eb07719b93bcc7e615b6b229",
+    "html_url": "https://github.com/SuperInstance/fleet-seeds/commit/e4ab6f7d21b76994eb07719b93bcc7e615b6b229",
+    "comments_url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/e4ab6f7d21b76994eb07719b93bcc7e615b6b229/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "dd7037c92829756d13506199501071a086bd25ec",
+        "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/dd7037c92829756d13506199501071a086bd25ec",
+        "html_url": "https://github.com/SuperInstance/fleet-seeds/commit/dd7037c92829756d13506199501071a086bd25ec"
+      }
+    ]
+  },
+  {
+    "sha": "dd7037c92829756d13506199501071a086bd25ec",
+    "node_id": "C_kwDOUtmKztoAKGRkNzAzN2M5MjgyOTc1NmQxMzUwNjE5OTUwMTA3MWEwODZiZDI1ZWM",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T17:16:57Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T17:16:57Z"
+      },
+      "message": "G7 watt-receipts schema + validator (53-f): docs/G7-WATT-RECEIPTS.md (g7-watt-receipt@1 — gate 'no receipt → run VOID', honesty rules: estimated says estimated+derivation, measured names the instrument, append-only); scripts/g7_validate.mjs stdlib-only validator (exit 0/1, precise reasons, --selftest 16/16 controls incl. 14 expected refusals); examples: pass-measured.json (valid) + void-missing-energy.json (gate refusal demonstrated)",
+      "tree": {
+        "sha": "6e98c95fe0b53e13fd89893be083a6e588fcdb24",
+        "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/git/trees/6e98c95fe0b53e13fd89893be083a6e588fcdb24"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/git/commits/dd7037c92829756d13506199501071a086bd25ec",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/dd7037c92829756d13506199501071a086bd25ec",
+    "html_url": "https://github.com/SuperInstance/fleet-seeds/commit/dd7037c92829756d13506199501071a086bd25ec",
+    "comments_url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/dd7037c92829756d13506199501071a086bd25ec/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "4331216061f416e870c3a6b81ad2dc07f6fb90bc",
+        "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/4331216061f416e870c3a6b81ad2dc07f6fb90bc",
+        "html_url": "https://github.com/SuperInstance/fleet-seeds/commit/4331216061f416e870c3a6b81ad2dc07f6fb90bc"
+      }
+    ]
+  },
+  {
+    "sha": "4331216061f416e870c3a6b81ad2dc07f6fb90bc",
+    "node_id": "C_kwDOUtmKztoAKDQzMzEyMTYwNjFmNDE2ZTg3MGMzYTZiODFhZDJkYzA3ZjZmYjkwYmM",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T16:40:29Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T16:40:29Z"
+      },
+      "message": "wave 52 keeper lanes sealed: codespace-as-ephemeral-honest-worker (8 attempts, VERDICT PASS at 8, npm 1985-epoch mtime normalization root-caused), quilt-atlas living map (>=4000 repos, first cloud run green), package 0.1.0->0.2.0 arc",
+      "tree": {
+        "sha": "72bb96642e9d8772298b85a674d009ea4e4f33c8",
+        "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/git/trees/72bb96642e9d8772298b85a674d009ea4e4f33c8"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/git/commits/4331216061f416e870c3a6b81ad2dc07f6fb90bc",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/4331216061f416e870c3a6b81ad2dc07f6fb90bc",
+    "html_url": "https://github.com/SuperInstance/fleet-seeds/commit/4331216061f416e870c3a6b81ad2dc07f6fb90bc",
+    "comments_url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/4331216061f416e870c3a6b81ad2dc07f6fb90bc/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "460127015c9f1e0fc88fe966eee2a34817d2525c",
+        "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/460127015c9f1e0fc88fe966eee2a34817d2525c",
+        "html_url": "https://github.com/SuperInstance/fleet-seeds/commit/460127015c9f1e0fc88fe966eee2a34817d2525c"
+      }
+    ]
+  },
+  {
+    "sha": "460127015c9f1e0fc88fe966eee2a34817d2525c",
+    "node_id": "C_kwDOUtmKztoAKDQ2MDEyNzAxNWM5ZjFlMGZjODhmZTk2NmVlZTJhMzQ4MTdkMjUyNWM",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T15:53:55Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T15:53:55Z"
+      },
+      "message": "playtest wave 52 (lane-d): 6-repo stranger-replay — mavis 15/15, jeviter 86/86, qthe-codec 3+1-falsified, quilt 160/160 after ERESOLVE gift (TS7 vs ts-eslint <6.1.0), SmartCRDT broken-deps + 10 Shamir FAILs (56!=42 @ :42), coev npm-test MODULE_NOT_FOUND on Node 24 (33/33 via node --test); raw logs scouts/raw/playtest52/",
+      "tree": {
+        "sha": "75a9fa577e496f9de457485118bb87d61b0d1713",
+        "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/git/trees/75a9fa577e496f9de457485118bb87d61b0d1713"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/git/commits/460127015c9f1e0fc88fe966eee2a34817d2525c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/460127015c9f1e0fc88fe966eee2a34817d2525c",
+    "html_url": "https://github.com/SuperInstance/fleet-seeds/commit/460127015c9f1e0fc88fe966eee2a34817d2525c",
+    "comments_url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/460127015c9f1e0fc88fe966eee2a34817d2525c/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "f9020c6940c82fcd5eef1e53d900f35f4501ec52",
+        "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/f9020c6940c82fcd5eef1e53d900f35f4501ec52",
+        "html_url": "https://github.com/SuperInstance/fleet-seeds/commit/f9020c6940c82fcd5eef1e53d900f35f4501ec52"
+      }
+    ]
+  },
+  {
+    "sha": "f9020c6940c82fcd5eef1e53d900f35f4501ec52",
+    "node_id": "C_kwDOUtmKztoAKGY5MDIwYzY5NDBjODJmY2Q1ZWVmMWU1M2Q5MDBmMzVmNDUwMWVjNTI",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T15:25:34Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T15:25:34Z"
+      },
+      "message": "Round 51: the hardness law — quilt-jepa round-2 3/6 (optimizer-layer root cause, L1-L3 laws) + garden P-G2d PASS (+13.41pp fresh memory under shift); incident #5; round-52 refinements",
+      "tree": {
+        "sha": "51167eae3d20ad789b9cd6618fe5d6ba5cd534c4",
+        "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/git/trees/51167eae3d20ad789b9cd6618fe5d6ba5cd534c4"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/git/commits/f9020c6940c82fcd5eef1e53d900f35f4501ec52",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/f9020c6940c82fcd5eef1e53d900f35f4501ec52",
+    "html_url": "https://github.com/SuperInstance/fleet-seeds/commit/f9020c6940c82fcd5eef1e53d900f35f4501ec52",
+    "comments_url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/f9020c6940c82fcd5eef1e53d900f35f4501ec52/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "0f924fe3a270a15c47d777e3bd57c27636935441",
+        "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/0f924fe3a270a15c47d777e3bd57c27636935441",
+        "html_url": "https://github.com/SuperInstance/fleet-seeds/commit/0f924fe3a270a15c47d777e3bd57c27636935441"
+      }
+    ]
+  },
+  {
+    "sha": "0f924fe3a270a15c47d777e3bd57c27636935441",
+    "node_id": "C_kwDOUtmKztoAKDBmOTI0ZmUzYTI3MGExNWM0N2Q3NzdlM2JkNTdjMjc2MzY5MzU0NDE",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T07:52:10Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T07:52:10Z"
+      },
+      "message": "PLANNING round 50: jev-garden wave — living JEV built, verdicts of record, refinements into 51",
+      "tree": {
+        "sha": "4f67984bb77bb5273fa4bf2aaa4110442162c1e8",
+        "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/git/trees/4f67984bb77bb5273fa4bf2aaa4110442162c1e8"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/git/commits/0f924fe3a270a15c47d777e3bd57c27636935441",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/0f924fe3a270a15c47d777e3bd57c27636935441",
+    "html_url": "https://github.com/SuperInstance/fleet-seeds/commit/0f924fe3a270a15c47d777e3bd57c27636935441",
+    "comments_url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/0f924fe3a270a15c47d777e3bd57c27636935441/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "cbf026440149b1ffb061e9371642682cc56cabda",
+        "url": "https://api.github.com/repos/SuperInstance/fleet-seeds/commits/cbf026440149b1ffb061e9371642682cc56cabda",
+        "html_url": "https://github.com/SuperInstance/fleet-seeds/commit/cbf026440149b1ffb061e9371642682cc56cabda"
+      }
+    ]
+  }
+]

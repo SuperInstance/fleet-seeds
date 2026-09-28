@@ -1,0 +1,727 @@
+[
+  {
+    "sha": "c9b5e9f6a3148ee8f7edcfb0527f788ebcf9489a",
+    "node_id": "C_kwDOT65oqtoAKGM5YjVlOWY2YTMxNDhlZThmN2VkY2ZiMDUyN2Y3ODhlYmNmOTQ4OWE",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T17:38:26Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-28T17:38:26Z"
+      },
+      "message": "Merge pull request #32 from SuperInstance/hooks-53/key-scan\n\nseed: fail-closed credential key-scan pre-commit (fleet-hooks, wave 53)",
+      "tree": {
+        "sha": "82220fc4fddd580b187a2dc1f85b0fe3b8ee73ce",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/git/trees/82220fc4fddd580b187a2dc1f85b0fe3b8ee73ce"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt/git/commits/c9b5e9f6a3148ee8f7edcfb0527f788ebcf9489a",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJquqYSCRC1aQ7uu5UhlAAAW1UQAC3x8AJvx8NfG513pUUKekan\nU2ssoBs/VOx0LWqPT4H8UmKmRS+ICNg1E4YZLjhNBOxaRHa6hZgcOjJ2cJSYgNtX\n8RoS22NFMP3bnF6/1wownH1UTP3qojnQKdtFoPcMfObEG/vArrAPI4ueex+wndOp\nSyePSx4com63NbNuQz0+lPYiMTJ9miKXs23Ox8pQpSolUBmzK+1BU1fhib0L/FLv\nQ2j94txVvlh+7h67lgSw7E0/t2wPmzct/iuxd4/yevpX+O0k/+k7HzENuGaN0W1K\nAybbxqHCjFJ6nJ6rbvXz21hG9dRUyYNO7A4Ol7kAJ0sdJfqLPyjq/5NH1F9QpXKp\nCZ8x+P3mstgiZykRRsMU1cuLzHeIQJbOJii0uBsymlFGsSFjU/rCC9tU2ggTmCdz\nydsg7LGgQctCNd8LY0Axp8cJZQcrxNPhOdo5gVzJpg+FFyn+hgMLc/XOQcZhjtac\nmToTDxa3dKMfTMcLYkr0nQUF4W/9IYpcuMIf/JIIW9p14ESL+T0LgG5c9h4bCX2m\nj9AVrmajqVqfo6u2VmjqDKOg4LC/oN2h1wyynu313uWQ81fgvrW3ge7PNPqJVg7N\ne1d8qe3zfS0vSV3nS6HQQRM2ClZVfHYT18Gk4uEXs2riVHfm8LdwVXbVRBAQSlFI\njHeFzZkBq8yxjr9z36in\n=oj02\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 82220fc4fddd580b187a2dc1f85b0fe3b8ee73ce\nparent 8072f346897d98778de2415e91a9b560fe7048e2\nparent 5bec4da37d78acbd46dfcfb9b48eb9d719950c34\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790617106 -0800\ncommitter GitHub <noreply@github.com> 1790617106 -0800\n\nMerge pull request #32 from SuperInstance/hooks-53/key-scan\n\nseed: fail-closed credential key-scan pre-commit (fleet-hooks, wave 53)",
+        "verified_at": "2026-09-28T17:38:27Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt/commits/c9b5e9f6a3148ee8f7edcfb0527f788ebcf9489a",
+    "html_url": "https://github.com/SuperInstance/quilt/commit/c9b5e9f6a3148ee8f7edcfb0527f788ebcf9489a",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt/commits/c9b5e9f6a3148ee8f7edcfb0527f788ebcf9489a/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8072f346897d98778de2415e91a9b560fe7048e2",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/commits/8072f346897d98778de2415e91a9b560fe7048e2",
+        "html_url": "https://github.com/SuperInstance/quilt/commit/8072f346897d98778de2415e91a9b560fe7048e2"
+      },
+      {
+        "sha": "5bec4da37d78acbd46dfcfb9b48eb9d719950c34",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/commits/5bec4da37d78acbd46dfcfb9b48eb9d719950c34",
+        "html_url": "https://github.com/SuperInstance/quilt/commit/5bec4da37d78acbd46dfcfb9b48eb9d719950c34"
+      }
+    ]
+  },
+  {
+    "sha": "5bec4da37d78acbd46dfcfb9b48eb9d719950c34",
+    "node_id": "C_kwDOT65oqtoAKDViZWM0ZGEzN2Q3OGFjYmQ0NmRmY2ZiOWI0OGViOWQ3MTk5NTBjMzQ",
+    "commit": {
+      "author": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T17:29:01Z"
+      },
+      "committer": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T17:29:01Z"
+      },
+      "message": "seed: fail-closed credential key-scan pre-commit (fleet-hooks, wave 53)\n\nAdds .githooks/pre-commit + setup.sh from SuperInstance/fleet-hooks\n(byte-identical, commit bbc14cf). Makes the house practice — scanning staged\nfiles for credential-shaped strings before every push (wave-52 receipts) —\nself-enforcing at commit time.\n\nArm once with: sh setup.sh   (sets core.hooksPath .githooks, smoke-scans the\nindex, refuses to arm a hooks path with no hook behind it).\n\nScans staged INDEX blobs: ghp_/gho_/ghs_/ghu_ (36), github_pat_ (22+),\nsk-ant prefix, AKIA+16. Fail-closed (scan errors block, exit 2), never echoes\nmatched content, FLEET_ALLOW=<ERE> line-granular escape hatch for obviously-\nfake fixtures, no network, stdlib-only POSIX sh. 11/11 controls pass\n(tests live in SuperInstance/fleet-hooks tests/test_hooks.sh).",
+      "tree": {
+        "sha": "82220fc4fddd580b187a2dc1f85b0fe3b8ee73ce",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/git/trees/82220fc4fddd580b187a2dc1f85b0fe3b8ee73ce"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt/git/commits/5bec4da37d78acbd46dfcfb9b48eb9d719950c34",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt/commits/5bec4da37d78acbd46dfcfb9b48eb9d719950c34",
+    "html_url": "https://github.com/SuperInstance/quilt/commit/5bec4da37d78acbd46dfcfb9b48eb9d719950c34",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt/commits/5bec4da37d78acbd46dfcfb9b48eb9d719950c34/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "8072f346897d98778de2415e91a9b560fe7048e2",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/commits/8072f346897d98778de2415e91a9b560fe7048e2",
+        "html_url": "https://github.com/SuperInstance/quilt/commit/8072f346897d98778de2415e91a9b560fe7048e2"
+      }
+    ]
+  },
+  {
+    "sha": "8072f346897d98778de2415e91a9b560fe7048e2",
+    "node_id": "C_kwDOT65oqtoAKDgwNzJmMzQ2ODk3ZDk4Nzc4ZGUyNDE1ZTkxYTliNTYwZmU3MDQ4ZTI",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T15:19:42Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-28T15:19:42Z"
+      },
+      "message": "Merge pull request #31 from SuperInstance/dependabot/npm_and_yarn/major-b7ceb5d816\n\ndeps: bump typescript from 6.0.3 to 7.0.2 in the major group across 1 directory",
+      "tree": {
+        "sha": "ea4c48939cf83fea281f607107defca187a4273c",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/git/trees/ea4c48939cf83fea281f607107defca187a4273c"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt/git/commits/8072f346897d98778de2415e91a9b560fe7048e2",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJquoWOCRC1aQ7uu5UhlAAATUEQAA98Xhh1mVYg1KrOYOwwUV1F\nmGaVTJz2UTEfODIvjXv4Ek9di/D7+odu2LpNgbEYhK75NDvYKh1qPFKpW/+UkKTF\nfiE1uHLpKcBUsaFnuU/K2ydS73AJqBLudIkkc3TE2CnQYiYkXmyADGjE8C0LrTK3\nq5OpKUZCnx2vjYMPQkUAYKJFDjrjQ0lk86uoRWntatMbXz2xE6Q/SYEv5xWy/hUj\nEbpVLPJqfcLwOL1pniaG5th1ilQI3jIXFwgGjqfcm0xuiUfYKW3FZlJKlBHd5G6z\nA/yBkStj1L8s7wI8vKCVInKw0E40lT8F2FdNy3+FPnYyaZx+LVKDZYpCvr4XBwni\nGcz8GovBYftjDjNHzHY3sAbxBmlOWoX14eHHz3qhAt3Y7R3m7S1A6U0iuQ29QoG4\ns4SCXO0pfeJKVcE8KU8SrGXtSlX/43g1imPX8ecGzwsZkcWOHrvGW9QRaCLFT7jj\n7sDbos17G1SBkkTUZE1J71GgX2ZUoFcB4a9lRLmLaZEvon0eMJaYR3RTj0adzV8U\nmM/QvrWyCCM3gr1V5lKjOwrP1kzsKV0uoIFZ5uwOWmbkT05IiK7evQ3E8IGN7xqL\ngBNMjI+3VRGzpxlfPhgc+iE0oKhMZvPrpUyqEOiL4IrwYGIQILFGXouY3W3oNOC6\n2R4pBque8JBMguT7Ran9\n=suJy\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree ea4c48939cf83fea281f607107defca187a4273c\nparent f454597dc48035d8e84bfbc7a71c86bb8824c354\nparent 8a2097614deb0d4c9f06de401929927fd05703fd\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790608782 -0800\ncommitter GitHub <noreply@github.com> 1790608782 -0800\n\nMerge pull request #31 from SuperInstance/dependabot/npm_and_yarn/major-b7ceb5d816\n\ndeps: bump typescript from 6.0.3 to 7.0.2 in the major group across 1 directory",
+        "verified_at": "2026-09-28T15:19:42Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt/commits/8072f346897d98778de2415e91a9b560fe7048e2",
+    "html_url": "https://github.com/SuperInstance/quilt/commit/8072f346897d98778de2415e91a9b560fe7048e2",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt/commits/8072f346897d98778de2415e91a9b560fe7048e2/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f454597dc48035d8e84bfbc7a71c86bb8824c354",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/commits/f454597dc48035d8e84bfbc7a71c86bb8824c354",
+        "html_url": "https://github.com/SuperInstance/quilt/commit/f454597dc48035d8e84bfbc7a71c86bb8824c354"
+      },
+      {
+        "sha": "8a2097614deb0d4c9f06de401929927fd05703fd",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/commits/8a2097614deb0d4c9f06de401929927fd05703fd",
+        "html_url": "https://github.com/SuperInstance/quilt/commit/8a2097614deb0d4c9f06de401929927fd05703fd"
+      }
+    ]
+  },
+  {
+    "sha": "8a2097614deb0d4c9f06de401929927fd05703fd",
+    "node_id": "C_kwDOT65oqtoAKDhhMjA5NzYxNGRlYjBkNGM5ZjA2ZGU0MDE5Mjk5MjdmZDA1NzAzZmQ",
+    "commit": {
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "date": "2026-09-28T15:17:16Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-28T15:17:16Z"
+      },
+      "message": "deps: bump typescript in the major group across 1 directory\n\nBumps the major group with 1 update in the / directory: [typescript](https://github.com/microsoft/TypeScript).\n\n\nUpdates `typescript` from 6.0.3 to 7.0.2\n- [Release notes](https://github.com/microsoft/TypeScript/releases)\n- [Commits](https://github.com/microsoft/TypeScript/compare/v6.0.3...v7.0.2)\n\n---\nupdated-dependencies:\n- dependency-name: typescript\n  dependency-version: 7.0.2\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n  dependency-group: major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+      "tree": {
+        "sha": "ea4c48939cf83fea281f607107defca187a4273c",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/git/trees/ea4c48939cf83fea281f607107defca187a4273c"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt/git/commits/8a2097614deb0d4c9f06de401929927fd05703fd",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJquoT8CRC1aQ7uu5UhlAAAUmUQAEwNkpXAvNEr2ip5NZogiItL\noSkYtjg6aY/XzP7zD33BVVecCw7o1SNp7lrIpmG2HyaykFZfsRMS0b6VkATAlDiq\nH/iBc2mOYiTTzNP1GtpoJWAF0najwU9myLK1CxfayunvbZW1vmpeqNqtMuR1mz+t\nf8Al3AFDl91RnaoPjqbySEm4Ltx+rTrNRvRIIQPhQJkBiqeSkb+IapX8/dEjc8nb\npFaR9oiRAZ+DAQO1E1Agq159GXWyvjazU1XW5QW4hQVdKLYYwcYBGXpT1hHhyy98\nrQmMqsc5gaNU1J0mmLlXtShtH9MZ1WZToX2kB5hgWCHejQGAzrGiTc0JV2mnUgNG\n/VGSon92Bt0JmgZpdAVvIBFsDEmc21KMshVTcJW6qDvnmjOmQXFifPFB6k3p73dC\nWC2+Tqu9GBkWaglqSBlEmJNGucfp7wSTOspdMCdQCjKulP7exUmdyI0pful2Z85n\n6hi3Zjlv1QYyq3yMHp4RSev8QwrfazWOQVSqhsAH4g8Wcmiy9bC9286HLucdvYw9\nC61ep7pb7JN1tBwOtUcgImm2DuhoreqWd7EYKWs6NdIx6nzM9u+2NWhyy/XieHK/\nShKGAzKcOtOXYKppcW0db+Y6MWLCZrVYKIjxaTeHBzID2NFVEcyv/riqQgIXhcCc\nX9xRwxJGFlMeIijpzjwy\n=qI8I\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree ea4c48939cf83fea281f607107defca187a4273c\nparent f454597dc48035d8e84bfbc7a71c86bb8824c354\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1790608636 +0000\ncommitter GitHub <noreply@github.com> 1790608636 +0000\n\ndeps: bump typescript in the major group across 1 directory\n\nBumps the major group with 1 update in the / directory: [typescript](https://github.com/microsoft/TypeScript).\n\n\nUpdates `typescript` from 6.0.3 to 7.0.2\n- [Release notes](https://github.com/microsoft/TypeScript/releases)\n- [Commits](https://github.com/microsoft/TypeScript/compare/v6.0.3...v7.0.2)\n\n---\nupdated-dependencies:\n- dependency-name: typescript\n  dependency-version: 7.0.2\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n  dependency-group: major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+        "verified_at": "2026-09-28T15:17:16Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt/commits/8a2097614deb0d4c9f06de401929927fd05703fd",
+    "html_url": "https://github.com/SuperInstance/quilt/commit/8a2097614deb0d4c9f06de401929927fd05703fd",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt/commits/8a2097614deb0d4c9f06de401929927fd05703fd/comments",
+    "author": {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+      "html_url": "https://github.com/apps/dependabot",
+      "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f454597dc48035d8e84bfbc7a71c86bb8824c354",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/commits/f454597dc48035d8e84bfbc7a71c86bb8824c354",
+        "html_url": "https://github.com/SuperInstance/quilt/commit/f454597dc48035d8e84bfbc7a71c86bb8824c354"
+      }
+    ]
+  },
+  {
+    "sha": "f454597dc48035d8e84bfbc7a71c86bb8824c354",
+    "node_id": "C_kwDOT65oqtoAKGY0NTQ1OTdkYzQ4MDM1ZDhlODRiZmJjN2E3MWM4NmJiODgyNGMzNTQ",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T15:14:56Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-28T15:14:56Z"
+      },
+      "message": "Merge pull request #30 from SuperInstance/dependabot/npm_and_yarn/patch-and-minor-7cf30c4023\n\ndeps: bump the patch-and-minor group with 7 updates",
+      "tree": {
+        "sha": "8617de9667acf0497482e5190c9cef836e6c4579",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/git/trees/8617de9667acf0497482e5190c9cef836e6c4579"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt/git/commits/f454597dc48035d8e84bfbc7a71c86bb8824c354",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJquoRwCRC1aQ7uu5UhlAAAsGkQAAlWhMx8n9UD9ypT1b+7wFkK\npzHHFoKhZI03iLGIRGXMTgNxXbM7w3+pnBLlZzIu0uqqF4tfBfERYSD017ywwX5Y\ngTlQIp9+KE23Lp5xcpVKxSXpF+KGxCFGMQaMV/QuZ0RRiUiVSQbx/DjxCk+zRA7f\n+5MxZrtVNrWhyYJ0Wdip9EqdcOU8W3QQ6tAOyWBBs5XpiQkANWV4z1AG0ic4TNzj\n26DlskO/OHut4yyba464WsL5DHDaE3B3+OAs5ORli/jk8cJhGIRhu2zCVJQw/DPB\nf6ZnMII1o2CNDpVaUsKKjRsy8+l7GPbD7XWtBVaqHG9VXbLHs7y3CjIuE5GRQh9P\nH4MRTKW96Rr76uOmepETh37U/1d/HU9q5z80GaffMms2mv3DcmEXplGoc3Q69eyq\n+ZIKUoWRbSS4OFRPOuMIVppwDp/hpg4jd+fROpBl7vD1WsdSv0jWe8uY5gn13ZZD\n/SREGDCqabwjxXYHkCBzlcporYP4hTogLPYvvl5v15HkCkwLMlr2AN5VHo+1LRBh\nSuuo+K1Z9i/viTofgPkOoN/b1ngYHjzhRcQp7AVaFm3lrWflG1L+b3+iKY6EeVxG\nCUpgRHXcsqBjbbNppJGRQLcndLqjG1QPOJpCeUFWuMY1h5l/TtihuZ7B+ZpLIRqu\nc88qzPh+YscIvl0UYhD9\n=yw+T\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 8617de9667acf0497482e5190c9cef836e6c4579\nparent 2438d94d7b9c2e82e5b8cdb2bf524ad32e359c0e\nparent 5f7fb96645b19a8e68bc6e1ef156133652d7d487\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790608496 -0800\ncommitter GitHub <noreply@github.com> 1790608496 -0800\n\nMerge pull request #30 from SuperInstance/dependabot/npm_and_yarn/patch-and-minor-7cf30c4023\n\ndeps: bump the patch-and-minor group with 7 updates",
+        "verified_at": "2026-09-28T15:14:56Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt/commits/f454597dc48035d8e84bfbc7a71c86bb8824c354",
+    "html_url": "https://github.com/SuperInstance/quilt/commit/f454597dc48035d8e84bfbc7a71c86bb8824c354",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt/commits/f454597dc48035d8e84bfbc7a71c86bb8824c354/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2438d94d7b9c2e82e5b8cdb2bf524ad32e359c0e",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/commits/2438d94d7b9c2e82e5b8cdb2bf524ad32e359c0e",
+        "html_url": "https://github.com/SuperInstance/quilt/commit/2438d94d7b9c2e82e5b8cdb2bf524ad32e359c0e"
+      },
+      {
+        "sha": "5f7fb96645b19a8e68bc6e1ef156133652d7d487",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/commits/5f7fb96645b19a8e68bc6e1ef156133652d7d487",
+        "html_url": "https://github.com/SuperInstance/quilt/commit/5f7fb96645b19a8e68bc6e1ef156133652d7d487"
+      }
+    ]
+  },
+  {
+    "sha": "5f7fb96645b19a8e68bc6e1ef156133652d7d487",
+    "node_id": "C_kwDOT65oqtoAKDVmN2ZiOTY2NDViMTlhOGU2OGJjNmUxZWYxNTYxMzM2NTJkN2Q0ODc",
+    "commit": {
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "date": "2026-09-28T09:55:57Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-28T09:55:57Z"
+      },
+      "message": "deps: bump the patch-and-minor group with 7 updates\n\nBumps the patch-and-minor group with 7 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/node) | `26.6.1` | `26.6.2` |\n| [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/eslint-plugin) | `8.70.0` | `8.70.1` |\n| [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/parser) | `8.70.0` | `8.70.1` |\n| [eslint](https://github.com/eslint/eslint) | `10.10.0` | `10.11.0` |\n| [vitest](https://github.com/vitest-dev/vitest/tree/HEAD/packages/vitest) | `5.0.1` | `5.0.2` |\n| [tsx](https://github.com/privatenumber/tsx) | `4.23.13` | `4.23.15` |\n| [@modelcontextprotocol/sdk](https://github.com/modelcontextprotocol/typescript-sdk) | `1.30.0` | `1.30.1` |\n\n\nUpdates `@types/node` from 26.6.1 to 26.6.2\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/node)\n\nUpdates `@typescript-eslint/eslint-plugin` from 8.70.0 to 8.70.1\n- [Release notes](https://github.com/typescript-eslint/typescript-eslint/releases)\n- [Changelog](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/CHANGELOG.md)\n- [Commits](https://github.com/typescript-eslint/typescript-eslint/commits/v8.70.1/packages/eslint-plugin)\n\nUpdates `@typescript-eslint/parser` from 8.70.0 to 8.70.1\n- [Release notes](https://github.com/typescript-eslint/typescript-eslint/releases)\n- [Changelog](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/parser/CHANGELOG.md)\n- [Commits](https://github.com/typescript-eslint/typescript-eslint/commits/v8.70.1/packages/parser)\n\nUpdates `eslint` from 10.10.0 to 10.11.0\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Commits](https://github.com/eslint/eslint/compare/v10.10.0...v10.11.0)\n\nUpdates `vitest` from 5.0.1 to 5.0.2\n- [Release notes](https://github.com/vitest-dev/vitest/releases)\n- [Changelog](https://github.com/vitest-dev/vitest/blob/main/docs/releases.md)\n- [Commits](https://github.com/vitest-dev/vitest/commits/v5.0.2/packages/vitest)\n\nUpdates `tsx` from 4.23.13 to 4.23.15\n- [Release notes](https://github.com/privatenumber/tsx/releases)\n- [Changelog](https://github.com/privatenumber/tsx/blob/master/release.config.cjs)\n- [Commits](https://github.com/privatenumber/tsx/compare/v4.23.13...v4.23.15)\n\nUpdates `@modelcontextprotocol/sdk` from 1.30.0 to 1.30.1\n- [Release notes](https://github.com/modelcontextprotocol/typescript-sdk/releases)\n- [Commits](https://github.com/modelcontextprotocol/typescript-sdk/compare/1.30.0...1.30.1)\n\n---\nupdated-dependencies:\n- dependency-name: \"@types/node\"\n  dependency-version: 26.6.2\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: patch-and-minor\n- dependency-name: \"@typescript-eslint/eslint-plugin\"\n  dependency-version: 8.70.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: patch-and-minor\n- dependency-name: \"@typescript-eslint/parser\"\n  dependency-version: 8.70.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: patch-and-minor\n- dependency-name: eslint\n  dependency-version: 10.11.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: patch-and-minor\n- dependency-name: vitest\n  dependency-version: 5.0.2\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: patch-and-minor\n- dependency-name: tsx\n  dependency-version: 4.23.15\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: patch-and-minor\n- dependency-name: \"@modelcontextprotocol/sdk\"\n  dependency-version: 1.30.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: patch-and-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+      "tree": {
+        "sha": "8617de9667acf0497482e5190c9cef836e6c4579",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/git/trees/8617de9667acf0497482e5190c9cef836e6c4579"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt/git/commits/5f7fb96645b19a8e68bc6e1ef156133652d7d487",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqujmtCRC1aQ7uu5UhlAAAD/AQAHo6BBwYD9AY1YghEk8rOGST\nz1S5H1LYvx30IA5++poaRJOGOTFELJb/Iot1roefJYFyAYO0pcEGYN/nE0UDRoNt\nbUtxfUyQN7Ql21g/0S9Xbv0PEXiI1Os2FJAxYghfNgykPGHOkbAQLDpQ3KX9DR7E\nJBGTC4VlafItB9Wy9qmYuFb06YaBCOSLJHb+GCPXWUjPldUzi0GddXlH9YBOi7KQ\nQ2h3ee9oUlS/j1unOWnBT7s6hT3/UB9JgvKhHsWGxFWYiw5cW4shRQv6zsti1aVe\nhvTwEW1WDVfKmic/p1FwYuLz2qyZDOhjGVg2dhJ7YR3t2VhpCAPmUxpoRh0gX+UZ\nxcVA33AybIU6GxltkkpuzjpXa8KU5r+MsdX0NGr02LRo/IeG9R0I++Bt+ltS/VHo\nCqAPTj0WGkKjTEfNrXo7qU2hWVFz1bwnlYHXbhpWnDxiHqggrm5vSDzA5o8zrfgP\nkok0b0NhBfmdZObF8BSt68OSzshjETzuCgpyguANaf0YjnUN2OQItg12iJH8w/UJ\n/3EP1r1xopCMAaSqkFYsYIV1pQdq+hdrTTvJsuHJIstT2sqHog9aTqQ3BCBAU1+3\n6XOFBdpM2fcvp/z1hU4vI8KWHu/8eZ93ABtW/XAmG8OXnP5yBr3Fdl4t5KkQhuTi\nKWoPtOxzwYoti0kR6L9F\n=yia4\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 8617de9667acf0497482e5190c9cef836e6c4579\nparent 2438d94d7b9c2e82e5b8cdb2bf524ad32e359c0e\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1790589357 +0000\ncommitter GitHub <noreply@github.com> 1790589357 +0000\n\ndeps: bump the patch-and-minor group with 7 updates\n\nBumps the patch-and-minor group with 7 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/node) | `26.6.1` | `26.6.2` |\n| [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/eslint-plugin) | `8.70.0` | `8.70.1` |\n| [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/parser) | `8.70.0` | `8.70.1` |\n| [eslint](https://github.com/eslint/eslint) | `10.10.0` | `10.11.0` |\n| [vitest](https://github.com/vitest-dev/vitest/tree/HEAD/packages/vitest) | `5.0.1` | `5.0.2` |\n| [tsx](https://github.com/privatenumber/tsx) | `4.23.13` | `4.23.15` |\n| [@modelcontextprotocol/sdk](https://github.com/modelcontextprotocol/typescript-sdk) | `1.30.0` | `1.30.1` |\n\n\nUpdates `@types/node` from 26.6.1 to 26.6.2\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/node)\n\nUpdates `@typescript-eslint/eslint-plugin` from 8.70.0 to 8.70.1\n- [Release notes](https://github.com/typescript-eslint/typescript-eslint/releases)\n- [Changelog](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/CHANGELOG.md)\n- [Commits](https://github.com/typescript-eslint/typescript-eslint/commits/v8.70.1/packages/eslint-plugin)\n\nUpdates `@typescript-eslint/parser` from 8.70.0 to 8.70.1\n- [Release notes](https://github.com/typescript-eslint/typescript-eslint/releases)\n- [Changelog](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/parser/CHANGELOG.md)\n- [Commits](https://github.com/typescript-eslint/typescript-eslint/commits/v8.70.1/packages/parser)\n\nUpdates `eslint` from 10.10.0 to 10.11.0\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Commits](https://github.com/eslint/eslint/compare/v10.10.0...v10.11.0)\n\nUpdates `vitest` from 5.0.1 to 5.0.2\n- [Release notes](https://github.com/vitest-dev/vitest/releases)\n- [Changelog](https://github.com/vitest-dev/vitest/blob/main/docs/releases.md)\n- [Commits](https://github.com/vitest-dev/vitest/commits/v5.0.2/packages/vitest)\n\nUpdates `tsx` from 4.23.13 to 4.23.15\n- [Release notes](https://github.com/privatenumber/tsx/releases)\n- [Changelog](https://github.com/privatenumber/tsx/blob/master/release.config.cjs)\n- [Commits](https://github.com/privatenumber/tsx/compare/v4.23.13...v4.23.15)\n\nUpdates `@modelcontextprotocol/sdk` from 1.30.0 to 1.30.1\n- [Release notes](https://github.com/modelcontextprotocol/typescript-sdk/releases)\n- [Commits](https://github.com/modelcontextprotocol/typescript-sdk/compare/1.30.0...1.30.1)\n\n---\nupdated-dependencies:\n- dependency-name: \"@types/node\"\n  dependency-version: 26.6.2\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: patch-and-minor\n- dependency-name: \"@typescript-eslint/eslint-plugin\"\n  dependency-version: 8.70.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: patch-and-minor\n- dependency-name: \"@typescript-eslint/parser\"\n  dependency-version: 8.70.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: patch-and-minor\n- dependency-name: eslint\n  dependency-version: 10.11.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: patch-and-minor\n- dependency-name: vitest\n  dependency-version: 5.0.2\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: patch-and-minor\n- dependency-name: tsx\n  dependency-version: 4.23.15\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: patch-and-minor\n- dependency-name: \"@modelcontextprotocol/sdk\"\n  dependency-version: 1.30.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: patch-and-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+        "verified_at": "2026-09-28T09:55:57Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt/commits/5f7fb96645b19a8e68bc6e1ef156133652d7d487",
+    "html_url": "https://github.com/SuperInstance/quilt/commit/5f7fb96645b19a8e68bc6e1ef156133652d7d487",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt/commits/5f7fb96645b19a8e68bc6e1ef156133652d7d487/comments",
+    "author": {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+      "html_url": "https://github.com/apps/dependabot",
+      "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2438d94d7b9c2e82e5b8cdb2bf524ad32e359c0e",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/commits/2438d94d7b9c2e82e5b8cdb2bf524ad32e359c0e",
+        "html_url": "https://github.com/SuperInstance/quilt/commit/2438d94d7b9c2e82e5b8cdb2bf524ad32e359c0e"
+      }
+    ]
+  },
+  {
+    "sha": "2438d94d7b9c2e82e5b8cdb2bf524ad32e359c0e",
+    "node_id": "C_kwDOT65oqtoAKDI0MzhkOTRkN2I5YzJlODJlNWI4Y2RiMmJmNTI0YWQzMmUzNTljMGU",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-26T03:45:27Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-26T03:46:03Z"
+      },
+      "message": "examples: play-test fixes — listener condition edge-firing, io cells replaced by program actions where effects were silently dropped (engine patches landed upstream via classes 10-12)",
+      "tree": {
+        "sha": "698b766a77a93ec9ddd55ebe33ca1b410f37f4fa",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/git/trees/698b766a77a93ec9ddd55ebe33ca1b410f37f4fa"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt/git/commits/2438d94d7b9c2e82e5b8cdb2bf524ad32e359c0e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt/commits/2438d94d7b9c2e82e5b8cdb2bf524ad32e359c0e",
+    "html_url": "https://github.com/SuperInstance/quilt/commit/2438d94d7b9c2e82e5b8cdb2bf524ad32e359c0e",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt/commits/2438d94d7b9c2e82e5b8cdb2bf524ad32e359c0e/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "c89a12877b27ba48fc07f16e01e44e5405a546ab",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/commits/c89a12877b27ba48fc07f16e01e44e5405a546ab",
+        "html_url": "https://github.com/SuperInstance/quilt/commit/c89a12877b27ba48fc07f16e01e44e5405a546ab"
+      }
+    ]
+  },
+  {
+    "sha": "c89a12877b27ba48fc07f16e01e44e5405a546ab",
+    "node_id": "C_kwDOT65oqtoAKGM4OWExMjg3N2IyN2JhNDhmYzA3ZjE2ZTAxZTQ0ZTU0MDVhNTQ2YWI",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-25T19:16:17Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-25T19:16:17Z"
+      },
+      "message": "Merge pull request #29 from SuperInstance/effectful-deps-version-key\n\nPlaytest class 12 (welded): read-set state version in the effectful cache key",
+      "tree": {
+        "sha": "f439951579821095508dfa6a4c29b6d345b5102f",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/git/trees/f439951579821095508dfa6a4c29b6d345b5102f"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt/git/commits/c89a12877b27ba48fc07f16e01e44e5405a546ab",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqtsiBCRC1aQ7uu5UhlAAAy4UQAFBuVdHguAZgSbiWead6AqXH\n4mvkNu4gC6M3k3zDAL5fYm1YlEJeYE9b2QQdtMyp+owl+mgXmIK+t6FG8f2shqIb\n+hYZg8VnK9o/9/1gw0o9zYDOH7Gg6G3+YJqokgnukL2kjiiACIR4KkbBCdLX1oQV\nAIqaZvTBCrBeMjnjx66SOmehVDdiB4pRdOAk7nNdU/hrzbxW6FRRfyUaBL2Ek9RM\nSFiY8GqI2YZNDZedKPDjtP9ZupOZxQgi586zqS4k9+hIVGsZjK5ActML96J6eCST\noeyHotXAun8XSrWhGPM+dKNRlDsE+SURf6liZ4jylPFg0zhcgbBEleCDibVdKTYU\nUsie8ypTFHS1Ru5CQbmqfC0KZXoXQnnnnLzqwRDJjNn+KFJboUU1hoP/8XGTmkMZ\nd92uWib4fib171hrhM/waumk/oSfM++MwsxAdOta1TyEuhNmLm2RwiRTjG58/MFn\nZTPFChk1ItkR1PBPytZdqIYDYukWabbYhKZnVcysyfkBOydcZ8GFXP/rpAGvGJVw\nS8OTFhSDKZKJXjVxjIaTh5NSHTVRKiM7PMumhwE/xHonhby6I1CbdGMOJmiuB5Kq\nXgZVCBn0qgxXh5u5z79vcj7Hhxv2IoMb9+8QhWhDrPc/SVh/S1S/JrmXMZhrnaWC\nYw6JAdMnqw0ws/7FUK+x\n=YJEa\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree f439951579821095508dfa6a4c29b6d345b5102f\nparent 6892ab4946541feaa7f9faf3d87af6a78bbb1fa2\nparent 0ccb514639543acf9d27373dd35e3df16897b06e\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790363777 -0800\ncommitter GitHub <noreply@github.com> 1790363777 -0800\n\nMerge pull request #29 from SuperInstance/effectful-deps-version-key\n\nPlaytest class 12 (welded): read-set state version in the effectful cache key",
+        "verified_at": "2026-09-25T19:16:18Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt/commits/c89a12877b27ba48fc07f16e01e44e5405a546ab",
+    "html_url": "https://github.com/SuperInstance/quilt/commit/c89a12877b27ba48fc07f16e01e44e5405a546ab",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt/commits/c89a12877b27ba48fc07f16e01e44e5405a546ab/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6892ab4946541feaa7f9faf3d87af6a78bbb1fa2",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/commits/6892ab4946541feaa7f9faf3d87af6a78bbb1fa2",
+        "html_url": "https://github.com/SuperInstance/quilt/commit/6892ab4946541feaa7f9faf3d87af6a78bbb1fa2"
+      },
+      {
+        "sha": "0ccb514639543acf9d27373dd35e3df16897b06e",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/commits/0ccb514639543acf9d27373dd35e3df16897b06e",
+        "html_url": "https://github.com/SuperInstance/quilt/commit/0ccb514639543acf9d27373dd35e3df16897b06e"
+      }
+    ]
+  },
+  {
+    "sha": "0ccb514639543acf9d27373dd35e3df16897b06e",
+    "node_id": "C_kwDOT65oqtoAKDBjY2I1MTQ2Mzk1NDNhY2Y5ZDI3MzczZGQzNWUzZGYxNjg5N2IwNmU",
+    "commit": {
+      "author": {
+        "name": "CCC",
+        "email": "ccc@fleet.local",
+        "date": "2026-09-25T11:12:16Z"
+      },
+      "committer": {
+        "name": "CCC",
+        "email": "ccc@fleet.local",
+        "date": "2026-09-25T11:12:16Z"
+      },
+      "message": "playtest class 12 (welded): read-set state version in the effectful cache key\n\nz's hold'em sheet found the freeze: callKey = caller + input cannot see\nsheet state, so a repeated (caller, input) pair was served a stale\ncached verdict after match.seq reset. Classes 7+10 fixed declared-dep\ninvalidation and distinct-input honesty, but not same-input-state-change:\na program reading a cell it did NOT declare as a dep kept serving its\nfirst verdict forever.\n\nWelded alternative per docs/Z_PATCH_RECONCILE.md (quilt-arcade): record\nthe cells a program actually reads through the bound runtime during\nevaluation (patch-11 seam); bump per-cell state versions on every served\nvalue change (set/push, effectful re-eval, formula recompute, stale\nmark); a cache hit is only served while every read cell's version is\nunchanged. Fresh when the read-set changed, cached when not — patch-12\ncorrectness with main's cost profile (non-program effectful cells and\nfan-out sheets pay nothing).\n\nFAIL-first pin repeats the fish-reset freeze (3 tests): undeclared\nmatch.seq reset must flip the verdict; unrelated sets must NOT bust the\ncache; declared-dep upstream invalidation preserved. Pre-patch: pin 1\nfails (stale OPEN served). Suite 66/66 green, tsc clean.",
+      "tree": {
+        "sha": "f439951579821095508dfa6a4c29b6d345b5102f",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/git/trees/f439951579821095508dfa6a4c29b6d345b5102f"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt/git/commits/0ccb514639543acf9d27373dd35e3df16897b06e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt/commits/0ccb514639543acf9d27373dd35e3df16897b06e",
+    "html_url": "https://github.com/SuperInstance/quilt/commit/0ccb514639543acf9d27373dd35e3df16897b06e",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt/commits/0ccb514639543acf9d27373dd35e3df16897b06e/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "6892ab4946541feaa7f9faf3d87af6a78bbb1fa2",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/commits/6892ab4946541feaa7f9faf3d87af6a78bbb1fa2",
+        "html_url": "https://github.com/SuperInstance/quilt/commit/6892ab4946541feaa7f9faf3d87af6a78bbb1fa2"
+      }
+    ]
+  },
+  {
+    "sha": "6892ab4946541feaa7f9faf3d87af6a78bbb1fa2",
+    "node_id": "C_kwDOT65oqtoAKDY4OTJhYjQ5NDY1NDFmZWFhN2Y5ZmFmM2Q4N2FmNmE3OGJiYjFmYTI",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-25T00:24:04Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-25T00:24:04Z"
+      },
+      "message": "Merge pull request #27 from SuperInstance/playtest-gold-r2\n\nPlaytest-gold R2: 9 engine fix classes, FAIL-first pinned (36 → 57 tests)",
+      "tree": {
+        "sha": "102b0995381817bb64f2a7dac9c13ac518beff68",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/git/trees/102b0995381817bb64f2a7dac9c13ac518beff68"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt/git/commits/6892ab4946541feaa7f9faf3d87af6a78bbb1fa2",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqtb8lCRC1aQ7uu5UhlAAADnMQAIXFXjhvCQhILyE6TZoHDICp\ntgPAz4MUZ8YMQtpnmCBmZT36gCjHVfOWSI3GG4J7P1cjeUa4UXsgzQlpmQrxZl7e\noz8RUKyCCTA/u2L62l2ZaLyURvvE9+TJbTC14ZQ+oWlUx5JFuRl6f1xequmMMTYX\nGYGQDyblM94kUEM3O01pEypRVxdHBju4f9YzJJ2vBTHBYWNa0inlHkDDlnV1YJP/\nXgrTUhVdUqp3Y8mSFT9hBAa45pccbbyUM2vm5UQ2umtpNLX/xHy4yhU4l3DTCIQR\nL2prLD6Ymj8hyHe8XSeZEo3PJK0JVY/MiGjeS0l/rDjuGVBGUHm2r1l/6ebWPUlB\nXiaBqiVxTRSGdy+cAuhTNVTtZ8xo9/yn+n5FUb12xzHWxtJbUaenQLsyrSqj04BD\nGj0dQVjYF/UPSL6TG36rvKtN340MXEiltmCMy7KQXnfY12ZZFp6ZFJOGwKTy7Aik\nCAaoJzwUuT1iRjhwe5TiE3mVowUfMgYqjnXQBR8oIwJPMOs13C/SXP0ju1wsQY/9\nSgkOqcsGj17YCnERQKKBKB0PfDFLYi3WicEDneFLoyZ7MuhZHk1+A86Xasdycd4k\nv8M6gibkTia/bFZNWGi0WXmzmkaIkIxUNQRZONBN9vSXNlpdxDhZqyxVLseew1LN\nLyqGRJUDOGevuyNMtmj8\n=DEIK\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 102b0995381817bb64f2a7dac9c13ac518beff68\nparent 8a4d4fbe9bf2d2fa110a53fdf122c1fbeb6b1ec9\nparent 7fad2839fa25d52d1edd401e095bce382bded0cd\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790295844 -0800\ncommitter GitHub <noreply@github.com> 1790295844 -0800\n\nMerge pull request #27 from SuperInstance/playtest-gold-r2\n\nPlaytest-gold R2: 9 engine fix classes, FAIL-first pinned (36 → 57 tests)",
+        "verified_at": "2026-09-25T00:24:05Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt/commits/6892ab4946541feaa7f9faf3d87af6a78bbb1fa2",
+    "html_url": "https://github.com/SuperInstance/quilt/commit/6892ab4946541feaa7f9faf3d87af6a78bbb1fa2",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt/commits/6892ab4946541feaa7f9faf3d87af6a78bbb1fa2/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8a4d4fbe9bf2d2fa110a53fdf122c1fbeb6b1ec9",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/commits/8a4d4fbe9bf2d2fa110a53fdf122c1fbeb6b1ec9",
+        "html_url": "https://github.com/SuperInstance/quilt/commit/8a4d4fbe9bf2d2fa110a53fdf122c1fbeb6b1ec9"
+      },
+      {
+        "sha": "7fad2839fa25d52d1edd401e095bce382bded0cd",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/commits/7fad2839fa25d52d1edd401e095bce382bded0cd",
+        "html_url": "https://github.com/SuperInstance/quilt/commit/7fad2839fa25d52d1edd401e095bce382bded0cd"
+      }
+    ]
+  }
+]

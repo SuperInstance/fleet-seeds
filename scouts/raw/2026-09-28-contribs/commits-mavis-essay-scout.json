@@ -1,0 +1,326 @@
+[
+  {
+    "sha": "da73d13e3ac8d73b22f3576e6079b22035bd2ad4",
+    "node_id": "C_kwDOUxLvV9oAKGRhNzNkMTNlM2FjOGQ3M2IyMmYzNTc2ZTYwNzliMjIwMzViZDJhZDQ",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T20:06:27Z"
+      },
+      "committer": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T20:06:27Z"
+      },
+      "message": "Add voices/README.md (mavis-essay-scout POC, 2026-09-28)",
+      "tree": {
+        "sha": "7677c4897a75266a6bb3e645257e7225c1acc7f3",
+        "url": "https://api.github.com/repos/SuperInstance/mavis-essay-scout/git/trees/7677c4897a75266a6bb3e645257e7225c1acc7f3"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/mavis-essay-scout/git/commits/da73d13e3ac8d73b22f3576e6079b22035bd2ad4",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/mavis-essay-scout/commits/da73d13e3ac8d73b22f3576e6079b22035bd2ad4",
+    "html_url": "https://github.com/SuperInstance/mavis-essay-scout/commit/da73d13e3ac8d73b22f3576e6079b22035bd2ad4",
+    "comments_url": "https://api.github.com/repos/SuperInstance/mavis-essay-scout/commits/da73d13e3ac8d73b22f3576e6079b22035bd2ad4/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f650b0302c17951539cceccf79cbd7a19770fe0f",
+        "url": "https://api.github.com/repos/SuperInstance/mavis-essay-scout/commits/f650b0302c17951539cceccf79cbd7a19770fe0f",
+        "html_url": "https://github.com/SuperInstance/mavis-essay-scout/commit/f650b0302c17951539cceccf79cbd7a19770fe0f"
+      }
+    ]
+  },
+  {
+    "sha": "f650b0302c17951539cceccf79cbd7a19770fe0f",
+    "node_id": "C_kwDOUxLvV9oAKGY2NTBiMDMwMmMxNzk1MTUzOWNjZWNjZjc5Y2JkN2ExOTc3MGZlMGY",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T20:06:26Z"
+      },
+      "committer": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T20:06:26Z"
+      },
+      "message": "Add examples/QUICKSTART.md (mavis-essay-scout POC, 2026-09-28)",
+      "tree": {
+        "sha": "ca0e868dcffc9356121b87832111155d325ade0e",
+        "url": "https://api.github.com/repos/SuperInstance/mavis-essay-scout/git/trees/ca0e868dcffc9356121b87832111155d325ade0e"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/mavis-essay-scout/git/commits/f650b0302c17951539cceccf79cbd7a19770fe0f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/mavis-essay-scout/commits/f650b0302c17951539cceccf79cbd7a19770fe0f",
+    "html_url": "https://github.com/SuperInstance/mavis-essay-scout/commit/f650b0302c17951539cceccf79cbd7a19770fe0f",
+    "comments_url": "https://api.github.com/repos/SuperInstance/mavis-essay-scout/commits/f650b0302c17951539cceccf79cbd7a19770fe0f/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "18eacd8d4fb11a17a3c3cfb8940c5743fd7cf5af",
+        "url": "https://api.github.com/repos/SuperInstance/mavis-essay-scout/commits/18eacd8d4fb11a17a3c3cfb8940c5743fd7cf5af",
+        "html_url": "https://github.com/SuperInstance/mavis-essay-scout/commit/18eacd8d4fb11a17a3c3cfb8940c5743fd7cf5af"
+      }
+    ]
+  },
+  {
+    "sha": "18eacd8d4fb11a17a3c3cfb8940c5743fd7cf5af",
+    "node_id": "C_kwDOUxLvV9oAKDE4ZWFjZDhkNGZiMTFhMTdhM2MzY2ZiODk0MGM1NzQzZmQ3Y2Y1YWY",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T20:06:25Z"
+      },
+      "committer": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T20:06:25Z"
+      },
+      "message": "Add src/mavis_essay_scout.py (mavis-essay-scout POC, 2026-09-28)",
+      "tree": {
+        "sha": "2ec6b91ecdc50e2df09754fc961cdd4b9a8e99b1",
+        "url": "https://api.github.com/repos/SuperInstance/mavis-essay-scout/git/trees/2ec6b91ecdc50e2df09754fc961cdd4b9a8e99b1"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/mavis-essay-scout/git/commits/18eacd8d4fb11a17a3c3cfb8940c5743fd7cf5af",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/mavis-essay-scout/commits/18eacd8d4fb11a17a3c3cfb8940c5743fd7cf5af",
+    "html_url": "https://github.com/SuperInstance/mavis-essay-scout/commit/18eacd8d4fb11a17a3c3cfb8940c5743fd7cf5af",
+    "comments_url": "https://api.github.com/repos/SuperInstance/mavis-essay-scout/commits/18eacd8d4fb11a17a3c3cfb8940c5743fd7cf5af/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ae2d5896c5ea597549027506369dd685643c4a18",
+        "url": "https://api.github.com/repos/SuperInstance/mavis-essay-scout/commits/ae2d5896c5ea597549027506369dd685643c4a18",
+        "html_url": "https://github.com/SuperInstance/mavis-essay-scout/commit/ae2d5896c5ea597549027506369dd685643c4a18"
+      }
+    ]
+  },
+  {
+    "sha": "ae2d5896c5ea597549027506369dd685643c4a18",
+    "node_id": "C_kwDOUxLvV9oAKGFlMmQ1ODk2YzVlYTU5NzU0OTAyNzUwNjM2OWRkNjg1NjQzYzRhMTg",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T20:06:24Z"
+      },
+      "committer": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T20:06:24Z"
+      },
+      "message": "Add README.md (mavis-essay-scout POC, 2026-09-28)",
+      "tree": {
+        "sha": "9393b61e434050fc93d5d96b32760d6f9e6220d7",
+        "url": "https://api.github.com/repos/SuperInstance/mavis-essay-scout/git/trees/9393b61e434050fc93d5d96b32760d6f9e6220d7"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/mavis-essay-scout/git/commits/ae2d5896c5ea597549027506369dd685643c4a18",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/mavis-essay-scout/commits/ae2d5896c5ea597549027506369dd685643c4a18",
+    "html_url": "https://github.com/SuperInstance/mavis-essay-scout/commit/ae2d5896c5ea597549027506369dd685643c4a18",
+    "comments_url": "https://api.github.com/repos/SuperInstance/mavis-essay-scout/commits/ae2d5896c5ea597549027506369dd685643c4a18/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+
+    ]
+  }
+]

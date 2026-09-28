@@ -1,0 +1,376 @@
+[
+  {
+    "sha": "26223612412476ccfdbe667a5649c84a81852692",
+    "node_id": "C_kwDOUwoYx9oAKDI2MjIzNjEyNDEyNDc2Y2NmZGJlNjY3YTU2NDljODRhODE4NTI2OTI",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T16:39:47Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T16:39:47Z"
+      },
+      "message": "E-CS52-1 sealed: VERDICT PASS (attempt 8) — P1 FAIL-receipted (E401/E403 platform boundary, release-asset adaptation), P2 PASS via registered mtime-witness, P3 PASS from attempt 2; 8-attempt honest-failure arc table added",
+      "tree": {
+        "sha": "8c7758a6947423c2c3d8046b28b8b497ab5450f9",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/git/trees/8c7758a6947423c2c3d8046b28b8b497ab5450f9"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/git/commits/26223612412476ccfdbe667a5649c84a81852692",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/commits/26223612412476ccfdbe667a5649c84a81852692",
+    "html_url": "https://github.com/SuperInstance/quilt-codespace-lab/commit/26223612412476ccfdbe667a5649c84a81852692",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/commits/26223612412476ccfdbe667a5649c84a81852692/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "a8b6a223ee3eb5ebc472ba4e25458a3c2c15a612",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/commits/a8b6a223ee3eb5ebc472ba4e25458a3c2c15a612",
+        "html_url": "https://github.com/SuperInstance/quilt-codespace-lab/commit/a8b6a223ee3eb5ebc472ba4e25458a3c2c15a612"
+      }
+    ]
+  },
+  {
+    "sha": "a8b6a223ee3eb5ebc472ba4e25458a3c2c15a612",
+    "node_id": "C_kwDOUwoYx9oAKGE4YjZhMjIzZWUzZWI1ZWJjNDcyYmE0ZTI1NDU4YTNjMmMxNWE2MTI",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T16:37:42Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T16:37:42Z"
+      },
+      "message": "worker attempt 8: consume @superinstance/qthe@0.2.0 — the registered mtime-witness evolution (fleet law A4); prediction: verdict PASS via witness mode, mtime_binding receipted in every walk",
+      "tree": {
+        "sha": "5508bc7cd4121d822f02dde2c0d7e4bf554970f7",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/git/trees/5508bc7cd4121d822f02dde2c0d7e4bf554970f7"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/git/commits/a8b6a223ee3eb5ebc472ba4e25458a3c2c15a612",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/commits/a8b6a223ee3eb5ebc472ba4e25458a3c2c15a612",
+    "html_url": "https://github.com/SuperInstance/quilt-codespace-lab/commit/a8b6a223ee3eb5ebc472ba4e25458a3c2c15a612",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/commits/a8b6a223ee3eb5ebc472ba4e25458a3c2c15a612/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "9e394e47486254f902e669bbf95cf850061567b0",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/commits/9e394e47486254f902e669bbf95cf850061567b0",
+        "html_url": "https://github.com/SuperInstance/quilt-codespace-lab/commit/9e394e47486254f902e669bbf95cf850061567b0"
+      }
+    ]
+  },
+  {
+    "sha": "9e394e47486254f902e669bbf95cf850061567b0",
+    "node_id": "C_kwDOUwoYx9oAKDllMzk0ZTQ3NDg2MjU0ZjkwMmU2NjliYmY5NWNmODUwMDYxNTY3YjA",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T16:29:54Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T16:29:54Z"
+      },
+      "message": "worker attempt 7: reader stderr verbatim (direct invocation) + tar-vs-npm extraction isolation — same sha256 tarball refuses pins in codespace but walks in-sandbox; S5-only pass pattern says pin-table refusal, message will name the check",
+      "tree": {
+        "sha": "2a76dbbc73489c9e12bcaf47a8e633e37168d98a",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/git/trees/2a76dbbc73489c9e12bcaf47a8e633e37168d98a"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/git/commits/9e394e47486254f902e669bbf95cf850061567b0",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/commits/9e394e47486254f902e669bbf95cf850061567b0",
+    "html_url": "https://github.com/SuperInstance/quilt-codespace-lab/commit/9e394e47486254f902e669bbf95cf850061567b0",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/commits/9e394e47486254f902e669bbf95cf850061567b0/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "dd589b4b5f07d8cbc4c6d8a5824d477fc35615e3",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/commits/dd589b4b5f07d8cbc4c6d8a5824d477fc35615e3",
+        "html_url": "https://github.com/SuperInstance/quilt-codespace-lab/commit/dd589b4b5f07d8cbc4c6d8a5824d477fc35615e3"
+      }
+    ]
+  },
+  {
+    "sha": "dd589b4b5f07d8cbc4c6d8a5824d477fc35615e3",
+    "node_id": "C_kwDOUwoYx9oAKGRkNTg5YjRiNWYwN2Q4Y2JjNGM2ZDhhNTgyNGQ0NzdmYzM1NjE1ZTM",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T16:26:27Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T16:26:27Z"
+      },
+      "message": "worker attempt 6: diagnostics lane — capture consumer run_receipts per-case JSON + tarball sha256 + installed version (attempt-5 escape mechanism: 53 escapes with identical tarball passing 54/54 in-sandbox; environment delta must be localized from the receipt, not guessed)",
+      "tree": {
+        "sha": "92d06ddd723b02520a8808fea9fb546b91484e91",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/git/trees/92d06ddd723b02520a8808fea9fb546b91484e91"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/git/commits/dd589b4b5f07d8cbc4c6d8a5824d477fc35615e3",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/commits/dd589b4b5f07d8cbc4c6d8a5824d477fc35615e3",
+    "html_url": "https://github.com/SuperInstance/quilt-codespace-lab/commit/dd589b4b5f07d8cbc4c6d8a5824d477fc35615e3",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/commits/dd589b4b5f07d8cbc4c6d8a5824d477fc35615e3/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "0c001c136c435008528f41116bc9e40da9457a79",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/commits/0c001c136c435008528f41116bc9e40da9457a79",
+        "html_url": "https://github.com/SuperInstance/quilt-codespace-lab/commit/0c001c136c435008528f41116bc9e40da9457a79"
+      }
+    ]
+  },
+  {
+    "sha": "0c001c136c435008528f41116bc9e40da9457a79",
+    "node_id": "C_kwDOUwoYx9oAKDBjMDAxYzEzNmM0MzUwMDg1MjhmNDExMTZiYzllNDBkYTk0NTdhNzk",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T16:23:27Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T16:23:27Z"
+      },
+      "message": "worker attempt 5: consume @superinstance/qthe@0.1.1 — the hermetic-selftest fix cut by the attempt-4 honest FAIL (worker-caught defect: repo-relative fixture paths; v0.1.1 bundles the 49 registered rows)",
+      "tree": {
+        "sha": "c4fcbfe14c3349064b8c49fdd043eb3c2740b0c6",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/git/trees/c4fcbfe14c3349064b8c49fdd043eb3c2740b0c6"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/git/commits/0c001c136c435008528f41116bc9e40da9457a79",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/commits/0c001c136c435008528f41116bc9e40da9457a79",
+    "html_url": "https://github.com/SuperInstance/quilt-codespace-lab/commit/0c001c136c435008528f41116bc9e40da9457a79",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/commits/0c001c136c435008528f41116bc9e40da9457a79/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "dfd726454ea454f46c3604b5a8ed807b09e32528",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/commits/dfd726454ea454f46c3604b5a8ed807b09e32528",
+        "html_url": "https://github.com/SuperInstance/quilt-codespace-lab/commit/dfd726454ea454f46c3604b5a8ed807b09e32528"
+      }
+    ]
+  },
+  {
+    "sha": "dfd726454ea454f46c3604b5a8ed807b09e32528",
+    "node_id": "C_kwDOUwoYx9oAKGRmZDcyNjQ1NGVhNDU0ZjQ2YzM2MDRiNWE4ZWQ4MDdiMDllMzI1Mjg",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T16:19:03Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T16:19:03Z"
+      },
+      "message": "worker attempt 4: dual-channel consume — registry (A) then release-asset fallback (B), codespace tokens lack read:packages (E403 attempt-3 receipt); qthe v0.1.0 release asset is the channel-B artifact",
+      "tree": {
+        "sha": "432ca7393f6419a2641380d9eb8f8b17b1bb9cd3",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/git/trees/432ca7393f6419a2641380d9eb8f8b17b1bb9cd3"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/git/commits/dfd726454ea454f46c3604b5a8ed807b09e32528",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/commits/dfd726454ea454f46c3604b5a8ed807b09e32528",
+    "html_url": "https://github.com/SuperInstance/quilt-codespace-lab/commit/dfd726454ea454f46c3604b5a8ed807b09e32528",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/commits/dfd726454ea454f46c3604b5a8ed807b09e32528/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "717d0c93648000f73786bb7d35571e7199215b8d",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/commits/717d0c93648000f73786bb7d35571e7199215b8d",
+        "html_url": "https://github.com/SuperInstance/quilt-codespace-lab/commit/717d0c93648000f73786bb7d35571e7199215b8d"
+      }
+    ]
+  },
+  {
+    "sha": "717d0c93648000f73786bb7d35571e7199215b8d",
+    "node_id": "C_kwDOUwoYx9oAKDcxN2QwYzkzNjQ4MDAwZjczNzg2YmI3ZDM1NTcxZTcxOTkyMTViOGQ",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T16:16:08Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T16:16:08Z"
+      },
+      "message": "worker attempt 3: throwaway scoped .npmrc auth for npm.pkg.github.com (E401 root cause from attempt-2 honest FAIL receipt; token never printed, file destroyed post-install)",
+      "tree": {
+        "sha": "700f0dd97ba7ceab708c689dfb04d91533eccf31",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/git/trees/700f0dd97ba7ceab708c689dfb04d91533eccf31"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/git/commits/717d0c93648000f73786bb7d35571e7199215b8d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/commits/717d0c93648000f73786bb7d35571e7199215b8d",
+    "html_url": "https://github.com/SuperInstance/quilt-codespace-lab/commit/717d0c93648000f73786bb7d35571e7199215b8d",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/commits/717d0c93648000f73786bb7d35571e7199215b8d/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "412d651a32ff4e8fa8a6ca52c22e6d70ddff246a",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/commits/412d651a32ff4e8fa8a6ca52c22e6d70ddff246a",
+        "html_url": "https://github.com/SuperInstance/quilt-codespace-lab/commit/412d651a32ff4e8fa8a6ca52c22e6d70ddff246a"
+      }
+    ]
+  },
+  {
+    "sha": "412d651a32ff4e8fa8a6ca52c22e6d70ddff246a",
+    "node_id": "C_kwDOUwoYx9oAKDQxMmQ2NTFhMzJmZjRlOGZhOGE2Y2E1MmMyMmU2ZDcwZGRmZjI0NmE",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T16:13:42Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T16:13:42Z"
+      },
+      "message": "worker hardening: unconditional receipt push (token-url fallback path), env-names-only debug receipt, fail-open on missing npm — attempt 2",
+      "tree": {
+        "sha": "caee34f4ed7abd65dc3ad5165d57a722357d59bf",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/git/trees/caee34f4ed7abd65dc3ad5165d57a722357d59bf"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/git/commits/412d651a32ff4e8fa8a6ca52c22e6d70ddff246a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/commits/412d651a32ff4e8fa8a6ca52c22e6d70ddff246a",
+    "html_url": "https://github.com/SuperInstance/quilt-codespace-lab/commit/412d651a32ff4e8fa8a6ca52c22e6d70ddff246a",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/commits/412d651a32ff4e8fa8a6ca52c22e6d70ddff246a/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "3f29ecea3e39a99c7dc87e0faf243322ed6a219e",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/commits/3f29ecea3e39a99c7dc87e0faf243322ed6a219e",
+        "html_url": "https://github.com/SuperInstance/quilt-codespace-lab/commit/3f29ecea3e39a99c7dc87e0faf243322ed6a219e"
+      }
+    ]
+  },
+  {
+    "sha": "3f29ecea3e39a99c7dc87e0faf243322ed6a219e",
+    "node_id": "C_kwDOUwoYx9oAKDNmMjllY2VhM2UzOWE5OWM3ZGM4N2UwZmFmMjQzMzIyZWQ2YTIxOWU",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T15:57:39Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T15:57:39Z"
+      },
+      "message": "codespace-lab seed: ephemeral honest worker protocol + experiment E-CS52-1 (registry consume -> selftest -> self-pushed receipts)",
+      "tree": {
+        "sha": "bce062c92c6cfbb657449776b7cf33f15ce6b188",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/git/trees/bce062c92c6cfbb657449776b7cf33f15ce6b188"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/git/commits/3f29ecea3e39a99c7dc87e0faf243322ed6a219e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/commits/3f29ecea3e39a99c7dc87e0faf243322ed6a219e",
+    "html_url": "https://github.com/SuperInstance/quilt-codespace-lab/commit/3f29ecea3e39a99c7dc87e0faf243322ed6a219e",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-codespace-lab/commits/3f29ecea3e39a99c7dc87e0faf243322ed6a219e/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+
+    ]
+  }
+]

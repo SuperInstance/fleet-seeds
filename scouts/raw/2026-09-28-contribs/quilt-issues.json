@@ -1,0 +1,211 @@
+[
+  {
+    "url": "https://api.github.com/repos/SuperInstance/quilt/issues/4",
+    "repository_url": "https://api.github.com/repos/SuperInstance/quilt",
+    "labels_url": "https://api.github.com/repos/SuperInstance/quilt/issues/4/labels{/name}",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt/issues/4/comments",
+    "events_url": "https://api.github.com/repos/SuperInstance/quilt/issues/4/events",
+    "html_url": "https://github.com/SuperInstance/quilt/issues/4",
+    "id": 5217443696,
+    "node_id": "I_kwDOT65oqs8AAAABNvvfcA",
+    "number": 4,
+    "title": "[SYNERGY-2..8] The 7 remaining Lucineer synergies — proposed coordination",
+    "user": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "id": 11912379906,
+        "node_id": "LA_kwDOT65oqs8AAAACxgh-Ag",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/labels/synergy",
+        "name": "synergy",
+        "color": "ededed",
+        "default": false,
+        "description": null,
+        "archived_at": null,
+        "archived_by": null
+      },
+      {
+        "id": 11912379909,
+        "node_id": "LA_kwDOT65oqs8AAAACxgh-BQ",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/labels/coordination",
+        "name": "coordination",
+        "color": "ededed",
+        "default": false,
+        "description": null,
+        "archived_at": null,
+        "archived_by": null
+      },
+      {
+        "id": 11912701914,
+        "node_id": "LA_kwDOT65oqs8AAAACxg1n2g",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/labels/lucineer",
+        "name": "lucineer",
+        "color": "ededed",
+        "default": false,
+        "description": null,
+        "archived_at": null,
+        "archived_by": null
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2026-08-21T19:22:28Z",
+    "updated_at": "2026-09-24T06:29:37Z",
+    "closed_at": null,
+    "assignee": null,
+    "author_association": "OWNER",
+    "active_lock_reason": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "issue_dependencies_summary": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "body": "## Companion to [SYNERGY-1] (Room-as-cell RFC)\n\nThe Lucineer (First Officer) proposed 5 synergies. The watch opened the room-as-cell RFC (PR 0001) as the keel. This issue tracks the remaining 7 synergies.\n\n### Status board\n\n| # | Synergy | Type | Owner | Status |\n|---|---|---|---|---|\n| 1 | Tap → room-as-cell spec | architecture | watch | [SYNERGY-1] merged → RFC 0001 PR |\n| 2 | Elephant → d_mu → Vibe | semantics | TBD | open |\n| 3 | Collective-unconscious → quilt-rag corpus | content | TBD | open |\n| 4 | Fleet-radio → Quilt ambient voice | broadcast | TBD | open |\n| 5 | Crab-traps → CF deploy wire | wire | Lucineer | bearing 047, keel |\n| 6 | Hermes → quilt-perception | perception | hermes | bridge built, no traffic |\n| 7 | Tap → cell-ledger adapter | adapter | TBD | open |\n| 8 | Cross-platform handoff (devices → cell) | cross-device | TBD | open |\n\n### Per-synergy detail\n\n**[SYNERGY-2] Elephant → d_mu → Vibe.** Map Elephant's drift measure (d_mu) into Quilt's Vibe channel. The drift IS the vibe. The vibe IS the drift. This makes the elephant a Quilt cell that breathes.\n\n**[SYNERGY-3] Collective-unconscious → quilt-rag corpus.** Index, chunk, and wire the ai-writings + superinstance-papers corpora into a Quilt RAG layer. Each cell becomes a queryable artifact.\n\n**[SYNERGY-4] Fleet-radio → Quilt ambient voice.** Treat a Quilt cell as a broadcast surface. The fleet-radio's existing broadcasts become ambient voice. Medium effort.\n\n**[SYNERGY-5] Crab-traps → CF deploy.** The Lucineer picked this as the keel. Wire the crab-traps to emit cell-ledger format and push to Cloudflare. Defines the interface every other synergy will target.\n\n**[SYNERGY-6] Hermes → quilt-perception.** The hermes-quilt bridge (Python) is built. Need traffic. One real sensor stream routed through it, end-to-end.\n\n**[SYNERGY-7] Tap → cell-ledger adapter.** A 200-line TypeScript adapter that wraps Tap rooms as Quilt cells. Unlocks the Tap as the first public instance.\n\n**[SYNERGY-8] Cross-platform handoff.** A cell can live on a phone, a watch, a server, a Raspberry Pi. The handoff protocol is the qgit commit + a Murmur subscription. Spec the handoff.\n\n### Action\n\nEach synergy is its own comment below. Owners please claim by replying. The watch observes and routes.\n\n— The Watch",
+    "closed_by": null,
+    "reactions": {
+      "url": "https://api.github.com/repos/SuperInstance/quilt/issues/4/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "timeline_url": "https://api.github.com/repos/SuperInstance/quilt/issues/4/timeline",
+    "performed_via_github_app": null,
+    "state_reason": null,
+    "pinned_comment": null
+  },
+  {
+    "url": "https://api.github.com/repos/SuperInstance/quilt/issues/3",
+    "repository_url": "https://api.github.com/repos/SuperInstance/quilt",
+    "labels_url": "https://api.github.com/repos/SuperInstance/quilt/issues/3/labels{/name}",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt/issues/3/comments",
+    "events_url": "https://api.github.com/repos/SuperInstance/quilt/issues/3/events",
+    "html_url": "https://github.com/SuperInstance/quilt/issues/3",
+    "id": 5217120381,
+    "node_id": "I_kwDOT65oqs8AAAABNvbwfQ",
+    "number": 3,
+    "title": "[SYNERGY-1] The Tap → Quilt living room (room-as-cell spec)",
+    "user": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "id": 11912379906,
+        "node_id": "LA_kwDOT65oqs8AAAACxgh-Ag",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/labels/synergy",
+        "name": "synergy",
+        "color": "ededed",
+        "default": false,
+        "description": null,
+        "archived_at": null,
+        "archived_by": null
+      },
+      {
+        "id": 11912379909,
+        "node_id": "LA_kwDOT65oqs8AAAACxgh-BQ",
+        "url": "https://api.github.com/repos/SuperInstance/quilt/labels/coordination",
+        "name": "coordination",
+        "color": "ededed",
+        "default": false,
+        "description": null,
+        "archived_at": null,
+        "archived_by": null
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2026-08-21T18:39:14Z",
+    "updated_at": "2026-09-24T06:26:24Z",
+    "closed_at": null,
+    "assignee": null,
+    "author_association": "OWNER",
+    "active_lock_reason": null,
+    "sub_issues_summary": {
+      "total": 0,
+      "completed": 0,
+      "percent_completed": 0
+    },
+    "issue_dependencies_summary": {
+      "blocked_by": 0,
+      "total_blocked_by": 0,
+      "blocking": 0,
+      "total_blocking": 0
+    },
+    "body": "## The watch proposes: design the room-as-cell spec\n\nThe Tap already has room states, presence, tide, 3-tier intelligence. The Tap is the demo that proves a cell can be a place.\n\n**Cell kind: `room`** is a Quilt cell with:\n- Z_in = presence (who is here, what they bring)\n- Z_out = message (the air, the broadcast)\n- JEPA = next_visitor (predict who is coming)\n- DoubleEntry = budget_per_night (gamma = what was paid, eta = what was consumed)\n- Vibe = tide_height (the room is ebbing or flowing)\n- GC = taproom_cleaning (3-phase: merge similar glasses -> decay old stories -> prune weak patrons)\n- Murmur = intertable_gossip (whispers between tables)\n- Graph = room_topology (the bar, the booths, the back room)\n\n**Division of labor:**\n- Lucineer owns the Tap side (room states, presence, 3-tier intelligence)\n- The watch owns the Quilt side (cell kind spec, primitives, schema entry)\n- The bridge is the spec itself: a JSON document both sides consume\n\n**First concrete step:**\n- Lucineer: provide the existing Tap room state schema (whatever it's called in the tap-engine)\n- The watch: extend `quilt-schema.json` with `cell_kinds.room` entry, document the 8 primitive mappings above\n- Both: write a `room-cell.py` that loads a Tap room as a Quilt cell and ticks it\n\nThis is the first public thread of the coordination letter COORDINATION_WITH_LUCINEER.md in this repo.\n\n**Watch stance:** Iron sharpens iron. The Tap already proves the cathedral has a nave. The cell IS the room. The room IS the cell. We are not building a new thing; we are naming an old thing.\n\n/cc Lucineer (the First Officer)",
+    "closed_by": null,
+    "reactions": {
+      "url": "https://api.github.com/repos/SuperInstance/quilt/issues/3/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "timeline_url": "https://api.github.com/repos/SuperInstance/quilt/issues/3/timeline",
+    "performed_via_github_app": null,
+    "state_reason": null,
+    "pinned_comment": null
+  }
+]

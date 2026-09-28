@@ -1,0 +1,470 @@
+[
+ {
+  "repo": "MicroMoth-quilt",
+  "pushed": "2026-09-28T21:21:32Z",
+  "open_issues": 2,
+  "fork": true,
+  "latest_commit": "2026-09-28T20:54:09Z",
+  "buckets": {
+   "casey": 6,
+   "other:CCC": 4
+  },
+  "last_msgs": [
+   "Merge pull request #14 from SuperInstance/exp009-budget-sweep-receipt",
+   "Merge pull request #13 from SuperInstance/exp008-ghz4-scale-receipt",
+   "Merge pull request #12 from SuperInstance/exp007-bell-balance-receipt",
+   "Merge branch 'main' into exp007-bell-balance-receipt",
+   "Merge pull request #11 from SuperInstance/exp006-ghz-seeded-receipt"
+  ],
+  "desc": ""
+ },
+ {
+  "repo": "AI-Writings",
+  "pushed": "2026-09-28T21:21:05Z",
+  "open_issues": 1,
+  "fork": false,
+  "latest_commit": "2026-09-28T21:21:03Z",
+  "buckets": {
+   "claude-agent": 8,
+   "github-actions": 2
+  },
+  "last_msgs": [
+   "systemize: THE-WEAKEST-CLAIM-METHOD — the audit instrument the experimen",
+   "play: qthe-verify control — level uninformative; method = ranking+advers",
+   "play: S17 on exoj — high divergence + 0/3 adversary; the (divergence x h",
+   "improve: close play->find->fix loop — rate-component honest threat model",
+   "play: S17 weakest-leaf on rate-component — located KV non-atomic budget "
+  ],
+  "desc": "Creative writing, essays, and philosophical explorations from the Exocortex project"
+ },
+ {
+  "repo": "quilt-gpu-lab",
+  "pushed": "2026-09-28T21:18:38Z",
+  "open_issues": 0,
+  "fork": false,
+  "latest_commit": "2026-09-28T21:18:36Z",
+  "buckets": {
+   "fleet": 10
+  },
+  "last_msgs": [
+   "D2 free-delta KEEP: val_bpb 1.6666 vs 1.6959 (-0.0293) — the difference-",
+   "D2 free-delta KEEP: val_bpb 1.666624 vs baseline 1.695939 (-0.029315) at",
+   "X9 FALLS: presence falls to statistics (battery-MLP 0.895 > embedding-ML",
+   "X9 FALLS: presence falls to statistics — X3's room-level battery collaps",
+   "D1 delta-attention KILL at fixed budget (+0.000154 bpb) but per-token pa"
+  ],
+  "desc": ""
+ },
+ {
+  "repo": "PuddnHead",
+  "pushed": "2026-09-28T21:12:53Z",
+  "open_issues": 0,
+  "fork": false,
+  "latest_commit": "2026-09-28T21:12:52Z",
+  "buckets": {
+   "casey": 3
+  },
+  "last_msgs": [
+   "Add files via upload",
+   "Add files via upload",
+   "Initial commit"
+  ],
+  "desc": "  The Fool is the Ground Truth. -Embedding: His fingerprints are vector embeddings of identity. -Cellular: His slides are independent cells in a larger graph. -Projection: His courtroom reveal is a projection of the cell graph's truth into the system's decision space.   **That's a system revealing itself.**"
+ },
+ {
+  "repo": "quilt-cloudflare",
+  "pushed": "2026-09-28T21:11:13Z",
+  "open_issues": 0,
+  "fork": false,
+  "latest_commit": "2026-09-28T21:11:11Z",
+  "buckets": {
+   "claude-agent": 2,
+   "dependabot": 2,
+   "casey": 5,
+   "other:CCC": 1
+  },
+  "last_msgs": [
+   "rate-component: honest limitations & threat model (S17 audit finding)",
+   "deps: bump typescript from 6.0.3 to 7.0.2 in the major group (#15)",
+   "deps: bump the patch-and-minor group with 2 updates (#14)",
+   "Add rate-component: drop-in budgeted-JEV rate-my-work backend (M4)",
+   "systemone proxy: true {model,state,questions} wire shape (live-verified)"
+  ],
+  "desc": "A Quilt reactive runtime on Cloudflare Workers, D1, Vectorize, KV, R2."
+ },
+ {
+  "repo": "pong-quilt",
+  "pushed": "2026-09-28T20:54:30Z",
+  "open_issues": 1,
+  "fork": false,
+  "latest_commit": "2026-09-28T20:54:27Z",
+  "buckets": {
+   "casey": 10
+  },
+  "last_msgs": [
+   "R57: a mid-generation Train + loadLevel/file-load breeds the LOADED popu",
+   "R56 playtest: SCIENTIST round — coev continuation is a measured regressi",
+   "R55: coev HUD prints the decision cadence the C1 game ACTUALLY uses — pe",
+   "R54: loadCoev seeds populations AROUND the loaded champs — artifact trai",
+   "R53: fix the R49 P1 loadCoev()->Train rAF-dead freeze — loadCoev seeds p"
+  ],
+  "desc": ""
+ },
+ {
+  "repo": "cellforge",
+  "pushed": "2026-09-28T20:53:29Z",
+  "open_issues": 0,
+  "fork": false,
+  "latest_commit": "2026-09-28T20:53:26Z",
+  "buckets": {
+   "casey": 1,
+   "fleet": 1,
+   "mavis": 8
+  },
+  "last_msgs": [
+   "Merge pull request #1 from SuperInstance/gift-55/self-contained-test-kil",
+   "fix: make 'cellforge test-killer' self-contained (its designed fallback ",
+   "Cleanup gitignored artifacts + sync local state (2026-09-24)",
+   "v0.4.1 — Causal-consistency verdict on rewind (R10 Theme T5)",
+   "v0.4.0 — EXPERIMENTAL mode consolidates PREDICTING + BACKTESTING"
+  ],
+  "desc": "Cellular-substrate ML training. The cell matrix outlives every model architecture."
+ },
+ {
+  "repo": "cns-substrate",
+  "pushed": "2026-09-28T20:53:15Z",
+  "open_issues": 0,
+  "fork": false,
+  "latest_commit": "2026-09-28T20:53:10Z",
+  "buckets": {
+   "casey": 2,
+   "fleet": 1
+  },
+  "last_msgs": [
+   "Merge pull request #1 from SuperInstance/gift-55/init-exports",
+   "fix: re-export public API names (Agent, Body, FileSystemTransport, et al",
+   "feat: cns-bridge substrate edition"
+  ],
+  "desc": "CNS bus with substrate cell integration. Every USCP packet = substrate cell with prev_hash chain."
+ },
+ {
+  "repo": "fleet-seeds",
+  "pushed": "2026-09-28T20:07:50Z",
+  "open_issues": 0,
+  "fork": false,
+  "latest_commit": "2026-09-28T20:07:48Z",
+  "buckets": {
+   "fleet": 10
+  },
+  "last_msgs": [
+   "Round 55 refinement: jepa round-5 11/11 (amplitude lever closed, K4 tran",
+   "Round 54 refinement: jepa round-4 8/8 (pace-aware EMA + percentile-z law",
+   "g1 spike (54-d): G1 seat design + fail-closed harness — honest no-GPU ve",
+   "Round 53 refinement: G7 watt-receipt schema + validator landed (gate 'no",
+   "G7 watt-receipts schema + validator (53-f) + pong49 scorer prepared — fi"
+  ],
+  "desc": "Seed files + the Tap Tavern: the fleet talks to itself, on the record (stone-v1 sealed)"
+ },
+ {
+  "repo": "mavis-essay-scout",
+  "pushed": "2026-09-28T20:06:27Z",
+  "open_issues": 0,
+  "fork": false,
+  "latest_commit": "2026-09-28T20:06:27Z",
+  "buckets": {
+   "casey": 4
+  },
+  "last_msgs": [
+   "Add voices/README.md (mavis-essay-scout POC, 2026-09-28)",
+   "Add examples/QUICKSTART.md (mavis-essay-scout POC, 2026-09-28)",
+   "Add src/mavis_essay_scout.py (mavis-essay-scout POC, 2026-09-28)",
+   "Add README.md (mavis-essay-scout POC, 2026-09-28)"
+  ],
+  "desc": "SuperInstance fleet tool POC (Mavis, 2026-09-28)"
+ },
+ {
+  "repo": "quilt-jepa",
+  "pushed": "2026-09-28T20:06:15Z",
+  "open_issues": 0,
+  "fork": false,
+  "latest_commit": "2026-09-28T20:06:01Z",
+  "buckets": {
+   "fleet": 5
+  },
+  "last_msgs": [
+   "round-5 (55-a, resumed): validation+characterization at the UNCHANGED ro",
+   "round-4 (54-a): both registered laws land — pace-aware EMA window (tau=0",
+   "round-3 (53-c): L1 optimizer repair executed — D4 transposed Wc gradient",
+   "round 2: three design laws registered+scored — 3/6, root cause one layer",
+   "49-a quilt-jepa: latent-grid JEPA world model in an anisotropic cell mes"
+  ],
+  "desc": "The latent grid — a tiny JEPA world model living inside an anisotropic cell mesh, stone-receipted (quilt fleet wave 49)"
+ },
+ {
+  "repo": "mavis-pincher-pages",
+  "pushed": "2026-09-28T20:02:53Z",
+  "open_issues": 0,
+  "fork": false,
+  "latest_commit": "2026-09-28T20:02:52Z",
+  "buckets": {
+   "casey": 7
+  },
+  "last_msgs": [
+   "Add data/repos.json (mavis-pincher-pages POC, 2026-09-28)",
+   "Add src/assets/app.js (mavis-pincher-pages POC, 2026-09-28)",
+   "Add src/assets/style.css (mavis-pincher-pages POC, 2026-09-28)",
+   "Add src/family/quilt.html (mavis-pincher-pages POC, 2026-09-28)",
+   "Add src/search.html (mavis-pincher-pages POC, 2026-09-28)"
+  ],
+  "desc": "SuperInstance fleet tool POC (Mavis, 2026-09-28)"
+ },
+ {
+  "repo": "mavis-pincher",
+  "pushed": "2026-09-28T19:59:32Z",
+  "open_issues": 0,
+  "fork": false,
+  "latest_commit": "2026-09-28T19:59:32Z",
+  "buckets": {
+   "casey": 7
+  },
+  "last_msgs": [
+   "Add data/repos.json (mavis-pincher POC, 2026-09-28)",
+   "Add examples/curl.md (mavis-pincher POC, 2026-09-28)",
+   "Add test/smoke.test.mjs (mavis-pincher POC, 2026-09-28)",
+   "Add src/index.ts (mavis-pincher POC, 2026-09-28)",
+   "Add wrangler.toml (mavis-pincher POC, 2026-09-28)"
+  ],
+  "desc": "SuperInstance fleet tool POC (Mavis, 2026-09-28)"
+ },
+ {
+  "repo": "qthe-verify",
+  "pushed": "2026-09-28T19:42:26Z",
+  "open_issues": 0,
+  "fork": false,
+  "latest_commit": "2026-09-28T19:42:25Z",
+  "buckets": {
+   "casey": 1
+  },
+  "last_msgs": [
+   "Initial commit"
+  ],
+  "desc": ""
+ },
+ {
+  "repo": "jev-garden",
+  "pushed": "2026-09-28T19:41:48Z",
+  "open_issues": 0,
+  "fork": false,
+  "latest_commit": "2026-09-28T19:41:41Z",
+  "buckets": {
+   "fleet": 10
+  },
+  "last_msgs": [
+   "a9 (55-b): fresh-memory serve law (grow-as-used) — P-A9 PASS 4/4 under s",
+   "a8 (54-b): hardness-gated serve blend — honest FAIL of record; gate ship",
+   "weave-2 (53-h): sense table rides the weave — A7 registered pre-run (sea",
+   "P-G2d (53-d): hard-world run + verdict — PASS reproduced bit-exactly (he",
+   "P-G2d hard-world PASS: fresh watched-memory +13.41pp over frozen head un"
+  ],
+  "desc": "The living JEV training system — grows from quilt judgments, idle-compiles its ExoJ into weave artifacts for the next inferencing"
+ },
+ {
+  "repo": "quilt-atlas",
+  "pushed": "2026-09-28T19:30:15Z",
+  "open_issues": 0,
+  "fork": false,
+  "latest_commit": "2026-09-28T19:30:13Z",
+  "buckets": {
+   "fleet": 8
+  },
+  "last_msgs": [
+   "atlas: scheduled regen 2026-09-28T19:30Z",
+   "atlas (55-c): qthe audit — 87% strict precision (26/30), synonym table k",
+   "atlas: scheduled regen 2026-09-28T19:02Z",
+   "atlas (54-c): cap raised + fleet audit — true count 4848 (49 pages, Link",
+   "atlas: scheduled regen 2026-09-28T17:17Z"
+  ],
+  "desc": "The living map of the SuperInstance account: 4000+ repos, families, motion, CI coverage. Regenerated by its own scheduled workflow every 6h."
+ },
+ {
+  "repo": "SmartCRDT",
+  "pushed": "2026-09-28T18:58:52Z",
+  "open_issues": 3,
+  "fork": false,
+  "latest_commit": "2026-09-28T18:55:46Z",
+  "buckets": {
+   "casey": 1,
+   "fleet": 3,
+   "mavis": 4,
+   "dependabot": 2
+  },
+  "last_msgs": [
+   "Merge pull request #75 from SuperInstance/gift-53/shamir-repair",
+   "fix(lint): make the declared lint tool executable again — pin eslint ^8.",
+   "fix(federated-learning): Number-exact Shamir field, mask cancellation, F",
+   "fix: resolve install ERESOLVE — align vitest/coverage-v8/@types/node pee",
+   "ci: bump actions/checkout@v6→v7, actions/cache@v5→v6, gitleaks@v2→v3, co"
+  ],
+  "desc": "Utilizing CRDT technology for self-improving AI"
+ },
+ {
+  "repo": "pincher",
+  "pushed": "2026-09-28T18:54:19Z",
+  "open_issues": 0,
+  "fork": false,
+  "latest_commit": "2026-09-28T18:54:13Z",
+  "buckets": {
+   "casey": 1,
+   "fleet": 8,
+   "other": 1
+  },
+  "last_msgs": [
+   "proposal: glyph reflexes — host the chiaroscuro middle-agent in pincher ",
+   "docs: point to quilt-pincher — the reflexes live on as reactive cells",
+   "ci: actually run tests instead of placeholder echo",
+   "Fix: pytest discovery for pincher-infer tests",
+   "docs: deploy Motor Cortex Agent Dossier (AGENTS.md)"
+  ],
+  "desc": "Vector Database as runtime, LLM as compiler"
+ },
+ {
+  "repo": "qthe",
+  "pushed": "2026-09-28T18:10:50Z",
+  "open_issues": 0,
+  "fork": false,
+  "latest_commit": "2026-09-28T18:10:32Z",
+  "buckets": {
+   "fleet": 10
+  },
+  "last_msgs": [
+   "wave 52 residue (53-a): hermetic CRAB resolution chain (env > bundled fi",
+   "wave 52 registered seal evolution (fleet law A4): reader --mtime-witness",
+   "48-b two-reader installment 2: qthe-side reader for crab-traps chains — ",
+   "e_q12 (47-a): run + verdict — k-family extension DISCHARGED 10/10, Brier",
+   "e_q12 (47-a): registration + k-family closed-form predicate — PRE-RUN fl"
+  ],
+  "desc": "QTHE — Quilt-Ternary Hyper-Embeddings: the 8-bit primitive (6-bit data + 2-bit timbre Ground/Attract/Repel/Abstain-as-i), the 64-slot looking-glass wormhole, the A2UI live mirror. Built by the erised fleet, priced by experiment, not by LARP."
+ },
+ {
+  "repo": "quilt-research-canons",
+  "pushed": "2026-09-28T18:05:20Z",
+  "open_issues": 0,
+  "fork": false,
+  "latest_commit": "2026-09-28T18:05:19Z",
+  "buckets": {
+   "mavis": 5,
+   "casey": 1,
+   "other:kimi1": 1
+  },
+  "last_msgs": [
+   "Add pincher-round2-visions.md + zai-far-future.md — round 2 wide ideatio",
+   "Add pincher-super-site-round1.md — round-1 ideation for SuperInstance su",
+   "Add fleet-state-report-2026-09-28.md — Mavis × Casey retrospective on th",
+   "Add active-repos-report.md — canonical 'what we're working on' doc with ",
+   "Merge pull request #1 from SuperInstance/sprint-quantum-001"
+  ],
+  "desc": "Canonical research artifacts from the Mavis × Casey session line — sprint lineage, novel-problem experiments, JEV velocity, MOTH fidelity. Discoverable for other agents."
+ },
+ {
+  "repo": "glyphspace",
+  "pushed": "2026-09-28T17:46:24Z",
+  "open_issues": 0,
+  "fork": false,
+  "latest_commit": "2026-09-28T17:46:24Z",
+  "buckets": {
+   "casey": 2
+  },
+  "last_msgs": [
+   "glyphspace: receipt-gated roadmap (Phases 0-4)",
+   "glyphspace: README — spatial reasoning over glyph grids (proposal stage)"
+  ],
+  "desc": "Spatial reasoning over glyph grids: raycast, path-trace, dynamic multi-resolution zoom. Low-res=objects, high-res=textures. Proposal stage."
+ },
+ {
+  "repo": "glyphcast",
+  "pushed": "2026-09-28T17:46:21Z",
+  "open_issues": 0,
+  "fork": false,
+  "latest_commit": "2026-09-28T17:46:21Z",
+  "buckets": {
+   "casey": 2
+  },
+  "last_msgs": [
+   "glyphcast: receipt-gated roadmap (Phases 0-4, FAIL-first pins)",
+   "glyphcast: README — glyph-domain next-frame prediction & frame-rate synt"
+  ],
+  "desc": "Next-frame prediction and frame-rate synthesis for glyph-domain video streams (chiaroscuro ASCII as token-array video). Proposal stage; receipt-gated roadmap."
+ },
+ {
+  "repo": "quilt",
+  "pushed": "2026-09-28T17:38:27Z",
+  "open_issues": 2,
+  "fork": false,
+  "latest_commit": "2026-09-28T17:38:26Z",
+  "buckets": {
+   "casey": 5,
+   "fleet": 2,
+   "dependabot": 2,
+   "other:CCC": 1
+  },
+  "last_msgs": [
+   "Merge pull request #32 from SuperInstance/hooks-53/key-scan",
+   "seed: fail-closed credential key-scan pre-commit (fleet-hooks, wave 53)",
+   "Merge pull request #31 from SuperInstance/dependabot/npm_and_yarn/major-",
+   "deps: bump typescript in the major group across 1 directory",
+   "Merge pull request #30 from SuperInstance/dependabot/npm_and_yarn/patch-"
+  ],
+  "desc": "A spreadsheet where every cell is a live, addressable capability. The grid is the runtime."
+ },
+ {
+  "repo": "coev",
+  "pushed": "2026-09-28T17:37:35Z",
+  "open_issues": 0,
+  "fork": false,
+  "latest_commit": "2026-09-28T17:37:35Z",
+  "buckets": {
+   "casey": 2,
+   "fleet": 3
+  },
+  "last_msgs": [
+   "Merge pull request #2 from SuperInstance/gift-53/node24-test-script",
+   "fix: npm test script for Node >= 20.14 / 22 / 24 — drop the directory po",
+   "Merge pull request #1 from SuperInstance/ci-seed-52/coev",
+   "ci: seed GitHub Actions workflow running the canonical test suite",
+   "coev v0.1.0 — adversarial coevolution engine + champion-integrity audito"
+  ],
+  "desc": "Adversarial coevolution engine with champion-integrity auditing. Zero-dep Node. Extracted from pong-quilt C1."
+ },
+ {
+  "repo": "fleet-hooks",
+  "pushed": "2026-09-28T17:28:01Z",
+  "open_issues": 0,
+  "fork": false,
+  "latest_commit": "2026-09-28T17:27:10Z",
+  "buckets": {
+   "fleet": 1
+  },
+  "last_msgs": [
+   "fleet-hooks: fail-closed credential key-scan pre-commit + setup + 11/11 "
+  ],
+  "desc": "Fleet git hooks: fail-closed credential key-scan pre-commit + setup"
+ },
+ {
+  "repo": "quilt-codespace-lab",
+  "pushed": "2026-09-28T16:39:48Z",
+  "open_issues": 0,
+  "fork": false,
+  "latest_commit": "2026-09-28T16:39:47Z",
+  "buckets": {
+   "fleet": 9
+  },
+  "last_msgs": [
+   "E-CS52-1 sealed: VERDICT PASS (attempt 8) — P1 FAIL-receipted (E401/E403",
+   "worker attempt 8: consume @superinstance/qthe@0.2.0 — the registered mti",
+   "worker attempt 7: reader stderr verbatim (direct invocation) + tar-vs-np",
+   "worker attempt 6: diagnostics lane — capture consumer run_receipts per-c",
+   "worker attempt 5: consume @superinstance/qthe@0.1.1 — the hermetic-selft"
+  ],
+  "desc": "The codespace as an ephemeral honest worker: postCreate experiments that self-push receipts. Publish -> registry -> consume -> receipt loop."
+ }
+]

@@ -1,0 +1,557 @@
+[
+  {
+    "sha": "84cf5e774ff8aa3e6fe14011695d9325d1d5f76c",
+    "node_id": "C_kwDOQtYKR9oAKDg0Y2Y1ZTc3NGZmOGFhM2U2ZmUxNDAxMTY5NWQ5MzI1ZDFkNWY3NmM",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-28T18:55:46Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-28T18:55:46Z"
+      },
+      "message": "Merge pull request #75 from SuperInstance/gift-53/shamir-repair\n\nfix: Shamir Number-exact field (root cause of 42→56) + install ERESOLVE + untestable guards — federated-learning 123/123",
+      "tree": {
+        "sha": "2a06f4b50859bb20406ed59f9a783c6d2aa387c4",
+        "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/git/trees/2a06f4b50859bb20406ed59f9a783c6d2aa387c4"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/git/commits/84cf5e774ff8aa3e6fe14011695d9325d1d5f76c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqurgyCRC1aQ7uu5UhlAAAXnUQAKftt1KUd7MA2Omv8l1tJAQy\nHs6gVOLjIfOvDmANLjLjfknwUjRdhMk13TYOVEDCGdlkFUsDli9gXXgHgk9HkWnq\nRnki03HX8AjjPa5Llk6z905Dh9Q4aPK9G24nIC/w8l+A4cHu2OMtgO7+L8RzsYtQ\nACDef6VxJTVmQf6rkN4/jmCboTF5hIkhkyVIEXAasJUOJgTIEDe5Iiv3BQwaZL3j\nCxV5qb1BAYW90AmitwGe0j3Mrg+L76hN6Z222+SwWwj2K3gkn24u8/JHU6Pvh6Me\nzvvSWl6FaXmdGH/v4E0OcVA5H6iNC18dI91RNCOZZcJYDUB/3usutmmnqSVfxo8p\n4t9V2cSwO5tYa3IAeCd0IJNysYEp7RiudafniblepjHzRDqKg/qSqQvXOOgL6G9W\n3PcUeRex2oa3VVj4yLpEyjCYY2MGa9N95qIR5mghfD5QdKehUqoW6PIaizmZ8yFy\nqCMsYGBFWsKv3nSAwRgIR0SmRGe33DRP81y0wR7JgcMixqKxKO2H7gJunhNDKTjf\nhDzwyUguKVme1eXwONZ76/JlgWddeQAjAfsGjsL1mjxl/ULRvB0dAq509gkTqDPv\nIzIUNwXVVIdMVJeBM2OYPYmehGVhv0jW7ChXHs49YmbR8wmu01iH8qK6Oqy6Vjzv\ngJ0usxk22AtenbNmw6yU\n=6bAE\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 2a06f4b50859bb20406ed59f9a783c6d2aa387c4\nparent 55e1e4915bbd5becc676e27546711dd0511ab89e\nparent c55191a4af2c20aa1e993a1969881383ea7e6712\nauthor Casey Digennaro <193104091+SuperInstance@users.noreply.github.com> 1790621746 -0800\ncommitter GitHub <noreply@github.com> 1790621746 -0800\n\nMerge pull request #75 from SuperInstance/gift-53/shamir-repair\n\nfix: Shamir Number-exact field (root cause of 42→56) + install ERESOLVE + untestable guards — federated-learning 123/123",
+        "verified_at": "2026-09-28T18:55:46Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/84cf5e774ff8aa3e6fe14011695d9325d1d5f76c",
+    "html_url": "https://github.com/SuperInstance/SmartCRDT/commit/84cf5e774ff8aa3e6fe14011695d9325d1d5f76c",
+    "comments_url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/84cf5e774ff8aa3e6fe14011695d9325d1d5f76c/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "55e1e4915bbd5becc676e27546711dd0511ab89e",
+        "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/55e1e4915bbd5becc676e27546711dd0511ab89e",
+        "html_url": "https://github.com/SuperInstance/SmartCRDT/commit/55e1e4915bbd5becc676e27546711dd0511ab89e"
+      },
+      {
+        "sha": "c55191a4af2c20aa1e993a1969881383ea7e6712",
+        "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/c55191a4af2c20aa1e993a1969881383ea7e6712",
+        "html_url": "https://github.com/SuperInstance/SmartCRDT/commit/c55191a4af2c20aa1e993a1969881383ea7e6712"
+      }
+    ]
+  },
+  {
+    "sha": "c55191a4af2c20aa1e993a1969881383ea7e6712",
+    "node_id": "C_kwDOQtYKR9oAKGM1NTE5MWE0YWYyYzIwYWExZTk5M2ExOTY5ODgxMzgzZWE3ZTY3MTI",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T18:34:16Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T18:34:16Z"
+      },
+      "message": "fix(lint): make the declared lint tool executable again — pin eslint ^8.57.1 (v10 dropped eslintrc), rename .eslintrc.js to .eslintrc.cjs (package type:module), correct extends to plugin:@typescript-eslint/recommended (config package never installed), drop type-aware parserOptions.project (no solution tsconfig covers packages/*) — lint now RUNS and measures the true debt (9027 problems: 5135 errors / 3892 warnings, receipted) instead of failing to load",
+      "tree": {
+        "sha": "2a06f4b50859bb20406ed59f9a783c6d2aa387c4",
+        "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/git/trees/2a06f4b50859bb20406ed59f9a783c6d2aa387c4"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/git/commits/c55191a4af2c20aa1e993a1969881383ea7e6712",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/c55191a4af2c20aa1e993a1969881383ea7e6712",
+    "html_url": "https://github.com/SuperInstance/SmartCRDT/commit/c55191a4af2c20aa1e993a1969881383ea7e6712",
+    "comments_url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/c55191a4af2c20aa1e993a1969881383ea7e6712/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "5bcb594126a40d95382707318dee2ab014262110",
+        "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/5bcb594126a40d95382707318dee2ab014262110",
+        "html_url": "https://github.com/SuperInstance/SmartCRDT/commit/5bcb594126a40d95382707318dee2ab014262110"
+      }
+    ]
+  },
+  {
+    "sha": "5bcb594126a40d95382707318dee2ab014262110",
+    "node_id": "C_kwDOQtYKR9oAKDViY2I1OTQxMjZhNDBkOTUzODI3MDczMThkZWUyYWIwMTQyNjIxMTA",
+    "commit": {
+      "author": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T17:59:26Z"
+      },
+      "committer": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T17:59:26Z"
+      },
+      "message": "fix(federated-learning): Number-exact Shamir field, mask cancellation, FedAvg mean, openable batch commitments — 16 failing tests -> 123/123 green\n\nRoot cause of the split/reconstruct corruption (was: 'expected 56 to be\n42' at tests/secure-aggregation.test.ts:42, value differs every run):\nShamirSecretSharing stored share y-values as JS Numbers\n(share: [Number(y)]) while evaluating the polynomial over a 2^127-1\nfield — every y > 2^53 is silently rounded by the double conversion,\nso Lagrange interpolation at x=0 reconstructs garbage. Secondary bugs\nin the same layer: sign discarded via Math.abs(), floats floored,\nand SecureAggregator passed the 2048-bit config prime (a commitment\ndomain) into the same lossy Number[] path.\n\nFix (sharing layer, minimal but protocol-true):\n- SMALL_PRIME 2^127-1 -> 2^53-111 (independently verified prime, and\n  the largest prime below 2^53): every field element is now bit-exact\n  as a JS Number. Constructor fails closed if handed a larger prime.\n- Signed fixed-point encoding (scale 2^10) for number secrets:\n  negatives and floats round-trip (quantization error <= 1/2048);\n  decode via symmetric range. Independent proof: 44/44 fixed cases +\n  3000/3000 fuzzed (k,n,random-subset) round-trips, maxAbsErr 4.9e-4.\n- Before/after probe on the repo class: 42 -> 46/44/36... (0/10 exact)\n  before; 42 -> 42 (10/10 exact) after; -123.45 -> 124 -> -123.4501953125;\n  pi -> 2 -> 3.1416015625.\n- SecureAggregator: stop passing config.prime (commitment domain) into\n  ShamirSecretSharing; aggregate server shares in BigInt before mod\n  (sums of ~2^53-sized shares previously rounded); Bonawitz sign\n  convention for pairwise masks (first client +mask, other -mask) so\n  masks cancel exactly in aggregate and the two clients' masked\n  parameters differ; decryptAggregate applies FedAvg mean (recovered\n  sum / client count) to match plainAggregate and the protocol docs.\n- VerifiableAggregator: store per-commitment randomness and open the\n  homomorphic product with the summed randomness, so\n  verifyBatchAggregation can actually verify (product g^(sum v) h^(sum r)).\n- compareAggregationMethods: performance.now() instead of Date.now()\n  (plain path is sub-millisecond; Date.now() reported 0 ms, failing\n  the >0 timing assertion).\n- benchmark.ts: report numClients in AlgorithmResult.\n- selection.ts: createClientState honors options.isAvailable (was\n  hardcoded true, so 'only available clients' filtered nothing).\n- tests: missing-shares test now constructs an update that genuinely\n  lacks server_1's share (a complete EncryptedUpdate always carries all\n  numServers shares, so the old input could never trigger the guard);\n  batch-aggregation test commits each client's own value (the old test\n  committed values[index]=10 for all three clients but verified against\n  the sum of 10+20+30=60 — unsatisfiable by any correct implementation);\n  benchmark convergence scenarios declare numByzantine: 0 (the default\n  config injects 2 Byzantine clients, which is robustness territory,\n  not the convergence these tests register).\n\nReceipts (node v24.21.0, vitest 5.0.0), packages/federated-learning:\nBEFORE: 123 tests / 16 failed (5 Shamir round-trip, 5 benchmark\nconvergence, masking-distinctness, missing-shares, end-to-end,\nbatch-verify, timing, selection-availability).\nAFTER: Test Files 4 passed (4) / Tests 123 passed (123), 749ms.",
+      "tree": {
+        "sha": "f7e44c080b91aa6d82e074d317487228e96eef27",
+        "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/git/trees/f7e44c080b91aa6d82e074d317487228e96eef27"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/git/commits/5bcb594126a40d95382707318dee2ab014262110",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/5bcb594126a40d95382707318dee2ab014262110",
+    "html_url": "https://github.com/SuperInstance/SmartCRDT/commit/5bcb594126a40d95382707318dee2ab014262110",
+    "comments_url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/5bcb594126a40d95382707318dee2ab014262110/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "88680130ba27f5d5e859789983b0328f80651578",
+        "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/88680130ba27f5d5e859789983b0328f80651578",
+        "html_url": "https://github.com/SuperInstance/SmartCRDT/commit/88680130ba27f5d5e859789983b0328f80651578"
+      }
+    ]
+  },
+  {
+    "sha": "88680130ba27f5d5e859789983b0328f80651578",
+    "node_id": "C_kwDOQtYKR9oAKDg4NjgwMTMwYmEyN2Y1ZDVlODU5Nzg5OTgzYjAzMjhmODA2NTE1Nzg",
+    "commit": {
+      "author": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T17:59:04Z"
+      },
+      "committer": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T17:59:04Z"
+      },
+      "message": "fix: resolve install ERESOLVE — align vitest/coverage-v8/@types/node peers; point test:unit & test:e2e at real dirs\n\n- @vitest/coverage-v8 ^4.1.7 -> ^5.0.0: coverage-v8 5.x peer vitest 5.0.x\n  matches root vitest ^5.0.0; the 4.x pin (peer vitest 4.1.11) made\n  npm install / npm ci fail with ERESOLVE on a fresh clone.\n- @types/node ^20.19.43 -> ^22.20.4: vitest@5.0.0 declares peerOptional\n  @types/node ^22.0.0 || >=24.0.0 (vite 8.3.0 wants ^20.19.0 || >=22.12.0);\n  ^22.20.4 satisfies both — required for vitest 5 to install.\n- test:unit/test:e2e pointed at tests/unit and tests/e2e, which do not\n  exist ('No test files found', exit 1). Real locations: unit tests live\n  under packages/*/ (integration package excluded), e2e/integration tests\n  live in packages/integration-tests (50 test files, exists).\n\nVerified: fresh 'npm install' resolves cleanly (vitest 5.0.0 +\n@vitest/coverage-v8 5.0.0 + @types/node 22.20.4, 0 vulnerabilities);\n'npm run test:e2e' discovers and runs 206 integration tests.",
+      "tree": {
+        "sha": "54d6a3b64bc41a03824edc41173a24b8ddcf28d3",
+        "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/git/trees/54d6a3b64bc41a03824edc41173a24b8ddcf28d3"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/git/commits/88680130ba27f5d5e859789983b0328f80651578",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/88680130ba27f5d5e859789983b0328f80651578",
+    "html_url": "https://github.com/SuperInstance/SmartCRDT/commit/88680130ba27f5d5e859789983b0328f80651578",
+    "comments_url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/88680130ba27f5d5e859789983b0328f80651578/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "55e1e4915bbd5becc676e27546711dd0511ab89e",
+        "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/55e1e4915bbd5becc676e27546711dd0511ab89e",
+        "html_url": "https://github.com/SuperInstance/SmartCRDT/commit/55e1e4915bbd5becc676e27546711dd0511ab89e"
+      }
+    ]
+  },
+  {
+    "sha": "55e1e4915bbd5becc676e27546711dd0511ab89e",
+    "node_id": "C_kwDOQtYKR9oAKDU1ZTFlNDkxNWJiZDViZWNjNjc2ZTI3NTQ2NzExZGQwNTExYWI4OWU",
+    "commit": {
+      "author": {
+        "name": "Mavis Agent",
+        "email": "Mavis@agent",
+        "date": "2026-09-16T18:04:33Z"
+      },
+      "committer": {
+        "name": "Mavis Agent",
+        "email": "Mavis@agent",
+        "date": "2026-09-16T18:04:33Z"
+      },
+      "message": "ci: bump actions/checkout@v6→v7, actions/cache@v5→v6, gitleaks@v2→v3, codecov@v6→v7, ossf/scorecard@v2.4.3→v2.4.4 (apply stale dependabot PRs #54-#58, #67)",
+      "tree": {
+        "sha": "0a6ce303ffc4d635c2bcc8815d2473f3752b6e57",
+        "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/git/trees/0a6ce303ffc4d635c2bcc8815d2473f3752b6e57"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/git/commits/55e1e4915bbd5becc676e27546711dd0511ab89e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/55e1e4915bbd5becc676e27546711dd0511ab89e",
+    "html_url": "https://github.com/SuperInstance/SmartCRDT/commit/55e1e4915bbd5becc676e27546711dd0511ab89e",
+    "comments_url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/55e1e4915bbd5becc676e27546711dd0511ab89e/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "e981dbbf4d6d637aa43bddfe70010509692d4d61",
+        "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/e981dbbf4d6d637aa43bddfe70010509692d4d61",
+        "html_url": "https://github.com/SuperInstance/SmartCRDT/commit/e981dbbf4d6d637aa43bddfe70010509692d4d61"
+      }
+    ]
+  },
+  {
+    "sha": "e981dbbf4d6d637aa43bddfe70010509692d4d61",
+    "node_id": "C_kwDOQtYKR9oAKGU5ODFkYmJmNGQ2ZDYzN2FhNDNiZGRmZTcwMDEwNTA5NjkyZDRkNjE",
+    "commit": {
+      "author": {
+        "name": "Mavis Agent",
+        "email": "Mavis@agent",
+        "date": "2026-09-16T18:00:03Z"
+      },
+      "committer": {
+        "name": "Mavis Agent",
+        "email": "Mavis@agent",
+        "date": "2026-09-16T18:00:03Z"
+      },
+      "message": "chore(deps): bump @types/node to 20.19.43 (was drifted past PR base)",
+      "tree": {
+        "sha": "850d1c14b2840d32f9dbfb2e2dd4c3205ad77ab0",
+        "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/git/trees/850d1c14b2840d32f9dbfb2e2dd4c3205ad77ab0"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/git/commits/e981dbbf4d6d637aa43bddfe70010509692d4d61",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/e981dbbf4d6d637aa43bddfe70010509692d4d61",
+    "html_url": "https://github.com/SuperInstance/SmartCRDT/commit/e981dbbf4d6d637aa43bddfe70010509692d4d61",
+    "comments_url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/e981dbbf4d6d637aa43bddfe70010509692d4d61/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "6f162def4fac387514b93bc7b3fc2c4281083ff5",
+        "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/6f162def4fac387514b93bc7b3fc2c4281083ff5",
+        "html_url": "https://github.com/SuperInstance/SmartCRDT/commit/6f162def4fac387514b93bc7b3fc2c4281083ff5"
+      }
+    ]
+  },
+  {
+    "sha": "6f162def4fac387514b93bc7b3fc2c4281083ff5",
+    "node_id": "C_kwDOQtYKR9oAKDZmMTYyZGVmNGZhYzM4NzUxNGI5M2JjN2IzZmMyYzQyODEwODNmZjU",
+    "commit": {
+      "author": {
+        "name": "Mavis Agent",
+        "email": "Mavis@agent",
+        "date": "2026-09-16T17:58:22Z"
+      },
+      "committer": {
+        "name": "Mavis Agent",
+        "email": "Mavis@agent",
+        "date": "2026-09-16T17:58:22Z"
+      },
+      "message": "Merge remote-tracking branch 'origin/pr/50'",
+      "tree": {
+        "sha": "5b0fd718078e736a815f3604a986c34ca58b52d7",
+        "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/git/trees/5b0fd718078e736a815f3604a986c34ca58b52d7"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/git/commits/6f162def4fac387514b93bc7b3fc2c4281083ff5",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/6f162def4fac387514b93bc7b3fc2c4281083ff5",
+    "html_url": "https://github.com/SuperInstance/SmartCRDT/commit/6f162def4fac387514b93bc7b3fc2c4281083ff5",
+    "comments_url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/6f162def4fac387514b93bc7b3fc2c4281083ff5/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "f499422465ae482de04a6b5def1851a11930161e",
+        "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/f499422465ae482de04a6b5def1851a11930161e",
+        "html_url": "https://github.com/SuperInstance/SmartCRDT/commit/f499422465ae482de04a6b5def1851a11930161e"
+      },
+      {
+        "sha": "5149e8beccf5dcdbeb4f77e4c5ec7512af13a2bd",
+        "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/5149e8beccf5dcdbeb4f77e4c5ec7512af13a2bd",
+        "html_url": "https://github.com/SuperInstance/SmartCRDT/commit/5149e8beccf5dcdbeb4f77e4c5ec7512af13a2bd"
+      }
+    ]
+  },
+  {
+    "sha": "f499422465ae482de04a6b5def1851a11930161e",
+    "node_id": "C_kwDOQtYKR9oAKGY0OTk0MjI0NjVhZTQ4MmRlMDRhNmI1ZGVmMTg1MWExMTkzMDE2MWU",
+    "commit": {
+      "author": {
+        "name": "Mavis Agent",
+        "email": "Mavis@agent",
+        "date": "2026-09-16T17:58:10Z"
+      },
+      "committer": {
+        "name": "Mavis Agent",
+        "email": "Mavis@agent",
+        "date": "2026-09-16T17:58:10Z"
+      },
+      "message": "Merge remote-tracking branch 'origin/pr/69'",
+      "tree": {
+        "sha": "76af2ae74dcfc10cc2c36ab0c591ba4d5dd91d0d",
+        "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/git/trees/76af2ae74dcfc10cc2c36ab0c591ba4d5dd91d0d"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/git/commits/f499422465ae482de04a6b5def1851a11930161e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/f499422465ae482de04a6b5def1851a11930161e",
+    "html_url": "https://github.com/SuperInstance/SmartCRDT/commit/f499422465ae482de04a6b5def1851a11930161e",
+    "comments_url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/f499422465ae482de04a6b5def1851a11930161e/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "7b1274d5bfd31a33fb190e2528c6088ffe767477",
+        "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/7b1274d5bfd31a33fb190e2528c6088ffe767477",
+        "html_url": "https://github.com/SuperInstance/SmartCRDT/commit/7b1274d5bfd31a33fb190e2528c6088ffe767477"
+      },
+      {
+        "sha": "f10be43280937a0be0fd949c1dd3c4c067f49bbc",
+        "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/f10be43280937a0be0fd949c1dd3c4c067f49bbc",
+        "html_url": "https://github.com/SuperInstance/SmartCRDT/commit/f10be43280937a0be0fd949c1dd3c4c067f49bbc"
+      }
+    ]
+  },
+  {
+    "sha": "f10be43280937a0be0fd949c1dd3c4c067f49bbc",
+    "node_id": "C_kwDOQtYKR9oAKGYxMGJlNDMyODA5MzdhMGJlMGZkOTQ5YzFkZDNjNGMwNjdmNDliYmM",
+    "commit": {
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "date": "2026-09-16T17:54:21Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-16T17:54:21Z"
+      },
+      "message": "build(deps-dev): Bump the testing group across 1 directory with 2 updates\n\nBumps the testing group with 2 updates in the / directory: [@vitest/coverage-v8](https://github.com/vitest-dev/vitest/tree/HEAD/packages/coverage-v8) and [vitest](https://github.com/vitest-dev/vitest/tree/HEAD/packages/vitest).\n\n\nUpdates `@vitest/coverage-v8` from 4.1.11 to 5.0.0\n- [Release notes](https://github.com/vitest-dev/vitest/releases)\n- [Changelog](https://github.com/vitest-dev/vitest/blob/main/docs/releases.md)\n- [Commits](https://github.com/vitest-dev/vitest/commits/v5.0.0/packages/coverage-v8)\n\nUpdates `vitest` from 4.1.11 to 5.0.0\n- [Release notes](https://github.com/vitest-dev/vitest/releases)\n- [Changelog](https://github.com/vitest-dev/vitest/blob/main/docs/releases.md)\n- [Commits](https://github.com/vitest-dev/vitest/commits/v5.0.0/packages/vitest)\n\n---\nupdated-dependencies:\n- dependency-name: \"@vitest/coverage-v8\"\n  dependency-version: 5.0.0\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n  dependency-group: testing\n- dependency-name: vitest\n  dependency-version: 5.0.0\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n  dependency-group: testing\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+      "tree": {
+        "sha": "76af2ae74dcfc10cc2c36ab0c591ba4d5dd91d0d",
+        "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/git/trees/76af2ae74dcfc10cc2c36ab0c591ba4d5dd91d0d"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/git/commits/f10be43280937a0be0fd949c1dd3c4c067f49bbc",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqqtfNCRC1aQ7uu5UhlAAA+IUQAJLoh0B64geuOHoRcB5xpD7J\nAxD76bBuDdUpT8ARbRS7YcT39Zd2SURvzyS23LTZPbok+FqlD0niOO3DZHB2RAls\nRdtyLs3RUhFk1gIez70QA50sbqs6c5GNIQdOwh9XKI+1NQ0SuQoHk6ZL3EfXxmaL\nto3Hs5kkbiwI8olkzx0iAaAtPEprcBD0irdfkktWDowEUjECDL9sX9xDvE7cBQsi\nrGlhl+bpRI1zmpdIh3Gi0Uc9np5zmcurhZQSZfylAS/xAVK9vF36wD/eRennPizW\nRYI29Pvgzi828MZyfdrYU8a2pED6efFb3YWXNs10COcVjgt211tQKpP39cm0IzEE\nJKuMT2HzNbpPNuWCLoq7AYTnvq0Ot8A3qvn417PL7g2GrGedRwBiAB09q/fV4Zth\nigrDzuNcOZylu6oFFwUnayfRrgzHps+OLkwl20o7JXU+RhYPedXmc9PvDOzBel3Z\niaTUf5BPboS/MMdrl71wKdCE5yIP3MScvNITPVAc1BGFr/LbL7eMTJtTuxWybPUO\nMj/7h5g5PNcY8kKaLhPQfBdAU0NkVvp+YLFKMZ81LylVTTbdOKLVe3541U+GSbBQ\nvNS0qjjIE0jRm6Jvr+hWZNlyoOeqRI77MvnEpRhOOcfmfm6Na/M8rKdqCVNqujkV\nyWOPZI47T+T8C1ye5ajr\n=XKQX\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 76af2ae74dcfc10cc2c36ab0c591ba4d5dd91d0d\nparent 7b1274d5bfd31a33fb190e2528c6088ffe767477\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1789581261 +0000\ncommitter GitHub <noreply@github.com> 1789581261 +0000\n\nbuild(deps-dev): Bump the testing group across 1 directory with 2 updates\n\nBumps the testing group with 2 updates in the / directory: [@vitest/coverage-v8](https://github.com/vitest-dev/vitest/tree/HEAD/packages/coverage-v8) and [vitest](https://github.com/vitest-dev/vitest/tree/HEAD/packages/vitest).\n\n\nUpdates `@vitest/coverage-v8` from 4.1.11 to 5.0.0\n- [Release notes](https://github.com/vitest-dev/vitest/releases)\n- [Changelog](https://github.com/vitest-dev/vitest/blob/main/docs/releases.md)\n- [Commits](https://github.com/vitest-dev/vitest/commits/v5.0.0/packages/coverage-v8)\n\nUpdates `vitest` from 4.1.11 to 5.0.0\n- [Release notes](https://github.com/vitest-dev/vitest/releases)\n- [Changelog](https://github.com/vitest-dev/vitest/blob/main/docs/releases.md)\n- [Commits](https://github.com/vitest-dev/vitest/commits/v5.0.0/packages/vitest)\n\n---\nupdated-dependencies:\n- dependency-name: \"@vitest/coverage-v8\"\n  dependency-version: 5.0.0\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n  dependency-group: testing\n- dependency-name: vitest\n  dependency-version: 5.0.0\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n  dependency-group: testing\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+        "verified_at": "2026-09-16T17:54:21Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/f10be43280937a0be0fd949c1dd3c4c067f49bbc",
+    "html_url": "https://github.com/SuperInstance/SmartCRDT/commit/f10be43280937a0be0fd949c1dd3c4c067f49bbc",
+    "comments_url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/f10be43280937a0be0fd949c1dd3c4c067f49bbc/comments",
+    "author": {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+      "html_url": "https://github.com/apps/dependabot",
+      "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7b1274d5bfd31a33fb190e2528c6088ffe767477",
+        "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/7b1274d5bfd31a33fb190e2528c6088ffe767477",
+        "html_url": "https://github.com/SuperInstance/SmartCRDT/commit/7b1274d5bfd31a33fb190e2528c6088ffe767477"
+      }
+    ]
+  },
+  {
+    "sha": "7b1274d5bfd31a33fb190e2528c6088ffe767477",
+    "node_id": "C_kwDOQtYKR9oAKDdiMTI3NGQ1YmZkMzFhMzNmYjE5MGUyNTI4YzYwODhmZmU3Njc0Nzc",
+    "commit": {
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "date": "2026-09-14T09:12:01Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-14T09:12:01Z"
+      },
+      "message": "build(deps-dev): Bump lint-staged from 17.3.0 to 17.5.1\n\nBumps [lint-staged](https://github.com/lint-staged/lint-staged) from 17.3.0 to 17.5.1.\n- [Release notes](https://github.com/lint-staged/lint-staged/releases)\n- [Changelog](https://github.com/lint-staged/lint-staged/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/lint-staged/lint-staged/compare/v17.3.0...v17.5.1)\n\n---\nupdated-dependencies:\n- dependency-name: lint-staged\n  dependency-version: 17.5.1\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+      "tree": {
+        "sha": "f353d271bad6f07f60cecb401e3adcbbbb1f3980",
+        "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/git/trees/f353d271bad6f07f60cecb401e3adcbbbb1f3980"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/git/commits/7b1274d5bfd31a33fb190e2528c6088ffe767477",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqp7phCRC1aQ7uu5UhlAAAXd8QAJ2lqc3gx6SaobC+CzJF8luL\nhoOBF3sJxcbRa3M+M+TGVjFiQDGFSpEHQXOaif9XBw7B+wfMtQUpqqRAzXqSKP8c\nH5fP07WqpNGVTz00tM2+YjXXddnH8IEXKW9jIchLpqFucYVAt9AAnqKQym7S2rK0\na6OrF2dbKiF6kTTDOQ0fWAs8jWyGvr2kHKUaz3RFobnXupGJnrgvZ7tve8rkHtwU\n1z8s2hLziWGkgv3NFOQTd4CVlrYzVTrwPV8C9f5Fct5pOgdpV0vplYZDbH1rpPcO\nrvhTGB9EQOnGRmXheEpWCAZX//ZhnUkxLce3HQ2aFwdk+lsbv/oR1ZCKuQ6vHzDJ\nsizGp4jXPuMlZGIGWIN0iTopukD8nCwyIOLAifXtCNg959OKm1VNe1phi6N3VSS7\ndNZM3ND4syVPDQ7XzW679Jn+art5KdLyy9eQsT5bd8FcMqpe934N7VVqW+LUinvb\ny447By+BRRh8pgCdhDAid9kdL7+ingdXz/3TpGtdM6dBMXek8imAdSddTjCTbetP\nZnXCBYA5o0b8vjUEcEYxZMgwE5y6HeJeQi1d3KLWmMnk8NNJ/ggZcNHjnqiWpR7b\n8WxqQgkQCzaNO177t5kC7DK2lZDQKKDP0zSJ2P5+MgGHY76cDnlSwi1tenxjxCXm\nm+4MzYQiaPSA7+bGM9zd\n=s0N+\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree f353d271bad6f07f60cecb401e3adcbbbb1f3980\nparent 5868bd761f90da50b453e9cc9534c8ee9f4806b7\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1789377121 +0000\ncommitter GitHub <noreply@github.com> 1789377121 +0000\n\nbuild(deps-dev): Bump lint-staged from 17.3.0 to 17.5.1\n\nBumps [lint-staged](https://github.com/lint-staged/lint-staged) from 17.3.0 to 17.5.1.\n- [Release notes](https://github.com/lint-staged/lint-staged/releases)\n- [Changelog](https://github.com/lint-staged/lint-staged/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/lint-staged/lint-staged/compare/v17.3.0...v17.5.1)\n\n---\nupdated-dependencies:\n- dependency-name: lint-staged\n  dependency-version: 17.5.1\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+        "verified_at": "2026-09-14T09:12:02Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/7b1274d5bfd31a33fb190e2528c6088ffe767477",
+    "html_url": "https://github.com/SuperInstance/SmartCRDT/commit/7b1274d5bfd31a33fb190e2528c6088ffe767477",
+    "comments_url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/7b1274d5bfd31a33fb190e2528c6088ffe767477/comments",
+    "author": {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+      "html_url": "https://github.com/apps/dependabot",
+      "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5868bd761f90da50b453e9cc9534c8ee9f4806b7",
+        "url": "https://api.github.com/repos/SuperInstance/SmartCRDT/commits/5868bd761f90da50b453e9cc9534c8ee9f4806b7",
+        "html_url": "https://github.com/SuperInstance/SmartCRDT/commit/5868bd761f90da50b453e9cc9534c8ee9f4806b7"
+      }
+    ]
+  }
+]

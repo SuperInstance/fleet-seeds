@@ -1,0 +1,208 @@
+[
+  {
+    "sha": "95ae21ec31a7dcd311134763496c20948b12d16c",
+    "node_id": "C_kwDOUveU2doAKDk1YWUyMWVjMzFhN2RjZDMxMTEzNDc2MzQ5NmMyMDk0OGIxMmQxNmM",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T20:06:01Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T20:06:01Z"
+      },
+      "message": "round-5 (55-a, resumed): validation+characterization at the UNCHANGED round-4 operating point — 11/11; R3L amplitude ladder SATURATES bit-exact at the registered anchor (z 1.034 null -> 3.541 plateau, widen-by-amplitude lever REFUTED and closed); R2x K4 law TRANSFERS cross-pace (drift 4.43e-3 @lr0.15, 1.76e-3 @lr0.5, same K4=1.5e-6; finding of record: G gate pace-locked, g=0.5693>0.5 @lr0.15 -> round-6 G-window law priced); RHOR finite lifetime receipted (D=30174 bit-exact, two-phase: slow |Wc| null-space diffusion 1.94e-5/step AT the loss floor then runaway 7.29e-2/step = 3761x, depth-2000 laws hold drift 3.89e-3, finding: z-conc depth-sensitive 2.548<3.0 at the floor, fast EMA shortens life 3.1x tau0.999 D=9653, trivial world ~ world2 -> optimizer-borne); determinism probe==run==twin==round-4 all bit-exact (29/29 vs run4.json + 63/63 vs design5.json); probe lane-death receipted (v1 completed, v2 crashed pre-receipt on use-before-assign print, fixed computation-precedes-use); registration-v5 sealed d5b27af1 pre-run, fail-closed re-verified",
+      "tree": {
+        "sha": "26f20798958bf3adad78dd000d370e099d707074",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-jepa/git/trees/26f20798958bf3adad78dd000d370e099d707074"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-jepa/git/commits/95ae21ec31a7dcd311134763496c20948b12d16c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-jepa/commits/95ae21ec31a7dcd311134763496c20948b12d16c",
+    "html_url": "https://github.com/SuperInstance/quilt-jepa/commit/95ae21ec31a7dcd311134763496c20948b12d16c",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-jepa/commits/95ae21ec31a7dcd311134763496c20948b12d16c/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "b2c24baeb92b8c433c6b4f25db11345d561dcfee",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-jepa/commits/b2c24baeb92b8c433c6b4f25db11345d561dcfee",
+        "html_url": "https://github.com/SuperInstance/quilt-jepa/commit/b2c24baeb92b8c433c6b4f25db11345d561dcfee"
+      }
+    ]
+  },
+  {
+    "sha": "b2c24baeb92b8c433c6b4f25db11345d561dcfee",
+    "node_id": "C_kwDOUveU2doAKGIyYzI0YmFlYjkyYjhjNDMzYzZiNGYyNWRiMTEzNDVkNTYxZGNmZWU",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T19:13:57Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T19:13:57Z"
+      },
+      "message": "round-4 (54-a): both registered laws land — pace-aware EMA window (tau=0.99998 = 1-K4*LAT/lr, K4=1.5e-6, drift 2.64e-3 vs round-3 FAIL 1.06e-1 at same pace, gate 0.01 UNCHANGED; declared plasticity cost 4.26e-3 receipted; learning guards held, r1 improved 0.1781->0.1693) + percentile-normalized surprise (per-cell z vs own 124-tick baseline, z-conc 3.5407 > 3.0 gate UNCHANGED; literal ECDF-rank form probed and honestly rejected at 1.010, receipted) — 8/8, first perfect scorecard, thresholds never retuned; probe==run==run determinism triple (17/17 bit-exact vs design4, twins byte-identical); R6 corrected invariant as-registered (corr 0.634, jump 2.755, sha-invariant pass); registration-v4 sealed 29e74d16 pre-run, fail-closed re-verified at startup",
+      "tree": {
+        "sha": "987782efa76185d3d63cc2026ada808c248554c6",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-jepa/git/trees/987782efa76185d3d63cc2026ada808c248554c6"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-jepa/git/commits/b2c24baeb92b8c433c6b4f25db11345d561dcfee",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-jepa/commits/b2c24baeb92b8c433c6b4f25db11345d561dcfee",
+    "html_url": "https://github.com/SuperInstance/quilt-jepa/commit/b2c24baeb92b8c433c6b4f25db11345d561dcfee",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-jepa/commits/b2c24baeb92b8c433c6b4f25db11345d561dcfee/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "ac31308e379e080d171c3b2205591a4913bb58ee",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-jepa/commits/ac31308e379e080d171c3b2205591a4913bb58ee",
+        "html_url": "https://github.com/SuperInstance/quilt-jepa/commit/ac31308e379e080d171c3b2205591a4913bb58ee"
+      }
+    ]
+  },
+  {
+    "sha": "ac31308e379e080d171c3b2205591a4913bb58ee",
+    "node_id": "C_kwDOUveU2doAKGFjMzEzMDhlMzc5ZTA4MGQxNzFjM2IyMjA1NTkxYTQ5MTNiYjU4ZWU",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T18:30:30Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T18:30:30Z"
+      },
+      "message": "round-3 (53-c): L1 optimizer repair executed — D4 transposed Wc gradient found by finite-difference (pre-seal), jepa3.js per-latent + chain-rule, registration-v3 sealed 19aae14d, run 5/8 (G 0.3477, L2 meter PASS, R1 0.1781, R4, R5; R2 stationarity FAIL 1.06e-1 = finding, R3 conc 1.919<3.0 = finding, R6 flag conflated) + sealed addendum-1 corrected invariant R6a PASS (cross-check 7/7 bit-identical) — verdict-v3",
+      "tree": {
+        "sha": "2607179acc164e409492962cf0d25fd7516a25b0",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-jepa/git/trees/2607179acc164e409492962cf0d25fd7516a25b0"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-jepa/git/commits/ac31308e379e080d171c3b2205591a4913bb58ee",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-jepa/commits/ac31308e379e080d171c3b2205591a4913bb58ee",
+    "html_url": "https://github.com/SuperInstance/quilt-jepa/commit/ac31308e379e080d171c3b2205591a4913bb58ee",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-jepa/commits/ac31308e379e080d171c3b2205591a4913bb58ee/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "304ff6271a56f58bd63c0d929ba1726bb2ca21af",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-jepa/commits/304ff6271a56f58bd63c0d929ba1726bb2ca21af",
+        "html_url": "https://github.com/SuperInstance/quilt-jepa/commit/304ff6271a56f58bd63c0d929ba1726bb2ca21af"
+      }
+    ]
+  },
+  {
+    "sha": "304ff6271a56f58bd63c0d929ba1726bb2ca21af",
+    "node_id": "C_kwDOUveU2doAKDMwNGZmNjI3MWE1NmY1OGJkNjNjMGQ5MjliYTE3MjZiYjJjYTIxYWY",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T15:18:20Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T15:18:20Z"
+      },
+      "message": "round 2: three design laws registered+scored — 3/6, root cause one layer deeper\n\nregistration-v2.json sealed pre-run (bc244e7d2f0cc11d…, mtime 1790608465680);\nR1/R3/R6 scored honestly FAIL, R2/R4/R5 PASS. Receipt tip 985f32278e75…,\ntamper negative controls (single-byte + 1e-7 float) localize fail-closed.\n\nProcess incident receipted: seal-file.mjs v1 silently no-oped the mask\nnormalization on a TO_BE_SEALED placeholder while printing 'sealed' — first\nexecution VOID, tool fixed, re-sealed, receipt regenerated byte-identical.\n\nPost-verdict diagnostics (diag2.mjs, same seed, gates nothing): the three\nFAILs share one root cause BENEATH the world/detector/corruption layers —\nthe optimizer: gradients divided by N=1024 pre-clip => effective step ~1/500\nintended; entry loss is world-independent (2.9% delta, init-mismatch driven);\ncorr(pred,tgt) = -0.26 makes every corruption type impact-insensitive\n(sign-flip 0.93, ZEROING 0.95, jitter 1.03). Round-3 laws: L1 optimizer-first\nsanity gate, L2 world-probe difficulty meter, L3 corruption gated on learned\nprediction structure.",
+      "tree": {
+        "sha": "b18483ae98019bf62087fb7b5fc69058664e720b",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-jepa/git/trees/b18483ae98019bf62087fb7b5fc69058664e720b"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-jepa/git/commits/304ff6271a56f58bd63c0d929ba1726bb2ca21af",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-jepa/commits/304ff6271a56f58bd63c0d929ba1726bb2ca21af",
+    "html_url": "https://github.com/SuperInstance/quilt-jepa/commit/304ff6271a56f58bd63c0d929ba1726bb2ca21af",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-jepa/commits/304ff6271a56f58bd63c0d929ba1726bb2ca21af/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "6896b77cd5beef3bb4f066f60de4bd241deb4d26",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-jepa/commits/6896b77cd5beef3bb4f066f60de4bd241deb4d26",
+        "html_url": "https://github.com/SuperInstance/quilt-jepa/commit/6896b77cd5beef3bb4f066f60de4bd241deb4d26"
+      }
+    ]
+  },
+  {
+    "sha": "6896b77cd5beef3bb4f066f60de4bd241deb4d26",
+    "node_id": "C_kwDOUveU2doAKDY4OTZiNzdjZDViZWVmM2JiNGYwNjZmNjBkZTRiZDI0MWRlYjRkMjY",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T06:00:10Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T06:00:10Z"
+      },
+      "message": "49-a quilt-jepa: latent-grid JEPA world model in an anisotropic cell mesh — 6 claims sealed pre-run (masked self-sha+mtime), run 3/6 PASS (P2 EMA stationarity 1.07e-4, P4 determinism byte-exact incl. regeneration==restoration, P5 Perona-Malik conservation 1.2e-8 rel + variance contraction), honest FAIL P1/P3/P6 with root cause 'easy world makes a boring model' (diluted mean-surprise, flat-loss defeats naive fault injection); seed moth-seal FALLBACK-labeled (comet cert payload incomplete — census finding receipted); verify CLI + tamper negative controls; browser WebGPU demo labeled DEMO-ONLY (exact-twin doctrine)",
+      "tree": {
+        "sha": "70049d28542a09c857462c5fb3adf53eb70914e5",
+        "url": "https://api.github.com/repos/SuperInstance/quilt-jepa/git/trees/70049d28542a09c857462c5fb3adf53eb70914e5"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/quilt-jepa/git/commits/6896b77cd5beef3bb4f066f60de4bd241deb4d26",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/quilt-jepa/commits/6896b77cd5beef3bb4f066f60de4bd241deb4d26",
+    "html_url": "https://github.com/SuperInstance/quilt-jepa/commit/6896b77cd5beef3bb4f066f60de4bd241deb4d26",
+    "comments_url": "https://api.github.com/repos/SuperInstance/quilt-jepa/commits/6896b77cd5beef3bb4f066f60de4bd241deb4d26/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+
+    ]
+  }
+]

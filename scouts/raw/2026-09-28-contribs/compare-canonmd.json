@@ -1,0 +1,181 @@
+{
+  "url": "https://api.github.com/repos/SuperInstance/AI-Writings/compare/main...canon-md",
+  "html_url": "https://github.com/SuperInstance/AI-Writings/compare/main...canon-md",
+  "permalink_url": "https://github.com/SuperInstance/AI-Writings/compare/SuperInstance:2dd73f4...SuperInstance:6fd1a35",
+  "diff_url": "https://github.com/SuperInstance/AI-Writings/compare/main...canon-md.diff",
+  "patch_url": "https://github.com/SuperInstance/AI-Writings/compare/main...canon-md.patch",
+  "base_commit": {
+    "sha": "2dd73f47aa5d247f610ac1e744d98d24c3303044",
+    "node_id": "C_kwDORhuGetoAKDJkZDczZjQ3YWE1ZDI0N2Y2MTBhYzFlNzQ0ZDk4ZDI0YzMzMDMwNDQ",
+    "commit": {
+      "author": {
+        "name": "Claude",
+        "email": "noreply@anthropic.com",
+        "date": "2026-09-28T21:21:03Z"
+      },
+      "committer": {
+        "name": "Claude",
+        "email": "noreply@anthropic.com",
+        "date": "2026-09-28T21:21:03Z"
+      },
+      "message": "systemize: THE-WEAKEST-CLAIM-METHOD — the audit instrument the experiments produced (d102)\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01JV2C8fnD86DNwXoyHPd7X9",
+      "tree": {
+        "sha": "d76f86132deed63824a76cfec69e9824872ac178",
+        "url": "https://api.github.com/repos/SuperInstance/AI-Writings/git/trees/d76f86132deed63824a76cfec69e9824872ac178"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/git/commits/2dd73f47aa5d247f610ac1e744d98d24c3303044",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgrLzsfFISF4by8Q+FKz27YpkK1USsBB+m\namu1QkJnbDsAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5AAAAQHI9PPBq\nz5zpClxVzW5ScF1RT2BtW226u1i9WxGGNCRL+795EmsRm+35nEXo+6J7vsPhCCFsIV4/qmX9ASqA\nJQA=\n-----END SSH SIGNATURE-----",
+        "payload": "tree d76f86132deed63824a76cfec69e9824872ac178\nparent ba30c72a0f0ece0bfc0595c2aa029ff10eb416c9\nauthor Claude <noreply@anthropic.com> 1790630463 +0000\ncommitter Claude <noreply@anthropic.com> 1790630463 +0000\n\nsystemize: THE-WEAKEST-CLAIM-METHOD — the audit instrument the experiments produced (d102)\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01JV2C8fnD86DNwXoyHPd7X9\n",
+        "verified_at": "2026-09-28T21:21:06Z"
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/2dd73f47aa5d247f610ac1e744d98d24c3303044",
+    "html_url": "https://github.com/SuperInstance/AI-Writings/commit/2dd73f47aa5d247f610ac1e744d98d24c3303044",
+    "comments_url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/2dd73f47aa5d247f610ac1e744d98d24c3303044/comments",
+    "author": {
+      "login": "claude",
+      "id": 81847,
+      "node_id": "MDQ6VXNlcjgxODQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/claude",
+      "html_url": "https://github.com/claude",
+      "followers_url": "https://api.github.com/users/claude/followers",
+      "following_url": "https://api.github.com/users/claude/following{/other_user}",
+      "gists_url": "https://api.github.com/users/claude/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/claude/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/claude/subscriptions",
+      "organizations_url": "https://api.github.com/users/claude/orgs",
+      "repos_url": "https://api.github.com/users/claude/repos",
+      "events_url": "https://api.github.com/users/claude/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/claude/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "claude",
+      "id": 81847,
+      "node_id": "MDQ6VXNlcjgxODQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/claude",
+      "html_url": "https://github.com/claude",
+      "followers_url": "https://api.github.com/users/claude/followers",
+      "following_url": "https://api.github.com/users/claude/following{/other_user}",
+      "gists_url": "https://api.github.com/users/claude/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/claude/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/claude/subscriptions",
+      "organizations_url": "https://api.github.com/users/claude/orgs",
+      "repos_url": "https://api.github.com/users/claude/repos",
+      "events_url": "https://api.github.com/users/claude/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/claude/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ba30c72a0f0ece0bfc0595c2aa029ff10eb416c9",
+        "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/ba30c72a0f0ece0bfc0595c2aa029ff10eb416c9",
+        "html_url": "https://github.com/SuperInstance/AI-Writings/commit/ba30c72a0f0ece0bfc0595c2aa029ff10eb416c9"
+      }
+    ]
+  },
+  "merge_base_commit": {
+    "sha": "6fd1a351c3f66b82d80faf28fa083bf369c27528",
+    "node_id": "C_kwDORhuGetoAKDZmZDFhMzUxYzNmNjZiODJkODBmYWYyOGZhMDgzYmYzNjljMjc1Mjg",
+    "commit": {
+      "author": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-18T04:38:40Z"
+      },
+      "committer": {
+        "name": "Casey Digennaro",
+        "email": "193104091+SuperInstance@users.noreply.github.com",
+        "date": "2026-09-18T04:38:40Z"
+      },
+      "message": "CANON.md: AI-Writings joins the fleet canon (Layer C)",
+      "tree": {
+        "sha": "a4bdf9ccaf08fc1a76cbf32522ea2813ef87c3e9",
+        "url": "https://api.github.com/repos/SuperInstance/AI-Writings/git/trees/a4bdf9ccaf08fc1a76cbf32522ea2813ef87c3e9"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/AI-Writings/git/commits/6fd1a351c3f66b82d80faf28fa083bf369c27528",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/6fd1a351c3f66b82d80faf28fa083bf369c27528",
+    "html_url": "https://github.com/SuperInstance/AI-Writings/commit/6fd1a351c3f66b82d80faf28fa083bf369c27528",
+    "comments_url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/6fd1a351c3f66b82d80faf28fa083bf369c27528/comments",
+    "author": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "SuperInstance",
+      "id": 193104091,
+      "node_id": "U_kgDOC4KI2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193104091?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperInstance",
+      "html_url": "https://github.com/SuperInstance",
+      "followers_url": "https://api.github.com/users/SuperInstance/followers",
+      "following_url": "https://api.github.com/users/SuperInstance/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuperInstance/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuperInstance/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuperInstance/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuperInstance/orgs",
+      "repos_url": "https://api.github.com/users/SuperInstance/repos",
+      "events_url": "https://api.github.com/users/SuperInstance/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuperInstance/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dc6f1e269681a2174152f1680a7c7279889f7296",
+        "url": "https://api.github.com/repos/SuperInstance/AI-Writings/commits/dc6f1e269681a2174152f1680a7c7279889f7296",
+        "html_url": "https://github.com/SuperInstance/AI-Writings/commit/dc6f1e269681a2174152f1680a7c7279889f7296"
+      }
+    ]
+  },
+  "status": "behind",
+  "ahead_by": 0,
+  "behind_by": 518,
+  "total_commits": 0,
+  "commits": [
+
+  ],
+  "files": [
+
+  ]
+}

@@ -1,0 +1,1384 @@
+{
+ "MicroMoth-quilt": {
+  "pushed": "2026-09-28T21:21:32Z",
+  "open_issues": 2,
+  "fork": true,
+  "buckets": {
+   "casey": 6,
+   "other:CCC": 4
+  },
+  "commits": [
+   {
+    "sha": "e03bd2dd",
+    "date": "2026-09-28T20:54:09Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Merge pull request #14 from SuperInstance/exp009-budget-sweep-receipt"
+   },
+   {
+    "sha": "62bcc3dc",
+    "date": "2026-09-28T20:53:44Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Merge pull request #13 from SuperInstance/exp008-ghz4-scale-receipt"
+   },
+   {
+    "sha": "a402b252",
+    "date": "2026-09-28T20:52:56Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Merge pull request #12 from SuperInstance/exp007-bell-balance-receipt"
+   },
+   {
+    "sha": "ad9474f6",
+    "date": "2026-09-28T20:52:44Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Merge branch 'main' into exp007-bell-balance-receipt"
+   },
+   {
+    "sha": "d6f342fd",
+    "date": "2026-09-28T20:51:42Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Merge pull request #11 from SuperInstance/exp006-ghz-seeded-receipt"
+   },
+   {
+    "sha": "fb6c25a6",
+    "date": "2026-09-28T20:18:59Z",
+    "by": "other:CCC [name=CCC, login=null]",
+    "msg": "exp009 experiment receipt: seal qcells-lab budget-length control sweep (6-gate ceiling NOT"
+   },
+   {
+    "sha": "908fc05b",
+    "date": "2026-09-28T20:05:01Z",
+    "by": "other:CCC [name=CCC, login=null]",
+    "msg": "exp008 experiment receipt: seal qcells-lab n=4 GHZ balance scale test (doctrine generalize"
+   },
+   {
+    "sha": "fcb95319",
+    "date": "2026-09-28T19:21:18Z",
+    "by": "other:CCC [name=CCC, login=null]",
+    "msg": "exp007 experiment receipt: seal qcells-lab Bell-balance n=2 control (H1 REFUTED for the ba"
+   },
+   {
+    "sha": "2606a3ba",
+    "date": "2026-09-28T19:03:43Z",
+    "by": "other:CCC [name=CCC, login=null]",
+    "msg": "exp006 experiment receipt: seal qcells-lab GHZ-prefix seeded restart (Finding 3 candidate "
+   },
+   {
+    "sha": "125b0f53",
+    "date": "2026-09-28T18:54:35Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Merge pull request #10 from SuperInstance/exp005-ghz-balance-receipt"
+   }
+  ]
+ },
+ "AI-Writings": {
+  "pushed": "2026-09-28T21:21:05Z",
+  "open_issues": 1,
+  "fork": false,
+  "buckets": {
+   "claude-agent": 8,
+   "github-actions": 2
+  },
+  "commits": [
+   {
+    "sha": "2dd73f47",
+    "date": "2026-09-28T21:21:03Z",
+    "by": "claude-agent [name=Claude, login=claude]",
+    "msg": "systemize: THE-WEAKEST-CLAIM-METHOD — the audit instrument the experiments produced (d102)"
+   },
+   {
+    "sha": "ba30c72a",
+    "date": "2026-09-28T21:19:56Z",
+    "by": "claude-agent [name=Claude, login=claude]",
+    "msg": "play: qthe-verify control — level uninformative; method = ranking+adversary+divergence loc"
+   },
+   {
+    "sha": "f090fe0b",
+    "date": "2026-09-28T21:17:50Z",
+    "by": "claude-agent [name=Claude, login=claude]",
+    "msg": "play: S17 on exoj — high divergence + 0/3 adversary; the (divergence x hit-rate) 2x2 syste"
+   },
+   {
+    "sha": "c4c7c8df",
+    "date": "2026-09-28T21:11:33Z",
+    "by": "claude-agent [name=Claude, login=claude]",
+    "msg": "improve: close play->find->fix loop — rate-component honest threat model from S17 (d099)"
+   },
+   {
+    "sha": "3c703708",
+    "date": "2026-09-28T21:09:24Z",
+    "by": "claude-agent [name=Claude, login=claude]",
+    "msg": "play: S17 weakest-leaf on rate-component — located KV non-atomic budget race; 3/3 quantum "
+   },
+   {
+    "sha": "e3c1c757",
+    "date": "2026-09-28T21:06:02Z",
+    "by": "claude-agent [name=Claude, login=claude]",
+    "msg": "situations: playable quilt situations projecting JEV fold + Moth draw (S17 runnable)"
+   },
+   {
+    "sha": "ec17e281",
+    "date": "2026-09-28T20:52:38Z",
+    "by": "github-actions [name=github-actions[bot], login=github-actions[bot]]",
+    "msg": "🔄 Auto-update landing page index"
+   },
+   {
+    "sha": "90210a7f",
+    "date": "2026-09-28T20:47:44Z",
+    "by": "claude-agent [name=Claude, login=claude]",
+    "msg": "experiment: JEV+Moth live on rotated keys — decomposing-fold localizes error; Moth CHSH S="
+   },
+   {
+    "sha": "65df4fde",
+    "date": "2026-09-28T19:07:12Z",
+    "by": "claude-agent [name=Claude, login=claude]",
+    "msg": "dispatch: book d096 (finalization — all branches landed, demos verified live, micromoth pl"
+   },
+   {
+    "sha": "f5391ddd",
+    "date": "2026-09-28T17:45:10Z",
+    "by": "github-actions [name=github-actions[bot], login=github-actions[bot]]",
+    "msg": "🔄 Auto-update landing page index"
+   }
+  ]
+ },
+ "quilt-gpu-lab": {
+  "pushed": "2026-09-28T21:18:38Z",
+  "open_issues": 0,
+  "fork": false,
+  "buckets": {
+   "fleet": 10
+  },
+  "commits": [
+   {
+    "sha": "01de9b20",
+    "date": "2026-09-28T21:18:36Z",
+    "by": "fleet [name=SuperInstance, login=null]",
+    "msg": "D2 free-delta KEEP: val_bpb 1.6666 vs 1.6959 (-0.0293) — the difference-operator transform"
+   },
+   {
+    "sha": "5da81018",
+    "date": "2026-09-28T21:17:37Z",
+    "by": "fleet [name=SuperInstance, login=null]",
+    "msg": "D2 free-delta KEEP: val_bpb 1.666624 vs baseline 1.695939 (-0.029315) at same 300s budget."
+   },
+   {
+    "sha": "9ed6f2f0",
+    "date": "2026-09-28T21:13:22Z",
+    "by": "fleet [name=SuperInstance, login=null]",
+    "msg": "X9 FALLS: presence falls to statistics (battery-MLP 0.895 > embedding-MLP 0.835 room-level"
+   },
+   {
+    "sha": "38a7b4fc",
+    "date": "2026-09-28T21:12:19Z",
+    "by": "fleet [name=SuperInstance, login=null]",
+    "msg": "X9 FALLS: presence falls to statistics — X3's room-level battery collapse (0.028) was the "
+   },
+   {
+    "sha": "1eb15f4c",
+    "date": "2026-09-28T20:53:29Z",
+    "by": "fleet [name=SuperInstance, login=null]",
+    "msg": "D1 delta-attention KILL at fixed budget (+0.000154 bpb) but per-token parity on 7.5% fewer"
+   },
+   {
+    "sha": "8871a108",
+    "date": "2026-09-28T20:52:33Z",
+    "by": "fleet [name=SuperInstance, login=null]",
+    "msg": "D1 delta-attention increment: KILL — val_bpb 1.696093 vs baseline 1.695939 (+0.000154) at "
+   },
+   {
+    "sha": "06e15339",
+    "date": "2026-09-28T20:26:39Z",
+    "by": "fleet [name=SuperInstance, login=null]",
+    "msg": "X2 INCONCLUSIVE (substance: renderer-bound) — cross-renderer transfer fails on every dial "
+   },
+   {
+    "sha": "65f56c7e",
+    "date": "2026-09-28T20:25:35Z",
+    "by": "fleet [name=SuperInstance, login=null]",
+    "msg": "X2 renderer transfer INCONCLUSIVE (renderer-parameterization-leaning): both renderers read"
+   },
+   {
+    "sha": "6bd3e222",
+    "date": "2026-09-28T20:23:49Z",
+    "by": "fleet [name=SuperInstance, login=null]",
+    "msg": "autoclaw train receipt: FIRST local increment complete on RTX 4050 — val_bpb 1.695939 (50."
+   },
+   {
+    "sha": "055d1881",
+    "date": "2026-09-28T19:56:55Z",
+    "by": "fleet [name=SuperInstance, login=null]",
+    "msg": "X6 KILL: the dial read is range-local — all 3 dials collapse on dial-range extrapolation ("
+   }
+  ]
+ },
+ "PuddnHead": {
+  "pushed": "2026-09-28T21:12:53Z",
+  "open_issues": 0,
+  "fork": false,
+  "buckets": {
+   "casey": 3
+  },
+  "commits": [
+   {
+    "sha": "dca1974e",
+    "date": "2026-09-28T21:12:52Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Add files via upload"
+   },
+   {
+    "sha": "faba493e",
+    "date": "2026-09-28T19:20:18Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Add files via upload"
+   },
+   {
+    "sha": "70c89de3",
+    "date": "2026-09-28T19:12:49Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Initial commit"
+   }
+  ]
+ },
+ "quilt-cloudflare": {
+  "pushed": "2026-09-28T21:11:13Z",
+  "open_issues": 0,
+  "fork": false,
+  "buckets": {
+   "claude-agent": 2,
+   "dependabot": 2,
+   "casey": 5,
+   "other:CCC": 1
+  },
+  "commits": [
+   {
+    "sha": "e75061cc",
+    "date": "2026-09-28T21:11:11Z",
+    "by": "claude-agent [name=Claude, login=claude]",
+    "msg": "rate-component: honest limitations & threat model (S17 audit finding)"
+   },
+   {
+    "sha": "df774142",
+    "date": "2026-09-28T15:19:17Z",
+    "by": "dependabot [name=dependabot[bot], login=dependabot[bot]]",
+    "msg": "deps: bump typescript from 6.0.3 to 7.0.2 in the major group (#15)"
+   },
+   {
+    "sha": "708e1bf4",
+    "date": "2026-09-28T15:17:00Z",
+    "by": "dependabot [name=dependabot[bot], login=dependabot[bot]]",
+    "msg": "deps: bump the patch-and-minor group with 2 updates (#14)"
+   },
+   {
+    "sha": "1842b0ed",
+    "date": "2026-09-28T08:39:42Z",
+    "by": "claude-agent [name=Claude, login=claude]",
+    "msg": "Add rate-component: drop-in budgeted-JEV rate-my-work backend (M4)"
+   },
+   {
+    "sha": "7ac3c193",
+    "date": "2026-09-25T00:23:41Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "systemone proxy: true {model,state,questions} wire shape (live-verified), legacy shim (#13"
+   },
+   {
+    "sha": "5b9419f0",
+    "date": "2026-09-24T22:59:29Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "wrangler.toml: real binding IDs (D1 quilt-db, KV CACHE) + drop legacy [build] blocks (#12)"
+   },
+   {
+    "sha": "f6e7b23d",
+    "date": "2026-09-24T22:25:40Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "hotfix: 3.1-8b-instruct also dead → 3.1-8b-instruct-fp8 (live catalog verified) (#11)"
+   },
+   {
+    "sha": "55158aba",
+    "date": "2026-09-24T22:23:58Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "hotfix: llama-3-8b-instruct deprecated 2026-05-30 → llama-3.1-8b-instruct (ocean ask 1101 "
+   },
+   {
+    "sha": "a122ef1e",
+    "date": "2026-09-24T22:22:37Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Merge pull request #9 from SuperInstance/ocean-boundary-study"
+   },
+   {
+    "sha": "11932963",
+    "date": "2026-09-24T21:59:07Z",
+    "by": "other:CCC [name=CCC, login=null]",
+    "msg": "docs: OCEAN-BOUNDARY study — measured threshold cartography, verdict keep 0.92"
+   }
+  ]
+ },
+ "pong-quilt": {
+  "pushed": "2026-09-28T20:54:30Z",
+  "open_issues": 1,
+  "fork": false,
+  "buckets": {
+   "casey": 10
+  },
+  "commits": [
+   {
+    "sha": "f53519bd",
+    "date": "2026-09-28T20:54:27Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "R57: a mid-generation Train + loadLevel/file-load breeds the LOADED population, never the "
+   },
+   {
+    "sha": "b0192ad1",
+    "date": "2026-09-28T17:37:19Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "R56 playtest: SCIENTIST round — coev continuation is a measured regression lane (bench 143"
+   },
+   {
+    "sha": "01c6bff4",
+    "date": "2026-09-28T15:16:37Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "R55: coev HUD prints the decision cadence the C1 game ACTUALLY uses — per-mode pick in dra"
+   },
+   {
+    "sha": "b4d15c81",
+    "date": "2026-09-28T05:27:30Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "R54: loadCoev seeds populations AROUND the loaded champs — artifact training genuinely con"
+   },
+   {
+    "sha": "34d551fe",
+    "date": "2026-09-28T03:57:00Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "R53: fix the R49 P1 loadCoev()->Train rAF-dead freeze — loadCoev seeds popS/popE; pinned F"
+   },
+   {
+    "sha": "9b27d15e",
+    "date": "2026-09-28T00:19:42Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "R52 main-repair: the #67/#70 merge stack concatenated the R50+R49 index rows and stranded "
+   },
+   {
+    "sha": "155ad789",
+    "date": "2026-09-27T22:41:32Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "R51: PLAYLOG newest-first repair — both views ordered, pinned FAIL-first (#70)"
+   },
+   {
+    "sha": "b501ca87",
+    "date": "2026-09-27T22:40:36Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "R50 main-repair: post-#66 main red on two pins, one root cause (#67)"
+   },
+   {
+    "sha": "c37eb2ef",
+    "date": "2026-09-27T22:31:59Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "R50: difficulty escalation — a perfect oracle always eventually dies (#68)"
+   },
+   {
+    "sha": "80b196ea",
+    "date": "2026-09-27T22:26:57Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "R49c: hermetic README count — PASS+SKIP+self, env-independent (#69)"
+   }
+  ]
+ },
+ "cellforge": {
+  "pushed": "2026-09-28T20:53:29Z",
+  "open_issues": 0,
+  "fork": false,
+  "buckets": {
+   "casey": 1,
+   "fleet": 1,
+   "mavis": 8
+  },
+  "commits": [
+   {
+    "sha": "85920b8d",
+    "date": "2026-09-28T20:53:26Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Merge pull request #1 from SuperInstance/gift-55/self-contained-test-killer"
+   },
+   {
+    "sha": "c6c0ff96",
+    "date": "2026-09-28T19:27:07Z",
+    "by": "fleet [name=SuperInstance, login=null]",
+    "msg": "fix: make 'cellforge test-killer' self-contained (its designed fallback path was unreachab"
+   },
+   {
+    "sha": "1a475f70",
+    "date": "2026-09-24T18:52:09Z",
+    "by": "mavis [name=Mavis, login=null]",
+    "msg": "Cleanup gitignored artifacts + sync local state (2026-09-24)"
+   },
+   {
+    "sha": "8c03fae3",
+    "date": "2026-09-23T17:35:05Z",
+    "by": "mavis [name=Mavis, login=null]",
+    "msg": "v0.4.1 — Causal-consistency verdict on rewind (R10 Theme T5)"
+   },
+   {
+    "sha": "dd842093",
+    "date": "2026-09-23T17:26:41Z",
+    "by": "mavis [name=Mavis, login=null]",
+    "msg": "v0.4.0 — EXPERIMENTAL mode consolidates PREDICTING + BACKTESTING"
+   },
+   {
+    "sha": "f9ec6cbd",
+    "date": "2026-09-23T17:08:39Z",
+    "by": "mavis [name=Mavis, login=null]",
+    "msg": "cellforge v0.3.0: PREDICTING + JEPA stub + JEV verifier"
+   },
+   {
+    "sha": "1438a5c0",
+    "date": "2026-09-23T17:03:48Z",
+    "by": "mavis [name=Mavis, login=null]",
+    "msg": "cellforge v0.2.0: REWINDING mode + REPLAY_CELL"
+   },
+   {
+    "sha": "b75b2548",
+    "date": "2026-09-23T16:58:42Z",
+    "by": "mavis [name=Mavis, login=null]",
+    "msg": "cellforge v0.1.2: JEV oracle integration"
+   },
+   {
+    "sha": "f2fd56f1",
+    "date": "2026-09-23T16:55:43Z",
+    "by": "mavis [name=Mavis, login=null]",
+    "msg": "cellforge v0.1.1: Write-lock safety interlock"
+   },
+   {
+    "sha": "13f54dd0",
+    "date": "2026-09-23T16:53:25Z",
+    "by": "mavis [name=Mavis, login=null]",
+    "msg": "Add polyformalism canary (FNV-1a 64-bit, 0x24a555471370b18d)"
+   }
+  ]
+ },
+ "cns-substrate": {
+  "pushed": "2026-09-28T20:53:15Z",
+  "open_issues": 0,
+  "fork": false,
+  "buckets": {
+   "casey": 2,
+   "fleet": 1
+  },
+  "commits": [
+   {
+    "sha": "5ac14899",
+    "date": "2026-09-28T20:53:10Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Merge pull request #1 from SuperInstance/gift-55/init-exports"
+   },
+   {
+    "sha": "3cd754ed",
+    "date": "2026-09-28T19:26:57Z",
+    "by": "fleet [name=SuperInstance, login=null]",
+    "msg": "fix: re-export public API names (Agent, Body, FileSystemTransport, et al.) so the package'"
+   },
+   {
+    "sha": "bb7966fc",
+    "date": "2026-09-22T08:17:09Z",
+    "by": "casey [name=Casey DiGennaro, login=null]",
+    "msg": "feat: cns-bridge substrate edition"
+   }
+  ]
+ },
+ "fleet-seeds": {
+  "pushed": "2026-09-28T20:07:50Z",
+  "open_issues": 0,
+  "fork": false,
+  "buckets": {
+   "fleet": 10
+  },
+  "commits": [
+   {
+    "sha": "0b35c487",
+    "date": "2026-09-28T20:07:48Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "Round 55 refinement: jepa round-5 11/11 (amplitude lever closed, K4 transfers, finite-hori"
+   },
+   {
+    "sha": "c898d8d0",
+    "date": "2026-09-28T19:18:02Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "Round 54 refinement: jepa round-4 8/8 (pace-aware EMA + percentile-z laws landed), A8 hone"
+   },
+   {
+    "sha": "8839d136",
+    "date": "2026-09-28T19:10:05Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "g1 spike (54-d): G1 seat design + fail-closed harness — honest no-GPU verdict, zero real r"
+   },
+   {
+    "sha": "e8e7f55b",
+    "date": "2026-09-28T17:21:27Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "Round 53 refinement: G7 watt-receipt schema + validator landed (gate 'no receipt → run VOI"
+   },
+   {
+    "sha": "e4ab6f7d",
+    "date": "2026-09-28T17:20:59Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "G7 watt-receipts schema + validator (53-f) + pong49 scorer prepared — fires at first seal "
+   },
+   {
+    "sha": "dd7037c9",
+    "date": "2026-09-28T17:16:57Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "G7 watt-receipts schema + validator (53-f): docs/G7-WATT-RECEIPTS.md (g7-watt-receipt@1 — "
+   },
+   {
+    "sha": "43312160",
+    "date": "2026-09-28T16:40:29Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "wave 52 keeper lanes sealed: codespace-as-ephemeral-honest-worker (8 attempts, VERDICT PAS"
+   },
+   {
+    "sha": "46012701",
+    "date": "2026-09-28T15:53:55Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "playtest wave 52 (lane-d): 6-repo stranger-replay — mavis 15/15, jeviter 86/86, qthe-codec"
+   },
+   {
+    "sha": "f9020c69",
+    "date": "2026-09-28T15:25:34Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "Round 51: the hardness law — quilt-jepa round-2 3/6 (optimizer-layer root cause, L1-L3 law"
+   },
+   {
+    "sha": "0f924fe3",
+    "date": "2026-09-28T07:52:10Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "PLANNING round 50: jev-garden wave — living JEV built, verdicts of record, refinements int"
+   }
+  ]
+ },
+ "mavis-essay-scout": {
+  "pushed": "2026-09-28T20:06:27Z",
+  "open_issues": 0,
+  "fork": false,
+  "buckets": {
+   "casey": 4
+  },
+  "commits": [
+   {
+    "sha": "da73d13e",
+    "date": "2026-09-28T20:06:27Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Add voices/README.md (mavis-essay-scout POC, 2026-09-28)"
+   },
+   {
+    "sha": "f650b030",
+    "date": "2026-09-28T20:06:26Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Add examples/QUICKSTART.md (mavis-essay-scout POC, 2026-09-28)"
+   },
+   {
+    "sha": "18eacd8d",
+    "date": "2026-09-28T20:06:25Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Add src/mavis_essay_scout.py (mavis-essay-scout POC, 2026-09-28)"
+   },
+   {
+    "sha": "ae2d5896",
+    "date": "2026-09-28T20:06:24Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Add README.md (mavis-essay-scout POC, 2026-09-28)"
+   }
+  ]
+ },
+ "quilt-jepa": {
+  "pushed": "2026-09-28T20:06:15Z",
+  "open_issues": 0,
+  "fork": false,
+  "buckets": {
+   "fleet": 5
+  },
+  "commits": [
+   {
+    "sha": "95ae21ec",
+    "date": "2026-09-28T20:06:01Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "round-5 (55-a, resumed): validation+characterization at the UNCHANGED round-4 operating po"
+   },
+   {
+    "sha": "b2c24bae",
+    "date": "2026-09-28T19:13:57Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "round-4 (54-a): both registered laws land — pace-aware EMA window (tau=0.99998 = 1-K4*LAT/"
+   },
+   {
+    "sha": "ac31308e",
+    "date": "2026-09-28T18:30:30Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "round-3 (53-c): L1 optimizer repair executed — D4 transposed Wc gradient found by finite-d"
+   },
+   {
+    "sha": "304ff627",
+    "date": "2026-09-28T15:18:20Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "round 2: three design laws registered+scored — 3/6, root cause one layer deeper"
+   },
+   {
+    "sha": "6896b77c",
+    "date": "2026-09-28T06:00:10Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "49-a quilt-jepa: latent-grid JEPA world model in an anisotropic cell mesh — 6 claims seale"
+   }
+  ]
+ },
+ "mavis-pincher-pages": {
+  "pushed": "2026-09-28T20:02:53Z",
+  "open_issues": 0,
+  "fork": false,
+  "buckets": {
+   "casey": 7
+  },
+  "commits": [
+   {
+    "sha": "9e6f855f",
+    "date": "2026-09-28T20:02:52Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Add data/repos.json (mavis-pincher-pages POC, 2026-09-28)"
+   },
+   {
+    "sha": "b41b7822",
+    "date": "2026-09-28T20:02:52Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Add src/assets/app.js (mavis-pincher-pages POC, 2026-09-28)"
+   },
+   {
+    "sha": "1e1ee610",
+    "date": "2026-09-28T20:02:51Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Add src/assets/style.css (mavis-pincher-pages POC, 2026-09-28)"
+   },
+   {
+    "sha": "e99c8575",
+    "date": "2026-09-28T20:02:50Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Add src/family/quilt.html (mavis-pincher-pages POC, 2026-09-28)"
+   },
+   {
+    "sha": "2c7a8832",
+    "date": "2026-09-28T20:02:49Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Add src/search.html (mavis-pincher-pages POC, 2026-09-28)"
+   },
+   {
+    "sha": "12b29bc0",
+    "date": "2026-09-28T20:01:55Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Add src/index.html (mavis-pincher-pages POC, 2026-09-28)"
+   },
+   {
+    "sha": "eda8c6d7",
+    "date": "2026-09-28T20:01:54Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Add README.md (mavis-pincher-pages POC, 2026-09-28)"
+   }
+  ]
+ },
+ "mavis-pincher": {
+  "pushed": "2026-09-28T19:59:32Z",
+  "open_issues": 0,
+  "fork": false,
+  "buckets": {
+   "casey": 7
+  },
+  "commits": [
+   {
+    "sha": "bd7dd699",
+    "date": "2026-09-28T19:59:32Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Add data/repos.json (mavis-pincher POC, 2026-09-28)"
+   },
+   {
+    "sha": "ca4a79c4",
+    "date": "2026-09-28T19:59:30Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Add examples/curl.md (mavis-pincher POC, 2026-09-28)"
+   },
+   {
+    "sha": "9235cf86",
+    "date": "2026-09-28T19:59:29Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Add test/smoke.test.mjs (mavis-pincher POC, 2026-09-28)"
+   },
+   {
+    "sha": "5d95803e",
+    "date": "2026-09-28T19:59:28Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Add src/index.ts (mavis-pincher POC, 2026-09-28)"
+   },
+   {
+    "sha": "0618fa68",
+    "date": "2026-09-28T19:59:27Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Add wrangler.toml (mavis-pincher POC, 2026-09-28)"
+   },
+   {
+    "sha": "bf9accc1",
+    "date": "2026-09-28T19:59:27Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Add package.json (mavis-pincher POC, 2026-09-28)"
+   },
+   {
+    "sha": "af27c726",
+    "date": "2026-09-28T19:59:26Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Add README.md (mavis-pincher POC, 2026-09-28)"
+   }
+  ]
+ },
+ "qthe-verify": {
+  "pushed": "2026-09-28T19:42:26Z",
+  "open_issues": 0,
+  "fork": false,
+  "buckets": {
+   "casey": 1
+  },
+  "commits": [
+   {
+    "sha": "53cf73a3",
+    "date": "2026-09-28T19:42:25Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Initial commit"
+   }
+  ]
+ },
+ "jev-garden": {
+  "pushed": "2026-09-28T19:41:48Z",
+  "open_issues": 0,
+  "fork": false,
+  "buckets": {
+   "fleet": 10
+  },
+  "commits": [
+   {
+    "sha": "b45caf8f",
+    "date": "2026-09-28T19:41:41Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "a9 (55-b): fresh-memory serve law (grow-as-used) — P-A9 PASS 4/4 under seal v12; archived "
+   },
+   {
+    "sha": "2cc9281a",
+    "date": "2026-09-28T19:16:00Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "a8 (54-b): hardness-gated serve blend — honest FAIL of record; gate ships opt-in, default "
+   },
+   {
+    "sha": "e8c2ddd3",
+    "date": "2026-09-28T18:42:59Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "weave-2 (53-h): sense table rides the weave — A7 registered pre-run (seal v8), twin-verifi"
+   },
+   {
+    "sha": "62f19f79",
+    "date": "2026-09-28T17:13:31Z",
+    "by": "fleet [name=SuperInstance, login=null]",
+    "msg": "P-G2d (53-d): hard-world run + verdict — PASS reproduced bit-exactly (head 73.47% < 0.90 g"
+   },
+   {
+    "sha": "ea7df1d5",
+    "date": "2026-09-28T15:25:06Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "P-G2d hard-world PASS: fresh watched-memory +13.41pp over frozen head under distribution s"
+   },
+   {
+    "sha": "1fafcc47",
+    "date": "2026-09-28T15:04:26Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "receipts: e_g6 teacher re-probe post incident-#5 (.env rollback)"
+   },
+   {
+    "sha": "e1679cd6",
+    "date": "2026-09-28T08:17:42Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "CI: fetch soil before selftest (cloud failure receipted: splitLedgers needs the sister rep"
+   },
+   {
+    "sha": "71ec17d7",
+    "date": "2026-09-28T08:10:52Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "A4 completion: st defined in all gates; battery green locally"
+   },
+   {
+    "sha": "0e655b98",
+    "date": "2026-09-28T08:09:13Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "A4 gate fix completion: st defined in e_g5; all experiments green under v5 seals"
+   },
+   {
+    "sha": "254ec941",
+    "date": "2026-09-28T08:08:32Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "A4: reproducibility bind = sha256+size (mtime = local witness) — the cloud checkout caught"
+   }
+  ]
+ },
+ "quilt-atlas": {
+  "pushed": "2026-09-28T19:30:15Z",
+  "open_issues": 0,
+  "fork": false,
+  "buckets": {
+   "fleet": 8
+  },
+  "commits": [
+   {
+    "sha": "d0be172a",
+    "date": "2026-09-28T19:30:13Z",
+    "by": "fleet [name=quilt-atlas bot, login=null]",
+    "msg": "atlas: scheduled regen 2026-09-28T19:30Z"
+   },
+   {
+    "sha": "727a3168",
+    "date": "2026-09-28T19:28:56Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "atlas (55-c): qthe audit — 87% strict precision (26/30), synonym table kept; canonical-adj"
+   },
+   {
+    "sha": "42e085b9",
+    "date": "2026-09-28T19:02:57Z",
+    "by": "fleet [name=quilt-atlas bot, login=null]",
+    "msg": "atlas: scheduled regen 2026-09-28T19:02Z"
+   },
+   {
+    "sha": "1f866a8a",
+    "date": "2026-09-28T19:01:49Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "atlas (54-c): cap raised + fleet audit — true count 4848 (49 pages, Link-follow, cap 120 n"
+   },
+   {
+    "sha": "f70e087c",
+    "date": "2026-09-28T17:17:06Z",
+    "by": "fleet [name=quilt-atlas bot, login=null]",
+    "msg": "atlas: scheduled regen 2026-09-28T17:17Z"
+   },
+   {
+    "sha": "ab5905e7",
+    "date": "2026-09-28T17:16:12Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "atlas classifier v2 (53-e): description+keyword families, evidence recorded — other 3326→2"
+   },
+   {
+    "sha": "40f983ae",
+    "date": "2026-09-28T16:05:15Z",
+    "by": "fleet [name=quilt-atlas bot, login=null]",
+    "msg": "atlas: scheduled regen 2026-09-28T16:05Z"
+   },
+   {
+    "sha": "08b7cd8b",
+    "date": "2026-09-28T16:04:25Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "quilt-atlas seed: living map of the account (4000-repo cap receipted) + scheduled atlas.ym"
+   }
+  ]
+ },
+ "SmartCRDT": {
+  "pushed": "2026-09-28T18:58:52Z",
+  "open_issues": 3,
+  "fork": false,
+  "buckets": {
+   "casey": 1,
+   "fleet": 3,
+   "mavis": 4,
+   "dependabot": 2
+  },
+  "commits": [
+   {
+    "sha": "84cf5e77",
+    "date": "2026-09-28T18:55:46Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Merge pull request #75 from SuperInstance/gift-53/shamir-repair"
+   },
+   {
+    "sha": "c55191a4",
+    "date": "2026-09-28T18:34:16Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "fix(lint): make the declared lint tool executable again — pin eslint ^8.57.1 (v10 dropped "
+   },
+   {
+    "sha": "5bcb5941",
+    "date": "2026-09-28T17:59:26Z",
+    "by": "fleet [name=SuperInstance, login=null]",
+    "msg": "fix(federated-learning): Number-exact Shamir field, mask cancellation, FedAvg mean, openab"
+   },
+   {
+    "sha": "88680130",
+    "date": "2026-09-28T17:59:04Z",
+    "by": "fleet [name=SuperInstance, login=null]",
+    "msg": "fix: resolve install ERESOLVE — align vitest/coverage-v8/@types/node peers; point test:uni"
+   },
+   {
+    "sha": "55e1e491",
+    "date": "2026-09-16T18:04:33Z",
+    "by": "mavis [name=Mavis Agent, login=null]",
+    "msg": "ci: bump actions/checkout@v6→v7, actions/cache@v5→v6, gitleaks@v2→v3, codecov@v6→v7, ossf/"
+   },
+   {
+    "sha": "e981dbbf",
+    "date": "2026-09-16T18:00:03Z",
+    "by": "mavis [name=Mavis Agent, login=null]",
+    "msg": "chore(deps): bump @types/node to 20.19.43 (was drifted past PR base)"
+   },
+   {
+    "sha": "6f162def",
+    "date": "2026-09-16T17:58:22Z",
+    "by": "mavis [name=Mavis Agent, login=null]",
+    "msg": "Merge remote-tracking branch 'origin/pr/50'"
+   },
+   {
+    "sha": "f4994224",
+    "date": "2026-09-16T17:58:10Z",
+    "by": "mavis [name=Mavis Agent, login=null]",
+    "msg": "Merge remote-tracking branch 'origin/pr/69'"
+   },
+   {
+    "sha": "f10be432",
+    "date": "2026-09-16T17:54:21Z",
+    "by": "dependabot [name=dependabot[bot], login=dependabot[bot]]",
+    "msg": "build(deps-dev): Bump the testing group across 1 directory with 2 updates"
+   },
+   {
+    "sha": "7b1274d5",
+    "date": "2026-09-14T09:12:01Z",
+    "by": "dependabot [name=dependabot[bot], login=dependabot[bot]]",
+    "msg": "build(deps-dev): Bump lint-staged from 17.3.0 to 17.5.1"
+   }
+  ]
+ },
+ "pincher": {
+  "pushed": "2026-09-28T18:54:19Z",
+  "open_issues": 0,
+  "fork": false,
+  "buckets": {
+   "casey": 2,
+   "fleet": 8
+  },
+  "commits": [
+   {
+    "sha": "6600b7ea",
+    "date": "2026-09-28T18:54:13Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "proposal: glyph reflexes — host the chiaroscuro middle-agent in pincher (#11)"
+   },
+   {
+    "sha": "02ae9bdc",
+    "date": "2026-08-21T21:13:41Z",
+    "by": "fleet [name=SuperInstance, login=null]",
+    "msg": "docs: point to quilt-pincher — the reflexes live on as reactive cells"
+   },
+   {
+    "sha": "be49c255",
+    "date": "2026-08-13T04:35:17Z",
+    "by": "fleet [name=SuperInstance, login=null]",
+    "msg": "ci: actually run tests instead of placeholder echo"
+   },
+   {
+    "sha": "8bf37274",
+    "date": "2026-08-08T02:29:22Z",
+    "by": "fleet [name=SuperInstance, login=null]",
+    "msg": "Fix: pytest discovery for pincher-infer tests"
+   },
+   {
+    "sha": "e40eebb9",
+    "date": "2026-08-04T23:54:56Z",
+    "by": "casey [name=superinstance, login=SuperInstance]",
+    "msg": "docs: deploy Motor Cortex Agent Dossier (AGENTS.md)"
+   },
+   {
+    "sha": "162b49d6",
+    "date": "2026-06-18T06:53:01Z",
+    "by": "fleet [name=SuperInstance DocBot, login=null]",
+    "msg": "docs: trust pipeline integration — lever-runner patterns for reflex engine"
+   },
+   {
+    "sha": "56ad31c0",
+    "date": "2026-06-16T06:24:10Z",
+    "by": "fleet [name=SuperInstance DocBot, login=null]",
+    "msg": "fix: optional feature builds (wasmtime/landlock) for Rust 1.96 compatibility"
+   },
+   {
+    "sha": "2c242df7",
+    "date": "2026-06-15T04:04:43Z",
+    "by": "fleet [name=SuperInstance DocBot, login=null]",
+    "msg": "fix: adapt onnx module to ort 2.0.0-rc.12 final API"
+   },
+   {
+    "sha": "9fc2e49a",
+    "date": "2026-06-15T00:56:53Z",
+    "by": "fleet [name=SuperInstance DocBot, login=null]",
+    "msg": "fix: pin ndarray 0.17 and adapt ort 2.0.0-rc.12 API for Session builder error handling"
+   },
+   {
+    "sha": "9d51f87e",
+    "date": "2026-06-14T20:51:58Z",
+    "by": "fleet [name=SuperInstance DocBot, login=null]",
+    "msg": "Rewrite README with shell-and-signal narrative"
+   }
+  ]
+ },
+ "qthe": {
+  "pushed": "2026-09-28T18:10:50Z",
+  "open_issues": 0,
+  "fork": false,
+  "buckets": {
+   "fleet": 10
+  },
+  "commits": [
+   {
+    "sha": "6017f806",
+    "date": "2026-09-28T18:10:32Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "wave 52 residue (53-a): hermetic CRAB resolution chain (env > bundled fixtures > repo sibl"
+   },
+   {
+    "sha": "de7d73cf",
+    "date": "2026-09-28T16:35:20Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "wave 52 registered seal evolution (fleet law A4): reader --mtime-witness flag (strict defa"
+   },
+   {
+    "sha": "43d741b3",
+    "date": "2026-09-28T04:11:38Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "48-b two-reader installment 2: qthe-side reader for crab-traps chains — 3/3 chains (crab45"
+   },
+   {
+    "sha": "0c36dd24",
+    "date": "2026-09-28T01:51:48Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "e_q12 (47-a): run + verdict — k-family extension DISCHARGED 10/10, Brier(P1..P10) 0.00167"
+   },
+   {
+    "sha": "59dc015e",
+    "date": "2026-09-28T01:39:34Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "e_q12 (47-a): registration + k-family closed-form predicate — PRE-RUN floors sealed (k-hal"
+   },
+   {
+    "sha": "151cb10f",
+    "date": "2026-09-28T01:10:15Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "e_q11 (46-c): run + verdict — closed-form A+D collapse-set predicate DISCHARGED 8/8, Brier"
+   },
+   {
+    "sha": "e212dbf4",
+    "date": "2026-09-28T00:54:27Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "e_q11 (46-c): registration + closed-form A+D collapse-set predicate — PRE-RUN floors seale"
+   },
+   {
+    "sha": "0f5be9d6",
+    "date": "2026-09-27T23:24:15Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "e_q10 (45-b): stone resolution receipt — pinned canonical quilt-stone module (run-2 instru"
+   },
+   {
+    "sha": "351beb79",
+    "date": "2026-09-27T23:24:05Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "e_q10 (45-b): run + verdict — round-9 keyed session sealed AS SAID; C5' injector one-pager"
+   },
+   {
+    "sha": "3d8a1b72",
+    "date": "2026-09-27T23:19:10Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "e_q10 (45-b): lever registration (kernel phase) + runner — PRE-TICK floors sealed"
+   }
+  ]
+ },
+ "quilt-research-canons": {
+  "pushed": "2026-09-28T18:05:20Z",
+  "open_issues": 0,
+  "fork": false,
+  "buckets": {
+   "mavis": 5,
+   "casey": 1,
+   "other:kimi1": 1
+  },
+  "commits": [
+   {
+    "sha": "bb3d6d9d",
+    "date": "2026-09-28T18:05:19Z",
+    "by": "mavis [name=mavis-bot, login=null]",
+    "msg": "Add pincher-round2-visions.md + zai-far-future.md — round 2 wide ideation. PLATO TUTOR alt"
+   },
+   {
+    "sha": "e92e88aa",
+    "date": "2026-09-28T17:49:05Z",
+    "by": "mavis [name=mavis-bot, login=null]",
+    "msg": "Add pincher-super-site-round1.md — round-1 ideation for SuperInstance super-site + A2A kno"
+   },
+   {
+    "sha": "4cd55f16",
+    "date": "2026-09-28T16:45:47Z",
+    "by": "mavis [name=mavis-bot, login=null]",
+    "msg": "Add fleet-state-report-2026-09-28.md — Mavis × Casey retrospective on the other agent's 7-"
+   },
+   {
+    "sha": "282839ef",
+    "date": "2026-09-24T19:00:15Z",
+    "by": "mavis [name=mavis-bot, login=null]",
+    "msg": "Add active-repos-report.md — canonical 'what we're working on' doc with status + productio"
+   },
+   {
+    "sha": "c5035210",
+    "date": "2026-09-24T18:59:58Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Merge pull request #1 from SuperInstance/sprint-quantum-001"
+   },
+   {
+    "sha": "e1e6f000",
+    "date": "2026-09-24T18:42:03Z",
+    "by": "other:kimi1 [name=kimi1, login=null]",
+    "msg": "sprint-quantum-001: quantum-chaos lineage opens — receipts enter the canon gate and the ga"
+   },
+   {
+    "sha": "f454b974",
+    "date": "2026-09-24T18:23:53Z",
+    "by": "mavis [name=mavis-bot, login=null]",
+    "msg": "Initial publish — sprint lineage + novel-problems canon (2026-09-24)"
+   }
+  ]
+ },
+ "glyphspace": {
+  "pushed": "2026-09-28T17:46:24Z",
+  "open_issues": 0,
+  "fork": false,
+  "buckets": {
+   "casey": 2
+  },
+  "commits": [
+   {
+    "sha": "c5960004",
+    "date": "2026-09-28T17:46:24Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "glyphspace: receipt-gated roadmap (Phases 0-4)"
+   },
+   {
+    "sha": "9a7098f0",
+    "date": "2026-09-28T17:46:22Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "glyphspace: README — spatial reasoning over glyph grids (proposal stage)"
+   }
+  ]
+ },
+ "glyphcast": {
+  "pushed": "2026-09-28T17:46:21Z",
+  "open_issues": 0,
+  "fork": false,
+  "buckets": {
+   "casey": 2
+  },
+  "commits": [
+   {
+    "sha": "1493eba5",
+    "date": "2026-09-28T17:46:21Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "glyphcast: receipt-gated roadmap (Phases 0-4, FAIL-first pins)"
+   },
+   {
+    "sha": "a5153575",
+    "date": "2026-09-28T17:46:20Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "glyphcast: README — glyph-domain next-frame prediction & frame-rate synthesis (proposal st"
+   }
+  ]
+ },
+ "quilt": {
+  "pushed": "2026-09-28T17:38:27Z",
+  "open_issues": 2,
+  "fork": false,
+  "buckets": {
+   "casey": 5,
+   "fleet": 2,
+   "dependabot": 2,
+   "other:CCC": 1
+  },
+  "commits": [
+   {
+    "sha": "c9b5e9f6",
+    "date": "2026-09-28T17:38:26Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Merge pull request #32 from SuperInstance/hooks-53/key-scan"
+   },
+   {
+    "sha": "5bec4da3",
+    "date": "2026-09-28T17:29:01Z",
+    "by": "fleet [name=SuperInstance, login=null]",
+    "msg": "seed: fail-closed credential key-scan pre-commit (fleet-hooks, wave 53)"
+   },
+   {
+    "sha": "8072f346",
+    "date": "2026-09-28T15:19:42Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Merge pull request #31 from SuperInstance/dependabot/npm_and_yarn/major-b7ceb5d816"
+   },
+   {
+    "sha": "8a209761",
+    "date": "2026-09-28T15:17:16Z",
+    "by": "dependabot [name=dependabot[bot], login=dependabot[bot]]",
+    "msg": "deps: bump typescript in the major group across 1 directory"
+   },
+   {
+    "sha": "f454597d",
+    "date": "2026-09-28T15:14:56Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Merge pull request #30 from SuperInstance/dependabot/npm_and_yarn/patch-and-minor-7cf30c40"
+   },
+   {
+    "sha": "5f7fb966",
+    "date": "2026-09-28T09:55:57Z",
+    "by": "dependabot [name=dependabot[bot], login=dependabot[bot]]",
+    "msg": "deps: bump the patch-and-minor group with 7 updates"
+   },
+   {
+    "sha": "2438d94d",
+    "date": "2026-09-26T03:45:27Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "examples: play-test fixes — listener condition edge-firing, io cells replaced by program a"
+   },
+   {
+    "sha": "c89a1287",
+    "date": "2026-09-25T19:16:17Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Merge pull request #29 from SuperInstance/effectful-deps-version-key"
+   },
+   {
+    "sha": "0ccb5146",
+    "date": "2026-09-25T11:12:16Z",
+    "by": "other:CCC [name=CCC, login=null]",
+    "msg": "playtest class 12 (welded): read-set state version in the effectful cache key"
+   },
+   {
+    "sha": "6892ab49",
+    "date": "2026-09-25T00:24:04Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Merge pull request #27 from SuperInstance/playtest-gold-r2"
+   }
+  ]
+ },
+ "coev": {
+  "pushed": "2026-09-28T17:37:35Z",
+  "open_issues": 0,
+  "fork": false,
+  "buckets": {
+   "casey": 2,
+   "fleet": 3
+  },
+  "commits": [
+   {
+    "sha": "bed862b6",
+    "date": "2026-09-28T17:37:35Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Merge pull request #2 from SuperInstance/gift-53/node24-test-script"
+   },
+   {
+    "sha": "303b4354",
+    "date": "2026-09-28T17:10:55Z",
+    "by": "fleet [name=SuperInstance, login=null]",
+    "msg": "fix: npm test script for Node >= 20.14 / 22 / 24 — drop the directory positional"
+   },
+   {
+    "sha": "b6ad736e",
+    "date": "2026-09-28T16:06:45Z",
+    "by": "casey [name=Casey Digennaro, login=SuperInstance]",
+    "msg": "Merge pull request #1 from SuperInstance/ci-seed-52/coev"
+   },
+   {
+    "sha": "ff42508f",
+    "date": "2026-09-28T15:38:41Z",
+    "by": "fleet [name=SuperInstance, login=null]",
+    "msg": "ci: seed GitHub Actions workflow running the canonical test suite"
+   },
+   {
+    "sha": "88a9d8cc",
+    "date": "2026-09-28T06:53:16Z",
+    "by": "fleet [name=SuperInstance, login=null]",
+    "msg": "coev v0.1.0 — adversarial coevolution engine + champion-integrity auditor"
+   }
+  ]
+ },
+ "fleet-hooks": {
+  "pushed": "2026-09-28T17:28:01Z",
+  "open_issues": 0,
+  "fork": false,
+  "buckets": {
+   "fleet": 1
+  },
+  "commits": [
+   {
+    "sha": "bbc14cf9",
+    "date": "2026-09-28T17:27:10Z",
+    "by": "fleet [name=SuperInstance, login=null]",
+    "msg": "fleet-hooks: fail-closed credential key-scan pre-commit + setup + 11/11 test battery"
+   }
+  ]
+ },
+ "quilt-codespace-lab": {
+  "pushed": "2026-09-28T16:39:48Z",
+  "open_issues": 0,
+  "fork": false,
+  "buckets": {
+   "fleet": 9
+  },
+  "commits": [
+   {
+    "sha": "26223612",
+    "date": "2026-09-28T16:39:47Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "E-CS52-1 sealed: VERDICT PASS (attempt 8) — P1 FAIL-receipted (E401/E403 platform boundary"
+   },
+   {
+    "sha": "a8b6a223",
+    "date": "2026-09-28T16:37:42Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "worker attempt 8: consume @superinstance/qthe@0.2.0 — the registered mtime-witness evoluti"
+   },
+   {
+    "sha": "9e394e47",
+    "date": "2026-09-28T16:29:54Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "worker attempt 7: reader stderr verbatim (direct invocation) + tar-vs-npm extraction isola"
+   },
+   {
+    "sha": "dd589b4b",
+    "date": "2026-09-28T16:26:27Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "worker attempt 6: diagnostics lane — capture consumer run_receipts per-case JSON + tarball"
+   },
+   {
+    "sha": "0c001c13",
+    "date": "2026-09-28T16:23:27Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "worker attempt 5: consume @superinstance/qthe@0.1.1 — the hermetic-selftest fix cut by the"
+   },
+   {
+    "sha": "dfd72645",
+    "date": "2026-09-28T16:19:03Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "worker attempt 4: dual-channel consume — registry (A) then release-asset fallback (B), cod"
+   },
+   {
+    "sha": "717d0c93",
+    "date": "2026-09-28T16:16:08Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "worker attempt 3: throwaway scoped .npmrc auth for npm.pkg.github.com (E401 root cause fro"
+   },
+   {
+    "sha": "412d651a",
+    "date": "2026-09-28T16:13:42Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "worker hardening: unconditional receipt push (token-url fallback path), env-names-only deb"
+   },
+   {
+    "sha": "3f29ecea",
+    "date": "2026-09-28T15:57:39Z",
+    "by": "fleet [name=Z User, login=null]",
+    "msg": "codespace-lab seed: ephemeral honest worker protocol + experiment E-CS52-1 (registry consu"
+   }
+  ]
+ }
+}

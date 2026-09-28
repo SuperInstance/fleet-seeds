@@ -1,0 +1,422 @@
+[
+  {
+    "sha": "b45caf8ff64b26a84807e94e6f41176c35b1f58f",
+    "node_id": "C_kwDOUvn7sNoAKGI0NWNhZjhmZjY0YjI2YTg0ODA3ZTk0ZTZmNDExNzZjMzViMWY1OGY",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T19:41:41Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T19:41:41Z"
+      },
+      "message": "a9 (55-b): fresh-memory serve law (grow-as-used) — P-A9 PASS 4/4 under seal v12; archived lattice prior replaced by priorCounted over the already-serialized aggregate behind explicit opt-in (default law byte-safe on both soils, 602/602); shift-H2 gated fresh 252/343 vs ens2 242/343 (+0.0292, flips +14/-4); ungated fresh-everywhere reproduces the P-G2d 298/343 pin exactly; twin fresh mode byte-identical 4/4 ledgers (core-v2 still 9960B==9960B); fresh law ships opt-in, default stays v1 law",
+      "tree": {
+        "sha": "1ebec991b75656d1a8a8b492bdddd3d444dd12e7",
+        "url": "https://api.github.com/repos/SuperInstance/jev-garden/git/trees/1ebec991b75656d1a8a8b492bdddd3d444dd12e7"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/jev-garden/git/commits/b45caf8ff64b26a84807e94e6f41176c35b1f58f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/b45caf8ff64b26a84807e94e6f41176c35b1f58f",
+    "html_url": "https://github.com/SuperInstance/jev-garden/commit/b45caf8ff64b26a84807e94e6f41176c35b1f58f",
+    "comments_url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/b45caf8ff64b26a84807e94e6f41176c35b1f58f/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "2cc9281ac4ddb6622a2d1717f835bd6e3799f2b0",
+        "url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/2cc9281ac4ddb6622a2d1717f835bd6e3799f2b0",
+        "html_url": "https://github.com/SuperInstance/jev-garden/commit/2cc9281ac4ddb6622a2d1717f835bd6e3799f2b0"
+      }
+    ]
+  },
+  {
+    "sha": "2cc9281ac4ddb6622a2d1717f835bd6e3799f2b0",
+    "node_id": "C_kwDOUvn7sNoAKDJjYzkyODFhYzRkZGI2NjIyYTJkMTcxN2Y4MzViZDZlMzc5OWYyYjA",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T19:16:00Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T19:16:00Z"
+      },
+      "message": "a8 (54-b): hardness-gated serve blend — honest FAIL of record; gate ships opt-in, default stays v1 law\n\nP-A8 pre-registered under seal v10 (addendum A8: w(ens3)=0|1 on saturation\ns=top.p(ens2), H*=ESCALATE_BELOW=0.55 REUSED, no new constant); runs under\nv10; verdicts + reseal v11 (v9 entry restored into seal_history, append-only).\n\n- P-A8a PASS: 602 wire calls, 551 closed == v1-law byte-identical, 51 open ==\n  registered ens3 (0 mismatches) — the implementation IS the registered rule.\n- P-A8b FAIL: gate opens 11/259 saturated eval calls (min top.p 0.3921); every\n  P-W2b flip sits on a would-escalate row (battery gated 0.9459 == unconditional)\n  — no per-row confidence gate can guarantee whole-slice closure.\n- P-A8c FAIL: shift-H2 gated == ens2 exactly (242/343 = 0.7055, 40 opens,\n  0 flips): all 43 table cells carry G=0 (stream grow deforms gamma=0), the\n  archived prior is a distance-tilted frequency, field arm 61.45-65.67% < heads.\n  Hardness law narrows to FRESH memory only (P-G2d was priorCounted H1 memory).\n- P-A8d PASS: twin core-v2 9960B==9960B re-verified under v10; serve prior\n  rebuild consumes the TWIN table (47 ctx prior vectors identical); smoke 9/9;\n  selftest green; receipt bytes reproduce exactly under the final law.\n\nServe modes: default = v1 law (ens2); serve_with_field = unconditional ens3\n(A7); hardness_gate=true = registered gated blend (A8, opt-in only).\nA9 priced: compile-time soil calibration (train-only) and/or FRESH stream\nmemory in the artifact + real gamma amplitudes. e_a8 added to CI battery.",
+      "tree": {
+        "sha": "6a106112e6e38bc172181fa3714166839c51aed3",
+        "url": "https://api.github.com/repos/SuperInstance/jev-garden/git/trees/6a106112e6e38bc172181fa3714166839c51aed3"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/jev-garden/git/commits/2cc9281ac4ddb6622a2d1717f835bd6e3799f2b0",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/2cc9281ac4ddb6622a2d1717f835bd6e3799f2b0",
+    "html_url": "https://github.com/SuperInstance/jev-garden/commit/2cc9281ac4ddb6622a2d1717f835bd6e3799f2b0",
+    "comments_url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/2cc9281ac4ddb6622a2d1717f835bd6e3799f2b0/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "e8c2ddd3b2948560a4664295f6174ec8451b3c7a",
+        "url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/e8c2ddd3b2948560a4664295f6174ec8451b3c7a",
+        "html_url": "https://github.com/SuperInstance/jev-garden/commit/e8c2ddd3b2948560a4664295f6174ec8451b3c7a"
+      }
+    ]
+  },
+  {
+    "sha": "e8c2ddd3b2948560a4664295f6174ec8451b3c7a",
+    "node_id": "C_kwDOUvn7sNoAKGU4YzJkZGQzYjI5NDg1NjBhNDY2NDI5NWY2MTc0ZWM4NDUxYjNjN2E",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T18:42:59Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T18:42:59Z"
+      },
+      "message": "weave-2 (53-h): sense table rides the weave — A7 registered pre-run (seal v8), twin-verified cross-substrate core-v2 9960B==9960B (P-W2a PASS, P-G5 discipline extended to arms.field; 43 cells, 56 ctx), serve-roundtrip exact; P-W2b FAIL of record (ens3 0.9459 vs ens2 0.9537, -0.0077 < -0.005 — hardness law confirmed on saturated soil); serve default stays v1 law, ens3 behind explicit serve_with_field opt-in; A8 candidate = hardness-gated blend; reseal v9",
+      "tree": {
+        "sha": "93407592b7bf768714bdb12344c284bd5c045c07",
+        "url": "https://api.github.com/repos/SuperInstance/jev-garden/git/trees/93407592b7bf768714bdb12344c284bd5c045c07"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/jev-garden/git/commits/e8c2ddd3b2948560a4664295f6174ec8451b3c7a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/e8c2ddd3b2948560a4664295f6174ec8451b3c7a",
+    "html_url": "https://github.com/SuperInstance/jev-garden/commit/e8c2ddd3b2948560a4664295f6174ec8451b3c7a",
+    "comments_url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/e8c2ddd3b2948560a4664295f6174ec8451b3c7a/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "62f19f7941047f8a88462318f8fc9e5472df541c",
+        "url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/62f19f7941047f8a88462318f8fc9e5472df541c",
+        "html_url": "https://github.com/SuperInstance/jev-garden/commit/62f19f7941047f8a88462318f8fc9e5472df541c"
+      }
+    ]
+  },
+  {
+    "sha": "62f19f7941047f8a88462318f8fc9e5472df541c",
+    "node_id": "C_kwDOUvn7sNoAKDYyZjE5Zjc5NDEwNDdmOGE4ODQ2MjMxOGY4ZmM5ZTU0NzJkZjU0MWM",
+    "commit": {
+      "author": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T17:13:31Z"
+      },
+      "committer": {
+        "name": "SuperInstance",
+        "email": "fleet@superinstance.dev",
+        "date": "2026-09-28T17:13:31Z"
+      },
+      "message": "P-G2d (53-d): hard-world run + verdict — PASS reproduced bit-exactly (head 73.47% < 0.90 gate HELD, ens3 86.88% = +13.41pp, tip f702bc0c56ad58a0 identical)",
+      "tree": {
+        "sha": "793f807bcdbee9b51bdeea48cb0873d6b70ceeb2",
+        "url": "https://api.github.com/repos/SuperInstance/jev-garden/git/trees/793f807bcdbee9b51bdeea48cb0873d6b70ceeb2"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/jev-garden/git/commits/62f19f7941047f8a88462318f8fc9e5472df541c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/62f19f7941047f8a88462318f8fc9e5472df541c",
+    "html_url": "https://github.com/SuperInstance/jev-garden/commit/62f19f7941047f8a88462318f8fc9e5472df541c",
+    "comments_url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/62f19f7941047f8a88462318f8fc9e5472df541c/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "ea7df1d54039ead0b15764d8f8bae514d455f2c2",
+        "url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/ea7df1d54039ead0b15764d8f8bae514d455f2c2",
+        "html_url": "https://github.com/SuperInstance/jev-garden/commit/ea7df1d54039ead0b15764d8f8bae514d455f2c2"
+      }
+    ]
+  },
+  {
+    "sha": "ea7df1d54039ead0b15764d8f8bae514d455f2c2",
+    "node_id": "C_kwDOUvn7sNoAKGVhN2RmMWQ1NDAzOWVhZDBiMTU3NjRkOGY4YmFlNTE0ZDQ1NWYyYzI",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T15:25:06Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T15:25:06Z"
+      },
+      "message": "P-G2d hard-world PASS: fresh watched-memory +13.41pp over frozen head under distribution shift\n\nSoil: 4 ladder-echo ledgers built by the real qcells machinery, chain-verified,\nconstruction receipt ONLY before registration (no outcome peeking). P-G2d\nregistered under seal v6 (hardness gate head<0.90 as VOID condition + margin\n0.02), executed under v6, verdict addendum A6 under v7.\n\nVerdict: hardness gate HELD (head 73.47%), ens3 86.88% = head + 13.41pp over\n343 rows, lambda*=0 on every ledger — optimal blend was ALL fresh memory.\nWave-50 arc closes: archived priors never transfer (G2/G2b), fresh memory is\nworthless on easy soil (G2c), fresh memory on hard soil is the organism (G2d).\n\nUnified law receipted with quilt-jepa round 2 (same day): hardness is the\ngating variable for emergence claims, measured by prediction accuracy on\nheld-out structure. Wave-52 registered: hardness-aware grow(); quilt-jepa L1\noptimizer repair as precondition for latent-grid claims.",
+      "tree": {
+        "sha": "660d47599186c7e3ecee907e14a9c2ba3be05946",
+        "url": "https://api.github.com/repos/SuperInstance/jev-garden/git/trees/660d47599186c7e3ecee907e14a9c2ba3be05946"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/jev-garden/git/commits/ea7df1d54039ead0b15764d8f8bae514d455f2c2",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/ea7df1d54039ead0b15764d8f8bae514d455f2c2",
+    "html_url": "https://github.com/SuperInstance/jev-garden/commit/ea7df1d54039ead0b15764d8f8bae514d455f2c2",
+    "comments_url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/ea7df1d54039ead0b15764d8f8bae514d455f2c2/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "1fafcc473cf2917bd756838756b62cbcc0fff960",
+        "url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/1fafcc473cf2917bd756838756b62cbcc0fff960",
+        "html_url": "https://github.com/SuperInstance/jev-garden/commit/1fafcc473cf2917bd756838756b62cbcc0fff960"
+      }
+    ]
+  },
+  {
+    "sha": "1fafcc473cf2917bd756838756b62cbcc0fff960",
+    "node_id": "C_kwDOUvn7sNoAKDFmYWZjYzQ3M2NmMjkxN2JkNzU2ODM4NzU2YjYyY2JjYzBmZmY5NjA",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T15:04:26Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T15:04:26Z"
+      },
+      "message": "receipts: e_g6 teacher re-probe post incident-#5 (.env rollback)\n\nSeat re-verified live: jev-latest responded, usage 589+21 tokens, 21.1s.\nHonest boundary finding: noul 0.69 vs wave-50 run's 0.70 on the identical\nprobe -> P-G6 verdict flips PASS/FAIL at the threshold. One-tick jitter on\nthe hosted teacher is now a receipted property: thresholds on hosted\njudges must carry a tolerance band or be re-sealed per run. Receipt kept,\nverdict recorded as boundary-case (not silently re-run until PASS).",
+      "tree": {
+        "sha": "ae01f93081b56777083f7e48118d990829c37b5f",
+        "url": "https://api.github.com/repos/SuperInstance/jev-garden/git/trees/ae01f93081b56777083f7e48118d990829c37b5f"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/jev-garden/git/commits/1fafcc473cf2917bd756838756b62cbcc0fff960",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/1fafcc473cf2917bd756838756b62cbcc0fff960",
+    "html_url": "https://github.com/SuperInstance/jev-garden/commit/1fafcc473cf2917bd756838756b62cbcc0fff960",
+    "comments_url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/1fafcc473cf2917bd756838756b62cbcc0fff960/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "e1679cd6c79fc14b47664f4dd7607a05d1a9626d",
+        "url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/e1679cd6c79fc14b47664f4dd7607a05d1a9626d",
+        "html_url": "https://github.com/SuperInstance/jev-garden/commit/e1679cd6c79fc14b47664f4dd7607a05d1a9626d"
+      }
+    ]
+  },
+  {
+    "sha": "e1679cd6c79fc14b47664f4dd7607a05d1a9626d",
+    "node_id": "C_kwDOUvn7sNoAKGUxNjc5Y2Q2Yzc5ZmMxNGI0NzY2NGY0ZGQ3NjA3YTA1ZDFhOTYyNmQ",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T08:17:42Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T08:17:42Z"
+      },
+      "message": "CI: fetch soil before selftest (cloud failure receipted: splitLedgers needs the sister repo early)",
+      "tree": {
+        "sha": "dc94c12d9fdd330b62dd047c8a4322252d69c4e4",
+        "url": "https://api.github.com/repos/SuperInstance/jev-garden/git/trees/dc94c12d9fdd330b62dd047c8a4322252d69c4e4"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/jev-garden/git/commits/e1679cd6c79fc14b47664f4dd7607a05d1a9626d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/e1679cd6c79fc14b47664f4dd7607a05d1a9626d",
+    "html_url": "https://github.com/SuperInstance/jev-garden/commit/e1679cd6c79fc14b47664f4dd7607a05d1a9626d",
+    "comments_url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/e1679cd6c79fc14b47664f4dd7607a05d1a9626d/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "71ec17d7a04d897656282fe5e382f176f54e7491",
+        "url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/71ec17d7a04d897656282fe5e382f176f54e7491",
+        "html_url": "https://github.com/SuperInstance/jev-garden/commit/71ec17d7a04d897656282fe5e382f176f54e7491"
+      }
+    ]
+  },
+  {
+    "sha": "71ec17d7a04d897656282fe5e382f176f54e7491",
+    "node_id": "C_kwDOUvn7sNoAKDcxZWMxN2Q3YTA0ZDg5NzY1NjI4MmZlNWUzODJmMTc2ZjU0ZTc0OTE",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T08:10:52Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T08:10:52Z"
+      },
+      "message": "A4 completion: st defined in all gates; battery green locally",
+      "tree": {
+        "sha": "4c7226f49f6b52c434cce3cced88f82a1d35d50c",
+        "url": "https://api.github.com/repos/SuperInstance/jev-garden/git/trees/4c7226f49f6b52c434cce3cced88f82a1d35d50c"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/jev-garden/git/commits/71ec17d7a04d897656282fe5e382f176f54e7491",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/71ec17d7a04d897656282fe5e382f176f54e7491",
+    "html_url": "https://github.com/SuperInstance/jev-garden/commit/71ec17d7a04d897656282fe5e382f176f54e7491",
+    "comments_url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/71ec17d7a04d897656282fe5e382f176f54e7491/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "0e655b984848a7db7a6e516208e926047da3c635",
+        "url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/0e655b984848a7db7a6e516208e926047da3c635",
+        "html_url": "https://github.com/SuperInstance/jev-garden/commit/0e655b984848a7db7a6e516208e926047da3c635"
+      }
+    ]
+  },
+  {
+    "sha": "0e655b984848a7db7a6e516208e926047da3c635",
+    "node_id": "C_kwDOUvn7sNoAKDBlNjU1Yjk4NDg0OGE3ZGI3YTZlNTE2MjA4ZTkyNjA0N2RhM2M2MzU",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T08:09:13Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T08:09:13Z"
+      },
+      "message": "A4 gate fix completion: st defined in e_g5; all experiments green under v5 seals",
+      "tree": {
+        "sha": "126e335f0b5aea30d0395b3630640dcecea550cd",
+        "url": "https://api.github.com/repos/SuperInstance/jev-garden/git/trees/126e335f0b5aea30d0395b3630640dcecea550cd"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/jev-garden/git/commits/0e655b984848a7db7a6e516208e926047da3c635",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/0e655b984848a7db7a6e516208e926047da3c635",
+    "html_url": "https://github.com/SuperInstance/jev-garden/commit/0e655b984848a7db7a6e516208e926047da3c635",
+    "comments_url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/0e655b984848a7db7a6e516208e926047da3c635/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "254ec9414ec1e5118975679a1ac6a6d89289f6a4",
+        "url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/254ec9414ec1e5118975679a1ac6a6d89289f6a4",
+        "html_url": "https://github.com/SuperInstance/jev-garden/commit/254ec9414ec1e5118975679a1ac6a6d89289f6a4"
+      }
+    ]
+  },
+  {
+    "sha": "254ec9414ec1e5118975679a1ac6a6d89289f6a4",
+    "node_id": "C_kwDOUvn7sNoAKDI1NGVjOTQxNGVjMWU1MTE4OTc1Njc5YTFhYzZhNmQ4OTI4OWY2YTQ",
+    "commit": {
+      "author": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T08:08:32Z"
+      },
+      "committer": {
+        "name": "Z User",
+        "email": "z@container",
+        "date": "2026-09-28T08:08:32Z"
+      },
+      "message": "A4: reproducibility bind = sha256+size (mtime = local witness) — the cloud checkout caught our own seal over-binding; gates updated, receipted",
+      "tree": {
+        "sha": "7960959e3e87a8dd71ac05cf2310091b04563187",
+        "url": "https://api.github.com/repos/SuperInstance/jev-garden/git/trees/7960959e3e87a8dd71ac05cf2310091b04563187"
+      },
+      "url": "https://api.github.com/repos/SuperInstance/jev-garden/git/commits/254ec9414ec1e5118975679a1ac6a6d89289f6a4",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/254ec9414ec1e5118975679a1ac6a6d89289f6a4",
+    "html_url": "https://github.com/SuperInstance/jev-garden/commit/254ec9414ec1e5118975679a1ac6a6d89289f6a4",
+    "comments_url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/254ec9414ec1e5118975679a1ac6a6d89289f6a4/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "347fd56a5eb0a0b32667be0fed3c2ac057fad4c2",
+        "url": "https://api.github.com/repos/SuperInstance/jev-garden/commits/347fd56a5eb0a0b32667be0fed3c2ac057fad4c2",
+        "html_url": "https://github.com/SuperInstance/jev-garden/commit/347fd56a5eb0a0b32667be0fed3c2ac057fad4c2"
+      }
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "LICENSE",
+    "path": "LICENSE",
+    "sha": "a7794247ffb070d832d71e1828e36b1d643ab5ff",
+    "size": 1072,
+    "url": "https://api.github.com/repos/SuperInstance/qthe-verify/contents/LICENSE?ref=main",
+    "html_url": "https://github.com/SuperInstance/qthe-verify/blob/main/LICENSE",
+    "git_url": "https://api.github.com/repos/SuperInstance/qthe-verify/git/blobs/a7794247ffb070d832d71e1828e36b1d643ab5ff",
+    "download_url": "https://raw.githubusercontent.com/SuperInstance/qthe-verify/main/LICENSE",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/SuperInstance/qthe-verify/contents/LICENSE?ref=main",
+      "git": "https://api.github.com/repos/SuperInstance/qthe-verify/git/blobs/a7794247ffb070d832d71e1828e36b1d643ab5ff",
+      "html": "https://github.com/SuperInstance/qthe-verify/blob/main/LICENSE"
+    }
+  }
+]
