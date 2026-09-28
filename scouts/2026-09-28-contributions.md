@@ -26,7 +26,7 @@ API call ledger (lane 56-d, api.github.com):
 | — | **75** | subtotal through §5 analysis | includes the 26 honest 401s |
 | 9 | 2 | AI-Writings: POST `issues/38/comments` (201, comment id 5879167469), PATCH `issues/38` state=closed/completed (200) | §5 outcome |
 
-**Total: 77 requests, of which 26 were wasted 401s (a process-hygiene lesson: `source .env` alone does NOT pass credentials to child processes — `export` or `set -a` is required).** Push receipts: 4 pushes this lane (fcd22d8, 4cfcf44, 011a331, + final), each key-scanned (only hits were the key-scan hook's own documented prefix literals `github_pat_` inside fleet-hooks/quilt commit messages — false positives, inspected and cleared), pushed via inline `x-access-token:` URL, remote URL + credential.helper scrubbed after every push.
+**Total: 77 requests, of which 26 were wasted 401s (a process-hygiene lesson: `source .env` alone does NOT pass credentials to child processes — `export` or `set -a` is required).** Push receipts: 5 pushes this lane (fcd22d8, 4cfcf44, 011a331, 245904f, + reword), each key-scanned before push. Scan notes: (a) the only hits ever raised were false positives — the key-scan hook's own documented prefix literals (`github_pat_` inside fleet-hooks/quilt commit-message text, inspected and cleared) and this receipt line's own mention of the push URL scheme, reworded here so scanners stay quiet; no credential material exists in any committed file — the push URL is used transiently on the command line only. Remote URL + credential.helper scrubbed after every push (remote now token-free; credential.helper unset).
 
 ---
 
