@@ -24,9 +24,9 @@ API call ledger (lane 56-d, api.github.com):
 | 7 | 8 | `fleet-canon` (repo), PuddnHead `/contents/`, qthe-verify `/contents/`, quilt `issues?open`, pong-quilt `issues/49`, SmartCRDT `issues?open`, cellforge `pulls?all`, cns-substrate `pulls?all` | 404 ×1 (fleet-canon does not exist on the account), 200 ×7 |
 | 8 | 4 | duke-lab `contents/CANON.md`, quilt-live-canon (repo), PuddnHead `contents/thought1.md`, MicroMoth-quilt `issues?open` | 200 ×4 |
 | — | **75** | subtotal through §5 analysis | includes the 26 honest 401s |
-| 9 | 2 | AI-Writings: POST `issues/38/comments`, PATCH `issues/38` (state=closed, completed) | §5 |
+| 9 | 2 | AI-Writings: POST `issues/38/comments` (201, comment id 5879167469), PATCH `issues/38` state=closed/completed (200) | §5 outcome |
 
-**Total: 77 requests, of which 26 were wasted 401s (a process-hygiene lesson: `source .env` alone does NOT pass credentials to child processes — `export` or `set -a` is required).**
+**Total: 77 requests, of which 26 were wasted 401s (a process-hygiene lesson: `source .env` alone does NOT pass credentials to child processes — `export` or `set -a` is required).** Push receipts: 4 pushes this lane (fcd22d8, 4cfcf44, 011a331, + final), each key-scanned (only hits were the key-scan hook's own documented prefix literals `github_pat_` inside fleet-hooks/quilt commit messages — false positives, inspected and cleared), pushed via inline `x-access-token:` URL, remote URL + credential.helper scrubbed after every push.
 
 ---
 
@@ -123,7 +123,7 @@ Evidence gathered this lane (receipts in `scouts/raw/2026-09-28-contribs/`):
 
 **Decision: DO NOT MERGE — the merge is provably empty.** `ahead_by=0` with `files_changed=0` means there is nothing on canon-md that main lacks; a merge call would change nothing and would satisfy nobody. The issue's own reopen comment defines the alternative resolution path — "confirm content is already equivalent" — and the blob-sha equality (9688e8bb4e on both refs) is exactly that confirmation, at byte precision.
 
-**Action taken:** comment on #38 with the evidence table (blob-sha equality, compare numbers, main-head and branch-head shas, fleet-canon 404 note) and close as **completed** — not "stale" — because the no-deletion doctrine bars stale-dismissal while explicitly sanctioning resolution-by-equivalence-confirmation. The `canon-md` branch is left undeleted (no-deletion doctrine). Outcome receipt appended below after the calls.
+**Action taken + outcome:** comment posted (201, `issues/38#issuecomment-5879167469`, id 5879167469 — full evidence: blob-sha equality, compare ahead_by=0/behind_by=518/files_changed=0, head shas, fleet-canon 404 note) and issue **closed as completed** (PATCH 200: state=closed, state_reason=completed, comments now 3). Not "stale" — the no-deletion doctrine bars stale-dismissal while explicitly sanctioning resolution-by-equivalence-confirmation. The `canon-md` branch is left undeleted (no-deletion doctrine). Raw receipts: `issue38-comment-result.json`, `issue38-close-result.json`.
 
 ## 6. Advance-target list (prioritized next-lane actions)
 
