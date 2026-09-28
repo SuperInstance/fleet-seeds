@@ -1,0 +1,84 @@
+{
+  "task": "G1 seat spike — wave 54, task 54-d, lane-d. Pre-registration of predictions for the FIRST REAL G1 local-seat run (7B-8B Q4_K_M), registered BEFORE any seat hardware or runtime exists in the lane sandbox.",
+  "registered_utc": "2026-09-28T18:58:00Z (file mtime = receipt; sandbox clock, r9/r10 convention)",
+  "registered_before_any_hardware": true,
+  "registered_before_any_seat_traffic": true,
+  "wire_traffic_before_this_file": "NONE — zero LLM-seat calls of any kind this lane (there is no seat to call: probe battery receipted all-absent, docs/G1-SEAT-SPIKE.md §4). The only network this lane used is git fetch/push to github.com (fleet infra) — not seat traffic.",
+  "house_status_at_registration": {
+    "gpu": "ABSENT (no nvidia-smi, no /dev/nvidia*, no /dev/dri, no GPU kernel modules — probe rows in docs/G1-SEAT-SPIKE.md §4)",
+    "llm_runtimes": "ALL ABSENT (ollama binary + HTTP 127.0.0.1:11434 refused, llama.cpp binaries not on PATH, node-llama-cpp unresolvable, no docker)",
+    "host": "2 vCPU Intel Xeon, cgroup memory.max = 4294967296 (4 GiB), node v24.21.0",
+    "implication": "every S-prediction below is registered blind — zero measurements against any seat exist in this lane; falsification and confirmation both await the first hardware run"
+  },
+  "seal_note": "No self-referential seal inside this file (a file cannot contain its own sha256). The seal lives in docs/G1-SEAT-SPIKE.md §3: sha256 + byte size + mtime of THIS file, recorded immediately after this write, before any run exists to test these predictions. File mtime is the primary receipt per house convention (r9/r10). Law: predictions sealed before runs; any prediction registered after its result → registry entry VOID (PLANNING.md kill criteria).",
+  "carried_registrations": [
+    {
+      "id": "carried-playbook-P1",
+      "original_registration": "docs/GPU-AGENT-PLAYBOOK.md wave 48 (G1 section, 'Pre-registered predictions to file before the run')",
+      "playbook_sha256_at_carry": "7068c9b39f15188b6659467df7e61ccb6f7d9dbe425510dadc74ff19c996411a",
+      "claim_verbatim": "local 7B Q4 seat completes >=80% of witness claims at 8000-token budget (deepseek died at 0/96 @2000)",
+      "operationalization_in_this_spike": "S7 below is the harness-measurable restatement; the playbook registration remains the origin"
+    },
+    {
+      "id": "carried-playbook-P2",
+      "original_registration": "docs/GPU-AGENT-PLAYBOOK.md wave 48 (G1 section)",
+      "playbook_sha256_at_carry": "7068c9b39f15188b6659467df7e61ccb6f7d9dbe425510dadc74ff19c996411a",
+      "claim_verbatim": "local-seat separator behavior matches the 'separator is the CLAIM' grammar (dot-pattern distribution within 0.05 total-variation of the 94-dot corpus)"
+    },
+    {
+      "id": "carried-playbook-P3",
+      "original_registration": "docs/GPU-AGENT-PLAYBOOK.md wave 48 (G1 section)",
+      "playbook_sha256_at_carry": "7068c9b39f15188b6659467df7e61ccb6f7d9dbe425510dadc74ff19c996411a",
+      "claim_verbatim": "blind-prior → reveal gap >= +0.3 (round-12 measured +0.58 for chat; a smaller local model should calibrate worse — if it calibrates better, that is a finding, not a failure)"
+    }
+  ],
+  "predictions": [
+    {
+      "id": "S1-latency-cpu-class",
+      "claim": "On a verified CPU-only host (no GPU device nodes, no GPU kernel modules), a 7B-8B Q4_K_M seat served by llama.cpp/ollama sustains generation throughput in the band 1–15 tokens/s, measured over >=200 generated tokens by the engine's own timing report or wall-clock.",
+      "modal_band": "3–8 tokens/s on a modern >=8-core consumer CPU; up to 15 on high-core-count desktops",
+      "measurement": "engine timing fields (ollama /api/generate eval_count/eval_duration; llama-server timings) or wall-clock over >=200 generated tokens, receipted in the run bundle",
+      "falsified_if": "measured >= 15 tokens/s on a host whose CPU-only status is receipted (would mean the hardware was misclassified or the engine's report is wrong — either is an incident)",
+      "honest_concern": "< 1 token/s sustained would make the 8000-token witness budgets impractical on CPU class; that is a measured curve point, not a falsification"
+    },
+    {
+      "id": "S2-latency-consumer-gpu-class",
+      "claim": "On a single consumer GPU with >= 8 GiB VRAM, the same 7B-8B Q4_K_M seat sustains generation throughput >= 20 tokens/s (band 20–120; modal 35–70) with the model fully resident in VRAM.",
+      "measurement": "same fields as S1 plus nvidia-smi residency check (model not spilling to shared/system memory)",
+      "falsified_if": "measured < 20 tokens/s while nvidia-smi is present, the model is fully VRAM-resident, and the GPU is not thermally throttled"
+    },
+    {
+      "id": "S3-vram-cgroup-residency",
+      "claim": "A Q4_K_M 7B-8B model (4.1–4.9 GB weights) plus KV cache for an 8000-token context does NOT run usefully (i.e. not >= 5 tokens/s) inside a 4 GiB memory cgroup (this lane's sandbox: memory.max = 4294967296) — mmap can keep it from OOM but throughput collapses to thrash.",
+      "measurement": "load + generate attempt inside the cgroup with /sys/fs/cgroup/memory.max receipted; count OOM kills, swap/mmap page faults, tokens/s",
+      "falsified_if": "a <= 4 GiB cgroup runs the full seat at >= 5 tokens/s with an 8000-token context (would falsify the '4 GiB cannot host it' design assumption — and this sandbox would then be a usable G1 host after all)"
+    },
+    {
+      "id": "S4-receipt-fields-first-real-run",
+      "claim": "The first successful seat run produces a g7-watt-receipt@1 that scripts/g7_validate.mjs accepts (exit 0) with energy.source ∈ {measured, estimated, tdp_derived}; if measured, energy.instrument names nvidia-smi NVML / RAPL / a wall-meter; if estimated or tdp_derived, energy.derivation shows the arithmetic; determinism.state_digest binds the responses bundle; gate.rule is the verbatim registered rule.",
+      "measurement": "node scripts/g7_validate.mjs <receipt> exit code + reasons, receipted in the run bundle",
+      "falsified_if": "the first receipt is refused (exit 1), or a seat verdict ships without a valid receipt (that is a G7-law incident: spend without receipts = VOID), or the receipt contains a number nobody can derive from a named instrument/derivation"
+    },
+    {
+      "id": "S5-determinism-temp0-seeded",
+      "claim": "Two identical seat calls (same prompt, temperature 0, same fixed seed, same engine build, same hardware, same thread count, single-stream greedy path) produce byte-identical output text.",
+      "measurement": "harness runs the same prompt twice back-to-back in one process session, sha256-compares the raw outputs, receipts build + thread count + seed alongside",
+      "falsified_if": "any byte differs between the two outputs under the fixed single-stream path — the difference then becomes a first-class G2 determinism finding with the minimal reproducer receipted (nondeterminism is default on the fast substrate; finding it is the product, not a failure)",
+      "honest_scope": "server-side batching, thread-count changes, or build changes void the comparison scope; the harness records all three so a mismatch is diagnosable rather than mysterious"
+    },
+    {
+      "id": "S6-quantization-erosion-output-level",
+      "claim": "For the same 7B-8B model at temperature 0, the Q4_K_M build's output diverges from the FP16 build's output (first differing token) within the first 200 generated tokens on >= 1 of 20 certified fixed prompts; and across quant levels Q8_0 → Q4_K_M → Q4_0 → Q2_K the divergence rate (prompts with any divergence / 20) is weakly monotone increasing as bit-width narrows — the output-level analogue of E-Q10's monotone re-erosion (G3 link).",
+      "measurement": "20 certified prompts x {FP16, Q8_0, Q4_K_M, Q4_0, Q2_K} at temp 0, first-divergence-token index recorded per prompt per level; curves committed like G3's erosion registry",
+      "falsified_if": "Q4_K_M is token-identical to FP16 on all 20 prompts (output-level erosion invisible — a finding against the folklore that Q4 visibly degrades), or the Q8_0/Q4_K_M/Q4_0/Q2_K ordering inverts cleanly across >= 3 consecutive level pairs (would contradict the monotone-erosion analogy and need its own registry entry)"
+    },
+    {
+      "id": "S7-battery-completion-8000",
+      "claim": "Operationalization of carried-playbook-P1: the certified chamber-class prompt battery (96-prompt class) completes >= 80% of prompts within a per-prompt 8000-token generation budget on the GPU-class seat (the 45-c starvation constraint — deepseek died at 0/96 @ 2000 — becomes a measured completion-rate curve in budget, not a binary kill).",
+      "measurement": "completion rate = prompts answered within budget / prompts attempted, per budget step {2000, 4000, 8000}, receipted per prompt",
+      "falsified_if": "completion < 80% at the 8000-token budget on the GPU-class seat (the seat then fails the same witness-claims bar the API seat failed — honest KILL of record per the playbook acceptance rule)",
+      "note": "on CPU-class the same battery may be run at reduced N; the 8000-budget completion claim is only adjudicated on GPU-class hardware"
+    }
+  ],
+  "registered_count": { "new": 7, "carried": 3, "total": 10 }
+}

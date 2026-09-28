@@ -1,0 +1,92 @@
+{
+  "schema": "g1-void-record@1",
+  "record_id": "g1-void-20260928T190638Z-31733",
+  "task_id": "54-d",
+  "agent": "lane-d (subagent)",
+  "created_utc": "2026-09-28T19:06:38Z",
+  "reason": "no_seat",
+  "detail": "probe chain exhausted: no ollama HTTP seat, no llama-server HTTP, no usable llama.cpp binary (+--model-path); see probe_verdicts",
+  "probe_verdicts": [
+    {
+      "name": "ollama-http",
+      "method": "GET http://127.0.0.1:11434/api/tags (timeout 2500 ms)",
+      "result": "ABSENT",
+      "evidence": "ECONNREFUSED: connect ECONNREFUSED 127.0.0.1:11434"
+    },
+    {
+      "name": "llama-server-http",
+      "method": "GET http://127.0.0.1:8080/health (timeout 1500 ms)",
+      "result": "ABSENT",
+      "evidence": "ECONNREFUSED: connect ECONNREFUSED 127.0.0.1:8080"
+    },
+    {
+      "name": "llama-bin:llama-server/llama-cli",
+      "method": "PATH scan for llama-server, llama-cli",
+      "result": "ABSENT",
+      "evidence": "no llama.cpp binary found on PATH"
+    },
+    {
+      "name": "nvidia-smi",
+      "method": "PATH scan",
+      "result": "ABSENT",
+      "evidence": "nvidia-smi not on PATH"
+    },
+    {
+      "name": "/dev/dri|/dev/nvidia*",
+      "method": "readdir /dev",
+      "result": "ABSENT",
+      "evidence": "no dri/nvidia nodes in /dev"
+    },
+    {
+      "name": "gpu-kernel-modules",
+      "method": "read /proc/modules, match ^(nvidia|amdgpu|i915|xe)",
+      "result": "ABSENT",
+      "evidence": "/proc/modules readable but lists 0 modules — no GPU modules matched"
+    },
+    {
+      "name": "cgroup-memory.max",
+      "method": "read /sys/fs/cgroup/memory/memory.limit_in_bytes",
+      "result": "PRESENT",
+      "evidence": "4294967296 bytes (4.00 GiB)"
+    },
+    {
+      "name": "node-llama-cpp",
+      "method": "import resolve from /home/z/my-project/fleet-seeds (node-llama-cpp)",
+      "result": "ABSENT",
+      "evidence": "not resolvable (MODULE_NOT_FOUND) — recorded as evidence; not a v1 seat source"
+    }
+  ],
+  "wall_seconds_probe_chain": 0.029,
+  "compute": {
+    "gpu_seconds": 0,
+    "kernel_count": 0,
+    "note": "no inference ran; gpu_seconds 0 is a statement of absence, not a measurement"
+  },
+  "energy": {
+    "joules": null,
+    "watt_hours": null,
+    "source": null,
+    "note": "no compute ran — any number here would be fabricated; this record is the receipt OF the void, not a g7-watt-receipt@1"
+  },
+  "battery": {
+    "path": null,
+    "battery_id": null,
+    "certified": null,
+    "prompts": 0,
+    "note": "no battery consumed"
+  },
+  "responses": {
+    "accepted": 0,
+    "note": "zero seat responses exist; nothing was generated"
+  },
+  "validator_reasons": null,
+  "gate": {
+    "rule": "no receipt → run VOID",
+    "verdict": "VOID"
+  },
+  "binding": {
+    "harness_sha256": "e35c67dee9cf89f214c30cfc13b0adece447de8f214006dc619f5e1d8667939b",
+    "probes_digest_sha256": "58fcb4623eb6f24a093cc75b5bf9e42c868828dd24c235ac4ec41de30aba00de"
+  },
+  "g7_relationship": "NOT a g7-watt-receipt@1 by design: a run with no seat has no device and no energy; filling device.vram_gb > 0 or an energy number would be fabrication. g7_validate.mjs is EXPECTED to refuse this record (selftest control). Gate law satisfied: no receipt → run VOID — and this record is the receipt of that VOID."
+}
