@@ -1,0 +1,37 @@
+{
+  "schema": "g7-watt-receipt@1",
+  "receipt_id": "g7-wr-example-pass-001",
+  "task_id": "53-f (example — illustrative receipt, not a real run)",
+  "agent": "example lane (docs/G7-WATT-RECEIPTS.md §3 worked example, authored by 53-f)",
+  "device": {
+    "model": "NVIDIA GeForce RTX 4090",
+    "vram_gb": 24,
+    "driver": "550.54.15 / CUDA 12.4"
+  },
+  "energy": {
+    "joules": 43200.0,
+    "watt_hours": 12.0,
+    "source": "measured",
+    "sampling_method": "nvidia-smi --query-gpu=power.draw --format=csv,noheader,nounits -l 1 at 1 Hz across the full run window; integral = mean_power_W x wall_seconds / 3600; idle floor (28 W) NOT subtracted — receipts report the whole window the job held the GPU",
+    "instrument": "nvidia-smi (NVML power.draw counters) on the host owning the GPU",
+    "derivation": null
+  },
+  "compute": {
+    "gpu_seconds": 145.0,
+    "kernel_count": 1204
+  },
+  "cost": {
+    "currency": "USD",
+    "amount": 0.0174,
+    "rate_source": "host marginal grid rate $0.145/kWh (utility schedule quoted 2026-09-28); gifted compute priced, not billed"
+  },
+  "determinism": {
+    "seed": "moth-seal comet-qrng-v1 cert payload (example; certified seed preferred by house law)",
+    "state_digest": "c7b37c674a650ab44645e4158639e27dd4a75689ff39172c6afeea83d2bdc200",
+    "state_digest_note": "example binding: sha256 of docs/G7-WATT-RECEIPTS.md at example authoring time (2026-09-28) — verify with sha256sum; a real receipt binds its own run-state artifact"
+  },
+  "gate": {
+    "rule": "no receipt → run VOID",
+    "verdict": "PASS"
+  }
+}

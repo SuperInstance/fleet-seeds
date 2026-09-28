@@ -1,0 +1,28 @@
+{
+  "schema": "g7-watt-receipt@1",
+  "receipt_id": "g7-wr-example-void-001",
+  "task_id": "53-f (example — illustrative receipt, not a real run)",
+  "agent": "example lane (docs/G7-WATT-RECEIPTS.md §3 worked example, authored by 53-f)",
+  "device": {
+    "model": "NVIDIA GeForce RTX 4090",
+    "vram_gb": 24,
+    "driver": "550.54.15 / CUDA 12.4"
+  },
+  "compute": {
+    "gpu_seconds": 62.5
+  },
+  "cost": {
+    "currency": "USD",
+    "amount": 0.0075,
+    "rate_source": "host marginal grid rate $0.145/kWh (utility schedule quoted 2026-09-28)"
+  },
+  "determinism": {
+    "seed": 31337,
+    "state_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "gate": {
+    "rule": "no receipt → run VOID",
+    "verdict": "VOID"
+  },
+  "void_reason": "worked example of the gate's canonical refusal: the energy block is MISSING (power sampling failed mid-run and was not reconstructed) — the validator REFUSES this file (exit 1), and per gate.rule the run it describes ships no verdict. Honest note kept: compute and cost are real-shaped, but a run whose energy cannot be stated is a run the gate does not admit."
+}
