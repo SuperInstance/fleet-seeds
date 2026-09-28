@@ -1,0 +1,8 @@
+{
+  "registrationFor": "tools/wave46/46b-claims.json (46b-moth-seal)",
+  "sealedAt": "2026-09-28T00:46:31.607Z",
+  "sha256": "d44da4af71cfdea33038f1771695a9a3260cd6611ca3eabfb9a02e3aecc33c50",
+  "mtime": "2026-09-28T00:46:03.973Z",
+  "method": "sha256 over exact file bytes + filesystem mtime; file must not be edited after this receipt (edits void the claims)",
+  "preRunStatement": "no wave-46 moth process job has been spent by lane 46-b as of this seal; the deepseek blind prediction (1 call cap) also precedes the run"
+}

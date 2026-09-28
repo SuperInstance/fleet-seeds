@@ -1,0 +1,49 @@
+{
+  "claimsId": "46b-moth-seal",
+  "title": "moth-seal certified sampling service — registered claims (wave 46-b)",
+  "instrument": "fleet-seeds/tools/moth-seal.mjs (comet-qrng-v1 default; graph-v1+whitening behind explicit --fallback)",
+  "registeredAt": "2026-09-28T00:00:00Z (sealed by mtime below; this file must not be edited after sealing)",
+  "order": "this file is sealed (sha256 + mtime recorded in receipts/46b-claims-registration.json) BEFORE any wave-46 moth process job is spent; the deepseek blind prediction (1 call, optional) also precedes the run",
+  "budget": {
+    "mothProcessJobsCap": 10,
+    "planned": { "comet-qrng-v1": 6, "graph-v1": 1, "total": 7 },
+    "deepseekCallsCap": 1,
+    "notes": "comet credits 5/job per 45-e survey; all jobs small (shots 4096, output_bytes 512 — the proven 45-e shape)"
+  },
+  "claims": [
+    {
+      "id": "P1",
+      "text": "comet certified bits pass balance: over K=5 independent comet-qrng-v1 seals (n=16, pool=1134, stream=prf), every per-seal certified-bit balance AND the pooled 5-seal balance land in [0.45, 0.55]",
+      "measurement": "balance = popcount(bits)/len over random.hex per seal; pooled over all 5 seals' hexes concatenated",
+      "failMeans": "pooled balance outside [0.45,0.55] -> FAIL; any single per-seal balance outside band but pooled inside -> PARTIAL (584-bit samples, sigma~0.0207, band is ~+-2.4 sigma per seal)"
+    },
+    {
+      "id": "P2",
+      "text": "cert fields always present: in ALL comet seals of this run (K1-K5 + demo), entropy_report{health_passed===true, h_bit>0, budget_bits>0}, extractor.kind===toeplitz, device_fingerprint{p1}, commitment{commit 64-hex, binds non-empty}, pulse.pulse_hash 64-hex, random{hex even-length, bits>0} are present, and seal() never trips CertError on a live response",
+      "failMeans": "any missing/invalid field -> that seal exits 1 fail-closed -> P2 FAIL (an honest transport-level failure of a whole job counts as an instrument FAIL, not a P2 field miss, if the response never arrived)"
+    },
+    {
+      "id": "P3",
+      "text": "fallback receipts always labeled: every seal executed via --fallback carries mode==='FALLBACK', the registered whitening recipe (mothbits STEP1-4), and the KAT reference (tools/fixtures/moth-42b-raw-bits-2caa822b-7c46-4f65-a0c9-152c46272e19.txt), and never presents itself as certified (cert===null, certifiedBits===null)",
+      "failMeans": "any fallback receipt missing the label/recipe/KAT or claiming certified -> FAIL"
+    },
+    {
+      "id": "P4",
+      "text": "no seed reuse, no collisions: across K1-K5 (all n=16, pool=1134), the 5 jobIds are pairwise distinct, the 5 certified byte-stream sha256 digests are pairwise distinct, and all C(5,2)=10 selected permutations are pairwise distinct (assertDistinctSeals + explicit pair check)",
+      "failMeans": "any collision -> FAIL (would indicate seed reuse or a broken entropy source — fail-closed, run aborted)"
+    },
+    {
+      "id": "P5",
+      "text": "consumer contract + determinism: every emitted receipt passes verifyReceiptSchema (job id, raw-result sha256, cert fields verbatim, chosen indices, timestamp, label, single-use seed-use declaration); chosen indices are distinct, within [0,pool), length===take; replaying identical bits yields the byte-identical permutation (offline tests, 30/30)",
+      "failMeans": "any schema violation, out-of-range/duplicate index, or replay divergence -> FAIL"
+    }
+  ],
+  "paths": {
+    "module": "tools/moth-seal.mjs",
+    "tests": "tools/moth-seal.test.mjs",
+    "registration": "tools/wave46/receipts/46b-claims-registration.json",
+    "demoRegistration": "tools/wave46/receipts/46b-demo-registration.json",
+    "runScript": "tools/wave46/46b-run.mjs",
+    "verdict": "tools/wave46/VERDICT.md"
+  }
+}

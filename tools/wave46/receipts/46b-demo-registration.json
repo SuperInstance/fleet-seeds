@@ -1,0 +1,27 @@
+{
+  "registrationId": "46b-demo-spot-audit",
+  "label": "wave46-near-arc-spot-audit",
+  "registeredAt": "2026-09-28T00:00:00Z (sealed by mtime below; registered BEFORE the demo seal job runs)",
+  "consumer": "wave-46 keeper — spot-audit of the near-arc roadmap",
+  "source": "fleet-seeds PLANNING.md @ a7a0226, 'Near arc (waves 46-50)' items 1-10, verbatim titles",
+  "contract": {
+    "poolSize": 10,
+    "take": 4,
+    "stream": "direct (certified bits consumed MSB-first, no extension — pool 10 needs 144 bits, one comet job delivers ~584)",
+    "engine": "comet-qrng-v1 (certified path; no fallback)",
+    "meaning": "the 4 selected indices name the near-arc objectives drawn at random as this wave's SPOT-AUDIT SET; the draw is certified randomness end-to-end with a SEAL receipt binding jobId + certified-bytes sha256 to this registration"
+  },
+  "pool": [
+    { "index": 0, "objective": "SCN-003 live-reasoner verdict, take 2" },
+    { "index": 1, "objective": "Certified sampling service — tools/moth-seal.mjs" },
+    { "index": 2, "objective": "E-Q11 — the guest's parked levers in order" },
+    { "index": 3, "objective": "Witness grammar rollout" },
+    { "index": 4, "objective": "Tavern round-12" },
+    { "index": 5, "objective": "Embassy sweep every wave" },
+    { "index": 6, "objective": "Two-reader rule for every chain" },
+    { "index": 7, "objective": "Tombstone gift for superinstance-advisor" },
+    { "index": 8, "objective": "jeviter P2" },
+    { "index": 9, "objective": "Rekor anchoring cadence" }
+  ],
+  "note": "demo registration for the first consumer of moth-seal: proves the service end-to-end. The seal receipt (46b-demo-seal.json) is void if its jobId/seed sha256 appear in any other receipt (single-use)."
+}
