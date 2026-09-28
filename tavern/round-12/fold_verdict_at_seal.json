@@ -1,0 +1,10 @@
+{
+ "sealed_at": "2026-09-28T00:55:28Z",
+ "allPass": true,
+ "checksPass": 39,
+ "checksFail": 0,
+ "verifier_exit": 0,
+ "r11_verifier": "green (section C1 PASS, 16/16, keyed scan)",
+ "note": "verify_round12.mjs full run at seal time (re-run after the lane ledger + summary landed): registration A, fold B, r11-green C, run D (incl. D16 git-anchored pre-registration + asset-freeness D9/D10 + prompt fidelity D7), lane ledger E, key scan F — one command, exit 0",
+ "tail": "PASS F1 no key material in any round-12 artifact — keyed scan |  | ALL CHECKS PASS"
+}

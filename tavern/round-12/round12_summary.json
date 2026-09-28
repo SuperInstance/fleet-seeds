@@ -1,0 +1,200 @@
+{
+ "round": 12,
+ "task": "46-d",
+ "lane": "tavern-round12 (the blind prior, asked asset-free + the r11 ledger fold)",
+ "wave": "46",
+ "sealed_at": "2026-09-28T00:55:28Z",
+ "clock_note": "sandbox clock 2026-09-28T00:4x-00:5xZ; briefing calendar date 2026-09-28 — both carried AS SAID (r9/r10/r11 convention)",
+ "threads_closed": [
+  "THREAD 1 (r11 open_threads[0]) — LEDGER FOLD: round11_ledger.jsonl (6 rows, tip db324fd0…) folded into tavern/tavern_ledger.jsonl append-only: 5 content rows re-parented onto pre-fold tip 1c03b2eb… (content deep-equal modulo row_hash), fold receipt row embeds the round-11 stone.header VERBATIM + source sha + both tips + mapping; main ledger 52 -> 58 rows, merged tip 1bf7f3d6…; round-11 artifacts untouched, verifier 16/16; registered pre-build in ffb3d245….",
+  "THREAD 2 (r11 open_threads[1], design half) — ASSET-FREE BLIND PRIOR: asked to BOTH seats from nothing but the claim's definition (exact prompt registered verbatim pre-run; mechanical D9/D10 re-checks; cache curve 0/0/0/0 = the null signature of a shared-nothing prompt set). The r11 designed-contamination (r9 asset carries E-Q8) is fixed by construction."
+ ],
+ "registration": {
+  "predictions_sha256": "ffb3d245908894642f3ea74789df5160c5cf093a0a0ce8ef24a018733a8db192",
+  "mtime_utc": "2026-09-28T00:42:17Z",
+  "before_any_deepseek_traffic": true,
+  "registration_commit": "1c736253… (pre-rebase lineage; verifier D16 re-derives from git)",
+  "deepseek_http_calls_used": 5,
+  "cap": 6
+ },
+ "served_models": {
+  "requested_to_served": {
+   "deepseek-reasoner": "deepseek-flash",
+   "deepseek-chat": "deepseek-flash"
+  },
+  "models_list": [
+   "deepseek-flash",
+   "deepseek-v4-pro"
+  ],
+  "note": "legacy names accepted-and-routed — r11 docs+wire receipt re-confirmed per row this round"
+ },
+ "answers_as_said": {
+  "chat_blind": {
+   "source": "final content, direct JSON parse, 0 repairs",
+   "q_float_blind": 0.35,
+   "q_blind_source": 0.55,
+   "one_sentence": "Before any evidence, I judge it somewhat more likely than not that a claimed float-holds/fixed-moves divergence at exact-zero families reflects an instrumentation or comparison artifact rather than a genuine arithmetic property, but I hold only moderate confidence and would likely shift materially on decisive sealed receipts."
+  },
+  "reasoner_blind": {
+   "source": "NO CONCLUDED ANSWER (trace cut mid-deliberation, 9100 chars)",
+   "trace_sha256": "4ec5be12343e1fdd3b6cc9e0ea7717e7a0bad82d0ac6f50d1f508165ad4dac9e",
+   "note": "the trace itself notices the prompt is asset-free — the r11 contamination complaint did not recur; the cap, not the design, killed the conclusion"
+  },
+  "chat_reveal": {
+   "source": "final content, direct JSON parse, 0 repairs",
+   "p_float_artifact_revised": 0.93,
+   "posterior_move": "moves_up_to_0_5_or_above",
+   "confidence": 0.97,
+   "one_sentence": "The sealed receipts — a byte-exact first-divergence cell at the uncoupled exact-zero families plus a 466,932-run census with all pre-registered events true and zero unexplained cells — establish the float-only artifact as real and family-bound, so I revise from 0.35 to 0.93."
+  },
+  "reasoner_reveal": {
+   "source": "reasoning-trace drafted key-complete JSON (extraction law); one_sentence still a literal \"...\" placeholder at the cap",
+   "p_float_artifact_revised": 0.99,
+   "posterior_move": "moves_up_to_0_5_or_above",
+   "confidence": 0.99,
+   "trace_sha256": "27c90bf529b122ecaa4843035de7afd006ab93a2a8803b531c9bc7dcf2dadc09"
+  }
+ },
+ "calibration_table": {
+  "asset_free_prior_chat_r12": 0.35,
+  "jev_r10_prior_from_state": 0.35,
+  "note": "the fresh evidence-free chat prior landed EXACTLY on the 0.35 the r10 state carries as the instrument prior — and r11's contaminated blind trace was weighing 0.47 over the scoreboard-bearing asset. Design cleanliness is measurable: the clean prior moved DOWN to the instrument anchor.",
+  "posteriors_on_the_same_receipt_state": {
+   "jev_r10": 0.97,
+   "reasoner_r11": 0.99,
+   "chat_r11": 0.97,
+   "reasoner_r12_thinking_voice": 0.99,
+   "chat_r12": 0.93
+  },
+  "gaps": {
+   "chat_r12_own": "+0.58",
+   "chat_r12_vs_r11_chat": "+0.62"
+  }
+ },
+ "scorecard": {
+  "scoring_law": "multiclass Brier = sum over buckets of (predicted_bucket_p - indicator(actual_bucket))^2, resolved at seal (round-12 is self-contained; no STANDING entries). Seat answers are sealed AS SAID (ghostwriting law) — wrong, malformed, or undisciplined answers are recorded exactly as said, never repaired to fit predictions. Parse-repair receipts are part of the answer. Extraction law (r11, carried): an answer is EXTRACTED only where the reasoning trace contains a drafted final JSON object (question_id present, brace-matched, key-complete); where the trace was cut mid-deliberation the receipt is 'no concluded answer' — deliberation fragments are quoted but NEVER scored as answers.",
+  "entries": [
+   {
+    "id": "P1-asset-free-calibration-gap",
+    "resolved": true,
+    "actual_bucket": "gap_confirmed_one_seat_other_unmeasured",
+    "modal_was": "gap_confirmed_both_seats",
+    "modal_hit": false,
+    "brier": 0.845,
+    "receipt": "chat seat: blind prior 0.35 (evidence-free), reveal posterior 0.93 — gap +0.58 (registered bar +0.30), prior 0.35 <= 0.60, prior sits 0.62 below r11's chat posterior and 0.64 below its reasoner posterior (bar 0.25) — chat component CONFIRMS all three clauses. reasoner seat: blind trace cut mid-deliberation, NO CONCLUDED PRIOR (registered rule: a voiceless seat cannot falsify — resolves DOWN one bucket). THE ASSET-FREE FIX WORKED: the chat blind prior landed at 0.35 — EXACTLY the prior the byte-exact r10 state itself carries (\"your_prior\": 0.35) and the anchor JEV/r11 moved from — against r11's contaminated blind trace which was 'weighing 0.47' over a scoreboard-bearing asset. Calibration gap quantified: +0.58 (chat, own posterior) / +0.62 (chat prior vs r11 chat posterior).",
+    "falsified_check": "no falsified_if clause fired (no concluded seat moved down; no concluded blind prior >= 0.90)"
+   },
+   {
+    "id": "P2-seat-agreement-0.05",
+    "resolved": true,
+    "actual_bucket": "any_component_unmeasured_partial",
+    "modal_was": "both_within_0.05",
+    "modal_hit": false,
+    "brier": 0.895,
+    "receipt": "blind pair: UNMEASURED (reasoner blind trace cut mid-deliberation; chat blind 0.35). reveal pair: MEASURED |0.99 - 0.93| = 0.06 — OUTSIDE the registered 0.05 band by 0.01. Registered rule resolves the claim to any_component_unmeasured_partial; the honest disclosure the receipt must carry: even measured-only, the posterior band MISSED (0.06 > 0.05) — r11's 0.02 agreement did not fully replicate at the 0.05 band on fresh instruments; same modal choice both seats (moves_up_to_0_5_or_above)."
+   },
+   {
+    "id": "P3-noul-discipline-holds",
+    "resolved": true,
+    "actual_bucket": "zero_violations_full_discipline",
+    "modal_was": "zero_violations_full_discipline",
+    "modal_hit": true,
+    "brier": 0.18,
+    "receipt": "noul answers emitted/concluded this round: 4 (chat blind 2, chat reveal 1, reasoner reveal drafted-in-trace 1) — violations: 0. The harder surface held: the blind prompt carries the prohibition ONLY in the contract block (no asset repeating it) and both chat noul objects are exactly {type,noul}; the reasoner's drafted noul object is exactly {type,noul}. Second round running: JEV's no-confidence-field law instructs cleanly on a real LLM."
+   },
+   {
+    "id": "P4-ledger-fold-verifies",
+    "resolved": true,
+    "actual_bucket": "fold_verifies_end_to_end",
+    "modal_was": "fold_verifies_end_to_end",
+    "modal_hit": true,
+    "brier": 0.045,
+    "receipt": "verify_round12.mjs at seal: ALL CHECKS PASS (39/39 active checks + D/E sections live) — main ledger 58 rows link-verifies from disk, 5 folded rows content-deep-equal to sources modulo row_hash, receipt embeds source header verbatim + source tip db324fd0… + pre-fold tip 1c03b2eb…, merged tip 1bf7f3d6…; verify_round11.mjs stays ALL CHECKS PASS (16/16), keyed scan. verify_round12.mjs full run at seal time (re-run after the lane ledger + summary landed): registration A, fold B, r11-green C, run D (incl. D16 git-anchored pre-registration + asset-freeness D9/D10 + prompt fidelity D7), lane ledger E, key scan F — one command, exit 0"
+   },
+   {
+    "id": "P5-budget-spend",
+    "resolved": true,
+    "actual_bucket": "under_all_caps",
+    "modal_was": "under_all_caps",
+    "modal_hit": true,
+    "brier_binary": 0.01,
+    "receipt": "computed below in spend; 5/6 HTTP calls (1 reserve unspent), every POST sent max_tokens 2000, est spend $0.003016 off-peak ($0.006031 worst-case peak) <= $0.05 cap, billed completion tokens 4270 <= 8000, all 4 POSTs receipted at 00:50:00-00:50:13Z = off-peak."
+   }
+  ],
+  "mean_brier_resolved": 0.395,
+  "modals": {
+   "resolved": 5,
+   "hit": 3,
+   "partial": 0
+  }
+ },
+ "spend": {
+  "basis": "deepseek-flash, PER-CALL basis law (registered): every 2xx POST receipted at 2026-09-28T00:50:00Z, 2026-09-28T00:50:01Z, 2026-09-28T00:50:12Z, 2026-09-28T00:50:13Z = OFF-PEAK (peak window 01:00-04:00 UTC Mon starts 01:00Z) — off-peak basis applies to all rows; peak rates $0.006/$0.3/$1.2 per Mtok computed as the registered worst case",
+  "calls_total_http": 5,
+  "paid_2xx_posts": 4,
+  "call_cap": 6,
+  "reserve_unspent": 1,
+  "prompt_tokens": 3024,
+  "prompt_cache_hit_tokens": 0,
+  "prompt_cache_miss_tokens": 3024,
+  "completion_tokens": 4270,
+  "reasoning_tokens_within_completion": 4000,
+  "est_usd_offpeak": 0.003016,
+  "est_usd_worstcase_peak": 0.006031,
+  "rows_at_peak_basis": 0,
+  "est_usd": 0.003016,
+  "hard_cap_usd": 0.05,
+  "predicted_range_usd": [
+   0.002,
+   0.02
+  ],
+  "modal_usd": 0.008,
+  "under_cap": true,
+  "in_predicted_range": true,
+  "cache_receipt": "prompt_cache_hit_tokens 0 on all 4 POSTs — fresh per-round prompts share no cache block with anything (registered expectation 0, CONFIRMED): the asset-free design also had a cache signature, and it is the null curve.",
+  "note": "modal $0.008 missed LOW a FOURTH straight round (actual $0.003016 off-peak): token estimates run fat, spend runs thin — now a 4-round pattern (r9 $0 fail-closed; r10 -43%; r11 -44%; r12 -62% vs modal)."
+ },
+ "cap_finding": "The reasoner seat is STILL voiceless at max_tokens 2000 — 6/6 reasoner calls across r11+r12 emitted zero final content (reasoning alone consumed the cap). r12 adds: even a SHORT clean prompt (499-token blind, no asset) exhausts 2000 reasoning tokens without concluding a prior. The r11 open-thread lever (raised output cap or a thinking switch) is now the only path to a concluded reasoner PRIOR; the extraction law keeps recovering the posterior question because the reveal state concentrates the deliberation, but a prior question is open-ended by design and starves.",
+ "honest_surprises": [
+  "The chat blind prior landed at 0.35 — byte-equal to the \"your_prior\" 0.35 the r10 state itself carries: the clean prior reproduces the instrument anchor the contaminated r11 trace overshot to 0.47. The contamination was measurable and directional.",
+  "The reveal-pair agreement band missed by 0.01 (|0.99 - 0.93| = 0.06 vs registered 0.05): r11's 0.02 same-mode agreement did not fully replicate on fresh instruments — receipted AS MEASURED, modal choice identical both seats.",
+  "The reasoner's drafted reveal JSON carries one_sentence: \"...\" — the cap cut mid-polish a SECOND round running; the draft still counts under the extraction law (key-complete), and the placeholder is sealed AS SAID.",
+  "The reasoner blind trace (9100 chars) explicitly acknowledges the asset-free framing before starving — the round's design fix is visible in the seat's own words, and the failure moved from design (r11) to economics (r12).",
+  "Spend modal missed LOW a fourth straight round ($0.0030 vs modal $0.008).",
+  "prompt_cache_hit_tokens 0/0/0/0: fresh per-round prompts = the null cache curve — itself a receipt that no registered prompt shares a block with any prior asset."
+ ],
+ "open_threads": [
+  "Keeper: fold round12_ledger.jsonl rows into the main tavern ledger (same append-only law as the r11 fold; the fold receipt pattern in 46d-round12-fold.mjs is reusable verbatim).",
+  "Next reasoner seat: raise max_tokens (or send the documented thinking switch) — required for any concluded reasoner PRIOR; the posterior question resolves via extraction but the prior question starves.",
+  "Pong49 window closed 2026-09-29T10:04:00Z (briefing calendar); keeper-armed scorer scores the external-comment question separately (r10 convention) — not this lane.",
+  "SCN-003 live half take 2 with a deepseek-chat seat (wave-46 planning item 1) — r12 re-confirms the chat seat answers fine at 2000 tokens."
+ ],
+ "push_log": [
+  {
+   "commit": "1c736253… (pre-rebase) / rebased lineage",
+   "what": "registration pre-run + the LEDGER FOLD (tavern_ledger.jsonl 52->58) + fold verifier",
+   "pushed": true,
+   "remote_eq_local": true
+  },
+  {
+   "commit": "(b) this results commit",
+   "what": "rows + raws + extraction + scorecard + lane-local ledger + summary + verifier D/E sections live",
+   "pushed": "after this file was written, per the fetch+rebase+push+verify law"
+  }
+ ],
+ "artifacts": {
+  "rows": "tavern/round-12/answers/deepseek-round12.jsonl",
+  "raws": "tavern/round-12/raw/ (5 files, byte-exact as received)",
+  "ledger": "tavern/round-12/round12_ledger.jsonl",
+  "fold": "tavern/tavern_ledger.jsonl rows 53-58 + tavern/round-12/scripts/46d-round12-fold.mjs",
+  "verifier": "tavern/round-12/verify_round12.mjs",
+  "predictions": "tavern/round-12/predictions/46d-round12-predictions.json"
+ },
+ "verifier": {
+  "script": "tavern/round-12/verify_round12.mjs (independent stone-v1 reimplementation; repo-relative; runs verify_round11.mjs as section C)",
+  "result_at_seal": "ALL CHECKS PASS (folded-ledger sections + run sections + key scan)",
+  "merged_main_tip": "1bf7f3d64947c5755c375dda896c0481506746ced46846a868e352bd9d380d16",
+  "lane_ledger_tip": "7102acbeb67772e1a22c998a291a66678b1d92032d1e97456c52129723fb0b9d"
+ },
+ "verdict": "ROUND TWELVE PASS with one honest partial family. The ledger fold verifies end-to-end (P4) and round-11's two open threads are closed: the fold stands in the main ledger, and the asset-free blind prior is now MEASURED where r11 could not — the clean chat prior 0.35 sits +0.58 below its own post-receipt posterior and exactly on the instrument's sealed anchor, quantifying the calibration gap the r11 contamination had hidden. Noul discipline holds on a harder surface (P3, 4/4 clean). The reasoner seat remains token-starved (6/6 voiceless) — the one structural lever left is budget, not design."
+}
