@@ -1,0 +1,51 @@
+{
+ "kind": "mothquantum-probe",
+ "ts_utc": "2026-09-29T03:30:35.367Z",
+ "ok": true,
+ "job_id": null,
+ "certified_bits": {
+  "requestedBytes": 512,
+  "deliveredBytes": 97,
+  "bits": 776,
+  "hexSha256": "01c418e1c7e346584a7eeee668fef4a0783b3c669d45d7d42caf1f88e384bab4",
+  "balance": 0.493557,
+  "declaredBits": 776,
+  "hBit": 0.8984231434770307,
+  "grade": "simulator-baseline",
+  "healthPassed": true,
+  "budgetBits": 909.2474582477662,
+  "effectiveEntropyBits": 128,
+  "stream": "certified-direct",
+  "consumedBits": 128,
+  "requiredBits": 128,
+  "extractor": {
+   "kind": "toeplitz",
+   "publicSeed": "toeplitz-v1",
+   "inputBits": 49152,
+   "outputBits": 776,
+   "epsilonLog2": 64
+  }
+ },
+ "cert_min_entropy": null,
+ "raw_result_sha256": "f9d33b035981c9eb00fdf8888d3d33d6d2a11b88b5dc8c31b0e9e2d4f8291927",
+ "chosen": {
+  "poolSize": 9,
+  "take": 1,
+  "selected": [
+   6
+  ],
+  "draws": 8,
+  "rejects": 0,
+  "shuffleOrderHead": [
+   6,
+   3,
+   4,
+   8,
+   1,
+   5,
+   0,
+   7
+  ]
+ },
+ "note": "full certified receipt at engine/receipts/2026-09-29-token-probe/moth-seal-probe.json"
+}

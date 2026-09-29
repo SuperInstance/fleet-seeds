@@ -1,0 +1,30 @@
+{
+ "kind": "m10-resolution",
+ "ts_utc": "2026-09-29T03:47:00Z",
+ "resolution_source": "https://arxiv.org/abs/2609.24972 (abstract page fetched 200, 45557 bytes; receipt: resolution-abs.html) + the repo README fetched at review time (682 stars, Apache-2.0)",
+ "prediction_sha256": "23ffb33ed3111a65",
+ "leg_a": {
+  "claim": "selection-side rule binds added inference cost to measured gain (external instance of M4 budget-cap law)",
+  "evidence": [
+   "README (receipted pre-seal in M10 review): 'a cost rule requires added inference tokens to be paid for by measured gain'",
+   "abstract: 'the pruner, removes changes that are too small, too expensive, or no longer useful'",
+   "abstract: 'producing a harness that runs on 30% fewer policy tokens than the unregularized evolution' — the cost accounting is load-bearing in the headline result, not decoration"
+  ],
+  "verdict": "PRESENT"
+ },
+ "leg_b": {
+  "claim": "regularized OOD gain strictly positive AND strictly below the matching in-distribution gain",
+  "evidence": [
+   "abstract: 'RRSI gains up to 14.1 points on the split it evolves against and up to 4.7 points on the five out-of-distribution benchmarks'",
+   "arithmetic: OOD 4.7 > 0 (strictly positive) and 4.7 < 14.1 (strictly below ID) — both conditions hold in the paper's own headline numbers"
+  ],
+  "verdict": "PRESENT"
+ },
+ "verdict": "PASS",
+ "meaning": "Two of our laws (M4 pre-registered budget caps; the A6 soil law — gains are soil-relative and regularization narrows but does not close the gap) arrive independently at Google Research as RRSI. The mine's adoption hook stands: jev-garden A13's pre-registered budget-cap header (wave-60 queue item 4) cites M10 + M4; the proposal-side mechanisms (annealed bundled-edit budget, history-conditioned proposer, stalled-run redirection) are adoption candidates for lode itself (stage-3/5 discipline).",
+ "honest_limits": [
+  "Resolution from the abstract page + README, not the full PDF body — sufficient for both registered legs because the paper's own headline sentence carries leg (b) and the pruner/cost language carries leg (a).",
+  "'up to' phrasing: 14.1/4.7 are maxima, not means — the strict inequality holds for the reported maxima; a full-body read could refine but not plausibly flip the legs given the abstract's framing.",
+  "The 30%-fewer-tokens figure compares against UNREGULARIZED evolution, not against the starting harness."
+ ]
+}

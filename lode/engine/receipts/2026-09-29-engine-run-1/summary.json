@@ -1,0 +1,12 @@
+{
+ "run": "2026-09-29-engine-run-1",
+ "scout_ok": 3,
+ "candidates": 9,
+ "candidates_sha256": "5ca6737662b3a8f3d4dd393d6acb2496d876ee650c4b0a9b2ec861b831a0c5eb",
+ "priors_ok": false,
+ "priors_model": null,
+ "usage": null,
+ "qrng_ok": true,
+ "drawn": "c7",
+ "next": "keeper reviews the DRAWN candidate only; if it survives, mines.jsonl gains a row with pred_sha256 + qrng witness; lode_validate must pass before push"
+}

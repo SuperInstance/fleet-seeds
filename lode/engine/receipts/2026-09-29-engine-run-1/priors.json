@@ -1,0 +1,6 @@
+{
+ "kind": "typesafe-priors",
+ "ts_utc": "2026-09-29T03:34:10.027Z",
+ "ok": false,
+ "error": "systemone HTTP 422: {\"detail\":[{\"type\":\"dict_type\",\"loc\":[\"body\",\"questions\",\"first_test\",\"choice\",\"criteria\"],\"msg\":\"Input should be a valid dictionary\",\"input\":[\"c1\",\"c12\",\"c2\",\"c5\",\"c6\",\"c7\",\"c8\",\"c9\",\"c10\"]}]}"
+}

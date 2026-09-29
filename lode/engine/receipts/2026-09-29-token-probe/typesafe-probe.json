@@ -1,0 +1,17 @@
+{
+ "kind": "typesafe-probe",
+ "ts_utc": "2026-09-29T03:30:35.076Z",
+ "ok": true,
+ "model": "jev-1.13.0",
+ "usage": {
+  "input_tokens": 346,
+  "output_tokens": 26
+ },
+ "latency_ms": 286.332,
+ "answers": {
+  "p_weco_l1_stable": {
+   "type": "noul",
+   "noul": 0.15
+  }
+ }
+}

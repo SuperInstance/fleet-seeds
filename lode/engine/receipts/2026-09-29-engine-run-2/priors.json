@@ -1,0 +1,65 @@
+{
+ "kind": "typesafe-priors",
+ "ts_utc": "2026-09-29T03:35:28.726Z",
+ "ok": true,
+ "model": "jev-1.13.0",
+ "usage": {
+  "input_tokens": 1692,
+  "output_tokens": 266
+ },
+ "latency_ms": 271.962,
+ "answers": {
+  "p_signal_c1": {
+   "type": "noul",
+   "noul": 0.39
+  },
+  "p_signal_c12": {
+   "type": "noul",
+   "noul": 0.28
+  },
+  "p_signal_c2": {
+   "type": "noul",
+   "noul": 0.3
+  },
+  "p_signal_c5": {
+   "type": "noul",
+   "noul": 0.28
+  },
+  "p_signal_c6": {
+   "type": "noul",
+   "noul": 0.3
+  },
+  "p_signal_c7": {
+   "type": "noul",
+   "noul": 0.21
+  },
+  "p_signal_c8": {
+   "type": "noul",
+   "noul": 0.3
+  },
+  "p_signal_c9": {
+   "type": "noul",
+   "noul": 0.12
+  },
+  "p_signal_c10": {
+   "type": "noul",
+   "noul": 0.28
+  },
+  "first_test": {
+   "type": "choice",
+   "choice": "c8",
+   "confidence": 0.19,
+   "probabilities": {
+    "c12": 0.16,
+    "c7": 0.01,
+    "c6": 0.02,
+    "c1": 0.11,
+    "c8": 0.27,
+    "c5": 0.01,
+    "c2": 0.02,
+    "c9": 0.21,
+    "c10": 0.19
+   }
+  }
+ }
+}
