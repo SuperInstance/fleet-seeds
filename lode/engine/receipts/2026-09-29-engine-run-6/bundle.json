@@ -1,0 +1,15 @@
+{
+ "kind": "review-bundle",
+ "ok": true,
+ "budget": 1,
+ "lead": "c1",
+ "lead_note": "chosen by certified QRNG (anti-cherry-pick)",
+ "members": [
+  {
+   "id": "c1",
+   "noul": 0.39,
+   "title": "lobehub/awesome-rsi"
+  }
+ ],
+ "fill_rule": "deterministic: descending typesafe noul prior, receipted in priors.json"
+}

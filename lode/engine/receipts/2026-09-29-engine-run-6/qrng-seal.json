@@ -1,0 +1,1501 @@
+{
+  "instrument": "fleet-seeds/tools/moth-seal.mjs",
+  "sealVersion": "1",
+  "schema": "moth-seal/receipt-v1",
+  "ts": "2026-09-29T16:57:20.266Z",
+  "label": "lode-2026-09-29-engine-run-6-review-order",
+  "mode": "certified",
+  "seedUseDeclaration": {
+    "consumer": "lode-2026-09-29-engine-run-6-review-order",
+    "poolSize": 4,
+    "take": 1,
+    "stream": "direct",
+    "declaredAt": "2026-09-29T16:57:20.266Z",
+    "singleUse": true,
+    "binding": "this seal binds seed material (jobId + seed-material sha256) to the ONE draw described by chosen{} for the consumer above; re-deriving another permutation from the same material is a protocol violation, detectable by comparing receipts (same jobId or same seed-material sha256 twice = reuse)"
+  },
+  "job": {
+    "engine": "comet-qrng-v1",
+    "jobId": "58a2f5cb-1bf9-4857-9e58-cd5920d9928f",
+    "finalStatus": "completed",
+    "polls": 3,
+    "params": {
+      "mode": "emu",
+      "num_qubits": 12,
+      "shots": 4096,
+      "output_bytes": 512,
+      "include_raw_counts": true,
+      "bell_witness": true
+    }
+  },
+  "certifiedBits": {
+    "requestedBytes": 512,
+    "deliveredBytes": 77,
+    "bits": 616,
+    "hexSha256": "8ec8e6891af31cdda9a39adc8405794bff79d86c83f733c30434a776f38ad4d4",
+    "balance": 0.503247,
+    "declaredBits": 616,
+    "hBit": 0.8951486060150392,
+    "grade": "simulator-baseline",
+    "healthPassed": true,
+    "budgetBits": 748.2973929159562,
+    "effectiveEntropyBits": 48,
+    "stream": "certified-direct",
+    "consumedBits": 48,
+    "requiredBits": 48,
+    "extractor": {
+      "kind": "toeplitz",
+      "publicSeed": "toeplitz-v1",
+      "inputBits": 49152,
+      "outputBits": 616,
+      "epsilonLog2": 64
+    }
+  },
+  "cert": {
+    "entropyReport": {
+      "accounting_basis": "modelled-independence",
+      "assumptions": [
+        "shots are independent repetitions (untestable without per-shot memory)",
+        "per-bit min-entropy = min(per-qubit MCV, pairwise joint MCV/2) at 99% confidence",
+        "qubits within a shot carry no dependence beyond pairwise correlations: this is ASSUMED, not proven — it is falsified (health failure) only when collision counts on the full register or on 512 random 8/16-qubit sub-registers exceed the pairwise tree model's prediction, which catches any structure collapsing a tested alphabet below ~2·log2(shots) bits and nothing subtler",
+        "ordering entropy log2(shots!) subtracted because the backend returned counts only",
+        "the assumption-free tier (whole-shot MCV) is capped near log2(shots) bits per shot by sample size and is ≈0 in counts mode",
+        "extractor seed: uniform, from the shipped seed ceremony (see seeds/README.md); strong-extractor seeds may be public and reused",
+        "no statistical test on S shots can establish more than ~log2(S) bits per shot without a structural assumption; the modelled tier makes one and names it"
+      ],
+      "budget_bits": 748.2973929159562,
+      "budget_bits_assumption_free": 0,
+      "budget_bits_modelled": 748.2973929159562,
+      "entropy_accounted": false,
+      "epsilon_log2": 64,
+      "grade": "simulator-baseline",
+      "h_bit": 0.8951486060150392,
+      "h_shot_assumption_free": 8.21235761918944,
+      "health_passed": true,
+      "independence_model_falsified": false,
+      "output_bits": 616,
+      "public_output": true,
+      "raw_bits": 49152,
+      "seed_mode": "shipped",
+      "statements": [
+        "49152 raw Born-rule bits from 12 qubits × 4096 shots (counts readout)",
+        "conservative per-bit min-entropy h = 0.8951 (SP 800-90B estimators at 99% confidence)",
+        "modelled budget = 748.3 bits (no dependence beyond pairwise correlations — ASSUMED, tested only by collision consistency against the pairwise tree model: full-register z = 1.55, 0/256 sub-registers failed)",
+        "assumption-free budget = 0.0 bits (whole-shot most-common-value bound, 8.21 bits/shot; capped near log2(shots) by sample size)",
+        "extractable min-entropy budget = 748.3 bits after subtracting log2(shots!) = 43250.0 bits for counts-only readout",
+        "bytes were extracted on the modelled-independence tier",
+        "Toeplitz extractor output 616 bits, 2^-64-close to uniform given that budget (leftover hash lemma: m ≤ budget − 2·64); seed 'toeplitz-v1' is a shipped uniform seed from a documented ceremony (information-theoretic)",
+        "OUTPUT BYTES ARE PUBLIC: recomputable by anyone from the raw counts and the seed. Not key material.",
+        "requested 512 bytes, delivered 77: budget-limited",
+        "mode='emu': bits come from a classical simulator's PRNG; not accounted as hardware entropy by construction",
+        "CHSH witness S = 2.841 ± 0.022 (violates the classical bound at 3σ)"
+      ],
+      "witness_violates_classical": true
+    },
+    "extractor": {
+      "epsilon_log2": 64,
+      "input_bits": 49152,
+      "input_serialisation": "sorted bitstrings repeated by count (canonical multiset)",
+      "kind": "toeplitz",
+      "output_bits": 616,
+      "public_seed": "toeplitz-v1",
+      "seed_id": "toeplitz-v1",
+      "seed_mode": "shipped"
+    },
+    "deviceFingerprint": {
+      "bias_pvalues": [
+        0.9377298779058658,
+        0.6504640117035221,
+        0.962613611976425,
+        0.32493147383972965,
+        0.7193193389280335,
+        0.025446475395679496,
+        0.6061217285755821,
+        0.3731323967754585,
+        0.39013618260636374,
+        0.863538470082649,
+        0.696079424504532,
+        0.5217713498010433,
+        0.12960408283703442,
+        0.2809763901518693,
+        0.01086037979414413,
+        0.03229169757145623,
+        0.8146973647982482,
+        0.5016680544578743,
+        0.888168413744764,
+        0.22892371643656792
+      ],
+      "n_qubits": 20,
+      "n_significant_pairs": 4,
+      "note": "⟨Z⟩ on randomness qubits should be ≈0 (readout/prep bias shows as a nonzero value); witness qubits are expected to be biased by their rotated bases. ZZ pairs between randomness qubits should be ≈0 — nonzero values are crosstalk / correlated readout and lower the entropy budget.",
+      "p1": [
+        0.500732421875,
+        0.503662109375,
+        0.50048828125,
+        0.5078125,
+        0.5029296875,
+        0.517578125,
+        0.504150390625,
+        0.507080078125,
+        0.4931640625,
+        0.50146484375,
+        0.503173828125,
+        0.505126953125,
+        0.511962890625,
+        0.508544921875,
+        0.47998046875,
+        0.516845703125,
+        0.498046875,
+        0.49462890625,
+        0.498779296875,
+        0.509521484375
+      ],
+      "roles": {
+        "randomness": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "witness_pairs": [
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            18,
+            19
+          ]
+        ]
+      },
+      "stuck_qubits": [],
+      "top_correlated_pairs": [
+        {
+          "h_pair": 1.1399127050189843,
+          "p_max_joint": 0.433837890625,
+          "phi": 0.7207082457181051,
+          "qubits": [
+            16,
+            17
+          ],
+          "z": 46.125327725958726
+        },
+        {
+          "h_pair": 1.122079444245182,
+          "p_max_joint": 0.439453125,
+          "phi": 0.7166977888687456,
+          "qubits": [
+            12,
+            13
+          ],
+          "z": 45.86865848759972
+        },
+        {
+          "h_pair": 1.1500944368029287,
+          "p_max_joint": 0.4306640625,
+          "phi": 0.7062313470707512,
+          "qubits": [
+            18,
+            19
+          ],
+          "z": 45.198806212528076
+        },
+        {
+          "h_pair": 1.1113353291446058,
+          "p_max_joint": 0.44287109375,
+          "phi": -0.6973597212776105,
+          "qubits": [
+            14,
+            15
+          ],
+          "z": -44.63102216176707
+        },
+        {
+          "h_pair": 1.8369580384300406,
+          "p_max_joint": 0.26220703125,
+          "phi": -0.04298067779518759,
+          "qubits": [
+            0,
+            1
+          ],
+          "z": -2.750763378892006
+        },
+        {
+          "h_pair": 1.8292649648335941,
+          "p_max_joint": 0.263671875,
+          "phi": -0.04127494249830296,
+          "qubits": [
+            11,
+            12
+          ],
+          "z": -2.6415963198913897
+        },
+        {
+          "h_pair": 1.8064364756839553,
+          "p_max_joint": 0.26806640625,
+          "phi": 0.04117872361225568,
+          "qubits": [
+            5,
+            16
+          ],
+          "z": 2.6354383111843633
+        },
+        {
+          "h_pair": 1.795160487024686,
+          "p_max_joint": 0.270263671875,
+          "phi": 0.04114686640139398,
+          "qubits": [
+            3,
+            12
+          ],
+          "z": 2.6333994496892146
+        },
+        {
+          "h_pair": 1.8459871124314187,
+          "p_max_joint": 0.260498046875,
+          "phi": -0.04053185271443526,
+          "qubits": [
+            0,
+            9
+          ],
+          "z": -2.5940385737238567
+        },
+        {
+          "h_pair": 1.7964088935887454,
+          "p_max_joint": 0.27001953125,
+          "phi": 0.03837555431206488,
+          "qubits": [
+            5,
+            10
+          ],
+          "z": 2.4560354759721523
+        },
+        {
+          "h_pair": 1.8369580384300406,
+          "p_max_joint": 0.26220703125,
+          "phi": -0.03806709685642211,
+          "qubits": [
+            6,
+            18
+          ],
+          "z": -2.436294198811015
+        },
+        {
+          "h_pair": 1.8026677002995033,
+          "p_max_joint": 0.268798828125,
+          "phi": -0.03728470296763073,
+          "qubits": [
+            8,
+            12
+          ],
+          "z": -2.3862209899283666
+        },
+        {
+          "h_pair": 1.7790318236246723,
+          "p_max_joint": 0.2734375,
+          "phi": -0.03597092602084818,
+          "qubits": [
+            13,
+            14
+          ],
+          "z": -2.3021392653342834
+        },
+        {
+          "h_pair": 1.8434014225661544,
+          "p_max_joint": 0.260986328125,
+          "phi": -0.03336839673728508,
+          "qubits": [
+            6,
+            19
+          ],
+          "z": -2.1355773911862452
+        },
+        {
+          "h_pair": 1.8089546477021725,
+          "p_max_joint": 0.267578125,
+          "phi": 0.03190009889002121,
+          "qubits": [
+            7,
+            12
+          ],
+          "z": 2.0416063289613575
+        },
+        {
+          "h_pair": 1.8369580384300406,
+          "p_max_joint": 0.26220703125,
+          "phi": -0.031672559066820774,
+          "qubits": [
+            10,
+            17
+          ],
+          "z": -2.0270437802765295
+        }
+      ],
+      "z_expectations": [
+        -0.00146484375,
+        -0.00732421875,
+        -0.0009765625,
+        -0.015625,
+        -0.005859375,
+        -0.03515625,
+        -0.00830078125,
+        -0.01416015625,
+        0.013671875,
+        -0.0029296875,
+        -0.00634765625,
+        -0.01025390625,
+        -0.02392578125,
+        -0.01708984375,
+        0.0400390625,
+        -0.03369140625,
+        0.00390625,
+        0.0107421875,
+        0.00244140625,
+        -0.01904296875
+      ],
+      "zz_pairs": [
+        [
+          0,
+          1,
+          -0.04296875
+        ],
+        [
+          0,
+          2,
+          0.02587890625
+        ],
+        [
+          0,
+          3,
+          0.01123046875
+        ],
+        [
+          0,
+          4,
+          0.01220703125
+        ],
+        [
+          0,
+          5,
+          0.00048828125
+        ],
+        [
+          0,
+          6,
+          -0.0068359375
+        ],
+        [
+          0,
+          7,
+          -0.0078125
+        ],
+        [
+          0,
+          8,
+          -0.02197265625
+        ],
+        [
+          0,
+          9,
+          -0.04052734375
+        ],
+        [
+          0,
+          10,
+          0.0029296875
+        ],
+        [
+          0,
+          11,
+          -0.0087890625
+        ],
+        [
+          0,
+          12,
+          -0.0126953125
+        ],
+        [
+          0,
+          13,
+          -0.0078125
+        ],
+        [
+          0,
+          14,
+          -0.01220703125
+        ],
+        [
+          0,
+          15,
+          0.0166015625
+        ],
+        [
+          0,
+          16,
+          -0.02294921875
+        ],
+        [
+          0,
+          17,
+          -0.02197265625
+        ],
+        [
+          0,
+          18,
+          -0.00390625
+        ],
+        [
+          0,
+          19,
+          -0.0068359375
+        ],
+        [
+          1,
+          2,
+          -0.03076171875
+        ],
+        [
+          1,
+          3,
+          0.00048828125
+        ],
+        [
+          1,
+          4,
+          -0.00048828125
+        ],
+        [
+          1,
+          5,
+          -0.02392578125
+        ],
+        [
+          1,
+          6,
+          -0.0048828125
+        ],
+        [
+          1,
+          7,
+          0.0234375
+        ],
+        [
+          1,
+          8,
+          0.02490234375
+        ],
+        [
+          1,
+          9,
+          -0.01513671875
+        ],
+        [
+          1,
+          10,
+          -0.01171875
+        ],
+        [
+          1,
+          11,
+          0.021484375
+        ],
+        [
+          1,
+          12,
+          0.0234375
+        ],
+        [
+          1,
+          13,
+          -0.0048828125
+        ],
+        [
+          1,
+          14,
+          -0.01416015625
+        ],
+        [
+          1,
+          15,
+          0.0078125
+        ],
+        [
+          1,
+          16,
+          0.01220703125
+        ],
+        [
+          1,
+          17,
+          0.01416015625
+        ],
+        [
+          1,
+          18,
+          -0.001953125
+        ],
+        [
+          1,
+          19,
+          -0.0048828125
+        ],
+        [
+          2,
+          3,
+          -0.0068359375
+        ],
+        [
+          2,
+          4,
+          -0.013671875
+        ],
+        [
+          2,
+          5,
+          0.021484375
+        ],
+        [
+          2,
+          6,
+          0.00927734375
+        ],
+        [
+          2,
+          7,
+          -0.00830078125
+        ],
+        [
+          2,
+          8,
+          0.0107421875
+        ],
+        [
+          2,
+          9,
+          0.0087890625
+        ],
+        [
+          2,
+          10,
+          0.02001953125
+        ],
+        [
+          2,
+          11,
+          0.00830078125
+        ],
+        [
+          2,
+          12,
+          -0.00732421875
+        ],
+        [
+          2,
+          13,
+          -0.01123046875
+        ],
+        [
+          2,
+          14,
+          0.0048828125
+        ],
+        [
+          2,
+          15,
+          -0.00439453125
+        ],
+        [
+          2,
+          16,
+          0.0146484375
+        ],
+        [
+          2,
+          17,
+          0.01171875
+        ],
+        [
+          2,
+          18,
+          0.00244140625
+        ],
+        [
+          2,
+          19,
+          0.00732421875
+        ],
+        [
+          3,
+          4,
+          -0.0009765625
+        ],
+        [
+          3,
+          5,
+          0.00390625
+        ],
+        [
+          3,
+          6,
+          0.01806640625
+        ],
+        [
+          3,
+          7,
+          0.00244140625
+        ],
+        [
+          3,
+          8,
+          -0.0146484375
+        ],
+        [
+          3,
+          9,
+          0.0234375
+        ],
+        [
+          3,
+          10,
+          -0.00048828125
+        ],
+        [
+          3,
+          11,
+          0.00048828125
+        ],
+        [
+          3,
+          12,
+          0.04150390625
+        ],
+        [
+          3,
+          13,
+          0.02490234375
+        ],
+        [
+          3,
+          14,
+          -0.0263671875
+        ],
+        [
+          3,
+          15,
+          0.02490234375
+        ],
+        [
+          3,
+          16,
+          0.01953125
+        ],
+        [
+          3,
+          17,
+          0.01171875
+        ],
+        [
+          3,
+          18,
+          -0.01318359375
+        ],
+        [
+          3,
+          19,
+          -0.02978515625
+        ],
+        [
+          4,
+          5,
+          -0.0205078125
+        ],
+        [
+          4,
+          6,
+          -0.01025390625
+        ],
+        [
+          4,
+          7,
+          -0.00244140625
+        ],
+        [
+          4,
+          8,
+          -0.0078125
+        ],
+        [
+          4,
+          9,
+          0.025390625
+        ],
+        [
+          4,
+          10,
+          0.01806640625
+        ],
+        [
+          4,
+          11,
+          0.00146484375
+        ],
+        [
+          4,
+          12,
+          0.00634765625
+        ],
+        [
+          4,
+          13,
+          0.01513671875
+        ],
+        [
+          4,
+          14,
+          -0.0107421875
+        ],
+        [
+          4,
+          15,
+          0.01806640625
+        ],
+        [
+          4,
+          16,
+          0.0078125
+        ],
+        [
+          4,
+          17,
+          -0.001953125
+        ],
+        [
+          4,
+          18,
+          -0.00732421875
+        ],
+        [
+          4,
+          19,
+          0.01806640625
+        ],
+        [
+          5,
+          6,
+          0.01708984375
+        ],
+        [
+          5,
+          7,
+          -0.00146484375
+        ],
+        [
+          5,
+          8,
+          -0.025390625
+        ],
+        [
+          5,
+          9,
+          0.005859375
+        ],
+        [
+          5,
+          10,
+          0.03857421875
+        ],
+        [
+          5,
+          11,
+          -0.01904296875
+        ],
+        [
+          5,
+          12,
+          -0.00244140625
+        ],
+        [
+          5,
+          13,
+          -0.02392578125
+        ],
+        [
+          5,
+          14,
+          -0.01171875
+        ],
+        [
+          5,
+          15,
+          0.01513671875
+        ],
+        [
+          5,
+          16,
+          0.041015625
+        ],
+        [
+          5,
+          17,
+          0.025390625
+        ],
+        [
+          5,
+          18,
+          -0.01708984375
+        ],
+        [
+          5,
+          19,
+          -0.00634765625
+        ],
+        [
+          6,
+          7,
+          0.0224609375
+        ],
+        [
+          6,
+          8,
+          -0.00244140625
+        ],
+        [
+          6,
+          9,
+          -0.01416015625
+        ],
+        [
+          6,
+          10,
+          0.0068359375
+        ],
+        [
+          6,
+          11,
+          0.0078125
+        ],
+        [
+          6,
+          12,
+          -0.013671875
+        ],
+        [
+          6,
+          13,
+          -0.0224609375
+        ],
+        [
+          6,
+          14,
+          0.01220703125
+        ],
+        [
+          6,
+          15,
+          -0.0283203125
+        ],
+        [
+          6,
+          16,
+          0.00341796875
+        ],
+        [
+          6,
+          17,
+          -0.00244140625
+        ],
+        [
+          6,
+          18,
+          -0.0380859375
+        ],
+        [
+          6,
+          19,
+          -0.033203125
+        ],
+        [
+          7,
+          8,
+          -0.00146484375
+        ],
+        [
+          7,
+          9,
+          0.00244140625
+        ],
+        [
+          7,
+          10,
+          0.0126953125
+        ],
+        [
+          7,
+          11,
+          -0.01171875
+        ],
+        [
+          7,
+          12,
+          0.0322265625
+        ],
+        [
+          7,
+          13,
+          0.0302734375
+        ],
+        [
+          7,
+          14,
+          -0.00244140625
+        ],
+        [
+          7,
+          15,
+          -0.001953125
+        ],
+        [
+          7,
+          16,
+          0.01513671875
+        ],
+        [
+          7,
+          17,
+          -0.00244140625
+        ],
+        [
+          7,
+          18,
+          -0.0185546875
+        ],
+        [
+          7,
+          19,
+          -0.025390625
+        ],
+        [
+          8,
+          9,
+          -0.0078125
+        ],
+        [
+          8,
+          10,
+          -0.00537109375
+        ],
+        [
+          8,
+          11,
+          0.00048828125
+        ],
+        [
+          8,
+          12,
+          -0.03759765625
+        ],
+        [
+          8,
+          13,
+          -0.01611328125
+        ],
+        [
+          8,
+          14,
+          -0.0205078125
+        ],
+        [
+          8,
+          15,
+          -0.00830078125
+        ],
+        [
+          8,
+          16,
+          0.0087890625
+        ],
+        [
+          8,
+          17,
+          0.03125
+        ],
+        [
+          8,
+          18,
+          0.00244140625
+        ],
+        [
+          8,
+          19,
+          -0.01123046875
+        ],
+        [
+          9,
+          10,
+          0.01416015625
+        ],
+        [
+          9,
+          11,
+          0.00634765625
+        ],
+        [
+          9,
+          12,
+          0.01513671875
+        ],
+        [
+          9,
+          13,
+          0.00927734375
+        ],
+        [
+          9,
+          14,
+          -0.00390625
+        ],
+        [
+          9,
+          15,
+          -0.00341796875
+        ],
+        [
+          9,
+          16,
+          0.015625
+        ],
+        [
+          9,
+          17,
+          0.001953125
+        ],
+        [
+          9,
+          18,
+          0.00244140625
+        ],
+        [
+          9,
+          19,
+          0.00927734375
+        ],
+        [
+          10,
+          11,
+          0.0185546875
+        ],
+        [
+          10,
+          12,
+          0.0107421875
+        ],
+        [
+          10,
+          13,
+          0.0009765625
+        ],
+        [
+          10,
+          14,
+          -0.00244140625
+        ],
+        [
+          10,
+          15,
+          0.01953125
+        ],
+        [
+          10,
+          16,
+          -0.02880859375
+        ],
+        [
+          10,
+          17,
+          -0.03173828125
+        ],
+        [
+          10,
+          18,
+          -0.0078125
+        ],
+        [
+          10,
+          19,
+          -0.0048828125
+        ],
+        [
+          11,
+          12,
+          -0.041015625
+        ],
+        [
+          11,
+          13,
+          -0.025390625
+        ],
+        [
+          11,
+          14,
+          0.00244140625
+        ],
+        [
+          11,
+          15,
+          -0.0185546875
+        ],
+        [
+          11,
+          16,
+          -0.00732421875
+        ],
+        [
+          11,
+          17,
+          -0.01220703125
+        ],
+        [
+          11,
+          18,
+          0.0048828125
+        ],
+        [
+          11,
+          19,
+          0.00390625
+        ],
+        [
+          12,
+          13,
+          0.716796875
+        ],
+        [
+          12,
+          14,
+          -0.03076171875
+        ],
+        [
+          12,
+          15,
+          0.01953125
+        ],
+        [
+          12,
+          16,
+          -0.00048828125
+        ],
+        [
+          12,
+          17,
+          0.01123046875
+        ],
+        [
+          12,
+          18,
+          -0.001953125
+        ],
+        [
+          12,
+          19,
+          -0.0078125
+        ],
+        [
+          13,
+          14,
+          -0.03662109375
+        ],
+        [
+          13,
+          15,
+          0.0126953125
+        ],
+        [
+          13,
+          16,
+          0.00146484375
+        ],
+        [
+          13,
+          17,
+          0.02197265625
+        ],
+        [
+          13,
+          18,
+          -0.005859375
+        ],
+        [
+          13,
+          19,
+          -0.017578125
+        ],
+        [
+          14,
+          15,
+          -0.69775390625
+        ],
+        [
+          14,
+          16,
+          0.0048828125
+        ],
+        [
+          14,
+          17,
+          0.0107421875
+        ],
+        [
+          14,
+          18,
+          0.00048828125
+        ],
+        [
+          14,
+          19,
+          0.00146484375
+        ],
+        [
+          15,
+          16,
+          -0.01416015625
+        ],
+        [
+          15,
+          17,
+          -0.01025390625
+        ],
+        [
+          15,
+          18,
+          -0.0146484375
+        ],
+        [
+          15,
+          19,
+          -0.015625
+        ],
+        [
+          16,
+          17,
+          0.720703125
+        ],
+        [
+          16,
+          18,
+          0.00341796875
+        ],
+        [
+          16,
+          19,
+          0.02685546875
+        ],
+        [
+          17,
+          18,
+          0.00830078125
+        ],
+        [
+          17,
+          19,
+          0.02099609375
+        ],
+        [
+          18,
+          19,
+          0.7060546875
+        ]
+      ]
+    },
+    "commitment": {
+      "binds": [
+        "circuit_hash",
+        "backend",
+        "provider_job_id",
+        "salt"
+      ],
+      "commit": "08b27573a9c2e8b04c911249a0b2fff73221b2e6974a4f69a2ac4aeb21201351",
+      "committed_at": "2026-09-29T16:57:24+00:00",
+      "note": "Formed at submit, after the provider accepted the job and before any outcome existed. Publish `commit` before collect completes for it to mean anything to a third party.",
+      "salt": "74282cfd1d44187c445a34065de17881fc947d1a384ff103875c740c0ecb6baa"
+    },
+    "pulse": {
+      "commitment": {
+        "commit": "08b27573a9c2e8b04c911249a0b2fff73221b2e6974a4f69a2ac4aeb21201351",
+        "salt": "74282cfd1d44187c445a34065de17881fc947d1a384ff103875c740c0ecb6baa"
+      },
+      "entropy": {
+        "basis": "modelled-independence",
+        "budget_bits": 748.2973929159562,
+        "budget_bits_assumption_free": 0,
+        "h_bit": 0.8951486060150392,
+        "health_passed": true,
+        "readout": "counts"
+      },
+      "extractor": {
+        "epsilon_log2": 64,
+        "input_bits": 49152,
+        "input_serialisation": "sorted bitstrings repeated by count (canonical multiset)",
+        "kind": "toeplitz",
+        "output_bits": 616,
+        "public_seed": "toeplitz-v1",
+        "seed_id": "toeplitz-v1",
+        "seed_mode": "shipped"
+      },
+      "index": null,
+      "output_hash": "8ec8e6891af31cdda9a39adc8405794bff79d86c83f733c30434a776f38ad4d4",
+      "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "provenance": {
+        "backend": "aer",
+        "built_at": "2026-09-29T16:57:23+00:00",
+        "circuit": {
+          "bell_witness": true,
+          "n_rand": 12,
+          "n_total": 20,
+          "witness_pairs": [
+            [
+              12,
+              13
+            ],
+            [
+              14,
+              15
+            ],
+            [
+              16,
+              17
+            ],
+            [
+              18,
+              19
+            ]
+          ]
+        },
+        "circuit_hash": "76b9752d54d5aa067d4b615ddb73b55669bad46a4a2d51e754d7da4bf9c05d16",
+        "collected_at": null,
+        "committed_at": "2026-09-29T16:57:24+00:00",
+        "engine": "comet-qrng-v1",
+        "engine_version": "1.0.0",
+        "formatted_at": "2026-09-29T16:57:28+00:00",
+        "initial_layout": null,
+        "mode": "emu",
+        "provider_job_id": "b67ed0ba8a4140a496fdbff987132cb4",
+        "qpu_seconds": null,
+        "readout": "counts",
+        "shots": 4096
+      },
+      "pulse_hash": "3f8578deb70a385d341946895ef69b7ae15b408f4f937f6272beb9d839f94a4b",
+      "raw_counts_hash": "a3107212806523a93883755a395ffffff0fe4d2aa3efba16ee6e5ebfb4c704a7",
+      "timestamp": "2026-09-29T16:57:28+00:00",
+      "version": 2
+    },
+    "bellWitness": {
+      "S": 2.84130859375,
+      "caveat": "Fixed measurement settings, no space-like separation, fair sampling assumed: this witnesses entangling-gate and readout fidelity on the device that produced the randomness. It is not device-independent certification.",
+      "classical_bound": 2,
+      "correlators": [
+        {
+          "E": 0.716796875,
+          "counts": {
+            "10": 297,
+            "11": 1800,
+            "00": 1716,
+            "01": 283
+          },
+          "qubits": [
+            12,
+            13
+          ],
+          "setting": "E(a,b)",
+          "sigma": 0.010895031837843147
+        },
+        {
+          "E": -0.69775390625,
+          "counts": {
+            "10": 1663,
+            "11": 303,
+            "00": 316,
+            "01": 1814
+          },
+          "qubits": [
+            14,
+            15
+          ],
+          "setting": "E(a,b')",
+          "sigma": 0.011192774227178985
+        },
+        {
+          "E": 0.720703125,
+          "counts": {
+            "10": 293,
+            "11": 1747,
+            "00": 1777,
+            "01": 279
+          },
+          "qubits": [
+            16,
+            17
+          ],
+          "setting": "E(a',b)",
+          "sigma": 0.01083193481875615
+        },
+        {
+          "E": 0.7060546875,
+          "counts": {
+            "10": 279,
+            "11": 1764,
+            "00": 1730,
+            "01": 323
+          },
+          "qubits": [
+            18,
+            19
+          ],
+          "setting": "E(a',b')",
+          "sigma": 0.011064957996913335
+        }
+      ],
+      "enabled": true,
+      "equivalent_depolarising_p": 0,
+      "kind": "chsh_fidelity_witness",
+      "p_value_local_realist": 1.97e-320,
+      "sigma_S": 0.021994181526927892,
+      "tsirelson_bound": 2.8284271247461903,
+      "violates_classical_3sigma": true,
+      "z_above_classical": 38.25141629935035
+    }
+  },
+  "rawResultSha256": "b81c142a34f13ab4c1aa072b8a1c2457c21e4167d84282a0afde606fa58d4c73",
+  "chosen": {
+    "poolSize": 4,
+    "take": 1,
+    "selected": [
+      0
+    ],
+    "draws": 3,
+    "rejects": 0,
+    "shuffleOrderHead": [
+      0,
+      2,
+      1,
+      3
+    ]
+  },
+  "keysUsed": "MOTH_KEY runtime-only (never printed, never receipted)",
+  "note": ""
+}

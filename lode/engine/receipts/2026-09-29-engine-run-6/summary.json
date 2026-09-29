@@ -1,0 +1,20 @@
+{
+ "run": "2026-09-29-engine-run-6",
+ "scout_ok": 5,
+ "history_excluded": 5,
+ "candidates": 4,
+ "candidates_sha256": "d20d186422f762354c40888bf16f1862a8b4059b756027931ffd048e0dd17189",
+ "edit_budget": 1,
+ "priors_ok": true,
+ "priors_model": "jev-1.13.0",
+ "usage": {
+  "input_tokens": 1052,
+  "output_tokens": 127
+ },
+ "qrng_ok": true,
+ "drawn": "c1",
+ "bundle": [
+  "c1"
+ ],
+ "next": "keeper reviews the DRAWN candidate (bundle lead) deeply; if it survives, mines.jsonl gains a row with pred_sha256 + qrng witness; lode_validate must pass before push; bundle fillers stay frozen candidates for future runs (budget-annealed, not discarded)"
+}

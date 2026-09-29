@@ -1,0 +1,141 @@
+{
+ "kind": "history-conditioning",
+ "law": "M10 proposal side (arXiv:2609.24972): proposer conditioned on full edit history so falsified hypotheses are not redrawn",
+ "mined_markers": [
+  {
+   "id": "M1",
+   "slugs": [],
+   "arxivs": []
+  },
+  {
+   "id": "M2",
+   "slugs": [],
+   "arxivs": [
+    "2507.19457"
+   ]
+  },
+  {
+   "id": "M3",
+   "slugs": [],
+   "arxivs": [
+    "2609.26457"
+   ]
+  },
+  {
+   "id": "M4",
+   "slugs": [],
+   "arxivs": []
+  },
+  {
+   "id": "M5",
+   "slugs": [
+    "primeintellect-ai/prime-agent"
+   ],
+   "arxivs": []
+  },
+  {
+   "id": "M6",
+   "slugs": [],
+   "arxivs": [
+    "2505.03335"
+   ]
+  },
+  {
+   "id": "M7",
+   "slugs": [],
+   "arxivs": []
+  },
+  {
+   "id": "M8",
+   "slugs": [],
+   "arxivs": []
+  },
+  {
+   "id": "M9",
+   "slugs": [],
+   "arxivs": [
+    "2609.11873"
+   ]
+  },
+  {
+   "id": "M10",
+   "slugs": [
+    "google-research/rrsi"
+   ],
+   "arxivs": [
+    "2609.24972"
+   ]
+  },
+  {
+   "id": "M11",
+   "slugs": [],
+   "arxivs": [
+    "2609.34924"
+   ]
+  }
+ ],
+ "previously_drawn": [
+  {
+   "run": "2026-09-29-engine-run-1",
+   "id": "c7",
+   "title": "Agent swarms, alignment, & recursive self-improvement",
+   "ref": "https://www.dwarkesh.com/p/noam-brown"
+  },
+  {
+   "run": "2026-09-29-engine-run-2",
+   "id": "c1",
+   "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
+   "ref": "https://github.com/google-research/rrsi"
+  },
+  {
+   "run": "2026-09-29-engine-run-4",
+   "id": "c4",
+   "title": "Noam Brown – Agent swarms, alignment, & recursive self-improvement",
+   "ref": "https://www.dwarkesh.com/p/noam-brown"
+  },
+  {
+   "run": "2026-09-29-engine-run-5",
+   "id": "c3",
+   "title": "Recursive self-improvement of AI research agents",
+   "ref": "https://arxiv.org/abs/2609.26457"
+  }
+ ],
+ "excluded": [
+  {
+   "id": "c1",
+   "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
+   "source": "hn-algolia",
+   "ref": "https://github.com/google-research/rrsi",
+   "matched": "M10"
+  },
+  {
+   "id": "c17",
+   "title": "Audit the Scaffold, Not the Checkpoint: A Stationarity Dichotomy for Recursive Self-Improvement in Agentic Coding",
+   "source": "arxiv",
+   "ref": "http://arxiv.org/abs/2609.34924v1",
+   "matched": "M11"
+  },
+  {
+   "id": "c2",
+   "title": "Recursive self-improvement of AI research agents",
+   "source": "hn-algolia",
+   "ref": "https://arxiv.org/abs/2609.26457",
+   "matched": "M3"
+  },
+  {
+   "id": "c5",
+   "title": "Noam Brown – Agent swarms, alignment, & recursive self-improvement",
+   "source": "hn-algolia",
+   "ref": "https://www.dwarkesh.com/p/noam-brown",
+   "matched": "drawn@2026-09-29-engine-run-4"
+  },
+  {
+   "id": "c7",
+   "title": "Agent swarms, alignment, & recursive self-improvement",
+   "source": "hn-algolia",
+   "ref": "https://www.dwarkesh.com/p/noam-brown",
+   "matched": "drawn@2026-09-29-engine-run-1"
+  }
+ ],
+ "error": null
+}
