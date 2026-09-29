@@ -179,3 +179,16 @@ Directive: "keep going" (standing full green light; wave-62 queue executed as ma
 - wave-65 matrix queued with falsifiers (canons §5): A ocean-embed bridge (deepinfra space vs i2i-index bge-m3 via /near read path), B System One gate cell + E9 adversarial battery, C comet-qrng channel-health probe BEFORE any engine run-7 dependency (the wave-63 queue item, now with a live certified-QRNG engine), D cellular cron-iterator design-only (no unregistered writes), E cheap-pair decomposition + external judge vs single-call baseline
 - spend of record: deepinfra ≈$0.001; moth 4 credits total (2 lane hello + 2 cross-probe); typesafe input-token billing only (output free)
 - key-scan CLEAN ×4 at close (scripts/keyscan.sh, baseline + post-write)
+
+## Round 65 — hot lanes: five lanes, push backlog cleared, payloads landed
+- lane: keeper main + 5 parallel lanes (65-A..E); receipt: quilt-research-canons/research/wave-65-hot-lanes-integration-2026-09-30.md
+- GH token arrived -> push backlog cleared remote==local x4 (canons/jepa/fleet-seeds rebased over teammate lanes; quilt-c branch new) + 3 staged payloads landed 201: quilt-c PR #6, PR#2 review comment (post-merge preface — PR merged 593107b before posting), canons issue #2 = rung-3 stranger window OPEN thru 2026-10-14
+- 65-A ocean-embed: GO-conditional — neural 0.9115 vs E8 hashing 0.6708; NEGATION-BLIND (contradictions 0.9858 > paraphrases): vectors recall, receipts judge; /near is GET (POST assumption falsified live)
+- 65-B System One gate: 0.929±0.0032 near-deterministic; phrasing dominates 40:1 (pin family then threshold); E9 leak did NOT reproduce live (coherent dissent); gate.py 16/16 falsifier cases + live fail branch; decidable-shape noul 0.80 (3rd independent confirm)
+- 65-C moth channel HEALTHY: comet-qrng 9/9 cert gates, 464 bits >= 112 E6 need (4x headroom), CHSH 2.816±0.022 (2 jobs / 5 cr within cap); E6 re-registration UNBLOCKED; emu = simulator-baseline honestly labeled
+- 65-D relational-cell decomposition YES: 0.84 prose -> 3.16 vocabulary -> 3.59 pipeline under external judge; vocabulary carries the margin, not the skeptic; reasoning-burn cascade caught, reasoning_effort=minimal rescues; refutation-gate hole receipted
+- 65-E ideation: diversity real on open questions (cos 0.685) collapses in gravity wells (9 pairs >0.915); blind judge agrees with embedding distinctness (r=+0.70); memo: Ledger-Grade Randomized Trials + Stranger-Auditable SVDR; independent moth-health corroboration (dual-lane)
+- synthesis: vectors recall / receipts judge (negation blindness + no-refutation-gate = same missing organ); reasoning-burn 3-lane hazard with portable fix; instruments triangulated
+- hygiene incident receipted: workspace auto-committer swept .env.keys into local root commit (no remote, zero external exposure; untracked+ignored; rotate wave-64 keys at next roll)
+- wave-66 queue: E6 re-registration (recovered channel), refutation gate for skeptic patches, symbolic guard layer over ocean memory, LGR pilot (gated on keeper token), System One quilt-cell gate adoption, refreshed externalisability audit on main, key rotation
+- key-scan CLEAN x4 at close
