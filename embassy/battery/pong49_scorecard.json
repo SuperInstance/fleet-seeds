@@ -1,42 +1,127 @@
 {
-  "status": "PREMATURE",
-  "verdict": null,
-  "generated_at_utc": "2026-09-27T19:46:11.292Z",
-  "now_utc": "2026-09-27T19:46:11.292Z",
+  "status": "SCORED",
+  "verdict": "emitted",
+  "generated_at_utc": "2026-09-29T15:19:52.279Z",
   "window": {
     "open": "2026-09-27T10:04:00Z",
     "close": "2026-09-29T10:04:00Z"
   },
-  "premature_receipt": {
-    "guard": "hard-coded WINDOW_CLOSE 2026-09-29T10:04:00Z; this run refused to resolve the outcome or emit any Brier because now < close",
-    "exit_code": 2,
-    "keeper_instruction": "re-run AFTER 2026-09-29T10:04:00Z to score (exit 0). Interim state below is observation only.",
-    "registration_note": "the registration contains exactly ONE pong49 outcome (p_pong49_external_comment) priced by lane 37-a (0.07) and JEV r8 (0.15), with r9 remap priors 0.13/0.14. No 'sign-lane fix landed' / 'letter acknowledged' outcome was ever registered — nothing else will be scored."
+  "resolved_at_utc": "2026-09-29T15:19:52.279Z",
+  "scores": {
+    "resolution": {
+      "question": "p_pong49_external_comment",
+      "registered_text": "any comment authored by an account whose login is not 'SuperInstance' on SuperInstance/pong-quilt #49 within [2026-09-27T10:04:00Z, 2026-09-29T10:04:00Z] = 1, else 0",
+      "outcome": 0,
+      "outcome_label": "NO_FOREIGN_REPLY",
+      "evidence": [],
+      "evidence_kind": "GitHub API comments list: zero non-SuperInstance authors in window"
+    },
+    "prices": [
+      {
+        "predictor": "lane_37a_jev_smith",
+        "p": 0.07,
+        "instrument": "lane (pre-registered before the JEV call)",
+        "source": "tavern/jev_calibration_battery_r8.json#lane_predictions_37a_jev_smith.p_pong49_external_comment",
+        "brier": 0.0049
+      },
+      {
+        "predictor": "jev_r8_battery",
+        "p": 0.15,
+        "instrument": "JEV (jev-1.13.0, sealed r8 battery call 2026-09-27T10:02:10Z)",
+        "source": "tavern/jev_calibration_battery_r8.json#jev_answers_as_said.p_pong49_external_comment",
+        "brier": 0.0225
+      },
+      {
+        "predictor": "jev_r9_remap_jev_latest",
+        "p": 0.13,
+        "instrument": "JEV r9 remap, jev-latest alias (fresh prior, question open)",
+        "source": "tavern/jev_remap_r9_rows.jsonl#r9-battery-verbatim-jev-latest",
+        "brier": 0.0169
+      },
+      {
+        "predictor": "jev_r9_remap_jev_preview",
+        "p": 0.14,
+        "instrument": "JEV r9 remap, jev-preview alias (fresh prior, question open)",
+        "source": "tavern/jev_remap_r9_rows.jsonl#r9-battery-verbatim-jev-preview",
+        "brier": 0.0196
+      }
+    ],
+    "battery_noul_mean_4_questions": {
+      "lane_37a": 0.10075,
+      "jev_r8": 0.246475,
+      "includes": "3 keeper-sealed r8 resolutions carried verbatim + pong49 resolved at close",
+      "excludes": "guest_surviving_standing (score type; keeper: unresolvable — excluded per registered unresolved_policy); guest_c5_stance is choice-type, scored in the multiclass annex",
+      "r8_running_3_resolved_reference": {
+        "jev": 0.3211,
+        "lane": 0.1327,
+        "source": "tavern/jev_battery_scores_r8.json#running_brier_3_resolved"
+      }
+    },
+    "multiclass_annex": {
+      "question": "guest_c5_stance",
+      "options": [
+        "stand",
+        "revise",
+        "withdraw"
+      ],
+      "outcome": "stand",
+      "outcome_source": "tavern/jev_battery_scores_r8.json#typed_seat_outcome (keeper seal, not re-adjudicated here)",
+      "prices": {
+        "lane_37a": {
+          "stand": 0.5,
+          "revise": 0.4,
+          "withdraw": 0.1
+        },
+        "jev_r8": {
+          "stand": 0.53,
+          "revise": 0.29,
+          "withdraw": 0.18
+        }
+      },
+      "note": "Annex only: applies the registration's own pre-declared rule to the keeper-sealed outcome.",
+      "brier": {
+        "lane_37a": 0.42,
+        "jev_r8": 0.3374
+      }
+    }
   },
-  "interim_state": {
-    "pulled_at_utc": "2026-09-27T19:46:14.491Z",
+  "interim_state_at_resolution": {
+    "pulled_at_utc": "2026-09-29T15:19:55.526Z",
     "pong49_issue": {
       "url": "https://github.com/SuperInstance/pong-quilt/issues/49",
       "state": "open",
-      "comments_count": 5,
-      "updated_at": "2026-09-27T19:07:42Z",
+      "comments_count": 7,
+      "updated_at": "2026-09-28T21:31:30Z",
       "title": "A gift from another fleet's reader: your r37 stone-v1 chain verifies under the stone's published arithmetic"
     },
-    "pong49_comments_total": 5,
+    "pong49_comments_total": 7,
     "pong49_authors": [
       "SuperInstance"
     ],
     "pong49_foreign_comments_ever": 0,
     "pong49_foreign_in_registered_window": [],
-    "comments_after_our_wave41_5858861919": [],
-    "pong_replied_since_5858861919": false,
+    "comments_after_our_wave41_5858861919": [
+      {
+        "id": 5859972744,
+        "login": "SuperInstance",
+        "created_at": "2026-09-27T21:26:44Z",
+        "url": "https://github.com/SuperInstance/pong-quilt/issues/49#issuecomment-5859972744"
+      },
+      {
+        "id": 5879102761,
+        "login": "SuperInstance",
+        "created_at": "2026-09-28T21:31:30Z",
+        "url": "https://github.com/SuperInstance/pong-quilt/issues/49#issuecomment-5879102761"
+      }
+    ],
+    "pong_replied_since_5858861919": true,
     "pong_main": {
       "default_branch": "main",
-      "sha": "1da41be23eff100f4d11df0e187311e12ad704f9",
-      "date": "2026-09-27T18:02:59Z",
-      "message": "Merge pull request #58 from SuperInstance/r42-site",
-      "moved_past_wave41_base_1da41be": false,
-      "html_url": "https://github.com/SuperInstance/pong-quilt/commit/1da41be23eff100f4d11df0e187311e12ad704f9"
+      "sha": "d2a85d7ead01cbac2419fa809ca5d3e42adce9d0",
+      "date": "2026-09-29T03:16:17Z",
+      "message": "Merge PR #77: forge adoption alongside merge-gate",
+      "moved_past_wave41_base_1da41be": true,
+      "html_url": "https://github.com/SuperInstance/pong-quilt/commit/d2a85d7ead01cbac2419fa809ca5d3e42adce9d0"
     },
     "quilt_stone": {
       "default_branch": "main",

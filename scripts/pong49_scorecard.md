@@ -1,15 +1,15 @@
-# pong49 scorecard — SCORED
+# pong49 scorecard — SCORED (scripts/pong49_scorer.mjs, 53-f)
 
-- generated_at: 2026-09-29T15:19:52.279Z
-- window: [2026-09-27T10:04:00Z, 2026-09-29T10:04:00Z] (registered in tavern/jev_calibration_battery_r8.json #scoring_rule.resolution_sources.c_pong49)
-- runner: lane 42-d (pong-scorer); scorer: embassy/battery/pong49_scorer.mjs (no deps, read-only API, zero foreign writes)
+- generated_at: 2026-09-29T15:19:40.032Z
+- window: [2026-09-27T10:04:00Z, 2026-09-29T10:04:00Z] (registered: tavern/jev_calibration_battery_r8.json #scoring_rule.resolution_sources.c_pong49)
+- registered artifacts sha256: cal=93e1ead1169c3ecb… scores=9c406d01ae1bf0c8… r9=9a729a1a8abff4aa…
 
 ## Resolution (AS OF close)
 - outcome: **0** (NO_FOREIGN_REPLY)
 - rule: any comment authored by an account whose login is not 'SuperInstance' on SuperInstance/pong-quilt #49 within [2026-09-27T10:04:00Z, 2026-09-29T10:04:00Z] = 1, else 0
 - evidence: GitHub API comments list: zero non-SuperInstance authors in window
 
-## Brier per predictor (binary, pre-declared rule)
+## Brier per registered price (binary, pre-declared rule)
 | predictor | p | Brier | source |
 |---|---|---|---|
 | lane_37a_jev_smith | 0.07 | 0.0049 | tavern/jev_calibration_battery_r8.json#lane_predictions_37a_jev_smith.p_pong49_external_comment |
@@ -17,13 +17,13 @@
 | jev_r9_remap_jev_latest | 0.13 | 0.0169 | tavern/jev_remap_r9_rows.jsonl#r9-battery-verbatim-jev-latest |
 | jev_r9_remap_jev_preview | 0.14 | 0.0196 | tavern/jev_remap_r9_rows.jsonl#r9-battery-verbatim-jev-preview |
 
-## Registered battery mean (noul questions, now 4/4 resolved)
+## Registered battery mean (noul questions, 4/4 resolved)
 ```json
 {
   "lane_37a": 0.10075,
   "jev_r8": 0.246475,
-  "includes": "3 keeper-sealed r8 resolutions carried verbatim + pong49 resolved at close",
-  "excludes": "guest_surviving_standing (score type; keeper: unresolvable — excluded per registered unresolved_policy); guest_c5_stance is choice-type, scored in the multiclass annex",
+  "includes": "3 keeper-sealed r8 resolutions carried verbatim (tavern/jev_battery_scores_r8.json#resolved) + pong49 resolved at close",
+  "excludes": "guest_surviving_standing (score type) — excluded per the registration's own unresolved_policy; guest_c5_stance is choice-type, scored in the multiclass annex; r9 remap priors are fresh-prior reference rows, not r8 battery predictors",
   "r8_running_3_resolved_reference": {
     "jev": 0.3211,
     "lane": 0.1327,
@@ -50,12 +50,11 @@
       "withdraw": 0.1
     },
     "jev_r8": {
-      "stand": 0.53,
+      "withdraw": 0.18,
       "revise": 0.29,
-      "withdraw": 0.18
+      "stand": 0.53
     }
   },
-  "note": "Annex only: applies the registration's own pre-declared rule to the keeper-sealed outcome.",
   "brier": {
     "lane_37a": 0.42,
     "jev_r8": 0.3374
@@ -64,4 +63,4 @@
 ```
 
 ---
-Registered artifacts (verbatim, not invented): tavern/jev_calibration_battery_r8.json (lane 0.07 / JEV r8 0.15), tavern/jev_remap_r9_rows.jsonl (JEV r9 priors 0.13 / 0.14). Everything not in the registration (sign-lane fix landed, letter acknowledged, …) is watch context only and is NEVER scored here.
+Registered artifacts (verbatim, not invented): tavern/jev_calibration_battery_r8.json (lane 0.07 / JEV r8 0.15), tavern/jev_remap_r9_rows.jsonl (JEV r9 priors 0.13 / 0.14), tavern/jev_battery_scores_r8.json (3 sealed resolutions + typed_seat_outcome). Everything not in the registration is watch context and is NEVER scored here.
