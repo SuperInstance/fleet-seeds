@@ -114,7 +114,15 @@ try {
     const m = JSON.parse(line);
     const blob = `${m.source || ''} ${m.claim || ''}`.toLowerCase();
     const slugs = [...blob.matchAll(/github\.com\/([a-z0-9_.-]+\/[a-z0-9_.-]+)/g)].map(x => x[1]);
-    const arxivs = [...blob.matchAll(/arxiv[:\s]*([0-9]{4}\.[0-9]{4,5})/g)].map(x => `arxiv:${x[1]}`);
+    // wave-62 fix (run-5 collision receipted): mine BOTH marker channels — colon
+    // form ("arXiv:2609.26457") AND URL form ("arxiv.org/abs/2609.26457") — and
+    // store BARE ids so matching is channel-independent (run-5: M3's colon-form
+    // marker never matched the HN card's URL ref, so an already-mined paper was
+    // legally redrawn and QRNG-drawn; receipts verbatim in run-5 history.json).
+    const arxivs = [...new Set([
+      ...[...blob.matchAll(/arxiv[:\s]*([0-9]{4}\.[0-9]{4,5})/g)].map(x => x[1]),
+      ...[...blob.matchAll(/arxiv\.org\/(?:abs|pdf)\/([0-9]{4}\.[0-9]{4,5})/g)].map(x => x[1]),
+    ])];
     minedMarkers.push({ id: m.id, slugs, arxivs });
   }
   history.mined_markers = minedMarkers;
@@ -134,9 +142,15 @@ for (const d of (existsSync(engReceipts) ? readdirSync(engReceipts) : [])) {
 const normTitle = (t) => String(t || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 const minedMatch = (c) => {
   const blob = `${c.title} ${c.ref}`.toLowerCase();
+  // wave-62 fix: card-side arxiv ids are extracted from BOTH channels (colon form
+  // and abs/pdf URL form, version suffix stripped) and compared as bare ids.
+  const cardArxivs = new Set([
+    ...[...blob.matchAll(/arxiv[:\s]*([0-9]{4}\.[0-9]{4,5})/g)].map(x => x[1]),
+    ...[...blob.matchAll(/arxiv\.org\/(?:abs|pdf)\/([0-9]{4}\.[0-9]{4,5})(?:v[0-9]+)?/g)].map(x => x[1]),
+  ]);
   for (const mk of minedMarkers) {
     if (mk.slugs.some(s => blob.includes(s))) return mk.id;
-    if (mk.arxivs.some(a => blob.includes(a))) return mk.id;
+    if (mk.arxivs.some(a => cardArxivs.has(a))) return mk.id;
   }
   for (const pd of history.previously_drawn) if (normTitle(pd.title) === normTitle(c.title)) return `drawn@${pd.run}`;
   return null;
@@ -177,7 +191,7 @@ const pre = [...seen.values()].slice(0, 9);
 const candidates = [];
 for (const c of pre) {
   const m = minedMatch(c);
-  if (m) { history.excluded.push({ id: c.id, title: c.title, matched: m }); continue; }
+  if (m) { history.excluded.push({ id: c.id, title: c.title, source: c.source, ref: c.ref, matched: m }); continue; } // wave-62: ref+source receipted (audit quality)
   candidates.push({ ...c, id: `c${candidates.length + 1}` });
 }
 writeFileSync(join(OUT, 'history.json'), JSON.stringify(history, null, 1) + '\n');

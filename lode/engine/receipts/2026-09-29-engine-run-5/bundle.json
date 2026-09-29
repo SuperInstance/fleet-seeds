@@ -1,0 +1,15 @@
+{
+ "kind": "review-bundle",
+ "ok": true,
+ "budget": 1,
+ "lead": "c3",
+ "lead_note": "chosen by certified QRNG (anti-cherry-pick)",
+ "members": [
+  {
+   "id": "c3",
+   "noul": 0.25,
+   "title": "Recursive self-improvement of AI research agents"
+  }
+ ],
+ "fill_rule": "deterministic: descending typesafe noul prior, receipted in priors.json"
+}
