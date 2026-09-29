@@ -1,0 +1,47 @@
+[
+  {
+    "url": "https://arxiv.org",
+    "name": "Simple Baselines are Competitive with Code Evolution",
+    "snippet": "Code evolution is a family of techniques that rely on large language models to search through possi- ble computer programs by evolving or mutating existing ...",
+    "host_name": "arxiv.org",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://roberttlange.com",
+    "name": "Talks & Presentations | Robert Lange",
+    "snippet": "ShinkaEvolve , a system for open-ended agentic discovery, fully automated scientific research. Open-Ended And Sample-Efficient Program",
+    "host_name": "roberttlange.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://scholar.google.co.in/citations?user=wr2itggAAAAJ&hl=en",
+    "name": "Yuki Imajuku",
+    "snippet": "Sakana AI - Shinkaevolve : Towards open-ended and sample-efficient program evolution … specialized model for multimodal manga",
+    "host_name": "scholar.google.co.in",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://scholar.google.nl/citations?user=cTrc3x4AAAAJ&hl=nl",
+    "name": "Robert Tjarko Lange",
+    "snippet": "Sakana AI, TU. ShinkaEvolve: Towards Open-Ended And Sample-Efficient Program Evolution RT Lange, Conference on Learning Representations,",
+    "host_name": "scholar.google.nl",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://openreview.net",
+    "name": "SIMPLE BASELINES ARE COMPETITIVE WITH CODE",
+    "snippet": "by Y Gideoni · Cited by 1 — ShinkaE- volve, a code evolution pipeline that is claimed to be sample-efficient and open-ended . Our experi- ments show that its sample-efficiency might stem ...",
+    "host_name": "openreview.net",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  }
+]

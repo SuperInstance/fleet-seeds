@@ -1,0 +1,56 @@
+[
+  {
+    "url": "https://agnost.ai",
+    "name": "DSPy and GEPA Explained: How LLM Programs Learn to",
+    "snippet": "Jun 27, 2026 — GEPA is the optimizer that evolves those prompts from natural-language feedback, beating reinforcement learning with up to 35x fewer rollouts. ...",
+    "host_name": "agnost.ai",
+    "rank": 0,
+    "date": "Jun 27, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com",
+    "name": "[Paper Note] GEPA: Reflective Prompt Evolution Can",
+    "snippet": "Jul 29, 2025 — GEPA also outperforms the leading prompt optimizer, MIPROv2 , by over 10% across two LLMs, and demonstrates promising results as an inference- ...",
+    "host_name": "github.com",
+    "rank": 1,
+    "date": "Jul 29, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://soap628.com",
+    "name": "The Agent That Rewrites Itself: GEPA and Hermes Self-Evolution",
+    "snippet": "Apr 24, 2026 — GEPA is an ICLR 2026 Oral algorithm that outperforms reinforcement learning with 35x fewer rollouts — by reading execution traces and evolving ... Read more",
+    "host_name": "soap628.com",
+    "rank": 2,
+    "date": "Apr 24, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.alphaxiv.org",
+    "name": "Dilara Soylu",
+    "snippet": "GEPA outperforms GRPO by 6% on average and by up to 20 %, while using up to 35x fewer rollouts. GEPA also outperforms the leading prompt optimizer,",
+    "host_name": "www.alphaxiv.org",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://hypepaper.app",
+    "name": "GEPA: Reflective Prompt Evolution Can Outperform",
+    "snippet": "Jul 25, 2025 — Across six tasks, GEPA outperforms GRPO by 6% on average and by up to 20%, while using up to 35x fewer rollouts. GEPA also outperforms the ... Read more",
+    "host_name": "hypepaper.app",
+    "rank": 4,
+    "date": "Jul 25, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.emergentmind.com",
+    "name": "GEPA: Parallel Planning & Prompt Optimization",
+    "snippet": "Nov 26, 2025 — The Genetic - Pareto optimizer employs reflection and Pareto -front selection to evolve and refine LLM prompts , enhancing performance in multi-hop ...",
+    "host_name": "www.emergentmind.com",
+    "rank": 5,
+    "date": "Nov 26, 2025",
+    "favicon": ""
+  }
+]

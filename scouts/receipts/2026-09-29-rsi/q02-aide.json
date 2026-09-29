@@ -1,0 +1,56 @@
+[
+  {
+    "url": "https://github.com",
+    "name": "WecoAI/aideml: AIDE: an LLM agent for machine learning",
+    "snippet": "AIDE ML is the open‑source “reference build” of the AIDE algorithm, a tree‑search agent that autonomously drafts, debugs and benchmarks code until a ...",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org",
+    "name": "AIDE: AI-Driven Exploration in the Space of Code",
+    "snippet": "Feb 18, 2025 — In this section, we introduce our approach to automating machine learning engineering with AIDE . By employing the tree search method, AIDE ...",
+    "host_name": "arxiv.org",
+    "rank": 1,
+    "date": "Feb 18, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.alphaxiv.org",
+    "name": "AIDE: AI-Driven Exploration in the Space of Code",
+    "snippet": "Feb 18, 2025 — A novel AI system from Weco AI achieves breakthrough performance in automated machine learning development by introducing AIDE , a tree-based ...",
+    "host_name": "www.alphaxiv.org",
+    "rank": 2,
+    "date": "Feb 18, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com",
+    "name": "GitHub - WecoAI/aideml: AIDE: AI-Driven Exploration in the",
+    "snippet": "Apr 11, 2024 — It's an AI data scientist that they're making available open source. GitHub - WecoAI / aideml : AIDE : Autonomous AI for Data Science. Explore ...",
+    "host_name": "www.linkedin.com",
+    "rank": 3,
+    "date": "Apr 11, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.weco.ai",
+    "name": "AIDE²: First Evidence of Recursive Self-Improvement",
+    "snippet": "Jul 14, 2026 — Fully autonomously, AIDE 2 designed a novel search algorithm, reduced the prompt size by 16×, and built a layered system against reward hacking.",
+    "host_name": "www.weco.ai",
+    "rank": 4,
+    "date": "Jul 14, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://thedocumentation.org",
+    "name": "AIDE ML — The Machine Learning Engineering Agent",
+    "snippet": "AIDE ML is the open-source reference implementation of the AIDE algorithm, a tree-search agent that autonomously drafts, debugs, and benchmarks code. A ...",
+    "host_name": "thedocumentation.org",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  }
+]

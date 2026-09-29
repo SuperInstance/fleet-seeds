@@ -1,0 +1,47 @@
+[
+  {
+    "url": "https://github.com",
+    "name": "Genentech/opentreesearch: LLM-Guided Code Evolution",
+    "snippet": "AlphaEvolve reached 2.635 and OpenEvolve reached 2.634 in 200 iterations; we reach 2.632 in 121 iterations with Qwen3-Coder-Next using default settings. Read more",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://asankhaya.github.io",
+    "name": "OpenEvolve: Towards Open Evolutionary Agents",
+    "snippet": "OpenEvolve: An Open Source Implementation of Google DeepMind's AlphaEvolve . Automated Discovery of High-Performance GPU Kernels with OpenEvolve",
+    "host_name": "asankhaya.github.io",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org",
+    "name": "CodeEvolve: an open-source evolutionary framework",
+    "snippet": "Aug 27, 2026 — CodeEvolve matches or surpasses reported AlphaEvolve results on 5 of 9 benchmarks and outperforms OpenEvolve and ShinkaEvolve in 6 of 9 problems ... Read more",
+    "host_name": "arxiv.org",
+    "rank": 2,
+    "date": "Aug 27, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://dev.to",
+    "name": "Why LoongFlow is the “Thinking” Evolution of OpenEvolve",
+    "snippet": "Jan 16, 2026 — OpenEvolve generally follows the classic evolutionary algorithm pattern found in AlphaEvolve . It relies on random variation and selection. Read more",
+    "host_name": "dev.to",
+    "rank": 3,
+    "date": "Jan 16, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.libhunt.com",
+    "name": "openevolve vs breach-parse-rs - compare differences and",
+    "snippet": "Jul 17, 2026 — I've built an open- source implementation of Google DeepMind's AlphaEvolve system called OpenEvolve. It's an evolutionary coding agent that ... Read more",
+    "host_name": "www.libhunt.com",
+    "rank": 4,
+    "date": "Jul 17, 2026",
+    "favicon": ""
+  }
+]

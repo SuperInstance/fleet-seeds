@@ -1,0 +1,29 @@
+[
+  {
+    "url": "https://www.arxiv.org",
+    "name": "Self-Evolving Reasoning LLM from Zero Data",
+    "snippet": "Aug 7, 2025 — Self-evolving Large Language Models (LLMs ) offer a scalable path toward superintelli- gence by autonomously generating, refining, and learning ... Read more",
+    "host_name": "www.arxiv.org",
+    "rank": 0,
+    "date": "Aug 7, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.alphaxiv.org",
+    "name": "Yang Yue（乐洋）",
+    "snippet": "Absolute zero utilizes reinforced self-play with zero training data . a single model learns to propose tasks that maximize its own learning progress and ...",
+    "host_name": "www.alphaxiv.org",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.lesswrong.com",
+    "name": "Reproducing Absolute Zero",
+    "snippet": "Aug 6, 2025 — The Absolute Zero Reasoner (AZR) paradigm removes the need for external data by having the model simultaneously learn to create learnable tasks ... Read more",
+    "host_name": "www.lesswrong.com",
+    "rank": 2,
+    "date": "Aug 6, 2025",
+    "favicon": ""
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "url": "https://arxiv.org",
+    "name": "Metan: Recursive Self-Improvement through Emergent Depth",
+    "snippet": "Aug 25, 2026 — Abstract. Self-improving LLM agents refine answers , not the process that produces those answers. Systems that add a meta-level hold that ... Read more",
+    "host_name": "arxiv.org",
+    "rank": 0,
+    "date": "Aug 25, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://people.idsia.ch",
+    "name": "Recursive Self-Improvement (RSI) Since 1987",
+    "snippet": "by J Schmidhuber · Cited by 1 — TMLR 2025 (Schmidhuber's 100th journal publication). The first paper on long-term planning with self -supervised reinforcement learning ...",
+    "host_name": "people.idsia.ch",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://openreview.net",
+    "name": "G¨ODEL AGENT:ASELF-REFERENTIAL FRAMEWORK FOR",
+    "snippet": "Under review as a conference paper at ICLR 2025. Algorithm 1 Recursive Self-Improvement of Gödel Agent . 1: Input: Initial agent policy π0, initial deci- sion ...",
+    "host_name": "openreview.net",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.researchgate.net",
+    "name": "PAST-Bench: Benchmarking the Foundations of Recursive Self-",
+    "snippet": "Recursive self - improvement requires agents to turn accumulated experience into better future behavior. Personal AI agents offer a concrete setting for ...",
+    "host_name": "www.researchgate.net",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.alphaxiv.org",
+    "name": "Learning from Failure: Inference-Time Self-Improvement for",
+    "snippet": "In this work, we explore a complementary failure-driven self - improvement loop, a data-centric paradigm that turns failed trajectories into agent improvements.",
+    "host_name": "www.alphaxiv.org",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://labs.cloudsecurityalliance.org",
+    "name": "Recursive AI Self-Improvement: Enterprise Security Implications",
+    "snippet": "The Zscaler ThreatLabz 2026 AI Security Report found that enterprise AI and ML transaction volume increased 83 percent year-over-year in 2025 , with more than ...",
+    "host_name": "labs.cloudsecurityalliance.org",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  }
+]

@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/BScjO1qO01FKa1KROsLtO1rmqdE</id>
+  <title>arXiv Query: search_query=&amp;id_list=2609.11873&amp;start=0&amp;max_results=10</title>
+  <updated>2026-09-29T01:31:57Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=2609.11873" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2609.11873v3</id>
+    <title>The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement</title>
+    <updated>2026-09-22T12:08:36Z</updated>
+    <link href="https://arxiv.org/abs/2609.11873v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.11873v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recursive self-improvement (RSI) enables AI systems to turn experience and feedback into persistent changes that improve both their capabilities and the process of future improvement. We first use the Headroom-Closed Index (HCI) to reveal the problems of existing LLMs, then introduce the RSI concept and its development roadmap: from improvement-execution autonomy, improvement-strategy autonomy, experience-acquisition autonomy, and environment-adaptation autonomy, to recursive meta-improvement. Next we examine RSI across scenarios (e.g., scientific discovery, embodied intelligence, software engineering), highlighting their distinct requirements and development speeds. Drawing on diverse industry practices and preliminary empirical evidence, we connect RSI research with practical systems and identify key challenges to achieving genuine RSI.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-10T17:44:23Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Yi Duan</name>
+    </author>
+    <author>
+      <name>Ying Liu</name>
+    </author>
+    <author>
+      <name>Zirui Tang</name>
+    </author>
+    <author>
+      <name>Haodong Chen</name>
+    </author>
+    <author>
+      <name>Jun Zhou</name>
+    </author>
+    <author>
+      <name>Yumou Liu</name>
+    </author>
+    <author>
+      <name>Bangrui Xu</name>
+    </author>
+    <author>
+      <name>Yukai Wu</name>
+    </author>
+    <author>
+      <name>Sidi Chen</name>
+    </author>
+    <author>
+      <name>Yuhan Zhou</name>
+    </author>
+    <author>
+      <name>Haoyu Wang</name>
+    </author>
+    <author>
+      <name>Xiaoyou Yu</name>
+    </author>
+    <author>
+      <name>Shaokun Han</name>
+    </author>
+    <author>
+      <name>Xuzhou Zhu</name>
+    </author>
+    <author>
+      <name>Le Zhou</name>
+    </author>
+    <author>
+      <name>Bolin Lu</name>
+    </author>
+    <author>
+      <name>Wei Zhou</name>
+    </author>
+    <author>
+      <name>Jiachen Liu</name>
+    </author>
+    <author>
+      <name>Nuozhou Fang</name>
+    </author>
+    <author>
+      <name>Jiaxin Tian</name>
+    </author>
+    <author>
+      <name>Ruoyu Chen</name>
+    </author>
+    <author>
+      <name>Yuxuan Li</name>
+    </author>
+    <author>
+      <name>Kai Zuo</name>
+    </author>
+    <author>
+      <name>Kaiyan Zhang</name>
+    </author>
+    <author>
+      <name>Qianyu Yang</name>
+    </author>
+    <author>
+      <name>Zijie Wang</name>
+    </author>
+    <author>
+      <name>Jiantao Qiu</name>
+    </author>
+    <author>
+      <name>Conghui He</name>
+    </author>
+    <author>
+      <name>Guoliang Li</name>
+    </author>
+    <author>
+      <name>Bowen Zhou</name>
+    </author>
+    <author>
+      <name>Zhiyuan Liu</name>
+    </author>
+    <author>
+      <name>Zhoufutu Wen</name>
+    </author>
+    <author>
+      <name>Jihua Kang</name>
+    </author>
+    <author>
+      <name>Xuanhe Zhou</name>
+    </author>
+    <author>
+      <name>Fan Wu</name>
+    </author>
+  </entry>
+</feed>
