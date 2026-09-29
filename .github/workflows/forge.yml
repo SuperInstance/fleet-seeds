@@ -5,3 +5,8 @@ jobs:
     uses: SuperInstance/quilt-forge/.github/workflows/forge.yml@v0
     with:
       probe-only: true
+      # schema-required by quilt-forge@v0 (startup_failure receipted 2026-09-29: the missing
+      # required input killed the called workflow with 0 jobs). NEVER EXECUTED while
+      # probe-only stays true (the receipts job is gated on probe-only == false); the string
+      # itself is the honest receipt: this repo declares no runnable command yet.
+      test-cmd: "echo fleet-seeds: no declared runnable command yet (receipted)"
