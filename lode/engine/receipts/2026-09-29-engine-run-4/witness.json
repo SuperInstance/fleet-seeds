@@ -1,0 +1,24 @@
+{
+ "kind": "qrng-witness",
+ "ts_utc": "2026-09-29T04:48:20.435Z",
+ "ok": true,
+ "candidates_sha256": "74d67ff18cd62d83eab645ca8f9a333768f47c04177b068729ac51f173032097",
+ "drawn_index": 3,
+ "drawn_candidate": "c4",
+ "raw_result_sha256": "79c88e702eee7f3a2bd6d74c6e4714acfd77150c1dbba5e95e63c8d1a070161b",
+ "job": {
+  "engine": "comet-qrng-v1",
+  "jobId": "95873136-ee3e-4d3c-aaa6-7711b17d40f2",
+  "finalStatus": "completed",
+  "polls": 6,
+  "params": {
+   "mode": "emu",
+   "num_qubits": 12,
+   "shots": 4096,
+   "output_bytes": 512,
+   "include_raw_counts": true,
+   "bell_witness": true
+  }
+ },
+ "note": "certified comet-qrng-v1 Fisher-Yates over the frozen candidate list; the drawn candidate receives deep keeper review this wave (anti-cherry-pick). Full certified receipt: qrng-seal.json"
+}

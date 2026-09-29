@@ -1,0 +1,20 @@
+{
+ "kind": "review-bundle",
+ "ok": true,
+ "budget": 2,
+ "lead": "c4",
+ "lead_note": "chosen by certified QRNG (anti-cherry-pick)",
+ "members": [
+  {
+   "id": "c4",
+   "noul": 0.25,
+   "title": "Noam Brown – Agent swarms, alignment, & recursive self-improvement"
+  },
+  {
+   "id": "c1",
+   "noul": 0.56,
+   "title": "Audit the Scaffold, Not the Checkpoint: A Stationarity Dichotomy for Recursive Self-Improvement in Agentic Coding"
+  }
+ ],
+ "fill_rule": "deterministic: descending typesafe noul prior, receipted in priors.json"
+}

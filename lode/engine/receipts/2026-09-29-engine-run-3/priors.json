@@ -1,0 +1,6 @@
+{
+ "kind": "typesafe-priors",
+ "ts_utc": "2026-09-29T04:47:18.720Z",
+ "ok": false,
+ "error": "TYPESAFE_API_KEY missing — engine channel closed (fail-closed)"
+}

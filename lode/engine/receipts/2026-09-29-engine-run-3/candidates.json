@@ -1,0 +1,72 @@
+[
+ {
+  "id": "c1",
+  "source": "arxiv",
+  "title": "Audit the Scaffold, Not the Checkpoint: A Stationarity Dichotomy for Recursive Self-Improvement in Agentic Coding",
+  "ref": "http://arxiv.org/abs/2609.34924v1",
+  "stars": null,
+  "date": "2026-09-28T11:25:52Z",
+  "key_score": 3,
+  "gist": "An auditor who checks whether a system's weights are frozen is checking the wrong thing. Our stationarity dichotomy says that iterative self-modification hits strict diminishing returns whenever the agent's reachable set of edits stays fixe"
+ },
+ {
+  "id": "c2",
+  "source": "github-search",
+  "title": "lobehub/awesome-rsi",
+  "ref": "https://github.com/lobehub/awesome-rsi",
+  "stars": 361,
+  "date": "2026-08-11T03:59:57Z",
+  "key_score": 3,
+  "gist": "A curated research map of Recursive Self-Improvement (RSI): models, agents, harnesses, embodied systems, automated AI R&D, benchmarks, and safety."
+ },
+ {
+  "id": "c3",
+  "source": "hn-algolia",
+  "title": "Recursive self-improvement of AI research agents",
+  "ref": "https://arxiv.org/abs/2609.26457",
+  "stars": 3,
+  "date": "2026-09-23T17:47:15Z",
+  "key_score": 2,
+  "gist": ""
+ },
+ {
+  "id": "c4",
+  "source": "hn-algolia",
+  "title": "Noam Brown – Agent swarms, alignment, & recursive self-improvement",
+  "ref": "https://www.dwarkesh.com/p/noam-brown",
+  "stars": 2,
+  "date": "2026-09-20T22:19:23Z",
+  "key_score": 2,
+  "gist": ""
+ },
+ {
+  "id": "c5",
+  "source": "hn-algolia",
+  "title": "Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents",
+  "ref": "https://arxiv.org/abs/2609.17523",
+  "stars": 2,
+  "date": "2026-09-17T17:33:53Z",
+  "key_score": 2,
+  "gist": ""
+ },
+ {
+  "id": "c6",
+  "source": "hn-algolia",
+  "title": "Recursive Self Improvement for Coding Agents",
+  "ref": "https://cline.ghost.io/recursive-self-improvement-for-coding-agents/",
+  "stars": 2,
+  "date": "2026-07-30T03:55:57Z",
+  "key_score": 2,
+  "gist": ""
+ },
+ {
+  "id": "c7",
+  "source": "hn-algolia",
+  "title": "Ask HN: Has anyone achieved recursive self-improvement with agentic tools?",
+  "ref": "https://github.com/undefined",
+  "stars": 10,
+  "date": "2026-02-12T03:10:19Z",
+  "key_score": 2,
+  "gist": ""
+ }
+]

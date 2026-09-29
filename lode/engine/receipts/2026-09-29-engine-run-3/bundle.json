@@ -1,0 +1,6 @@
+{
+ "kind": "review-bundle",
+ "ok": false,
+ "budget": 2,
+ "error": "qrng failed"
+}

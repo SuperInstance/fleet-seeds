@@ -1,0 +1,55 @@
+{
+ "kind": "typesafe-priors",
+ "ts_utc": "2026-09-29T04:48:20.012Z",
+ "ok": true,
+ "model": "jev-1.13.0",
+ "usage": {
+  "input_tokens": 1611,
+  "output_tokens": 208
+ },
+ "latency_ms": 420.889,
+ "answers": {
+  "p_signal_c1": {
+   "type": "noul",
+   "noul": 0.56
+  },
+  "p_signal_c2": {
+   "type": "noul",
+   "noul": 0.22
+  },
+  "p_signal_c3": {
+   "type": "noul",
+   "noul": 0.25
+  },
+  "p_signal_c4": {
+   "type": "noul",
+   "noul": 0.25
+  },
+  "p_signal_c5": {
+   "type": "noul",
+   "noul": 0.35
+  },
+  "p_signal_c6": {
+   "type": "noul",
+   "noul": 0.28
+  },
+  "p_signal_c7": {
+   "type": "noul",
+   "noul": 0.11
+  },
+  "first_test": {
+   "type": "choice",
+   "choice": "c1",
+   "confidence": 0.4,
+   "probabilities": {
+    "c7": 0.23,
+    "c4": 0.01,
+    "c2": 0.09,
+    "c6": 0.16,
+    "c5": 0.01,
+    "c3": 0.02,
+    "c1": 0.48
+   }
+  }
+ }
+}

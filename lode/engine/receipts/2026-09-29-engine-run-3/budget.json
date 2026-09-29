@@ -1,0 +1,9 @@
+{
+ "kind": "annealed-bundled-edit-budget",
+ "law": "M10 (arXiv:2609.24972): proposal-side edit budget, annealed across runs",
+ "B0": 3,
+ "anneal": 0.7,
+ "prior_runs": 3,
+ "budget": 2,
+ "formula": "max(1, ceil(3 * 0.7^3)) = 2"
+}
