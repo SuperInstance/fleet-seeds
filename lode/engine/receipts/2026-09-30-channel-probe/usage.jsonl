@@ -1,0 +1,1 @@
+{"kind":"usage-receipt","at_utc":"2026-09-30T17:31:54.898Z","service":"typesafe.ai/v1/systemone","model":"jev-1.13.0","usage":{"input_tokens":331,"output_tokens":22},"latency_ms":315.448,"purpose":"lode-67h-channel-probe"}

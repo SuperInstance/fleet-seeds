@@ -1,0 +1,15 @@
+{
+ "kind": "review-bundle",
+ "ok": true,
+ "budget": 1,
+ "lead": "c2",
+ "lead_note": "chosen by certified QRNG (anti-cherry-pick)",
+ "members": [
+  {
+   "id": "c2",
+   "noul": 0.32,
+   "title": "Recursive Self Improvement for Coding Agents"
+  }
+ ],
+ "fill_rule": "deterministic: descending typesafe noul prior, receipted in priors.json"
+}

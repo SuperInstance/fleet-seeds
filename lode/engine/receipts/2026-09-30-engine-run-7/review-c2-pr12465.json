@@ -1,0 +1,187 @@
+{
+ "fetched_utc": "2026-09-30T17:40:28.084Z",
+ "pr": {
+  "number": 12465,
+  "title": "Improve CLI resilience for long-running agent workflows",
+  "state": "closed",
+  "merged_at": null,
+  "additions": 774,
+  "deletions": 58,
+  "changed_files": 34,
+  "base": "main",
+  "head_sha": "d1324e402a58ac8f98d45cbabbaee0b685143aa8",
+  "html_url": "https://github.com/cline/cline/pull/12465"
+ },
+ "files": [
+  {
+   "filename": "apps/cli/src/commands/program.ts",
+   "additions": 4,
+   "deletions": 2
+  },
+  {
+   "filename": "apps/cli/src/main.ts",
+   "additions": 1,
+   "deletions": 1
+  },
+  {
+   "filename": "apps/cli/src/tui/components/model-selector/model-selector.tsx",
+   "additions": 12,
+   "deletions": 3
+  },
+  {
+   "filename": "apps/cli/src/tui/views/onboarding/model.ts",
+   "additions": 12,
+   "deletions": 3
+  },
+  {
+   "filename": "apps/cli/src/utils/helpers.test.ts",
+   "additions": 10,
+   "deletions": 0
+  },
+  {
+   "filename": "apps/cli/src/utils/reasoning.test.ts",
+   "additions": 12,
+   "deletions": 0
+  },
+  {
+   "filename": "apps/cli/src/utils/reasoning.ts",
+   "additions": 2,
+   "deletions": 0
+  },
+  {
+   "filename": "sdk/packages/core/src/extensions/tools/definitions.test.ts",
+   "additions": 8,
+   "deletions": 0
+  },
+  {
+   "filename": "sdk/packages/core/src/extensions/tools/definitions.ts",
+   "additions": 2,
+   "deletions": 1
+  },
+  {
+   "filename": "sdk/packages/core/src/hub/server/handlers/session-handlers.ts",
+   "additions": 2,
+   "deletions": 0
+  },
+  {
+   "filename": "sdk/packages/core/src/runtime/orchestration/session-runtime-orchestrator.test.ts",
+   "additions": 128,
+   "deletions": 0
+  },
+  {
+   "filename": "sdk/packages/core/src/runtime/orchestration/session-runtime-orchestrator.ts",
+   "additions": 32,
+   "deletions": 1
+  },
+  {
+   "filename": "sdk/packages/core/src/runtime/safety/loop-detection.test.ts",
+   "additions": 57,
+   "deletions": 0
+  },
+  {
+   "filename": "sdk/packages/core/src/runtime/safety/loop-detection.ts",
+   "additions": 46,
+   "deletions": 0
+  },
+  {
+   "filename": "sdk/packages/core/src/services/llms/provider-settings.ts",
+   "additions": 9,
+   "deletions": 1
+  },
+  {
+   "filename": "sdk/packages/core/src/services/storage/provider-settings-legacy-migration.ts",
+   "additions": 3,
+   "deletions": 1
+  },
+  {
+   "filename": "sdk/packages/core/src/services/workspace/file-indexer.process.test.ts",
+   "additions": 37,
+   "deletions": 0
+  },
+  {
+   "filename": "sdk/packages/core/src/services/workspace/file-indexer.ts",
+   "additions": 4,
+   "deletions": 1
+  },
+  {
+   "filename": "sdk/packages/llms/src/providers/ai-sdk.ts",
+   "additions": 7,
+   "deletions": 0
+  },
+  {
+   "filename": "sdk/packages/llms/src/providers/compat.test.ts",
+   "additions": 34,
+   "deletions": 0
+  },
+  {
+   "filename": "sdk/packages/llms/src/providers/compat.ts",
+   "additions": 1,
+   "deletions": 8
+  },
+  {
+   "filename": "sdk/packages/llms/src/providers/config.ts",
+   "additions": 6,
+   "deletions": 2
+  },
+  {
+   "filename": "sdk/packages/llms/src/providers/gateway.ts",
+   "additions": 5,
+   "deletions": 6
+  },
+  {
+   "filename": "sdk/packages/llms/src/providers/provider-retry.test.ts",
+   "additions": 149,
+   "deletions": 0
+  },
+  {
+   "filename": "sdk/packages/llms/src/providers/routing/anthropic-compatible.ts",
+   "additions": 62,
+   "deletions": 7
+  },
+  {
+   "filename": "sdk/packages/llms/src/providers/routing/generic-compatible.ts",
+   "additions": 13,
+   "deletions": 2
+  },
+  {
+   "filename": "sdk/packages/llms/src/providers/routing/provider-option-rules.ts",
+   "additions": 20,
+   "deletions": 2
+  },
+  {
+   "filename": "sdk/packages/llms/src/providers/routing/provider-options.test.ts",
+   "additions": 49,
+   "deletions": 10
+  },
+  {
+   "filename": "sdk/packages/llms/src/tests/provider-live-config.ts",
+   "additions": 3,
+   "deletions": 1
+  },
+  {
+   "filename": "sdk/packages/shared/src/agents/types.ts",
+   "additions": 16,
+   "deletions": 3
+  },
+  {
+   "filename": "sdk/packages/shared/src/llms/gateway.ts",
+   "additions": 9,
+   "deletions": 2
+  },
+  {
+   "filename": "sdk/packages/shared/src/llms/reasoning-effort.test.ts",
+   "additions": 17,
+   "deletions": 0
+  },
+  {
+   "filename": "sdk/packages/shared/src/llms/reasoning-effort.ts",
+   "additions": 1,
+   "deletions": 0
+  },
+  {
+   "filename": "sdk/packages/shared/src/rpc/runtime.ts",
+   "additions": 1,
+   "deletions": 1
+  }
+ ]
+}

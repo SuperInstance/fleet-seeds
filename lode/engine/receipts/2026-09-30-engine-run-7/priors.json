@@ -1,0 +1,35 @@
+{
+ "kind": "typesafe-priors",
+ "ts_utc": "2026-09-30T17:35:48.738Z",
+ "ok": true,
+ "model": "jev-1.13.0",
+ "usage": {
+  "input_tokens": 825,
+  "output_tokens": 100
+ },
+ "latency_ms": 243.123,
+ "answers": {
+  "p_signal_c1": {
+   "type": "noul",
+   "noul": 0.32
+  },
+  "p_signal_c2": {
+   "type": "noul",
+   "noul": 0.32
+  },
+  "p_signal_c3": {
+   "type": "noul",
+   "noul": 0.15
+  },
+  "first_test": {
+   "type": "choice",
+   "choice": "c3",
+   "confidence": 0.77,
+   "probabilities": {
+    "c2": 0.12,
+    "c1": 0.03,
+    "c3": 0.85
+   }
+  }
+ }
+}

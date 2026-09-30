@@ -1,0 +1,582 @@
+[
+ {
+  "source": "hn-algolia",
+  "query": "recursive self-improvement agent",
+  "status": 200,
+  "n": 18,
+  "hits": [
+   {
+    "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
+    "url": "https://regularized-rsi.com/",
+    "points": 2,
+    "created_at": "2026-09-30T01:29:40Z",
+    "objectID": "49903287"
+   },
+   {
+    "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
+    "url": "https://github.com/google-research/rrsi",
+    "points": 9,
+    "created_at": "2026-09-28T17:54:50Z",
+    "objectID": "49881797"
+   },
+   {
+    "title": "Recursive self-improvement of AI research agents",
+    "url": "https://arxiv.org/abs/2609.26457",
+    "points": 3,
+    "created_at": "2026-09-23T17:47:15Z",
+    "objectID": "49819845"
+   },
+   {
+    "title": "Recursive self-improvement of AI research agents",
+    "url": "https://arxiv.org/abs/2609.26457",
+    "points": 2,
+    "created_at": "2026-09-23T07:07:09Z",
+    "objectID": "49812641"
+   },
+   {
+    "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
+    "url": "https://arxiv.org/abs/2609.24972",
+    "points": 1,
+    "created_at": "2026-09-22T10:47:48Z",
+    "objectID": "49799183"
+   },
+   {
+    "title": "Show HN: Open Source AI Employees",
+    "url": "https://github.com/markfulton/ai-employees",
+    "points": 2,
+    "created_at": "2026-09-21T10:28:45Z",
+    "objectID": "49785402"
+   },
+   {
+    "title": "Noam Brown – Agent swarms, alignment, & recursive self-improvement",
+    "url": "https://www.dwarkesh.com/p/noam-brown",
+    "points": 2,
+    "created_at": "2026-09-20T22:19:23Z",
+    "objectID": "49780682"
+   },
+   {
+    "title": "Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents",
+    "url": "https://arxiv.org/abs/2609.17523",
+    "points": 2,
+    "created_at": "2026-09-17T17:33:53Z",
+    "objectID": "49743982"
+   },
+   {
+    "title": "Agent swarms, alignment, & recursive self-improvement",
+    "url": "https://www.dwarkesh.com/p/noam-brown",
+    "points": 1,
+    "created_at": "2026-09-17T17:07:26Z",
+    "objectID": "49743632"
+   },
+   {
+    "title": "Recursive Self Improvement for Coding Agents",
+    "url": "https://cline.ghost.io/recursive-self-improvement-for-coding-agents/",
+    "points": 2,
+    "created_at": "2026-07-30T03:55:57Z",
+    "objectID": "49105970"
+   },
+   {
+    "title": "Show HN: Autoresearch-WebGPU uses agents to iteratively train LMs in the browser",
+    "url": "https://twitter.com/gucaslelfond/status/2032824470209986746",
+    "points": 1,
+    "created_at": "2026-03-14T14:26:27Z",
+    "objectID": "47377035"
+   },
+   {
+    "title": "Show HN: Recursive – AI support agents for small businesses",
+    "url": "https://recursive.support",
+    "points": 1,
+    "created_at": "2026-02-18T13:58:28Z",
+    "objectID": "47060956"
+   },
+   {
+    "title": "Ask HN: Has anyone achieved recursive self-improvement with agentic tools?",
+    "points": 10,
+    "created_at": "2026-02-12T03:10:19Z",
+    "objectID": "46984452"
+   },
+   {
+    "title": "Show HN: Cmpsbl OS v5.5.0 – A Self-Hosting Cognitive Substrate (131k LOC)",
+    "url": "https://zenodo.org/records/18379258",
+    "points": 1,
+    "created_at": "2026-01-26T19:22:27Z",
+    "objectID": "46770254"
+   },
+   {
+    "title": "\"Intelligenza Artificiale for Artificial Intelligence Research and Development\"",
+    "points": 1,
+    "created_at": "2025-07-30T21:08:13Z",
+    "objectID": "44739505"
+   },
+   {
+    "title": "Show HN: Run automated ML experiments using Claude Code",
+    "url": "https://github.com/killerstorm/claude-torch-template",
+    "points": 1,
+    "created_at": "2025-05-25T18:48:41Z",
+    "objectID": "44089972"
+   },
+   {
+    "title": "Gödel Agent: A self-referential agent framework for recursive self-improvement",
+    "url": "https://arxiv.org/abs/2410.04444",
+    "points": 81,
+    "created_at": "2024-10-13T00:35:46Z",
+    "objectID": "41824103"
+   },
+   {
+    "title": "The Quest for Self-Reproducing Automata",
+    "points": 1,
+    "created_at": "2023-10-10T08:17:33Z",
+    "objectID": "37829672"
+   }
+  ]
+ },
+ {
+  "source": "hn-algolia",
+  "query": "self-evolving LLM agent",
+  "status": 200,
+  "n": 15,
+  "hits": [
+   {
+    "title": "Procedural Graphs: Self-Evolving Execution Structures for LLM Agents",
+    "url": "https://arxiv.org/abs/2609.09153",
+    "points": 4,
+    "created_at": "2026-09-09T18:47:01Z",
+    "objectID": "49631870"
+   },
+   {
+    "title": "Procedural Graphs: Self-Evolving Execution Structures for LLM Agents",
+    "url": "https://arxiv.org/abs/2609.09153",
+    "points": 57,
+    "created_at": "2026-09-09T17:13:52Z",
+    "objectID": "49629868"
+   },
+   {
+    "title": "Show HN: An Autonomous Agent for Slay the Spire",
+    "url": "https://github.com/AttemorySystem/spire-agent",
+    "points": 1,
+    "created_at": "2026-09-02T07:15:15Z",
+    "objectID": "49532826"
+   },
+   {
+    "title": "EvoHarnessRL: Learning Self-Evolving Runtime Harness for Long-Horizon LLM Agents",
+    "url": "https://arxiv.org/abs/2608.05446",
+    "points": 3,
+    "created_at": "2026-08-10T21:28:07Z",
+    "objectID": "49249998"
+   },
+   {
+    "title": "Persistent Control of Self-Evolving LLM Agents via Self-Reinforcing Injections",
+    "url": "https://arxiv.org/abs/2602.15654",
+    "points": 1,
+    "created_at": "2026-07-07T09:08:52Z",
+    "objectID": "48815301"
+   },
+   {
+    "title": "Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval",
+    "url": "https://github.com/yoloshii/ClawMem",
+    "points": 5,
+    "created_at": "2026-03-22T00:13:15Z",
+    "objectID": "47472965"
+   },
+   {
+    "title": "Show HN: BendClaw – Distributed AgentOS Written in Rust",
+    "url": "https://github.com/EvotAI/bendclaw",
+    "points": 1,
+    "created_at": "2026-03-18T16:01:56Z",
+    "objectID": "47427436"
+   },
+   {
+    "title": "Why I'm moving away from Regex for LLM Agent security",
+    "points": 3,
+    "created_at": "2026-03-15T01:06:01Z",
+    "objectID": "47383172"
+   },
+   {
+    "title": "Analyzing OpenClaw's 3-layer defense against prompt injection",
+    "points": 1,
+    "created_at": "2026-03-14T14:41:50Z",
+    "objectID": "47377187"
+   },
+   {
+    "title": "Show HN: I Built Systems AGI – 1600 Verticals, Self-Healing\\Self-Evolving",
+    "points": 1,
+    "created_at": "2026-03-03T15:03:02Z",
+    "objectID": "47233452"
+   },
+   {
+    "title": "Show HN: I Built Systems AGI – 1600 Verticals, Self-Healing, Self-Evolving",
+    "points": 1,
+    "created_at": "2026-03-03T10:01:51Z",
+    "objectID": "47230379"
+   },
+   {
+    "title": "Evo-Memory: Benchmarking LLM Agent Test-Time Learning with Self-Evolving Memory",
+    "url": "https://arxiv.org/abs/2511.20857",
+    "points": 1,
+    "created_at": "2025-12-01T15:26:37Z",
+    "objectID": "46108541"
+   },
+   {
+    "title": "Show HN: Ebiose – A Darwin‑Style Playground for Self‑Evolving AI Agents",
+    "url": "https://github.com/ebiose-ai/ebiose",
+    "points": 12,
+    "created_at": "2025-07-02T14:06:46Z",
+    "objectID": "44443920"
+   },
+   {
+    "title": "Give a whole server to an agent with the full permission of doing whatever",
+    "points": 5,
+    "created_at": "2025-01-13T05:40:42Z",
+    "objectID": "42680414"
+   },
+   {
+    "title": "WebRL: Training LLM Web Agents via Self-Evolving Online Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2411.02337",
+    "points": 23,
+    "created_at": "2024-11-05T16:03:46Z",
+    "objectID": "42052558"
+   }
+  ]
+ },
+ {
+  "source": "hn-algolia",
+  "query": "AI research agent",
+  "status": 200,
+  "n": 25,
+  "hits": [
+   {
+    "title": "Show HN: Datastory, Data storytelling with AI and an open knowledge graph",
+    "url": "https://www.datastory.tech",
+    "points": 4,
+    "created_at": "2026-09-30T16:52:41Z",
+    "objectID": "49911411"
+   },
+   {
+    "title": "Show HN: Burning Man for Agents",
+    "url": "https://burning-tokens.transitivebullsh.it/",
+    "points": 1,
+    "created_at": "2026-09-30T14:35:11Z",
+    "objectID": "49909599"
+   },
+   {
+    "title": "Ask HN: How do you maintain depth of understanding and velocity when using AI?",
+    "points": 3,
+    "created_at": "2026-09-29T22:08:51Z",
+    "objectID": "49901420"
+   },
+   {
+    "title": "CoreWeave ARIA: AI Research and Iteration Agent",
+    "url": "https://www.coreweave.com/blog/introducing-coreweave-aria-ai-research-and-iteration-agent",
+    "points": 2,
+    "created_at": "2026-09-29T18:20:50Z",
+    "objectID": "49898016"
+   },
+   {
+    "title": "Show HN: CodeDiff – Fast (<100ms), robust (99.95%) syntax-aware code diff",
+    "url": "https://github.com/ivankovic/codediff",
+    "points": 6,
+    "created_at": "2026-09-29T12:22:44Z",
+    "objectID": "49891989"
+   },
+   {
+    "title": "When single AI agents become a swarm",
+    "url": "https://www.gradientinstitute.org/research-publications/when-single-ai-agents-become-a-swarm",
+    "points": 1,
+    "created_at": "2026-09-29T08:06:16Z",
+    "objectID": "49889777"
+   },
+   {
+    "title": "Show HN: Open-source skills for end-to-end video ad campaigns",
+    "url": "https://github.com/SupercmoHQ/superCMO-skills",
+    "points": 7,
+    "created_at": "2026-09-29T06:11:45Z",
+    "objectID": "49888905"
+   },
+   {
+    "title": "Launch HN: Vespper (YC F24) – SOTA Docx MCP",
+    "url": "https://www.vespper.com/blog/launching-vespper-docx-mcp",
+    "points": 36,
+    "created_at": "2026-09-28T17:34:36Z",
+    "objectID": "49881505"
+   },
+   {
+    "title": "Show HN: ParkourNote – A research workspace, built solo in a month with Claude",
+    "url": "https://note.parkourlabs.io/",
+    "points": 3,
+    "created_at": "2026-09-28T00:31:39Z",
+    "objectID": "49872233"
+   },
+   {
+    "title": "Speculative Reward Hacking in Coding Agents",
+    "url": "https://joinhandshake.com/research/ai/deepswe-reward-hacking/",
+    "points": 3,
+    "created_at": "2026-09-25T23:13:52Z",
+    "objectID": "49851266"
+   },
+   {
+    "title": "Reimagining research papers as interactive and reliable AI agents",
+    "url": "https://www.nature.com/articles/s41586-026-11044-y",
+    "points": 4,
+    "created_at": "2026-09-25T11:49:44Z",
+    "objectID": "49843293"
+   },
+   {
+    "title": "We Built Safety into Muse",
+    "url": "https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse",
+    "points": 3,
+    "created_at": "2026-09-25T04:08:17Z",
+    "objectID": "49840107"
+   },
+   {
+    "title": "Paper2agent Turns Static Papers into Live AI Tools",
+    "url": "https://spectrum.ieee.org/paper2agent-ai-agents-research-papers",
+    "points": 4,
+    "created_at": "2026-09-24T17:16:06Z",
+    "objectID": "49833781"
+   },
+   {
+    "title": "We Built Safety into Muse",
+    "url": "https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse",
+    "points": 2,
+    "created_at": "2026-09-24T17:00:59Z",
+    "objectID": "49833561"
+   },
+   {
+    "title": "Show HN: AgentRun: DSL to turn agents into workflows",
+    "url": "https://github.com/Parcha-ai/agentrun",
+    "points": 51,
+    "created_at": "2026-09-23T19:42:58Z",
+    "objectID": "49821438"
+   },
+   {
+    "title": "Recursive self-improvement of AI research agents",
+    "url": "https://arxiv.org/abs/2609.26457",
+    "points": 3,
+    "created_at": "2026-09-23T17:47:15Z",
+    "objectID": "49819845"
+   },
+   {
+    "title": "Everyone is hilariously prompt-injecting AI via llms.txt and you aren't",
+    "url": "https://installmap.com/research/llms-txt-ai-instructions",
+    "points": 2,
+    "created_at": "2026-09-23T16:29:39Z",
+    "objectID": "49818584"
+   },
+   {
+    "title": "AI-Agents",
+    "points": 1,
+    "created_at": "2026-09-23T14:44:27Z",
+    "objectID": "49816967"
+   },
+   {
+    "title": "Recursive self-improvement of AI research agents",
+    "url": "https://arxiv.org/abs/2609.26457",
+    "points": 2,
+    "created_at": "2026-09-23T07:07:09Z",
+    "objectID": "49812641"
+   },
+   {
+    "title": "The new CC, an AI agent built for families",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/cc-expanding-to-groups/",
+    "points": 52,
+    "created_at": "2026-09-22T23:46:07Z",
+    "objectID": "49809806"
+   },
+   {
+    "title": "Launch HN: Coverage Cat (YC S22) – Umbrella insurance via your personal agent",
+    "url": "https://www.coveragecat.com/",
+    "points": 54,
+    "created_at": "2026-09-22T17:26:36Z",
+    "objectID": "49804931"
+   },
+   {
+    "title": "KeiroLabs – Web research infrastructure for AI agents",
+    "url": "https://keirolabs.cloud/",
+    "points": 3,
+    "created_at": "2026-09-22T07:55:09Z",
+    "objectID": "49797924"
+   },
+   {
+    "title": "Ask HN: How do you sell a small bootstrapped SaaS?",
+    "points": 2,
+    "created_at": "2026-09-22T02:18:35Z",
+    "objectID": "49796057"
+   },
+   {
+    "title": "Google CC, an AI agent built for families",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/cc-expanding-to-groups/",
+    "points": 3,
+    "created_at": "2026-09-21T21:02:55Z",
+    "objectID": "49793382"
+   },
+   {
+    "title": "Reimagining research papers as interactive and reliable AI agents",
+    "url": "https://www.nature.com/articles/s41586-026-11044-y",
+    "points": 4,
+    "created_at": "2026-09-19T13:18:20Z",
+    "objectID": "49766366"
+   }
+  ]
+ },
+ {
+  "source": "arxiv",
+  "status": 429,
+  "attempts": [
+   429,
+   429,
+   429,
+   429
+  ],
+  "n": 0,
+  "entries": []
+ },
+ {
+  "source": "github-search",
+  "status": 200,
+  "total": 700,
+  "rate_remaining": "29",
+  "n": 20,
+  "repos": [
+   {
+    "full_name": "Human-Agent-Society/reef",
+    "stars": 7392,
+    "created": "2026-08-31T01:39:18Z",
+    "pushed": "2026-09-30T16:25:41Z",
+    "desc": "Infrastructure for continually self‑improving agents"
+   },
+   {
+    "full_name": "kirodotdev/KiroCrew",
+    "stars": 4221,
+    "created": "2026-07-16T21:21:54Z",
+    "pushed": "2026-09-30T17:35:42Z",
+    "desc": "A persistent workspace for development work that self-improves and continues beyond one session."
+   },
+   {
+    "full_name": "lobehub/awesome-rsi",
+    "stars": 371,
+    "created": "2026-08-11T03:59:57Z",
+    "pushed": "2026-09-25T09:18:10Z",
+    "desc": "A curated research map of Recursive Self-Improvement (RSI): models, agents, harnesses, embodied systems, automated AI R&D, benchmarks, and safety."
+   },
+   {
+    "full_name": "sno-ai/sno-station",
+    "stars": 319,
+    "created": "2026-09-19T06:55:24Z",
+    "pushed": "2026-09-26T01:56:10Z",
+    "desc": "Sno Station — your Claude Code and Codex working as one squad on your own machine. Shared encrypted memory, agent-to-agent messaging (Reach), squad skills for handoff and cross-vendor review, and a nightly loop that rewr"
+   },
+   {
+    "full_name": "NVlabs/ENPIRE",
+    "stars": 242,
+    "created": "2026-07-22T00:00:18Z",
+    "pushed": "2026-09-09T20:26:41Z",
+    "desc": "ENPIRE is an agentic framework that allows AI coding agents to autonomously self-improve real-world robot policies through closed-loop physical trial, error, and evolution"
+   },
+   {
+    "full_name": "bennyjo/phil",
+    "stars": 169,
+    "created": "2026-07-30T21:45:01Z",
+    "pushed": "2026-09-30T16:50:25Z",
+    "desc": "Phil is a self-improving trader: an AI agent that trades short-term prediction markets and rewrites his own strategy after every settled bet. Paper 24/7 in the cloud; small capped real stakes via Pearl Connect."
+   },
+   {
+    "full_name": "egma-ai/egma",
+    "stars": 140,
+    "created": "2026-08-01T17:35:23Z",
+    "pushed": "2026-09-30T04:14:28Z",
+    "desc": "the first open-source platform for simulation testing, monitoring and self-improving voice agents"
+   },
+   {
+    "full_name": "star23/content-os",
+    "stars": 114,
+    "created": "2026-08-15T08:33:10Z",
+    "pushed": "2026-08-15T15:39:25Z",
+    "desc": "A self-improving daily content system — pulls from high-quality sources every morning and drafts posts in your own voice. Run by a Claude Code agent."
+   },
+   {
+    "full_name": "mrinalwadhwa/fluent",
+    "stars": 108,
+    "created": "2026-07-10T03:32:42Z",
+    "pushed": "2026-09-08T23:25:04Z",
+    "desc": "Fluent is a self-improving software factory. It autonomously turns your team's vision, ideas, bug reports, user feedback, production logs, and agent traces into working software."
+   },
+   {
+    "full_name": "jjanczur/tyran",
+    "stars": 81,
+    "created": "2026-07-25T16:48:31Z",
+    "pushed": "2026-09-25T08:36:09Z",
+    "desc": "A task conductor for Claude Code that gets better the more you use it. Multi-agent orchestration with an evidence contract that BLOCKS instead of asking, gates written as hooks rather than prompts, and a retrospective th"
+   },
+   {
+    "full_name": "aibuildai-inc/aibuildai-llm-posttrain-agent",
+    "stars": 75,
+    "created": "2026-09-16T01:37:46Z",
+    "pushed": "2026-09-23T23:43:29Z",
+    "desc": "AIBuildAI LLM-Post-Train Agent: a recursive self-improving (RSI) agent for autonomous LLM post-training"
+   },
+   {
+    "full_name": "Jiyuan-Tan/CausalSmith",
+    "stars": 63,
+    "created": "2026-07-20T22:22:52Z",
+    "pushed": "2026-09-21T22:34:13Z",
+    "desc": "A Formally Grounded, Self-Improving Agentic Framework for Automated Research in Causal Inference"
+   },
+   {
+    "full_name": "zorrobyte/rimagent",
+    "stars": 58,
+    "created": "2026-09-16T15:14:28Z",
+    "pushed": "2026-09-22T03:17:19Z",
+    "desc": "An LLM that plays RimWorld and rewrites its own playbook between colonies. RimBridge mod + self-improving agent."
+   },
+   {
+    "full_name": "aerovato/operator-memory",
+    "stars": 54,
+    "created": "2026-08-16T09:08:07Z",
+    "pushed": "2026-09-30T08:00:16Z",
+    "desc": "The self-improving context engine for coding agents."
+   },
+   {
+    "full_name": "louisfb01/obsidian-agent-vault-template",
+    "stars": 50,
+    "created": "2026-07-19T12:10:34Z",
+    "pushed": "2026-07-27T15:25:14Z",
+    "desc": "A ready-to-use Obsidian vault for running an AI agent (Claude, Codex, etc.) as a personal OS: skills, grounding notes, and a self-improving feedback loop. Clone and open as a vault."
+   },
+   {
+    "full_name": "Self-Improving-Coding-Agents/SI2CA",
+    "stars": 47,
+    "created": "2026-09-10T20:26:45Z",
+    "pushed": "2026-09-30T06:03:58Z",
+    "desc": "Official Repo for (Self-Improving)^2 Coding Agent: Curating High-Quality Trajectories via Recursive Self-Improvement"
+   },
+   {
+    "full_name": "D2I-ai/awesome-recursive-self-improving-agents",
+    "stars": 46,
+    "created": "2026-08-03T09:15:05Z",
+    "pushed": "2026-08-27T09:50:12Z",
+    "desc": "Survey: The Path to Recursive Self-Improving Agents: Foundation, Framework, and Future Directions"
+   },
+   {
+    "full_name": "Git-on-my-level/self-improving-agent-ecosystem",
+    "stars": 45,
+    "created": "2026-08-31T01:50:52Z",
+    "pushed": "2026-09-25T04:27:52Z",
+    "desc": "Reference architecture, contracts, skills, and fixtures for safe evaluator-driven self-improving ecosystems."
+   },
+   {
+    "full_name": "The-AIE/the-gibson",
+    "stars": 38,
+    "created": "2026-07-24T12:55:46Z",
+    "pushed": "2026-09-27T16:18:38Z",
+    "desc": "A portable, self-improving SDLC harness for agent fleets — plan → issues → build → test → review → UX-eval → security → ship, on any runtime (Claude Code, Codex, Grok, Hermes). Apache-2.0."
+   },
+   {
+    "full_name": "Shanghua-Gao/RSI-Jev",
+    "stars": 36,
+    "created": "2026-09-22T10:23:04Z",
+    "pushed": "2026-09-30T16:26:54Z",
+    "desc": "Typed-decision models (noul / choice / score) trained by a self-improving loop of AI agents — checkpoints, the code that produced them, and every version that failed."
+   }
+  ]
+ }
+]

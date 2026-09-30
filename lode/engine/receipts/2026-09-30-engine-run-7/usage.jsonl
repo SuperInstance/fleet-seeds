@@ -1,0 +1,1 @@
+{"kind":"usage-receipt","at_utc":"2026-09-30T17:35:48.738Z","service":"typesafe.ai/v1/systemone","model":"jev-1.13.0","usage":{"input_tokens":825,"output_tokens":100},"latency_ms":243.123,"purpose":"lode-2026-09-30-engine-run-7-priors","candidates":3,"questions":4}

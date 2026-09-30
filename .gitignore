@@ -1,3 +1,7 @@
 
 # wave-61: raw fetched webpage excluded from git — key-scan match is a coincidental base64url bundle substring (see lode/engine/receipts/2026-09-29-engine-run-4/review-c4-provenance.md); transcript + provenance committed instead
 lode/engine/receipts/2026-09-29-engine-run-4/review-c4-raw.html
+
+# wave-67 (67-h): drawn-candidate raw fetch + extracted text excluded from git — key-scan hits are the documented L9 false-positive class (plain-English s,k,hyphen words); hashes + classification receipted in review-c2-provenance.md; assessment + PR API snapshot committed instead
+lode/engine/receipts/2026-09-30-engine-run-7/review-c2-raw.html
+lode/engine/receipts/2026-09-30-engine-run-7/review-c2-text.txt

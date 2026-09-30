@@ -1,0 +1,32 @@
+[
+ {
+  "id": "c1",
+  "source": "hn-algolia",
+  "title": "Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents",
+  "ref": "https://arxiv.org/abs/2609.17523",
+  "stars": 2,
+  "date": "2026-09-17T17:33:53Z",
+  "key_score": 2,
+  "gist": ""
+ },
+ {
+  "id": "c2",
+  "source": "hn-algolia",
+  "title": "Recursive Self Improvement for Coding Agents",
+  "ref": "https://cline.ghost.io/recursive-self-improvement-for-coding-agents/",
+  "stars": 2,
+  "date": "2026-07-30T03:55:57Z",
+  "key_score": 2,
+  "gist": ""
+ },
+ {
+  "id": "c3",
+  "source": "hn-algolia",
+  "title": "Ask HN: Has anyone achieved recursive self-improvement with agentic tools?",
+  "ref": "https://github.com/undefined",
+  "stars": 10,
+  "date": "2026-02-12T03:10:19Z",
+  "key_score": 2,
+  "gist": ""
+ }
+]
