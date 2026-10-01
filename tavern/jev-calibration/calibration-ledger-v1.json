@@ -1,0 +1,145 @@
+{
+ "schema": "jev-calibration-ledger-v1",
+ "pre_registered_rules": "see module docstring R1-R4 (committed with this file)",
+ "status": "SEEDED \u2014 n=3 independent resolved questions; ECE/relay FORBIDDEN until n>=30",
+ "independent_summary": {
+  "jev_r8": {
+   "n_independent": 3,
+   "brier_mean": 0.3211
+  },
+  "lane_37a": {
+   "n_independent": 3,
+   "brier_mean": 0.1327
+  }
+ },
+ "pong49_shared_outcome_briers": {
+  "lane_37a_jev_smith": 0.0049,
+  "jev_r8_battery": 0.0225,
+  "jev_r9_remap_jev_latest": 0.0169,
+  "jev_r9_remap_jev_preview": 0.0196
+ },
+ "wave62_crosscheck": {
+  "lane_brier": 0.0049,
+  "jev_brier": 0.0225,
+  "note": "wave-62 sealed numbers; ledger reproduces the ordering (lane prices beat jev on pong49)"
+ },
+ "rows": [
+  {
+   "source": "tavern/jev_battery_scores_r8.json",
+   "question": "p(E-Q8 establishes the float-only artifact)",
+   "class": "prediction",
+   "predictor": "jev_r8",
+   "p": 0.39,
+   "outcome": 1,
+   "evidence": "qthe @ 4b1fea4: float HOLDS / fixed MOVES at both exact-zero families (2/3 primary moth-chosen, 8/5 secondary), first divergence tick 1, one cell, |dd|=1, zero ",
+   "registered_before_outcome": true,
+   "brier": 0.3721
+  },
+  {
+   "source": "tavern/jev_battery_scores_r8.json",
+   "question": "p(E-Q8 establishes the float-only artifact)",
+   "class": "prediction",
+   "predictor": "lane_37a",
+   "p": 0.66,
+   "outcome": 1,
+   "evidence": "qthe @ 4b1fea4: float HOLDS / fixed MOVES at both exact-zero families (2/3 primary moth-chosen, 8/5 secondary), first divergence tick 1, one cell, |dd|=1, zero ",
+   "registered_before_outcome": true,
+   "brier": 0.1156
+  },
+  {
+   "source": "tavern/jev_battery_scores_r8.json",
+   "question": "p(SCN-001 claim survives all 6 GAN-chamber rounds per V3)",
+   "class": "prediction",
+   "predictor": "jev_r8",
+   "p": 0.27,
+   "outcome": 0,
+   "evidence": "docs/SCN-001-VERDICT.md: claim v0 dies \u2014 forger's own R1 concession, R4 nonce-suppression replay kills v1, R6 equivocation replay kills v2; V3 honest pass expli",
+   "registered_before_outcome": true,
+   "brier": 0.0729
+  },
+  {
+   "source": "tavern/jev_battery_scores_r8.json",
+   "question": "p(SCN-001 claim survives all 6 GAN-chamber rounds per V3)",
+   "class": "prediction",
+   "predictor": "lane_37a",
+   "p": 0.35,
+   "outcome": 0,
+   "evidence": "docs/SCN-001-VERDICT.md: claim v0 dies \u2014 forger's own R1 concession, R4 nonce-suppression replay kills v1, R6 equivocation replay kills v2; V3 honest pass expli",
+   "registered_before_outcome": true,
+   "brier": 0.1225
+  },
+  {
+   "source": "tavern/jev_battery_scores_r8.json",
+   "question": "p(the guest STANDS on C5')",
+   "class": "prediction",
+   "predictor": "jev_r8",
+   "p": 0.28,
+   "outcome": 1,
+   "evidence": "tavern round 8, 37-g: guest stands ('C5' was spec'd pre-run and never retrofitted onto dead C5')",
+   "registered_before_outcome": true,
+   "brier": 0.5184
+  },
+  {
+   "source": "tavern/jev_battery_scores_r8.json",
+   "question": "p(the guest STANDS on C5')",
+   "class": "prediction",
+   "predictor": "lane_37a",
+   "p": 0.6,
+   "outcome": 1,
+   "evidence": "tavern round 8, 37-g: guest stands ('C5' was spec'd pre-run and never retrofitted onto dead C5')",
+   "registered_before_outcome": true,
+   "brier": 0.16
+  },
+  {
+   "source": "scripts/pong49_scorecard.json",
+   "question": "p_pong49_external_comment",
+   "class": "prediction",
+   "predictor": "lane_37a_jev_smith",
+   "p": 0.07,
+   "outcome": 0,
+   "evidence": "NO_FOREIGN_REPLY | ",
+   "registered_before_outcome": null,
+   "shared_outcome_group": "pong49-2026",
+   "brier": 0.0049
+  },
+  {
+   "source": "scripts/pong49_scorecard.json",
+   "question": "p_pong49_external_comment",
+   "class": "prediction",
+   "predictor": "jev_r8_battery",
+   "p": 0.15,
+   "outcome": 0,
+   "evidence": "NO_FOREIGN_REPLY | ",
+   "registered_before_outcome": null,
+   "shared_outcome_group": "pong49-2026",
+   "brier": 0.0225
+  },
+  {
+   "source": "scripts/pong49_scorecard.json",
+   "question": "p_pong49_external_comment",
+   "class": "prediction",
+   "predictor": "jev_r9_remap_jev_latest",
+   "p": 0.13,
+   "outcome": 0,
+   "evidence": "NO_FOREIGN_REPLY | ",
+   "registered_before_outcome": null,
+   "shared_outcome_group": "pong49-2026",
+   "brier": 0.0169
+  },
+  {
+   "source": "scripts/pong49_scorecard.json",
+   "question": "p_pong49_external_comment",
+   "class": "prediction",
+   "predictor": "jev_r9_remap_jev_preview",
+   "p": 0.14,
+   "outcome": 0,
+   "evidence": "NO_FOREIGN_REPLY | ",
+   "registered_before_outcome": null,
+   "shared_outcome_group": "pong49-2026",
+   "brier": 0.0196
+  }
+ ],
+ "rows_digest": {
+  "sha256": "2b28d6c6d67af76f"
+ }
+}
