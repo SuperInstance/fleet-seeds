@@ -1,0 +1,282 @@
+{
+ "rsi_agents": [
+  {
+   "id": "http://arxiv.org/abs/2609.40330v1",
+   "title": "Turbo Harness: Instance-Adaptive Harness Optimization",
+   "pub": "2026-09-30",
+   "authors": [
+    "Tunyu Zhang",
+    "Hao Wang",
+    "Kai Xu"
+   ],
+   "abs": "Automating the search for effective harnesses is an important step toward enabling agents to recursively self-improve. Existing harness optimizations typically produce a single global harness that is applied uniformly across task instances. However, a harness that works well on average may not be optimal for every instance. We introduce Turbo Harne"
+  },
+  {
+   "id": "http://arxiv.org/abs/2609.39685v1",
+   "title": "RoboCoach: World Models as Active Coaches for Compositional Robot Skills",
+   "pub": "2026-09-30",
+   "authors": [
+    "Jiajun Liu",
+    "Yifan Chen",
+    "Yichao Liu"
+   ],
+   "abs": "Long-horizon robot manipulation reuses skills across many task compositions, but improving these compositions with additional end-to-end demonstrations is costly. A practical self-improving system must decide both what to teach next and where to apply that supervision. We present ROBOCOACH, a world-model-guided coaching framework that uses imagined"
+  },
+  {
+   "id": "http://arxiv.org/abs/2609.39306v1",
+   "title": "ReSAIL: Mitigating Collapse in Iterative Agent Self-Distillation",
+   "pub": "2026-09-30",
+   "authors": [
+    "Shengjie Jin",
+    "Hengbo Xu",
+    "Zelong Sun"
+   ],
+   "abs": "Iterative self-distillation enables LLM agents to learn from successive deployments, offering a path toward recursive self-improvement (RSI). Yet our experiments with existing methods reveal a collapse in deployment performance across cycles, while task performance with privileged information (PI) also declines. We address this collapse by prioriti"
+  },
+  {
+   "id": "http://arxiv.org/abs/2609.39149v1",
+   "title": "Rep2Skill: Representation-Guided Skill Self-Evolution for LLM Agents",
+   "pub": "2026-09-30",
+   "authors": [
+    "Kaixing Zhang",
+    "Changming Li",
+    "Yingdong Shi"
+   ],
+   "abs": "Textual skills enable large language model (LLM) based agents to accumulate reusable procedural knowledge without updating model parameters. Yet existing skill evolution remains largely confined to the text space: an optimizer must diagnose success and failure patterns, and revise skills solely from long execution trajectories and sparse task outco"
+  },
+  {
+   "id": "http://arxiv.org/abs/2609.38721v1",
+   "title": "UniEvo-VL: An On-policy Self-Distillation Training Recipe for Multimodal Model Self-improvement",
+   "pub": "2026-09-30",
+   "authors": [
+    "Fang Wu",
+    "Da Xing",
+    "Yanjie Huang"
+   ],
+   "abs": "Modern multimodal models bring generation and understanding into a single unified system, which enables them to provide and learn from their own feedback. Motivated by this unified capacity, we introduce UniEvo-VL, a self-evolving framework for multimodal models to learn from this constructive self-correction feedback during test-time compute. Inst"
+  },
+  {
+   "id": "http://arxiv.org/abs/2609.38662v1",
+   "title": "CollabFlow: Recursive Self-Improvement of Agent Collaboration",
+   "pub": "2026-09-29",
+   "authors": [
+    "Xiao Huang",
+    "Mingda Zhang",
+    "Junming Zhang"
+   ],
+   "abs": "Recursive self-improvement (RSI) lets a system improve from its own outcomes; in LLM-based multi-agent systems, Agents refine one another within a task, and outcomes improve how they collaborate across tasks. However, existing multi-agent collaboration leaves this loop open: collaboration is pre-defined at the operator level, topology-only learning"
+  }
+ ],
+ "agent_memory": [
+  {
+   "id": "http://arxiv.org/abs/2609.38778v1",
+   "title": "Action Conditioned Bisimulation For GUI Agent Memory",
+   "pub": "2026-09-30",
+   "authors": [
+    "Hongbo Zhang",
+    "Liuyang Song",
+    "Quanquan Li"
+   ],
+   "abs": "An agent that remembers what it did on a web page must decide when two pages count as the same. Memories built on observation similarity merge pages that look alike but behave differently, and GUIs are full of such pages: two tabs of one widget or two rows of one menu answer the same click differently. We define the merge rule as an action-conditio"
+  },
+  {
+   "id": "http://arxiv.org/abs/2609.37544v2",
+   "title": "How Can Recommendation Feedback Evolve Agent Memory?",
+   "pub": "2026-09-29",
+   "authors": [
+    "Shanwen Mao",
+    "Mingming Li",
+    "Hao Zhang"
+   ],
+   "abs": "Content-generation agents continuously receive impressions, clicks, conversions, and negative feedback from recommendation systems, providing real-world outcome signals for memory evolution. However, these signals are delayed and noisy, confounded by audience composition, placement, and recommendation policies, and may result from the combined infl"
+  },
+  {
+   "id": "http://arxiv.org/abs/2609.36805v1",
+   "title": "UpliftMem: Learning Set-Level Uplift for Agent Memory Retrieval",
+   "pub": "2026-09-29",
+   "authors": [
+    "Mengkun Liang",
+    "Haoran Qiang",
+    "Guannan Liu"
+   ],
+   "abs": "Large language model (LLM) agents reuse external memory to guide new tasks, but effective retrieval requires learning which memory sets improve execution. Such learning relies on costly outcome feedback: ordinary retrieval observes only executed sets, while evaluating alternatives requires additional rollouts. We introduce \\textsc{UpliftMem}, which"
+  },
+  {
+   "id": "http://arxiv.org/abs/2609.36595v1",
+   "title": "Simple Agentic Memory for Generalist Robot Policies",
+   "pub": "2026-09-29",
+   "authors": [
+    "Yuyou Zhang",
+    "Yunbei Zhang",
+    "Miao Li"
+   ],
+   "abs": "Visual-memory systems commonly retain or compress past observations. Robot control additionally requires interaction-derived state that no individual frame may explicitly represent, such as persistent identity relations, accumulated progress, or ordered procedures. We introduce Simple Agentic Robot Memory (SimpleARM), a training-free memory layer f"
+  },
+  {
+   "id": "http://arxiv.org/abs/2609.36373v1",
+   "title": "Audience-Bound Persistent Memory: Authorization Across the Memory Lifecycle",
+   "pub": "2026-09-28",
+   "authors": [
+    "Sibo Liu"
+   ],
+   "abs": "A personal language agent that acts for its owner across private and shared conversations can learn a fact from one audience and later place it in the context it assembles for another. We study authorization before context across the whole memory lifecycle. Each memory item carries the audience present when it was recorded; derived items are partit"
+  },
+  {
+   "id": "http://arxiv.org/abs/2609.35233v1",
+   "title": "EP-Mem: Elastic Privacy Memory for Social Relationship-Aware LLM Agents",
+   "pub": "2026-09-28",
+   "authors": [
+    "Fengzhou Sun",
+    "Yuan Zhang",
+    "Xintong Yu"
+   ],
+   "abs": "Large language model (LLM) agents face critical privacy risks when acting as delegates in human-agent-human communication. To prevent such breaches, agents must understand users' social relationships and adhere to context-dependent social information disclosure boundaries. Current studies on agent memory privacy focus on instantaneous interactions,"
+  }
+ ],
+ "prog_synth_cot": [
+  {
+   "id": "http://arxiv.org/abs/2609.33192v1",
+   "title": "AG-CoT: Verified Algorithmic Traces for LLM Program Synthesis on Clifford Circuits",
+   "pub": "2026-09-27",
+   "authors": [
+    "Lu Wei",
+    "Yufeng Wang",
+    "Chenfeng Cao"
+   ],
+   "abs": "Scientific code generation can produce executable programs that fail to compute the intended scientific object. We study this problem in language-model synthesis of Clifford circuits, which prepare the stabilizer states used in quantum error correction and admit exact classical verification. In our target-conditioned framework, each target is given"
+  }
+ ],
+ "tool_agents": [
+  {
+   "id": "http://arxiv.org/abs/2609.40169v1",
+   "title": "Learning from Research: Toward Lifelong Agent Harness Evolution",
+   "pub": "2026-09-30",
+   "authors": [
+    "Jingbo Yang",
+    "Kwei-Herng Lai",
+    "Xiaowen Wang"
+   ],
+   "abs": "Language agents are expected to solve increasingly complex tasks, creating a growing need for continual improvement. One promising approach is to evolve the agent harness, the software that governs tool use, memory management, and task execution, while keeping the underlying language model fixed. Recent methods automate this process by using a meta"
+  },
+  {
+   "id": "http://arxiv.org/abs/2609.40027v1",
+   "title": "Who Verifies the Graph? Misspecification Attacks on Causal Action Verification for Language Agents",
+   "pub": "2026-09-30",
+   "authors": [
+    "Fabio Rovai"
+   ],
+   "abs": "Causal action verifiers gate an agent's state-changing tool calls by checking whether each proposed intervention is identifiable against a committed action-state graph, and they issue a certificate that carries the identification argument and a one-sided lower confidence bound. One such verifier, CIVeX, reports zero false executions on a confounded"
+  },
+  {
+   "id": "http://arxiv.org/abs/2609.39450v1",
+   "title": "ActionGuard: Tool Call Authorization under Poisoned Skills",
+   "pub": "2026-09-30",
+   "authors": [
+    "Jihun Han",
+    "Yejin Jang",
+    "Byung Il Kwak"
+   ],
+   "abs": "LLM-based agents extend their capabilities through third-party skills that provide task-specific instructions, scripts, and tool-use procedures. However, malicious instructions inserted into an otherwise benign skill can cause a benign user request to trigger dangerous Tool Calls, including data exfiltration, file deletion, or unauthorized code exe"
+  },
+  {
+   "id": "http://arxiv.org/abs/2609.39363v1",
+   "title": "Rethinking Multi-Image Re-Representation in Multi-Image Understanding",
+   "pub": "2026-09-30",
+   "authors": [
+    "Gengyuan Zhang",
+    "Xiao Han",
+    "Xinyu Xie"
+   ],
+   "abs": "Multi-image understanding requires MLLMs not only to recognise the content of individual images, but also to organise visual evidence distributed across them. We study this problem through multi-image re-representation, viewing prompted Chain-of-Thought reasoning and agentic visual tool use as different ways of re-organising visual evidence during "
+  },
+  {
+   "id": "http://arxiv.org/abs/2609.38805v1",
+   "title": "Explicit Trajectory Diversity for RL-Based Post-Training of LLM Agents",
+   "pub": "2026-09-30",
+   "authors": [
+    "Huaiyu Fu",
+    "Heng Cao",
+    "Hao Wang"
+   ],
+   "abs": "LLM agents often admit multiple high-quality solutions to the same task, differing in reasoning structure, tool-use pattern, or interaction trajectory. Yet existing notions of diversity in LLM post-training are mostly implicit, arising from general stochasticity and regularization mechanisms rather than explicitly targeting task-relevant behavioral"
+  },
+  {
+   "id": "http://arxiv.org/abs/2609.38670v1",
+   "title": "Where Scientific Search Agents Fail: Decision-Checkpoint Auditing of Exposure and Inspection Attempts",
+   "pub": "2026-09-29",
+   "authors": [
+    "Hongmin Li",
+    "Wanli Zhao"
+   ],
+   "abs": "Final-answer accuracy does not reveal whether a scientific-search agent failed to encounter a target paper, attempt to inspect it, or return an accepted answer after inspection. We introduce decision checkpoints that record observations and tool actions without benchmark labels during inference, then join target identities and evaluator labels to a"
+  }
+ ],
+ "world_models": [
+  {
+   "id": "http://arxiv.org/abs/2609.39727v1",
+   "title": "OverForge: Reasoning Through Strategies and Tactics Helps Cooperative Lifelong Adaptation",
+   "pub": "2026-09-30",
+   "authors": [
+    "Oana Madalina Fron",
+    "Ojas Shirekar",
+    "Chirag Raman"
+   ],
+   "abs": "Cooperative language-model agents must coordinate over long horizons and adapt to changing environments and to partners with unfamiliar conventions, yet existing agents map observations to actions without separating persistent coordination strategies from their tactical execution. We introduce OverForge, a training-free hierarchical architecture th"
+  },
+  {
+   "id": "http://arxiv.org/abs/2609.39101v1",
+   "title": "Beyond Prediction: Steering VLM Agents with Retrospective World Modeling",
+   "pub": "2026-09-30",
+   "authors": [
+    "Yongjiang Liu",
+    "Jie Zhang",
+    "Haoyue Zhang"
+   ],
+   "abs": "Equipping VLM agents with world modeling capabilities has shown strong potential for complex reasoning and long-horizon planning, while reducing the dependence of policy learning on costly real-world interactions. Existing methods mainly rely on prospective simulation to predict the consequences of candidate actions. However, this forward-only para"
+  },
+  {
+   "id": "http://arxiv.org/abs/2609.38607v1",
+   "title": "After a Decade: Bringing Shadow Removal into the Real World with Agentic Training Data",
+   "pub": "2026-09-29",
+   "authors": [
+    "Shilin Hu",
+    "Jingyi Xu",
+    "Dimitris Samaras"
+   ],
+   "abs": "Shadow removal looks nearly solved on established benchmarks, yet remains brittle in the real world. Models have advanced; the paired training data they rely on have barely changed in nearly a decade. The reason is simple: obtaining a shadow-free target requires removing the occluder while keeping the scene, camera, and illumination otherwise uncha"
+  },
+  {
+   "id": "http://arxiv.org/abs/2609.37156v1",
+   "title": "Lucid Dreaming for World Models: Learning to Doubt Imagination and Decide by Trust",
+   "pub": "2026-09-29",
+   "authors": [
+    "Ziqi Wen",
+    "Ting Xu",
+    "Lianyu Wang"
+   ],
+   "abs": "World models enable agents to learn and plan in imagination, but predictions beyond their experience can become unreliable and mislead decisions. Existing uncertainty estimates derived from predictions can remain overconfident on unfamiliar state-action pairs. We propose the Lucid World Model (LucidWM), which learns doubt from experience and propag"
+  },
+  {
+   "id": "http://arxiv.org/abs/2609.36845v1",
+   "title": "DSWM: Decomposed Spatio-Temporal World Model for Demand-Driven UAV Base Station Repositioning",
+   "pub": "2026-09-29",
+   "authors": [
+    "Shengjie Zhong",
+    "Zhongliang Zhao",
+    "Jingxuan Chen"
+   ],
+   "abs": "Uncrewed aerial vehicle base stations (UAV-BSs) are expected to cover traffic demand that shifts across space and time, yet most repositioning schemes either re-solve an optimization problem per slot or learn reactive policies without an explicit demand model. We cast demand-driven fleet repositioning as latent-space decision-time planning and prop"
+  },
+  {
+   "id": "http://arxiv.org/abs/2609.36323v1",
+   "title": "Towards an AI Software Factory for Data Systems",
+   "pub": "2026-09-28",
+   "authors": [
+    "Anna Pavlenko",
+    "Bogdan Crivat",
+    "Brandon Haynes"
+   ],
+   "abs": "AI-assisted coding tools deliver significant acceleration of coding, but only limited impact across the end-to-end software development lifecycle (SDLC)--an Amdahl's law effect! In this paper, we discuss our progress towards building an AI SW Factory that accelerates all the stages of SDLC-Targeting, Coding, Reviewing, and Ops. The AI SW Factory pr"
+  }
+ ]
+}

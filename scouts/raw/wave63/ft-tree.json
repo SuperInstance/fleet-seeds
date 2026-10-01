@@ -1,0 +1,614 @@
+{
+  "sha": "e6cd848253a3a1f98d79c8745ce552ec3e721a90",
+  "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/trees/e6cd848253a3a1f98d79c8745ce552ec3e721a90",
+  "tree": [
+    {
+      "path": "BOARD.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b09e2bd0d303469b698ac3a4732dffc0f51049dc",
+      "size": 4974,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/b09e2bd0d303469b698ac3a4732dffc0f51049dc"
+    },
+    {
+      "path": "CORRECTION-PROJECTION.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad4cb0817f854494adb3d8ce662a92c5dab1b8d1",
+      "size": 4768,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/ad4cb0817f854494adb3d8ce662a92c5dab1b8d1"
+    },
+    {
+      "path": "D1-INVENTORY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "953fd789d42e0c4fa1a3f42ec1e8ec5f1d1b66bc",
+      "size": 3569,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/953fd789d42e0c4fa1a3f42ec1e8ec5f1d1b66bc"
+    },
+    {
+      "path": "FICTION-COMPACTION.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa8df60cf2eb92562306cb5c27da30316ddba956",
+      "size": 4753,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/aa8df60cf2eb92562306cb5c27da30316ddba956"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7794247ffb070d832d71e1828e36b1d643ab5ff",
+      "size": 1072,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/a7794247ffb070d832d71e1828e36b1d643ab5ff"
+    },
+    {
+      "path": "NEXTGEN-GIT-CONCURRENCY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8369916b02b10107ea780658d57ff14c22835ed8",
+      "size": 8181,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/8369916b02b10107ea780658d57ff14c22835ed8"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4204c762d3fcf5fe5f6552720424d2d5558fea8e",
+      "size": 2708,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/4204c762d3fcf5fe5f6552720424d2d5558fea8e"
+    },
+    {
+      "path": "RELAY-SELECTLIB.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f0e44033054237dc2a29629da39a371a57acfc1",
+      "size": 5312,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/6f0e44033054237dc2a29629da39a371a57acfc1"
+    },
+    {
+      "path": "RESOLVER-DEFECT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0adc9343182a3324d858965eadf97107ebc74e7d",
+      "size": 4840,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/0adc9343182a3324d858965eadf97107ebc74e7d"
+    },
+    {
+      "path": "RESOLVER-FINAL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68c00ab4188ac0a1af65ff5a80dbf66d61796ff9",
+      "size": 7417,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/68c00ab4188ac0a1af65ff5a80dbf66d61796ff9"
+    },
+    {
+      "path": "d1_inventory.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6cea5205a0ab6f3f821c768194c6c3cb93657348",
+      "size": 4809,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/6cea5205a0ab6f3f821c768194c6c3cb93657348"
+    },
+    {
+      "path": "data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "00c774f76cb6f90fdaa9f41ea5a94576d9cf8809",
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/trees/00c774f76cb6f90fdaa9f41ea5a94576d9cf8809"
+    },
+    {
+      "path": "data/resolver_audit.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a7779d054196835e5368d240078e22ca2cdf91b",
+      "size": 3704,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/2a7779d054196835e5368d240078e22ca2cdf91b"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f009a868178cd700e31ce1775f2a4113eff69d77",
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/trees/f009a868178cd700e31ce1775f2a4113eff69d77"
+    },
+    {
+      "path": "docs/COG-THESIS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b24ec0191c4496e0141af78ba20725d8248df3dc",
+      "size": 8886,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/b24ec0191c4496e0141af78ba20725d8248df3dc"
+    },
+    {
+      "path": "docs/F1-AUDIT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea1974f812dece9e65546378adef292420a5d8f2",
+      "size": 33039,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/ea1974f812dece9e65546378adef292420a5d8f2"
+    },
+    {
+      "path": "docs/F1-F2-DIFFUSION.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d79950faa085bf33814e876c456d3e4d90d6dc65",
+      "size": 17765,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/d79950faa085bf33814e876c456d3e4d90d6dc65"
+    },
+    {
+      "path": "docs/FISHING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b02ff94b8b2c00889ca4e0996713b353d3c921a8",
+      "size": 8224,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/b02ff94b8b2c00889ca4e0996713b353d3c921a8"
+    },
+    {
+      "path": "docs/GPU-EXPERIMENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4108681fd4934511b68b51aceac8f6de76ac61ac",
+      "size": 21586,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/4108681fd4934511b68b51aceac8f6de76ac61ac"
+    },
+    {
+      "path": "docs/GROUP-DYNAMICS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5aa470fffaf44d2f89d564c14d0fcc23cfb69678",
+      "size": 9135,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/5aa470fffaf44d2f89d564c14d0fcc23cfb69678"
+    },
+    {
+      "path": "docs/HOLLOW.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04141548aeea970924dd3bb7db7e02c218ca5095",
+      "size": 33268,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/04141548aeea970924dd3bb7db7e02c218ca5095"
+    },
+    {
+      "path": "docs/LANES.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cae815c83ab30afd3e5f0ca2e336955f4ae28fd4",
+      "size": 21620,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/cae815c83ab30afd3e5f0ca2e336955f4ae28fd4"
+    },
+    {
+      "path": "docs/LINEAGE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95e2eb19dc2ca9b577d643504c4867d69d2779e2",
+      "size": 7624,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/95e2eb19dc2ca9b577d643504c4867d69d2779e2"
+    },
+    {
+      "path": "docs/PLATO-LINEAGE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20824284850fb49683da31280f870a21dd955d42",
+      "size": 9090,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/20824284850fb49683da31280f870a21dd955d42"
+    },
+    {
+      "path": "docs/PR-QUEUE-2026-10-01.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1acae62c5828455571ca70d85f160e1c6676df8",
+      "size": 5692,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/d1acae62c5828455571ca70d85f160e1c6676df8"
+    },
+    {
+      "path": "docs/PRODUCTION.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bebaedf00de925c8dc8ac104564dbccac7c1ac3",
+      "size": 22720,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/1bebaedf00de925c8dc8ac104564dbccac7c1ac3"
+    },
+    {
+      "path": "docs/QUILT-FAMILY-TRIAGE-2026-10-02.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81215cef6999505fff6aab2820408d5cc90231e6",
+      "size": 7227,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/81215cef6999505fff6aab2820408d5cc90231e6"
+    },
+    {
+      "path": "docs/RTX4050-BUILDSPECS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ef9a856971b7820a0b2a197a6dd56ace46657c3",
+      "size": 11385,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/4ef9a856971b7820a0b2a197a6dd56ace46657c3"
+    },
+    {
+      "path": "docs/RTX4050-WORKLIST.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89d3221a353f9e464085c9d98920f9abd26fad3a",
+      "size": 7721,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/89d3221a353f9e464085c9d98920f9abd26fad3a"
+    },
+    {
+      "path": "docs/SCOUT-PRIORART.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c52dd2553eeee48dfb6764df9eb48b899e7fbfe9",
+      "size": 30400,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/c52dd2553eeee48dfb6764df9eb48b899e7fbfe9"
+    },
+    {
+      "path": "docs/STUBS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9505b62fe43d025c4d2a17d56eb3ae2045a27299",
+      "size": 16171,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/9505b62fe43d025c4d2a17d56eb3ae2045a27299"
+    },
+    {
+      "path": "docs/TILESET.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2dc1cd91933ce5715fc407b2c56fdbfeea9afbb4",
+      "size": 8615,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/2dc1cd91933ce5715fc407b2c56fdbfeea9afbb4"
+    },
+    {
+      "path": "docs/fleet-scout-2026-09-30.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3631d41ec4f8daa8b420c36a1bf737591e88d53",
+      "size": 7848,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/b3631d41ec4f8daa8b420c36a1bf737591e88d53"
+    },
+    {
+      "path": "docs/open-prs-2026-09-30.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "190b6e22c64c94f2c09b9994e66f5561e118f9d7",
+      "size": 5128,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/190b6e22c64c94f2c09b9994e66f5561e118f9d7"
+    },
+    {
+      "path": "experiments",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "53a292617e802f15aece23c18cdb3789beeb012f",
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/trees/53a292617e802f15aece23c18cdb3789beeb012f"
+    },
+    {
+      "path": "experiments/CONTROL.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f362c9cb2015821ce8a3130e427e9df58be7d511",
+      "size": 1283,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/f362c9cb2015821ce8a3130e427e9df58be7d511"
+    },
+    {
+      "path": "experiments/RESULTS.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a33b261ce85276580ecb66e75226bbcbd7c1cd41",
+      "size": 3438,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/a33b261ce85276580ecb66e75226bbcbd7c1cd41"
+    },
+    {
+      "path": "experiments/positive_control.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7a5a69f27aca41d5ee14cca02b1731d037d827c",
+      "size": 8580,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/f7a5a69f27aca41d5ee14cca02b1731d037d827c"
+    },
+    {
+      "path": "experiments/projection_doctrine.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c93a96bfb0fe497324199ef660dae240fb3f317f",
+      "size": 14516,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/c93a96bfb0fe497324199ef660dae240fb3f317f"
+    },
+    {
+      "path": "experiments/synergy.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7259d13eb8afc2e1c6f117bbc5efda274b71ace7",
+      "size": 9081,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/7259d13eb8afc2e1c6f117bbc5efda274b71ace7"
+    },
+    {
+      "path": "experiments/synergy_results.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "692ca9ea37c212c3f054fab921fc652998d23134",
+      "size": 648,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/692ca9ea37c212c3f054fab921fc652998d23134"
+    },
+    {
+      "path": "fleetlint_failopen.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02faf3a0d8d11c6ade503bab17112811301f4892",
+      "size": 8994,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/02faf3a0d8d11c6ade503bab17112811301f4892"
+    },
+    {
+      "path": "lanes.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1960ccbadf4da15604399f718899b60460078e8d",
+      "size": 12245,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/1960ccbadf4da15604399f718899b60460078e8d"
+    },
+    {
+      "path": "lineage",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0b3b14a19ca18a2f83662152f122687144b7098b",
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/trees/0b3b14a19ca18a2f83662152f122687144b7098b"
+    },
+    {
+      "path": "lineage/loop_test.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fd71e41fe1d2af1cbb1e4b435d48a8990d14aaa",
+      "size": 1302,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/1fd71e41fe1d2af1cbb1e4b435d48a8990d14aaa"
+    },
+    {
+      "path": "lineage/syzygy-lattice-loop-test.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fd71e41fe1d2af1cbb1e4b435d48a8990d14aaa",
+      "size": 1302,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/1fd71e41fe1d2af1cbb1e4b435d48a8990d14aaa"
+    },
+    {
+      "path": "papers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2f46a345790ec255b660a1eeef3e9d9d997a7cfd",
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/trees/2f46a345790ec255b660a1eeef3e9d9d997a7cfd"
+    },
+    {
+      "path": "papers/ORG2.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cf0fffc1ad57947bbd4fd0dc15c3322d83b9e5a",
+      "size": 20298,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/3cf0fffc1ad57947bbd4fd0dc15c3322d83b9e5a"
+    },
+    {
+      "path": "papers/PLAYTEST2.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92c1a77e820f96763c67cfc0313334d7ed61a066",
+      "size": 23411,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/92c1a77e820f96763c67cfc0313334d7ed61a066"
+    },
+    {
+      "path": "papers/PRODUCTION-fleetkit.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bebaedf00de925c8dc8ac104564dbccac7c1ac3",
+      "size": 22720,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/1bebaedf00de925c8dc8ac104564dbccac7c1ac3"
+    },
+    {
+      "path": "papers/SCOUT2-PRIORART.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2189da2ee5ba2cf6d8d4a19309e987c3243d905",
+      "size": 32165,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/c2189da2ee5ba2cf6d8d4a19309e987c3243d905"
+    },
+    {
+      "path": "papers/papers-MESSAGES.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1264af1deab378b19f62608e3ae2650cb343d05",
+      "size": 32908,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/d1264af1deab378b19f62608e3ae2650cb343d05"
+    },
+    {
+      "path": "papers/papers-RESEARCH.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04d917f4ffc224210557a83b28348ef6b3a03670",
+      "size": 32746,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/04d917f4ffc224210557a83b28348ef6b3a03670"
+    },
+    {
+      "path": "papers/papers-ROOT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f58798e3059e5cdb2d5c1f9212a01ce14e3688e",
+      "size": 26179,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/6f58798e3059e5cdb2d5c1f9212a01ce14e3688e"
+    },
+    {
+      "path": "papers/papers-WHITEPAPERS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ad99cb0b305ba0206ccef21cf4df37a4910f38c",
+      "size": 26730,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/2ad99cb0b305ba0206ccef21cf4df37a4910f38c"
+    },
+    {
+      "path": "reports",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b969acaa51311a5def524b3e45e76bc7ccc5c22a",
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/trees/b969acaa51311a5def524b3e45e76bc7ccc5c22a"
+    },
+    {
+      "path": "reports/ci-LANE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3234f11064bd3c5ccc8ae9dc35cc3e9e0bf799d8",
+      "size": 14603,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/3234f11064bd3c5ccc8ae9dc35cc3e9e0bf799d8"
+    },
+    {
+      "path": "reports/dangling-TRIAGE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25f40ed3583c823c4ce6f420271e93bff0ecadd7",
+      "size": 14050,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/25f40ed3583c823c4ce6f420271e93bff0ecadd7"
+    },
+    {
+      "path": "reports/edge-INTERP.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d257c7d5db1a6a89e83b16c5b2ef919d82744a6",
+      "size": 33437,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/4d257c7d5db1a6a89e83b16c5b2ef919d82744a6"
+    },
+    {
+      "path": "reports/edge-NCA.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e78218348e5278d8119f595f280acf1d16ac4cf",
+      "size": 32094,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/0e78218348e5278d8119f595f280acf1d16ac4cf"
+    },
+    {
+      "path": "reports/fleet-STRUCTURE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55e299250eed8abb83ebb0cce282551cf0d33553",
+      "size": 25409,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/55e299250eed8abb83ebb0cce282551cf0d33553"
+    },
+    {
+      "path": "reports/music-ROUND3.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "880dea864ad07d9a309eaa1c5f5ab0c29818d4c0",
+      "size": 12711,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/880dea864ad07d9a309eaa1c5f5ab0c29818d4c0"
+    },
+    {
+      "path": "reports/sprint-CRDT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5b4f493a8295dfb9bee12ebb644a5d5ca46f7d8",
+      "size": 27506,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/f5b4f493a8295dfb9bee12ebb644a5d5ca46f7d8"
+    },
+    {
+      "path": "reports/sprint-FAILOPEN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8cf830142c32bd73c9099c2c5533cd554fd24d72",
+      "size": 18275,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/8cf830142c32bd73c9099c2c5533cd554fd24d72"
+    },
+    {
+      "path": "resolver.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "ca27e74fd76ab1b7cedc052cb4b35b02eea5dfdb",
+      "size": 79920,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/ca27e74fd76ab1b7cedc052cb4b35b02eea5dfdb"
+    },
+    {
+      "path": "resolver_selftest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1e3b7406e6c562361003cc775c10bf7421b0d12",
+      "size": 5111,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/f1e3b7406e6c562361003cc775c10bf7421b0d12"
+    },
+    {
+      "path": "sim",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9283ee928e3168ea7b51f41937f3bf861bd75e1c",
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/trees/9283ee928e3168ea7b51f41937f3bf861bd75e1c"
+    },
+    {
+      "path": "sim/RESULTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3855ad450865e983c5536c840a74cfa794e6a1b9",
+      "size": 5647,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/3855ad450865e983c5536c840a74cfa794e6a1b9"
+    },
+    {
+      "path": "sim/collapse_sim.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3c2a2421f347befce0aa49c70e44321f8d8bdfa",
+      "size": 2724,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/c3c2a2421f347befce0aa49c70e44321f8d8bdfa"
+    },
+    {
+      "path": "sim/tileset_sim.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0bd9961384dbf5bed27b7005a88cea3659dbf7a2",
+      "size": 11171,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/0bd9961384dbf5bed27b7005a88cea3659dbf7a2"
+    },
+    {
+      "path": "site",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bef27e8211a784eaf4c71d40234ba41b896f4212",
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/trees/bef27e8211a784eaf4c71d40234ba41b896f4212"
+    },
+    {
+      "path": "site/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ccbd7a9c589f6be2c5f4d48c6b3b403f53c8ede0",
+      "size": 13355,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/ccbd7a9c589f6be2c5f4d48c6b3b403f53c8ede0"
+    },
+    {
+      "path": "sprint-RESOLVER.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12e80cf53d68bdd94cf05d3709379e9dc6763e68",
+      "size": 13292,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/12e80cf53d68bdd94cf05d3709379e9dc6763e68"
+    },
+    {
+      "path": "test_resolver.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b35f8c605b46531ec19ce984f6d96e0fc8df8985",
+      "size": 4794,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/b35f8c605b46531ec19ce984f6d96e0fc8df8985"
+    },
+    {
+      "path": "tools",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e6011bb734083bf6fe2bdd716547cc051f2191b7",
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/trees/e6011bb734083bf6fe2bdd716547cc051f2191b7"
+    },
+    {
+      "path": "tools/lanes.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1960ccbadf4da15604399f718899b60460078e8d",
+      "size": 12245,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/1960ccbadf4da15604399f718899b60460078e8d"
+    },
+    {
+      "path": "triage.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba853303bf84ee5917e02463e07b55c4e5993fd9",
+      "size": 11456,
+      "url": "https://api.github.com/repos/SuperInstance/fleet-triage/git/blobs/ba853303bf84ee5917e02463e07b55c4e5993fd9"
+    }
+  ],
+  "truncated": false
+}

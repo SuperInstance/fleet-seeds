@@ -1,0 +1,664 @@
+{
+ "harness": [
+  {
+   "full": "NandhaKishorM/laya",
+   "stars": 29832,
+   "created": "2026-09-18T04:46:33Z",
+   "pushed": "2026-10-01T18:20:33Z",
+   "desc": "Non-autoregressive System 1 decision engine. Typed choice, score and yes/no decisions over any text in a single forward pass, in 1",
+   "lang": "Python"
+  },
+  {
+   "full": "zai-org/ZCode",
+   "stars": 7291,
+   "created": "2026-09-20T12:01:16Z",
+   "pushed": "2026-09-29T10:06:54Z",
+   "desc": "Z.ai's coding agent harness. Powerful, intelligent, extensible.",
+   "lang": "TypeScript"
+  },
+  {
+   "full": "yetone/magpie",
+   "stars": 4072,
+   "created": "2026-09-23T16:22:35Z",
+   "pushed": "2026-10-01T23:03:13Z",
+   "desc": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
+   "lang": "Go"
+  },
+  {
+   "full": "newliver666/apk-reverse",
+   "stars": 3135,
+   "created": "2026-09-19T13:12:54Z",
+   "pushed": "2026-09-24T09:22:21Z",
+   "desc": "Suitable for Android APK reverse engineering analysis",
+   "lang": "Python"
+  },
+  {
+   "full": "tobi/disktree",
+   "stars": 2109,
+   "created": "2026-09-24T20:56:29Z",
+   "pushed": "2026-09-27T02:04:35Z",
+   "desc": "A treemap for finding and removing what fills your disk, for Omarchy. Rust + GPUI.",
+   "lang": "Rust"
+  },
+  {
+   "full": "unreallabsai/unreal-agent",
+   "stars": 2049,
+   "created": "2026-09-21T23:14:02Z",
+   "pushed": "2026-09-23T19:08:26Z",
+   "desc": "Async-first agent harness",
+   "lang": "Go"
+  },
+  {
+   "full": "pallavi-shekhar/ai-engineering-interview-questions-company-wise",
+   "stars": 1605,
+   "created": "2026-09-19T04:14:43Z",
+   "pushed": "2026-09-29T04:42:47Z",
+   "desc": "Your Cheat Sheet For AI Engineering Interviews at Top AI Companies - Questions and Answers.",
+   "lang": "Markdown"
+  },
+  {
+   "full": "firelex/jeff",
+   "stars": 1263,
+   "created": "2026-09-28T16:18:39Z",
+   "pushed": "2026-10-01T15:29:40Z",
+   "desc": "Millisecond decisions, any domain: a 0.8B open \"System 1\" model that picks between your options with calibrated probabilities. One",
+   "lang": "Python"
+  }
+ ],
+ "autocode": [
+  {
+   "full": "0-SOFT/0-CODE",
+   "stars": 16,
+   "created": "2026-09-18T19:56:28Z",
+   "pushed": "2026-09-18T19:56:47Z",
+   "desc": "An autonomous development loop for Claude Code and OpenCode. The agent plans, writes, tests and commits on its own; the loop keeps",
+   "lang": "JavaScript"
+  },
+  {
+   "full": "imMamdouhaboammar/fable-jev",
+   "stars": 9,
+   "created": "2026-09-19T14:41:41Z",
+   "pushed": "2026-09-19T14:43:49Z",
+   "desc": "\u26a1 Sub-100ms cognitive reflexes for autonomous coding agents. Powered by TypeSafe AI's Jev & get-fable.",
+   "lang": "TypeScript"
+  },
+  {
+   "full": "menma4ever/agentic-team-mcp",
+   "stars": 6,
+   "created": "2026-09-21T18:42:47Z",
+   "pushed": "2026-09-30T23:58:52Z",
+   "desc": "Autonomous hierarchical multi-agent team (CEO -> Manager -> Workers) for Model Context Protocol (MCP). Mix Claude Code, Antigravit",
+   "lang": "Python"
+  },
+  {
+   "full": "mxreal64/thallium-vcs",
+   "stars": 6,
+   "created": "2026-09-27T06:10:28Z",
+   "pushed": "2026-09-30T12:34:24Z",
+   "desc": "an ai-native version control system built for autonomous coding agents. features microsecond copy-on-write sandboxes, atomic multi",
+   "lang": "F#"
+  },
+  {
+   "full": "siyuanfeng636-cpu/agentic-motion-graphics",
+   "stars": 3,
+   "created": "2026-09-25T12:48:43Z",
+   "pushed": "2026-09-25T12:53:44Z",
+   "desc": "Claude Code & Opus 5.5 Skill: Autonomous Code-to-Video & Motion Graphics Engine (HyperFrames, GSAP, Whisper, TTS)",
+   "lang": "Python"
+  },
+  {
+   "full": "Nikhil-creat/aegis-agentic-platform",
+   "stars": 3,
+   "created": "2026-09-27T00:41:05Z",
+   "pushed": "2026-09-27T01:34:19Z",
+   "desc": "Enterprise-grade Autonomous Agentic AI Platform with LangGraph multi-agent orchestration, Agentic RAG (reranking + semantic cache)",
+   "lang": "Python"
+  },
+  {
+   "full": "frostyfoxie/Theta-public",
+   "stars": 3,
+   "created": "2026-09-23T10:31:42Z",
+   "pushed": "2026-09-23T10:35:40Z",
+   "desc": "Theta Workbench is a browser-based, Gemini-powered multi-agent development workspace. Chief is the autonomous coding agent and orc",
+   "lang": null
+  },
+  {
+   "full": "playeon/opsyra",
+   "stars": 3,
+   "created": "2026-09-19T19:38:14Z",
+   "pushed": "2026-09-19T19:41:20Z",
+   "desc": "Autonomous AI Agent & DevOps workspace manager for Telegram. Connects Claude Code, Codex, and Antigravity with real-time MTProto r",
+   "lang": "TypeScript"
+  }
+ ],
+ "rsi": [
+  {
+   "full": "TokenRhythm/NeoHorse",
+   "stars": 1409,
+   "created": "2026-09-04T08:34:54Z",
+   "pushed": "2026-09-26T04:42:21Z",
+   "desc": "NeoHorse-1: Towards Recursive Self-Improvement via Agentic Post-Training with Routing Harness.",
+   "lang": "Python"
+  },
+  {
+   "full": "zhengkid/Dream-RSI",
+   "stars": 1334,
+   "created": "2026-09-13T20:39:43Z",
+   "pushed": "2026-09-16T10:32:18Z",
+   "desc": "The offical repo for \"Dream-RSI: Recursive Self-Improvement through Evolving Worlds\"",
+   "lang": null
+  },
+  {
+   "full": "AetherLabsAI/RSIAgent",
+   "stars": 453,
+   "created": "2026-09-13T01:48:25Z",
+   "pushed": "2026-10-01T23:07:12Z",
+   "desc": "A training-free multi-agent framework for recursive self-improvement in new environments through broad-then-deep autonomous explor",
+   "lang": "Python"
+  },
+  {
+   "full": "Gen-Verse/ScienceBuddy",
+   "stars": 296,
+   "created": "2026-09-14T07:21:46Z",
+   "pushed": "2026-09-17T21:17:36Z",
+   "desc": "ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents",
+   "lang": "Python"
+  },
+  {
+   "full": "theseus-labs-rsi/awesome-rsi",
+   "stars": 135,
+   "created": "2026-09-12T09:07:32Z",
+   "pushed": "2026-10-01T14:28:21Z",
+   "desc": "A curated list of papers and resources on Recursive Self-Improvement (RSI) for AI.",
+   "lang": null
+  },
+  {
+   "full": "Self-Improving-Coding-Agents/SI2CA",
+   "stars": 51,
+   "created": "2026-09-10T20:26:45Z",
+   "pushed": "2026-09-30T06:03:58Z",
+   "desc": "Official Repo for (Self-Improving)^2 Coding Agent: Curating High-Quality Trajectories via Recursive Self-Improvement",
+   "lang": "Python"
+  },
+  {
+   "full": "WenyiWU0111/RSIGame",
+   "stars": 42,
+   "created": "2026-09-28T23:54:09Z",
+   "pushed": "2026-10-01T07:02:44Z",
+   "desc": "RSIGame: Autonomous agentic game development with recursive self-improvement",
+   "lang": "Python"
+  },
+  {
+   "full": "Picrew/awesome-rsi",
+   "stars": 37,
+   "created": "2026-09-08T13:11:31Z",
+   "pushed": "2026-09-20T16:52:51Z",
+   "desc": "A curated collection of papers, research blogs, and open-source projects on recursive self-improvement (RSI), self-modifying agent",
+   "lang": "Python"
+  }
+ ],
+ "orchestration": [
+  {
+   "full": "yagizyagli/hadamard-llm",
+   "stars": 1,
+   "created": "2026-09-18T22:11:47Z",
+   "pushed": "2026-09-19T14:46:05Z",
+   "desc": "A zero-dependency, asynchronous LLM framework designed for blazing-fast classic orchestration and seamless Quantum AI (QML) integr",
+   "lang": "Python"
+  },
+  {
+   "full": "aman-singhsm01/LangGraph-Orchestrated-Stateful-Multi-Agent-Framework-for-Personalized-Investment-Advisory-System",
+   "stars": 1,
+   "created": "2026-09-28T09:02:40Z",
+   "pushed": "2026-09-28T09:14:32Z",
+   "desc": "LangGraph-Orchestrated Stateful Multi-Agent Framework for Personalized Investment Advisory System Using Hybrid Forecasting and LLM",
+   "lang": "Python"
+  },
+  {
+   "full": "cy1ingachref/mastermind",
+   "stars": 1,
+   "created": "2026-09-18T14:02:00Z",
+   "pushed": "2026-09-18T19:49:38Z",
+   "desc": "Multi-agent orchestration framework \u2014 a lead AI decomposes a task, delegates to worker agents, and aggregates results. Built for c",
+   "lang": "Python"
+  },
+  {
+   "full": "VikasRaika/agentic-workflow-starter",
+   "stars": 1,
+   "created": "2026-09-20T09:41:28Z",
+   "pushed": "2026-09-20T09:41:31Z",
+   "desc": "A tiny, dependency-free framework showing how agentic AI works: a ReAct tool-using agent + a DAG orchestrator, with a pluggable LL",
+   "lang": "Python"
+  },
+  {
+   "full": "Ricardoallexis/multi-agent-framework",
+   "stars": 0,
+   "created": "2026-09-24T01:33:19Z",
+   "pushed": "2026-09-28T04:41:30Z",
+   "desc": "Hybrid human/AI multi-agent orchestration framework with local and cloud model adapters",
+   "lang": "Python"
+  },
+  {
+   "full": "Tasniemnalyahya/LLM-Orch",
+   "stars": 0,
+   "created": "2026-09-30T23:38:05Z",
+   "pushed": "2026-10-01T07:00:37Z",
+   "desc": "MATLAB implementation of LLM-Orch, a large language model-driven serverless orchestration framework for context-aware edge intelli",
+   "lang": "MATLAB"
+  },
+  {
+   "full": "VijayPaliwalSolutionArchitect/semantic-kernel",
+   "stars": 0,
+   "created": "2026-09-27T15:20:54Z",
+   "pushed": "2026-09-28T01:14:02Z",
+   "desc": "The canonical C#/.NET LLM orchestration framework. SHIVAM ITCS fork \u2014 proves the .NET + agentic AI stack on GitHub.",
+   "lang": "C#"
+  },
+  {
+   "full": "XinWoRen-Global/aixrea-engine",
+   "stars": 0,
+   "created": "2026-09-30T02:34:47Z",
+   "pushed": "2026-09-30T08:47:24Z",
+   "desc": "Aixrea Engine - Open-source multi-agent orchestration framework by XinWoRen. Built with LangGraph.",
+   "lang": "Python"
+  }
+ ],
+ "cellular": [],
+ "jepa": [
+  {
+   "full": "NiluK/worldmodels101",
+   "stars": 206,
+   "created": "2026-08-19T10:39:11Z",
+   "pushed": "2026-08-24T02:33:40Z",
+   "desc": "Free interactive course on world models in AI. Nine visual chapters on prediction, latent dynamics, planning, JEPA, video models, ",
+   "lang": "TypeScript"
+  },
+  {
+   "full": "Gen-Verse/JEPA-Anything",
+   "stars": 123,
+   "created": "2026-09-04T10:10:20Z",
+   "pushed": "2026-09-18T03:32:29Z",
+   "desc": "JEPA-Anything: Learning Predictive Models across Different Worlds",
+   "lang": "Python"
+  },
+  {
+   "full": "ASIG-X/JEPLO",
+   "stars": 83,
+   "created": "2026-09-12T09:41:31Z",
+   "pushed": "2026-09-17T06:43:35Z",
+   "desc": "First JEPA-based learning framework for mapping-free LiDAR-based perceptive locomotion",
+   "lang": "C++"
+  },
+  {
+   "full": "zhuxun132/InJepa",
+   "stars": 50,
+   "created": "2026-09-27T14:46:29Z",
+   "pushed": "2026-09-28T10:24:12Z",
+   "desc": "InJepa: Intention First Latent State Planning with Coupled JEPAs for Visual Navigation. Code, Clean150 tasks and E12 checkpoint.",
+   "lang": "Python"
+  },
+  {
+   "full": "YilunKuang/lpworldmodel",
+   "stars": 32,
+   "created": "2026-08-20T23:14:40Z",
+   "pushed": "2026-08-26T04:05:16Z",
+   "desc": "Official Code for LpWM: A Case for Sparse Representations in World Models",
+   "lang": "Python"
+  },
+  {
+   "full": "HaoranZhuExplorer/AD-E2E-JEPA",
+   "stars": 27,
+   "created": "2026-09-29T00:58:05Z",
+   "pushed": "2026-09-29T18:54:06Z",
+   "desc": "AD-E2E-JEPA: A Joint-Embedding Predictive Architecture For End-to-End Autonomous Driving",
+   "lang": null
+  },
+  {
+   "full": "mkarmann/motion-jepa",
+   "stars": 15,
+   "created": "2026-09-11T00:17:30Z",
+   "pushed": "2026-09-22T02:46:50Z",
+   "desc": "Official Implementation of Motion-JEPA: Preventing Temporal Feature Collapse by Capturing Visual Changes in Latent Space",
+   "lang": "Python"
+  },
+  {
+   "full": "AbdelStark/lejudge-jev-jepa",
+   "stars": 10,
+   "created": "2026-09-22T07:31:06Z",
+   "pushed": "2026-09-24T07:19:38Z",
+   "desc": "Natural-language constraints for JEPA world-model planning, judged by a decision model instead of an LLM.",
+   "lang": "Python"
+  }
+ ],
+ "worldmodel": [
+  {
+   "full": "ABC12345anouys/EvoBot",
+   "stars": 31,
+   "created": "2026-09-23T06:32:36Z",
+   "pushed": "2026-10-01T11:15:19Z",
+   "desc": "Agent + reusable skill library for LIBERO manipulation tasks (no RL / VLA / world model; no LLM calls at runtime)",
+   "lang": "Python"
+  },
+  {
+   "full": "cunhaozhu/AquaWAM",
+   "stars": 18,
+   "created": "2026-09-27T08:48:55Z",
+   "pushed": "2026-09-30T04:15:22Z",
+   "desc": "AquaWAM: A Dynamics-aware World Action Model for Underwater Embodied Agents",
+   "lang": "Python"
+  },
+  {
+   "full": "RUCAIBox/Agent-Editing-World-Model",
+   "stars": 9,
+   "created": "2026-09-23T12:27:57Z",
+   "pushed": "2026-09-24T02:13:19Z",
+   "desc": "",
+   "lang": "Python"
+  },
+  {
+   "full": "thinkwee/OpenDot",
+   "stars": 5,
+   "created": "2026-09-28T20:45:54Z",
+   "pushed": "2026-10-01T17:42:44Z",
+   "desc": "Your personal agent team, in the real world. Open source, runs on your computer, any AI model.",
+   "lang": "Python"
+  },
+  {
+   "full": "adityaagarw/Pantheon",
+   "stars": 5,
+   "created": "2026-09-30T13:20:44Z",
+   "pushed": "2026-10-01T10:33:30Z",
+   "desc": "A 3D world where AI agents live, work and teach, and you can watch everything they do. Self-hosted, works with local models.",
+   "lang": "Python"
+  },
+  {
+   "full": "yifliu3/awesome-code-world-models",
+   "stars": 4,
+   "created": "2026-09-18T05:14:24Z",
+   "pushed": "2026-09-28T05:54:25Z",
+   "desc": "A curated list of code world models: executable dynamics, programmatic simulation, and coding agents that build and reason about w",
+   "lang": "Python"
+  },
+  {
+   "full": "arpan1221/agent-world",
+   "stars": 4,
+   "created": "2026-09-22T20:59:07Z",
+   "pushed": "2026-09-22T21:46:28Z",
+   "desc": "A local, vendor-agnostic voxel-world control room for coding-agent CLIs (Claude Code, Codex, Gemini, opencode, Qwen, Cursor, Grok)",
+   "lang": "JavaScript"
+  },
+  {
+   "full": "SeeAPI/awesome-jev-use-cases",
+   "stars": 3,
+   "created": "2026-09-18T02:37:24Z",
+   "pushed": "2026-09-20T10:10:42Z",
+   "desc": "Explore real-world use cases and projects built with TypeSafe AI's Jev: content moderation, AI agents, model routing, and semantic",
+   "lang": "Python"
+  }
+ ],
+ "wal": [],
+ "ledger": [
+  {
+   "full": "aviralmathur/enterprise-brain",
+   "stars": 4,
+   "created": "2026-09-08T11:59:51Z",
+   "pushed": "2026-09-18T07:09:35Z",
+   "desc": "Governed agent fleets for an enterprise. platform/ is the build: append-only output ledger, provenance cascade, computed scope, ag",
+   "lang": "JavaScript"
+  },
+  {
+   "full": "davidnichols-ops/aafp-commons",
+   "stars": 3,
+   "created": "2026-09-05T22:03:27Z",
+   "pushed": "2026-09-07T21:41:52Z",
+   "desc": "Signed, evidence-aware collective memory and MCP/CLI ledger for software agents.",
+   "lang": "Python"
+  },
+  {
+   "full": "shashu10/personal-finance-skills",
+   "stars": 2,
+   "created": "2026-09-28T00:18:35Z",
+   "pushed": "2026-09-28T04:18:12Z",
+   "desc": "Six agent skills for a private financial ledger, investment research, portfolio review, planning, and decision memory.",
+   "lang": "Python"
+  },
+  {
+   "full": "AVSK07/ledgerlens",
+   "stars": 1,
+   "created": "2026-09-28T04:59:26Z",
+   "pushed": "2026-09-28T04:59:27Z",
+   "desc": "AI Accounts Payable agent that learns your team's exception handling. Three-way matches invoices, flags discrepancies, and uses Hi",
+   "lang": null
+  },
+  {
+   "full": "RARS-oss/tabularium",
+   "stars": 1,
+   "created": "2026-09-13T15:11:39Z",
+   "pushed": "2026-09-13T16:44:15Z",
+   "desc": "Verifiable, auditable long-term memory for LLM agents -- append-only signed ledger, no LLM in the core, real H1-H4 eval results",
+   "lang": "Rust"
+  },
+  {
+   "full": "willykeenan/agentbrain-contextlib",
+   "stars": 1,
+   "created": "2026-09-26T16:43:17Z",
+   "pushed": "2026-09-26T22:57:33Z",
+   "desc": "ContextLib: a project's long-term memory as plain Markdown files you can read in Finder, on an SSD, with no database required. App",
+   "lang": "Python"
+  },
+  {
+   "full": "fernandogarzaaa/ape-mcp",
+   "stars": 1,
+   "created": "2026-09-17T16:36:17Z",
+   "pushed": "2026-10-01T22:06:49Z",
+   "desc": "APE \u2014 hybrid-native MCP server with an embedded, user-configurable agent: multi-engine orchestration (Genesis + EVE + ADAM + Skein",
+   "lang": "JavaScript"
+  },
+  {
+   "full": "DevChauhan-13/Finsight",
+   "stars": 1,
+   "created": "2026-09-29T16:17:20Z",
+   "pushed": "2026-09-29T16:17:25Z",
+   "desc": "Finsight is an AI-powered financial reconciliation system that compares bank settlements, payment transactions, and ERP ledger dat",
+   "lang": "Python"
+  }
+ ],
+ "multieval": [
+  {
+   "full": "trigger6980/agentic-research-orchestrator",
+   "stars": 1,
+   "created": "2026-09-20T03:20:46Z",
+   "pushed": "2026-09-25T04:08:23Z",
+   "desc": "Master's-level multi-agent research orchestration system with debate, verification, and evaluation harness. Built for impressive c",
+   "lang": "Python"
+  },
+  {
+   "full": "ashishpatel26/Agentic-Harness-Engineering-Workshop",
+   "stars": 1,
+   "created": "2026-09-28T11:05:43Z",
+   "pushed": "2026-09-30T05:01:52Z",
+   "desc": "Agentic-Harness-Engineering-Workshop",
+   "lang": "Python"
+  },
+  {
+   "full": "hoomanesteki/firebreak-ai-sre-agent",
+   "stars": 1,
+   "created": "2026-09-19T13:22:26Z",
+   "pushed": "2026-09-30T17:21:40Z",
+   "desc": "Multi-agent AI SRE for root cause analysis of production incidents. LangGraph agents investigate metrics, logs, and traces through",
+   "lang": "Python"
+  },
+  {
+   "full": "Tanmay-tech21/multimodal-agent-evals",
+   "stars": 0,
+   "created": "2026-09-19T03:05:31Z",
+   "pushed": "2026-09-19T03:05:32Z",
+   "desc": "A rigorous evaluation harness for multimodal and agentic AI systems, with traceable metrics and failure analysis.",
+   "lang": null
+  },
+  {
+   "full": "chivector/JIT-Rubric-MAS",
+   "stars": 0,
+   "created": "2026-09-30T08:17:18Z",
+   "pushed": "2026-10-01T16:48:27Z",
+   "desc": "Task-conditioned JIT harnesses with rubric-guided multi-agent planning, evaluation, attribution, and validated experience reuse.",
+   "lang": "Python"
+  },
+  {
+   "full": "matthewsparkes/autonomous-llm-hardening-harness",
+   "stars": 0,
+   "created": "2026-09-28T20:26:55Z",
+   "pushed": "2026-09-30T19:54:29Z",
+   "desc": "Closed-loop multi-agent MLSecOps harness to red-team local edge LLMs, evaluate non-literal leaks, and synthesise verified dual-lay",
+   "lang": "Python"
+  },
+  {
+   "full": "FarnooshMemari/adaptive-agent-harness",
+   "stars": 0,
+   "created": "2026-09-25T01:04:32Z",
+   "pushed": "2026-09-25T14:04:02Z",
+   "desc": "An AI security investigation assistant that uses adaptive multi-agent orchestration to analyze security alerts, evaluate reasoning",
+   "lang": "Python"
+  },
+  {
+   "full": "himashrideka/sagitra-review-code",
+   "stars": 0,
+   "created": "2026-09-19T01:05:29Z",
+   "pushed": "2026-09-19T01:06:14Z",
+   "desc": "Evaluation harness: does Sagitra multi-agent review produce more specific, valid, human-aligned peer reviews than a single-agent b",
+   "lang": "Python"
+  }
+ ],
+ "selfimprove": [
+  {
+   "full": "sno-ai/sno-station",
+   "stars": 362,
+   "created": "2026-09-19T06:55:24Z",
+   "pushed": "2026-10-01T22:34:18Z",
+   "desc": "Sno Station \u2014 your Claude Code and Codex working as one squad on your own machine. Shared encrypted memory, agent-to-agent messagi",
+   "lang": "TypeScript"
+  },
+  {
+   "full": "Shanghua-Gao/RSI-Jev",
+   "stars": 42,
+   "created": "2026-09-22T10:23:04Z",
+   "pushed": "2026-10-01T23:04:47Z",
+   "desc": "Typed-decision models (noul / choice / score) trained by a self-improving loop of AI agents \u2014 checkpoints, the code that produced ",
+   "lang": "HTML"
+  },
+  {
+   "full": "romangalaxys10-spec/fable",
+   "stars": 4,
+   "created": "2026-09-24T08:49:36Z",
+   "pushed": "2026-09-26T14:04:12Z",
+   "desc": "One repo, one skill: a self-improving experience layer for AI agents - multi-dataset session retrieval, on-device triage, token co",
+   "lang": "Python"
+  },
+  {
+   "full": "lhnminh/self-improving-computer-use",
+   "stars": 2,
+   "created": "2026-09-26T14:36:05Z",
+   "pushed": "2026-10-01T14:48:57Z",
+   "desc": "\ud83c\udfc6 3rd place at the MongoDB Harness Engineering Hackathon. A local-first computer-use agent with a WebUI that learns navigation wor",
+   "lang": "Python"
+  },
+  {
+   "full": "porkfrnd/Cortex-opencode",
+   "stars": 2,
+   "created": "2026-09-18T05:54:39Z",
+   "pushed": "2026-09-18T08:36:06Z",
+   "desc": "A self improving mode with gauntlet looping and swarm agentic workflow prebaked into it.",
+   "lang": "TypeScript"
+  },
+  {
+   "full": "samsgates/conversational-agent-rsi",
+   "stars": 2,
+   "created": "2026-09-23T11:57:40Z",
+   "pushed": "2026-09-23T13:31:12Z",
+   "desc": "Conversational-Agent-RSI is a self-improving platform for building, testing, evaluating, and continuously optimizing RAG-grounded ",
+   "lang": "Python"
+  },
+  {
+   "full": "Git-on-my-level/oss-maintainer",
+   "stars": 2,
+   "created": "2026-09-25T07:35:16Z",
+   "pushed": "2026-09-25T07:35:24Z",
+   "desc": "Hands-free open-source maintenance loops: bot-PR merges, contributor review, issue triage, small fixes, one daily digest. A 'maint",
+   "lang": "Python"
+  },
+  {
+   "full": "Anil-matcha/awesome-hermes-agent",
+   "stars": 2,
+   "created": "2026-09-23T15:38:55Z",
+   "pushed": "2026-09-23T15:52:08Z",
+   "desc": "A curated list of skills, plugins, tools, integrations, and resources for Hermes Agent by Nous Research",
+   "lang": null
+  }
+ ],
+ "memory": [
+  {
+   "full": "phpclaw-php/phpclaw-monorepo",
+   "stars": 11,
+   "created": "2026-09-23T03:50:03Z",
+   "pushed": "2026-09-29T03:08:01Z",
+   "desc": "The universal AI agent engine for PHP. Tools, memory, guards, and a ReAct loop already built. Works with Laravel, Symfony, WordPre",
+   "lang": "PHP"
+  },
+  {
+   "full": "matt-bat/spontaneous-agent-thought-framework",
+   "stars": 1,
+   "created": "2026-09-22T05:49:58Z",
+   "pushed": "2026-09-25T05:38:59Z",
+   "desc": "An untested, public-domain concept for spontaneous associative thought in AI agents: nested memories, probabilistic traversal, and",
+   "lang": null
+  },
+  {
+   "full": "ContextCommons/memrank",
+   "stars": 1,
+   "created": "2026-10-01T19:43:08Z",
+   "pushed": "2026-10-01T20:12:36Z",
+   "desc": "Open, vendor-neutral evaluation framework for agent memory engines.",
+   "lang": "Python"
+  },
+  {
+   "full": "anirudhnshandilya/agentj",
+   "stars": 1,
+   "created": "2026-09-30T12:28:20Z",
+   "pushed": "2026-09-30T14:24:20Z",
+   "desc": "The Java-native AI agent framework. MCP + tool calling + memory + tracing + OpenAI \u2014 build AI agents with plain Java.",
+   "lang": "Java"
+  },
+  {
+   "full": "007350/memory-conflict-adjudication-iclr2026",
+   "stars": 1,
+   "created": "2026-09-30T01:34:47Z",
+   "pushed": "2026-09-30T01:49:13Z",
+   "desc": "Credibility adjudication for memory conflicts in Chinese agent memory: a Bayesian framework with Chinese pragmatic signals (ICLR 2",
+   "lang": "TeX"
+  },
+  {
+   "full": "FahadUrRehman07/Mini_Claude_Code_AI_Agent_In_Pure_Python",
+   "stars": 1,
+   "created": "2026-09-24T16:46:27Z",
+   "pushed": "2026-09-24T16:46:28Z",
+   "desc": "Three simple agent cover, first one has no memory, context engineering, and tool. In second agent memory is added, and in third th",
+   "lang": null
+  },
+  {
+   "full": "qi-fg/miniagent",
+   "stars": 1,
+   "created": "2026-09-22T03:41:18Z",
+   "pushed": "2026-09-22T04:07:35Z",
+   "desc": "\ud83c\udf31 A tiny, dependency-free LLM agent framework: ReAct loop, tools, and memory in a few hundred lines of Python.",
+   "lang": "Python"
+  },
+  {
+   "full": "crrrowz/orchestrator-ai-agent",
+   "stars": 1,
+   "created": "2026-09-23T00:17:13Z",
+   "pushed": "2026-10-01T07:09:42Z",
+   "desc": "ORAGAI is an autonomous multi-agent software engineering framework built for deterministic, production-grade development. It combi",
+   "lang": "Python"
+  }
+ ]
+}
