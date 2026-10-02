@@ -1,0 +1,39 @@
+{
+  "tool": "preregister@1",
+  "claimsHash": "sha256:1bf124f29a665f048bb451bfc937d6cf6c585016920853df22a1ca33d6f55c85",
+  "sealedAt": "2026-10-02T16:50:48.788Z",
+  "verdicts": [
+    {
+      "claimId": "P1",
+      "metric": "canaryNamedViolations",
+      "op": "gte",
+      "threshold": 1,
+      "verdict": "PASS",
+      "measured": 3
+    },
+    {
+      "claimId": "P2",
+      "metric": "notary.firstLiveCycleDivergences",
+      "op": "eq",
+      "threshold": 0,
+      "verdict": "PENDING",
+      "measured": null,
+      "reason": "metric 'notary.firstLiveCycleDivergences' absent from results — clause unexercised this wave"
+    },
+    {
+      "claimId": "P3",
+      "metric": "remoteResealVerify",
+      "op": "eq",
+      "threshold": 1,
+      "verdict": "PASS",
+      "measured": 1
+    }
+  ],
+  "counts": {
+    "PASS": 2,
+    "FAIL": 0,
+    "VACUOUS": 0,
+    "PENDING": 1
+  },
+  "law": "pure function of (claims, seal, results) — the carrying commit is the timestamp; FAIL and VACUOUS are honest receipts, never silenced"
+}

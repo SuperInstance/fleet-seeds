@@ -1,0 +1,29 @@
+{
+  "metrics": {
+    "canaryNamedViolations": 3,
+    "remoteResealVerify": 1
+  },
+  "evidence": {
+    "scoredAt": "2026-10-02, after the pre-registration push (11d6d71..981d3f6 main -> main, ls-remote verified remote==local==981d3f6) — the score runs beside untouched claims; verdict.json is a pure function of claims+seal+results, the commit is its timestamp",
+    "P1_canary_battery": {
+      "method": "three stone-v1-shaped chains with fnv1a-64 (canary dialect) row_hashes substituted at the chosen positions, fed to the fleet's sha256-custody verifier tools/lib/stone-v1.mjs verifyStoneChain; canary implementation KAT'd (fnv1a64('')=cbf29ce484222325, fnv1a64('a')=af63dc4c8601ec8c); negative control: the same builder all-sha256 verifies clean (the battery discriminates — it is not a canary that cannot fail)",
+      "chains": {
+        "canary-body": { "ok": false, "why": "hash mismatch", "firstBadIndex": 1, "at": 1, "namedRefusal": true },
+        "canary-header": { "ok": false, "why": "hash mismatch", "firstBadIndex": 0, "at": 0, "namedRefusal": true },
+        "canary-tail": { "ok": false, "why": "hash mismatch", "firstBadIndex": 3, "at": 3, "namedRefusal": true },
+        "control-all-sha256": { "ok": true, "links": 4, "tip": "883c29bfbd9e8bd2919d158b0e19d2a1c642028c70487c3914042fa7d2ff9518" }
+      },
+      "measured": 3,
+      "battery_script": "local one-off (tool-results/prereg-67c/p1-canary-battery.mjs, uncommitted working data), receipted here verbatim"
+    },
+    "P2_tip_notary": {
+      "state": "unexercised — the wave-69 tip-anchor notary does not exist yet (PLANNING Round 74 queue); no first live cycle has run; the metric is deliberately absent from results so the verdict records PENDING, the honest state",
+      "measured": null
+    },
+    "P3_remote_reseal": {
+      "method": "curl raw.githubusercontent.com/SuperInstance/fleet-seeds/981d3f61cda1b499dc2546e17a8bb8ef5fb98c8e/seeds/preregister-67c.json and -67c.seal.json (both HTTP 200), then `node tools/preregister.mjs verify --claims=<fetched> --seal=<fetched>`",
+      "result": "ok:true, claimsHash sha256:1bf124f29a665f048bb451bfc937d6cf6c585016920853df22a1ca33d6f55c85 re-derived byte-exactly from the remote copies",
+      "measured": 1
+    }
+  }
+}
