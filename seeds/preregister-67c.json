@@ -1,0 +1,35 @@
+{
+  "prereg": "preregister@1",
+  "wave": "67-c",
+  "discipline": "jev-garden rule, jepa aee0335 gold standard: these three predictions were written and SEALED before any verification of them was attempted — the seal was committed and pushed before the canary battery ran and before the remote fetch could exist. Claims are never edited after the run; results are appended beside them by tools/preregister.mjs score. VACUOUS and PENDING are honest verdicts; nothing is silently passed.",
+  "writtenBeforeVerification": true,
+  "claims": [
+    {
+      "id": "P1",
+      "claim": "The fleet's sha256-custody stone verifier (tools/lib/stone-v1.mjs verifyStoneChain) fails closed with a NAMED law violation when fed a deliberately canary-hash chain: a stone-v1-shaped ledger (stone.header + body rows, correct canonicalJSON linkage shape) whose row_hash values are computed with the fnv1a-64 canary dialect instead of SHA-256. Across a three-chain battery (canary body rows, canary header, canary tail row), the custody class refuses the canary class on every chain — canaryNamedViolations >= 1, each refusal carrying a non-null why (the wave-66 census's two-dialect law, slackwater-quilt's refusal of canary hashes for chains, enforced at row level).",
+      "metric": "canaryNamedViolations",
+      "op": "gte",
+      "threshold": 1,
+      "refusal": "If the custody verifier accepts a canary-hash chain (ok:true, or why:null on any chain), the dialect boundary has failed: custody and canary hashes would be interchangeable and the fleet's receipt-chain law is broken at the primitive level — FAIL is the honest verdict and the primitive gets a named defect, not a shrug. If the harness cannot run at all, PENDING with the blocker receipted in the worklog.",
+      "writtenPreRun": "2026-10-02, before any canary fixture was built or run"
+    },
+    {
+      "id": "P2",
+      "claim": "When the wave-69 tip-anchor notary lands on quilt-organ-workers (32-byte ledger tips per lane/day into the KV the organ store already runs) and the organ-watcher grows its delta round from re-deriver to divergence detector (alarm iff store-tip != anchored-tip), the FIRST live cycle reports exactly 0 divergences: the fleet's live chains re-derive clean and the anchored tips match the store on the first compare — notary.firstLiveCycleDivergences == 0.",
+      "metric": "notary.firstLiveCycleDivergences",
+      "op": "eq",
+      "threshold": 0,
+      "refusal": "Any count > 0 on the first live cycle is a drift finding of the wave-63/64 class (divergence between honest re-derivations is only caught when the watcher happens to look) — FAIL is the honest verdict and the finding books an incident.scar, it does not get explained away. Until the notary exists this claim is unexercised: it stays PENDING, never quietly dropped and never passed.",
+      "writtenPreRun": "2026-10-02, the notary does not exist yet (wave-69 queue, PLANNING Round 74); no first cycle has run"
+    },
+    {
+      "id": "P3",
+      "claim": "The registry hosts its own pre-registration: after this lane's push, fetching seeds/preregister-67c.json and seeds/preregister-67c.seal.json from the remote at the pre-registration commit SHA and running preregister verify on those fetched copies returns PASS — claimsHash re-derives byte-exactly after the push round-trip, and later commits that add the verdict do not disturb the sealed files (remoteResealVerify == 1).",
+      "metric": "remoteResealVerify",
+      "op": "eq",
+      "threshold": 1,
+      "refusal": "If the remote copies re-hash differently (push mangling, encoding, CRLF translation), the registry cannot host seals and the primitive has a custody bug — FAIL and fix before any other lane is pointed at it. If the push itself fails, PENDING with the failure receipted in the worklog — never a local-only PASS claimed as registry-hosted.",
+      "writtenPreRun": "2026-10-02, before the pre-registration commit existed"
+    }
+  ]
+}

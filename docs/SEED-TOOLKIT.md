@@ -61,3 +61,23 @@ effect), and flattens the whole fabric into bytes that any substrate —
 silicon, IR, browser, scene, fleet — can rehydrate byte-exactly. The
 wardroom's "greeter stays human" is law 5 applied to people: the last
 joint stays soft on purpose.
+
+## Addendum (wave 67-c) — primitive 8.5: **seal/gate**, now distilled as `preregister`
+
+The wave-66 genetic code already named **seal/gate** among the eight fleet
+primitives; the boilerplate census found it hand-rolled 7+ times
+(qcells, jev-garden, quilt-bandit, erised-fleet-table, cog-lab, murmuration,
+quilt-jepa). Wave 67-c distills the seven into ONE registry-hosted
+primitive, `tools/preregister.mjs` (stdlib-only, zero network) —
+contract: **(a)** a claims file (id, claim, metric, threshold, refusal
+branch) written before the experiment; **(b)** a seal — sha256 over
+canonical JSON of the claims + timestamp + tool version — committed and
+pushed BEFORE any verification is possible (the jepa aee0335 gold standard);
+**(c)** a verdict appended later beside the untouched claims; **(d)** any
+post-hoc edit detectable by re-hashing, and the scorer refuses to score
+modified claims (fail-closed). Honesty laws ride inside the tool: no
+threshold surgery; vacuity is a named verdict (VACUOUS/PENDING) with the
+reason receipted, never a silent pass; the verdict is a pure function of
+(claims, seal, results). See `docs/PREREGISTER.md`; proven by 19 registry
+tests + the wave's own dogfood seal (`seeds/preregister-67c.*`), scored
+beside untouched claims per the contract.

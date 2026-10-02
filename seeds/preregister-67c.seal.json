@@ -1,0 +1,7 @@
+{
+  "tool": "preregister@1",
+  "sealedAt": "2026-10-02T16:50:48.788Z",
+  "claimsHash": "sha256:1bf124f29a665f048bb451bfc937d6cf6c585016920853df22a1ca33d6f55c85",
+  "claimsPath": "preregister-67c.json",
+  "note": "wave 67-c dogfood: sealed BEFORE the canary battery (P1), before any notary exists (P2), and before the pre-registration push (P3). The jepa aee0335 ritual, run on the registry itself."
+}
