@@ -1,0 +1,78 @@
+{
+  "tool": "preregister@1",
+  "claimsHash": "sha256:2db52ac2b1b611f71c08e4b3c853c8d0e5d667d3c0a9885fa04a95018d0deaba",
+  "sealedAt": "2026-10-02T17:29:50.834Z",
+  "verdicts": [
+    {
+      "claimId": "P1",
+      "metric": "abByteIdenticalSealedProcedures",
+      "op": "gte",
+      "threshold": 2,
+      "verdict": "PASS",
+      "measured": 2
+    },
+    {
+      "claimId": "P2",
+      "metric": "positiveControlDivergent",
+      "op": "eq",
+      "threshold": 1,
+      "verdict": "PASS",
+      "measured": 1
+    },
+    {
+      "claimId": "P3",
+      "metric": "qrngSealedResealIdentical",
+      "op": "eq",
+      "threshold": 1,
+      "verdict": "PASS",
+      "measured": 1
+    },
+    {
+      "claimId": "P4",
+      "metric": "sealedClassExecutorScoping",
+      "op": "eq",
+      "threshold": 0,
+      "verdict": "PASS",
+      "measured": 0
+    },
+    {
+      "claimId": "P5",
+      "metric": "abcByteIdenticalSealedProcedures",
+      "op": "gte",
+      "threshold": 2,
+      "verdict": "PASS",
+      "measured": 2
+    },
+    {
+      "claimId": "P6",
+      "metric": "sealedVerdictsAgree",
+      "op": "gte",
+      "threshold": 2,
+      "verdict": "PASS",
+      "measured": 2
+    },
+    {
+      "claimId": "P7",
+      "metric": "tamperRefusalNamed",
+      "op": "eq",
+      "threshold": 1,
+      "verdict": "PASS",
+      "measured": 1
+    },
+    {
+      "claimId": "P8",
+      "metric": "prefixNudgeFlipsVerdict",
+      "op": "eq",
+      "threshold": 1,
+      "verdict": "PASS",
+      "measured": 1
+    }
+  ],
+  "counts": {
+    "PASS": 8,
+    "FAIL": 0,
+    "VACUOUS": 0,
+    "PENDING": 0
+  },
+  "law": "pure function of (claims, seal, results) — the carrying commit is the timestamp; FAIL and VACUOUS are honest receipts, never silenced"
+}

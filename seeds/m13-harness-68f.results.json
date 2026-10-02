@@ -1,0 +1,197 @@
+{
+  "tool": "m13-harness@1",
+  "sealedInstrument": {
+    "procsHash": "sha256:86085f4fa6f824eee19f79fb58138146b8d4f9ff4ac7122a6780a28095983caf",
+    "prefixHash": "sha256:2113ce311493b7d5ae17960aeee8a97d5c4fda9c9102bd41d2423714a76b1d4e",
+    "pyHash": "sha256:84632aa673d24fac59bd4ade69ee5575c15d47b82cad2f3b2683b4bfef30cab0",
+    "sealPath": "m13-harness-68f.instrument-seal.json",
+    "sealedAt": "2026-10-02T17:28:44.855Z"
+  },
+  "executors": {
+    "A": {
+      "kind": "same-process node",
+      "node": "v24.21.0",
+      "platform": "linux",
+      "arch": "x64"
+    },
+    "B": {
+      "kind": "child_process node, clean env",
+      "env": {
+        "PATH": "/usr/bin:/bin",
+        "HOME": "/tmp",
+        "LANG": "C.UTF-8",
+        "M13_EXECUTOR": "B"
+      },
+      "childRunner": "m13-child.mjs"
+    },
+    "C": {
+      "kind": "python3 re-implementation",
+      "python": "Python 3.12.14",
+      "node": "v24.21.0"
+    }
+  },
+  "resealRule": "byte-identical output AND same verdict across executors given the same inherited seal; divergence => executor-scoped procedure value CONFIRMED (M13 mechanism holds); identical => procedure value NOT executor-scoped in this instance (honest falsification direction)",
+  "procedures": {
+    "battery-eval": {
+      "id": "battery-eval",
+      "class": "sealed",
+      "portable": true,
+      "executors": {
+        "A": {
+          "sha256": "sha256:950a5f5119f149032ff09182b9a53195c1a7e82da41afea3b04b603b01dac1ca",
+          "bytesLen": 162,
+          "verdict": "reject",
+          "selfStable": true
+        },
+        "B": {
+          "sha256": "sha256:950a5f5119f149032ff09182b9a53195c1a7e82da41afea3b04b603b01dac1ca",
+          "bytesLen": 162,
+          "verdict": "reject",
+          "executor": "node-clean-env"
+        },
+        "C": {
+          "sha256": "sha256:950a5f5119f149032ff09182b9a53195c1a7e82da41afea3b04b603b01dac1ca",
+          "bytesLen": 162,
+          "verdict": "reject",
+          "executor": "python3"
+        }
+      },
+      "pairs": {
+        "A==B": true,
+        "A==C": true,
+        "B==C": true
+      },
+      "verdictsAgree": true,
+      "verdicts": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "reseal": "IDENTICAL"
+    },
+    "qrng-pick": {
+      "id": "qrng-pick",
+      "class": "sealed",
+      "portable": true,
+      "executors": {
+        "A": {
+          "sha256": "sha256:ff44da6e7cd7bc37c5db83ffe64a8449f11346ccd09f8659da1c586e29806327",
+          "bytesLen": 171,
+          "verdict": "override",
+          "selfStable": true
+        },
+        "B": {
+          "sha256": "sha256:ff44da6e7cd7bc37c5db83ffe64a8449f11346ccd09f8659da1c586e29806327",
+          "bytesLen": 171,
+          "verdict": "override",
+          "executor": "node-clean-env"
+        },
+        "C": {
+          "sha256": "sha256:ff44da6e7cd7bc37c5db83ffe64a8449f11346ccd09f8659da1c586e29806327",
+          "bytesLen": 171,
+          "verdict": "override",
+          "executor": "python3"
+        }
+      },
+      "pairs": {
+        "A==B": true,
+        "A==C": true,
+        "B==C": true
+      },
+      "verdictsAgree": true,
+      "verdicts": [
+        "override",
+        "override",
+        "override"
+      ],
+      "reseal": "IDENTICAL"
+    },
+    "wallclock-leak": {
+      "id": "wallclock-leak",
+      "class": "unsealed",
+      "portable": false,
+      "executors": {
+        "A": {
+          "sha256": "sha256:9fa8e6663738b33c3b65e224977501c8146c23cd5cc1a6575e61a55ad72ce8a2",
+          "bytesLen": 147,
+          "verdict": null,
+          "selfStable": false
+        },
+        "B": {
+          "sha256": "sha256:4f48d26402cb362bc8dc9ea5e48a5aac1ef6f85dd6bb351318a87e9e9d4012d6",
+          "bytesLen": 147,
+          "verdict": null,
+          "executor": "node-clean-env"
+        },
+        "C": {
+          "sha256": "sha256:d94f06306095409e46f5d569f4f6f494cdbe6761fa1e6dd25104d107ea555ad9",
+          "bytesLen": 147,
+          "verdict": null,
+          "executor": "node--random-seed=1379"
+        }
+      },
+      "pairs": {
+        "A==B": false,
+        "A==C": false,
+        "B==C": false
+      },
+      "verdictsAgree": true,
+      "verdicts": [
+        null,
+        null,
+        null
+      ],
+      "reseal": "DIVERGENT",
+      "classification": "NONDETERMINISTIC_SAME_EXECUTOR"
+    }
+  },
+  "nudge": {
+    "nudgePrefixPath": "m13-prefix-nudge.json",
+    "baseVerdict": "reject",
+    "nudgedVerdict": "accept",
+    "flip": true,
+    "executorsAgreeBase": true,
+    "executorsAgreeNudged": true,
+    "executors": {
+      "battery-eval": {
+        "reseal": "IDENTICAL",
+        "verdicts": [
+          "accept",
+          "accept",
+          "accept"
+        ],
+        "sha256_A": "sha256:6f421c463267511a6bea31c3d5bfad0b6dfa449a22cadf5dfdac768a01cdaf02"
+      },
+      "qrng-pick": {
+        "reseal": "IDENTICAL",
+        "verdicts": [
+          "override",
+          "override",
+          "override"
+        ],
+        "sha256_A": "sha256:ff44da6e7cd7bc37c5db83ffe64a8449f11346ccd09f8659da1c586e29806327"
+      }
+    },
+    "law": "executor agreement under each prefix does NOT make the verdict inheritable across a prior change — re-seal what you inherit"
+  },
+  "tamper": {
+    "control": "ok",
+    "procsTamper": "E_PROCEDURE_MODIFIED",
+    "prefixTamper": "E_PREFIX_MODIFIED",
+    "pyTamper": "E_PYPORT_MODIFIED",
+    "allRefusalsNamed": 1,
+    "law": "untampered copy verifies ok (the battery discriminates); every tampered member refuses BY NAME — qcells refuse-stale at instrument level"
+  },
+  "metrics": {
+    "abByteIdenticalSealedProcedures": 2,
+    "abcByteIdenticalSealedProcedures": 2,
+    "sealedVerdictsAgree": 2,
+    "qrngSealedResealIdentical": 1,
+    "positiveControlDivergent": 1,
+    "sealedClassExecutorScoping": 0,
+    "unsealedClassExecutorScoping": 1,
+    "prefixNudgeFlipsVerdict": 1,
+    "nudgeExecutorAgreement": 1,
+    "tamperRefusalNamed": 1
+  }
+}
