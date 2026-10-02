@@ -1,0 +1,134 @@
+{
+  "tool": "m13-llm-leg@1",
+  "leg": "m13-llm-leg-70a",
+  "sealedInstrument": {
+    "specsHash": "sha256:8ccecd854838ae5955f1989c2855d73e20ed736f33638d8f9f65f5e26e6de7ec",
+    "runnerHash": "sha256:d74e4a2e97048603e927b59004a8b685ec183dbaba48e8615d6dbc496b5ed186",
+    "groundTruthHash": "sha256:86085f4fa6f824eee19f79fb58138146b8d4f9ff4ac7122a6780a28095983caf",
+    "sealPath": "m13-llm-leg-70a.instrument-seal.json",
+    "sealedAt": "2026-10-02T19:18:56.492Z",
+    "groundTruth68fCertified": "sha256:86085f4fa6f824eee19f79fb58138146b8d4f9ff4ac7122a6780a28095983caf"
+  },
+  "resealRuleLLM": "class-sealed procedures agree at outcome-class level (the LLM-leg comparator); byte-identity stays the re-seal law for code executors; byte comparison is EXACT content equality, no normalization",
+  "contents": {
+    "freeform": {
+      "X": {
+        "ok": true,
+        "content": "I’m sorry, but we can’t issue a full refund in this case. According to our store policy, a full refund is only granted when a receipt is presented and the purchase is within seven days. Because you did not provide a receipt, we are unable to process a full refund. Instead, we can offer you a store credit for the amount of the purchase.",
+        "modelServed": "openai/gpt-oss-20b",
+        "usage": {
+          "prompt_tokens": 299,
+          "total_tokens": 580,
+          "completion_tokens": 281,
+          "estimated_cost": 0.00004831,
+          "prompt_tokens_details": null
+        },
+        "finish": "stop",
+        "slotUsed": "X"
+      },
+      "Y": {
+        "ok": false,
+        "error": "E_HTTP",
+        "slotUsed": "Y"
+      }
+    },
+    "constrained": {
+      "X": {
+        "ok": true,
+        "content": "{\"outcome\":\"store-credit\"}",
+        "modelServed": "openai/gpt-oss-20b",
+        "usage": {
+          "prompt_tokens": 313,
+          "total_tokens": 378,
+          "completion_tokens": 65,
+          "estimated_cost": 0.00001849,
+          "prompt_tokens_details": null
+        },
+        "finish": "stop",
+        "slotUsed": "X"
+      },
+      "Y": {
+        "ok": false,
+        "error": "E_HTTP",
+        "slotUsed": "Y"
+      }
+    },
+    "computation": {
+      "X": {
+        "ok": false,
+        "error": "E_EMPTY_CONTENT",
+        "slotUsed": "X"
+      },
+      "Y": {
+        "ok": false,
+        "error": "E_HTTP",
+        "slotUsed": "Y"
+      }
+    }
+  },
+  "metrics": {
+    "freeform": {
+      "vacuous": true,
+      "reason": "freeform leg incomplete: X ok=true () Y ok=false (E_HTTP)"
+    },
+    "constrained": {
+      "vacuous": true,
+      "reason": "constrained leg incomplete: X ok=true () Y ok=false (E_HTTP)"
+    },
+    "computation": {
+      "vacuous": true,
+      "reason": "computation leg incomplete: X ok=false (E_EMPTY_CONTENT) Y ok=false (E_HTTP)"
+    },
+    "gradient": {
+      "vacuous": true,
+      "reason": "a leg did not complete; the gradient composite is not computable this run"
+    },
+    "budget": {
+      "calls": 10,
+      "hardCap": 10,
+      "byProvider": {
+        "deepinfra": 4,
+        "typesafe": 3,
+        "kimi": 3
+      }
+    },
+    "channels": {
+      "X": {
+        "provider": "deepinfra",
+        "model": "openai/gpt-oss-20b",
+        "ok": true
+      },
+      "Y": {
+        "provider": "typesafe",
+        "model_requested": "jev-1.13.0",
+        "ok": false,
+        "slotUsed": "Y"
+      }
+    },
+    "slotUsage": {
+      "freeform": {
+        "X": "X",
+        "Y": "Y"
+      },
+      "constrained": {
+        "X": "X",
+        "Y": "Y"
+      },
+      "computation": {
+        "X": "X",
+        "Y": "Y"
+      }
+    }
+  },
+  "evidence": {
+    "stability": {
+      "purpose": "executor self-stability at the constrained end (A1/A2 analog); receipt-only, no claim rides on them",
+      "X": {
+        "skipped": "budget-cap-exhausted"
+      },
+      "Y": {
+        "skipped": "first attempt failed: E_HTTP"
+      }
+    }
+  }
+}

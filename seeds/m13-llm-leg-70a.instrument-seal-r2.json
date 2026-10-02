@@ -1,0 +1,14 @@
+{
+  "tool": "m13-llm-leg@1",
+  "sealedAt": "2026-10-02T19:31:55.527Z",
+  "specsHash": "sha256:17ef542d752d6cef986301372c1a67129b57ceee5b0ec1f61f685c1fbfeb6f9e",
+  "runnerHash": "sha256:f1cff3c96f1a21c4c97b602e755f1b9f73adc4af85ef233cd50e93b7f7a31d74",
+  "groundTruthHash": "sha256:86085f4fa6f824eee19f79fb58138146b8d4f9ff4ac7122a6780a28095983caf",
+  "expected68fProcsHash": "sha256:86085f4fa6f824eee19f79fb58138146b8d4f9ff4ac7122a6780a28095983caf",
+  "paths": {
+    "specs": "m13-llm-leg-specs-r2.json",
+    "runner": "m13-llm-leg.mjs",
+    "groundTruth": "m13-procs.mjs"
+  },
+  "note": "instrument revision r2 (70-a-r2 finisher): Y typesafe jev-1.13.0 -> deepinfra Qwen/Qwen3.5-27B per the run-1 receipted repairRecipeForNextLane (typesafe 404 dead, kimi 429 suspended, groq 403 region-block re-probed); computation.maxTokens 4096->16384 (receipted reasoning-exhaustion fix); claims seal sha256:3ef79c3f... UNTOUCHED"
+}

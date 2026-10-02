@@ -328,9 +328,14 @@ function scoreClaim(claim, metrics) {
       }
     }
   }
-  // (2) resolve the claimed metric
+  // (2) resolve the claimed metric — EXCEPT for op 'expr' claims, whose metric
+  //     field IS the expression string, never a dotted path: pre-resolving it
+  //     here throws MissingMetric on the raw expr and permanently masks a
+  //     COMPLETE result as PENDING (the 69-d dotted-path quirk, third instance;
+  //     expr ops were never exercised before wave 70-a — receipted and fixed by
+  //     the 70-a-r2 finisher lane; per-variable resolution happens at (4))
   let got;
-  try { got = resolveOrThrow(metrics, claim.metric); }
+  try { got = claim.op === 'expr' ? undefined : resolveOrThrow(metrics, claim.metric); }
   catch (e) {
     if (e instanceof MissingMetric) {
       return { ...base, verdict: 'PENDING', measured: null, reason: `metric '${claim.metric}' absent from results — clause unexercised this wave` };

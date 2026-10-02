@@ -266,7 +266,7 @@ export function headerRow(specs, seal, claimsPath, claimsSealPath) {
   return {
     row: 'run-header',
     schema: 'm13-llm-leg-receipt@1',
-    run: 'm13-llm-leg-1',
+    run: specs.runId ?? 'm13-llm-leg-1', // runId added by instrument revision r2 (receipted); default preserves r1 behavior
     leg: specs.leg,
     task: '70-a',
     mine: 'M13 (lode/mines.jsonl row 13) — LLM-executor scope: the registry NULL this leg folds by measurement',
