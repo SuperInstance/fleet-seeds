@@ -1,0 +1,38 @@
+{
+  "tool": "preregister@1",
+  "claimsHash": "sha256:58fbbb0e55256acbddef07e547af4e95154359dcbbef9c4f67d31cef45cea0b5",
+  "sealedAt": "2026-10-02T17:57:01.917Z",
+  "verdicts": [
+    {
+      "claimId": "P1",
+      "metric": "metrics.v2FreezeProposalsBuckets3",
+      "op": "gte",
+      "threshold": 1,
+      "verdict": "PASS",
+      "measured": 2
+    },
+    {
+      "claimId": "P2",
+      "metric": "metrics.v2StarvedInProposals",
+      "op": "eq",
+      "threshold": 0,
+      "verdict": "PASS",
+      "measured": 0
+    },
+    {
+      "claimId": "P3",
+      "metric": "metrics.factKeyedDeterminism",
+      "op": "eq",
+      "threshold": 1,
+      "verdict": "PASS",
+      "measured": 1
+    }
+  ],
+  "counts": {
+    "PASS": 3,
+    "FAIL": 0,
+    "VACUOUS": 0,
+    "PENDING": 0
+  },
+  "law": "pure function of (claims, seal, results) — the carrying commit is the timestamp; FAIL and VACUOUS are honest receipts, never silenced"
+}
