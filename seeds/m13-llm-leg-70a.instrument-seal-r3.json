@@ -1,0 +1,14 @@
+{
+  "tool": "m13-llm-leg@1",
+  "sealedAt": "2026-10-02T20:05:44.707Z",
+  "specsHash": "sha256:f776356a66f8a9bb69084e16cbd40ef1e993f526f027ec2ca8198efa167e3569",
+  "runnerHash": "sha256:f1cff3c96f1a21c4c97b602e755f1b9f73adc4af85ef233cd50e93b7f7a31d74",
+  "groundTruthHash": "sha256:86085f4fa6f824eee19f79fb58138146b8d4f9ff4ac7122a6780a28095983caf",
+  "expected68fProcsHash": "sha256:86085f4fa6f824eee19f79fb58138146b8d4f9ff4ac7122a6780a28095983caf",
+  "paths": {
+    "specs": "m13-llm-leg-specs-r3.json",
+    "runner": "m13-llm-leg.mjs",
+    "groundTruth": "m13-procs.mjs"
+  },
+  "note": "instrument revision r3 (wave-71 lane 71-b): executor-cast revision — Y -> deepinfra nvidia/NVIDIA-Nemotron-3.5-Lightning (non-thinking, answers-in-2, per the model-casting registry), computation-X -> ibm-granite/granite-4.2-3b (per the r2 receipted recipe; gpt-oss-20b receipted structurally dead on the arithmetic leg: empty final channel x4 at 4096 AND 16384), kimi Yfallback dropped (receipted 429-suspended x2 lanes); computation.maxTokens 16384->4096 (reasoner headroom obsolete for non-thinking executors); sealed prompts/rubric/prefix/policy/budget BYTE-IDENTICAL to r1/r2; claims seal sha256:3ef79c3f... UNTOUCHED"
+}

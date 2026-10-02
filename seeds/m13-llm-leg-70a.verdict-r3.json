@@ -1,0 +1,47 @@
+{
+  "tool": "preregister@1",
+  "claimsHash": "sha256:3ef79c3f3eae3f88583b525c9bd73d8c1d30d9f43418d6b9e41300e699da75be",
+  "sealedAt": "2026-10-02T19:18:50.041Z",
+  "verdicts": [
+    {
+      "claimId": "P1",
+      "metric": "constrained.classAgree",
+      "op": "eq",
+      "threshold": 1,
+      "verdict": "PASS",
+      "measured": 1
+    },
+    {
+      "claimId": "P2",
+      "metric": "freeform.bytesIdentical == 0 && freeform.classAgree == 1",
+      "op": "expr",
+      "threshold": "freeform.bytesIdentical == 0 && freeform.classAgree == 1",
+      "verdict": "PASS"
+    },
+    {
+      "claimId": "P3",
+      "metric": "computation.bothCorrect",
+      "op": "expr",
+      "threshold": "computation.bothCorrect == 0",
+      "verdict": "PENDING",
+      "measured": null,
+      "reason": "expression references 'computation.bothCorrect' which is absent from results — clause unexercised this wave"
+    },
+    {
+      "claimId": "P4",
+      "metric": "freeform.bytesIdentical == 0 && freeform.classAgree == 1 && constrained.classAgree == 1 && computation.bothCorrect == 0",
+      "op": "expr",
+      "threshold": "freeform.bytesIdentical == 0 && freeform.classAgree == 1 && constrained.classAgree == 1 && computation.bothCorrect == 0",
+      "verdict": "PENDING",
+      "measured": null,
+      "reason": "expression references 'computation.bothCorrect' which is absent from results — clause unexercised this wave"
+    }
+  ],
+  "counts": {
+    "PASS": 2,
+    "FAIL": 0,
+    "VACUOUS": 0,
+    "PENDING": 2
+  },
+  "law": "pure function of (claims, seal, results) — the carrying commit is the timestamp; FAIL and VACUOUS are honest receipts, never silenced"
+}

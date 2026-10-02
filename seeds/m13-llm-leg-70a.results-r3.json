@@ -1,0 +1,205 @@
+{
+  "tool": "m13-llm-leg@1",
+  "leg": "m13-llm-leg-70a",
+  "provenance": {
+    "executedBy": "tools/m13-llm-leg-run3.mjs (revision-r3 live re-cast run; the comparator and the call protocol are the SEALED runner's own exports — runnerHash asserted against the seal before anything ran)",
+    "revision": "r3: executor-cast revision (identity is design, receipted; claims seal sha256:3ef79c3f… untouched) — Y -> nvidia/NVIDIA-Nemotron-3.5-Lightning, computation-X -> ibm-granite/granite-4.2-3b, kimi fallback dropped; sealed prompts/rubric/prefix/policy/budget byte-identical to r1/r2",
+    "catalogProbe": "deepinfra GET /v1/openai/models (0-token metadata call, receipted catalog-probe row; exact ids taken from the live catalog, 183 models)",
+    "ledgerNote": "run-3 rows appended to m13-llm-leg-1.jsonl per the 71-b mission instruction (append-only; run-1/r2 rows untouched; every row self-labels run:m13-llm-leg-3)",
+    "runId": "m13-llm-leg-3",
+    "executedAt": "2026-10-02T20:08:02.844Z"
+  },
+  "sealedInstrument": {
+    "specsHash": "sha256:f776356a66f8a9bb69084e16cbd40ef1e993f526f027ec2ca8198efa167e3569",
+    "runnerHash": "sha256:f1cff3c96f1a21c4c97b602e755f1b9f73adc4af85ef233cd50e93b7f7a31d74",
+    "groundTruthHash": "sha256:86085f4fa6f824eee19f79fb58138146b8d4f9ff4ac7122a6780a28095983caf",
+    "sealPath": "m13-llm-leg-70a.instrument-seal-r3.json",
+    "sealedAt": "2026-10-02T20:05:44.707Z",
+    "groundTruth68fCertified": "sha256:86085f4fa6f824eee19f79fb58138146b8d4f9ff4ac7122a6780a28095983caf"
+  },
+  "resealRuleLLM": "class-sealed procedures agree at outcome-class level (the LLM-leg comparator); byte-identity stays the re-seal law for code executors; byte comparison is EXACT content equality, no normalization",
+  "contents": {
+    "freeform": {
+      "X": {
+        "ok": true,
+        "content": "I’m sorry to hear that the milk you purchased is spoiled. Unfortunately, because you did not present a receipt, we cannot issue a full refund. According to our store policy, when a purchase is made within seven days and no receipt is provided, we offer a store credit instead. Please let me know if you would like to receive a store credit for the amount of €2.49.",
+        "modelServed": "openai/gpt-oss-20b",
+        "usage": {
+          "prompt_tokens": 299,
+          "total_tokens": 673,
+          "completion_tokens": 374,
+          "estimated_cost": 0.00006133000000000001,
+          "prompt_tokens_details": null
+        },
+        "finish": "stop"
+      },
+      "Y": {
+        "ok": true,
+        "content": "The customer's request for a full refund cannot be granted because the policy requires a receipt for any full refund, and no receipt was presented for this purchase. Since the milk was bought within the seven-day window but without a receipt, the applicable outcome under the written policy is store credit, not a full refund.",
+        "modelServed": "nvidia/NVIDIA-Nemotron-3.5-Lightning",
+        "usage": {
+          "prompt_tokens": 273,
+          "total_tokens": 336,
+          "completion_tokens": 63,
+          "estimated_cost": 0.00002646,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": null
+          }
+        },
+        "finish": "stop"
+      }
+    },
+    "constrained": {
+      "X": {
+        "ok": true,
+        "content": "{\"outcome\":\"store-credit\"}",
+        "modelServed": "openai/gpt-oss-20b",
+        "usage": {
+          "prompt_tokens": 313,
+          "total_tokens": 380,
+          "completion_tokens": 67,
+          "estimated_cost": 0.00001877,
+          "prompt_tokens_details": null
+        },
+        "finish": "stop"
+      },
+      "Y": {
+        "ok": true,
+        "content": "{\"outcome\": \"store-credit\"}",
+        "modelServed": "nvidia/NVIDIA-Nemotron-3.5-Lightning",
+        "usage": {
+          "prompt_tokens": 291,
+          "total_tokens": 301,
+          "completion_tokens": 10,
+          "estimated_cost": 0.00001906,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": null
+          }
+        },
+        "finish": "stop"
+      }
+    },
+    "computation": {
+      "X": {
+        "ok": false,
+        "error": "E_EMPTY_CONTENT"
+      },
+      "Y": {
+        "ok": true,
+        "content": "CHECKSUM=5A5A5A5A",
+        "modelServed": "nvidia/NVIDIA-Nemotron-3.5-Lightning",
+        "usage": {
+          "prompt_tokens": 366,
+          "total_tokens": 380,
+          "completion_tokens": 14,
+          "estimated_cost": 0.0000242,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": null
+          }
+        },
+        "finish": "stop"
+      }
+    }
+  },
+  "metrics": {
+    "freeform": {
+      "bytesIdentical": 0,
+      "classAgree": 1,
+      "classX": "deny+store-credit",
+      "classY": "deny+store-credit",
+      "signalsX": {
+        "refusal": true,
+        "storeCredit": true,
+        "manager": false
+      },
+      "signalsY": {
+        "refusal": true,
+        "storeCredit": true,
+        "manager": false
+      },
+      "contentBytesX": 368,
+      "contentBytesY": 326
+    },
+    "constrained": {
+      "bytesIdentical": 0,
+      "canonBytesIdentical": 1,
+      "bothParsed": 1,
+      "parsedX": 1,
+      "parsedY": 1,
+      "outcomeX": "store-credit",
+      "outcomeY": "store-credit",
+      "classAgree": 1
+    },
+    "computation": {
+      "vacuous": true,
+      "reason": "computation leg incomplete: X ok=false (E_EMPTY_CONTENT) Y ok=true ()"
+    },
+    "gradient": {
+      "vacuous": true,
+      "reason": "a leg did not complete; the gradient composite is not computable this run"
+    },
+    "budget": {
+      "calls": 9,
+      "hardCap": 10,
+      "byProvider": {
+        "deepinfra": 9
+      },
+      "byModel": {
+        "openai/gpt-oss-20b": 3,
+        "nvidia/NVIDIA-Nemotron-3.5-Lightning": 4,
+        "ibm-granite/granite-4.2-3b": 2
+      }
+    },
+    "cast": {
+      "X": {
+        "model": "openai/gpt-oss-20b",
+        "legs": [
+          "freeform",
+          "constrained"
+        ]
+      },
+      "Y": {
+        "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning",
+        "legs": [
+          "freeform",
+          "constrained",
+          "computation"
+        ]
+      },
+      "computationX": {
+        "model": "ibm-granite/granite-4.2-3b",
+        "legs": [
+          "computation"
+        ]
+      },
+      "Yfallback": {
+        "dropped": true,
+        "reason": "kimi receipted 429-suspended across runs 1-2; no dead-channel fallback"
+      }
+    }
+  },
+  "evidence": {
+    "stability": {
+      "purpose": "executor self-stability at the constrained end (A1/A2 analog); receipt-only, no claim rides on them",
+      "X": {
+        "repeatBytesIdentical": true,
+        "repeatContent_sha256": "sha256:9840ad2c56a4446e07e48fd5d0c6d11397415cfe4415edf38186c7daa41f5f43"
+      },
+      "Y": {
+        "repeatBytesIdentical": true,
+        "repeatContent_sha256": "sha256:18ecca33e86685e6ef6417044c022bc9f6d8613f67438cb3c009fac133e7b054"
+      }
+    },
+    "groundTruthRecomputed": "88A64422",
+    "crossRunAnchors": {
+      "note": "run-3 X (gpt-oss-20b) outputs vs the run-1 receipted anchors (temperature 0): byte-stability across lanes and restarts",
+      "freeformX_sha_run1": "sha256:3e4745f0b62875d6a7213552236f307eb432c8ea75ee8b1348c3ff62e4d64aaa",
+      "freeformX_matchesRun1": false,
+      "constrainedX_sha_run1": "sha256:9840ad2c56a4446e07e48fd5d0c6d11397415cfe4415edf38186c7daa41f5f43",
+      "constrainedX_matchesRun1": true
+    }
+  }
+}

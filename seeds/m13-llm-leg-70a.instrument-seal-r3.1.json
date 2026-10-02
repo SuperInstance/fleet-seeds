@@ -1,0 +1,14 @@
+{
+  "tool": "m13-llm-leg@1",
+  "sealedAt": "2026-10-02T20:11:52.554Z",
+  "specsHash": "sha256:1d57a5b1cddfaf82ab4eaf4f23e1a1282f865e07f3d6fd139db2fc9e2f142e37",
+  "runnerHash": "sha256:f1cff3c96f1a21c4c97b602e755f1b9f73adc4af85ef233cd50e93b7f7a31d74",
+  "groundTruthHash": "sha256:86085f4fa6f824eee19f79fb58138146b8d4f9ff4ac7122a6780a28095983caf",
+  "expected68fProcsHash": "sha256:86085f4fa6f824eee19f79fb58138146b8d4f9ff4ac7122a6780a28095983caf",
+  "paths": {
+    "specs": "m13-llm-leg-specs-r3.1.json",
+    "runner": "m13-llm-leg.mjs",
+    "groundTruth": "m13-procs.mjs"
+  },
+  "note": "instrument revision r3.1 (wave-71 lane 71-b): computation-X ibm-granite/granite-4.2-3b (E_EMPTY_CONTENT x2, think-default reasoning family per receipted catalog metadata) -> meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo (plain instruct, no reasoning tag); ONE-SHOT 10th and last budget call, no repair; all sealed law byte-identical to r3/r2/r1; claims seal sha256:3ef79c3f... UNTOUCHED"
+}

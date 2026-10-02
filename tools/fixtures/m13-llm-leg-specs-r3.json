@@ -1,0 +1,130 @@
+{
+  "schema": "m13-llm-leg-specs@1",
+  "leg": "m13-llm-leg-70a",
+  "mine": "M13 (lode/mines.jsonl row 13, pred_sha256 b5b1b021dfa211181e180c9bda126e7b198404daa081af97b9dcdf6d96d764fb): procedure value is executor-scoped; nested loops must re-seal what they inherit.",
+  "design": "An LLM EXECUTOR is an LLM ASKED TO EXECUTE a sealed procedure's SPEC (not its code): the executor receives the documented input->output law plus the sealed prefix as bytes, and must produce the output. Re-seal question: do TWO DIFFERENT LLM executors produce byte-identical outputs for a deterministic procedure? Registered gradient prediction: LLM executors DIVERGE on free-form generation (executor-scoped at byte level) but may AGREE on constrained-output procedures (the law pins the answer); hand-execution of an arithmetic law is expected to diverge or fail. That gradient IS the finding. The executor here never sees code -- only the spec -- exactly the nested-loop shape M13 warns about (an inherited procedure carried across an executor boundary).",
+  "sealedPrefix": {
+    "caseId": "milk-no-receipt-within-7",
+    "facts": {
+      "item": "milk",
+      "priceEur": 2.49,
+      "receiptPresented": false,
+      "daysSincePurchase": 3,
+      "customerStatement": "bought it here three days ago, opened the carton, it is spoiled"
+    },
+    "policyVersion": "storefront frozen table LIVEFREEZE-1 (wave 69)",
+    "lineage": "the same milk-no-receipt case the fleet's frozen law rules on (receipt-mentioned:false + within-7 -> store credit); inherited, not re-derived"
+  },
+  "policyLaw": "WRITTEN POLICY (the input->output law, quoted verbatim from the frozen refund table):\n- If a receipt is presented AND the purchase is within 7 days: outcome = full-refund.\n- If NO receipt is presented AND the purchase is within 7 days: outcome = store-credit.\n- If the purchase is older than 7 days: outcome = manager-review.",
+  "specs": {
+    "freeform": {
+      "id": "freeform-refund-denial",
+      "class": "freeform",
+      "constraint": "none -- free prose; expected executor-scoped at byte level; compared at OUTCOME-CLASS level by the pre-registered classifier",
+      "maxTokens": 700,
+      "prompt": "You are executing a sealed procedure by its SPEC. Work ONLY from the sealed facts and the written policy below; do not invent facts and do not use outside knowledge about this store.\n\nSEALED PREFIX (inherited, part of the seal):\ncaseId: milk-no-receipt-within-7\nfacts: item = milk; priceEur = 2.49; receiptPresented = false; daysSincePurchase = 3; customerStatement = \"bought it here three days ago, opened the carton, it is spoiled\"\n\nWRITTEN POLICY (the input->output law, quoted verbatim from the frozen refund table):\n- If a receipt is presented AND the purchase is within 7 days: outcome = full-refund.\n- If NO receipt is presented AND the purchase is within 7 days: outcome = store-credit.\n- If the purchase is older than 7 days: outcome = manager-review.\n\nTASK (free-form procedure): The customer demands a full refund. Write EXACTLY ONE paragraph (3-6 sentences, plain prose, no headings, no lists, no JSON, no markdown) that denies the full refund and states what the policy instead provides for these facts. Output only the paragraph."
+    },
+    "constrained": {
+      "id": "constrained-policy-outcome",
+      "class": "constrained",
+      "constraint": "output pinned to exactly one JSON object with exactly one key whose value is in the sealed enum -- the law pins the answer",
+      "maxTokens": 400,
+      "prompt": "You are executing a sealed procedure by its SPEC. Work ONLY from the sealed facts and the written policy below; do not invent facts and do not use outside knowledge about this store.\n\nSEALED PREFIX (inherited, part of the seal):\ncaseId: milk-no-receipt-within-7\nfacts: item = milk; priceEur = 2.49; receiptPresented = false; daysSincePurchase = 3; customerStatement = \"bought it here three days ago, opened the carton, it is spoiled\"\n\nWRITTEN POLICY (the input->output law, quoted verbatim from the frozen refund table):\n- If a receipt is presented AND the purchase is within 7 days: outcome = full-refund.\n- If NO receipt is presented AND the purchase is within 7 days: outcome = store-credit.\n- If the purchase is older than 7 days: outcome = manager-review.\n\nTASK (constrained procedure): Apply the written policy to the sealed facts. Output EXACTLY ONE JSON object with EXACTLY this shape and NOTHING else -- no markdown, no code fences, no commentary, no explanation, no extra keys:\n{\"outcome\": \"full-refund\"}\nThe value must be exactly one of: full-refund, store-credit, manager-review."
+    },
+    "computation": {
+      "id": "computation-fnv-checksum",
+      "class": "computation",
+      "constraint": "the law is a fully specified arithmetic procedure; the executor must hand-execute it (no code, no calculator -- that is the point: models are bad executors of arithmetic laws)",
+      "maxTokens": 4096,
+      "checksumInput": "M13-LLM-LEG-70A:milk-no-receipt",
+      "groundTruth": "88A64422",
+      "groundTruthSource": "fnv1a32 as sealed in tools/m13-procs.mjs, re-certified at lane open against the 68f instrument seal (procsHash sha256:86085f4fa6f824eee19f79fb58138146b8d4f9ff4ac7122a6780a28095983caf); independent python3 reference agrees; FNV KATs '' -> 811C9DC5 and 'a' -> E40C292C",
+      "prompt": "You are executing a sealed procedure by its SPEC. Execute the following checksum law BY HAND (mentally, step by step; do not write or run code -- you have none). Output only the final answer line.\n\nALGORITHM (FNV-1a, 32-bit):\n1. h = 2166136261  (this is 0x811C9DC5)\n2. For each character c of the INPUT STRING, in order, left to right:\n   a. h = h XOR (the character's code point; every character of this input is ASCII, so the code point equals its ASCII byte value)\n   b. h = (h * 16777619) mod 4294967296   (16777619 is 0x01000193; all arithmetic is modulo 2^32 = 4294967296)\n3. The checksum is the final value of h, written as EXACTLY 8 hexadecimal digits (uppercase), no 0x prefix.\n\nINPUT STRING (fixed by the sealed prefix): M13-LLM-LEG-70A:milk-no-receipt\n(28 characters, all ASCII: M 1 3 - L L M - L E G - 7 0 A : m i l k - n o - r e c e i p t)\n\nOUTPUT FORMAT: exactly one line of the form CHECKSUM=XXXXXXXX where XXXXXXXX is the 8-hex-digit checksum."
+    }
+  },
+  "comparatorRubric": {
+    "byteLaw": "byte-identity is EXACT string equality of the returned content (UTF-8 code-unit equality via Buffer.compare) with NO normalization -- executor noise IS the finding; the only normalization in the whole leg is canonicalJSON of a PARSED constrained object (the fleet's preregister.mjs dialect), applied AFTER the parse, for the descriptive canonBytesIdentical metric only",
+    "constrainedParse": "take the raw content; scan for the FIRST '{' and walk a quote/escape-aware brace-depth counter to the matching '}' (first balanced object wins); JSON.parse it; LEGAL iff the object has EXACTLY one key 'outcome' whose value is a string in {full-refund, store-credit, manager-review}; anything else (no object, unparseable, extra keys, illegal value) is parsed:false, outcome:null",
+    "constrainedClassAgree": "classAgree = both executors parse LEGAL and the two outcome values are EQUAL; any unparseable/illegal output is its own non-agreeing state (this kills the vacuous pass where two misexecutions 'agree')",
+    "freeformClasses": {
+      "deny+store-credit": "refusal signal present AND store-credit signal present (the policy-conformant denial for these facts)",
+      "manager-review": "manager/escalation signal present AND no store-credit signal",
+      "deny-only": "refusal signal present, no store-credit signal, no manager signal",
+      "other": "no refusal signal, or nothing matches -- 'other' NEVER agrees with anything, including another 'other' (misexecution is fail-visible)"
+    },
+    "freeformSignals": {
+      "refusal": "\\b(cannot|can't|cannot|unable|not able|will not|won't|don't offer|do not offer|doesn't qualify|does not qualify|not eligible|deny|denied|denies|decline|declined|regret|unfortunately|no full refund|no refund|not entitled)\\b",
+      "storeCredit": "\\b(store[- ]credit|store credit|credit)\\b",
+      "manager": "\\b(manager|supervisor|escalat(e|ion|ing)|human review|manual review|higher authority)\\b"
+    },
+    "freeformClassPriority": [
+      "deny+store-credit",
+      "manager-review",
+      "deny-only",
+      "other"
+    ],
+    "freeformClassAgree": "classAgree = both executors classified into the SAME NAMED class (deny+store-credit | manager-review | deny-only); 'other' never agrees (with anything, including itself)",
+    "computationParse": "first /CHECKSUM\\s*=\\s*([0-9A-Fa-f]{8})/ match in the content; correct iff equal (case-insensitive) to the sealed groundTruth; a wrong 8-hex answer is a RECEIPTED wrong answer, never silently discarded",
+    "agreement": "computation.agreeXY = both executors emitted an 8-hex value and the two values are equal (right or wrong, they agree with EACH OTHER)"
+  },
+  "executors": {
+    "X": {
+      "provider": "deepinfra",
+      "model": "openai/gpt-oss-20b",
+      "endpoint": "https://api.deepinfra.com/v1/openai/chat/completions",
+      "legs": [
+        "freeform",
+        "constrained"
+      ],
+      "provenance": "UNCHANGED from r1/r2 on freeform+constrained: the receipted byte-stable constrained anchor (run-1 row 4 sha 9840ad2c..., byte-identical across lanes and restarts). computation is NOT cast to X: gpt-oss-20b on the arithmetic spec is receipted STRUCTURALLY dead (run-1 rows 7-8 and run-2 rows 7-8: empty final channel at maxTokens 4096 AND 16384) — re-casting it again would knowingly burn budget on a receipted-dead channel."
+    },
+    "Y": {
+      "provider": "deepinfra",
+      "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning",
+      "endpoint": "https://api.deepinfra.com/v1/openai/chat/completions",
+      "legs": [
+        "freeform",
+        "constrained",
+        "computation"
+      ],
+      "provenance": "instrument revision r3 (receipted): r2 Y Qwen/Qwen3.5-27B is a thinking-mode stack that exhausted maxTokens on the TRIVIAL constrained leg (run-2 receipts) — receipted dead for this leg. Re-cast per the model-casting registry (PLANNING.md wave-71 queue: Nemotron-3.5-Lightning answers-in-2, non-thinking, fast) and the r2 repairRecipeForNextLane (a non-thinking executor). Exact id from the live catalog probe (receipted catalog-probe row, HTTP 200, 0 tokens). A genuinely different executor stack from X (different weights/training/tokenizer)."
+    },
+    "computationX": {
+      "provider": "deepinfra",
+      "model": "ibm-granite/granite-4.2-3b",
+      "endpoint": "https://api.deepinfra.com/v1/openai/chat/completions",
+      "legs": [
+        "computation"
+      ],
+      "provenance": "instrument revision r3 (receipted): the computation-X slot is re-cast per the r2 receipted recipe (\"the computation leg needs a non-thinking executor\") — gpt-oss-20b empty-final-channel x4 is structural. granite-4.2-3b is the model-casting registry racehorse; exact id from the live catalog probe. Deliberately a DIFFERENT model from Y so the computation leg still compares two different executor stacks, per the leg design (\"do TWO DIFFERENT LLM executors...\")."
+    }
+  },
+  "callProtocol": {
+    "promptAssembly": "SINGLE user message: content = spec.prompt VERBATIM bytes from this fixture (byte-identical to both executors -- the executor never sees anything else); temperature 0 (greedy; the executor's best-effort determinism setting); max_tokens per spec; response recorded raw",
+    "repairPolicy": "a call is FAILED on HTTP non-2xx, timeout, or empty content; ONE repair attempt per failed call max, with the minimal pre-declared repair: (1) typesafe/kimi rejecting the temperature param -> retry without it; (2) transport/5xx/timeout -> one straight retry; executor-Y dead beyond repair -> the named Yfallback executor takes over (the receipt row records executor_used + fallback_of); REVISION r3: no named Y-fallback this run — the kimi fallback is receipted 429-suspended across both prior runs (run-1 rows 2/3/5/6/9/10); a dead channel receipts honestly rather than burning scored budget on a receipted-dead channel; the per-leg executor cast is declared in executors[*].legs",
+    "budget": {
+      "hardCap": 10,
+      "core": 6,
+      "stability": 2,
+      "repairMax": 2,
+      "law": "6 core calls (3 procedures x 2 executors) + 2 stability probes (constrained leg repeated once per executor, same bytes, temperature 0 -- the A1/A2 self-stability analog at the constrained end) + at most 2 repair calls; a leg that cannot complete within budget records failed-call receipts and the claims score honestly (VACUOUS/FAIL), never a pass"
+    },
+    "stabilityProbes": "receipt-only diagnostics (no claim rides on them): executor self-stability at the constrained end; annotated into evidence"
+  },
+  "writtenBeforeRun": true,
+  "runId": "m13-llm-leg-3",
+  "revision": {
+    "of": "tools/fixtures/m13-llm-leg-specs.json (r1, instrument-sealed 2026-10-02T19:18:56.492Z, runner ran receipts/m13-llm-leg-1.jsonl)",
+    "authority": "run-1 run-status row repairRecipeForNextLane: \"Y=deepinfra SECOND MODEL ... still two different executor stacks OR re-probe typesafe systemone; claims seal is UNTOUCHED and reusable only if the Y swap is receipted as an instrument revision (the executor identity is part of the DESIGN, not the sealed claims text)\"",
+    "reason": "run-1 receipt rows 2/5/9: typesafe /v1/chat/completions DEAD HTTP 404; rows 3/6/10: kimi 429 account-suspended (KIMI_API_KEY not provisioned this lane); rows 7-8: deepinfra gpt-oss-20b E_EMPTY_CONTENT — reasoning-exhaustion at max_tokens 4096 on the 28-step hand-arithmetic spec",
+    "changes": [
+      "executors.Y: typesafe jev-1.13.0 -> deepinfra Qwen/Qwen3.5-27B (same proven channel as X, different model stack)",
+      "specs.computation.maxTokens: 4096 -> 16384 (the receipted larger-max_tokens fix; reasoning_effort=low would have required a runner change — avoided to keep runner diff at one line)",
+      "runId field added so the r2 receipts header is self-describing"
+    ],
+    "groqProbe": "mission preferred \"2 different LLM providers\": GROQ_API_KEY probed 2026-10-02 via GET /openai/v1/models -> Forbidden (403), matching the wave-63 receipted region-block; groq unavailable, recipe fallback taken",
+    "modelSelection": "receipted example id \"Qwen/Qwen3.8-27B\" is not in the live deepinfra catalog (metadata probe receipted); nearest live id honoring family+size selected: Qwen/Qwen3.5-27B",
+    "claimsSealUntouched": "sha256:3ef79c3f3eae3f88583b525c9bd73d8c1d30d9f43418d6b9e41300e699da75be (seeds/m13-llm-leg-70a.seal.json) — claims bytes not edited"
+  },
+  "revisionNote": "instrument revision r3 (wave-71 lane 71-b): ONLY the executor cast changed from r2 — Y deepinfra Qwen/Qwen3.5-27B -> nvidia/NVIDIA-Nemotron-3.5-Lightning; computation-X openai/gpt-oss-20b -> ibm-granite/granite-4.2-3b (per the r2 receipted recipe; X keeps freeform+constrained); Yfallback (kimi, receipted 429-suspended) dropped; computation.maxTokens 16384 -> 4096 (the r2 raise was the reasoner-headroom repair, receipted disproven for gpt-oss-20b and obsolete for non-thinking executors). Sealed prompts (freeform/constrained/computation), sealedPrefix, policyLaw, comparatorRubric and the budget law are BYTE-IDENTICAL to r2/r1. Claims seal sha256:3ef79c3f... UNTOUCHED (executor identity is design, not sealed claim text — the r2 adjudication)."
+}
