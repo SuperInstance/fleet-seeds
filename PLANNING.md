@@ -244,3 +244,10 @@ Directive: "keep going" (standing full green light; wave-62 queue executed as ma
 - Budget note: 67-c receipted a 1-call typesafe overage (7 vs 6) honestly; all other lanes $0 external.
 - wave-68 queue: refunder corpus growth (the n=2 region decides a freeze), FACT-dimension vector contract (§5b v2), runbook seal.js port, organ-side chrono-op adapter for boot()-able chrono bundles, Ed25519 v3, port-or-attic emit-recipes.mjs.
 - Standing: BOTH mothquantum keys burned, rotate FIRST at the post-sprint token roll.
+
+## Round 73 — wave-68: saved states bootable by others, sealed runs, the far shore
+- 68-a quilt-jev-toolkit d943d27 (60/60): organ §9 bootChrono — a sealed quilt-chrono sheet boots as an organ: chronoOps mapping (reads→witness receipts, writes→cell sets, pushes→pairs, each with a named reason + test), full courtroom reusing organ verifySignedCheckpoint/verifyChain, mapped replay == SIGNED state before boot. 4 alternatives rejected with reasons. "Saved state bootable by others" is now a working path, not a slogan.
+- 68-b quilt-runbook 569d6d2 (53/53): v0.2.0 — run ledgers get the same custody (chain sidecar + organ-checkpoint seals + rewind boundary law).
+- 68-c quilt-far-shore f729677: the ideation lane — 3 receipted model rounds, FAR-SHORE.md (2028 figure, every claim anchored or labeled imagination), REVERSE-ACTUALIZE.md (falsifiable experiments ranked), primitives-v2.md (FACT/TONE §5b-v2 with two-stage freeze; derivative/integral cells). Honest: lane died pre-seal (dispatch report timeout), keeper sealed disk state, nothing regenerated.
+- Note for fleet: toolkit tests live in BOTH test/ and tests/ — glob both (the wave-67 glob lesson, again).
+- wave-69 queue: R1 compound-key freeze re-run (refunder corpus 7→≥14), primitives-v2(a) into softjoints, derivative/integral cells in chrono, Ed25519 v3, standing: rotate BOTH moth keys first at the roll.
