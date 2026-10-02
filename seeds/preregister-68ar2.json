@@ -1,0 +1,37 @@
+{
+  "prereg": "preregister@1",
+  "wave": "68-a-r2",
+  "discipline": "jev-garden rule, jepa aee0335 gold standard: these three predictions were written and SEALED before the freeze-v2 battery ran (eval/freeze-v2.js over eval/battery-v2.json, quilt-storefront). The seal was committed and pushed before the run. Claims are never edited after the run; verdicts are appended beside them by tools/preregister.mjs score. VACUOUS and PENDING are honest verdicts; nothing is silently passed. Lane 68-a-r2 is the finisher for dead lane 68-a (FACT/TONE moment-vector v2): facts decide outcomes, emotion decides tone.",
+  "writtenBeforeVerification": true,
+  "claims": [
+    {
+      "id": "P1",
+      "claim": "On the grown corpus (18 synthetic refunder-region observations, varied facts+emotion; 13 with policy-grounded outcome classes derived from extracted facts by the written policy), the v2 freezing sweep — quilt-softjoints freezingTest with requireFacts:true and kinds=['receipt-mentioned','purchase-window'] over the refunder-lexicon pre-vector, threshold 3 — produces at least ONE unanimous fact-bearing freeze proposal at buckets=3: the fact dimension makes the deciding feature (receipt presence) visible to the region key, so at least one region of n>=3 shares one outcome. Metric: metrics.v2FreezeProposalsBuckets3 >= 1 (eval/freeze-v2-metrics.json).",
+      "metric": "metrics.v2FreezeProposalsBuckets3",
+      "op": "gte",
+      "threshold": 1,
+      "refusal": "If no fact-bearing region reaches unanimous n>=3 at buckets=3, the fact key did NOT make the refunder region freezable on this corpus — FAIL is the honest verdict; the wave-67 diagnosis would then be only partially resolved (visibility without determinism) and the joint stays soft, receipted with n. If the battery cannot run at all, PENDING with the blocker named in the worklog — never a local-only PASS.",
+      "writtenPreRun": "2026-10-02, before eval/freeze-v2.js was executed against eval/battery-v2.json"
+    },
+    {
+      "id": "P2",
+      "claim": "The outcome law holds in the instrument run: NO fact-starved observation (the 5 corpus observations whose policy-input facts are not grounded — receipt-mentioned or purchase-window null) has its v2 region key among the frozen proposals at ANY bucketing (2/3/4). The metric is MEASURED, not assumed: eval/freeze-v2.js intersects every proposal's region key with the starved observations' own keys (emotion bucket + stated-unknown facts class) and counts overlaps. Metric: metrics.v2StarvedInProposals == 0, with metrics.fact_starved == 5 (the cohort exists and is non-empty, so the check discriminates).",
+      "metric": "metrics.v2StarvedInProposals",
+      "op": "eq",
+      "threshold": 0,
+      "refusal": "Any overlap > 0 means a region whose deciding facts are stated-unknowns froze into a lookup proposal — a guess wearing a table's clothes, the exact failure the v2 outcome law (E_FACTS_REQUIRED / requireFacts) exists to forbid — FAIL, and the instrument has a hole to fix before any promotion. If the starved cohort were empty (fact_starved == 0) the check could not discriminate: that case is declared vacuousIf below and scores VACUOUS, never PASS.",
+      "vacuousIf": { "metric": "metrics.fact_starved", "op": "eq", "threshold": 0, "note": "with no starved observations in the corpus, the exclusion law is untested by this run" },
+      "writtenPreRun": "2026-10-02, before eval/freeze-v2.js was executed"
+    },
+    {
+      "id": "P3",
+      "claim": "The wave-67 diagnosis is resolved as a CONTRAST on this corpus: under the v2 fact-keyed regions there is ZERO grounded-region output-split (no region with n>=2 containing two different outcome classes — the hypothesis under test: the outcome is a function of facts+policy), while the v1 emotion-only key DOES split at least one n>=2 region (the deciding feature is invisible to emotion buckets). Conjunct metric: metrics.factKeyedDeterminism == 1, defined as (metrics.groundedRegionSplits == 0 AND metrics.emotionOnlySplits >= 1), swept at buckets 2/3/4. Note receipted honestly: the first conjunct is policy-determinism-by-construction of the rule-derived outcomes (that IS the v2 hypothesis); the DISCRIMINATING conjunct is emotionOnlySplits >= 1 — without it the claim would be vacuously true and must score VACUOUS.",
+      "metric": "metrics.factKeyedDeterminism",
+      "op": "eq",
+      "threshold": 1,
+      "refusal": "groundedRegionSplits > 0 would mean even the fact key leaves outcome ambiguity (corpus or policy bug) — FAIL. emotionOnlySplits == 0 would mean the emotion-only key was NOT the wave-67 problem on this corpus and the contrast is undemonstrated — the conjunct fails, factKeyedDeterminism == 0, FAIL (honestly: the corpus failed to reproduce the diagnosis, which is itself a finding about the battery's emotion variance). If the run cannot execute, PENDING with the blocker receipted.",
+      "vacuousIf": { "metric": "metrics.emotionOnlySplits", "op": "eq", "threshold": 0, "note": "without an emotion-only split the contrast is undemonstrated and the conjunct claim is vacuous" },
+      "writtenPreRun": "2026-10-02, before eval/freeze-v2.js was executed"
+    }
+  ]
+}
