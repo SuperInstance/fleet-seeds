@@ -1,0 +1,47 @@
+{
+  "tool": "preregister@1",
+  "claimsHash": "sha256:17f0019d882067219634105d9717ce10c70c52808dcf3fb2198357ca18517fc4",
+  "sealedAt": "2026-10-02T20:30:49.102Z",
+  "verdicts": [
+    {
+      "claimId": "P1",
+      "metric": "metrics.p1_deadband_holds",
+      "op": "eq",
+      "threshold": 1,
+      "verdict": "PASS",
+      "measured": 1
+    },
+    {
+      "claimId": "P2",
+      "metric": "metrics.p2_sinusoid_within_1pct",
+      "op": "eq",
+      "threshold": 1,
+      "verdict": "PENDING",
+      "measured": null,
+      "reason": "metric 'metrics.p2_sinusoid_within_1pct' absent from results — clause unexercised this wave"
+    },
+    {
+      "claimId": "P3",
+      "metric": "metrics.p3_derivative_outdetects",
+      "op": "eq",
+      "threshold": 1,
+      "verdict": "PASS",
+      "measured": 1
+    },
+    {
+      "claimId": "P4",
+      "metric": "metrics.p4_conservation_and_examples",
+      "op": "eq",
+      "threshold": 1,
+      "verdict": "PASS",
+      "measured": 1
+    }
+  ],
+  "counts": {
+    "PASS": 3,
+    "FAIL": 0,
+    "VACUOUS": 0,
+    "PENDING": 1
+  },
+  "law": "pure function of (claims, seal, results) — the carrying commit is the timestamp; FAIL and VACUOUS are honest receipts, never silenced"
+}
