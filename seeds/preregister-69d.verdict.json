@@ -1,0 +1,38 @@
+{
+  "tool": "preregister@1",
+  "claimsHash": "sha256:6058255be14f77ae2e21ef4bd49c7a810521423abad0b8029c600e3d71fcd31d",
+  "sealedAt": "2026-10-02T18:26:15.872Z",
+  "verdicts": [
+    {
+      "claimId": "P1",
+      "metric": "metrics.p1_fixes_diagnosed_defect",
+      "op": "eq",
+      "threshold": 1,
+      "verdict": "PASS",
+      "measured": 1
+    },
+    {
+      "claimId": "P2",
+      "metric": "metrics.p2_split_persists",
+      "op": "eq",
+      "threshold": 1,
+      "verdict": "PASS",
+      "measured": 1
+    },
+    {
+      "claimId": "P3",
+      "metric": "metrics.p3_monitors_hold",
+      "op": "eq",
+      "threshold": 1,
+      "verdict": "PASS",
+      "measured": 1
+    }
+  ],
+  "counts": {
+    "PASS": 3,
+    "FAIL": 0,
+    "VACUOUS": 0,
+    "PENDING": 0
+  },
+  "law": "pure function of (claims, seal, results) — the carrying commit is the timestamp; FAIL and VACUOUS are honest receipts, never silenced"
+}

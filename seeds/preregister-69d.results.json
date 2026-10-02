@@ -1,0 +1,24 @@
+{
+  "kind": "preregister-results",
+  "wave": "69-d",
+  "evidence": {
+    "scoredAt": "2026-10-03 (finisher lane 69-d-r2); scores beside untouched claims (claimsHash sha256:6058255b…, seal pushed 382ad19 at 2026-10-02T18:26:15Z BEFORE the run — ls-remote verified remote==local==382ad19)",
+    "P1_R1": "results/R1.json (quilt-far-shore) — 12/12 deepinfra gpt-oss-20b calls billed (r1-calls.jsonl, usage on every row, est $0.000813), corpus 7 legacy + 12 new = 19 joint observations, sweep family K1/K2/K3 x buckets 2/3/4 threshold 3, 4 fact-keyed proposals, 0 emotion-only, contrast holds, frozen replay 8/8 agreement at budget deepinfra:0. FINISHER AUDIT: scripts/r1-verify.mjs re-derives every recorded metric from the recorded corpus offline (18/18 PASS — ADOPT).",
+    "P2_R1": "same artifact — milk receipt-present:unknown|product-class:milk region n=2, classes {store credit:1, full refund:1} (the two REAL legacy rulings), regions_frozen 1 of 11 at K1@B3 — the instrument does NOT freeze every region.",
+    "P3_R3": "results/R3.json (quilt-far-shore) — scripts/r3-monitor.mjs, zero external model calls: incidents caught at EXACT positions (wave67-battery T6+T13 greeter silences, T22 raw-fallback); clean wave66 session flags L18+L25 only, both attributed to runs/adjustments.jsonl seq 13 (cache-collapse, run storefront-live-1) = 0 unattributed; sha256 hash-chain sidecar results/r3-anomaly-chain.jsonl (5 links) re-walks clean; tail-only equivalence incremental==fold-from-genesis byte-identical; tamper probe on a mutated link DETECTED (fail-closed)."
+  },
+  "shapeNote": "sealed claims carry dotted metric paths (metrics.*); preregister.mjs metricsView+lookup resolve them from results.metrics — the inner nest is the sealed paths resolved verbatim, claims/seal untouched",
+  "metrics": {
+    "metrics": {
+      "p1_fixes_diagnosed_defect": 1,
+      "p2_split_persists": 1,
+      "milk_unknown_n": 2,
+      "milk_unknown_split": 1,
+      "p3_monitors_hold": 1,
+      "incidents_caught": 3,
+      "false_positives_clean": 0,
+      "chain_verifies": 1,
+      "tail_only_equivalent": 1
+    }
+  }
+}
