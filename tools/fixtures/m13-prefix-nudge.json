@@ -1,0 +1,19 @@
+{
+  "schema": "m13-prefix@1",
+  "note": "the CROSS-LAYER-UPDATE probe (the nudge fixture): identical to m13-prefix.json except priorState.acc, which stands for a parent-layer update re-pricing the inherited procedure's verdict — M13's 'nested loops must re-seal what they inherit' half, isolated from executor-scoping. Derivation (instrument construction, bounded search d<=2000 over the SEALED constants of the base prefix, receipted pre-seal in seeds/m13-harness-68f.json): the smallest delta that flips the battery-eval verdict is priorState.acc + 5 (2718281 -> 2718286); base emits score 425 verdict reject, nudged emits score 638 verdict accept. Pure arithmetic on the sealed constants — not a run of the experiment.",
+  "seed": 305419896,
+  "constants": {
+    "steps": 512,
+    "threshold": 500,
+    "w1": 1664525,
+    "w2": 1013904223,
+    "candidates": 3,
+    "priorsPick": 1
+  },
+  "priorState": {
+    "acc": 2718286,
+    "generation": 8,
+    "lane": "m13",
+    "inheritedFrom": "engine-run-8"
+  }
+}

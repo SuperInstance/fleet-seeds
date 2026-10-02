@@ -1,0 +1,7 @@
+{
+  "tool": "preregister@1",
+  "sealedAt": "2026-10-02T17:29:50.834Z",
+  "claimsHash": "sha256:2db52ac2b1b611f71c08e4b3c853c8d0e5d667d3c0a9885fa04a95018d0deaba",
+  "claimsPath": "m13-harness-68f.json",
+  "note": "wave 68-f M13 falsification harness: 8 predictions SEALED before the scored cross-executor run (the jepa aee0335 ritual). Instrument carries its own refuse-stale seal (m13-harness-68f.instrument-seal.json) verified fail-closed by the run. Calibration receipted as instrument construction; the scored run of record happens only after this commit is pushed."
+}

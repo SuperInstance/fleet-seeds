@@ -1,0 +1,103 @@
+{
+  "prereg": "preregister@1",
+  "wave": "68-f",
+  "discipline": "M13 falsification harness (cross-executor re-seal) — the jepa aee0335 ritual, dogfooding 67-c's preregister primitive: these predictions were written and SEALED before the scored run was attempted. The instrument itself carries a SECOND seal (seeds/m13-harness-68f.instrument-seal.json, tools/m13-harness.mjs seal/verify) which the scored run verifies fail-closed before anything executes — qcells refuse-stale at instrument level. Calibration (the 16-test node --test battery, including cross-executor byte-identity A==B==C) ran BEFORE this seal and is receipted here as instrument construction, exactly as 67-c's canary KAT was; the SCORED run (seeds/m13-harness-68f.results.json, the file of record) was executed only AFTER this claims+seal commit was pushed, and any scored-run divergence where calibration agreed is a real finding, not an instrument defect. M13's registered scope (lode/mines.jsonl row 13: previously-sealed LLM-executed batteries re-run across an executor-MODEL change) is NOT resolvable by this zero-external-model lane — this harness resolves the deterministic-executor analog in this instance and builds the standing re-seal instrument M13's operational consequence requires. Claims are never edited after the run; the verdict is appended beside them by tools/preregister.mjs score. FAIL and VACUOUS are honest receipts; nothing is silently passed.",
+  "mine": "M13 (lode/mines.jsonl row 13, pred_sha256 b5b1b021dfa211181e180c9bda126e7b198404daa081af97b9dcdf6d96d764fb): procedure value is executor-scoped; nested loops must re-seal what they inherit.",
+  "instrument": {
+    "harness": "tools/m13-harness.mjs (m13-harness@1)",
+    "executors": {
+      "A": "same-process node",
+      "B": "child_process node with a clean env (constructed constants only: PATH/HOME/LANG; no inherited environment)",
+      "C": "python3 re-implementation for language-portable procedures (tools/m13-procs.py); node with --random-seed=1379 variation for the node-only positive control (the mission's fallback)"
+    },
+    "resealRule": "every executor must produce byte-identical output AND the same verdict given the same inherited sealed prefix {seed, constants, priorState}; ANY divergence = executor-scoped procedure value CONFIRMED (M13's mechanism holds); byte-identical across all executors = the falsification direction (procedure value NOT executor-scoped in this instance — honest FAIL for M13's universality, still valuable)",
+    "instrumentSeal": {
+      "path": "seeds/m13-harness-68f.instrument-seal.json",
+      "procsHash": "sha256:86085f4fa6f824eee19f79fb58138146b8d4f9ff4ac7122a6780a28095983caf",
+      "prefixHash": "sha256:2113ce311493b7d5ae17960aeee8a97d5c4fda9c9102bd41d2423714a76b1d4e",
+      "pyHash": "sha256:84632aa673d24fac59bd4ade69ee5575c15d47b82cad2f3b2683b4bfef30cab0"
+    },
+    "procedures": {
+      "battery-eval": "sealed, portable — scoring loop over the inherited prefix (LLM-battery analog at instrument scale): LCG stream from the sealed seed, accumulator folded with priorState, score = acc % 1000, verdict accept/reject vs the sealed threshold; base prefix emits score 425 verdict reject",
+      "qrng-pick": "sealed, portable — the engine run-8 shape: priors' pick is c1 (index 1); the certified draw (seed CARRIED IN THE SEAL, never drawn from an executor) picks candidates from its 8-draw stream; calibration draws 87,78,69,0,43,38,41,40 -> scores 165,69,81 -> pick 0 -> OVERRIDES the priors' pick, mirroring run-8's 2nd-consecutive override",
+      "wallclock-leak": "unsealed, node-only POSITIVE CONTROL — reads Date.now() + unseeded Math.random() with NO seal; executor-adjacent entropy by construction; deliberately not ported to python (a formatting-different port would prove nothing) so executor-C takes the mission's node --random-seed fallback"
+    },
+    "nudgeDerivation": "the cross-layer-update probe fixture (tools/fixtures/m13-prefix-nudge.json) differs from the base prefix in priorState.acc ONLY, standing for a parent-layer update re-pricing the inherited verdict; delta found by BOUNDED SEARCH d<=2000 over the sealed constants at instrument construction (pure arithmetic, not a run): the smallest flip is d=5 (acc 2718281 -> 2718286); base emits score 425 verdict reject, nudged emits score 638 verdict accept; the qrng draw stream reads only the sealed seed and is provably untouched by the nudge (calibration: draws identical)",
+    "calibration": "node --test tools/m13-harness.test.mjs — 16/16 green pre-seal (2026-10-02, receipted as instrument construction): fnv1a32/lcg KATs against independent BigInt references; A==B and A==C byte-identity for both sealed procedures; positive control flagged DIVERGENT/NONDETERMINISTIC_SAME_EXECUTOR; tamper battery all-named (E_PROCEDURE_MODIFIED / E_PREFIX_MODIFIED / E_PYPORT_MODIFIED) with untampered control ok; nudge flip reject->accept; python canonical dialect byte-equal to preregister.mjs canonicalJSON on the shared fixture (the 67-a ensure_ascii gotcha, discriminated). Full tools suite 127/127."
+  },
+  "writtenBeforeScoredRun": true,
+  "claims": [
+    {
+      "id": "P1",
+      "claim": "Same-process node (executor-A) and clean-env child node (executor-B) produce BYTE-IDENTICAL emits on both inherited sealed procedures (battery-eval, qrng-pick) given the same inherited seal — abByteIdenticalSealedProcedures >= 2. Environment isolation alone does not re-price a sealed procedure's value.",
+      "metric": "abByteIdenticalSealedProcedures",
+      "op": "gte",
+      "threshold": 2,
+      "refusal": "If A and B diverge on any sealed procedure, environment-scoped procedure value is CONFIRMED in the deterministic class (M13's mechanism holds at node-vs-clean-env-node granularity) — FAIL is the honest verdict and the divergence bytes are receipted in full. If the divergence is NOT reproducible under byte-identical inputs and the sealed instrument (double-run check), the run is voided INDETERMINATE and the instrument defect is receipted instead.",
+      "writtenPreRun": "2026-10-02, before the scored run; calibration agreed (instrument construction, receipted above)"
+    },
+    {
+      "id": "P2",
+      "claim": "The positive control DIVERGES: the unsealed wall-clock/unseeded-entropy procedure (wallclock-leak) is flagged DIVERGENT across executors by the harness itself — positiveControlDivergent == 1. The harness must detect exactly the divergence class M13 warns about, or it is blind.",
+      "metric": "positiveControlDivergent",
+      "op": "eq",
+      "threshold": 1,
+      "refusal": "If the unsealed control re-seals byte-identical everywhere, the harness cannot detect executor-scoping and every PASS below is worthless (a canary that cannot die) — FAIL, and the harness gets a named defect before any other lane is pointed at it.",
+      "writtenPreRun": "2026-10-02, before the scored run; calibration flagged the control (instrument construction, receipted above)"
+    },
+    {
+      "id": "P3",
+      "claim": "QRNG-seeded procedures re-seal byte-identical when the seed is carried in the seal: the qrng-pick procedure — whose every random draw derives from the seed bound in the inherited prefix, never from executor entropy — reseals IDENTICAL across A/B/C with agreeing verdicts (qrngSealedResealIdentical == 1). This is the engine run-8 lesson made mechanical: certified external randomness is executor-safe exactly insofar as it rides in the seal (this run's draw again OVERRIDES the priors' pick, mirroring run-8's override).",
+      "metric": "qrngSealedResealIdentical",
+      "op": "eq",
+      "threshold": 1,
+      "refusal": "If the QRNG-sealed procedure diverges across executors, seed custody is broken (executor entropy leaked into a 'sealed' procedure) — FAIL; the finding books an instrument or dialect defect, not a shrug. If the metric is absent (procedure skipped silently), that is PENDING-by-construction and the receipt must say why in evidence — never a silent pass.",
+      "writtenPreRun": "2026-10-02, before the scored run"
+    },
+    {
+      "id": "P4",
+      "claim": "M13-IN-INSTANCE VERDICT (the falsification direction): ZERO sealed-deterministic procedures diverge across all executors given the same inherited seal — sealedClassExecutorScoping == 0. Procedure value is NOT executor-scoped in this instance for the sealed-deterministic class across same-process node / clean-env node / python3. This is the honest FAIL for M13's universality READ AT INSTRUMENT SCALE — consistent with M13's own registered carve-out (deterministic instrument-only re-runs 'do NOT qualify — no executor layer changed'), which is why M13's registry status stays open for its LLM-executor scope regardless of this verdict.",
+      "metric": "sealedClassExecutorScoping",
+      "op": "eq",
+      "threshold": 0,
+      "refusal": "Any sealed-procedure divergence CONFIRMS executor-scoped procedure value in the deterministic class — a much stronger M13 finding than the registered LLM scope anticipated, and the honest verdict is FAIL (M13's mechanism confirmed here). Before accepting it, the double-run check must rule out an instrument defect: a divergence not reproducible under byte-identical inputs and the sealed instrument voids the run INDETERMINATE with the defect receipted.",
+      "writtenPreRun": "2026-10-02, before the scored run; calibration agreed (instrument construction, receipted above)"
+    },
+    {
+      "id": "P5",
+      "claim": "The language-portability leg: the python3 re-implementation (executor-C) agrees BYTE-IDENTICALLY with both node executors on both portable sealed procedures — abcByteIdenticalSealedProcedures >= 2 (the fleet canonical-JSON dialect, uint32 arithmetic and FNV-1a-32 are bit-exact across node and python3 when the emit domain is integers/booleans/ASCII).",
+      "metric": "abcByteIdenticalSealedProcedures",
+      "op": "gte",
+      "threshold": 2,
+      "refusal": "A==B but C differs on any portable procedure = PORT_DIVERGENT: either a port defect (instrument bug — must be reproducible, receipted, and the run voided for this claim) or genuine runtime scoping of the language port (a real finding). The calibration suite's pre-seal A==C byte-identity is the discriminator: divergence in the scored run where calibration agreed is a REAL finding, not a port bug.",
+      "writtenPreRun": "2026-10-02, before the scored run; calibration agreed (instrument construction, receipted above)"
+    },
+    {
+      "id": "P6",
+      "claim": "The 'same verdict' half of the re-seal rule: on both sealed procedures, all executors return the SAME verdict given the same inherited seal (battery-eval accept/reject, qrng-pick override/uphold) — sealedVerdictsAgree >= 2. Byte-identity is necessary; verdict agreement is the operational claim a nested loop actually inherits.",
+      "metric": "sealedVerdictsAgree",
+      "op": "gte",
+      "threshold": 2,
+      "refusal": "Executors agreeing on bytes but disagreeing on the derived verdict would mean the verdict derivation itself is executor-scoped (a subtler M13 instance than byte divergence) — FAIL and receipted as VERDICT_DIVERGENT classification in the procedure record.",
+      "writtenPreRun": "2026-10-02, before the scored run"
+    },
+    {
+      "id": "P7",
+      "claim": "The harness fails closed when the instrument is tampered between seal and run: with the instrument's own seal (instrument-seal.json), the scored run's tamper battery refuses BY NAME on every member — procedure bytes (E_PROCEDURE_MODIFIED), inherited prefix value (E_PREFIX_MODIFIED), python port bytes (E_PYPORT_MODIFIED) — while the untampered control copy verifies ok (the battery discriminates) — tamperRefusalNamed == 1.",
+      "metric": "tamperRefusalNamed",
+      "op": "eq",
+      "threshold": 1,
+      "refusal": "Any tampered member that verifies ok (or refuses unnamed) means the re-seal ceremony cannot detect what M13's law exists for — FAIL, harness defective; no verdict scored by this instrument may be cited until fixed and re-run.",
+      "writtenPreRun": "2026-10-02, before the scored run; calibration exercised the battery (instrument construction, receipted above)"
+    },
+    {
+      "id": "P8",
+      "claim": "Procedure verdicts are INHERITED-PREFIX-CONDITIONAL (the re-seal-what-you-inherit half of M13, isolated from executor-scoping): under the nudge fixture (priorState.acc + 5, the bounded-search derivation receipted above), the battery-eval verdict FLIPS reject -> accept while every executor still agrees byte-identically under each prefix — prefixNudgeFlipsVerdict == 1 (executor agreement per prefix is receipted as nudgeExecutorAgreement == 1 in evidence). Executor agreement does not make a verdict inheritable across a prior change: the prefix is part of the seal, and a cross-layer update re-prices the inherited verdict in either direction.",
+      "metric": "prefixNudgeFlipsVerdict",
+      "op": "eq",
+      "threshold": 1,
+      "refusal": "If the +5 nudge does NOT flip the verdict (arithmetic wrong, fixture drifted from the receipted derivation, or kernel changed under seal), the probe is defective — FAIL and the fixture derivation is re-receipted. If executors disagree under the nudged prefix, that is executor-scoping intruding on the probe — P4's refusal branch governs and both findings are receipted.",
+      "writtenPreRun": "2026-10-02, before the scored run; the d=5 derivation is instrument construction (bounded search over sealed constants), receipted above"
+    }
+  ]
+}

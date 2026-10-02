@@ -1,0 +1,19 @@
+{
+  "schema": "m13-prefix@1",
+  "note": "the inherited sealed prefix of the M13 re-seal: what a nested loop's parent hands down. seed = the certified-draw stand-in (external entropy, CARRIED IN THE SEAL — never drawn from an executor); constants = the sealed procedure parameters; priorState = the accumulator state inherited from the parent cycle (generation 8 = engine run-8 lineage, the run that minted M13). The nudge fixture m13-prefix-nudge.json differs from this file in priorState.acc ONLY — the cross-layer-update re-pricing probe.",
+  "seed": 305419896,
+  "constants": {
+    "steps": 512,
+    "threshold": 500,
+    "w1": 1664525,
+    "w2": 1013904223,
+    "candidates": 3,
+    "priorsPick": 1
+  },
+  "priorState": {
+    "acc": 2718281,
+    "generation": 8,
+    "lane": "m13",
+    "inheritedFrom": "engine-run-8"
+  }
+}

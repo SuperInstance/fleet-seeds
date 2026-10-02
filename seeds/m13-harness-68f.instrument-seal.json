@@ -1,0 +1,13 @@
+{
+  "tool": "m13-harness@1",
+  "sealedAt": "2026-10-02T17:28:44.855Z",
+  "procsHash": "sha256:86085f4fa6f824eee19f79fb58138146b8d4f9ff4ac7122a6780a28095983caf",
+  "prefixHash": "sha256:2113ce311493b7d5ae17960aeee8a97d5c4fda9c9102bd41d2423714a76b1d4e",
+  "pyHash": "sha256:84632aa673d24fac59bd4ade69ee5575c15d47b82cad2f3b2683b4bfef30cab0",
+  "paths": {
+    "procs": "m13-procs.mjs",
+    "prefix": "m13-prefix.json",
+    "py": "m13-procs.py"
+  },
+  "note": "wave 68-f instrument seal: the m13 harness's own qcells-style refuse-stale seal over procs+prefix+pysource; the scored run verifies this fail-closed before anything executes"
+}
