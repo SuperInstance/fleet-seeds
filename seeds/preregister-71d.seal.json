@@ -1,0 +1,7 @@
+{
+  "tool": "preregister@1",
+  "sealedAt": "2026-10-02T20:28:32.845Z",
+  "claimsHash": "sha256:17f0019d882067219634105d9717ce10c70c52808dcf3fb2198357ca18517fc4",
+  "claimsPath": "preregister-71d.json",
+  "note": "71-d-r2 lane: far-shore R2 derived cells (rate/accum/lag + conservation), sealed before any run (0 model calls)"
+}
