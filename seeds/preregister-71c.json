@@ -1,0 +1,42 @@
+{
+  "prereg": "preregister@1",
+  "wave": "71-c",
+  "discipline": "jev-garden rule, jepa aee0335 gold standard: these three predictions were written and SEALED before the greeter-joint demo ran (quilt-storefront eval/greeter-demo.js over eval/greeter-battery.json + eval/greeter-demo-sheet.json). The seal is committed and pushed BEFORE any model call. Claims are never edited after the run; verdicts are appended beside them by tools/preregister.mjs score. VACUOUS and PENDING are honest verdicts; nothing is silently passed. This demo answers bobbin's round-1 wardroom question (what's the tell you seated the model at the wrong joint) with the greeter joint measured, per the 68-e fiction-first audit's open falsifier; the thesis under test: wrong joint = high agreement-with-table, no outcome lift = a second socially-correlated vote paid for twice.",
+  "writtenBeforeVerification": true,
+  "batteryBinding": {
+    "note": "the battery, demo sheet, runner and design doc live in SuperInstance/quilt-storefront (eval/greeter-battery.json, eval/greeter-demo-sheet.json, eval/greeter-demo.js, eval/greeter-demo-common.js, eval/greeter-demo.md) and are committed+pushed in the pre-run commit; the sha below binds the exact battery bytes this seal covers — the runner re-asserts it fail-closed pre-run",
+    "greeter-battery.json.sha256": "sha256:2bd7d7e10885fa4894f2cd32f1626c1076f1769411bd8be8d04066674f7c7daa"
+  },
+  "budgetReading": "mission cap ≤6 model calls TOTAL, receipt each: ARM B (wrong-joint control) 4 deepinfra gpt-oss-20b calls on the pre-registered subsample G01/G05/G07/G08 + ARM C 1 live deepinfra ruling (C03; the other 5 controls must serve from the two live-frozen regions at zero cost — a second live reach fails closed on budget and scores as a ruling failure) + judge 1 deepinfra nvidia/NVIDIA-Nemotron-3.5-Lightning @ temp 0 (one blind call, letters seeded per pair (i*7+3)%2, source never shown). ARM A spends 0 (engine budgets typesafe:0 deepinfra:0 — any attempt fails closed and counts as a complaint-level failure).",
+  "claims": [
+    {
+      "id": "P1",
+      "claim": "The greeter path serves at least 11 of the 12 greeter moments CLEAN with ZERO model calls: clean = routed to greeter-lexicon by the appended rule, answered from the authored register line (answer_source lookup, non-empty reply, no model usage, no fact-refusal). Any silence (the greeter no-script law degrades default=null to null), misroute, or model spend is a complaint-level failure counted against the 12. Metric: metrics.greeterServedClean >= 11 with metrics.greeterTotal == 12 and metrics.armA_model_calls == 0 (eval/greeter-demo-results.json, ARM A).",
+      "metric": "greeterServedClean",
+      "op": "gte",
+      "threshold": 11,
+      "refusal": "Below 11 clean servings, warmth-from-rules failed on its own territory — FAIL, and the demo receipts exactly which moments failed and why (silence vs misroute vs model spend); the greeter path would then need the model seat (or a wider lexicon) and the store's current model-cell wiring would stand un-refuted. If ARM A cannot run at all, PENDING with the blocker named in the worklog — never a local-only PASS.",
+      "writtenPreRun": "2026-10-02, before eval/greeter-demo.js was executed against the live deepinfra channel; dry-run (zero network) already asserts the routes/keys/lines the claim counts"
+    },
+    {
+      "id": "P2",
+      "claim": "The blind judge rates model-served greeter moments AT OR BELOW greeter-served ones: over the blind pairs (the 4 pre-registered subsample moments G01/G05/G07/G08, greeter-path line vs greeter.voice model line, letter assignment seeded per pair, source hidden, rubric scores warmth+correctness with silence scored 0) the mean of (model score − greeter score) is <= 0 — THE MODEL ADDS NO WARMTH on greeter territory. The model seat's real behavior counts as measured: a silenced model answer (the receipted wave-67 failure mode) is scored as the silence the customer would see, and receipts in metrics.armB_silences. Metric: metrics.judgeModelMinusGreeterMean <= 0 (eval/greeter-demo-results.json).",
+      "metric": "judgeModelMinusGreeterMean",
+      "op": "lte",
+      "threshold": 0,
+      "refusal": "A positive mean means the judge rates the model's greeter lines ABOVE the authored ones — the honest refutation of the thesis at this joint: the model DOES add warmth the rules lack, greeter.voice's model seat is the RIGHT joint, and the store's greeter law stands strengthened; the demo publishes that with the same care (per-pair scores in the results). If the judge call fails or its sheet is unparseable, the metric is absent → PENDING (receipted, never guessed).",
+      "vacuousIf": { "metric": "pairs", "op": "eq", "threshold": 0, "note": "if the judge produced zero scored pairs (call failed/unparseable AND no fallback evidence), the comparison cannot discriminate this run" },
+      "writtenPreRun": "2026-10-02, before any model call"
+    },
+    {
+      "id": "P3",
+      "claim": "The contrast arm holds: at least 5 of the 6 fact-bearing controls rule CORRECTLY via the joint — correct = answered from a ruling source (frozen-lookup, live deepinfra-chat, or in-session cache; a budget fail-closed fallback or fact-refusal is NOT a ruling) AND mapAnswer(reply) equals outcomeFromFacts(extracted facts) without ambiguity, the written policy as a pure function (the wave-69-a accounting, unchanged). 5 of the 6 controls are authored to land in the two live-frozen regions (zero-call replays); C03 (furious, no receipt) must reach the live model (the ARM C deepinfra budget is exactly 1). Metric: metrics.factControlsRuledCorrect >= 5 with metrics.factControlsTotal == 6 (eval/greeter-demo-results.json, ARM C).",
+      "metric": "factControlsRuledCorrect",
+      "op": "gte",
+      "threshold": 5,
+      "refusal": "Below 5, the joint mis-rules grounded fact-bearing moments — FAIL: either a frozen row replays wrong (the first live-freeze replay failure, a promotion-law finding) or the live model mis-rules the un-frozen region (a model-behavior finding, receipted with the answer text). Either way the contrast 'the model earns its seat on fact territory' is dented and the demo says so. If the ARM C pipeline cannot run at all, PENDING with the blocker receipted.",
+      "vacuousIf": { "metric": "factControlsTotal", "op": "eq", "threshold": 0, "note": "with zero controls run the correctness law is untested by this run" },
+      "writtenPreRun": "2026-10-02, before any model call"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "tool": "preregister@1",
+  "sealedAt": "2026-10-02T20:11:23.256Z",
+  "claimsHash": "sha256:e9d6373c2926f5e2a161d6021d2466196c8ecbc7670e144e81cae63d07e0be41",
+  "claimsPath": "preregister-71c.json",
+  "note": "greeter-joint demo (wave-71 lane 71-c): the wrong-joint tell, measured on quilt-storefront @ 7178b4a. Sealed before any model call; battery bound by sha256 2bd7d7e1."
+}
