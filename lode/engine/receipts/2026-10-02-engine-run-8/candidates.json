@@ -1,0 +1,22 @@
+[
+ {
+  "id": "c1",
+  "source": "hn-algolia",
+  "title": "Google RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
+  "ref": "https://regularized-rsi.com/",
+  "stars": 1,
+  "date": "2026-10-01T11:49:46Z",
+  "key_score": 3,
+  "gist": ""
+ },
+ {
+  "id": "c2",
+  "source": "hn-algolia",
+  "title": "Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents",
+  "ref": "https://arxiv.org/abs/2609.17523",
+  "stars": 2,
+  "date": "2026-09-17T17:33:53Z",
+  "key_score": 2,
+  "gist": ""
+ }
+]

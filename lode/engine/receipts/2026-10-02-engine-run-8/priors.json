@@ -1,0 +1,30 @@
+{
+ "kind": "typesafe-priors",
+ "ts_utc": "2026-10-02T00:32:32.974Z",
+ "ok": true,
+ "model": "jev-1.13.0",
+ "usage": {
+  "input_tokens": 723,
+  "output_tokens": 73
+ },
+ "latency_ms": 245.43,
+ "answers": {
+  "p_signal_c1": {
+   "type": "noul",
+   "noul": 0.39
+  },
+  "p_signal_c2": {
+   "type": "noul",
+   "noul": 0.33
+  },
+  "first_test": {
+   "type": "choice",
+   "choice": "c1",
+   "confidence": 0.62,
+   "probabilities": {
+    "c2": 0.19,
+    "c1": 0.81
+   }
+  }
+ }
+}

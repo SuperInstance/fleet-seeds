@@ -1,0 +1,360 @@
+{
+ "kind": "history-conditioning",
+ "law": "M10 proposal side (arXiv:2609.24972): proposer conditioned on full edit history so falsified hypotheses are not redrawn",
+ "mined_markers": [
+  {
+   "id": "M1",
+   "slugs": [],
+   "arxivs": []
+  },
+  {
+   "id": "M2",
+   "slugs": [],
+   "arxivs": [
+    "2507.19457"
+   ]
+  },
+  {
+   "id": "M3",
+   "slugs": [],
+   "arxivs": [
+    "2609.26457"
+   ]
+  },
+  {
+   "id": "M4",
+   "slugs": [],
+   "arxivs": []
+  },
+  {
+   "id": "M5",
+   "slugs": [
+    "primeintellect-ai/prime-agent"
+   ],
+   "arxivs": []
+  },
+  {
+   "id": "M6",
+   "slugs": [],
+   "arxivs": [
+    "2505.03335"
+   ]
+  },
+  {
+   "id": "M7",
+   "slugs": [],
+   "arxivs": []
+  },
+  {
+   "id": "M8",
+   "slugs": [],
+   "arxivs": []
+  },
+  {
+   "id": "M9",
+   "slugs": [],
+   "arxivs": [
+    "2609.11873"
+   ]
+  },
+  {
+   "id": "M10",
+   "slugs": [
+    "google-research/rrsi"
+   ],
+   "arxivs": [
+    "2609.24972"
+   ]
+  },
+  {
+   "id": "M11",
+   "slugs": [],
+   "arxivs": [
+    "2609.34924"
+   ]
+  },
+  {
+   "id": "M12",
+   "slugs": [
+    "cline/cline"
+   ],
+   "arxivs": []
+  }
+ ],
+ "previously_drawn": [
+  {
+   "run": "2026-09-29-engine-run-1",
+   "id": "c7",
+   "title": "Agent swarms, alignment, & recursive self-improvement",
+   "ref": "https://www.dwarkesh.com/p/noam-brown"
+  },
+  {
+   "run": "2026-09-29-engine-run-2",
+   "id": "c1",
+   "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
+   "ref": "https://github.com/google-research/rrsi"
+  },
+  {
+   "run": "2026-09-29-engine-run-4",
+   "id": "c4",
+   "title": "Noam Brown – Agent swarms, alignment, & recursive self-improvement",
+   "ref": "https://www.dwarkesh.com/p/noam-brown"
+  },
+  {
+   "run": "2026-09-29-engine-run-5",
+   "id": "c3",
+   "title": "Recursive self-improvement of AI research agents",
+   "ref": "https://arxiv.org/abs/2609.26457"
+  },
+  {
+   "run": "2026-09-29-engine-run-6",
+   "id": "c1",
+   "title": "lobehub/awesome-rsi",
+   "ref": "https://github.com/lobehub/awesome-rsi"
+  },
+  {
+   "run": "2026-09-30-engine-run-7",
+   "id": "c2",
+   "title": "Recursive Self Improvement for Coding Agents",
+   "ref": "https://cline.ghost.io/recursive-self-improvement-for-coding-agents/"
+  }
+ ],
+ "excluded": [
+  {
+   "id": "c2",
+   "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
+   "source": "hn-algolia",
+   "ref": "https://regularized-rsi.com/",
+   "matched": "drawn@2026-09-29-engine-run-2"
+  },
+  {
+   "id": "c24",
+   "title": "Audit the Scaffold, Not the Checkpoint: A Stationarity Dichotomy for Recursive Self-Improvement in Agentic Coding",
+   "source": "arxiv",
+   "ref": "http://arxiv.org/abs/2609.34924v1",
+   "matched": "M11"
+  },
+  {
+   "id": "c28",
+   "title": "lobehub/awesome-rsi",
+   "source": "github-search",
+   "ref": "https://github.com/lobehub/awesome-rsi",
+   "matched": "drawn@2026-09-29-engine-run-6"
+  },
+  {
+   "id": "c4",
+   "title": "Recursive self-improvement of AI research agents",
+   "source": "hn-algolia",
+   "ref": "https://arxiv.org/abs/2609.26457",
+   "matched": "M3"
+  },
+  {
+   "id": "c7",
+   "title": "Noam Brown – Agent swarms, alignment, & recursive self-improvement",
+   "source": "hn-algolia",
+   "ref": "https://www.dwarkesh.com/p/noam-brown",
+   "matched": "drawn@2026-09-29-engine-run-4"
+  },
+  {
+   "id": "c9",
+   "title": "Agent swarms, alignment, & recursive self-improvement",
+   "source": "hn-algolia",
+   "ref": "https://www.dwarkesh.com/p/noam-brown",
+   "matched": "drawn@2026-09-29-engine-run-1"
+  },
+  {
+   "id": "c10",
+   "title": "Recursive Self Improvement for Coding Agents",
+   "source": "hn-algolia",
+   "ref": "https://cline.ghost.io/recursive-self-improvement-for-coding-agents/",
+   "matched": "drawn@2026-09-30-engine-run-7"
+  }
+ ],
+ "error": null,
+ "curated": {
+  "kind": "curated-corpus-conditioning",
+  "law": "wave-63 queue item 2 (M8-adjacent): a candidate duplicating a curated catalog entry collides with a KNOWN resource; curation-channel hits are first-class priors in the exclusion law",
+  "source": "receipts/2026-09-29-engine-run-6/review-c1-awesome-rsi-raw.md (run-6 keeper review, committed verbatim)",
+  "arxivs": [
+   "2507.21046",
+   "2607.07663",
+   "2602.04411",
+   "2607.13104",
+   "2508.07407",
+   "2404.14387",
+   "1805.06610",
+   "1502.06512",
+   "2605.03871",
+   "2309.00267",
+   "2401.01335",
+   "2401.10020",
+   "2608.05466",
+   "2312.06585",
+   "2308.06259",
+   "2210.11610",
+   "2212.10560",
+   "2603.18620",
+   "2607.26873",
+   "2607.21971",
+   "2604.19295",
+   "2407.19594",
+   "2506.10943",
+   "2412.01951",
+   "2405.00675",
+   "2310.00533",
+   "2501.04519",
+   "2403.09629",
+   "2203.14465",
+   "2408.08435",
+   "2406.07496",
+   "2310.04406",
+   "2309.03409",
+   "2309.16797",
+   "2310.02304",
+   "2310.03714",
+   "2510.04618",
+   "2510.16079",
+   "2604.15097",
+   "2602.07755",
+   "2502.12110",
+   "2308.10144",
+   "2305.10250",
+   "2303.11366",
+   "2604.25850",
+   "2608.12307",
+   "2603.03329",
+   "2605.09998",
+   "2608.05446",
+   "2607.14159",
+   "2607.05297",
+   "2605.23904",
+   "2309.11495",
+   "2305.11738",
+   "2310.01798",
+   "2305.20050",
+   "2203.11171",
+   "2303.17651",
+   "2603.18000",
+   "2604.20133",
+   "2603.19461",
+   "2605.27276",
+   "2607.26784",
+   "2510.23601",
+   "2507.03616",
+   "2410.04444",
+   "2512.18746",
+   "2409.00872",
+   "2402.17574",
+   "2305.16291",
+   "2511.16043",
+   "2505.15734",
+   "2406.14228",
+   "2403.08715",
+   "2305.19118",
+   "2305.14325",
+   "2505.22954",
+   "2504.15228",
+   "2412.21139",
+   "2304.05128",
+   "2312.13010",
+   "2608.17906",
+   "2607.28568",
+   "2603.01712",
+   "2606.06473",
+   "2601.14525",
+   "2408.06292",
+   "2607.00272",
+   "2606.19980",
+   "2603.13131",
+   "2602.11075",
+   "2608.11350",
+   "2601.10657",
+   "2506.13131",
+   "2003.03384",
+   "1905.10985",
+   "1901.01753",
+   "1606.04474",
+   "1504.04909",
+   "1112.5309",
+   "2603.06333",
+   "2602.06911",
+   "2509.26354",
+   "2510.16657",
+   "2505.02709",
+   "2011.06275",
+   "2007.05411",
+   "1811.07871",
+   "1605.03142",
+   "2406.07358",
+   "2401.05566",
+   "2305.15324",
+   "2212.08073",
+   "1912.01683",
+   "1908.04734",
+   "1906.01820",
+   "1606.06565",
+   "2601.01828",
+   "2607.04277",
+   "2602.02416",
+   "2410.13787",
+   "2501.11120",
+   "2407.18219",
+   "2407.06946",
+   "2305.18153",
+   "2207.05221",
+   "1312.6764",
+   "2608.23200",
+   "2603.08640",
+   "2607.25886",
+   "2606.05080",
+   "2605.08678",
+   "2603.24621",
+   "2607.08964",
+   "2606.29537",
+   "2509.24002",
+   "2503.14499",
+   "2509.16941",
+   "2412.14161"
+  ],
+  "slugs": [
+   "agent0ai/agent-zero",
+   "deepseek-ai/deepseek-harness",
+   "openclaw/openclaw",
+   "earendil-works/pi",
+   "sunghunkwag/rsi-bench",
+   "openai/mle-bench",
+   "openai/frontier-evals",
+   "metr/re-bench",
+   "snap-stanford/mlagentbench",
+   "swe-bench/swe-bench",
+   "zzatpku/agentfactory",
+   "jennyzzt/dgm",
+   "arvid-pku/godel_agent",
+   "nousresearch/hermes-agent",
+   "facebookresearch/hyperagents",
+   "continual-intelligence/seal",
+   "hexo-ai/sia",
+   "ace-agent/ace",
+   "zksha/alma",
+   "sethkarten/continual-harness",
+   "evoagentx/evoagentx",
+   "knowledgexlab/evolver",
+   "letta-ai/letta-code",
+   "memento-teams/memento-skills",
+   "human-agent-society/reef",
+   "minedojo/voyager",
+   "shengranhu/adas",
+   "sakanaai/ai-scientist",
+   "karpathy/autoresearch",
+   "sakanaai/evolutionary-model-merge",
+   "google-deepmind/funsearch",
+   "internscience/mlevolve",
+   "algorithmicsuperintelligence/openevolve",
+   "uber-research/poet",
+   "e2b-dev/awesome-ai-agents",
+   "hibayesian/awesome-automl-papers",
+   "selfimproving-agent/awesome-self-improving-agents"
+  ],
+  "error": null
+ }
+}

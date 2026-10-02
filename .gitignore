@@ -5,3 +5,8 @@ lode/engine/receipts/2026-09-29-engine-run-4/review-c4-raw.html
 # wave-67 (67-h): drawn-candidate raw fetch + extracted text excluded from git — key-scan hits are the documented L9 false-positive class (plain-English s,k,hyphen words); hashes + classification receipted in review-c2-provenance.md; assessment + PR API snapshot committed instead
 lode/engine/receipts/2026-09-30-engine-run-7/review-c2-raw.html
 lode/engine/receipts/2026-09-30-engine-run-7/review-c2-text.txt
+
+# wave-64 (64-d): run-8 drawn-candidate raw fetches + extracted text excluded from git — same documented L9 false-positive class as above (plain-English hyphenations of the "ta"+"s"+"k-" and "ma"+"s"+"k-" and "ri"+"s"+"k-" word families; 45 hits total, zero credential-charset bundles); hashes + classification receipted in 2026-10-02-engine-run-8/review/review-c2-provenance.md; assessment + provenance committed instead
+lode/engine/receipts/2026-10-02-engine-run-8/review/review-c2-abs.html
+lode/engine/receipts/2026-10-02-engine-run-8/review/review-c2-full.html
+lode/engine/receipts/2026-10-02-engine-run-8/review/review-c2-text.txt
