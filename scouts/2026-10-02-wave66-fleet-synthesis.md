@@ -92,7 +92,39 @@ The diary is the fleet's R&D channel; the wardroom is its peer review.
 seed` — each proven by ≥1 repo; full table in scout report 66-C. This is
 the "DNA toolkit with variations": the essence layer that use-cases skin.
 
-## 7. Next-wave queue (from all scouts, merged)
+## 7. Postscript — same-day discoveries that sharpen the synthesis
+
+After compiling §1–7, four live repos (all pushed 10-01/10-02 by sibling
+lanes) were found to already implement the principal's newest directives:
+
+- **quilt-softjoints** — the soft-joint thesis as code: decompose() with
+  rule receipts → lookup / softjoint / greeter classes; `runJoint()` with
+  fail-closed fallback; `compileAdjustments()` turns observed adjustments
+  into new cells (the sheet grinds toward tables); freezingTest proposes
+  softjoint→lookup promotions. **§5's adjustment→cell law already has an
+  executable home.**
+- **quilt-chrono** — "time is a dimension" literally: every read a reading,
+  every write a writing, append-only time ledger with `stateAt/diff/flowMap/
+  renderSVG/restore` and a tide (min-interval crest throttling). **The time-
+  flowing-visually-through-projections directive has a working engine, not
+  just start-points.**
+- **tidepool** — the fleet's vector context ocean (CF Vectorize + D1,
+  schema-drift pins, jev gate): memory that survives session death, the
+  anti-agent-memory. **§5 items 4/5 overlap here; consolidate, don't
+  duplicate.**
+- **quilt-lookup** — the principal's 988-entry spreadsheet-types catalog as
+  a machine-usable library (1040 entries / 104 families by wave-67) with 73
+  executable recipes and a soft-joint classification of mathematics itself.
+  **The lookup-table end of the decomposition spectrum is being cataloged as
+  data.**
+
+Amended convergence reading: the fleet did not need this sweep to find the
+thesis — the thesis found the fleet. The remaining boilerplate gaps of §5
+stand, with one edit: the shared ledger module should absorb quilt-chrono's
+tide semantics (held-propagation journaling) as part of its charter, and
+softjoints' freezingTest as the hardening gate the ML scout proposed.
+
+## 8. Next-wave queue (from all scouts, merged)
 
 - Build `quilt-ledger` shared module (charter: same {seq,op,payload,prev,tip}
   + café vector + named refusals; qcells/frozen-clock/jeviter/toolkit
