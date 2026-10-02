@@ -1,0 +1,7 @@
+{
+  "tool": "preregister@1",
+  "sealedAt": "2026-10-02T19:18:50.041Z",
+  "claimsHash": "sha256:3ef79c3f3eae3f88583b525c9bd73d8c1d30d9f43418d6b9e41300e699da75be",
+  "claimsPath": "m13-llm-leg-70a.json",
+  "note": "wave 70-a: M13 LLM-executor leg — gradient predictions sealed BEFORE any external call; instrument carries its own seal (seeds/m13-llm-leg-70a.instrument-seal.json); ground truth certified against the 68-f instrument seal"
+}

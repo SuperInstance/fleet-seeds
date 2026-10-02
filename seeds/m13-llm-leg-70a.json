@@ -1,0 +1,46 @@
+{
+  "prereg": "preregister@1",
+  "wave": "70-a",
+  "discipline": "M13 LLM-executor leg (the jepa aee0335 ritual, third dogfood of 67-c's preregister primitive): these predictions were written and SEALED before any external model call was made. The instrument carries a SECOND seal (seeds/m13-llm-leg-70a.instrument-seal.json, tools/m13-llm-leg.mjs seal/verify) verified fail-closed at run time over the specs fixture + runner + ground-truth module; the ground-truth checksum law is additionally certified to still be the 68-f-sealed tools/m13-procs.mjs (procsHash sha256:86085f4f..., re-verified at lane open via the 68-f instrument seal, KATs 811C9DC5/E40C292C, independent python3 reference). Calibration (node --test tools/m13-llm-leg.test.mjs, 12/12, zero network) ran BEFORE this seal and is instrument construction; the SCORED run (seeds/m13-llm-leg-70a.results.json, receipts/m13-llm-leg-1.jsonl) was executed only AFTER this claims+seal commit was pushed and verified remote==local. Budget law: hard cap 10 external calls (6 core + 2 stability diagnostics + <=2 repair), one receipt row per attempt including failures. Claims are never edited after the run; the verdict is appended beside them by tools/preregister.mjs score. FAIL and VACUOUS are honest receipts; nothing is silently passed.",
+  "mine": "M13 (lode/mines.jsonl row 13, pred_sha256 b5b1b021dfa211181e180c9bda126e7b198404daa081af97b9dcdf6d96d764fb): procedure value is executor-scoped; nested loops must re-seal what they inherit.",
+  "scope": "WHAT THIS LEG RESOLVES AND WHAT IT DOES NOT: M13's registered qualifying-reseal scope is 'a previously-sealed, LLM-executed battery re-run UNCHANGED across an executor-MODEL change' — this leg is NOT that (it runs NEW procedures, sealed here, across two LLM executors), so it cannot by itself flip M13's registry status to confirmed/refuted in the qualifying-reseal sense. What it resolves is the OTHER registered NULL: the 68-f run's receipt records that M13's LLM-EXECUTOR SCOPE is 'untested; folds NULL by wave-70' — the deterministic harness could not test whether procedure value survives execution BY an LLM (the model asked to execute the SPEC, not the code). This leg measures exactly that scope, with the fleet's own two channels as the two executors, and the resulting gradient is the finding the keeper folds into the registry note. Design law: the executor sees the documented input->output law + sealed prefix AS BYTES (never the code) — the nested-loop inheritance shape M13 warns about. Comparator law (the LLM-leg re-seal rule): class-sealed procedures agree at OUTCOME-CLASS level; byte-identity stays the re-seal law for code executors; byte comparison is EXACT content equality with NO normalization (executor noise IS the finding).",
+  "writtenBeforeScoredRun": true,
+  "claims": [
+    {
+      "id": "P1",
+      "claim": "CONSTRAINED OUTPUT RE-SEALS ACROSS LLM EXECUTORS: with the output pinned to exactly one JSON object {outcome: full-refund|store-credit|manager-review} and the written policy that determines it, the two LLM executors (deepinfra gpt-oss-20b and typesafe jev-1.13.0, or the named kimi fallback) agree at outcome-class level on the milk-no-receipt-within-7 case — constrained.classAgree == 1, where classAgree requires BOTH outputs to parse LEGAL (exactly one key, value in the sealed enum) and the values to be EQUAL. Prediction per M13's mechanism gradient: constraint (a law that pins the answer) is what lets procedure value survive an executor swap even between different model stacks.",
+      "metric": "constrained.classAgree",
+      "op": "eq",
+      "threshold": 1,
+      "refusal": "If the two executors produce different legal outcomes for a policy whose written law determines a single answer, executor-scoped procedure value is CONFIRMED at the LLM layer even where the output space is pinned — FAIL is the honest verdict and both raw outputs are receipted verbatim. If either or both outputs are unparseable/illegal (misexecution), classAgree is 0 by the registered law and the claim FAILS with the misexecution receipted — misexecution is fail-visible, never silently passed, and never counted as agreement. A dead channel that leaves the leg incomplete makes the metric itself vacuous — VACUOUS, receipted, never a pass.",
+      "writtenPreRun": "2026-10-02, before any external call"
+    },
+    {
+      "id": "P2",
+      "claim": "FREE-FORM GENERATION DIVERGES IN BYTES BUT AGREES IN OUTCOME CLASS: on the one-paragraph refund-denial procedure the two executors' outputs are NOT byte-identical (freeform.bytesIdentical == 0 — exact content equality, no normalization) while the outcome-class comparator still scores them as agreeing (freeform.classAgree == 1, both landing in the same NAMED class of {deny+store-credit, manager-review, deny-only}). This is the free end of the registered gradient: an LLM executor is executor-scoped at the byte level exactly where the law leaves the surface form free, and the outcome-class comparator is what keeps a class-sealed procedure re-sealable across LLM executors anyway.",
+      "metric": "freeform.bytesIdentical == 0 && freeform.classAgree == 1",
+      "op": "expr",
+      "threshold": "freeform.bytesIdentical == 0 && freeform.classAgree == 1",
+      "refusal": "If the executors are byte-identical on free prose, LLM executors are NOT executor-scoped even at the free end — an honest FAIL that would push M13's LLM-scope toward the deterministic class's behavior (and would itself be remarkable: two different model stacks emitting identical prose). If they diverge in bytes AND land in different named classes (or either is 'other' — misexecution, which never agrees), the class-comparator does NOT rescue re-sealability for class-sealed procedures — FAIL, receipted with both classes and signals. Incomplete leg -> VACUOUS.",
+      "writtenPreRun": "2026-10-02, before any external call"
+    },
+    {
+      "claim": "HAND-EXECUTED ARITHMETIC DIVERGES OR FAILS: on the FNV-1a-32 checksum procedure (the law fully specified, the input fixed by the sealed prefix, ground truth 88A64422 computed by the 68-f-certified sealed module and cross-checked against an independent python3 reference), at least one LLM executor produces a wrong or missing checksum — computation.bothCorrect == 0. Models are bad executors of arithmetic laws: the honest expectation is divergence between the two executors, failure of one or both against ground truth, or both wrong.",
+      "id": "P3",
+      "metric": "computation.bothCorrect",
+      "op": "expr",
+      "threshold": "computation.bothCorrect == 0",
+      "refusal": "If BOTH executors hand-execute FNV-1a-32 over 28 characters correctly, the claim FAILS — and that failure is a genuinely valuable finding: LLM executors would then be capable executors of fully-specified arithmetic laws, tightening the gradient's constrained end. A wrong-but-agreeing pair (bothCorrect == 0) still PASSES this claim and the shared wrong value is receipted — agreement with each other is not correctness; the ground truth is the sealed module's. Incomplete leg -> VACUOUS.",
+      "writtenPreRun": "2026-10-02, before any external call"
+    },
+    {
+      "claim": "THE GRADIENT IS THE FINDING (the class-comparator reduces executor-scoping to a documented gradient, not a binary): byte-level divergence appears exactly where the law leaves room (free-form: bytesIdentical 0), disappears at the class level where the law pins the answer (constrained: classAgree 1), and hand-executed arithmetic fails as predicted — freeform.bytesIdentical == 0 && freeform.classAgree == 1 && constrained.classAgree == 1 && computation.bothCorrect == 0. Under the outcome-class comparator, the LLM-executor scope of M13 is therefore NOT 'everything diverges' (executor-scoped everywhere, M13 maximally confirmed) but a lawful gradient in constraint level: pin the output and procedure value survives an executor swap; leave the surface free and it does not; ask for arithmetic and the executor itself becomes the failure mode.",
+      "id": "P4",
+      "metric": "freeform.bytesIdentical == 0 && freeform.classAgree == 1 && constrained.classAgree == 1 && computation.bothCorrect == 0",
+      "op": "expr",
+      "threshold": "freeform.bytesIdentical == 0 && freeform.classAgree == 1 && constrained.classAgree == 1 && computation.bothCorrect == 0",
+      "refusal": "Any deviation from the predicted pattern (byte-identical free prose, class-disagreement on the pinned policy ruling, both-executors-correct arithmetic) is an honest FAIL — the gradient is a REGISTERED PREDICTION, not an assumption, and every partial pattern is receipted in full in the results and receipts so the real shape of LLM-executor scoping is documented either way. Incomplete legs -> VACUOUS (never a pass by default).",
+      "writtenPreRun": "2026-10-02, before any external call"
+    }
+  ]
+}

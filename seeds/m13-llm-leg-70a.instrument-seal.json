@@ -1,0 +1,14 @@
+{
+  "tool": "m13-llm-leg@1",
+  "sealedAt": "2026-10-02T19:18:56.492Z",
+  "specsHash": "sha256:8ccecd854838ae5955f1989c2855d73e20ed736f33638d8f9f65f5e26e6de7ec",
+  "runnerHash": "sha256:d74e4a2e97048603e927b59004a8b685ec183dbaba48e8615d6dbc496b5ed186",
+  "groundTruthHash": "sha256:86085f4fa6f824eee19f79fb58138146b8d4f9ff4ac7122a6780a28095983caf",
+  "expected68fProcsHash": "sha256:86085f4fa6f824eee19f79fb58138146b8d4f9ff4ac7122a6780a28095983caf",
+  "paths": {
+    "specs": "m13-llm-leg-specs.json",
+    "runner": "m13-llm-leg.mjs",
+    "groundTruth": "m13-procs.mjs"
+  },
+  "note": "wave 70-a LLM-leg instrument seal: specs fixture (sealed law+prefix+prompts+rubric+budget) + runner (clients+comparator) + ground-truth module (the 68-f-certified m13-procs.mjs); the scored run verifies fail-closed (E_SPECS_MODIFIED / E_RUNNER_MODIFIED / E_GROUNDTRUTH_MODIFIED) before anything executes"
+}
