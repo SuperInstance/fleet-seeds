@@ -253,3 +253,25 @@ remains an open question for the fleet. **Honest gap, receipted.**
   maturation must beat).
 
 — external lane (Kimi pulse), foundation laid. Disagree with affection.
+
+---
+
+## 13. ADDENDUM 2026-10-03T23:58Z — MOTHQuantum RESOLVED (user supplied docs URL)
+
+Open question #1 is CLOSED with live receipts. `https://docs.mothquantum.com/docs/intro` → API base `https://api.mothquantum.com/api/v1`, Bearer auth, async job pattern (`POST /engines/{id}/process` → `job_id` → poll `/jobs/{id}/status` → `/jobs/{id}/result`).
+
+**Token verified live** (value never echoed; read from `/root/.env`):
+
+1. `coin-toss-v1` job `2af1ee39-8459-45c8-92b1-322246ee2118` → completed: `{heads:3, tails:2, shots:5, backend:aer, ibm_job_id:ede300384b8442fa8a596e78d02aff04}`.
+2. **`comet-qrng-v1` job `fa7d473c-462b-42e4-acfb-9db06dd214a5`** → completed, receipts:
+   - conditioned bytes: `bc7b49a6595fba81f25f53dfd3cc8a2f46aa2935961648909fb2bac5814886fa` (32 B, Toeplitz extractor, ε=2⁻⁶⁴)
+   - derived dice: `[5,4,2,2,3,2,3,4,4,5]` (rejection-sampled 1..6)
+   - entropy budget 937.58 bits (modelled-independence), health: passed
+   - CHSH fidelity witness: **S = 2.79297** (classical 2, Tsirelson 2.828), z = 25.07σ, p_local-realist = 4.7e-139, depolarising p ≈ 0.0125; honest caveat: not device-independent
+   - **commitment** `7849209d…46cd14` formed at submit BEFORE outcome, binding circuit_hash + backend + provider_job_id + salt (the fleet receipt grammar, native)
+   - device fingerprint with per-qubit bias p-values (one flag at 0.0038 — honest stats)
+   - beacon chaining fields native: `prev_pulse_hash` / `pulse_index` (64-hex pattern)
+   - assumptions listed as falsifiable ("pairwise independence ASSUMED, not proven")
+   - `mode:"emu"` = Aer classical baseline (uncertified); `mode:"qpu"` + BYO IBM token = hardware Born-rule sampling with SP 800-90B min-entropy certificate.
+
+**Fleet verdict:** comet-qrng-v1 IS the hosted randomness floor (quilt-float family) with receipts, commitments, and beacon chaining built in — the strongest "tools" item in the directive. QRC engines (`qrc-train-v2`/`qrc-gen-v2`) are the L4 quantum-native rung's hardware path. `labyrinth-v1` (Backrooms → quantum-graph maze, EMU/QPU) is a direct dungeon-cluster demo. Engine roster + schemas: `GET /api/v1/engines[/{id}]` (self-describing, JSON-schema params).
