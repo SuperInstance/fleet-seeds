@@ -1,0 +1,7 @@
+{
+  "tool": "preregister@1",
+  "sealedAt": "2026-10-02T17:29:38.880Z",
+  "claimsHash": "sha256:61db6dca58816906c4d0b2d22157f49c1fb9c875628f7ad41b646c5a006f98b2",
+  "claimsPath": "preregister-68a.json",
+  "note": "wave 68-a: FACT/TONE moment-vector v2 + refunder corpus growth. Sealed BEFORE any external model call of this lane (corpus, eval, freeze re-run). The jepa aee0335 ritual, second dogfood of the primitive."
+}

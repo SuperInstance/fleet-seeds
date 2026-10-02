@@ -1,0 +1,53 @@
+{
+  "prereg": "preregister@1",
+  "wave": "68-a",
+  "discipline": "jepa aee0335 gold standard via the fleet's preregister@1 primitive (67-c): these five predictions were written and SEALED before any wave-68 external model call was made — before the refunder corpus growth ran, before the v2 storefront eval ran, and before the freezing re-run could exist. The seal is committed and pushed BEFORE the measurement. Claims are never edited after the run; results are appended beside them by tools/preregister.mjs score. FAIL, VACUOUS and PENDING are honest verdicts; nothing is silently passed.",
+  "writtenBeforeVerification": true,
+  "claims": [
+    {
+      "id": "P1",
+      "claim": "Under the v2 FACT/TONE contract, the storefront refunder (a factRequired region) REFUSES to rule on a refund moment whose deciding fact (receipt-mentioned) is not grounded in the message: runJoint returns E_FACTS_REQUIRED before any backend call, and the customer-facing reply asks or states the conditional policy instead of naming a guessed outcome. Across the wave-68 battery + corpus runs, at least one such refusal is observed and receipted in a trace: factStarvedRefusals >= 1.",
+      "metric": "factStarvedRefusals",
+      "op": "gte",
+      "threshold": 1,
+      "refusal": "If any fact-starved refund moment receives a named policy outcome (full refund / store credit) instead of the E_FACTS_REQUIRED refusal — i.e. the gate is wired but leaks, or the extractor conjures facts not in the text — the never-guessed law has failed: FAIL is the honest verdict and the leak gets a named defect in the worklog, not a shrug. If the v2 wiring cannot run at all, PENDING with the blocker receipted.",
+      "writtenPreRun": "2026-10-02, before the corpus growth or eval made any external model call"
+    },
+    {
+      "id": "P2",
+      "claim": "On the GROWN refunder corpus (n >= 14 observations: the 7 receipted wave-66/67 joint observations + >= 7 new synthetic sessions with varied facts and emotional registers, each receipted), the facts-aware freezing test (freezingTest requireFacts, buckets=3, threshold=3, key = bucketed refunder-lexicon pre-vector + discrete facts class) finds at least one unanimous n>=3 region — the receipt-mentioned:true calm region being the predicted candidate, since wave-67 showed with-receipt moments ruling 'full refund' 2/2: frozenRegions >= 1.",
+      "metric": "frozenRegions",
+      "op": "gte",
+      "threshold": 1,
+      "refusal": "If 0 regions reach unanimous n>=3 with facts in the key, the honest verdict is FAIL: the v2 contract did NOT make the refunder's outcome surface deterministic enough to freeze, and refunder.frozen ships EMPTY with the refusal count receipted (the grind-down refused on evidence, again). The corpus may NOT be re-swept at other buckets/thresholds to manufacture a pass — the sealed instrument is buckets=3, threshold=3, requireFacts=true. If the corpus growth itself cannot reach n>=14 within the model budget, PENDING with the shortfall receipted.",
+      "writtenPreRun": "2026-10-02, before any synthetic session was generated or ruled"
+    },
+    {
+      "id": "P3",
+      "claim": "The freezing re-run is DETERMINISTIC: executing the freeze test twice over the same committed corpus (same observations, same instrument settings) yields byte-identical proposal sets (pure function of the receipted observations — no wall-clock, no model variance inside the instrument): freezeRerunByteIdentical == 1.",
+      "metric": "freezeRerunByteIdentical",
+      "op": "eq",
+      "threshold": 1,
+      "refusal": "If the two runs differ in any byte (region string, output class, n, member order), the instrument has hidden state or model variance inside the measurement loop: FAIL, and the freezing re-run may not be trusted for the freeze decision this wave until the state is named and removed.",
+      "writtenPreRun": "2026-10-02, before the first freeze re-run"
+    },
+    {
+      "id": "P4",
+      "claim": "The v2 quilt still punches above its weight: judged blind against the same ground truth on the UNCHANGED 6-turn battery (bare side carried verbatim from the 67-c comparison as cached completions — the bare model is not part of the v2 change, so its answers are constants of the experiment), the v2 quilt's mean judge score exceeds the bare model's mean by at least +2.00 while spending at most ~1/3 of the calls: deltaVsBare >= 2.0.",
+      "metric": "deltaVsBare",
+      "op": "gte",
+      "threshold": 2.0,
+      "refusal": "If the delta falls below +2.00, the honest verdict is FAIL: v2's fact gate either degraded a battery turn below its 67-c quality (most plausibly the refund turn, now refused to an ask-back) or the measurement says the punch-through was 67-c noise. No rubric edits, no battery edits, no judge-model swaps after the fact. The eval is re-runnable but every re-run is receipted; the FIRST complete run is the result of record.",
+      "writtenPreRun": "2026-10-02, before any eval call"
+    },
+    {
+      "id": "P5",
+      "claim": "The lane holds the model budget: total external model calls across corpus generation + eval v2 (rulings, classifiers, greeter, judge; bare model carried as cached completions, frozen-path hits cost 0) is at most 15, every call receipted by provider+model: externalModelCalls <= 15.",
+      "metric": "externalModelCalls",
+      "op": "lte",
+      "threshold": 15,
+      "refusal": "If the count exceeds 15, the budget law failed: FAIL with the overage receipted call-by-call in the external-calls summary — the receipt is still owed for every call, the claim just records honestly that discipline slipped.",
+      "writtenPreRun": "2026-10-02, before any external call"
+    }
+  ]
+}
