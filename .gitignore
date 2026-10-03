@@ -10,3 +10,7 @@ lode/engine/receipts/2026-09-30-engine-run-7/review-c2-text.txt
 lode/engine/receipts/2026-10-02-engine-run-8/review/review-c2-abs.html
 lode/engine/receipts/2026-10-02-engine-run-8/review/review-c2-full.html
 lode/engine/receipts/2026-10-02-engine-run-8/review/review-c2-text.txt
+
+# 66-c: qmr1 producer signing secret — HMAC key for ledger/qmr1-store.jsonl.
+# Created on first run by tools/qmr1-bridge.mjs (chmod 600). NEVER committed.
+.qmr1-secret
