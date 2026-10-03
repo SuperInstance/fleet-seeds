@@ -41,7 +41,12 @@ PINCHER_LEDGER = os.environ.get("ZC_PINCHER_LEDGER", "")
 NOTARY = "https://quilt-tip-notary.casey-digennaro.workers.dev"
 SPECIES = ("git", "tip", "seal", "fp", "row")
 EXIT_VERIFIED, EXIT_FAIL, EXIT_USAGE, EXIT_CHANNEL = 0, 1, 2, 3
-AGENT = "zeroclaw-v0.7.1"
+AGENT = "zeroclaw-v0.8"
+
+# fail-closed codes: named, never silent
+EXIT_CHECKPOINT_TIP = 11     # ZC_CHECKPOINT_TIP_MISMATCH
+EXIT_CHECKPOINT_COUNT = 12   # ZC_CHECKPOINT_COUNT_MISMATCH
+EXIT_REWIND_TARGET = 13      # ZC_REWIND_TARGET_NOT_CHECKPOINT
 
 def fnv1a64(data: bytes) -> str:
     h = FNV_OFFSET
@@ -102,8 +107,79 @@ def verify():
         if fnv1a64(canon(body)) != row["row_hash"]:
             print(f"BREAK at row {n}: row_hash mismatch")
             return 1
+        # v0.8 checkpoint law: a checkpoint row is a RECEIPT of the tip it
+        # sits on — payload.tip_hash must equal its own prev_hash, and
+        # payload.row_count must equal its index. Forged either way is
+        # fail-closed named (FB6-v2 spec, fleet-seeds deltas 2026-10-04).
+        if body.get("type") == "checkpoint":
+            pl = body.get("payload", {})
+            if pl.get("tip_hash") != prev:
+                print(f"ZC_CHECKPOINT_TIP_MISMATCH at row {n}: payload.tip_hash "
+                      f"{str(pl.get('tip_hash'))[:16]}… != chain tip {str(prev)[:16]}…")
+                return EXIT_CHECKPOINT_TIP
+            if pl.get("row_count") != n:
+                print(f"ZC_CHECKPOINT_COUNT_MISMATCH at row {n}: payload.row_count "
+                      f"{pl.get('row_count')} != index {n}")
+                return EXIT_CHECKPOINT_COUNT
         prev, tip, n = row["row_hash"], row["row_hash"], n + 1
     print(f"CHAIN OK: {n} rows, tip {tip}")
+    return 0
+
+
+def cmd_checkpoint():
+    """Append a self-verifying checkpoint row: a receipt OF the current tip.
+    Byte-compat frozen: same canon/hash; only a new optional 'type' field."""
+    prev, idx = journal_tip()
+    if prev is None:
+        print("ZC_CHECKPOINT: empty journal — write a row first")
+        return 1
+    row = {
+        "ts": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        "agent": AGENT, "model": "checkpoint",
+        "order": "checkpoint", "prompt_sha256": "-", "output_file": "-",
+        "output_sha256": "-", "usage": {"checkpoint": True}, "latency_s": 0,
+        "prev_hash": prev, "type": "checkpoint",
+        "payload": {"row_count": idx + 1, "tip_hash": prev},
+    }
+    row["row_hash"] = fnv1a64(canon({k: v for k, v in row.items() if k != "row_hash"}))
+    append_row(row)
+    print(f"CHECKPOINT row {idx + 1}: {row['row_hash'][:16]}… seals tip {prev[:16]}… ({idx + 1} rows)")
+    return 0
+
+
+def cmd_rewind(target: str):
+    """Truncate after target index. Law: target must be a checkpoint row or
+    row 0 (genesis is implicitly a checkpoint). The removed tail's hashes are
+    printed as a receipt for EXTERNAL filing — custody of forgetting is a
+    separate receipt, never a journal row (a row cannot survive its own
+    truncation)."""
+    rows = [json.loads(l) for l in open(JOURNAL)] if os.path.exists(JOURNAL) else []
+    try:
+        ti = int(target)
+    except ValueError:
+        print("usage: zeroclaw.py rewind <row_index>")
+        return EXIT_USAGE
+    if ti < 0 or ti >= len(rows):
+        print(f"ZC_REWIND_TARGET_NOT_CHECKPOINT: index {ti} out of range (0..{len(rows)-1})")
+        return EXIT_REWIND_TARGET
+    target_row = rows[ti]
+    is_anchor = ti == 0 or target_row.get("type") == "checkpoint"
+    if not is_anchor:
+        print(f"ZC_REWIND_TARGET_NOT_CHECKPOINT: row {ti} is '{target_row.get('order')}' — "
+              f"only checkpoint rows or genesis (0) may anchor a rewind")
+        return EXIT_REWIND_TARGET
+    removed = rows[ti + 1:]
+    tmp = JOURNAL + ".tmp"
+    with open(tmp, "w") as f:
+        for r in rows[:ti + 1]:
+            f.write(json.dumps(r, sort_keys=True) + "\n")
+    os.replace(tmp, JOURNAL)
+    print(f"REWIND to row {ti} ({target_row['row_hash'][:16]}…): "
+          f"{len(removed)} rows forgotten")
+    if removed:
+        print("FORGETTING RECEIPT (file externally — the journal cannot hold it):")
+        for r in removed:
+            print(f"  forgotten {r['row_hash'][:16]}… order={r.get('order')}")
     return 0
 
 def run(orders):
@@ -415,6 +491,10 @@ if __name__ == "__main__":
     args = sys.argv[1:]
     if args and args[0] == "verify":
         sys.exit(verify())
+    if args and args[0] == "checkpoint":
+        sys.exit(cmd_checkpoint())
+    if args and args[0] == "rewind":
+        sys.exit(cmd_rewind(args[1]) if len(args) > 1 else (print("usage: zeroclaw.py rewind <row_index>") or EXIT_USAGE))
     if args and args[0] == "cite":
         sys.exit(cite(args[1:]))
     if args and args[0] == "audit":

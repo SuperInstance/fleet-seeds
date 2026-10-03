@@ -229,5 +229,91 @@ check("FB3 wiring: --ledger forwarded to serve when configured",
       hit8 is not None and "--ledger" in argv_logged and LEDGER in argv_logged
       and _os.path.exists(LEDGER))
 
+# ── FB6-v2 pins: checkpoints + rewind (zeroclaw v0.8) ─────────────────────
+# All mutations on a scratch copy — the shipped journal is never touched.
+scratch2 = tempfile.mkdtemp()
+env2 = dict(os.environ, ZC_JOURNAL=os.path.join(scratch2, "zeroclaw-journal.jsonl"))
+shutil.copy(JOURNAL, env2["ZC_JOURNAL"])
+
+def run2(*args):
+    return subprocess.run([sys.executable, ZC, *args], capture_output=True, text=True, timeout=60, env=env2)
+
+# a forger rebuilding a tampered row must re-seal its hash — the checkpoint
+# law targets rows whose hash was REBUILT, so pins recompute after editing.
+FNV_OFFSET, FNV_PRIME, MASK64 = 0xcbf29ce484222325, 0x100000001b3, (1 << 64) - 1
+def fnv(b):
+    h = FNV_OFFSET
+    for x in b:
+        h ^= x
+        h = (h * FNV_PRIME) & MASK64
+    return f"{h:016x}"
+def reseal(row):
+    body = {k: v for k, v in row.items() if k != "row_hash"}
+    row["row_hash"] = fnv(json.dumps(body, sort_keys=True, separators=(",", ":")).encode())
+    return row
+def write_rows(path, rows):
+    with open(path, "w") as f:
+        f.write("\n".join(json.dumps(x, sort_keys=True) for x in rows) + "\n")
+
+# v2-1: checkpoint appends a chained row typed checkpoint, sealing the tip
+r = run2("checkpoint")
+rows2 = [json.loads(l) for l in open(env2["ZC_JOURNAL"])]
+ck = rows2[-1]
+check("v2-1: checkpoint appends typed row sealing the prior tip",
+      r.returncode == 0 and ck.get("type") == "checkpoint"
+      and ck["payload"]["tip_hash"] == ck["prev_hash"]
+      and ck["payload"]["row_count"] == len(rows2) - 1, r.stdout[:160])
+
+# v2-2: verify accepts the honest checkpoint
+r = run2("verify")
+check("v2-2: verify accepts honest checkpoint (CHAIN OK)",
+      r.returncode == 0 and "CHAIN OK" in r.stdout, r.stdout[:160])
+
+# v2-3: forged payload.tip_hash (hash re-sealed, forger-style) -> exit 11
+rows2[-1] = reseal(rows2[-1])
+rows2[-1]["payload"]["tip_hash"] = "0" * 16
+rows2[-1] = reseal(rows2[-1])
+write_rows(env2["ZC_JOURNAL"], rows2)
+r = run2("verify")
+check("v2-3: forged tip_hash -> ZC_CHECKPOINT_TIP_MISMATCH exit 11",
+      r.returncode == 11 and "ZC_CHECKPOINT_TIP_MISMATCH" in r.stdout, r.stdout[:160])
+
+# v2-4: forged payload.row_count -> ZC_CHECKPOINT_COUNT_MISMATCH, exit 12
+rows2[-1]["payload"]["tip_hash"] = ck["prev_hash"]   # the honest sealed tip
+rows2[-1]["payload"]["row_count"] = 999
+rows2[-1] = reseal(rows2[-1])
+write_rows(env2["ZC_JOURNAL"], rows2)
+r = run2("verify")
+check("v2-4: forged row_count -> ZC_CHECKPOINT_COUNT_MISMATCH exit 12",
+      r.returncode == 12 and "ZC_CHECKPOINT_COUNT_MISMATCH" in r.stdout, r.stdout[:160])
+
+# restore honest checkpoint; write one more row; v2-5: rewind to the
+# checkpoint forgets exactly that row, names the forgetting receipt,
+# and a fresh write resumes from the checkpoint tip.
+rows2[-1]["payload"]["row_count"] = len(rows2) - 1
+rows2[-1] = reseal(rows2[-1])
+write_rows(env2["ZC_JOURNAL"], rows2)
+ck_idx = len(rows2) - 1
+run2("run-test-cites")   # canned order, no network: one row above the checkpoint
+r = run2("rewind", str(ck_idx))
+check("v2-5a: rewind to checkpoint forgets the tail and names the receipt",
+      r.returncode == 0 and "FORGETTING RECEIPT" in r.stdout
+      and "forgotten" in r.stdout
+      and len([json.loads(l) for l in open(env2["ZC_JOURNAL"])]) == ck_idx + 1, r.stdout[:240])
+r = run2("run-test-cites")   # canned order, no network
+r = run2("verify")
+check("v2-5b: post-rewind resume writes chain from the checkpoint tip",
+      r.returncode == 0 and "CHAIN OK" in r.stdout, r.stdout[:160])
+
+# v2-6: rewind to a non-checkpoint row -> ZC_REWIND_TARGET_NOT_CHECKPOINT, exit 13
+r = run2("rewind", "1")
+check("v2-6: rewind to ordinary row -> exit 13 named",
+      r.returncode == 13 and "ZC_REWIND_TARGET_NOT_CHECKPOINT" in r.stdout, r.stdout[:160])
+
+# v2-7: rewind to 0 (genesis anchor law) is a lawful anchor
+r = run2("rewind", "0")
+check("v2-7: rewind to genesis anchor is lawful",
+      r.returncode == 0 and "REWIND to row 0" in r.stdout, r.stdout[:160])
+
 print(f"\npins total: {passed} pass / {failed} fail")
 sys.exit(1 if failed else 0)

@@ -1,0 +1,1 @@
+test row for cite pins; no model call
