@@ -405,31 +405,37 @@ function main() {
   const round = Number(argValue('--round') || DEFAULT_ROUND);
   const asJson = argv.includes('--json');
 
-  const report = (res) => {
+  const report = (res, label) => {
     const { secret, ...safe } = res; // never print secret material
     if (asJson) {
       process.stdout.write(JSON.stringify(safe, null, 2) + '\n');
     } else if (res.ok) {
       const tip = safe.tip ? String(safe.tip).slice(0, 16) : '-';
-      const head = safe.seeded ? 'SEEDED' : 'PRODUCED';
-      process.stdout.write(`[qmr1-bridge] ${head} appended=${safe.appended ?? safe.count} count=${safe.count} tip=${tip}… verified=true\n`);
+      if (label === 'CHECKED') {
+        process.stdout.write(`[qmr1-bridge] CHECKED count=${safe.count} tip=${tip}… verified=true (wrote nothing)\n`);
+      } else {
+        process.stdout.write(`[qmr1-bridge] ${label} appended=${safe.appended ?? 0} count=${safe.count} tip=${tip}… verified=true\n`);
+      }
     } else {
       process.stderr.write(`[qmr1-bridge] REFUSED ${res.error}${res.at_seq ? ` at_seq=${res.at_seq}` : ''}: ${res.detail}\n`);
     }
   };
 
   let res;
+  let label = 'PRODUCED';
   if (argv.includes('--seed')) {
+    label = 'SEEDED';
     res = seedChain({ storePath, lodeDir, secretPath, round });
   } else if (argv.includes('--check')) {
+    label = 'CHECKED';
     const secretRes = readSecret(secretPath);
-    if (!secretRes.ok) { report(secretRes); process.exit(2); }
+    if (!secretRes.ok) { report(secretRes, label); process.exit(2); }
     res = verifyChainSigned(storePath, secretRes.secret);
     if (res.ok && res.count === 0) res = { ok: false, error: 'E_STORE_NOT_SEEDED', detail: 'store is missing or empty — run --seed first' };
   } else {
     res = produce({ storePath, lodeDir, secretPath, round });
   }
-  report(res);
+  report(res, label);
   process.exit(res.ok ? 0 : 2);
 }
 
