@@ -1,0 +1,25 @@
+{
+ "$schema": "zeroclaw-reflex-spec/v1",
+ "cites": [
+  "tip:b92d3cd2e735e8f5fdad0c008446a93667aa4ee0c0a06c4bcb2a3e2bccf5f572",
+  "git:e9363fa49548c12239da58745120e4fb59b61250",
+  "row:3d0e52b8b056327d",
+  "row:95d7b7fa7f9f7f7c"
+ ],
+ "context_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "id": "zc-c6b91c292a50404c",
+ "intent": "zeroclaw order: test-cites (earned reflex)",
+ "model": "MiniMax-M2.7",
+ "origin_row": "95d7b7fa7f9f7f7c",
+ "payload": {
+  "bytes": 37,
+  "content": "test row for cite pins; no model call",
+  "delta_path": "2026-10-03-test-cites.md",
+  "output_sha256": "d85170e9bcd9e188880f0e4ba4322b45d8e1e577cbae8fa387079ec1f604b7ef"
+ },
+ "provenance": {
+  "compiledBy": "zeroclaw",
+  "parentOrder": "test-cites"
+ },
+ "trigger": "order:test-cites\n\ncontext-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

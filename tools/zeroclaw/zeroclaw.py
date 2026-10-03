@@ -30,15 +30,18 @@ MODEL = "MiniMax-M2.7"
 ENV = "/root/.env"
 HERE = os.path.dirname(os.path.abspath(__file__))
 JOURNAL = os.environ.get("ZC_JOURNAL", os.path.join(HERE, "zeroclaw-journal.jsonl"))
-DELTA_DIR = os.path.join(HERE, "deltas")
+DELTA_DIR = os.environ.get("ZC_DELTAS", os.path.join(HERE, "deltas"))
 REFLEX_DIR = os.environ.get("ZC_REFLEXES", os.path.join(HERE, "reflexes"))
 # FB2: the pincher serve CLI (quilt-pincher dist/cli/serve.js). Unset → reflex
 # layer skips silently; every run takes the honest LLM path.
 PINCHER_SERVE = os.environ.get("ZC_PINCHER_SERVE", "")
+# FB3: pincher's own traffic ledger (--ledger). Opt-in; the receipt chain
+# stays here, pincher keeps traffic stats. Two ledgers, one loop.
+PINCHER_LEDGER = os.environ.get("ZC_PINCHER_LEDGER", "")
 NOTARY = "https://quilt-tip-notary.casey-digennaro.workers.dev"
 SPECIES = ("git", "tip", "seal", "fp", "row")
 EXIT_VERIFIED, EXIT_FAIL, EXIT_USAGE, EXIT_CHANNEL = 0, 1, 2, 3
-AGENT = "zeroclaw-v0.6"
+AGENT = "zeroclaw-v0.7"
 
 def fnv1a64(data: bytes) -> str:
     h = FNV_OFFSET
@@ -203,7 +206,8 @@ def try_reflex(slug, prompt, ctx_sha):
             f.write(trigger)
         proc = subprocess.run(
             ["node", PINCHER_SERVE, "--trigger-file", tpath,
-             "--spec-dir", REFLEX_DIR, "--context-sha256", ctx_sha],
+             "--spec-dir", REFLEX_DIR, "--context-sha256", ctx_sha]
+            + (["--ledger", PINCHER_LEDGER] if PINCHER_LEDGER else []),
             capture_output=True, text=True, timeout=30)
         if proc.returncode != 0:
             return None  # 4 = honest miss (drift or first run); 1/5 = error/veto
@@ -218,7 +222,7 @@ def try_reflex(slug, prompt, ctx_sha):
             return None  # payload corrupted in transit — never serve a lie
         cites = list(payload.get("cites") or [])
         origin = payload.get("origin_row")
-        if origin:
+        if origin and f"row:{origin}" not in cites:
             cites.append(f"row:{origin}")
         return content, out.get("specId"), origin, cites
     except Exception:
@@ -323,12 +327,89 @@ def channel_name(species, repo, filepath):
             "seal": f"sha256 of --file {filepath}",
             "fp": f"fingerprint registry {filepath or '(format only)'}"}[species]
 
+# ── FB7: verify-any-receipt — one envelope, every channel ──────────────────
+
+def find_row(prefix: str):
+    if not os.path.exists(JOURNAL):
+        return None, []
+    hits = [json.loads(l) for l in open(JOURNAL)
+            if json.loads(l)["row_hash"].startswith(prefix)]
+    if len(hits) == 1:
+        return hits[0], hits
+    return None, hits
+
+def audit(argv):
+    """Audit one receipt row end to end: hash recomputed from canonical
+    fields, chain linkage to prev_hash, output file re-sealed, every cite
+    verified in its own channel. Exit 0 only if ALL checks pass."""
+    if not argv:
+        print("usage: zeroclaw.py audit <row-prefix> [--repo R]")
+        return EXIT_USAGE
+    prefix = argv[0]
+    repo = argv[argv.index("--repo") + 1] if "--repo" in argv else "fleet-seeds"
+    row, hits = find_row(prefix)
+    if row is None:
+        print(f"AUDIT {prefix}\n  verdict: {'AMBIGUOUS (' + str(len(hits)) + ' rows)' if hits else 'NOT FOUND'}")
+        return EXIT_USAGE
+    results, ok = [], True
+    # 1. hash integrity: recompute from canonical content
+    expect = row["row_hash"]
+    actual = fnv1a64(canon({k: v for k, v in row.items() if k != "row_hash"}))
+    if actual == expect:
+        results.append(f"HASH OK        row_hash {expect[:16]}… recomputed match")
+    else:
+        results.append(f"HASH MISMATCH  stored {expect[:16]}… recomputes to {actual[:16]}… (row tampered)")
+        ok = False
+    # 2. chain linkage
+    rows = [json.loads(l) for l in open(JOURNAL)]
+    idx = next((i for i, r in enumerate(rows) if r["row_hash"] == row["row_hash"]), -1)
+    if idx <= 0:
+        results.append("GENESIS        first row — no prev linkage to check")
+    else:
+        prev_actual = rows[idx - 1]["row_hash"]
+        if row.get("prev_hash") == prev_actual:
+            results.append(f"CHAIN OK       prev_hash -> {prev_actual[:16]}…")
+        else:
+            results.append(f"CHAIN BROKEN   prev_hash {str(row.get('prev_hash'))[:16]}… but journal prev is {prev_actual[:16]}…")
+            ok = False
+    # 3. output seal: re-hash the delta file on disk
+    opath = os.path.join(DELTA_DIR, row["output_file"])
+    if os.path.exists(opath):
+        osha = hashlib.sha256(open(opath, "rb").read()).hexdigest()
+        if osha == row["output_sha256"]:
+            results.append(f"SEAL OK        {row['output_file']} hashes to the recorded output_sha256")
+        else:
+            results.append(f"SEAL BROKEN    {row['output_file']} hashes {osha[:16]}…, row claims {row['output_sha256'][:16]}…")
+            ok = False
+    else:
+        results.append(f"SEAL UNKNOWN   {row['output_file']} not on disk here (verify on the filing host)")
+    # 4. every cite in its own channel
+    for tok in row.get("cites", []):
+        species, val, err = classify(tok)
+        if err:
+            results.append(f"CITE REFUSED   {tok[:48]} — {err}")
+            ok = False
+            continue
+        verdict, _code = cite_channel(species, val, repo,
+                                      opath if species == "seal" else None)
+        mark = "CITE OK       " if _code == EXIT_VERIFIED else "CITE FAIL     "
+        if _code != EXIT_VERIFIED:
+            ok = False
+        results.append(f"{mark} {species}:{val[:24]}… -> {verdict.splitlines()[0][:88]}")
+    print(f"AUDIT row {row['row_hash']} order={row['order']} model={row['model']}")
+    for r in results:
+        print(f"  {r}")
+    print(f"  verdict: {'AUDIT PASS' if ok else 'AUDIT FAIL'}")
+    return EXIT_VERIFIED if ok else EXIT_FAIL
+
 if __name__ == "__main__":
     args = sys.argv[1:]
     if args and args[0] == "verify":
         sys.exit(verify())
     if args and args[0] == "cite":
         sys.exit(cite(args[1:]))
+    if args and args[0] == "audit":
+        sys.exit(audit(args[1:]))
     if args and args[0] == "run-test-cites":
         run([{
             "slug": "test-cites", "canned_output": "test row for cite pins; no model call",
