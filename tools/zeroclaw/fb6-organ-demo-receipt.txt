@@ -1,0 +1,8 @@
+fnv1a64 probe: 0bb7ff71394cd3eb
+loaded rows: 8 tip: d4e2194d8fd102e2
+BOOT OK organ: fleet-zeroclaw@7093d4d777ef0247
+custody: {"kind":"zeroclaw-journal","rows":8,"tip":"d4e2194d8fd102e2","verifiedRange":{"start":0,"end":7},"canary":null}
+state: {"models":["MiniMax-M2.7","pincher-reflex"],"orders":["fleet-seeds-last3-scout-delta","fleet-seeds-last3-scout-delta","fleet-seeds-last3-scout-delta","fleet-see
+BUNDLE RE-PROOF OK: true
+TAMPER REFUSED: ZC_ROW_HASH_MISMATCH: row 3 stored f99cea70ced490da, recomputes to 6c13643fa3ed2
+SWAP REFUSED: ZC_CHAIN_BROKEN: row 1 prev a96f34f56cc03f6b != row 0 hash 3d0e52b8b056327d

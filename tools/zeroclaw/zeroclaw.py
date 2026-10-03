@@ -41,7 +41,7 @@ PINCHER_LEDGER = os.environ.get("ZC_PINCHER_LEDGER", "")
 NOTARY = "https://quilt-tip-notary.casey-digennaro.workers.dev"
 SPECIES = ("git", "tip", "seal", "fp", "row")
 EXIT_VERIFIED, EXIT_FAIL, EXIT_USAGE, EXIT_CHANNEL = 0, 1, 2, 3
-AGENT = "zeroclaw-v0.7"
+AGENT = "zeroclaw-v0.7.1"
 
 def fnv1a64(data: bytes) -> str:
     h = FNV_OFFSET
@@ -87,7 +87,16 @@ def verify():
     for line in open(JOURNAL):
         row = json.loads(line)
         body = {k: v for k, v in row.items() if k != "row_hash"}
-        if body.get("prev_hash") != prev:
+        # genesis anchor: history carries BOTH representations — v0/v0.5 rows
+        # have prev_hash null, run() writes "genesis". Both are the anchor.
+        # (found 2026-10-03 building FB6: verify() used to reject run()'s own
+        # fresh journals at row 0 while audit() accepted them — a real
+        # cross-command contract gap, now pinned on the toolkit side.)
+        if n == 0:
+            ok = body.get("prev_hash") in (None, "genesis")
+        else:
+            ok = body.get("prev_hash") == prev
+        if not ok:
             print(f"BREAK at row {n}: prev_hash {body.get('prev_hash')} != chain tip {prev}")
             return 1
         if fnv1a64(canon(body)) != row["row_hash"]:
