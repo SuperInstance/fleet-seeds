@@ -19,7 +19,7 @@ Design (fleet-seeds lode 2026-10-03):
   - rows are hash-chained: row_hash = fnv1a64(canonical_json(row incl prev_hash))
   - rows may carry `cites: ["git:…", "tip:…"]` — the chain covers them
 """
-import hashlib, json, os, re, sys, time, urllib.request
+import hashlib, json, os, re, subprocess, sys, tempfile, time, urllib.request
 
 FNV_OFFSET = 0xcbf29ce484222325
 FNV_PRIME = 0x100000001b3
@@ -31,9 +31,14 @@ ENV = "/root/.env"
 HERE = os.path.dirname(os.path.abspath(__file__))
 JOURNAL = os.environ.get("ZC_JOURNAL", os.path.join(HERE, "zeroclaw-journal.jsonl"))
 DELTA_DIR = os.path.join(HERE, "deltas")
+REFLEX_DIR = os.environ.get("ZC_REFLEXES", os.path.join(HERE, "reflexes"))
+# FB2: the pincher serve CLI (quilt-pincher dist/cli/serve.js). Unset → reflex
+# layer skips silently; every run takes the honest LLM path.
+PINCHER_SERVE = os.environ.get("ZC_PINCHER_SERVE", "")
 NOTARY = "https://quilt-tip-notary.casey-digennaro.workers.dev"
 SPECIES = ("git", "tip", "seal", "fp", "row")
 EXIT_VERIFIED, EXIT_FAIL, EXIT_USAGE, EXIT_CHANNEL = 0, 1, 2, 3
+AGENT = "zeroclaw-v0.6"
 
 def fnv1a64(data: bytes) -> str:
     h = FNV_OFFSET
@@ -96,9 +101,19 @@ def run(orders):
         t0 = time.time()
         context = order["context_fn"]() if "context_fn" in order else ""
         prompt = order.get("prompt", "") + ("\n\n=== CONTEXT ===\n" + context if context else "")
+        ctx_sha = hashlib.sha256(context.encode()).hexdigest()
+        slug = order["slug"]
+        reflex_hit = None
+        if "canned_output" not in order:
+            # FB2: ask pincher for an earned reflex BEFORE spending tokens.
+            reflex_hit = try_reflex(slug, order.get("prompt", ""), ctx_sha)
         if "canned_output" in order:
             content = order["canned_output"]
             usage = {"canned": True}
+        elif reflex_hit:
+            content, spec_id, origin_row, _rcites = reflex_hit
+            usage = {"reflex_hit": True, "reflex_id": spec_id, "tokens": 0,
+                     "origin_row": origin_row}
         else:
             resp = minimax([
                 {"role": "system", "content": order.get("system",
@@ -107,13 +122,12 @@ def run(orders):
                 {"role": "user", "content": prompt}])
             content = resp["choices"][0]["message"]["content"]
             usage = resp.get("usage", {})
-        slug = order["slug"]
         delta_path = os.path.join(DELTA_DIR, f"{time.strftime('%Y-%m-%d')}-{slug}.md")
         with open(delta_path, "w") as f:
             f.write(content)
         row = {
             "ts": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
-            "agent": "zeroclaw-v0.5", "model": "canned" if "canned_output" in order else MODEL,
+            "agent": AGENT, "model": "pincher-reflex" if reflex_hit else ("canned" if "canned_output" in order else MODEL),
             "order": slug,
             "prompt_sha256": hashlib.sha256(prompt.encode()).hexdigest(),
             "output_file": os.path.basename(delta_path),
@@ -121,12 +135,96 @@ def run(orders):
             "usage": usage, "latency_s": round(time.time() - t0, 3),
             "prev_hash": prev,
         }
-        if order.get("cites"):
+        if reflex_hit:
+            # the served payload's cites already chain back to the origin row
+            row["cites"] = reflex_hit[3]
+        elif order.get("cites"):
             row["cites"] = order["cites"]
         row["row_hash"] = fnv1a64(canon({k: v for k, v in row.items() if k != "row_hash"}))
         append_row(row)
         prev = row["row_hash"]
-        print(f"[{oi}/{len(orders)}] {slug}: {len(content)} chars -> {delta_path} row {row['row_hash'][:12]}")
+        # FB2: every non-reflex run files the earned reflex so the next
+        # identical (order, context) is served from the FAST tier.
+        if not reflex_hit:
+            spec_id = file_spec(slug, order.get("prompt", ""), ctx_sha, content,
+                                os.path.basename(delta_path), row, order.get("cites"))
+            print(f"[{oi}/{len(orders)}] {slug}: {len(content)} chars -> {delta_path} row {row['row_hash'][:12]} reflex {spec_id}")
+        else:
+            print(f"[{oi}/{len(orders)}] {slug}: REFLEX HIT {usage['reflex_id']} (origin row {str(usage['origin_row'])[:12]}) -> {delta_path} row {row['row_hash'][:12]}")
+
+# ── FB2: the zeroclaw↔pincher reflex synapse ───────────────────────────────
+# zeroclaw-reflex-spec/v1 — the shared format, no wire protocol. pincher's
+# serve CLI (quilt-pincher dist/cli/serve.js) loads a dir of these and
+# answers a matching trigger in ~20ms with 0 tokens. Cache-integrity law:
+# the trigger embeds the context SHA, and serve pre-filters by EXACT
+# context_sha256 — a drifted context is an honest miss, never a stale hit.
+
+def build_trigger(slug: str, prompt: str, ctx_sha: str) -> str:
+    return f"order:{slug}\n{prompt}\ncontext-sha256:{ctx_sha}"
+
+def file_spec(slug, prompt, ctx_sha, content, delta_basename, row, order_cites) -> str:
+    """File the earned reflex; returns spec id. id is content-addressed off
+    the exact trigger, so an identical rerun addresses the same spec."""
+    os.makedirs(REFLEX_DIR, exist_ok=True)
+    spec_id = "zc-" + fnv1a64(build_trigger(slug, prompt, ctx_sha).encode())
+    cites = list(order_cites or []) + [f"row:{row['row_hash']}"]
+    spec = {
+        "$schema": "zeroclaw-reflex-spec/v1",
+        "id": spec_id,
+        "intent": f"zeroclaw order: {slug} (earned reflex)",
+        "trigger": build_trigger(slug, prompt, ctx_sha),
+        "context_sha256": ctx_sha,
+        "model": MODEL,
+        "payload": {
+            "delta_path": delta_basename,
+            "output_sha256": hashlib.sha256(content.encode()).hexdigest(),
+            "content": content,
+            "bytes": len(content.encode()),
+        },
+        "origin_row": row["row_hash"],
+        "cites": cites,
+        "provenance": {"compiledBy": "zeroclaw", "parentOrder": slug},
+    }
+    with open(os.path.join(REFLEX_DIR, spec_id + ".json"), "w") as f:
+        json.dump(spec, f, indent=1, sort_keys=True)
+    return spec_id
+
+def try_reflex(slug, prompt, ctx_sha):
+    """Ask pincher serve for an earned reflex. Returns
+    (content, spec_id, origin_row, cites) or None. NEVER raises — any
+    failure means the honest LLM path. Contract pinned in test_pins.py
+    with a stub serve script (no pincher checkout needed)."""
+    if not PINCHER_SERVE or not os.path.exists(PINCHER_SERVE):
+        return None
+    trigger = build_trigger(slug, prompt, ctx_sha)
+    fd, tpath = tempfile.mkstemp(prefix="zc-trigger-", suffix=".txt")
+    try:
+        with os.fdopen(fd, "w") as f:
+            f.write(trigger)
+        proc = subprocess.run(
+            ["node", PINCHER_SERVE, "--trigger-file", tpath,
+             "--spec-dir", REFLEX_DIR, "--context-sha256", ctx_sha],
+            capture_output=True, text=True, timeout=30)
+        if proc.returncode != 0:
+            return None  # 4 = honest miss (drift or first run); 1/5 = error/veto
+        line = [l for l in proc.stdout.splitlines() if l.strip()][-1]
+        out = json.loads(line)
+        payload = out.get("output") or {}
+        content = payload.get("content")
+        sha = payload.get("output_sha256")
+        if not content or not sha:
+            return None
+        if hashlib.sha256(content.encode()).hexdigest() != sha:
+            return None  # payload corrupted in transit — never serve a lie
+        cites = list(payload.get("cites") or [])
+        origin = payload.get("origin_row")
+        if origin:
+            cites.append(f"row:{origin}")
+        return content, out.get("specId"), origin, cites
+    except Exception:
+        return None
+    finally:
+        os.unlink(tpath)
 
 # ── species-grammar citation envelope (FB5) ────────────────────────────────
 
