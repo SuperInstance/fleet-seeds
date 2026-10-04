@@ -107,3 +107,32 @@ for the full schema and rationale.
 
 <sub>Regenerate: `node quilt-links.mjs` · Fleet map: [FLEET.md](https://github.com/SuperInstance/fleet-seeds/blob/main/FLEET.md)</sub>
 <!-- QUILT:LINKS:END -->
+
+---------------
+
+## Documentation (wave-69 doc package)
+
+Route by audience — all seven files live in `docs/` and were written against
+this tree (every command verified by execution during wave-69):
+
+- **New agent, zero context** → [docs/ONBOARDING.md](docs/ONBOARDING.md) —
+  identity, verified commands (incl. what needs credentials), reading order,
+  gotchas, open frontier.
+- **End user of the capability** → [docs/USER-GUIDE.md](docs/USER-GUIDE.md) —
+  install, first success (spawn a repo), everyday tasks (verify-fleet,
+  preregister, moth-seal, lode, keyscan, zeroclaw), troubleshooting, FAQ.
+- **Developer extending the code** →
+  [docs/DEVELOPER-GUIDE.md](docs/DEVELOPER-GUIDE.md) — code layout, core
+  concepts, how to spawn/extend (tool, mine, chain, reflex), testing,
+  conventions, editor gotchas.
+- **Engineer operating/reviewing** →
+  [docs/ENGINEERING-NOTES.md](docs/ENGINEERING-NOTES.md) — architecture
+  diagram, invariants, failure modes & blast radius, cost envelope,
+  operations & credentials model, design decisions.
+- **Executive deciding investment** → [docs/CTO-BRIEF.md](docs/CTO-BRIEF.md) —
+  value, maturity with evidence, risks/mitigations, cost, strategic options.
+- **Index of all deeper knowledge** →
+  [docs/KNOWLEDGE-MAP.md](docs/KNOWLEDGE-MAP.md) — in-repo clusters,
+  pre-existing docs, fleet relationships, journal Task IDs (22, 23-d, 24, 48,
+  49, 60-engine, 61, 63/63-f/63-d-r, 64, 65, 66-b, 68-a), receipts of record,
+  search recipes.
