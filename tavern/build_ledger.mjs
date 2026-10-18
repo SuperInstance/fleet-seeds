@@ -201,6 +201,29 @@ if (fs.existsSync(windowsDir)) {
   }
 }
 
+// ---------------------------------------------------------------------------
+// SECTION C3 — round rows from the record (any receipted round, 7+): rows
+// read from tavern/rounds/*.jsonl. Same law as challenges/answers/windows:
+// the builder reads the record, it does not invent it. A rounds row speaks
+// from refs a verifier can open (commits, chain tips, artifact paths).
+// Schema: { round, voice, lane, message, refs } — kind 'tavern.round',
+// entering through the standard identity dedupe (R:round:voice).
+// ---------------------------------------------------------------------------
+const roundsDir = path.join(__dirname, 'rounds');
+if (fs.existsSync(roundsDir)) {
+  const files = fs.readdirSync(roundsDir).filter((f) => f.endsWith('.jsonl')).sort();
+  for (const f of files) {
+    const lines = fs.readFileSync(path.join(roundsDir, f), 'utf8').trim().split('\n');
+    for (const line of lines) {
+      const w = JSON.parse(line);
+      round3.push({
+        kind: 'tavern.round', round: w.round, voice: w.voice, lane: w.lane,
+        message: w.message, refs: w.refs,
+      });
+    }
+  }
+}
+
 // IDEMPOTENCE LAW: a row already on disk (replayed) is never emitted twice.
 // Identity is structural: challenge rows by id, verdicts by id+answerer,
 // round rows by round+voice. A rebuild may only ADD what the record gained.
